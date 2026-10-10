@@ -1,36 +1,44 @@
 # Independent review
 
-## Private Git download plan: PASS
+Latest-state read-only review: GPT-6.1 Sol, high reasoning.
 
-Latest-state read-only review by GPT-6.1 Sol, high reasoning.
+## Fresh-build plan and implementation: PASS
 
-- Repository independently confirmed private; Pages API returns 404.
-- Reuse the real external-curl path and existing GitHub CLI authentication.
-  No pkgutils changes, host application replacement or credential copies.
-- The raw GitHub Contents API supports the current package sizes.
-- Preserve packages/history and unrelated source/configuration work.
-- Verify adapter routing and failure propagation, anonymous denial, and
-  real empty-cache package downloads with signature-checked extraction.
+- Keep the standard bootstrap, Make, Cookbook, mounts and image path.
+- The source commit changes five task files only: 59 additions, two deletions.
+  Its parent is the remote `local/main` baseline; other local commits and
+  uncommitted configuration are excluded without rewriting that branch.
+- The 27-line adapter authenticates only the exact private repository and
+  original `curl -sSL URL` call. Native curl receives the token through
+  configuration stdin, never a URL or process argument.
+- Focused tests check existing/first-login raw output, no-terminal failure,
+  authentication/download errors and unchanged unrelated curl behavior.
+  UTF-8/LF, shell syntax, diff whitespace and secret checks passed.
+- The redundant adapter in the package repository is removed. The canonical
+  script lives in the source repository used by a fresh build.
 
-Small-key authentication preflight is not full package acceptance.
+## Package and runtime acceptance: PASS
 
-## Implementation and acceptance: PASS
+The package refresh retains the signing key and other 37 packages. Independent
+review checked input identities, archive/metadata/index hashes and extraction
+contents against the rebuild receipts. The base and bootloader private native
+downloads match the published `9acaefb7` packages.
 
-Fresh independent read-only review by GPT-6.1 Sol, high reasoning:
+The clean publication tree built an ordinary server image. The executor's
+installed-file receipt matches the expected EFI, initfs, inputd, login and
+libc hashes. Those mounted guest files were not separately remounted by the
+reviewer. The QEMU command identifies that image; the reviewer independently
+checked its log and 1280x800 screenshot showing `redox login:` after automatic
+startup with the one-second configuration.
 
-- GIT-1: private repository confirmed; Pages and anonymous Raw return 404.
-- GIT-2: exact URL/argument routing, gh failure propagation, unchanged
-  unrelated curl behavior; syntax, helper equality and permissions checked.
-- GIT-3: existing authentication reused through read-only mounts; no tokens
-  in the adapter, URLs or arguments. Credentials/private keys were not read.
-- GIT-4: source commit changes one URL only; original settings/mounts and
-  all package/license/build-input/key files remain unchanged.
-- GIT-5: independently matched three downloaded package hashes, metadata,
-  key and index; successful cook logs and 60/4/5 extracted files/links checked.
+Tool/compiler caches, an existing command-scoped proxy and standard CLI
+pre-authentication were used. A cold new-OS bootstrap and real interactive
+first login were not rerun. Failed or canceled intermediate commands are not
+accepted evidence. This is integration acceptance, not a repeat of every
+previous manual resolution or unrelated feature case.
 
-Signature extraction, exit code and mock-test results use the executor's
-records; downloaded files and refusal of anonymous access were independently
-checked. Success uses the existing proxy and command-scoped HTTP/1.1.
-The failed HTTP/2 run and canceled slow direct run are not PASS evidence.
-Default direct large-package downloading and a new system boot remain NotRun.
-No implementation blockers. Publication/readback is tracked in DEPLOYMENT.md.
+Final contract/publication status is recorded in [FRESH-BUILD.md](FRESH-BUILD.md).
+
+The executor subsequently fast-forwarded only the reviewed source commit and
+read back `b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6` on remote `local/main`.
+This publication check is separate from the preceding independent review.

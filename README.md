@@ -11,16 +11,19 @@ Cookbook package root:
 https://api.github.com/repos/RedoxORG/redox-pkgs/contents
 ```
 
-Private downloads require authentication; an ordinary anonymous Raw URL does
-not work. The current local build uses the small [curl adapter](scripts/curl-github.sh)
-with its existing GitHub CLI login mounted read-only into the build container.
-The adapter returns raw file bytes for this repository only; other curl calls
-remain unchanged. Credentials are not committed or placed in URLs/arguments.
+Fresh builds of private `RedoxORG/redox` use these packages with the ordinary
+bootstrap and Make commands. Its tracked
+[curl adapter](https://github.com/RedoxORG/redox/blob/local/main/scripts/curl-github.sh)
+authenticates only this repository, using GitHub CLI in the standard build
+container. First use requires an account with read access. Credentials are
+not committed or placed in URLs or process arguments.
 
 The root contains the public signing key. The target directory contains
-`repo.toml`, metadata and signed `.pkgar` files. Never publish the private key,
-system images, credentials or build caches. Missing packages use Cookbook's
-existing source-build fallback. Package updates create ordinary Git history.
+`repo.toml`, package metadata and signed `.pkgar` files. The private key,
+system images and build caches are not repository contents. Missing packages
+use Cookbook's existing source-build fallback. Updates are signed binary
+snapshots: pushing component source does not automatically rebuild them.
 
 Packages retain their upstream licenses. See [sources](SOURCES.md),
-[deployment and checks](DEPLOYMENT.md), and [independent review](REVIEW.md).
+[build instructions and acceptance](DEPLOYMENT.md),
+[contract and ledger](FRESH-BUILD.md), and [independent review](REVIEW.md).

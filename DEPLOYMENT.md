@@ -1,89 +1,87 @@
-# Private Git file repository
+# Private binary build and acceptance
 
-## Scope and acceptance
+## Build a fresh checkout
 
-Store the 39 existing signed packages in private `RedoxORG/redox-pkgs`.
-Use authenticated GitHub file downloads over HTTPS. Pages stays disabled.
-Keep package bytes, signing keys, existing Git history and other source work.
-Do not create workflows or commit credentials, disk images, caches or logs.
+Use the default `local/main` branch of private `RedoxORG/redox`.
+From its WSL directory, run `./podman_bootstrap.sh -d`, then create `.config`:
 
-Acceptance: private visibility, no Pages site, anonymous requests denied,
-authenticated file bytes matching the committed snapshot, and fresh real
-Cookbook downloads with verified extraction of base and bootloader.
+```make
+PODMAN_BUILD?=1
+FSTOOLS_IN_PODMAN?=1
+CONFIG_NAME?=server
+REPO_BINARY?=1
+USE_SELINUX?=0
+COOKBOOK_MAKE_JOBS?=2
+export CI=1
+```
 
-## Minimal integration
+Run `make all image qemu kvm=no`. On the first private download, complete
+the normal GitHub CLI login with an account that can read this repository.
+The container retains that login in the ignored `build/podman` home.
+No sibling component checkout or local recipe override is required.
+Restart the same disk with `make qemu kvm=no`; `image` recreates the disk.
 
-- Cookbook's root URL becomes
-  `https://api.github.com/repos/RedoxORG/redox-pkgs/contents`.
-- Its existing downloader invokes external `curl -sSL URL`.
-- A small container-only curl adapter recognizes only that exact repository
-  prefix and invokes existing `gh api` with the raw-file media type.
-  All other curl calls delegate unchanged to the original `/usr/bin/curl`.
-- Read-only container mounts expose the adapter, existing Linux GitHub CLI
-  and its existing login configuration. No token is copied into the repository
-  or passed in command arguments. No installed host application is replaced.
-- Preserve all existing local mount/settings entries. Rebuild only Cookbook;
-  use isolated acceptance caches without rebuilding the system disk.
+The source repository ships the scoped curl adapter and installs GitHub CLI
+in its normal container. Only this repository's file API is authenticated;
+unrelated downloads retain the original curl behavior. No token is committed
+or put in a URL or process argument. Pages remains disabled.
 
-## Plan and contract
+These are published binary snapshots, not automatic builds on source pushes.
+When a component changes, rebuild and publish its signed package before a
+fresh build can consume that change. Missing packages retain Cookbook's
+existing source-build fallback.
 
-Review this plan; install the adapter and local mounts; change the URL;
-test anonymous denial and authenticated downloads; review and commit only
-task files. Push only this package repository and read back its exact SHA.
+## Accepted snapshot: 2026-10-10
 
-| Rule | Location | Positive check | Negative check | Evidence |
-| --- | --- | --- | --- | --- |
-| GIT-1: Private/no Pages | Repository settings | Authenticated read, private flag | Pages API 404; anonymous file requests denied | API readback |
-| GIT-2: Authentication stays scoped | Curl adapter | Exact private prefix uses gh raw GET | Other curl commands do not use gh or receive credentials | Adapter tests/review |
-| GIT-3: No credential copies | Adapter/docs/local mounts | Reuse existing login read-only | No tokens in files, arguments or outgoing commits | Scoped secret scan |
-| GIT-4: Preserve work | Local build/new repo | URL-only edit; mounts extended | No other source/cache/disk/package/history changes | Diffs and package hashes |
-| GIT-5: Real private consumption | Cookbook | Fresh authenticated download/extraction | Anonymous download denied; no cached-only PASS | Runtime receipt |
+Source integration:
+[`b3c76ef9`](https://github.com/RedoxORG/redox/commit/b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6).
+Package refresh:
+[`9acaefb7`](https://github.com/RedoxORG/redox-pkgs/commit/9acaefb7a151a3975c773505ea4417912765d5c9).
+The source publication range contains only this task's one integration commit;
+other local commits and uncommitted configuration were excluded.
 
-## Ledger
-
-| Check | Status | Evidence |
+| Updated package | Source commit | Archive SHA-256 |
 | --- | --- | --- |
-| Pages removed | PASS | Pages API returns 404 |
-| Private visibility | PASS | Repository exists, visibility=private |
-| Existing authenticated CLI in container | PASS | Private public-key response SHA-256 matches committed key |
-| Independent plan review | PASS | See REVIEW.md; GIT-1 through GIT-5 executable and scoped |
-| Adapter/URL/mount integration | PASS | Exact-prefix routing, gh failure propagation, unrelated curl behavior; normal-container key hash matches |
-| Fresh private Cookbook acceptance | PASS | Empty-cache real Cookbook cook, signature-checked base/bootloader/redoxfs extraction; receipt below |
-| Independent final review | PASS | REVIEW.md; GIT-1 through GIT-5, proxy download scope explicit |
-| Commit/push/readback | PASS | Integration commit below pushed to main; exact SHA and private/no-Pages settings read back |
+| base | `f9c236ec7da5c786897c9a4722f3007162c95309` | `97d07f77be67a276315bcc4ae49122573b51ea41adcaccbb9a1c564c41868013` |
+| bootloader | `fce56753ed991cf700f4ccf409a26e2b866a2db1` | `11b29ca0112b3db21ebb97274887972512c945c42b1b6aebc3fa780a379a143a` |
 
-Snapshot commit: `ebfc0e8e3988bc7709cdded9586633699cfe6f35`.
-Index SHA-256: `34021ada741ab85165518fb6e119e48311a49cd74d48a3ee37a07a7511f48c40`.
+The other 37 packages and public signing key were preserved. Package
+signatures were verified through Cookbook extraction; all 60 base and four
+bootloader files/links matched the rebuilt staging contents.
+Index SHA-256: `e997e7f0e5d57c92e259d3c2fdec53051222e2635d79e118a3cdb03453689ba0`.
 Public-key SHA-256: `0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0`.
-The earlier system startup result is user-reported and is not a new private
-download or system-boot acceptance result.
 
-## Private download receipt
+## Fresh image and runtime receipt
 
-2026-10-10: real `target/release/repo cook --repo-binary
---cookbook=/accept/recipes base bootloader` returned zero in the existing
-`redox-base` image with a fresh isolated cache and the three read-only mounts.
-The acceptance command used the existing proxy and HTTP/1.1 for transport;
-those test-only settings were not persisted. Direct normal-container key
-download also matched. This verifies downloading, not a new system boot.
+An archive of the exact source publication tree was tested outside the
+repositories. Its private-package cache started empty, without sibling
+source links, local recipe rules or a custom installer. Normal Make paths
+built host tools, downloaded private packages and generated a 512 MiB image.
+The final adapter also redownloaded base and bootloader successfully.
 
-| Package | Download SHA-256 | Extracted files/links |
-| --- | --- | --- |
-| base | `c6b6c606c7678b5c7163a2be35fcafa1faecfec89f8512a037066065dc8b6e5f` | 60 |
-| bootloader | `563aed2e886782d1b04bf233d88a2828765063b76efaa015d6cbac83a57d0fa4` | 4 |
-| redoxfs | `5b78c65129630b741000c358a23963947668ab4816e15158ca5087edb76db328` | 5 |
+Installed image hashes before boot:
 
-All three archives, the public key and index match the committed snapshot.
-Package/license/build-input files and existing recipe caches are unchanged.
-Adapter tests cover gh failure without anonymous fallback, non-matching
-repository prefixes, extra curl arguments and `curl --version`.
+| Guest file | SHA-256 |
+| --- | --- |
+| `/usr/lib/boot/bootloader.efi` | `995f8fc7a1bf8aaef1727472cc8b38589c9f9ba1d74b9a9c454146513619bd4d` |
+| `/usr/lib/boot/initfs` | `a9f41a908f533da793b63c3f521776fb2de71e3fc6b726ede0c9cb50f4751b8d` |
+| `/usr/bin/inputd` | `c1981705f34efa090120e7edbb7c068c19ceb66c04044852d0fbc80ca3895e5b` |
+| `/usr/bin/login` | `47d6628c1278d6f06ece365a6aa145753f878bd610e02c1033660392fb98053f` |
+| `/usr/lib/libc.so` | `f633e8ed9e2e8ebfbed25d249cfdb29194bfd160656a777083abf394a712a48c` |
 
-Local Redox URL-only commit: `bf481c904b9e9c43de7a73d5518324d271c3bacf`;
-not pushed. This configuration task has no matching tracking Issue.
-Temporary caches/logs stayed outside Git; all four task-only acceptance
-directories were removed after independent review with no active consumers.
+The image contained `default_resolution=auto`,
+`remember_last_resolution=true`, and `timeout_ms=1000`. Normal
+`make qemu kvm=no`, with headless observation flags, reached `redox login:`
+without keyboard input; the captured display was 1280x800. QEMU was then
+closed cleanly. This verifies ordinary automatic startup with the accepted
+resolution implementation, not a new measurement of its countdown text.
 
-Published integration commit:
-[`5c10399359a0c4d6d3a8264efb324fc74a874e84`](https://github.com/RedoxORG/redox-pkgs/commit/5c10399359a0c4d6d3a8264efb324fc74a874e84).
-Authenticated remote readback matched that SHA on main and confirmed
-`private=true`, `visibility=private`, `has_pages=false`.
+Compiler/tool caches were reused; the standard container was supplied with
+the required GitHub CLI. GitHub authentication was pre-established through
+its standard CLI. Transport used an existing command-scoped proxy.
+A completely cold `./podman_bootstrap.sh -d` on a new operating-system
+installation and interactive real first-login flow were not rerun. Focused
+tests cover first-login routing, no-terminal failure and download errors.
+Failed or canceled intermediate commands are not PASS evidence.
+
+See [contract and ledger](FRESH-BUILD.md) and [independent review](REVIEW.md).
