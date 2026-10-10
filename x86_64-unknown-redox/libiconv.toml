@@ -1,0 +1,10 @@
+name = "libiconv"
+version = "TODO"
+target = "x86_64-unknown-redox"
+blake3 = "176cc6b00cf25cf121bb1af7d460dfbcd95e0b92b32d6b397f2dc3529448b61b"
+source_identifier = "820b3b9fd3e2181bfb95475f01e9a3451e6d751e4f8c98ebcdcca1d8aa720f7f"
+commit_identifier = "009833b56eeb6eb1928e8ea783ea717ffced5d2d"
+time_identifier = "2026-09-26T05:02:42Z"
+storage_size = 2099362
+network_size = 2099362
+depends = []

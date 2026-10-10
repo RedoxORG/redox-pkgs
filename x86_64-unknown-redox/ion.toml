@@ -1,0 +1,10 @@
+name = "ion"
+version = "TODO"
+target = "x86_64-unknown-redox"
+blake3 = "cf6437e3535055a71e472de1b7722e1b2be7e0f4d0db54d23dfd0c650b145328"
+source_identifier = "e9b3ca48b7ab6444498d5c3aa902d471ce29f759"
+commit_identifier = "c2c4f032b0fcc0715c91201e9bc175a3485004b0"
+time_identifier = "2026-09-10T09:03:54Z"
+storage_size = 2775772
+network_size = 2775772
+depends = []

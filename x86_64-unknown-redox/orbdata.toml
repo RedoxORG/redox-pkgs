@@ -1,0 +1,10 @@
+name = "orbdata"
+version = "TODO"
+target = "x86_64-unknown-redox"
+blake3 = "95422a5326649ca1cac1d93e650a3d2fa330eb9d2cf662c8129ed4bd24b5aa5a"
+source_identifier = "58d1140176430f222ac0749c8b83349f2c4da916"
+commit_identifier = "004566fa674023c5fc2c682844c2f15b8b9755ec"
+time_identifier = "2026-09-30T04:59:33Z"
+storage_size = 4327774
+network_size = 4327774
+depends = []

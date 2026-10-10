@@ -1,0 +1,10 @@
+name = "gettext"
+version = "TODO"
+target = "x86_64-unknown-redox"
+blake3 = "6f153da359804a4e66e448095377b9cc9a427b2304f9a11ac7cdb7a537b197a5"
+source_identifier = "cb3f3a34da7ce1a92746df81f5b78c5d53841973a24eb80ab76537263d380ec0"
+commit_identifier = "009833b56eeb6eb1928e8ea783ea717ffced5d2d"
+time_identifier = "2026-09-26T05:02:42Z"
+storage_size = 16552545
+network_size = 16552545
+depends = ["libiconv"]

@@ -1,0 +1,10 @@
+name = "kibi"
+version = "TODO"
+target = "x86_64-unknown-redox"
+blake3 = "b97a99e42e9358bab60c7fdac076955ab9686f98bbe46bfaaefabc126f059fda"
+source_identifier = "805819d57228cf4f2b64a7313f6d473348a4a844"
+commit_identifier = "cd89779260bdb276820babf626f9348be47cb01a"
+time_identifier = "2026-08-20T15:03:06Z"
+storage_size = 515362
+network_size = 515362
+depends = []

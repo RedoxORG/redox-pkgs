@@ -1,0 +1,10 @@
+name = "userutils"
+version = "0.1.0"
+target = "x86_64-unknown-redox"
+blake3 = "f5d435cab7696b669ce79dbdb454685cdda9e913be5c3cc63b2c0b6e51cc63ed"
+source_identifier = "local_source"
+commit_identifier = "1657376c429c138b205186fed02cdd8bfa77d482"
+time_identifier = "2026-10-10T05:06:51Z"
+storage_size = 5906470
+network_size = 5906470
+depends = []

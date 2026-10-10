@@ -1,0 +1,10 @@
+name = "kernel"
+version = "TODO"
+target = "x86_64-unknown-redox"
+blake3 = "7ce0aa163da91f1851dcf269fd8ce8b35e4ffa56f89c4f4254845bb375690fa9"
+source_identifier = "d4ffe6dbfe907053a125ee946f7212fb23dcb905"
+commit_identifier = "ec2ec281d8bb1b698e3b38a909338365e63a119a"
+time_identifier = "2026-10-08T05:00:26Z"
+storage_size = 2957636
+network_size = 2957636
+depends = []

@@ -1,0 +1,10 @@
+name = "zsh"
+version = "TODO"
+target = "x86_64-unknown-redox"
+blake3 = "c5f5600030b563b409469e3b59f5af0a675cdd275a7c6d4473f12379a6672af9"
+source_identifier = "a15b94fae03e87aba6fc6a27df3c98e610b85b0c7c0fc90248f07fdcb8816860"
+commit_identifier = "86b5c00bb00e8ddef694e272091e47705a66dd02"
+time_identifier = "2026-09-10T19:07:16Z"
+storage_size = 7279192
+network_size = 7279192
+depends = ["ncursesw"]

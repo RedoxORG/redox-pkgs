@@ -1,0 +1,10 @@
+name = "readline"
+version = "8.3"
+target = "x86_64-unknown-redox"
+blake3 = "280f0fcf8fdf3cd41c59d3993bf7f32da8427d9c4f68ffcae28748bdf63889ec"
+source_identifier = "7109f094062bda387a0c16b4875375b96e36437bebbbd8d8f91bb27ba01d687f"
+commit_identifier = "c4009d08ba2eab474e95f1acfec3633b6b8868a0"
+time_identifier = "2026-10-10T01:37:21Z"
+storage_size = 1898418
+network_size = 1898418
+depends = ["ncursesw"]

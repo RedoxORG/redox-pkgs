@@ -1,0 +1,10 @@
+name = "coreutils"
+version = "TODO"
+target = "x86_64-unknown-redox"
+blake3 = "478c22cb7c9c79fad28122e90817104ce6d26bdc7569a084b5e24caad85a3369"
+source_identifier = "575a46d3b624ad9cd222c9e3250073e9269c3462"
+commit_identifier = "3908bb6de5e0df85b748189f3b43cb75f72cb9d9"
+time_identifier = "2026-07-12T03:45:28Z"
+storage_size = 1888416
+network_size = 1888416
+depends = []

@@ -1,0 +1,10 @@
+name = "zlib"
+version = "TODO"
+target = "x86_64-unknown-redox"
+blake3 = "b8c446631f15e306d3f20e0006bdc9059a2c8042b15084a7fe62aab6ddaf52e1"
+source_identifier = "ec1abc6f672a7a6ee6f49ba544cc9529f73121b478310473be44fee22a140ebf"
+commit_identifier = "009833b56eeb6eb1928e8ea783ea717ffced5d2d"
+time_identifier = "2026-09-26T05:02:42Z"
+storage_size = 289774
+network_size = 289774
+depends = []

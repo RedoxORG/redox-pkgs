@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.pkgar -text
+# Preserve upstream patch context and license text byte-for-byte.
+*.patch -whitespace
+licenses/** -whitespace

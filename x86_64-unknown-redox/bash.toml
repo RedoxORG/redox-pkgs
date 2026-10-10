@@ -1,0 +1,10 @@
+name = "bash"
+version = "TODO"
+target = "x86_64-unknown-redox"
+blake3 = "d8577ae42a36b71c0bc67c73524dafe054350fe59304adf2c27ad8cc7e03895e"
+source_identifier = "local_source"
+commit_identifier = "0dbb4ea10f3f2cf10cddd3e61697923233f3b73b"
+time_identifier = "2026-10-10T08:36:31Z"
+storage_size = 9691933
+network_size = 9691933
+depends = ["ncursesw", "readline"]

@@ -1,0 +1,10 @@
+name = "findutils"
+version = "TODO"
+target = "x86_64-unknown-redox"
+blake3 = "8e72ad63861ad1b60771f8d1fd2be1efec7cd1fb2e1420b2860cc36cf8578b79"
+source_identifier = "116c044399318bf1c77a0d97371b61999ee170b4"
+commit_identifier = "3908bb6de5e0df85b748189f3b43cb75f72cb9d9"
+time_identifier = "2026-07-12T03:45:28Z"
+storage_size = 1161852
+network_size = 1161852
+depends = []

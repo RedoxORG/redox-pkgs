@@ -1,0 +1,10 @@
+name = "git"
+version = "TODO"
+target = "x86_64-unknown-redox"
+blake3 = "134086591c4b6737250be1e83e9ffe9b62d36595a765427215d29bb2c48a9e15"
+source_identifier = "bc78271bffd60c5b8b938d8c08fd74dc2de8d21fbaf8f8e0e3155436d9263f17"
+commit_identifier = "009833b56eeb6eb1928e8ea783ea717ffced5d2d"
+time_identifier = "2026-09-26T05:02:42Z"
+storage_size = 27316673
+network_size = 27316673
+depends = ["ca-certificates", "nghttp2", "curl", "expat", "openssl3"]
