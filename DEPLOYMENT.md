@@ -50,7 +50,7 @@ task files. Push only this package repository and read back its exact SHA.
 | Adapter/URL/mount integration | PASS | Exact-prefix routing, gh failure propagation, unrelated curl behavior; normal-container key hash matches |
 | Fresh private Cookbook acceptance | PASS | Empty-cache real Cookbook cook, signature-checked base/bootloader/redoxfs extraction; receipt below |
 | Independent final review | PASS | REVIEW.md; GIT-1 through GIT-5, proxy download scope explicit |
-| Commit/push/readback | NotRun | Pending |
+| Commit/push/readback | PASS | Integration commit below pushed to main; exact SHA and private/no-Pages settings read back |
 
 Snapshot commit: `ebfc0e8e3988bc7709cdded9586633699cfe6f35`.
 Index SHA-256: `34021ada741ab85165518fb6e119e48311a49cd74d48a3ee37a07a7511f48c40`.
@@ -80,4 +80,10 @@ repository prefixes, extra curl arguments and `curl --version`.
 
 Local Redox URL-only commit: `bf481c904b9e9c43de7a73d5518324d271c3bacf`;
 not pushed. This configuration task has no matching tracking Issue.
-Temporary caches/logs stay outside Git and are removed after review.
+Temporary caches/logs stayed outside Git; all four task-only acceptance
+directories were removed after independent review with no active consumers.
+
+Published integration commit:
+[`5c10399359a0c4d6d3a8264efb324fc74a874e84`](https://github.com/RedoxORG/redox-pkgs/commit/5c10399359a0c4d6d3a8264efb324fc74a874e84).
+Authenticated remote readback matched that SHA on main and confirmed
+`private=true`, `visibility=private`, `has_pages=false`.
