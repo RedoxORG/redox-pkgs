@@ -57,7 +57,7 @@ clone, worktree, history rewrite or force push is authorized.
 | Fresh package/image/runtime acceptance | PASS: signed extraction; installed hashes; normal no-input QEMU boot to login; see DEPLOYMENT.md for cache/transport limitations |
 | Independent final review | PASS: GPT-6.1 Sol/high independently checked F1-F5, final docs, package inputs, logs and screenshot; mounted-file hashes use the executor's receipt |
 | Source publication/readback | PASS: remote local/main is b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6; one task commit from 38df0e3346ef2468a0b4f99aa8e367e2c6f408e6; local branch and user changes preserved |
-| Package publication/readback | PASS: remote main is 9acaefb7a151a3975c773505ea4417912765d5c9; two rebuilt packages plus metadata/index; other 37 packages and key unchanged |
+| Package publication/readback | PASS: package refresh 9acaefb7a151a3975c773505ea4417912765d5c9 was published and read back; subsequent documentation-only commits leave that package snapshot unchanged |
 
 Source change: five files, 59 additions and two deletions; no production Rust
 tests, new framework or workflow. Documentation publication is a separate

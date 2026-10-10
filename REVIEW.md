@@ -42,3 +42,9 @@ Final contract/publication status is recorded in [FRESH-BUILD.md](FRESH-BUILD.md
 The executor subsequently fast-forwarded only the reviewed source commit and
 read back `b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6` on remote `local/main`.
 This publication check is separate from the preceding independent review.
+
+The reviewer independently read back the source commit and package receipt
+commit `da4e1eaa707263b1189bfa1dee0e54b396176608`, checked both parents and
+outgoing ranges, and confirmed the original local branch/user changes remain
+unchanged. Publication review: PASS. Its sole documentation clarification
+distinguishes the package refresh snapshot from later documentation commits.
