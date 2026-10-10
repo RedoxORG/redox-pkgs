@@ -1,44 +1,36 @@
 # Independent review
 
-## Pre-publication: PASS
+## Private Git download plan: PASS
 
-Reviewer: GPT-6.1 Sol, high reasoning; read-only review of the latest files.
+Latest-state read-only review by GPT-6.1 Sol, high reasoning.
 
-- The index, 39 packages, 39 metadata files and SOURCES package names match.
-- Excluded libgcc/libstdcxx have no remaining index or file entries.
-- All 78 package/metadata copies and the public key match the WSL originals.
-- Fifteen GNU recipes, patches and Bash configuration files match real inputs.
-- Exact GNU source URLs/BLAKE3, patches, recipes, helper and license texts exist.
-- Cookbook helper matches official commit
-  `54ad8740ad420dd2dff27a9fc757201cc06fed57` byte-for-byte.
-- Bash's 1,569 original source files match the original archive with no missing
-  files or content differences; generated additional files were not compared.
-- Staged whitespace checks pass, with verbatim upstream patch/license text
-  exempted from whitespace normalization.
+- Repository independently confirmed private; Pages API returns 404.
+- Reuse the real external-curl path and existing GitHub CLI authentication.
+  No pkgutils changes, host application replacement or credential copies.
+- The raw GitHub Contents API supports the current package sizes.
+- Preserve packages/history and unrelated source/configuration work.
+- Verify adapter routing and failure propagation, anonymous denial, and
+  real empty-cache package downloads with signature-checked extraction.
 
-The execution-side signature and payload checks are cited, not independently
-repeated. This review allows publication; it does not certify live Pages or
-fresh HTTPS package consumption.
+Small-key authentication preflight is not full package acceptance.
 
-## Post-publication: PASS
+## Implementation and acceptance: PASS
 
-Latest-state read-only review closed PUB-1 through PUB-6 for package snapshot
-`ebfc0e8e3988bc7709cdded9586633699cfe6f35`.
+Fresh independent read-only review by GPT-6.1 Sol, high reasoning:
 
-- Published branch/tree match local; public assets and source/license files
-  did not expand after pre-publication approval. Private-key URL returns 404.
-- Pages is built, uses legacy main:/ publication and enforces HTTPS.
-  Independent GETs of the index/key passed; HTTP redirects to HTTPS.
-- Actual fresh base, bootloader and redoxfs downloads match published archives;
-  cache metadata, key and index identities match.
-- Extracted base (60 entries), bootloader (4 files), and redoxfs (5 files)
-  match original staged content and link targets with no differences.
-- The local Redox URL-only commit contains no other tasks' changes.
-- Signing/payload checks, tool compilation and original-cache preservation
-  use the execution-side records; downloads, extracted content, refs and live
-  HTTP behavior were independently checked.
+- GIT-1: private repository confirmed; Pages and anonymous Raw return 404.
+- GIT-2: exact URL/argument routing, gh failure propagation, unchanged
+  unrelated curl behavior; syntax, helper equality and permissions checked.
+- GIT-3: existing authentication reused through read-only mounts; no tokens
+  in the adapter, URLs or arguments. Credentials/private keys were not read.
+- GIT-4: source commit changes one URL only; original settings/mounts and
+  all package/license/build-input/key files remain unchanged.
+- GIT-5: independently matched three downloaded package hashes, metadata,
+  key and index; successful cook logs and 60/4/5 extracted files/links checked.
 
-A new HTTPS system boot remains NotRun; previous HTTP startup is
-UserReportedPass. This does not block the scoped HTTPS publishing and Cookbook
-download/extraction acceptance. A documentation-only update must still have
-its exact remote SHA and Pages deployment read back after pushing.
+Signature extraction, exit code and mock-test results use the executor's
+records; downloaded files and refusal of anonymous access were independently
+checked. Success uses the existing proxy and command-scoped HTTP/1.1.
+The failed HTTP/2 run and canceled slow direct run are not PASS evidence.
+Default direct large-package downloading and a new system boot remain NotRun.
+No implementation blockers. Publication/readback is tracked in DEPLOYMENT.md.
