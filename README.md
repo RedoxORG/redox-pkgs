@@ -27,3 +27,6 @@ snapshots: pushing component source does not automatically rebuild them.
 Packages retain their upstream licenses. See [sources](SOURCES.md),
 [build instructions and acceptance](DEPLOYMENT.md),
 [contract and ledger](FRESH-BUILD.md), and [independent review](REVIEW.md).
+
+Daily update checks use [the current report](daily-update.md) and
+[the per-package input ledger](binary-inputs.json).

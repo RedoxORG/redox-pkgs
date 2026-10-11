@@ -1,0 +1,1064 @@
+{
+  "schema_version": 1,
+  "policy": "BinaryUpdate-v1",
+  "target": "x86_64-unknown-redox",
+  "input_semantics": "Observed candidates and archive identity are not successful published input baselines. Null last_successful_input must be reconciled or rebuilt safely; never skipped as completed.",
+  "run": {
+    "heartbeat_time": "2026-10-10T22:26:49.84Z",
+    "checked_at": "2026-10-11T08:05:59.602576+08:00",
+    "repository_enumeration": {
+      "private_count": 11,
+      "source_count": 10,
+      "rest_page_counts": [
+        11,
+        0
+      ],
+      "graphql_has_next_page": false
+    },
+    "package_remote_sha": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+    "package_repository": "RedoxORG/redox-pkgs",
+    "package_branch": "main",
+    "shared_lock": "/tmp/redoxorg-private-packages-update.lock",
+    "updated_packages": [],
+    "successful_inputs_advanced": false,
+    "independent_review": "PASS: independent GPT-6.1 Sol/high read-only review; verified all 39 hashes, 2 ancestry proofs, candidate blobs and dependency pins; scope is receipt only",
+    "receipt_publication": "NotRun",
+    "source_recheck": "PASS: complete GraphQL re-enumeration through existing command-scoped proxy; all frozen source/package SHAs unchanged",
+    "prerequisites": {
+      "cookbook": "Present: integrated target/release/repo",
+      "existing_signer_files": "Present; contents unread; signing itself NotRun"
+    },
+    "ledger_verifier": "PASS: current remote inventory, artifact/metadata/index/key identities and source receipts; three tamper cases rejected",
+    "user_notification": "PASS: msg.exe zeng; input reconciliation required",
+    "applicable_issue_references": []
+  },
+  "repositories": {
+    "redox": {
+      "branch": "local/main",
+      "remote_sha": "b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6",
+      "excluded_from_source_trigger": false
+    },
+    "bootloader": {
+      "branch": "local/main",
+      "remote_sha": "70c5dff98aa750b31e0797686d92ba9ad331f29f",
+      "excluded_from_source_trigger": false
+    },
+    "uefi": {
+      "branch": "local/main",
+      "remote_sha": "49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
+      "excluded_from_source_trigger": false
+    },
+    "base": {
+      "branch": "local/main",
+      "remote_sha": "221afd8834a3d6f4f641d62f58aa2f39578a3aad",
+      "excluded_from_source_trigger": false
+    },
+    "relibc": {
+      "branch": "local/main",
+      "remote_sha": "b35b512a6a857892bb22906bfcf9e11b7feed37c",
+      "excluded_from_source_trigger": false
+    },
+    "installer": {
+      "branch": "local/main",
+      "remote_sha": "2d2416c151e880bd68799b5c6cf46d019d964675",
+      "excluded_from_source_trigger": false
+    },
+    "userutils": {
+      "branch": "local/main",
+      "remote_sha": "73aea8b3f858578ad3909e0661e9cf310e3b1d6d",
+      "excluded_from_source_trigger": false
+    },
+    "users": {
+      "branch": "local/main",
+      "remote_sha": "de8f9f9c87411871903b778519c8b264afe1df5b",
+      "excluded_from_source_trigger": false
+    },
+    "orbterm": {
+      "branch": "local/main",
+      "remote_sha": "ba1243cd6bc0230ca00aac5d550fe17e727e2b46",
+      "excluded_from_source_trigger": false
+    },
+    "object": {
+      "branch": "local/main",
+      "remote_sha": "7270e3f0d06e5ef4c2b80abc6166d31f4ddf4fea",
+      "excluded_from_source_trigger": false
+    },
+    "redox-pkgs": {
+      "branch": "main",
+      "remote_sha": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+      "excluded_from_source_trigger": true
+    }
+  },
+  "index_sha256": "e997e7f0e5d57c92e259d3c2fdec53051222e2635d79e118a3cdb03453689ba0",
+  "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
+  "dependency_checks": {
+    "uefi": {
+      "consumer": "bootloader",
+      "status": "SelectedRevisionMatchesRemote",
+      "selected_sha": "49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
+      "pin_locations": [
+        "RedoxORG/bootloader@70c5dff98aa750b31e0797686d92ba9ad331f29f:Cargo.toml:30-36",
+        "RedoxORG/bootloader@70c5dff98aa750b31e0797686d92ba9ad331f29f:Cargo.lock:245-260"
+      ]
+    },
+    "users": {
+      "consumer": "userutils",
+      "status": "PendingDependency",
+      "pin_locations": [
+        "RedoxORG/userutils@73aea8b3f858578ad3909e0661e9cf310e3b1d6d:Cargo.toml:58",
+        "RedoxORG/userutils@73aea8b3f858578ad3909e0661e9cf310e3b1d6d:Cargo.lock:264-268"
+      ],
+      "selected_identity": "crates.io redox_users 0.5.3; checksum 60dc65c0ff1a7ae1294b0c67b9f14baf70b644404010370171787bfac1038fc0",
+      "reason": "Consumer selects registry package, not the observed private users source revision. No source pin was changed."
+    },
+    "object": {
+      "consumer": "relibc and build tool",
+      "status": "PendingDependency",
+      "pin_locations": [
+        "RedoxORG/relibc@b35b512a6a857892bb22906bfcf9e11b7feed37c:Cargo.toml:120-122",
+        "RedoxORG/relibc@b35b512a6a857892bb22906bfcf9e11b7feed37c:Cargo.lock:339-341",
+        "RedoxORG/redox@b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6:Cargo.lock:684-687"
+      ],
+      "selected_identity": "relibc: official GitLab andypython/object branch new, SHA da781336d847df0deb897ed1162785f6c2057c56; build tool: crates.io object 0.38.1",
+      "reason": "Observed private object default-branch SHA is not either locked dependency. No independent object package was invented."
+    }
+  },
+  "packages": {
+    "base": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "97d07f77be67a276315bcc4ae49122573b51ea41adcaccbb9a1c564c41868013",
+        "metadata_sha256": "fb146ef7c2e7a85e61fb87280774df4bd3ff008f0e69f07ea1eb24e9e47b2411",
+        "metadata_source_identifier": "local_source",
+        "metadata_commit_identifier": "28a5c25c839f63ba8a52223f9ea607c34c902c60",
+        "archive_blake3_from_metadata": "7a019a629aac42e1416f63e0f557433bf11e00de03c4c1cbf8a5e3d4c0a4911e"
+      },
+      "published_source_receipt": {
+        "source_sha": "f9c236ec7da5c786897c9a4722f3007162c95309",
+        "evidence": "DEPLOYMENT.md at 5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "historical_verification": "Previously documented signed extraction; not repeated this run."
+      },
+      "candidate_input": {
+        "repository": "RedoxORG/base",
+        "branch": "local/main",
+        "source_sha": "221afd8834a3d6f4f641d62f58aa2f39578a3aad",
+        "recipe_repository": "RedoxORG/redox",
+        "recipe_commit": "b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6",
+        "recipe_path": "recipes/core/base/recipe.toml",
+        "recipe_git_blob": "5a8520bd762c84cbd8f65b501a76fea58741b314",
+        "source_manifest_git_blob": "455f68b6a23f833876fd58c28a9d9253afdb84ce",
+        "source_lock_git_blob": "2a32af92ae0c3e99c1a50b2c18d51199420cd871",
+        "effective_build_configuration": null,
+        "complete": false
+      },
+      "status": "RemoteBehindPackage",
+      "reason": "Remote build SHA is a strict ancestor of the source SHA bound to the accepted published archive. Keep the newer package; never rebuild a downgrade.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "bash": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "b2f564d717f3d5f56f44f1f31036e41b3caf7826547672838397e239a27a867a",
+        "metadata_sha256": "683c18d3ded0c80d2f974d3e47fdd96fb8b6e5da0ed2e69cdf9a9e2359c06e07",
+        "metadata_source_identifier": "local_source",
+        "metadata_commit_identifier": "0dbb4ea10f3f2cf10cddd3e61697923233f3b73b",
+        "archive_blake3_from_metadata": "d8577ae42a36b71c0bc67c73524dafe054350fe59304adf2c27ad8cc7e03895e"
+      },
+      "published_source_receipt": null,
+      "candidate_input": {
+        "recipe_repository": "RedoxORG/redox",
+        "recipe_commit": "b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6",
+        "recipe_path": "recipes/terminal/bash/recipe.toml",
+        "effective_build_configuration": null,
+        "complete": false,
+        "effective_file_comparison": {
+          "recipe.toml": {
+            "candidate_sha256": "57bff25178bb538ad7a062070c243156122313d8b9403a6447d6a9578c1e13d4",
+            "matches_published_recipe": false
+          },
+          "etc/bash.bashrc": {
+            "candidate_sha256": "1ea027192a75b2cb9223406aefa319b589cc0ecc8f86f65dc475c2ec02bcd21e",
+            "matches_published_recipe": true
+          },
+          "etc/skel/.bashrc": {
+            "candidate_sha256": "bd7df177cb4f97b2b0f713b71ce2f317c3d186fff429a56cf5f06d230d733211",
+            "matches_published_recipe": false
+          }
+        }
+      },
+      "status": "NeedsDecision",
+      "reason": "Current committed Redox Bash recipe removes SYS_BASHRC and changes prompt files versus the versioned corresponding published build-inputs. Replacement may remove private behavior; reconcile intended recipe first.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun",
+      "published_recipe_receipt": {
+        "recipe.toml": {
+          "path": "build-inputs/terminal/bash/recipe.toml",
+          "sha256": "4fb5c59be6da916c01473340e33857c0c1d0c8e03e638eda7c88ecdcec48b76c",
+          "evidence": "SOURCES.md: corresponding published Bash recipe/configuration and SYS_BASHRC option"
+        },
+        "etc/bash.bashrc": {
+          "path": "build-inputs/terminal/bash/etc/bash.bashrc",
+          "sha256": "1ea027192a75b2cb9223406aefa319b589cc0ecc8f86f65dc475c2ec02bcd21e",
+          "evidence": "SOURCES.md: corresponding published Bash recipe/configuration and SYS_BASHRC option"
+        },
+        "etc/skel/.bashrc": {
+          "path": "build-inputs/terminal/bash/etc/skel/.bashrc",
+          "sha256": "84b8a8cbeb229f8c31a3ae210d6a4c3de611c665aa96a1e7622fb13f4ae8a340",
+          "evidence": "SOURCES.md: corresponding published Bash recipe/configuration and SYS_BASHRC option"
+        }
+      }
+    },
+    "bootloader": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "11b29ca0112b3db21ebb97274887972512c945c42b1b6aebc3fa780a379a143a",
+        "metadata_sha256": "7341f856ac561b0b2b8debe0870d659c7602b03752270c85117cac449d91483f",
+        "metadata_source_identifier": "local_source",
+        "metadata_commit_identifier": "28a5c25c839f63ba8a52223f9ea607c34c902c60",
+        "archive_blake3_from_metadata": "4ebb4549d77a81781e5fa85bd8837435ddfddd5429c4bbec0c3e18c9a0bb7def"
+      },
+      "published_source_receipt": {
+        "source_sha": "fce56753ed991cf700f4ccf409a26e2b866a2db1",
+        "evidence": "DEPLOYMENT.md at 5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "historical_verification": "Previously documented signed extraction; not repeated this run."
+      },
+      "candidate_input": {
+        "repository": "RedoxORG/bootloader",
+        "branch": "local/main",
+        "source_sha": "70c5dff98aa750b31e0797686d92ba9ad331f29f",
+        "recipe_repository": "RedoxORG/redox",
+        "recipe_commit": "b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6",
+        "recipe_path": "recipes/core/bootloader/recipe.toml",
+        "recipe_git_blob": "1343a30d740b3ff2d7c0039144b7922c456521c5",
+        "source_manifest_git_blob": "1cce8810c291718cc406c17d906d889f80b1ee9a",
+        "source_lock_git_blob": "856b88e367c9732eaf32e23f44807ef0345a3703",
+        "effective_build_configuration": null,
+        "complete": false
+      },
+      "status": "RemoteBehindPackage",
+      "reason": "Remote build SHA is a strict ancestor of the source SHA bound to the accepted published archive. Keep the newer package; never rebuild a downgrade.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "bottom": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "c92d5dd04aad4bfcb868d0a16073ec6dbeab427501a515411c3b7b487cb4ba75",
+        "metadata_sha256": "858679772c0bac244bd5a7fab12fea89109fb8a74a64eee063f2a2b33a8b6798",
+        "metadata_source_identifier": "87b9106ffd27a512315096d831a03a1079e79323",
+        "metadata_commit_identifier": "055133e93988ead738791a87ade3cf765b6d25c1",
+        "archive_blake3_from_metadata": "d28c107642b49eddaf203c7e43955b1acade8954fe600d6834ef50415c9deef4"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "ca-certificates": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "8c982c4cdb43924a61fa2497424a05988e2bf8d12e2f0c0e93f1c3712f43f24c",
+        "metadata_sha256": "f5d2dae66ec4e1effc3e43b2d129e1c45a24d2836fe59beee008c34c0a73d46e",
+        "metadata_source_identifier": "4955c9001ad38451fe2b7b2bf5bf85b1b5aef390",
+        "metadata_commit_identifier": "697898b6ef3f93ace01195d38f9920054a392099",
+        "archive_blake3_from_metadata": "a6d0483466a9a5ad9b86f1fe262799d8c63e03d248383f5cc22174260d339eb8"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "coreutils": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "0b6981b4fb2a0479e75b8e0766035d57b1bbabc532d01f6d2cf0c1ca9990112a",
+        "metadata_sha256": "5adc9b9a8996a6ad2b6f18b85954084ff368fe07a43c66378e60a0669fa59936",
+        "metadata_source_identifier": "575a46d3b624ad9cd222c9e3250073e9269c3462",
+        "metadata_commit_identifier": "3908bb6de5e0df85b748189f3b43cb75f72cb9d9",
+        "archive_blake3_from_metadata": "478c22cb7c9c79fad28122e90817104ce6d26bdc7569a084b5e24caad85a3369"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "curl": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "1507b3a42284b0af0dc6d2465c2c96204e396296040d837dc0f3260b4c6fb5a8",
+        "metadata_sha256": "ee786d528c30224529cc753b9790c0380048b147d90e5ac5b91452367f5ba352",
+        "metadata_source_identifier": "a05f34973e6c4bb629d018f7cb51487be1c904d8",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "e0aeaeaa63ef0f0f162ed7bfcb2bf05a455dfef1f6c950fc6e49881ac0c52b60"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "diffutils": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "81f255e5ffc619d2a572080f9736376db68b971a1d8309108be5b89e064c1b56",
+        "metadata_sha256": "925eb7eee8f544fb987a2ffc144af7712fe4a7710a425ffe0750f5f70ac4872a",
+        "metadata_source_identifier": "086a95093c15edcdb826e75ff4de6c2213de6fbd2eb13538d07bdc3286dfb4a4",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "79632cda59bdbda0aa1f310e3cc630cc503275b3710526fc4a68c3b7cff22b39"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "expat": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "09102827f7b2ab3c4863ab08194bce3c9a5b85109345d3d9481b0e48e2e026a5",
+        "metadata_sha256": "3764d3056350b6c55f9dd02954a58cdc9deb2b081f704361b53763e83d4726d6",
+        "metadata_source_identifier": "ea89dd9a5a2e48d5e44fed38554b36a8f2e365a5091a99d08e30bfb1c15dda5e",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "895fc882ed25d2684f586994640bc44a195d48a02c5db23ee241b9b58965f1ad"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "extrautils": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "0870559cb4a00f1f0c472dead2ea60d1023947a844495577be0cc8af81b1c4cb",
+        "metadata_sha256": "b51a6aed803594120c575d02a2128d3086b0f97df3e5f23273160387ae43b241",
+        "metadata_source_identifier": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
+        "metadata_commit_identifier": "3908bb6de5e0df85b748189f3b43cb75f72cb9d9",
+        "archive_blake3_from_metadata": "026847ca428ec8b63a7218a7a997bcae5b5653a847e1e964eba49fa825eb831c"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "findutils": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "54d9d3594e0d8e2a326fcfb00e6841eb66c1a1555905b61ca8d75631755c1d57",
+        "metadata_sha256": "267384f7ae7303711dd443612ff2f77c9b2a17de021fb1a7094d76121d4dc496",
+        "metadata_source_identifier": "116c044399318bf1c77a0d97371b61999ee170b4",
+        "metadata_commit_identifier": "3908bb6de5e0df85b748189f3b43cb75f72cb9d9",
+        "archive_blake3_from_metadata": "8e72ad63861ad1b60771f8d1fd2be1efec7cd1fb2e1420b2860cc36cf8578b79"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "gettext": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "fb13b158f0b3c3e613ca85f135ec797542ee00747ded6006788705a090047ac8",
+        "metadata_sha256": "40200051af9da7f1f4f16c5bb48f9fea6f5be5028d72169d76b61643ccca3bea",
+        "metadata_source_identifier": "cb3f3a34da7ce1a92746df81f5b78c5d53841973a24eb80ab76537263d380ec0",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "6f153da359804a4e66e448095377b9cc9a427b2304f9a11ac7cdb7a537b197a5"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "git": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "39b091a425ee485c249bef90ee21b6838e4c5755f439be8f0f441fe77a14442a",
+        "metadata_sha256": "9277059258aef496fee6bd37432aad02c5c932c5240454a311ece5aa55f97a94",
+        "metadata_source_identifier": "bc78271bffd60c5b8b938d8c08fd74dc2de8d21fbaf8f8e0e3155436d9263f17",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "134086591c4b6737250be1e83e9ffe9b62d36595a765427215d29bb2c48a9e15"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "installer": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "5307f0e24bcfae68fb2ee94fb932e8eec789103114e0013a2dedfaeef3dc58e3",
+        "metadata_sha256": "30892125c072b5e9765a5ca19c931379b3930e36d4bce8f00a5d198e5f3398b1",
+        "metadata_source_identifier": "local_source",
+        "metadata_commit_identifier": "c4009d08ba2eab474e95f1acfec3633b6b8868a0",
+        "archive_blake3_from_metadata": "68e89ab0ff6dbea1076127486838ec86eef6686950c3a15e580404e7aaf23110"
+      },
+      "published_source_receipt": null,
+      "candidate_input": {
+        "repository": "RedoxORG/installer",
+        "branch": "local/main",
+        "source_sha": "2d2416c151e880bd68799b5c6cf46d019d964675",
+        "recipe_repository": "RedoxORG/redox",
+        "recipe_commit": "b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6",
+        "recipe_path": "recipes/core/installer/recipe.toml",
+        "recipe_git_blob": "0235382117eea7ccb7ffc8793b73ee35be56d358",
+        "source_manifest_git_blob": "e781122e51aefcf820040a5b81d39fe98004f403",
+        "source_lock_git_blob": "0374727a13e9f742e2e61ad3ac4d081e34f64dfa",
+        "effective_build_configuration": null,
+        "complete": false
+      },
+      "status": "NeedsDecision",
+      "reason": "Published source/recipe/configuration/dependency provenance is incomplete; replacing a local_source package with the older remote build tree may remove private changes.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "ion": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "0d0d5c5f085becf6faa3b8c82782f5c94737fc5c8793ecfa44ed820e0fca5c3e",
+        "metadata_sha256": "641f429ade52dd5089d965bd6bc102b45937f11552b03d2ff26512e03bc2aa02",
+        "metadata_source_identifier": "e9b3ca48b7ab6444498d5c3aa902d471ce29f759",
+        "metadata_commit_identifier": "c2c4f032b0fcc0715c91201e9bc175a3485004b0",
+        "archive_blake3_from_metadata": "cf6437e3535055a71e472de1b7722e1b2be7e0f4d0db54d23dfd0c650b145328"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "kernel": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "25a7a30332c95c1b592866c0a756b65e5dabc20554de5141151b51d7baa28321",
+        "metadata_sha256": "8a3acde201279c4022ee2ba188a1a4bdc4c5fb6daef42f2b80fba38018d8e8c2",
+        "metadata_source_identifier": "d4ffe6dbfe907053a125ee946f7212fb23dcb905",
+        "metadata_commit_identifier": "ec2ec281d8bb1b698e3b38a909338365e63a119a",
+        "archive_blake3_from_metadata": "7ce0aa163da91f1851dcf269fd8ce8b35e4ffa56f89c4f4254845bb375690fa9"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "kibi": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "f3c6ef1d25bad0c62eae7c0794bbc138698c97d8bc2bf644bc7e7c911c9e25f2",
+        "metadata_sha256": "0bf626faa0b6497668ac652b31e6f207d052a4fd46a411245cffa103f1501b83",
+        "metadata_source_identifier": "805819d57228cf4f2b64a7313f6d473348a4a844",
+        "metadata_commit_identifier": "cd89779260bdb276820babf626f9348be47cb01a",
+        "archive_blake3_from_metadata": "b97a99e42e9358bab60c7fdac076955ab9686f98bbe46bfaaefabc126f059fda"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "libiconv": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "bbe31550d25c99f6c391d10403d0bf2297ea3633604d7bdcfddbce5a7cc2e4b4",
+        "metadata_sha256": "74e34b4c110e7ce451166bddd7f0628e6d49cd67b5c744ba8f10fca757740c2b",
+        "metadata_source_identifier": "820b3b9fd3e2181bfb95475f01e9a3451e6d751e4f8c98ebcdcca1d8aa720f7f",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "176cc6b00cf25cf121bb1af7d460dfbcd95e0b92b32d6b397f2dc3529448b61b"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "libonig": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "98d1c47e5236ec327d064d887474bcb28b7df835378e97d0b5a64e5f068ca136",
+        "metadata_sha256": "0c018dbc113486a1cd4f3031236ce4f490e857668e83a50f3172756693eb8dfa",
+        "metadata_source_identifier": "f95747b462de672b6f8dbdeb478245ddf061ca53",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "40a92bad4d252fed80ffc5a906e3e409140febfde4d524338b3d00dca2971ee7"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "ncursesw": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "34de3576dd691f6c28a6bd3da126c347b00e9f20b7049f157c81dd59d26eba01",
+        "metadata_sha256": "adb6af0494534b38a30576474067c050f4556c701c996a85932d33760b8541cf",
+        "metadata_source_identifier": "fbec55697a01f99b9cc3f25be55e73ae7091f4c53e5d81a1ea15734c4e5b7238",
+        "metadata_commit_identifier": "c4009d08ba2eab474e95f1acfec3633b6b8868a0",
+        "archive_blake3_from_metadata": "22ad2f2f743b0e9cacc7a6d44d9f3b2e5de42e840d4d9d319f950157a09abeb2"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "netdb": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "dfb92de8a5e3063d334de784fd41a91f6b61cb543a5c06d77f3589250889626d",
+        "metadata_sha256": "107f5c55ba55ec319007b29df33bdec647938ddae606a32a9f88428eb586c4b4",
+        "metadata_source_identifier": "2c1560629852f10c8cc3dde3d254f7c753d7557d",
+        "metadata_commit_identifier": "3908bb6de5e0df85b748189f3b43cb75f72cb9d9",
+        "archive_blake3_from_metadata": "da059c7fe2ce8824015aadd22fca224b6f4779b927d230bebb9a384d48ea925d"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "netutils": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "79eefaa10f1163ef903e6fe73cc0e9bbe49175ef678baf44e30021c7695ad055",
+        "metadata_sha256": "de57b95cf0485b5602a188fd00c49a601759e5eae0e6c441382e571981a94874",
+        "metadata_source_identifier": "4900bdc333e291abc61ac8790908a295ec92cd0b",
+        "metadata_commit_identifier": "c2959b432eca3dc975bad7580c768c399c8ae4ab",
+        "archive_blake3_from_metadata": "50e1067314e75a09dc15522219a591c326af7ce5f6ffa7a1d1d423718093ab8d"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "nghttp2": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "4b2f3ffba3994029dd196f1cfe596f2e3e11965392de1718983e3562b5176c00",
+        "metadata_sha256": "7ba2cb4654881b016726983874542f5b67249643783bbc69837e5a15b33d9bd2",
+        "metadata_source_identifier": "1bbc08de4816769d800c42f501a00c1ba3f5efa1b76e1f65d2e5bdf3aa30354d",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "92d7c150a9c64703edd51ee2af2d5d99eb06cc59fd28ff75f4d02263b3b53079"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "openssl3": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "5703996246582b525102c783711c92ac1f684ade75ca7b5328aa09f92de27c08",
+        "metadata_sha256": "6f7281cc4fc3662cdce2008e081ce8051318a95c7d64e473b5c7483a93bdf881",
+        "metadata_source_identifier": "e1622a4587c71c278355bf38ff5a619918bd51e3cd37214d53dd5345b187fc10",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "dc93bbc79fa24ded19eec942db9263f58ef9933a126a845355989e4f8531e828"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "orbdata": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "5867672d83f0728608b370e645ab2620a55ac73fd7b25355815b26a0fa4e1f57",
+        "metadata_sha256": "5171d679702ec09f0eeaf65b22462e3e2d82d58b5d163290cbb5fa442b5988fd",
+        "metadata_source_identifier": "58d1140176430f222ac0749c8b83349f2c4da916",
+        "metadata_commit_identifier": "004566fa674023c5fc2c682844c2f15b8b9755ec",
+        "archive_blake3_from_metadata": "95422a5326649ca1cac1d93e650a3d2fa330eb9d2cf662c8129ed4bd24b5aa5a"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "orbital": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "d6d404f3094b8a55233b17ba7117d1af2b8dd230c11af29a7a50934921da373b",
+        "metadata_sha256": "9c515abb9cbcb62165f0f256b56c13d18f58ab8953fb068db6ba6f4e86d36822",
+        "metadata_source_identifier": "a6132b1c2add31def08b4b537271492c17e3e343",
+        "metadata_commit_identifier": "004566fa674023c5fc2c682844c2f15b8b9755ec",
+        "archive_blake3_from_metadata": "6c6238637d3691a7bdaa3319f8966d07edbd3a4c570f29ffa5e91ba9faaced79"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "orbterm": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "13efe65826f30a2e62a03088a03ead29b8cd055e9e1b7f555c31a89a20ea06b1",
+        "metadata_sha256": "ee824e9bba4714d4bea47805741b8d05bb524f12bcef655763050ce8d0b59a8a",
+        "metadata_source_identifier": "local_source",
+        "metadata_commit_identifier": "c4009d08ba2eab474e95f1acfec3633b6b8868a0",
+        "archive_blake3_from_metadata": "96ae4e0ca8849cded4e41e5f115bead12c337dc1b64528dc058df0225c2f36cd"
+      },
+      "published_source_receipt": null,
+      "candidate_input": {
+        "repository": "RedoxORG/orbterm",
+        "branch": "local/main",
+        "source_sha": "ba1243cd6bc0230ca00aac5d550fe17e727e2b46",
+        "recipe_repository": "RedoxORG/redox",
+        "recipe_commit": "b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6",
+        "recipe_path": "recipes/gui/orbterm/recipe.toml",
+        "recipe_git_blob": "76b2055a0d7df516089a619a792cecf2a9476bbc",
+        "source_manifest_git_blob": "6d3c794d0729100137b2bd0ad092a8c58a9553ad",
+        "source_lock_git_blob": "e5ce0d98a27ee38e7d739d2d1e28735f5cc67c07",
+        "effective_build_configuration": null,
+        "complete": false
+      },
+      "status": "NeedsDecision",
+      "reason": "Published source/recipe/configuration/dependency provenance is incomplete; replacing a local_source package with the older remote build tree may remove private changes.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "pkgutils": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "ca00f9dd9e75e2d19ac81b46ac1e8be8c62fe711f783fbd58ee7750154cb6850",
+        "metadata_sha256": "0e27ea0f66a52fd87c8ac6e619ebdc75a3f88e804be659784ec4f675d39acfe8",
+        "metadata_source_identifier": "fe21bfd95d869cafd356bcdec4d1a81739ede5ee",
+        "metadata_commit_identifier": "b3f371c1bac6bb4c88ef4eb4b30139d2e007580f",
+        "archive_blake3_from_metadata": "d7b8dc8748a0690672f2f2f0e8db3ae6fad2498169527be8f00f4dd35065280d"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "readline": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "5b7c1e8fc0456f93b7cf1b7abb1d6b46322cbc3e39bcb7ae69be2e09c092a8e7",
+        "metadata_sha256": "956f0180d741f9930a5ed24bffdd6a73e03cf8b7df98d775d0a782653d73a46d",
+        "metadata_source_identifier": "7109f094062bda387a0c16b4875375b96e36437bebbbd8d8f91bb27ba01d687f",
+        "metadata_commit_identifier": "c4009d08ba2eab474e95f1acfec3633b6b8868a0",
+        "archive_blake3_from_metadata": "280f0fcf8fdf3cd41c59d3993bf7f32da8427d9c4f68ffcae28748bdf63889ec"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "redoxfs": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "5b78c65129630b741000c358a23963947668ab4816e15158ca5087edb76db328",
+        "metadata_sha256": "db8c349668ac36982261214db5903ccb5cd54360ec04d7bac068e2e3367a8624",
+        "metadata_source_identifier": "b87b0976ee122036b2ec040159b890e1e06ca139",
+        "metadata_commit_identifier": "54ad8740ad420dd2dff27a9fc757201cc06fed57",
+        "archive_blake3_from_metadata": "559c29ac68fd12b6b3fc1b03f4a1c9dc374f9c998bfed4665888451bafa8ec06"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "relibc": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "5c67560f455f76507c77f4b122dc51d4624fcaa6c02119f4037148d2ddad03ac",
+        "metadata_sha256": "bbb749fd030816eb22922d22d461ed110aadb9faacc556d5425163f2d90bd731",
+        "metadata_source_identifier": "local_source",
+        "metadata_commit_identifier": "1657376c429c138b205186fed02cdd8bfa77d482",
+        "archive_blake3_from_metadata": "09303c6029f78b83e7f63a98cc63f699a15ae17e55518a04c43408b97e8b9720"
+      },
+      "published_source_receipt": null,
+      "candidate_input": {
+        "repository": "RedoxORG/relibc",
+        "branch": "local/main",
+        "source_sha": "b35b512a6a857892bb22906bfcf9e11b7feed37c",
+        "recipe_repository": "RedoxORG/redox",
+        "recipe_commit": "b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6",
+        "recipe_path": "recipes/core/relibc/recipe.toml",
+        "recipe_git_blob": "8b164bb83749b5acd38dac12cf552b116dcec977",
+        "source_manifest_git_blob": "5729cc1b708a78966ec21449f23b1e7cad523b8c",
+        "source_lock_git_blob": "935d33bed99fedafa21829e1ceb1d2e44b1c26e4",
+        "effective_build_configuration": null,
+        "complete": false
+      },
+      "status": "NeedsDecision",
+      "reason": "Published source/recipe/configuration/dependency provenance is incomplete; replacing a local_source package with the older remote build tree may remove private changes.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "terminfo": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "1c43ab436c12d8443b7a44290bc478c066b97627453cc90f2f916d4fdefc6e73",
+        "metadata_sha256": "7eebefc9a6bcd17cfdd40f529c77aa930c8c1b223cb5ec1f3ed945361705dfc7",
+        "metadata_source_identifier": "dc5712b13b4a4058ffca1f077167994b1764828a",
+        "metadata_commit_identifier": "c4009d08ba2eab474e95f1acfec3633b6b8868a0",
+        "archive_blake3_from_metadata": "c4281a883bb587a80d08b04b13ab9af0851202995e8bec3febeef70a79fec48b"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "userutils": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "76bfd60d1979c15aa686831e5e0323655a49c1e6619d166f918ea5c043c4f32a",
+        "metadata_sha256": "280603dcaa1c3d57da0351f7e9c7793da3d368f1392550095d2e6a5fc8b54ab8",
+        "metadata_source_identifier": "local_source",
+        "metadata_commit_identifier": "1657376c429c138b205186fed02cdd8bfa77d482",
+        "archive_blake3_from_metadata": "f5d435cab7696b669ce79dbdb454685cdda9e913be5c3cc63b2c0b6e51cc63ed"
+      },
+      "published_source_receipt": null,
+      "candidate_input": {
+        "repository": "RedoxORG/userutils",
+        "branch": "local/main",
+        "source_sha": "73aea8b3f858578ad3909e0661e9cf310e3b1d6d",
+        "recipe_repository": "RedoxORG/redox",
+        "recipe_commit": "b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6",
+        "recipe_path": "recipes/core/userutils/recipe.toml",
+        "recipe_git_blob": "666bfeb10761305d5fb1f7d9f198484c54386cd2",
+        "source_manifest_git_blob": "5132400731754a613740378b5560dcd4849b112f",
+        "source_lock_git_blob": "af94efb76ffdcb69dd9906e5844beec136c38c6a",
+        "effective_build_configuration": null,
+        "complete": false
+      },
+      "status": "NeedsDecision",
+      "reason": "Published source/recipe/configuration/dependency provenance is incomplete; replacing a local_source package with the older remote build tree may remove private changes.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "uutils": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "0394cdefae41b435a4065d306d4c4eccb269fcd30daf7ad46cba31562a6cfd9b",
+        "metadata_sha256": "37d62debca2d7e83754daa31b7404392b2798cb883e395fdea417a5beb2858bf",
+        "metadata_source_identifier": "bf65901e1ed82963436844c2cf8e796ba9158c65",
+        "metadata_commit_identifier": "54ad8740ad420dd2dff27a9fc757201cc06fed57",
+        "archive_blake3_from_metadata": "0aa00652580edf03d6b62138b487efd43c89783d1fba2a50a2b9cd0e1c3a4c4d"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "uutils-procps": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "1c8427bd88a373e15ea213612c63183ade6135c2e81ed41ba9078460a7e5bd36",
+        "metadata_sha256": "4b47597e92e03baa2ccd4e7dd3145465b6c03eb596168311fea9e7d72ccf22fb",
+        "metadata_source_identifier": "ee98c0a78fe2abe72589f80eb05b455fa228e757",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "2cb75021cee5de22f764aefe83c5dbe676bd5ed5f1b47ef25cd3338bac13403a"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "xz": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "05979b942cacd334b8f8afba57206cac30ffd15ba8311411014b01fc036ad2df",
+        "metadata_sha256": "334c6831f67af5abe31bece39bb536c9ea50238bdad9647adc25af8a8e5720db",
+        "metadata_source_identifier": "edc6350542e8cb7188a878135e5b9bd592d687e5b47451ca1c89d51cc4bc6b53",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "a6ee99355c480baecf4f4122c0ff2d97726295729bed41541e5a799f9ad56e55"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "zlib": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "cc29585a59f54c02915c4150aa948cbd2bb348d81c4f02014265fd4726dc6b34",
+        "metadata_sha256": "22f06f962ba870beb46821197c6d148b176facc76a702ea3efb476d19970e0b7",
+        "metadata_source_identifier": "ec1abc6f672a7a6ee6f49ba544cc9529f73121b478310473be44fee22a140ebf",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "b8c446631f15e306d3f20e0006bdc9059a2c8042b15084a7fe62aab6ddaf52e1"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "zsh": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "13132ca08adcdf0c475b56a828e60d332f3137e52a4deb068c117752ff525734",
+        "metadata_sha256": "769770ee72bb892b70698b37376885b9b6018a4cf748d382ead131047fb9bfd0",
+        "metadata_source_identifier": "a15b94fae03e87aba6fc6a27df3c98e610b85b0c7c0fc90248f07fdcb8816860",
+        "metadata_commit_identifier": "86b5c00bb00e8ddef694e272091e47705a66dd02",
+        "archive_blake3_from_metadata": "c5f5600030b563b409469e3b59f5af0a675cdd275a7c6d4473f12379a6672af9"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    },
+    "zstd": {
+      "baseline_status": "BaselineMissing",
+      "last_successful_input": null,
+      "published_artifact": {
+        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
+        "archive_sha256": "7bddd7a6b89e72948bbccb107c20a118b431d2451ae94cacf657f1bf54064c4e",
+        "metadata_sha256": "43130ac3a2903779440937e09731f1c9f2b8f7feb08b0670048acd611adf949a",
+        "metadata_source_identifier": "730dca31244abd219e995f03a55d95b2cfb4b3e16cda055a79fa6f30a4f0e1db",
+        "metadata_commit_identifier": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+        "archive_blake3_from_metadata": "203e3ebcf45794ee530842ccdcff32c309b45af515dc28094da096bdac2c5b5d"
+      },
+      "published_source_receipt": null,
+      "candidate_input": null,
+      "status": "OutsideDailySourceChangeScope",
+      "reason": "No mapped private source input established; official refresh belongs to monthly task. Full historical input baseline is missing.",
+      "action": "RetainExistingPackage",
+      "build": "NotRun",
+      "signature_payload_verification": "NotRun",
+      "runtime": "NotRun",
+      "binary_publication": "NotRun"
+    }
+  }
+}
