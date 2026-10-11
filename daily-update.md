@@ -34,8 +34,11 @@ New builds, signature/payload tests, runtime tests and binary publication:
 **NotRun**. No successful input baseline was advanced. Null baselines remain
 pending on subsequent runs, even if the observed SHA is unchanged.
 
-Independent read-only review: PASS (GPT-6.1 Sol/high); receipt publication is
-NotRun until actual remote readback. The ledger verifier passed, including
+Independent read-only review: PASS (GPT-6.1 Sol/high). Reconciliation receipt
+`fe632f9aa15dc317344a2b720812461f0ea9877a` was fast-forwarded to private main;
+its exact remote SHA and all three file hashes were read back successfully.
+This acknowledgment records that published receipt; binary publication remains
+NotRun. The ledger verifier passed, including
 three tamper rejection checks. Authenticated API
 re-enumeration through the existing command-scoped proxy succeeded; all frozen
 SHAs remained unchanged. Earlier TLS timeouts are not broken credentials.

@@ -22,7 +22,7 @@
     "updated_packages": [],
     "successful_inputs_advanced": false,
     "independent_review": "PASS: independent GPT-6.1 Sol/high read-only review; verified all 39 hashes, 2 ancestry proofs, candidate blobs and dependency pins; scope is receipt only",
-    "receipt_publication": "NotRun",
+    "receipt_publication": "PASS: reconciliation commit fe632f9aa15dc317344a2b720812461f0ea9877a fast-forwarded to private main; exact remote SHA and all three file hashes read back",
     "source_recheck": "PASS: complete GraphQL re-enumeration through existing command-scoped proxy; all frozen source/package SHAs unchanged",
     "prerequisites": {
       "cookbook": "Present: integrated target/release/repo",
@@ -30,7 +30,15 @@
     },
     "ledger_verifier": "PASS: current remote inventory, artifact/metadata/index/key identities and source receipts; three tamper cases rejected",
     "user_notification": "PASS: msg.exe zeng; input reconciliation required",
-    "applicable_issue_references": []
+    "applicable_issue_references": [],
+    "receipt_readback": {
+      "commit": "fe632f9aa15dc317344a2b720812461f0ea9877a",
+      "file_sha256": {
+        "README.md": "d0234b2accad23320678e7520592a8d5eda3a336bac6e2085ed9a6b6c20b0a2a",
+        "binary-inputs.json": "c7f3c9cf79a397df3d2cd2d0a219356beb2cb70f00484b7abd3e024eefb20a42",
+        "daily-update.md": "79c0cf9a88dd72fe16a709e04f9162865dc6af62e315d4622e3f070b00f9c2c6"
+      }
+    }
   },
   "repositories": {
     "redox": {
