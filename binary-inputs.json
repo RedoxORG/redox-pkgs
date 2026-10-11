@@ -1068,5 +1068,123 @@
       "runtime": "NotRun",
       "binary_publication": "NotRun"
     }
+  },
+  "last_check": {
+    "heartbeat_time": "2026-10-11T21:52:00.667Z",
+    "checked_at": "2026-10-12T05:57:57.55785+08:00",
+    "cadence": "Monday 05:55 Asia/Singapore",
+    "package_anchor_commit": "9ad1b210ee310dcb71a760895640e6ac11972b48",
+    "repository_enumeration": {
+      "private_count": 12,
+      "source_count": 10,
+      "coordination_count": 1,
+      "rest_page_counts": [
+        12,
+        0
+      ],
+      "graphql_has_next_page": false
+    },
+    "repositories": {
+      "workspace": {
+        "branch": "main",
+        "remote_sha": "c5fb4af59438a835576d23f19e3e88c2dafd494a",
+        "role": "coordination"
+      },
+      "redox": {
+        "branch": "local/main",
+        "remote_sha": "01efa53d3023765b189bb8d7cfbbf98dc6d5e8f0",
+        "role": "source"
+      },
+      "bootloader": {
+        "branch": "local/main",
+        "remote_sha": "70c5dff98aa750b31e0797686d92ba9ad331f29f",
+        "role": "source"
+      },
+      "uefi": {
+        "branch": "local/main",
+        "remote_sha": "49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
+        "role": "source"
+      },
+      "base": {
+        "branch": "local/main",
+        "remote_sha": "221afd8834a3d6f4f641d62f58aa2f39578a3aad",
+        "role": "source"
+      },
+      "relibc": {
+        "branch": "local/main",
+        "remote_sha": "b35b512a6a857892bb22906bfcf9e11b7feed37c",
+        "role": "source"
+      },
+      "installer": {
+        "branch": "local/main",
+        "remote_sha": "2d2416c151e880bd68799b5c6cf46d019d964675",
+        "role": "source"
+      },
+      "userutils": {
+        "branch": "local/main",
+        "remote_sha": "73aea8b3f858578ad3909e0661e9cf310e3b1d6d",
+        "role": "source"
+      },
+      "users": {
+        "branch": "local/main",
+        "remote_sha": "de8f9f9c87411871903b778519c8b264afe1df5b",
+        "role": "source"
+      },
+      "orbterm": {
+        "branch": "local/main",
+        "remote_sha": "ba1243cd6bc0230ca00aac5d550fe17e727e2b46",
+        "role": "source"
+      },
+      "object": {
+        "branch": "local/main",
+        "remote_sha": "7270e3f0d06e5ef4c2b80abc6166d31f4ddf4fea",
+        "role": "source"
+      },
+      "redox-pkgs": {
+        "branch": "main",
+        "remote_sha": "9ad1b210ee310dcb71a760895640e6ac11972b48",
+        "role": "package-publication"
+      }
+    },
+    "source_assessment": {
+      "unchanged_component_revisions": 9,
+      "redox": {
+        "previous_observed_sha": "b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6",
+        "current_sha": "01efa53d3023765b189bb8d7cfbbf98dc6d5e8f0",
+        "changed_paths": [
+          "README.md",
+          "scripts/curl-github.sh"
+        ],
+        "package_payload_inputs": "NoChange",
+        "recipe_config_lock_and_build_paths": "Identical",
+        "transport_change": "Authentication mechanism and its documentation; no credential value retained"
+      },
+      "workspace": {
+        "status": "NoPackageMapping",
+        "description": "Existing new private coordination repository; no independent package and no clone created"
+      }
+    },
+    "package_identity_verification": "PASS: all 39 archive/metadata SHA-256 hashes, index identities and public key match retained receipt",
+    "ancestry_verification": "PASS: base and bootloader remain strictly newer than remote build inputs",
+    "candidate_recipe_verification": "PASS: all six component recipe blobs unchanged at current frozen redox SHA",
+    "pending_package_counts": {
+      "RemoteBehindPackage": 2,
+      "NeedsDecision": 5,
+      "OutsideDailySourceChangeScope": 32
+    },
+    "pending_dependencies": [
+      "users",
+      "object"
+    ],
+    "updated_packages": [],
+    "successful_inputs_advanced": false,
+    "build": "NotRun",
+    "signature_payload_verification": "NotRun",
+    "runtime": "NotRun",
+    "binary_publication": "NotRun",
+    "independent_review": "PASS: independent GPT-6.1 Sol/high read-only review of latest three receipt files; all retained hashes, source ancestry and recipe blobs verified",
+    "applicable_issue_references": [],
+    "prior_user_notification": "Existing input decisions were notified on 2026-10-11; no new input decision detected",
+    "prepublication_ref_recheck": "PASS: all 12 repository branches and SHAs unchanged; complete GraphQL pagination end confirmed"
   }
 }
