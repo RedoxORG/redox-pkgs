@@ -11026,17 +11026,93 @@
       }
     },
     "zsh": {
-      "baseline_status": "BaselineMissing",
-      "last_successful_input": null,
-      "published_artifact": {
-        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58",
-        "archive_sha256": "13132ca08adcdf0c475b56a828e60d332f3137e52a4deb068c117752ff525734",
-        "metadata_sha256": "769770ee72bb892b70698b37376885b9b6018a4cf748d382ead131047fb9bfd0",
-        "metadata_source_identifier": "a15b94fae03e87aba6fc6a27df3c98e610b85b0c7c0fc90248f07fdcb8816860",
-        "metadata_commit_identifier": "86b5c00bb00e8ddef694e272091e47705a66dd02",
-        "archive_blake3_from_metadata": "c5f5600030b563b409469e3b59f5af0a675cdd275a7c6d4473f12379a6672af9"
+      "baseline_status": "Known",
+      "last_successful_input": {
+        "complete": true,
+        "common_input": "build_input_sets:d09dc57e1d0f5665384e64c1bb6726f9ffdb100b49fa7ef72fd99b4d3abcae4c",
+        "repository": "RedoxORG/zsh",
+        "branch": "local/main",
+        "source_sha": "fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250",
+        "source_tree": "a0981a3c5d10d7a313e80e34c7e47a4b83656bcf",
+        "recipe_repository": "RedoxORG/redox",
+        "recipe_commit": "5300847f01479312b6d932735ee4ca49aefc9e14",
+        "recipe_path": "recipes/wip/shells/zsh/recipe.toml",
+        "recipe_git_blob": "f8a67cd57dd5338112391b6e8a654fcf0963c7d8",
+        "recipe_files": {
+          "recipes/wip/shells/zsh/recipe.toml": "f8a67cd57dd5338112391b6e8a654fcf0963c7d8",
+          "recipes/wip/shells/zsh/01_redox.patch": "c1f230a9e57c1c7db9a5b2a4b8cd1e642850deba",
+          "src/cook/script.rs": "d3665a5d2362a1b32a8899b0d9d650f1f67e5db0"
+        },
+        "build_binding": {
+          "fsrule": "local",
+          "raw_source": "committed Git archive",
+          "prepare": "original committed patches + SHARED_PRESCRIPT/source.script",
+          "private_source": {
+            "repository": "zsh",
+            "sha": "fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250",
+            "tree": "a0981a3c5d10d7a313e80e34c7e47a4b83656bcf"
+          },
+          "initial_prepared_tree_sha256": "cd4d6a3e997310ee0c653fca2ea27a9289f5c45d60f11ed809d74f2e8e008541",
+          "compiled_prepared_tree_sha256": "0ddcbd2b80f38d84cbc2ab9522a14a9bc4f27d78581f35d1acc8ff6a0301037c",
+          "normal_generated_output_paths": [
+            "Doc/Zsh/manmodmenu.yo",
+            "Doc/Zsh/modlist.yo",
+            "Doc/Zsh/modmenu.yo",
+            "Doc/version.yo",
+            "Doc/zsh.texi",
+            "META-FAQ",
+            "autom4te.cache/output.2",
+            "autom4te.cache/requests",
+            "autom4te.cache/traces.2",
+            "stamp-h.in"
+          ],
+          "normal_generated_diff_sha256": "8ccab01a363d9afc92aecfd7539b6cff96334a012f36ca5a3d0d757f49fc9cc0",
+          "source_script_receipt_sha256": "68dda3c75b1210a3d64b2520317be60573495a7ef55d5c1eb27a9f96b10d6d09"
+        },
+        "dependencies": {
+          "ncursesw": {
+            "build_archive_sha256": "34de3576dd691f6c28a6bd3da126c347b00e9f20b7049f157c81dd59d26eba01",
+            "build_metadata_sha256": "4de85020f255d9a8d392f6aa8b84946b48dceef0d3ce799eb60bb9ad5252d028",
+            "runtime_archive_sha256": "34de3576dd691f6c28a6bd3da126c347b00e9f20b7049f157c81dd59d26eba01",
+            "runtime_metadata_sha256": "adb6af0494534b38a30576474067c050f4556c701c996a85932d33760b8541cf"
+          },
+          "relibc": {
+            "sysroot_package_sha256": "95cf656d9f4bb2582e067eed8300cafa2f63e6bc9c3668096990ae34dc498f46",
+            "source_sha": "6348725d01525823f1edd59a0459f66b12e3e2b0"
+          }
+        },
+        "actual_build_receipt_sha256": "3fccfa9b8053f01e11c6dae79252ea1d746bf1e3af4c6047fc7897745d9c183f",
+        "source_version": "5.9.999.3-test",
+        "effective_input_sha256": "d3a8c350d7ca729723e5278f1f53ccf1d1558049c5f9ad716e3b857fe313fcf4",
+        "published_artifact_commit": "2c8212a39df7091071c89126949d7d4b753b7392",
+        "published_at": "2026-10-12T17:34:50.889610+00:00",
+        "validation": {
+          "build": "PASS",
+          "signature_payload": "PASS",
+          "index": "PASS",
+          "installed_1172_files": "PASS",
+          "runtime": "PASS: actual Redox zsh version, compinit, _git/_7zip and background wait",
+          "remote_bytes": "PASS"
+        }
       },
-      "published_source_receipt": null,
+      "published_artifact": {
+        "repository_commit": "2c8212a39df7091071c89126949d7d4b753b7392",
+        "archive_sha256": "cd10959f2857c88f0a8aff321998b3c52f94e3d517477dc629185cc628941a5c",
+        "archive_blake3": "1816fbdc73b0e4d4865abe619a4346bec6b3ef0b673239c3c8933c6e5858e9f6",
+        "metadata_sha256": "6cdf903803a44784495797155182d04029ddbb824c30f3a1d359141ab290ceda",
+        "payload_sha256": "f3e6a16761d78ab53eeaf4850b176e5aa53c2d12e0861e9947646823aaffc49c",
+        "metadata_source_identifier": "local_source",
+        "metadata_commit_identifier": "5300847f01479312b6d932735ee4ca49aefc9e14",
+        "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
+        "readback": "PASS"
+      },
+      "published_source_receipt": {
+        "source_sha": "fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250",
+        "source_tree": "a0981a3c5d10d7a313e80e34c7e47a4b83656bcf",
+        "recipe_commit": "5300847f01479312b6d932735ee4ca49aefc9e14",
+        "verification": "PASS: normal source compilation, signed extraction matches fresh stage, installed files and actual runtime, immutable remote bytes",
+        "artifact_commit": "2c8212a39df7091071c89126949d7d4b753b7392"
+      },
       "candidate_input": {
         "complete": true,
         "common_input": "build_input_sets:d09dc57e1d0f5665384e64c1bb6726f9ffdb100b49fa7ef72fd99b4d3abcae4c",
@@ -11095,32 +11171,32 @@
         "source_version": "5.9.999.3-test",
         "effective_input_sha256": "d3a8c350d7ca729723e5278f1f53ccf1d1558049c5f9ad716e3b857fe313fcf4"
       },
-      "status": "CandidateVerified",
-      "reason": "Frozen private zsh source adopted via controlled original recipe preparation/local build; fresh normal Make compile and signature/payload PASS. Runtime and remote publication pending.",
-      "action": "ReplaceWithVerifiedCandidate",
+      "status": "UpToDate",
+      "reason": "Frozen private source adopted through controlled original prepare/local rule, fresh normal compilation and actual runtime; immutable remote archive bytes verified before baseline promotion.",
+      "action": "PublishedVerifiedPrivateCandidate",
       "build": "PASS",
       "signature_payload_verification": "PASS",
       "runtime": "PASS: actual Redox zsh version, compinit, _git/_7zip and background wait",
-      "binary_publication": "NotRun",
+      "binary_publication": "PASS",
       "freshness": {
-        "published_effective_input_id": null,
-        "candidate_effective_input_id": null,
+        "published_effective_input_id": "d3a8c350d7ca729723e5278f1f53ccf1d1558049c5f9ad716e3b857fe313fcf4",
+        "candidate_effective_input_id": "d3a8c350d7ca729723e5278f1f53ccf1d1558049c5f9ad716e3b857fe313fcf4",
         "earliest_unpublished_change_at": null,
         "change_time_evidence": null,
         "deadline_at": null,
-        "published_at": null,
-        "freshness_status": "FreshnessUnknown",
-        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+        "published_at": "2026-10-12T17:34:50.889610+00:00",
+        "freshness_status": "PublishedFrozenInput",
+        "reason": "Run-start frozen private zsh source published; later pushes belong to the next scheduled run."
       },
       "last_artifact_verification": {
-        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
-        "date": "2026-10-12",
-        "archive_sha256": "13132ca08adcdf0c475b56a828e60d332f3137e52a4deb068c117752ff525734",
-        "metadata_sha256": "769770ee72bb892b70698b37376885b9b6018a4cf748d382ead131047fb9bfd0",
+        "package_commit": "2c8212a39df7091071c89126949d7d4b753b7392",
+        "date": "2026-10-13",
+        "archive_sha256": "cd10959f2857c88f0a8aff321998b3c52f94e3d517477dc629185cc628941a5c",
+        "metadata_sha256": "6cdf903803a44784495797155182d04029ddbb824c30f3a1d359141ab290ceda",
         "signature_extraction": "PASS",
         "metadata_signed_header_index": "PASS",
-        "consumer_archive_bound": false,
-        "receipt": "consumer-verification.json"
+        "consumer_archive_bound": true,
+        "receipt": "binary-inputs.json:zsh_continuation"
       },
       "candidate_artifact": {
         "archive_sha256": "cd10959f2857c88f0a8aff321998b3c52f94e3d517477dc629185cc628941a5c",
@@ -11656,9 +11732,9 @@
     "signature_payload": "PASS",
     "image": "PASS: normal server config plus zsh",
     "runtime": "PASS: actual Redox zsh version, compinit, _git/_7zip and background wait",
-    "publication": "NotRun",
+    "publication": "PASS",
     "independent_review": "PASS: independent raw/prepare/actual compile/archive/metadata/index/installed runtime and outgoing file-scope review",
-    "successful_input_advanced": false,
+    "successful_input_advanced": true,
     "runtime_receipt_sha256": "7f8af648b4d4a4e1dd91d2d9c13c215eb9f73bcfee11bcf29a82f608cc706d85",
     "known_limitation": "Existing relibc getrusage(-1) not implemented informational logs; normal committed recipe already documents this limitation",
     "installed_content": {
@@ -11666,6 +11742,77 @@
       "file_count": 1172,
       "receipt_sha256": "f5178ff4340b42390480defc24e83e4853e6666772251dfafe48761c22259809"
     },
-    "independent_review_sha256": "f2f06d20fc3d4a98edffc2638303b7736b45bc0d0c20554111da9b72fdf1ba57"
+    "independent_review_sha256": "f2f06d20fc3d4a98edffc2638303b7736b45bc0d0c20554111da9b72fdf1ba57",
+    "artifact_commit": "2c8212a39df7091071c89126949d7d4b753b7392",
+    "remote_readback": {
+      "commit": "2c8212a39df7091071c89126949d7d4b753b7392",
+      "checked_at": "2026-10-12T17:34:50.889610+00:00",
+      "receipt_sha256": "cb790377e8ce0403d5d9b71789fdb0144fbb6371e8988ed6cc22d029ecbeb597",
+      "method": "GitHub immutable Git blob API; decoded bytes match committed object, main exact SHA checked before/after",
+      "files": {
+        "DEPLOYMENT.md": {
+          "git_blob": "69ef7bb2f2d6cd18f342781254922e7a97e7ac1e",
+          "size": 6354,
+          "sha256": "e6ecd14ec42dd5cd871be9d335316b51f070836ab9369e6175e147499f6e0ba4"
+        },
+        "SOURCES.md": {
+          "git_blob": "c7df790e829f9714bb0ec7f40c66425f206dff57",
+          "size": 8638,
+          "sha256": "63872e7d0904216d7f01eafbb9c11222cd199f1c407f8a79b34d89c7da2bdc82"
+        },
+        "binary-inputs.json": {
+          "git_blob": "f3aa9fc17c81dacb873f64a63728edd00bf4df34",
+          "size": 547956,
+          "sha256": "02d7a985fc29b66a4146da2e8792d4827a92303dec585d4a2c458dc8a01cf1af"
+        },
+        "build-inputs/wip/shells/zsh/01_redox.patch": {
+          "git_blob": "2fbcc0da38293a4b22488fd9b31edcd645273b2f",
+          "size": 1645,
+          "sha256": "b5759e476f0b609122cc59f9323115c3d4898d216becea968a9e84a1a8affa1b"
+        },
+        "build-inputs/wip/shells/zsh/recipe.toml": {
+          "git_blob": "e9a826ccd4d98eae8342ba628c85d797bfc3c486",
+          "size": 599,
+          "sha256": "c2d7b182b76b07e0c07d6ed6a76d5b1550050c192e22dd2026132dc84a2e39f9"
+        },
+        "build-inputs/wip/shells/zsh/source-binding.toml": {
+          "git_blob": "8b5a7ef63d687e0e535eaab40c4ee5e1c94593e0",
+          "size": 553,
+          "sha256": "87e0a273864ed489be15a16543fada2c5aaac5be1c9a3a9cc9ac5f1892442879"
+        },
+        "licenses/zsh.txt": {
+          "git_blob": "08fcf88ff7b46ae57d54f1b6bb60f6bbd3a1abd1",
+          "size": 1963,
+          "sha256": "d06fdf3ef9b1ec69d6b9e170b0a9516fbad3523261ff1668bde3bfea6e0ef5f5"
+        },
+        "weekly-update.md": {
+          "git_blob": "d962180bae067f911d8c563d14188ebef2f27c5b",
+          "size": 2143,
+          "sha256": "f1fd7f6bdadc53ea340b4be56008336828150bdee1f330ce0b10f0a6110ab3c3"
+        },
+        "x86_64-unknown-redox/repo.toml": {
+          "git_blob": "b2d8a97cfb07c20f4f41c1ee2ba4f62bdb5b9da8",
+          "size": 3063,
+          "sha256": "812c94773ecd3b7a0892a391314a1777d4bb064f461a0c82490b4e39bf667547"
+        },
+        "x86_64-unknown-redox/zsh.pkgar": {
+          "git_blob": "87a85f2a01de2b4403af2fd849845e738d11cd82",
+          "size": 7728461,
+          "sha256": "cd10959f2857c88f0a8aff321998b3c52f94e3d517477dc629185cc628941a5c"
+        },
+        "x86_64-unknown-redox/zsh.toml": {
+          "git_blob": "84bf077859f02ee1f04a8a767bda81b6395b35ac",
+          "size": 346,
+          "sha256": "6cdf903803a44784495797155182d04029ddbb824c30f3a1d359141ab290ceda"
+        },
+        "id_ed25519.pub.toml": {
+          "git_blob": "88800b591e052a02d02d9f785ace01c1a2e96e18",
+          "size": 74,
+          "sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0"
+        }
+      }
+    },
+    "online_signature_payload": "PASS",
+    "distribution_text_normalization": "Recipe and patch source copies only: original CRLF converted to LF by existing Git attributes. Actual frozen build input and signed package bytes unchanged."
   }
 }
