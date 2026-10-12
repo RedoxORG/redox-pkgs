@@ -14,9 +14,11 @@ https://api.github.com/repos/RedoxORG/redox-pkgs/contents
 Fresh builds of private `RedoxORG/redox` use these packages with the ordinary
 bootstrap and Make commands. Its tracked
 [curl adapter](https://github.com/RedoxORG/redox/blob/local/main/scripts/curl-github.sh)
-authenticates only this repository, using GitHub CLI in the standard build
-container. First use requires an account with read access. Credentials are
-not committed or placed in URLs or process arguments.
+uses the existing private download authentication in the standard build
+container. A working network route and repository read access are prerequisites.
+See the current [consumer verification](consumer-verification.md) for measured
+results and limits. This receipt does not certify the source adapter credential
+delivery or future credential rotation.
 
 The root contains the public signing key. The target directory contains
 `repo.toml`, package metadata and signed `.pkgar` files. The private key,

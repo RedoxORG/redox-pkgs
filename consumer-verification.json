@@ -1,0 +1,539 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "issue": "https://github.com/RedoxORG/workspace/issues/10",
+  "source_sha": "01efa53d3023765b189bb8d7cfbbf98dc6d5e8f0",
+  "package_input_sha": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+  "target": "x86_64-unknown-redox",
+  "configuration": "server",
+  "remote_inventory": {
+    "page1": 12,
+    "page2": 0
+  },
+  "producer_development_trees_used": false,
+  "consumer": {
+    "clone": "actual private remote shallow clone at full committed tree",
+    "initial_local_source_bindings": false,
+    "initial_producer_package_cache": false,
+    "independent_container_HOME_and_image": true,
+    "source_tree_clean_after": true,
+    "make_all": {
+      "attempt1": "FAIL: curl92 HTTP/2 CANCEL while downloading base.pkgar",
+      "attempt2": "FAIL: curl18 HTTP/1.1 partial response while downloading base.pkgar",
+      "attempt3": "PASS exit0 after standard ignored HOME configuration selected existing reachable proxy",
+      "network_route_required": true,
+      "source_or_recipe_changes": false,
+      "mount_overrides": false,
+      "compiler_jobs": 2,
+      "cargo_jobs": 2,
+      "cold_OS_bootstrap": "NotRun: prerequisites already installed"
+    }
+  },
+  "package_health": {
+    "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+    "remote_tree_truncated": false,
+    "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
+    "remote_blob_checks": 86,
+    "signed_archives": 39,
+    "consumer_downloaded_archives_bound": 35,
+    "artifacts": {
+      "base": {
+        "archive_sha256": "97d07f77be67a276315bcc4ae49122573b51ea41adcaccbb9a1c564c41868013",
+        "remote_git_blob": "c08df6036236716a45ea85ceee4ed7c1abd927e6",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/base/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "fb146ef7c2e7a85e61fb87280774df4bd3ff008f0e69f07ea1eb24e9e47b2411",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "bash": {
+        "archive_sha256": "b2f564d717f3d5f56f44f1f31036e41b3caf7826547672838397e239a27a867a",
+        "remote_git_blob": "38895ac8de50b38482a1218faf3e296ff3996a05",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/terminal/bash/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "683c18d3ded0c80d2f974d3e47fdd96fb8b6e5da0ed2e69cdf9a9e2359c06e07",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "bootloader": {
+        "archive_sha256": "11b29ca0112b3db21ebb97274887972512c945c42b1b6aebc3fa780a379a143a",
+        "remote_git_blob": "c660970c2fb93ffdcea0b94af6fac29e97c57a03",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/bootloader/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "7341f856ac561b0b2b8debe0870d659c7602b03752270c85117cac449d91483f",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "bottom": {
+        "archive_sha256": "c92d5dd04aad4bfcb868d0a16073ec6dbeab427501a515411c3b7b487cb4ba75",
+        "remote_git_blob": "e249a63111f435ca2e49b7e32b6ec477d2276994",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/wip/monitors/bottom/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "858679772c0bac244bd5a7fab12fea89109fb8a74a64eee063f2a2b33a8b6798",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "ca-certificates": {
+        "archive_sha256": "8c982c4cdb43924a61fa2497424a05988e2bf8d12e2f0c0e93f1c3712f43f24c",
+        "remote_git_blob": "37c86b34e40e0e969b1bffd9409a3f01836900b7",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/data/ca-certificates/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "f5d2dae66ec4e1effc3e43b2d129e1c45a24d2836fe59beee008c34c0a73d46e",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "coreutils": {
+        "archive_sha256": "0b6981b4fb2a0479e75b8e0766035d57b1bbabc532d01f6d2cf0c1ca9990112a",
+        "remote_git_blob": "fb119b605d8506b7d016443ef5a9341e1b132f2d",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/coreutils/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "5adc9b9a8996a6ad2b6f18b85954084ff368fe07a43c66378e60a0669fa59936",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "curl": {
+        "archive_sha256": "1507b3a42284b0af0dc6d2465c2c96204e396296040d837dc0f3260b4c6fb5a8",
+        "remote_git_blob": "1498d6f4b706b4018d23fbd14541a0e81a1f2ec6",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/net/curl/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "ee786d528c30224529cc753b9790c0380048b147d90e5ac5b91452367f5ba352",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "diffutils": {
+        "archive_sha256": "81f255e5ffc619d2a572080f9736376db68b971a1d8309108be5b89e064c1b56",
+        "remote_git_blob": "43a829b66265ff9beadcf589523340340a0c372c",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/text/diffutils/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "925eb7eee8f544fb987a2ffc144af7712fe4a7710a425ffe0750f5f70ac4872a",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "expat": {
+        "archive_sha256": "09102827f7b2ab3c4863ab08194bce3c9a5b85109345d3d9481b0e48e2e026a5",
+        "remote_git_blob": "1f2877989dd4f3b85acaacc4bdef7b783a7a7b3d",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/libs/expat/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "3764d3056350b6c55f9dd02954a58cdc9deb2b081f704361b53763e83d4726d6",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "extrautils": {
+        "archive_sha256": "0870559cb4a00f1f0c472dead2ea60d1023947a844495577be0cc8af81b1c4cb",
+        "remote_git_blob": "f842c21050c521fd2ba826ce3ab682abf001639c",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/extrautils/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "b51a6aed803594120c575d02a2128d3086b0f97df3e5f23273160387ae43b241",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "findutils": {
+        "archive_sha256": "54d9d3594e0d8e2a326fcfb00e6841eb66c1a1555905b61ca8d75631755c1d57",
+        "remote_git_blob": "5132a8caf885f7fc149a9287101b7bc003eaf5b4",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/findutils/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "267384f7ae7303711dd443612ff2f77c9b2a17de021fb1a7094d76121d4dc496",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "gettext": {
+        "archive_sha256": "fb13b158f0b3c3e613ca85f135ec797542ee00747ded6006788705a090047ac8",
+        "remote_git_blob": "ff16d7e595c23225b1eaf1249586908f8146ede8",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/tools/gettext/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "40200051af9da7f1f4f16c5bb48f9fea6f5be5028d72169d76b61643ccca3bea",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "git": {
+        "archive_sha256": "39b091a425ee485c249bef90ee21b6838e4c5755f439be8f0f441fe77a14442a",
+        "remote_git_blob": "7d195c53425c37d27d256bccfc0168fe40c80b01",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/dev/git/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "9277059258aef496fee6bd37432aad02c5c932c5240454a311ece5aa55f97a94",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "installer": {
+        "archive_sha256": "5307f0e24bcfae68fb2ee94fb932e8eec789103114e0013a2dedfaeef3dc58e3",
+        "remote_git_blob": "df85d3c061dd3a148994c4905defcac17e1fa359",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/installer/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "30892125c072b5e9765a5ca19c931379b3930e36d4bce8f00a5d198e5f3398b1",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "ion": {
+        "archive_sha256": "0d0d5c5f085becf6faa3b8c82782f5c94737fc5c8793ecfa44ed820e0fca5c3e",
+        "remote_git_blob": "4774e78565b238dca63002c9f892383f87612180",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/ion/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "641f429ade52dd5089d965bd6bc102b45937f11552b03d2ff26512e03bc2aa02",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "kernel": {
+        "archive_sha256": "25a7a30332c95c1b592866c0a756b65e5dabc20554de5141151b51d7baa28321",
+        "remote_git_blob": "86e2ee7ce7fed868cb7ab0515f02fac4cbb232b7",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/kernel/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "8a3acde201279c4022ee2ba188a1a4bdc4c5fb6daef42f2b80fba38018d8e8c2",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "kibi": {
+        "archive_sha256": "f3c6ef1d25bad0c62eae7c0794bbc138698c97d8bc2bf644bc7e7c911c9e25f2",
+        "remote_git_blob": "9c97f183e0ac345a5c69839a1e9d334c86be64a8",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/text/kibi/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "0bf626faa0b6497668ac652b31e6f207d052a4fd46a411245cffa103f1501b83",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "libiconv": {
+        "archive_sha256": "bbe31550d25c99f6c391d10403d0bf2297ea3633604d7bdcfddbce5a7cc2e4b4",
+        "remote_git_blob": "b783cbe17c36c52a115e61e425d5316cfea99c17",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/libs/libiconv/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "74e34b4c110e7ce451166bddd7f0628e6d49cd67b5c744ba8f10fca757740c2b",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "libonig": {
+        "archive_sha256": "98d1c47e5236ec327d064d887474bcb28b7df835378e97d0b5a64e5f068ca136",
+        "remote_git_blob": "c99ec2af2f016c3946140e821d36acc4b2569c62",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/libs/libonig/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "0c018dbc113486a1cd4f3031236ce4f490e857668e83a50f3172756693eb8dfa",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "ncursesw": {
+        "archive_sha256": "34de3576dd691f6c28a6bd3da126c347b00e9f20b7049f157c81dd59d26eba01",
+        "remote_git_blob": "c826eac769f723d56b5c8e2907320c72d3df2d01",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/libs/ncursesw/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "adb6af0494534b38a30576474067c050f4556c701c996a85932d33760b8541cf",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "netdb": {
+        "archive_sha256": "dfb92de8a5e3063d334de784fd41a91f6b61cb543a5c06d77f3589250889626d",
+        "remote_git_blob": "59cdb50e3c203e308c401c60196df8250da8205c",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/netdb/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "107f5c55ba55ec319007b29df33bdec647938ddae606a32a9f88428eb586c4b4",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "netutils": {
+        "archive_sha256": "79eefaa10f1163ef903e6fe73cc0e9bbe49175ef678baf44e30021c7695ad055",
+        "remote_git_blob": "d68b8a93802029f78b357a7863a94b2ee9e55a0a",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/netutils/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "de57b95cf0485b5602a188fd00c49a601759e5eae0e6c441382e571981a94874",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "nghttp2": {
+        "archive_sha256": "4b2f3ffba3994029dd196f1cfe596f2e3e11965392de1718983e3562b5176c00",
+        "remote_git_blob": "cf39fa1cd55ab5a3ade1dab5390c5b4baf1b05f8",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/libs/nghttp2/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "7ba2cb4654881b016726983874542f5b67249643783bbc69837e5a15b33d9bd2",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "openssl3": {
+        "archive_sha256": "5703996246582b525102c783711c92ac1f684ade75ca7b5328aa09f92de27c08",
+        "remote_git_blob": "4a717804cf42ee7cf5b6a31c82e4232aea5abb26",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/libs/openssl3/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "6f7281cc4fc3662cdce2008e081ce8051318a95c7d64e473b5c7483a93bdf881",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "orbdata": {
+        "archive_sha256": "5867672d83f0728608b370e645ab2620a55ac73fd7b25355815b26a0fa4e1f57",
+        "remote_git_blob": "12f9569aba106e497fb6786190d06ed0fe709760",
+        "signature_extraction": "PASS",
+        "consumer_archives": [],
+        "metadata_sha256": "5171d679702ec09f0eeaf65b22462e3e2d82d58b5d163290cbb5fa442b5988fd",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "orbital": {
+        "archive_sha256": "d6d404f3094b8a55233b17ba7117d1af2b8dd230c11af29a7a50934921da373b",
+        "remote_git_blob": "c2b52a9dd6ea2bcda2fe4237e52a8fc883fefaab",
+        "signature_extraction": "PASS",
+        "consumer_archives": [],
+        "metadata_sha256": "9c515abb9cbcb62165f0f256b56c13d18f58ab8953fb068db6ba6f4e86d36822",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "orbterm": {
+        "archive_sha256": "13efe65826f30a2e62a03088a03ead29b8cd055e9e1b7f555c31a89a20ea06b1",
+        "remote_git_blob": "7135716f18cea5beade86e65b74696fdcdf94ebf",
+        "signature_extraction": "PASS",
+        "consumer_archives": [],
+        "metadata_sha256": "ee824e9bba4714d4bea47805741b8d05bb524f12bcef655763050ce8d0b59a8a",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "pkgutils": {
+        "archive_sha256": "ca00f9dd9e75e2d19ac81b46ac1e8be8c62fe711f783fbd58ee7750154cb6850",
+        "remote_git_blob": "9c9eacaa7fa13c7a9f9a5759e9b9c4f57edb3cd6",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/pkgutils/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "0e27ea0f66a52fd87c8ac6e619ebdc75a3f88e804be659784ec4f675d39acfe8",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "readline": {
+        "archive_sha256": "5b7c1e8fc0456f93b7cf1b7abb1d6b46322cbc3e39bcb7ae69be2e09c092a8e7",
+        "remote_git_blob": "8d63dc400cd180852247f2303b25fac73ae53aba",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/libs/readline/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "956f0180d741f9930a5ed24bffdd6a73e03cf8b7df98d775d0a782653d73a46d",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "redoxfs": {
+        "archive_sha256": "5b78c65129630b741000c358a23963947668ab4816e15158ca5087edb76db328",
+        "remote_git_blob": "de9725341437c32555dd749eaa2832ce7a948e75",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/redoxfs/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "db8c349668ac36982261214db5903ccb5cd54360ec04d7bac068e2e3367a8624",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "relibc": {
+        "archive_sha256": "5c67560f455f76507c77f4b122dc51d4624fcaa6c02119f4037148d2ddad03ac",
+        "remote_git_blob": "9ccc9cf95bdcf391977e0f1426d5d791e627faf3",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/relibc/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "bbb749fd030816eb22922d22d461ed110aadb9faacc556d5425163f2d90bd731",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "terminfo": {
+        "archive_sha256": "1c43ab436c12d8443b7a44290bc478c066b97627453cc90f2f916d4fdefc6e73",
+        "remote_git_blob": "df69437a06ee18a3022391d3dae53866afcab979",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/data/terminfo/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "7eebefc9a6bcd17cfdd40f529c77aa930c8c1b223cb5ec1f3ed945361705dfc7",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "userutils": {
+        "archive_sha256": "76bfd60d1979c15aa686831e5e0323655a49c1e6619d166f918ea5c043c4f32a",
+        "remote_git_blob": "c25dd5c10d92014da0f86e934fa4f941a33158ce",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/userutils/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "280603dcaa1c3d57da0351f7e9c7793da3d368f1392550095d2e6a5fc8b54ab8",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "uutils-procps": {
+        "archive_sha256": "1c8427bd88a373e15ea213612c63183ade6135c2e81ed41ba9078460a7e5bd36",
+        "remote_git_blob": "9f816db1a7a4a3af36df158ad84688c8dc4ebec7",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/wip/rs/uutils-procps/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "4b47597e92e03baa2ccd4e7dd3145465b6c03eb596168311fea9e7d72ccf22fb",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "uutils": {
+        "archive_sha256": "0394cdefae41b435a4065d306d4c4eccb269fcd30daf7ad46cba31562a6cfd9b",
+        "remote_git_blob": "3217e38208205c6a3ef5aca3eed61c6a04144be6",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/core/uutils/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "37d62debca2d7e83754daa31b7404392b2798cb883e395fdea417a5beb2858bf",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "xz": {
+        "archive_sha256": "05979b942cacd334b8f8afba57206cac30ffd15ba8311411014b01fc036ad2df",
+        "remote_git_blob": "a41375cefe08a8df473d7e9c2ee7db4636cdb443",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/archives/xz/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "334c6831f67af5abe31bece39bb536c9ea50238bdad9647adc25af8a8e5720db",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "zlib": {
+        "archive_sha256": "cc29585a59f54c02915c4150aa948cbd2bb348d81c4f02014265fd4726dc6b34",
+        "remote_git_blob": "608349ab297c9504724248f1eb00833d14fff367",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/libs/zlib/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "22f06f962ba870beb46821197c6d148b176facc76a702ea3efb476d19970e0b7",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "zsh": {
+        "archive_sha256": "13132ca08adcdf0c475b56a828e60d332f3137e52a4deb068c117752ff525734",
+        "remote_git_blob": "10817f30786307e363954cf5e4b4c8c04915298f",
+        "signature_extraction": "PASS",
+        "consumer_archives": [],
+        "metadata_sha256": "769770ee72bb892b70698b37376885b9b6018a4cf748d382ead131047fb9bfd0",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      },
+      "zstd": {
+        "archive_sha256": "7bddd7a6b89e72948bbccb107c20a118b431d2451ae94cacf657f1bf54064c4e",
+        "remote_git_blob": "a3b271d8bc6a797b560bb247f2e5246c288b539b",
+        "signature_extraction": "PASS",
+        "consumer_archives": [
+          "recipes/archives/zstd/target/x86_64-unknown-redox/source.pkgar"
+        ],
+        "metadata_sha256": "43130ac3a2903779440937e09731f1c9f2b8f7feb08b0670048acd611adf949a",
+        "metadata_signed_header_blake3": "PASS",
+        "index_name_target_size_dependencies": "PASS"
+      }
+    },
+    "index_sha256": "e997e7f0e5d57c92e259d3c2fdec53051222e2635d79e118a3cdb03453689ba0",
+    "metadata_index_checks": 39,
+    "negative_tests": {
+      "signature": "PASS: normal extractor rejected corruption",
+      "payload": "PASS: normal extractor rejected corruption"
+    },
+    "index_blake3_consistency": "PASS",
+    "consumer_not_installed": [
+      "orbdata",
+      "orbital",
+      "orbterm",
+      "zsh"
+    ]
+  },
+  "image_binding": {
+    "image_sha256": "378d5d438e8b207e7d14b8c188e487d9ba647920e0fc74cfbe80a1f894274dcb",
+    "files": {
+      "usr/lib/boot/bootloader.efi": "995f8fc7a1bf8aaef1727472cc8b38589c9f9ba1d74b9a9c454146513619bd4d",
+      "usr/lib/boot/initfs": "a9f41a908f533da793b63c3f521776fb2de71e3fc6b726ede0c9cb50f4751b8d",
+      "usr/bin/inputd": "c1981705f34efa090120e7edbb7c068c19ceb66c04044852d0fbc80ca3895e5b",
+      "usr/bin/login": "47d6628c1278d6f06ece365a6aa145753f878bd610e02c1033660392fb98053f",
+      "usr/bin/bash": "faab47c8f4dfd2498019909f0d040236b101846c77323e4fb392b983fe3c2778",
+      "etc/bash.bashrc": "1ea027192a75b2cb9223406aefa319b589cc0ecc8f86f65dc475c2ec02bcd21e"
+    },
+    "resolution_config_path": "etc/bootloader.conf",
+    "resolution_config": "default_resolution=auto\nremember_last_resolution=true\ntimeout_ms=1000\n",
+    "installed_contents": "PASS",
+    "original_image_unchanged_during_snapshot_inspection": true
+  },
+  "runtime": {
+    "boot": "PASS: no-key normal login",
+    "bash": "PASS",
+    "normal_command_sha256": "705838ac26cc91438c6d7ce64528607a7e2a9c9f2a9f417eb0ba94849b3ba149",
+    "marker": "BINARY_MAINTENANCE_BASH_OK:5.3.0(1)-release",
+    "exit_code": 0
+  },
+  "automations": {
+    "redox": {
+      "prompt_match": true,
+      "changed_fields": [
+        "updated_at",
+        "prompt"
+      ],
+      "rrule": "RRULE:FREQ=WEEKLY;BYDAY=MO;BYHOUR=5;BYMINUTE=55;BYSECOND=0",
+      "status": "ACTIVE",
+      "target_thread_id": "01a1265f-6047-7aa0-9086-24d402add75c"
+    },
+    "redoxorg": {
+      "prompt_match": true,
+      "changed_fields": [
+        "updated_at",
+        "prompt"
+      ],
+      "rrule": "RRULE:FREQ=MONTHLY;BYMONTHDAY=1;BYHOUR=0;BYMINUTE=0",
+      "status": "ACTIVE",
+      "target_thread_id": "019fc451-1bb6-7732-b7e9-9d66f4ea4e47"
+    }
+  },
+  "payload_updates": 0,
+  "successful_input_baselines_advanced": 0,
+  "freshness_status": "FreshnessUnknown: complete historical successful package inputs/change timestamps remain incomplete",
+  "functional_scope": "published bootloader/input/login contents + current auto/remember/1000 configuration, normal no-key login boot and ordinary Bash execution; historical interactive/persistence/fault cases not rerun",
+  "publication": "receipt only; candidate for ordinary fast-forward main; remote readback required",
+  "private_credential_values_recorded": false,
+  "producer_network_maintenance": {
+    "ignored_standard_HOME_curl_config": "same existing proxy as successful consumer; no source/global change",
+    "inner_stdout_retries": false,
+    "source_tree_clean": true,
+    "normal_make_relibc_binding_preflight": "PASS after network configuration; build_sha01efa53d/component b35b512/jobs2/submodules/RO mounts",
+    "source_build_this_run": "NotRun; earlier complete sysroot regression retains original provenance"
+  },
+  "independent_review": {
+    "status": "PASS",
+    "reviewer": "GPT-6.1 Sol/high",
+    "scope": "M1-M6 current execution and exact eight-file candidate; remote SHA/blob/archive bindings independently checked; signature/tamper/image extraction based on actual execution receipts, not replayed",
+    "publication_readback": "Pending until ordinary FF; recorded separately to avoid self-referential commit SHA"
+  }
+}

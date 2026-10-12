@@ -167,7 +167,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "97d07f77be67a276315bcc4ae49122573b51ea41adcaccbb9a1c564c41868013",
+        "metadata_sha256": "fb146ef7c2e7a85e61fb87280774df4bd3ff008f0e69f07ea1eb24e9e47b2411",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "bash": {
       "baseline_status": "BaselineMissing",
@@ -225,6 +245,26 @@
           "sha256": "84b8a8cbeb229f8c31a3ae210d6a4c3de611c665aa96a1e7622fb13f4ae8a340",
           "evidence": "SOURCES.md: corresponding published Bash recipe/configuration and SYS_BASHRC option"
         }
+      },
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "b2f564d717f3d5f56f44f1f31036e41b3caf7826547672838397e239a27a867a",
+        "metadata_sha256": "683c18d3ded0c80d2f974d3e47fdd96fb8b6e5da0ed2e69cdf9a9e2359c06e07",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
       }
     },
     "bootloader": {
@@ -262,7 +302,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "11b29ca0112b3db21ebb97274887972512c945c42b1b6aebc3fa780a379a143a",
+        "metadata_sha256": "7341f856ac561b0b2b8debe0870d659c7602b03752270c85117cac449d91483f",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "bottom": {
       "baseline_status": "BaselineMissing",
@@ -283,7 +343,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "c92d5dd04aad4bfcb868d0a16073ec6dbeab427501a515411c3b7b487cb4ba75",
+        "metadata_sha256": "858679772c0bac244bd5a7fab12fea89109fb8a74a64eee063f2a2b33a8b6798",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "ca-certificates": {
       "baseline_status": "BaselineMissing",
@@ -304,7 +384,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "8c982c4cdb43924a61fa2497424a05988e2bf8d12e2f0c0e93f1c3712f43f24c",
+        "metadata_sha256": "f5d2dae66ec4e1effc3e43b2d129e1c45a24d2836fe59beee008c34c0a73d46e",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "coreutils": {
       "baseline_status": "BaselineMissing",
@@ -325,7 +425,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "0b6981b4fb2a0479e75b8e0766035d57b1bbabc532d01f6d2cf0c1ca9990112a",
+        "metadata_sha256": "5adc9b9a8996a6ad2b6f18b85954084ff368fe07a43c66378e60a0669fa59936",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "curl": {
       "baseline_status": "BaselineMissing",
@@ -346,7 +466,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "1507b3a42284b0af0dc6d2465c2c96204e396296040d837dc0f3260b4c6fb5a8",
+        "metadata_sha256": "ee786d528c30224529cc753b9790c0380048b147d90e5ac5b91452367f5ba352",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "diffutils": {
       "baseline_status": "BaselineMissing",
@@ -367,7 +507,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "81f255e5ffc619d2a572080f9736376db68b971a1d8309108be5b89e064c1b56",
+        "metadata_sha256": "925eb7eee8f544fb987a2ffc144af7712fe4a7710a425ffe0750f5f70ac4872a",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "expat": {
       "baseline_status": "BaselineMissing",
@@ -388,7 +548,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "09102827f7b2ab3c4863ab08194bce3c9a5b85109345d3d9481b0e48e2e026a5",
+        "metadata_sha256": "3764d3056350b6c55f9dd02954a58cdc9deb2b081f704361b53763e83d4726d6",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "extrautils": {
       "baseline_status": "BaselineMissing",
@@ -409,7 +589,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "0870559cb4a00f1f0c472dead2ea60d1023947a844495577be0cc8af81b1c4cb",
+        "metadata_sha256": "b51a6aed803594120c575d02a2128d3086b0f97df3e5f23273160387ae43b241",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "findutils": {
       "baseline_status": "BaselineMissing",
@@ -430,7 +630,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "54d9d3594e0d8e2a326fcfb00e6841eb66c1a1555905b61ca8d75631755c1d57",
+        "metadata_sha256": "267384f7ae7303711dd443612ff2f77c9b2a17de021fb1a7094d76121d4dc496",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "gettext": {
       "baseline_status": "BaselineMissing",
@@ -451,7 +671,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "fb13b158f0b3c3e613ca85f135ec797542ee00747ded6006788705a090047ac8",
+        "metadata_sha256": "40200051af9da7f1f4f16c5bb48f9fea6f5be5028d72169d76b61643ccca3bea",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "git": {
       "baseline_status": "BaselineMissing",
@@ -472,7 +712,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "39b091a425ee485c249bef90ee21b6838e4c5755f439be8f0f441fe77a14442a",
+        "metadata_sha256": "9277059258aef496fee6bd37432aad02c5c932c5240454a311ece5aa55f97a94",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "installer": {
       "baseline_status": "BaselineMissing",
@@ -505,7 +765,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "5307f0e24bcfae68fb2ee94fb932e8eec789103114e0013a2dedfaeef3dc58e3",
+        "metadata_sha256": "30892125c072b5e9765a5ca19c931379b3930e36d4bce8f00a5d198e5f3398b1",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "ion": {
       "baseline_status": "BaselineMissing",
@@ -526,7 +806,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "0d0d5c5f085becf6faa3b8c82782f5c94737fc5c8793ecfa44ed820e0fca5c3e",
+        "metadata_sha256": "641f429ade52dd5089d965bd6bc102b45937f11552b03d2ff26512e03bc2aa02",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "kernel": {
       "baseline_status": "BaselineMissing",
@@ -547,7 +847,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "25a7a30332c95c1b592866c0a756b65e5dabc20554de5141151b51d7baa28321",
+        "metadata_sha256": "8a3acde201279c4022ee2ba188a1a4bdc4c5fb6daef42f2b80fba38018d8e8c2",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "kibi": {
       "baseline_status": "BaselineMissing",
@@ -568,7 +888,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "f3c6ef1d25bad0c62eae7c0794bbc138698c97d8bc2bf644bc7e7c911c9e25f2",
+        "metadata_sha256": "0bf626faa0b6497668ac652b31e6f207d052a4fd46a411245cffa103f1501b83",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "libiconv": {
       "baseline_status": "BaselineMissing",
@@ -589,7 +929,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "bbe31550d25c99f6c391d10403d0bf2297ea3633604d7bdcfddbce5a7cc2e4b4",
+        "metadata_sha256": "74e34b4c110e7ce451166bddd7f0628e6d49cd67b5c744ba8f10fca757740c2b",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "libonig": {
       "baseline_status": "BaselineMissing",
@@ -610,7 +970,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "98d1c47e5236ec327d064d887474bcb28b7df835378e97d0b5a64e5f068ca136",
+        "metadata_sha256": "0c018dbc113486a1cd4f3031236ce4f490e857668e83a50f3172756693eb8dfa",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "ncursesw": {
       "baseline_status": "BaselineMissing",
@@ -631,7 +1011,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "34de3576dd691f6c28a6bd3da126c347b00e9f20b7049f157c81dd59d26eba01",
+        "metadata_sha256": "adb6af0494534b38a30576474067c050f4556c701c996a85932d33760b8541cf",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "netdb": {
       "baseline_status": "BaselineMissing",
@@ -652,7 +1052,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "dfb92de8a5e3063d334de784fd41a91f6b61cb543a5c06d77f3589250889626d",
+        "metadata_sha256": "107f5c55ba55ec319007b29df33bdec647938ddae606a32a9f88428eb586c4b4",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "netutils": {
       "baseline_status": "BaselineMissing",
@@ -673,7 +1093,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "79eefaa10f1163ef903e6fe73cc0e9bbe49175ef678baf44e30021c7695ad055",
+        "metadata_sha256": "de57b95cf0485b5602a188fd00c49a601759e5eae0e6c441382e571981a94874",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "nghttp2": {
       "baseline_status": "BaselineMissing",
@@ -694,7 +1134,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "4b2f3ffba3994029dd196f1cfe596f2e3e11965392de1718983e3562b5176c00",
+        "metadata_sha256": "7ba2cb4654881b016726983874542f5b67249643783bbc69837e5a15b33d9bd2",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "openssl3": {
       "baseline_status": "BaselineMissing",
@@ -715,7 +1175,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "5703996246582b525102c783711c92ac1f684ade75ca7b5328aa09f92de27c08",
+        "metadata_sha256": "6f7281cc4fc3662cdce2008e081ce8051318a95c7d64e473b5c7483a93bdf881",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "orbdata": {
       "baseline_status": "BaselineMissing",
@@ -736,7 +1216,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "5867672d83f0728608b370e645ab2620a55ac73fd7b25355815b26a0fa4e1f57",
+        "metadata_sha256": "5171d679702ec09f0eeaf65b22462e3e2d82d58b5d163290cbb5fa442b5988fd",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": false,
+        "receipt": "consumer-verification.json"
+      }
     },
     "orbital": {
       "baseline_status": "BaselineMissing",
@@ -757,7 +1257,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "d6d404f3094b8a55233b17ba7117d1af2b8dd230c11af29a7a50934921da373b",
+        "metadata_sha256": "9c515abb9cbcb62165f0f256b56c13d18f58ab8953fb068db6ba6f4e86d36822",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": false,
+        "receipt": "consumer-verification.json"
+      }
     },
     "orbterm": {
       "baseline_status": "BaselineMissing",
@@ -790,7 +1310,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "13efe65826f30a2e62a03088a03ead29b8cd055e9e1b7f555c31a89a20ea06b1",
+        "metadata_sha256": "ee824e9bba4714d4bea47805741b8d05bb524f12bcef655763050ce8d0b59a8a",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": false,
+        "receipt": "consumer-verification.json"
+      }
     },
     "pkgutils": {
       "baseline_status": "BaselineMissing",
@@ -811,7 +1351,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "ca00f9dd9e75e2d19ac81b46ac1e8be8c62fe711f783fbd58ee7750154cb6850",
+        "metadata_sha256": "0e27ea0f66a52fd87c8ac6e619ebdc75a3f88e804be659784ec4f675d39acfe8",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "readline": {
       "baseline_status": "BaselineMissing",
@@ -832,7 +1392,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "5b7c1e8fc0456f93b7cf1b7abb1d6b46322cbc3e39bcb7ae69be2e09c092a8e7",
+        "metadata_sha256": "956f0180d741f9930a5ed24bffdd6a73e03cf8b7df98d775d0a782653d73a46d",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "redoxfs": {
       "baseline_status": "BaselineMissing",
@@ -853,7 +1433,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "5b78c65129630b741000c358a23963947668ab4816e15158ca5087edb76db328",
+        "metadata_sha256": "db8c349668ac36982261214db5903ccb5cd54360ec04d7bac068e2e3367a8624",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "relibc": {
       "baseline_status": "BaselineMissing",
@@ -886,7 +1486,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "5c67560f455f76507c77f4b122dc51d4624fcaa6c02119f4037148d2ddad03ac",
+        "metadata_sha256": "bbb749fd030816eb22922d22d461ed110aadb9faacc556d5425163f2d90bd731",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "terminfo": {
       "baseline_status": "BaselineMissing",
@@ -907,7 +1527,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "1c43ab436c12d8443b7a44290bc478c066b97627453cc90f2f916d4fdefc6e73",
+        "metadata_sha256": "7eebefc9a6bcd17cfdd40f529c77aa930c8c1b223cb5ec1f3ed945361705dfc7",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "userutils": {
       "baseline_status": "BaselineMissing",
@@ -940,7 +1580,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "76bfd60d1979c15aa686831e5e0323655a49c1e6619d166f918ea5c043c4f32a",
+        "metadata_sha256": "280603dcaa1c3d57da0351f7e9c7793da3d368f1392550095d2e6a5fc8b54ab8",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "uutils": {
       "baseline_status": "BaselineMissing",
@@ -961,7 +1621,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "0394cdefae41b435a4065d306d4c4eccb269fcd30daf7ad46cba31562a6cfd9b",
+        "metadata_sha256": "37d62debca2d7e83754daa31b7404392b2798cb883e395fdea417a5beb2858bf",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "uutils-procps": {
       "baseline_status": "BaselineMissing",
@@ -982,7 +1662,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "1c8427bd88a373e15ea213612c63183ade6135c2e81ed41ba9078460a7e5bd36",
+        "metadata_sha256": "4b47597e92e03baa2ccd4e7dd3145465b6c03eb596168311fea9e7d72ccf22fb",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "xz": {
       "baseline_status": "BaselineMissing",
@@ -1003,7 +1703,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "05979b942cacd334b8f8afba57206cac30ffd15ba8311411014b01fc036ad2df",
+        "metadata_sha256": "334c6831f67af5abe31bece39bb536c9ea50238bdad9647adc25af8a8e5720db",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "zlib": {
       "baseline_status": "BaselineMissing",
@@ -1024,7 +1744,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "cc29585a59f54c02915c4150aa948cbd2bb348d81c4f02014265fd4726dc6b34",
+        "metadata_sha256": "22f06f962ba870beb46821197c6d148b176facc76a702ea3efb476d19970e0b7",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     },
     "zsh": {
       "baseline_status": "BaselineMissing",
@@ -1045,7 +1785,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "13132ca08adcdf0c475b56a828e60d332f3137e52a4deb068c117752ff525734",
+        "metadata_sha256": "769770ee72bb892b70698b37376885b9b6018a4cf748d382ead131047fb9bfd0",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": false,
+        "receipt": "consumer-verification.json"
+      }
     },
     "zstd": {
       "baseline_status": "BaselineMissing",
@@ -1066,7 +1826,27 @@
       "build": "NotRun",
       "signature_payload_verification": "NotRun",
       "runtime": "NotRun",
-      "binary_publication": "NotRun"
+      "binary_publication": "NotRun",
+      "freshness": {
+        "published_effective_input_id": null,
+        "candidate_effective_input_id": null,
+        "earliest_unpublished_change_at": null,
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "published_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+      },
+      "last_artifact_verification": {
+        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+        "date": "2026-10-12",
+        "archive_sha256": "7bddd7a6b89e72948bbccb107c20a118b431d2451ae94cacf657f1bf54064c4e",
+        "metadata_sha256": "43130ac3a2903779440937e09731f1c9f2b8f7feb08b0670048acd611adf949a",
+        "signature_extraction": "PASS",
+        "metadata_signed_header_index": "PASS",
+        "consumer_archive_bound": true,
+        "receipt": "consumer-verification.json"
+      }
     }
   },
   "last_check": {
@@ -1299,5 +2079,16 @@
       "post_build": "Eight clean source Git trees; source symlink retained; user source.tmp retained; no remaining task containers",
       "sysroot_artifact_root": "~/redox/_repos.bin/redox/prefix/x86_64-unknown-redox/sysroot/x86_64-unknown-redox"
     }
+  },
+  "last_consumer_verification": {
+    "date": "2026-10-12",
+    "source_sha": "01efa53d3023765b189bb8d7cfbbf98dc6d5e8f0",
+    "package_sha": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+    "receipt": "consumer-verification.json",
+    "make_all": "PASS",
+    "boot_smoke": "PASS",
+    "bash_execution": "PASS",
+    "freshness": "FreshnessUnknown",
+    "success_baselines_advanced": 0
   }
 }
