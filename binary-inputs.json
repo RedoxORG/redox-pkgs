@@ -1234,12 +1234,12 @@
         "dirty": false
       }
     },
-    "config_sha256": "ff7cd2dfff20b6405ee4b8c70e36b1cf49fe01976a261d5d5ce697a6b487decf",
+    "config_sha256": "da89181d80f7fdd589ab0febc78a451e94596846963134d2d33ef5b4ca49b573",
     "cookbook_lock_sha256": "23f12a83bc6647ad784f9b795fe25acfe7698ca25410de3f7f668b44035bf38e",
     "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
     "private_key_handling": "Native use only; ignored isolated build path mode0600; existing public-key identity unchanged; no private content output",
-    "container_source_mounts": "PASS: six expected source SHAs resolve under dedicated read-only parent; source write rejected with EROFS; standard root/home/curl mounts preserved",
-    "build_runtime": "Package builds/image/runtime NotRun",
+    "container_source_mounts": "PASS: container command derived from normal make -n f.relibc; all six exact clean source checkouts resolve; source write rejected EROFS; removing parent mount reproduces broken link without fetch",
+    "build_runtime": "PASS: normal relibc/sysroot compile regression; full make all/image/runtime NotRun; remote package publication NotRun",
     "cargo_config_sha256": "a1633c484fe7772d4f5dc061f3f3620555be33fb0b8ba8d3dbbb77d3d09eb26d",
     "cargo_jobs": 2,
     "cookbook_tool": "PASS: normal make cookbook completed; container-native CLI invoked",
@@ -1253,8 +1253,51 @@
       "container_image_id": "1885df4c5a1d03bc196d67b6b395e1b9f3e290f42804a8126e20937886683903"
     },
     "authorization": "User explicitly authorized necessary repository clones only under ~/redox/_repos.bin and necessary private redox-pkgs commits/pushes; no source push authority",
-    "scope": "Isolated tools/input bindings/signing readiness only; actual package builds, cross-target image and runtime acceptance NotRun",
-    "independent_review": "PASS: independent GPT-6.1 Sol/high latest-state read-only review of isolated inputs, container mounts, locked cache, signing receipt and three-file scope; shared lock separately verified through owning process fdinfo",
-    "automation": "Existing redox weekly heartbeat updated for dedicated build root/clone exception only; Monday05:55 Asia/Singapore, ACTIVE and destination preserved"
+    "scope": "Isolated build readiness plus normal relibc/sysroot mount-correction regression; full image/runtime and package release acceptance NotRun",
+    "independent_review": "PASS: independent GPT-6.1 Sol/high read-only latest-state review; normal Make mount generation, eight clean sources, two pinned submodules, six sysroot artifact hashes, preserved baselines and two-file scope verified",
+    "automation": "Existing redox weekly heartbeat updated for dedicated build root/clone exception only; Monday05:55 Asia/Singapore, ACTIVE and destination preserved",
+    "normal_make_correction": {
+      "date": "2026-10-12",
+      "cause": "Early .config PODMAN_VOLUMES += was replaced by mk/podman.mk assignment; normal make lacked sibling mount, so source symlink became broken and local rule fell back to clone/rename",
+      "fix": "Ignored isolated .config uses override PODMAN_VOLUMES with all three standard mounts plus read-only dedicated parent",
+      "positive": "PASS: normal make f.relibc returns cached; container command parsed from normal make -n resolves all six exact clean sources",
+      "negative": "PASS: normal command rejects source writes with EROFS; removing only sibling mount reproduces broken link without cloning",
+      "relibc_submodules": {
+        "dlmalloc-rs": "40c10f6182cb1d2a78b29f85492936dfbeded02e",
+        "openlibm": "f5ed774593458e116e69731a3ffa59e2a6408d4e"
+      },
+      "sysroot_regression": "PASS: normal make prefix/x86_64-unknown-redox/sysroot exited 0; relibc cook/install and final sysroot completed; jobs=2",
+      "historical_evidence_correction": "Initial manual container mount check passed but did not prove normal Make mounts; previous normal-Make readiness assertion was incorrect",
+      "release_boundary": "Diagnostic local build only; no package publication or successful published-input baseline advancement; full make all/image/runtime NotRun",
+      "user_source_tmp": "User failed-build recipes/core/relibc/source.tmp retained; not task-owned cleanup",
+      "sysroot_artifacts": {
+        "lib/libc.a": {
+          "sha256": "4dcf5bf97fe93f437b36d078a0c829bfec0ac31e8b6e4947d44a28889a077a8e",
+          "bytes": 9796710
+        },
+        "lib/libc.so": {
+          "sha256": "5ceee63aaf2de90da5204a61fbc0958ba4bab14e5d54ad89cf0396877ff7e18a",
+          "bytes": 4045184
+        },
+        "lib/crt0.o": {
+          "sha256": "90f2f65c4d4cca9b3049d398fb141c8e8c7e9bfae790cd262b0e8b189bf4ffa8",
+          "bytes": 1576
+        },
+        "lib/crti.o": {
+          "sha256": "a7ae9d2ccd8e2da6cb78555ef2b6a5d622e67346e0de7de98aff1caa0a16a6e4",
+          "bytes": 456
+        },
+        "lib/crtn.o": {
+          "sha256": "a7ae9d2ccd8e2da6cb78555ef2b6a5d622e67346e0de7de98aff1caa0a16a6e4",
+          "bytes": 456
+        },
+        "include/stdio.h": {
+          "sha256": "deee90644b1df035b8fcd85650f4ab9045f3577b4cd551e4b721f5591487606d",
+          "bytes": 16452
+        }
+      },
+      "post_build": "Eight clean source Git trees; source symlink retained; user source.tmp retained; no remaining task containers",
+      "sysroot_artifact_root": "~/redox/_repos.bin/redox/prefix/x86_64-unknown-redox/sysroot/x86_64-unknown-redox"
+    }
   }
 }
