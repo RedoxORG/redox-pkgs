@@ -1186,5 +1186,75 @@
     "applicable_issue_references": [],
     "prior_user_notification": "Existing input decisions were notified on 2026-10-11; no new input decision detected",
     "prepublication_ref_recheck": "PASS: all 12 repository branches and SHAs unchanged; complete GraphQL pagination end confirmed"
+  },
+  "isolated_setup": {
+    "build_root": "~/redox/_repos.bin/redox",
+    "build_sha": "01efa53d3023765b189bb8d7cfbbf98dc6d5e8f0",
+    "components": {
+      "base": {
+        "status": "PASS",
+        "expected_sha": "221afd8834a3d6f4f641d62f58aa2f39578a3aad",
+        "actual_sha": "221afd8834a3d6f4f641d62f58aa2f39578a3aad",
+        "dirty": false
+      },
+      "bootloader": {
+        "status": "PASS",
+        "expected_sha": "70c5dff98aa750b31e0797686d92ba9ad331f29f",
+        "actual_sha": "70c5dff98aa750b31e0797686d92ba9ad331f29f",
+        "dirty": false
+      },
+      "uefi": {
+        "status": "PASS",
+        "expected_sha": "49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
+        "actual_sha": "49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
+        "dirty": false
+      },
+      "relibc": {
+        "status": "PASS",
+        "expected_sha": "b35b512a6a857892bb22906bfcf9e11b7feed37c",
+        "actual_sha": "b35b512a6a857892bb22906bfcf9e11b7feed37c",
+        "dirty": false
+      },
+      "installer": {
+        "status": "PASS",
+        "expected_sha": "2d2416c151e880bd68799b5c6cf46d019d964675",
+        "actual_sha": "2d2416c151e880bd68799b5c6cf46d019d964675",
+        "dirty": false
+      },
+      "userutils": {
+        "status": "PASS",
+        "expected_sha": "73aea8b3f858578ad3909e0661e9cf310e3b1d6d",
+        "actual_sha": "73aea8b3f858578ad3909e0661e9cf310e3b1d6d",
+        "dirty": false
+      },
+      "orbterm": {
+        "status": "PASS",
+        "expected_sha": "ba1243cd6bc0230ca00aac5d550fe17e727e2b46",
+        "actual_sha": "ba1243cd6bc0230ca00aac5d550fe17e727e2b46",
+        "dirty": false
+      }
+    },
+    "config_sha256": "ff7cd2dfff20b6405ee4b8c70e36b1cf49fe01976a261d5d5ce697a6b487decf",
+    "cookbook_lock_sha256": "23f12a83bc6647ad784f9b795fe25acfe7698ca25410de3f7f668b44035bf38e",
+    "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
+    "private_key_handling": "Native use only; ignored isolated build path mode0600; existing public-key identity unchanged; no private content output",
+    "container_source_mounts": "PASS: six expected source SHAs resolve under dedicated read-only parent; source write rejected with EROFS; standard root/home/curl mounts preserved",
+    "build_runtime": "Package builds/image/runtime NotRun",
+    "cargo_config_sha256": "a1633c484fe7772d4f5dc061f3f3620555be33fb0b8ba8d3dbbb77d3d09eb26d",
+    "cargo_jobs": 2,
+    "cookbook_tool": "PASS: normal make cookbook completed; container-native CLI invoked",
+    "locked_uefi_cache": "PASS: exact manifest/lock revision available in isolated container Cargo Git cache; private source URL uses local committed read-only clone; original lock unchanged",
+    "container_git_config_sha256": "83a5243b6562d31a7a98f203d638646746f8889efa9caad9d62de34458bdf967",
+    "signature_roundtrip": "PASS: native pkgar signed with existing key, extracted using unchanged public key, exact payload matched; tampered archive rejected",
+    "cookbook_selection": "PASS: normal cook-list parsed six local recipe rules without build; all isolated Git working trees clean",
+    "tools": {
+      "repo_sha256": "c267262bb09d3deca38487dd1835070b5786bc93ff4eb616caa2d434d623433d",
+      "pkgar_sha256": "578197c09d839ead0ea4fdac778a3e45373969f5438006eba3fd8ae685301be4",
+      "container_image_id": "1885df4c5a1d03bc196d67b6b395e1b9f3e290f42804a8126e20937886683903"
+    },
+    "authorization": "User explicitly authorized necessary repository clones only under ~/redox/_repos.bin and necessary private redox-pkgs commits/pushes; no source push authority",
+    "scope": "Isolated tools/input bindings/signing readiness only; actual package builds, cross-target image and runtime acceptance NotRun",
+    "independent_review": "PASS: independent GPT-6.1 Sol/high latest-state read-only review of isolated inputs, container mounts, locked cache, signing receipt and three-file scope; shared lock separately verified through owning process fdinfo",
+    "automation": "Existing redox weekly heartbeat updated for dedicated build root/clone exception only; Monday05:55 Asia/Singapore, ACTIVE and destination preserved"
   }
 }

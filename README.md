@@ -31,3 +31,5 @@ Packages retain their upstream licenses. See [sources](SOURCES.md),
 Weekly update checks use [the current report](weekly-update.md) and
 [the per-package input ledger](binary-inputs.json). The
 [first daily check](daily-update.md) remains a historical receipt.
+
+The package updater uses the [dedicated isolated build area](isolated-build.md).
