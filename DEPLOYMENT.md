@@ -31,7 +31,9 @@ When a component changes, rebuild and publish its signed package before a
 fresh build can consume that change. Missing packages retain Cookbook's
 existing source-build fallback.
 
-## Current candidate: 2026-10-13
+## Current published snapshot: 2026-10-13
+
+Published artifact commit: [`5f29a6ed`](https://github.com/RedoxORG/redox-pkgs/commit/5f29a6ed3b11ae242e6a152356182317175bca97). Exact remote SHA and package bytes read back before advancing successful inputs.
 
 Frozen recipe root: `5300847f01479312b6d932735ee4ca49aefc9e14`. Six packages were compiled from the recorded committed sources: base b4fe9e50, bootloader 70c5dff9, relibc 6348725d, installer 8ce7e5f9, userutils 4c96c611, and official Bash 5.3 with that recipe. Full revisions, locks, SDK identities and hashes are in [binary-inputs.json](binary-inputs.json).
 
