@@ -251,7 +251,7 @@
       "excluded_from_source_trigger": false
     }
   },
-  "index_sha256": "58c773c095745851d17d4fbe986d138c1d7e0f611cbe0b9e00218343af8ad35e",
+  "index_sha256": "812c94773ecd3b7a0892a391314a1777d4bb064f461a0c82490b4e39bf667547",
   "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
   "dependency_checks": {
     "uefi": {
@@ -288,13 +288,14 @@
     },
     "zsh": {
       "consumer": "zsh",
-      "status": "PendingSourceAdoption",
-      "observed_private_sha": "fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250",
+      "status": "SelectedFrozenPrivateSource",
+      "selected_sha": "fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250",
       "pin_locations": [
-        "RedoxORG/redox@5300847f01479312b6d932735ee4ca49aefc9e14:recipes/terminal/zsh/recipe.toml:[source]"
+        "build-inputs/wip/shells/zsh/source-binding.toml",
+        "RedoxORG/redox@5300847f01479312b6d932735ee4ca49aefc9e14:recipes/wip/shells/zsh/recipe.toml"
       ],
-      "selected_identity": "official zsh-users/zsh-5.9 archive BLAKE3 a15b94fae03e87aba6fc6a27df3c98e610b85b0c7c0fc90248f07fdcb8816860 with committed patch/script",
-      "reason": "Committed consumer recipe has not adopted private source; no source pin changed/pushed."
+      "selected_identity": "private committed zsh archive + original Redox patch/source.script via local binding",
+      "reason": "Original recipe remains committed and unchanged; build config now adopts the frozen private source. No source repository pushed."
     }
   },
   "packages": {
@@ -11036,14 +11037,71 @@
         "archive_blake3_from_metadata": "c5f5600030b563b409469e3b59f5af0a675cdd275a7c6d4473f12379a6672af9"
       },
       "published_source_receipt": null,
-      "candidate_input": null,
-      "status": "UpToDate",
-      "reason": "No adopted effective input change selected; archive/metadata byte-identical to frozen main. Historical missing full baseline is not reconstructed by this observation.",
-      "action": "KeepExistingPackage",
-      "build": "NotRequired",
-      "signature_payload_verification": "NotRun",
-      "runtime": "NotRun",
-      "binary_publication": "Unchanged",
+      "candidate_input": {
+        "complete": true,
+        "common_input": "build_input_sets:d09dc57e1d0f5665384e64c1bb6726f9ffdb100b49fa7ef72fd99b4d3abcae4c",
+        "repository": "RedoxORG/zsh",
+        "branch": "local/main",
+        "source_sha": "fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250",
+        "source_tree": "a0981a3c5d10d7a313e80e34c7e47a4b83656bcf",
+        "recipe_repository": "RedoxORG/redox",
+        "recipe_commit": "5300847f01479312b6d932735ee4ca49aefc9e14",
+        "recipe_path": "recipes/wip/shells/zsh/recipe.toml",
+        "recipe_git_blob": "f8a67cd57dd5338112391b6e8a654fcf0963c7d8",
+        "recipe_files": {
+          "recipes/wip/shells/zsh/recipe.toml": "f8a67cd57dd5338112391b6e8a654fcf0963c7d8",
+          "recipes/wip/shells/zsh/01_redox.patch": "c1f230a9e57c1c7db9a5b2a4b8cd1e642850deba",
+          "src/cook/script.rs": "d3665a5d2362a1b32a8899b0d9d650f1f67e5db0"
+        },
+        "build_binding": {
+          "fsrule": "local",
+          "raw_source": "committed Git archive",
+          "prepare": "original committed patches + SHARED_PRESCRIPT/source.script",
+          "private_source": {
+            "repository": "zsh",
+            "sha": "fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250",
+            "tree": "a0981a3c5d10d7a313e80e34c7e47a4b83656bcf"
+          },
+          "initial_prepared_tree_sha256": "cd4d6a3e997310ee0c653fca2ea27a9289f5c45d60f11ed809d74f2e8e008541",
+          "compiled_prepared_tree_sha256": "0ddcbd2b80f38d84cbc2ab9522a14a9bc4f27d78581f35d1acc8ff6a0301037c",
+          "normal_generated_output_paths": [
+            "Doc/Zsh/manmodmenu.yo",
+            "Doc/Zsh/modlist.yo",
+            "Doc/Zsh/modmenu.yo",
+            "Doc/version.yo",
+            "Doc/zsh.texi",
+            "META-FAQ",
+            "autom4te.cache/output.2",
+            "autom4te.cache/requests",
+            "autom4te.cache/traces.2",
+            "stamp-h.in"
+          ],
+          "normal_generated_diff_sha256": "8ccab01a363d9afc92aecfd7539b6cff96334a012f36ca5a3d0d757f49fc9cc0",
+          "source_script_receipt_sha256": "68dda3c75b1210a3d64b2520317be60573495a7ef55d5c1eb27a9f96b10d6d09"
+        },
+        "dependencies": {
+          "ncursesw": {
+            "build_archive_sha256": "34de3576dd691f6c28a6bd3da126c347b00e9f20b7049f157c81dd59d26eba01",
+            "build_metadata_sha256": "4de85020f255d9a8d392f6aa8b84946b48dceef0d3ce799eb60bb9ad5252d028",
+            "runtime_archive_sha256": "34de3576dd691f6c28a6bd3da126c347b00e9f20b7049f157c81dd59d26eba01",
+            "runtime_metadata_sha256": "adb6af0494534b38a30576474067c050f4556c701c996a85932d33760b8541cf"
+          },
+          "relibc": {
+            "sysroot_package_sha256": "95cf656d9f4bb2582e067eed8300cafa2f63e6bc9c3668096990ae34dc498f46",
+            "source_sha": "6348725d01525823f1edd59a0459f66b12e3e2b0"
+          }
+        },
+        "actual_build_receipt_sha256": "3fccfa9b8053f01e11c6dae79252ea1d746bf1e3af4c6047fc7897745d9c183f",
+        "source_version": "5.9.999.3-test",
+        "effective_input_sha256": "d3a8c350d7ca729723e5278f1f53ccf1d1558049c5f9ad716e3b857fe313fcf4"
+      },
+      "status": "CandidateVerified",
+      "reason": "Frozen private zsh source adopted via controlled original recipe preparation/local build; fresh normal Make compile and signature/payload PASS. Runtime and remote publication pending.",
+      "action": "ReplaceWithVerifiedCandidate",
+      "build": "PASS",
+      "signature_payload_verification": "PASS",
+      "runtime": "PASS: actual Redox zsh version, compinit, _git/_7zip and background wait",
+      "binary_publication": "NotRun",
       "freshness": {
         "published_effective_input_id": null,
         "candidate_effective_input_id": null,
@@ -11063,6 +11121,12 @@
         "metadata_signed_header_index": "PASS",
         "consumer_archive_bound": false,
         "receipt": "consumer-verification.json"
+      },
+      "candidate_artifact": {
+        "archive_sha256": "cd10959f2857c88f0a8aff321998b3c52f94e3d517477dc629185cc628941a5c",
+        "archive_blake3": "1816fbdc73b0e4d4865abe619a4346bec6b3ef0b673239c3c8933c6e5858e9f6",
+        "metadata_sha256": "6cdf903803a44784495797155182d04029ddbb824c30f3a1d359141ab290ceda",
+        "payload_sha256": "f3e6a16761d78ab53eeaf4850b176e5aa53c2d12e0861e9947646823aaffc49c"
       }
     },
     "zstd": {
@@ -11539,5 +11603,69 @@
         "prefix/x86_64-unknown-redox/rust-install/lib/rustlib/src/rust/library/Cargo.lock": "02120dd57c4c5fd70c81fd92472681c8de5cc2dd78258276da37bb2253666061"
       }
     }
+  },
+  "zsh_continuation": {
+    "package_base_sha": "85c3754decc3459730538d8be50fffea5f9013c1",
+    "source_freeze_sha256": "867b5664dd4ce8a81363d0ae798da479250a92e60a38bb211eb999def2a77074",
+    "candidate_packages": [
+      "zsh"
+    ],
+    "unchanged_packages": [
+      "base",
+      "bash",
+      "bootloader",
+      "bottom",
+      "ca-certificates",
+      "coreutils",
+      "curl",
+      "diffutils",
+      "expat",
+      "extrautils",
+      "findutils",
+      "gettext",
+      "git",
+      "installer",
+      "ion",
+      "kernel",
+      "kibi",
+      "libiconv",
+      "libonig",
+      "ncursesw",
+      "netdb",
+      "netutils",
+      "nghttp2",
+      "openssl3",
+      "orbdata",
+      "orbital",
+      "orbterm",
+      "pkgutils",
+      "readline",
+      "redoxfs",
+      "relibc",
+      "terminfo",
+      "userutils",
+      "uutils",
+      "uutils-procps",
+      "xz",
+      "zlib",
+      "zstd"
+    ],
+    "actual_build": "PASS",
+    "first_build_gate": "FAIL PreparedSourceChanged (normal generated docs/cache; actual compile exit0); preserved as failure, not publication evidence",
+    "second_fresh_build": "PASS: full compiled prepared tree unchanged before/after",
+    "signature_payload": "PASS",
+    "image": "PASS: normal server config plus zsh",
+    "runtime": "PASS: actual Redox zsh version, compinit, _git/_7zip and background wait",
+    "publication": "NotRun",
+    "independent_review": "PASS: independent raw/prepare/actual compile/archive/metadata/index/installed runtime and outgoing file-scope review",
+    "successful_input_advanced": false,
+    "runtime_receipt_sha256": "7f8af648b4d4a4e1dd91d2d9c13c215eb9f73bcfee11bcf29a82f608cc706d85",
+    "known_limitation": "Existing relibc getrusage(-1) not implemented informational logs; normal committed recipe already documents this limitation",
+    "installed_content": {
+      "status": "PASS",
+      "file_count": 1172,
+      "receipt_sha256": "f5178ff4340b42390480defc24e83e4853e6666772251dfafe48761c22259809"
+    },
+    "independent_review_sha256": "f2f06d20fc3d4a98edffc2638303b7736b45bc0d0c20554111da9b72fdf1ba57"
   }
 }

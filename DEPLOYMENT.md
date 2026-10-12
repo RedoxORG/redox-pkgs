@@ -95,3 +95,7 @@ tests cover first-login routing, no-terminal failure and download errors.
 Failed or canceled intermediate commands are not PASS evidence.
 
 See [contract and ledger](FRESH-BUILD.md) and [independent review](REVIEW.md).
+
+## Zsh continuation candidate
+
+Frozen private zsh `fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250` uses the committed `recipes/wip/shells/zsh` recipe patches and prepare, followed by local binding. The source recipe was not changed or pushed. Normal fresh compilation and signature/payload passed; a normal server image with zsh added passed and all 1172 installed files matched. Actual Redox runtime reported 5.9.999.3-test; compinit, _git/_7zip and background wait passed. Existing relibc getrusage informational logs remain a known limitation. Package metadata keeps Cookbook generated version TODO; actual source/runtime version and full identities are explicit in the ledger. Publication/readback pending.

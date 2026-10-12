@@ -59,11 +59,13 @@ upstream licenses, not a blanket MIT or GPL license.
 | uutils-procps | [uutils-procps source](https://github.com/uutils/procps/tree/ee98c0a78fe2abe72589f80eb05b455fa228e757) | `ee98c0a78fe2abe72589f80eb05b455fa228e757` |
 | xz | [xz source](https://github.com/tukaani-project/xz/releases/download/v5.2.13/xz-5.2.13.tar.gz) | `edc6350542e8cb7188a878135e5b9bd592d687e5b47451ca1c89d51cc4bc6b53` |
 | zlib | [zlib source](https://www.zlib.net/fossils/zlib-1.3.tar.gz) | `ec1abc6f672a7a6ee6f49ba544cc9529f73121b478310473be44fee22a140ebf` |
-| zsh | [zsh source](https://github.com/zsh-users/zsh/archive/refs/tags/zsh-5.9.tar.gz) | `a15b94fae03e87aba6fc6a27df3c98e610b85b0c7c0fc90248f07fdcb8816860` |
+| zsh | [private zsh source](https://github.com/RedoxORG/zsh/tree/fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250) | `fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250`; original Redox prepare/local binding |
 | zstd | [zstd source](https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz) | `730dca31244abd219e995f03a55d95b2cfb4b3e16cda055a79fa6f30a4f0e1db` |
 
 GNU package license mapping: bash/readline/diffutils/gettext use GPLv3;
 Git uses GPLv2; libiconv contains LGPLv2.1 libraries and GPLv3 utilities.
 See each complete upstream source archive for copyright and license details.
 
-The six candidate packages use frozen Redox recipe commit `5300847f01479312b6d932735ee4ca49aefc9e14`. Full locks, source identities, package hashes and current validation are in `binary-inputs.json`. Later source pushes are deferred; the other 33 archives are unchanged.
+The six earlier packages use frozen Redox recipe commit `5300847f01479312b6d932735ee4ca49aefc9e14`. Full locks, source identities, package hashes and current validation are in `binary-inputs.json`. Later source pushes are deferred. This continuation additionally updates zsh; other 38 archives stay unchanged from the six-package release.
+
+Zsh uses the frozen private source and original [recipe, patch and binding](build-inputs/wip/shells/zsh/). Its permissive [license](licenses/zsh.txt) is preserved. The source recipe was not pushed or modified; controlled prepare and actual compilation identities are in binary-inputs.json.

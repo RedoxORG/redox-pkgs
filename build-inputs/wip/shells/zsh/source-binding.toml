@@ -1,0 +1,7 @@
+repository = "https://github.com/RedoxORG/zsh.git"
+revision = "fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250"
+recipe_root = "5300847f01479312b6d932735ee4ca49aefc9e14"
+recipe_path = "recipes/wip/shells/zsh/recipe.toml"
+fsrule = "local"
+prepared_tree_sha256 = "0ddcbd2b80f38d84cbc2ab9522a14a9bc4f27d78581f35d1acc8ff6a0301037c"
+preparation = "Export the exact Git revision; apply original recipe patches; run committed Cookbook SHARED_PRESCRIPT and source.script. Normal Make generates the documented doc/autotools outputs before the frozen final compilation."
