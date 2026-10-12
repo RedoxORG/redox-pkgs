@@ -23,15 +23,23 @@ Restart the same disk with `make qemu kvm=no`; `image` recreates the disk.
 
 The source repository ships the scoped curl adapter and installs GitHub CLI
 in its normal container. Only this repository's file API is authenticated;
-unrelated downloads retain the original curl behavior. No token is committed
-or put in a URL or process argument. Pages remains disabled.
+unrelated downloads retain the original curl behavior. Package publication includes no private key or token. Source adapter credential
+delivery is outside this package release. Pages remains disabled.
 
 These are published binary snapshots, not automatic builds on source pushes.
 When a component changes, rebuild and publish its signed package before a
 fresh build can consume that change. Missing packages retain Cookbook's
 existing source-build fallback.
 
-## Accepted snapshot: 2026-10-10
+## Current candidate: 2026-10-13
+
+Frozen recipe root: `5300847f01479312b6d932735ee4ca49aefc9e14`. Six packages were compiled from the recorded committed sources: base b4fe9e50, bootloader 70c5dff9, relibc 6348725d, installer 8ce7e5f9, userutils 4c96c611, and official Bash 5.3 with that recipe. Full revisions, locks, SDK identities and hashes are in [binary-inputs.json](binary-inputs.json).
+
+All six signatures and extracted contents passed. The normal binary/offline image passed; its bootloader, initfs, inputd, login, libc.so, bash and bash.bashrc match the new packages. The initfs inputd matches this run normal build output. Normal QEMU reached login, root login succeeded, Bash reported 5.3.0 and background sleep/wait completed. Installer CLI and GUI runtime coverage is NotRun.
+
+The remaining 33 packages and signing public key stay byte-identical. Pending source adoptions and publication state are listed in [current update](weekly-update.md). The 2026-10-10 snapshot below is historical and is superseded for these six packages.
+
+## Historical accepted snapshot: 2026-10-10
 
 Source integration:
 [`b3c76ef9`](https://github.com/RedoxORG/redox/commit/b3c76ef9d6f0c72ad2dffd6a5027b63a6d505de6).

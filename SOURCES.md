@@ -22,9 +22,9 @@ upstream licenses, not a blanket MIT or GPL license.
 
 | Package | Upstream source | Source identifier / archive BLAKE3 |
 | --- | --- | --- |
-| base | [base source](https://gitlab.redox-os.org/redox-os/base) | `local modifications; MIT-licensed private fork` |
+| base | [base private source](https://github.com/RedoxORG/base/tree/b4fe9e50d4a4500387bf7d76f7f50df669224b1c) | `b4fe9e50d4a4500387bf7d76f7f50df669224b1c` |
 | bash | [bash source](https://ftp.gnu.org/gnu/bash/bash-5.3.tar.gz) | `5bf3ac6c18f3dc3fe3e049a1e10ea5ae5c5b39dac2356cd796730f49b273fd0f` |
-| bootloader | [bootloader source](https://gitlab.redox-os.org/redox-os/bootloader) | `local modifications; MIT-licensed private fork` |
+| bootloader | [bootloader private source](https://github.com/RedoxORG/bootloader/tree/70c5dff98aa750b31e0797686d92ba9ad331f29f) | `70c5dff98aa750b31e0797686d92ba9ad331f29f` |
 | bottom | [bottom source](https://github.com/jackpot51/bottom/tree/87b9106ffd27a512315096d831a03a1079e79323) | `87b9106ffd27a512315096d831a03a1079e79323` |
 | ca-certificates | [ca-certificates source](https://gitlab.redox-os.org/redox-os/ca-certificates/-/tree/4955c9001ad38451fe2b7b2bf5bf85b1b5aef390) | `4955c9001ad38451fe2b7b2bf5bf85b1b5aef390` |
 | coreutils | [coreutils source](https://gitlab.redox-os.org/redox-os/coreutils/-/tree/575a46d3b624ad9cd222c9e3250073e9269c3462) | `575a46d3b624ad9cd222c9e3250073e9269c3462` |
@@ -35,7 +35,7 @@ upstream licenses, not a blanket MIT or GPL license.
 | findutils | [findutils source](https://gitlab.redox-os.org/redox-os/findutils/-/tree/116c044399318bf1c77a0d97371b61999ee170b4) | `116c044399318bf1c77a0d97371b61999ee170b4` |
 | gettext | [gettext source](https://ftp.gnu.org/gnu/gettext/gettext-0.22.5.tar.gz) | `cb3f3a34da7ce1a92746df81f5b78c5d53841973a24eb80ab76537263d380ec0` |
 | git | [git source](https://www.kernel.org/pub/software/scm/git/git-2.13.1.tar.xz) | `bc78271bffd60c5b8b938d8c08fd74dc2de8d21fbaf8f8e0e3155436d9263f17` |
-| installer | [installer source](https://gitlab.redox-os.org/redox-os/installer) | `local_source` |
+| installer | [installer private source](https://github.com/RedoxORG/installer/tree/8ce7e5f94b39f2db8b86834f54d9f405d7cc679c) | `8ce7e5f94b39f2db8b86834f54d9f405d7cc679c` |
 | ion | [ion source](https://gitlab.redox-os.org/redox-os/ion/-/tree/e9b3ca48b7ab6444498d5c3aa902d471ce29f759) | `e9b3ca48b7ab6444498d5c3aa902d471ce29f759` |
 | kernel | [kernel source](https://gitlab.redox-os.org/redox-os/kernel/-/tree/d4ffe6dbfe907053a125ee946f7212fb23dcb905) | `d4ffe6dbfe907053a125ee946f7212fb23dcb905` |
 | kibi | [kibi source](https://github.com/ilai-deutel/kibi/tree/805819d57228cf4f2b64a7313f6d473348a4a844) | `805819d57228cf4f2b64a7313f6d473348a4a844` |
@@ -52,9 +52,9 @@ upstream licenses, not a blanket MIT or GPL license.
 | pkgutils | [pkgutils source](https://gitlab.redox-os.org/redox-os/pkgutils/-/tree/fe21bfd95d869cafd356bcdec4d1a81739ede5ee) | `fe21bfd95d869cafd356bcdec4d1a81739ede5ee` |
 | readline | [readline source](https://ftp.gnu.org/gnu/readline/readline-8.3.tar.gz) | `7109f094062bda387a0c16b4875375b96e36437bebbbd8d8f91bb27ba01d687f` |
 | redoxfs | [redoxfs source](https://gitlab.redox-os.org/redox-os/redoxfs/-/tree/b87b0976ee122036b2ec040159b890e1e06ca139) | `b87b0976ee122036b2ec040159b890e1e06ca139` |
-| relibc | [relibc source](https://gitlab.redox-os.org/redox-os/relibc) | `local_source` |
+| relibc | [relibc private source](https://github.com/RedoxORG/relibc/tree/6348725d01525823f1edd59a0459f66b12e3e2b0) | `6348725d01525823f1edd59a0459f66b12e3e2b0` |
 | terminfo | [terminfo source](https://github.com/sajattack/terminfo/tree/dc5712b13b4a4058ffca1f077167994b1764828a) | `dc5712b13b4a4058ffca1f077167994b1764828a` |
-| userutils | [userutils source](https://gitlab.redox-os.org/redox-os/userutils) | `local_source` |
+| userutils | [userutils private source](https://github.com/RedoxORG/userutils/tree/4c96c6112d111a933a06768a0f41c954ab959623) | `4c96c6112d111a933a06768a0f41c954ab959623` |
 | uutils | [uutils source](https://github.com/uutils/coreutils/tree/bf65901e1ed82963436844c2cf8e796ba9158c65) | `bf65901e1ed82963436844c2cf8e796ba9158c65` |
 | uutils-procps | [uutils-procps source](https://github.com/uutils/procps/tree/ee98c0a78fe2abe72589f80eb05b455fa228e757) | `ee98c0a78fe2abe72589f80eb05b455fa228e757` |
 | xz | [xz source](https://github.com/tukaani-project/xz/releases/download/v5.2.13/xz-5.2.13.tar.gz) | `edc6350542e8cb7188a878135e5b9bd592d687e5b47451ca1c89d51cc4bc6b53` |
@@ -65,3 +65,5 @@ upstream licenses, not a blanket MIT or GPL license.
 GNU package license mapping: bash/readline/diffutils/gettext use GPLv3;
 Git uses GPLv2; libiconv contains LGPLv2.1 libraries and GPLv3 utilities.
 See each complete upstream source archive for copyright and license details.
+
+The six candidate packages use frozen Redox recipe commit `5300847f01479312b6d932735ee4ca49aefc9e14`. Full locks, source identities, package hashes and current validation are in `binary-inputs.json`. Later source pushes are deferred; the other 33 archives are unchanged.
