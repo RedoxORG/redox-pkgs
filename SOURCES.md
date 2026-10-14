@@ -22,7 +22,7 @@ upstream licenses, not a blanket MIT or GPL license.
 
 | Package | Upstream source | Source identifier / archive BLAKE3 |
 | --- | --- | --- |
-| base | [base private source](https://github.com/RedoxORG/base/tree/b4fe9e50d4a4500387bf7d76f7f50df669224b1c) | `b4fe9e50d4a4500387bf7d76f7f50df669224b1c` |
+| base | [base private source](https://github.com/RedoxORG/base/tree/f364a8731282739487be0e3f525b36b6260ab8b5) | `f364a8731282739487be0e3f525b36b6260ab8b5` |
 | bash | [bash source](https://ftp.gnu.org/gnu/bash/bash-5.3.tar.gz) | `5bf3ac6c18f3dc3fe3e049a1e10ea5ae5c5b39dac2356cd796730f49b273fd0f` |
 | bootloader | [bootloader private source](https://github.com/RedoxORG/bootloader/tree/70c5dff98aa750b31e0797686d92ba9ad331f29f) | `70c5dff98aa750b31e0797686d92ba9ad331f29f` |
 | bottom | [bottom source](https://github.com/jackpot51/bottom/tree/87b9106ffd27a512315096d831a03a1079e79323) | `87b9106ffd27a512315096d831a03a1079e79323` |
@@ -69,3 +69,6 @@ See each complete upstream source archive for copyright and license details.
 The six earlier packages use frozen Redox recipe commit `5300847f01479312b6d932735ee4ca49aefc9e14`. Full locks, source identities, package hashes and current validation are in `binary-inputs.json`. Later source pushes are deferred. This continuation additionally updates zsh; other 38 archives stay unchanged from the six-package release.
 
 Zsh uses the frozen private source and original [recipe, patch and binding](build-inputs/wip/shells/zsh/). Its permissive [license](licenses/zsh.txt) is preserved. The source recipe was not pushed or modified; controlled prepare and actual compilation identities are in binary-inputs.json.
+
+Current base/bash update uses frozen Redox recipe/config commit `9965194f7051d85b202aabb649b60eb0deefb4f7`. Bash archive and compiler options remain unchanged; its included skeleton rc now uses the committed shared shell configuration. Image configuration comes from that exact Redox commit and is not a separate binary package.
+Recipe/file distribution copies follow the existing LF text normalization; the original committed Git blob and byte hashes are recorded separately in the input ledger.

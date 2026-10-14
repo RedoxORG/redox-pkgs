@@ -1,10 +1,10 @@
 name = "bash"
 version = "5.3"
 target = "x86_64-unknown-redox"
-blake3 = "c3ea5deaa1b02c65c4b83a888bb840891bed2a47e3e5d6c4984384c41ca56a4d"
+blake3 = "29901eb933d314322c2be6979b5a6f0fcafc95816dc5efff60d65faf8913f833"
 source_identifier = "5bf3ac6c18f3dc3fe3e049a1e10ea5ae5c5b39dac2356cd796730f49b273fd0f"
-commit_identifier = "5300847f01479312b6d932735ee4ca49aefc9e14"
-time_identifier = "2026-10-12T14:59:13Z"
-storage_size = 9691925
-network_size = 9691925
+commit_identifier = "9965194f7051d85b202aabb649b60eb0deefb4f7"
+time_identifier = "2026-10-13T23:34:52Z"
+storage_size = 9691670
+network_size = 9691670
 depends = ["ncursesw", "readline"]
