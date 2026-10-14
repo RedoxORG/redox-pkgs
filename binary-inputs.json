@@ -193,7 +193,7 @@
       "status": "SelectedFrozenPrivateSource"
     }
   },
-  "index_sha256": "812c94773ecd3b7a0892a391314a1777d4bb064f461a0c82490b4e39bf667547",
+  "index_sha256": "e4cebd1ea276b002410783e81fa9b2310ab75d0fb8f1be100b33f89dcee4c2b0",
   "input_semantics": "Observed candidates and archive identity are not successful published input baselines. Null last_successful_input must be reconciled or rebuilt safely; never skipped as completed.",
   "isolated_setup": {
     "authorization": "User explicitly authorized necessary repository clones only under ~/redox/_repos.bin and necessary private redox-pkgs commits/pushes; no source push authority",
@@ -312,7 +312,7 @@
     "applicable_issue_references": [
       "RedoxORG/workspace#10"
     ],
-    "binary_publication": "NotRun",
+    "binary_publication": "PASS",
     "build": "PASS",
     "cadence": "Monday 05:55 Asia/Singapore",
     "checked_at": "2026-10-14T00:00:56.196645+00:00",
@@ -320,11 +320,13 @@
       "base",
       "bash"
     ],
+    "independent_review": "PASS",
     "inventory_pages": [
       13,
       0
     ],
     "package_anchor_commit": "a9a369b5576734915cc58b217b430192c42b3da5",
+    "payload_commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
     "pending_dependencies": [
       "users",
       "object"
@@ -332,6 +334,10 @@
     "retained_unchanged_packages": 37,
     "runtime": "PASS within stated minimum coverage",
     "source_heads_requeried": false,
+    "successful_inputs_advanced": [
+      "base",
+      "bash"
+    ],
     "tooling_only_changes": [
       "bootloader",
       "relibc",
@@ -360,9 +366,9 @@
   },
   "packages": {
     "base": {
-      "action": "AwaitPublication",
+      "action": "PublishedVerifiedCandidate",
       "baseline_status": "Known",
-      "binary_publication": "NotRun",
+      "binary_publication": "PASS",
       "build": "PASS",
       "candidate_artifact": {
         "archive_blake3": "df7565f46f58eff17c4496fa595e3fbf19aaf128755426b7974636b373b079d4",
@@ -2354,23 +2360,22 @@
         "submodules": {},
         "verification_receipt_sha256": "543a744109c06f503e0f662a4f45a642f71526549fd628b929deadcfb235c386"
       },
-      "freshness": "PendingPublication",
+      "freshness": "Complete input matches this run frozen effective source/recipe/ABI identity",
       "last_artifact_verification": {
-        "archive_sha256": "7381acd0713e00c1cfdc1acf045f6ab9adf1e1c96c568831d21647749de16b56",
-        "consumer_archive_bound": true,
-        "date": "2026-10-13",
-        "metadata_sha256": "bcfa2936e584129a5ffb734ba81955e72f457277994664e7b0733098466d677e",
-        "metadata_signed_header_index": "PASS",
-        "package_commit": "5f29a6ed3b11ae242e6a152356182317175bca97",
-        "receipt": "binary-inputs.json:verification",
-        "signature_extraction": "PASS"
+        "archive_sha256": "d20ec71e37908f9531d251bf7682d89d949378522eecf1777a248d4711d17fc9",
+        "checked_at": "2026-10-14T00:14:21.990492+00:00",
+        "commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
+        "metadata_sha256": "406c0f072f5fb64c387586feb64f33938be60ec6d29d1007a126d6a8fe89afcc",
+        "remote_exact_bytes": "PASS",
+        "signature_payload": "PASS"
       },
       "last_successful_input": {
+        "actual_build_receipt_sha256": "a09a2b61b5c727f967f8a355dac88af852c814a989d6c0b2127f640ab5287ea0",
         "branch": "local/main",
-        "common_input": "build_input_sets:d09dc57e1d0f5665384e64c1bb6726f9ffdb100b49fa7ef72fd99b4d3abcae4c",
-        "common_input_identity": "d09dc57e1d0f5665384e64c1bb6726f9ffdb100b49fa7ef72fd99b4d3abcae4c",
+        "common_input": "build_input_sets:648b816b511245a57fdeb45719030b18c7aa8dbaa0ac51d454274485ca137598",
+        "common_input_identity": "648b816b511245a57fdeb45719030b18c7aa8dbaa0ac51d454274485ca137598",
         "complete": true,
-        "effective_input_sha256": "6f7785de05417e42e7eb7d9a213638fced868b55e97dc377b6c362372f690f93",
+        "effective_input_sha256": "fe06103a9e9eb30ec0da247b1efcaa65ba658a88147022ea663f10c323037362",
         "lockfiles": {
           "Cargo.lock": {
             "dependencies": [
@@ -4334,55 +4339,58 @@
             "sha256": "64a5d8138ee77e6bd00e41ccc2018832ae18c258a245fdc1a79053a1d9637d2c"
           }
         },
-        "published_artifact_commit": "5f29a6ed3b11ae242e6a152356182317175bca97",
-        "published_at": "2026-10-12T16:25:23.828562+00:00",
+        "published_artifact_commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
+        "published_at": "2026-10-14T00:14:21.990492+00:00",
         "recipe_files": {
           "recipes/core/base/recipe.toml": {
             "git_blob": "5a8520bd762c84cbd8f65b501a76fea58741b314",
-            "mode": "100644"
+            "sha256": "b8356c9949efe0b2ed1772d027f1e79a753f7f9ca86653339074be395e0ece2b"
           }
         },
         "recipe_git_blob": "5a8520bd762c84cbd8f65b501a76fea58741b314",
         "recipe_path": "recipes/core/base/recipe.toml",
         "repository": "RedoxORG/base",
-        "source_sha": "b4fe9e50d4a4500387bf7d76f7f50df669224b1c",
-        "source_tree": "98d669a2087df94ab65aa41de617f9fc7c30aa51",
+        "source_sha": "f364a8731282739487be0e3f525b36b6260ab8b5",
+        "source_tree": "d71f75cc2d1dbc59f838c874182c8418bdd291e0",
         "submodules": {},
         "validation": {
-          "build": "PASS",
-          "index": "PASS",
-          "remote_bytes": "PASS",
-          "runtime": "PASS: normal server smoke and installed file identity",
-          "signature_payload": "PASS"
-        }
+          "installed_normal_image": "PASS",
+          "keyboard_host_tests": 14,
+          "normal_keyboard_bash_smoke": "PASS",
+          "optional_specialized_guest_locks": "NotRun: fixture failed before cases",
+          "remote_download_signature_payload": "PASS",
+          "remote_exact_sha_bytes": "PASS",
+          "signature_payload": "PASS",
+          "source_build": "PASS"
+        },
+        "verification_receipt_sha256": "543a744109c06f503e0f662a4f45a642f71526549fd628b929deadcfb235c386"
       },
       "published_artifact": {
-        "archive_blake3": "023f6315f361e443b10d57d658a69026cca76114838ca674df99c843bcb74fec",
-        "archive_sha256": "7381acd0713e00c1cfdc1acf045f6ab9adf1e1c96c568831d21647749de16b56",
-        "metadata_commit_identifier": "5300847f01479312b6d932735ee4ca49aefc9e14",
-        "metadata_sha256": "bcfa2936e584129a5ffb734ba81955e72f457277994664e7b0733098466d677e",
-        "metadata_source_identifier": "local_source",
-        "payload_sha256": "2590b6190d3990991627f8729b70683d311ab94456e99dccb2a32cdc8df5d7ab",
-        "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
-        "readback": "PASS",
-        "repository_commit": "5f29a6ed3b11ae242e6a152356182317175bca97"
+        "archive_blake3": "df7565f46f58eff17c4496fa595e3fbf19aaf128755426b7974636b373b079d4",
+        "archive_sha256": "d20ec71e37908f9531d251bf7682d89d949378522eecf1777a248d4711d17fc9",
+        "metadata_sha256": "406c0f072f5fb64c387586feb64f33938be60ec6d29d1007a126d6a8fe89afcc",
+        "payload_sha256": "0eed8b6c05c8870f197d10c5830ceab3e74ddb2732c160e679ba290012db5463"
       },
       "published_source_receipt": {
-        "artifact_commit": "5f29a6ed3b11ae242e6a152356182317175bca97",
-        "recipe_commit": "5300847f01479312b6d932735ee4ca49aefc9e14",
-        "source": null,
-        "source_sha": "b4fe9e50d4a4500387bf7d76f7f50df669224b1c",
-        "verification": "PASS: normal actual compilation, complete input identity, signed payload equality, immutable remote bytes"
+        "actual_build_receipt_sha256": "a09a2b61b5c727f967f8a355dac88af852c814a989d6c0b2127f640ab5287ea0",
+        "commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
+        "complete_input_identity": "fe06103a9e9eb30ec0da247b1efcaa65ba658a88147022ea663f10c323037362",
+        "normal_entry_and_sources": "PASS",
+        "recipe_commit": "9965194f7051d85b202aabb649b60eb0deefb4f7",
+        "recipe_repository": "RedoxORG/redox",
+        "remote_verified": true,
+        "source_archive": null,
+        "source_sha": "f364a8731282739487be0e3f525b36b6260ab8b5"
       },
-      "reason": "Effective committed production/packaging inputs changed at startup frozen revisions",
+      "reason": "Actual current candidate ordinarily published and exact remote bytes verified before successful input advanced",
       "runtime": "PASS: this run normal boot/root login/physical keyboard typed Bash alias command; host keyboard14 PASS; optional fixture locks NotRun",
       "signature_payload_verification": "PASS",
-      "status": "CandidateVerified"
+      "status": "UpToDate"
     },
     "bash": {
-      "action": "AwaitPublication",
+      "action": "PublishedVerifiedCandidate",
       "baseline_status": "Known",
-      "binary_publication": "NotRun",
+      "binary_publication": "PASS",
       "build": "PASS",
       "candidate_artifact": {
         "archive_blake3": "29901eb933d314322c2be6979b5a6f0fcafc95816dc5efff60d65faf8913f833",
@@ -4493,18 +4501,17 @@
         },
         "verification_receipt_sha256": "543a744109c06f503e0f662a4f45a642f71526549fd628b929deadcfb235c386"
       },
-      "freshness": "PendingPublication",
+      "freshness": "Complete input matches this run frozen effective source/recipe/ABI identity",
       "last_artifact_verification": {
-        "archive_sha256": "e4f4e4aed48aa898e57ca2a4ccf2ae49aa80e765794969b875ea0e219cc3eda3",
-        "consumer_archive_bound": true,
-        "date": "2026-10-13",
-        "metadata_sha256": "379c7837d327f129f90483ac1863e204a52af4398f9de19478f25438dd9c808a",
-        "metadata_signed_header_index": "PASS",
-        "package_commit": "5f29a6ed3b11ae242e6a152356182317175bca97",
-        "receipt": "binary-inputs.json:verification",
-        "signature_extraction": "PASS"
+        "archive_sha256": "5e77f1cc95d13193c12168dee2fbf8a7d083fc6765ad6e3647f281ca1cf747c3",
+        "checked_at": "2026-10-14T00:14:21.990492+00:00",
+        "commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
+        "metadata_sha256": "d11229f1411ad1702e04ebfdcaee362167b2b5f075bbc7e3294ab33654ebf63c",
+        "remote_exact_bytes": "PASS",
+        "signature_payload": "PASS"
       },
       "last_successful_input": {
+        "actual_build_receipt_sha256": "a09a2b61b5c727f967f8a355dac88af852c814a989d6c0b2127f640ab5287ea0",
         "built_dependencies": {
           "ncursesw": {
             "archive_sha256": "34de3576dd691f6c28a6bd3da126c347b00e9f20b7049f157c81dd59d26eba01",
@@ -4519,10 +4526,10 @@
               "source_identifier": "fbec55697a01f99b9cc3f25be55e73ae7091f4c53e5d81a1ea15734c4e5b7238",
               "storage_size": 3976993,
               "target": "x86_64-unknown-redox",
-              "time_identifier": "2026-10-12T14:59:13Z",
+              "time_identifier": "2026-10-12T15:40:40Z",
               "version": "TODO"
             },
-            "metadata_sha256": "0f8cb888a656fa51f9d533a99b0a85a17ee0dc7a99c00ebfd540e2c88c539608"
+            "metadata_sha256": "4de85020f255d9a8d392f6aa8b84946b48dceef0d3ce799eb60bb9ad5252d028"
           },
           "readline": {
             "archive_sha256": "5b7c1e8fc0456f93b7cf1b7abb1d6b46322cbc3e39bcb7ae69be2e09c092a8e7",
@@ -4537,10 +4544,10 @@
               "source_identifier": "7109f094062bda387a0c16b4875375b96e36437bebbbd8d8f91bb27ba01d687f",
               "storage_size": 1898418,
               "target": "x86_64-unknown-redox",
-              "time_identifier": "2026-10-12T14:59:13Z",
+              "time_identifier": "2026-10-12T15:40:40Z",
               "version": "8.3"
             },
-            "metadata_sha256": "7c7c5601986747f34611511134c8b3c0672ff22c534193816c36e4830e349fcd"
+            "metadata_sha256": "dba824fa084ed1353c768e0c69bc2e157756b070c76a2fe473748859a9db6ff9"
           },
           "terminfo": {
             "archive_sha256": "1c43ab436c12d8443b7a44290bc478c066b97627453cc90f2f916d4fdefc6e73",
@@ -4553,41 +4560,41 @@
               "source_identifier": "dc5712b13b4a4058ffca1f077167994b1764828a",
               "storage_size": 239157,
               "target": "x86_64-unknown-redox",
-              "time_identifier": "2026-10-12T14:59:13Z",
+              "time_identifier": "2026-10-12T15:40:40Z",
               "version": "TODO"
             },
-            "metadata_sha256": "f8cde89c0b9fe5a6b10bcca88f484830c72dc4ebfb99500d58fc4a9527e3e746"
+            "metadata_sha256": "8dc84c02495ae46302bbc5e4b69823943334323ee9f2bfeb7e3b934b730c0ca7"
           }
         },
-        "common_input": "build_input_sets:d09dc57e1d0f5665384e64c1bb6726f9ffdb100b49fa7ef72fd99b4d3abcae4c",
-        "common_input_identity": "d09dc57e1d0f5665384e64c1bb6726f9ffdb100b49fa7ef72fd99b4d3abcae4c",
+        "common_input": "build_input_sets:648b816b511245a57fdeb45719030b18c7aa8dbaa0ac51d454274485ca137598",
+        "common_input_identity": "648b816b511245a57fdeb45719030b18c7aa8dbaa0ac51d454274485ca137598",
         "complete": true,
-        "effective_input_sha256": "912a41c31ca586e3d42b10fb84437143eb88eb2d4eae22b394a9cfbddc3ed1ff",
-        "published_artifact_commit": "5f29a6ed3b11ae242e6a152356182317175bca97",
-        "published_at": "2026-10-12T16:25:23.828562+00:00",
+        "effective_input_sha256": "77e1189ad278089d9911043a641d64a984b5becb768b4b68a4c6ca7d2aa5e3ab",
+        "published_artifact_commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
+        "published_at": "2026-10-14T00:14:21.990492+00:00",
         "recipe_files": {
           "recipes/terminal/bash/etc/bash.bashrc": {
             "git_blob": "0f84bea4dc7a905729b2af840fa6c2dca4cc7b61",
-            "mode": "100644"
+            "sha256": "1ea027192a75b2cb9223406aefa319b589cc0ecc8f86f65dc475c2ec02bcd21e"
           },
           "recipes/terminal/bash/etc/profile": {
             "git_blob": "7f85066c60079da983f1977c3e311cadec00b5f2",
-            "mode": "100644"
+            "sha256": "66f4510566d71c4a49717f54a29d8c4268fd332a49595dbe78c072e06e5ca60f"
           },
           "recipes/terminal/bash/etc/skel/.bashrc": {
-            "git_blob": "e4b82c6f476425acf4da6cd21ae5ff87034e90ab",
-            "mode": "100644"
+            "git_blob": "2433020f0c871461e410b327e7d23e545a8dddfb",
+            "sha256": "382de427b6a072847b422b9ab7cd0698be6377f9eedb4f09bc2477665039038d"
           },
           "recipes/terminal/bash/etc/skel/.profile": {
             "git_blob": "04df37bda90ff7e18880a5157f6de93279de1d39",
-            "mode": "100644"
+            "sha256": "e2182cca7e48e2884ac9b3942faa3b6ac151246ec9c3783814bdf5be3e66c17d"
           },
           "recipes/terminal/bash/recipe.toml": {
-            "git_blob": "1cf708d76ab0c96b5cc430f5f2733abd6bbc776e",
-            "mode": "100644"
+            "git_blob": "d20cb50b5d0ff191b6e6b7efcac0f4074e3a3d21",
+            "sha256": "4fb5c59be6da916c01473340e33857c0c1d0c8e03e638eda7c88ecdcec48b76c"
           }
         },
-        "recipe_git_blob": "1cf708d76ab0c96b5cc430f5f2733abd6bbc776e",
+        "recipe_git_blob": "d20cb50b5d0ff191b6e6b7efcac0f4074e3a3d21",
         "recipe_path": "recipes/terminal/bash/recipe.toml",
         "runtime_dependency_archives": {
           "ncursesw": {
@@ -4607,58 +4614,71 @@
           "url": "https://ftp.gnu.org/gnu/bash/bash-5.3.tar.gz"
         },
         "validation": {
-          "build": "PASS",
-          "index": "PASS",
-          "remote_bytes": "PASS",
-          "runtime": "PASS: normal server smoke and installed file identity",
-          "signature_payload": "PASS"
-        }
+          "installed_normal_image": "PASS",
+          "keyboard_host_tests": 14,
+          "normal_keyboard_bash_smoke": "PASS",
+          "optional_specialized_guest_locks": "NotRun: fixture failed before cases",
+          "remote_download_signature_payload": "PASS",
+          "remote_exact_sha_bytes": "PASS",
+          "signature_payload": "PASS",
+          "source_build": "PASS"
+        },
+        "verification_receipt_sha256": "543a744109c06f503e0f662a4f45a642f71526549fd628b929deadcfb235c386"
       },
       "published_artifact": {
-        "archive_blake3": "c3ea5deaa1b02c65c4b83a888bb840891bed2a47e3e5d6c4984384c41ca56a4d",
-        "archive_sha256": "e4f4e4aed48aa898e57ca2a4ccf2ae49aa80e765794969b875ea0e219cc3eda3",
-        "metadata_commit_identifier": "5300847f01479312b6d932735ee4ca49aefc9e14",
-        "metadata_sha256": "379c7837d327f129f90483ac1863e204a52af4398f9de19478f25438dd9c808a",
-        "metadata_source_identifier": "5bf3ac6c18f3dc3fe3e049a1e10ea5ae5c5b39dac2356cd796730f49b273fd0f",
-        "payload_sha256": "73aa3e15dc3ef0a49157969c3c9a2600bf92f2073b1d2b3457390a2b933e8cb5",
-        "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
-        "readback": "PASS",
-        "repository_commit": "5f29a6ed3b11ae242e6a152356182317175bca97"
+        "archive_blake3": "29901eb933d314322c2be6979b5a6f0fcafc95816dc5efff60d65faf8913f833",
+        "archive_sha256": "5e77f1cc95d13193c12168dee2fbf8a7d083fc6765ad6e3647f281ca1cf747c3",
+        "metadata_sha256": "d11229f1411ad1702e04ebfdcaee362167b2b5f075bbc7e3294ab33654ebf63c",
+        "payload_sha256": "2072af614271ea87d927151fc2847966c12ed4cb85e34064634a7caf63f983e5"
       },
       "published_recipe_receipt": {
-        "etc/bash.bashrc": {
-          "evidence": "SOURCES.md: corresponding published Bash recipe/configuration and SYS_BASHRC option",
-          "path": "build-inputs/terminal/bash/etc/bash.bashrc",
-          "sha256": "1ea027192a75b2cb9223406aefa319b589cc0ecc8f86f65dc475c2ec02bcd21e"
+        "commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
+        "recipe_files": {
+          "recipes/terminal/bash/etc/bash.bashrc": {
+            "git_blob": "0f84bea4dc7a905729b2af840fa6c2dca4cc7b61",
+            "sha256": "1ea027192a75b2cb9223406aefa319b589cc0ecc8f86f65dc475c2ec02bcd21e"
+          },
+          "recipes/terminal/bash/etc/profile": {
+            "git_blob": "7f85066c60079da983f1977c3e311cadec00b5f2",
+            "sha256": "66f4510566d71c4a49717f54a29d8c4268fd332a49595dbe78c072e06e5ca60f"
+          },
+          "recipes/terminal/bash/etc/skel/.bashrc": {
+            "git_blob": "2433020f0c871461e410b327e7d23e545a8dddfb",
+            "sha256": "382de427b6a072847b422b9ab7cd0698be6377f9eedb4f09bc2477665039038d"
+          },
+          "recipes/terminal/bash/etc/skel/.profile": {
+            "git_blob": "04df37bda90ff7e18880a5157f6de93279de1d39",
+            "sha256": "e2182cca7e48e2884ac9b3942faa3b6ac151246ec9c3783814bdf5be3e66c17d"
+          },
+          "recipes/terminal/bash/recipe.toml": {
+            "git_blob": "d20cb50b5d0ff191b6e6b7efcac0f4074e3a3d21",
+            "sha256": "4fb5c59be6da916c01473340e33857c0c1d0c8e03e638eda7c88ecdcec48b76c"
+          }
         },
-        "etc/skel/.bashrc": {
-          "evidence": "SOURCES.md: corresponding published Bash recipe/configuration and SYS_BASHRC option",
-          "path": "build-inputs/terminal/bash/etc/skel/.bashrc",
-          "sha256": "84b8a8cbeb229f8c31a3ae210d6a4c3de611c665aa96a1e7622fb13f4ae8a340"
-        },
-        "recipe.toml": {
-          "evidence": "SOURCES.md: corresponding published Bash recipe/configuration and SYS_BASHRC option",
-          "path": "build-inputs/terminal/bash/recipe.toml",
-          "sha256": "4fb5c59be6da916c01473340e33857c0c1d0c8e03e638eda7c88ecdcec48b76c"
-        }
+        "recipe_git_blob": "d20cb50b5d0ff191b6e6b7efcac0f4074e3a3d21",
+        "root_source_sha": "9965194f7051d85b202aabb649b60eb0deefb4f7"
       },
       "published_source_receipt": {
-        "artifact_commit": "5f29a6ed3b11ae242e6a152356182317175bca97",
-        "recipe_commit": "5300847f01479312b6d932735ee4ca49aefc9e14",
-        "source": {
+        "actual_build_receipt_sha256": "a09a2b61b5c727f967f8a355dac88af852c814a989d6c0b2127f640ab5287ea0",
+        "commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
+        "complete_input_identity": "77e1189ad278089d9911043a641d64a984b5becb768b4b68a4c6ca7d2aa5e3ab",
+        "normal_entry_and_sources": "PASS",
+        "recipe_commit": "9965194f7051d85b202aabb649b60eb0deefb4f7",
+        "recipe_repository": "RedoxORG/redox",
+        "remote_verified": true,
+        "source_archive": {
           "archive_sha256": "0d5cd86965f869a26cf64f4b71be7b96f90a3ba8b3d74e27e8e9d9d5550f31ba",
           "blake3": "5bf3ac6c18f3dc3fe3e049a1e10ea5ae5c5b39dac2356cd796730f49b273fd0f",
           "tree_sha256": "4ba46b575c8a52886cc5be31147d88df67dd3ee8ee8d829cb56c4a78124fa75e",
           "type": "official_archive",
           "url": "https://ftp.gnu.org/gnu/bash/bash-5.3.tar.gz"
         },
-        "source_sha": null,
-        "verification": "PASS: normal actual compilation, complete input identity, signed payload equality, immutable remote bytes"
+        "source_sha": null
       },
-      "reason": "Effective committed production/packaging inputs changed at startup frozen revisions",
+      "reason": "Actual current candidate ordinarily published and exact remote bytes verified before successful input advanced",
       "runtime": "PASS: this run normal boot/root login/physical keyboard typed Bash alias command; host keyboard14 PASS; optional fixture locks NotRun",
       "signature_payload_verification": "PASS",
-      "status": "CandidateVerified"
+      "status": "UpToDate"
     },
     "bootloader": {
       "action": "PublishedVerifiedCandidate",
@@ -11379,7 +11399,8 @@
   },
   "run": {
     "actual_build": "PASS",
-    "binary_publication": "NotRun",
+    "artifact_commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
+    "binary_publication": "PASS",
     "candidate_index_sha256": "e4cebd1ea276b002410783e81fa9b2310ab75d0fb8f1be100b33f89dcee4c2b0",
     "candidate_packages": [
       "base",
@@ -11387,7 +11408,8 @@
     ],
     "candidate_signature_payload": "PASS",
     "checked_at": "2026-10-14T00:00:56.196645+00:00",
-    "independent_review": "Pending final candidate scope review",
+    "independent_review": "PASS: latest one commit / eleven files; exact historical ledger preserved",
+    "independent_review_sha256": "cee643080ab617869cea0743f2e6cf6b79ec56f146339477a491ef57391c0292",
     "inventory_end_confirmed": true,
     "inventory_pages": [
       13,
@@ -11412,7 +11434,17 @@
       "postflight.json": "1a7ffb34263fec794919f353e64244e3da3986add8add19152e1e47b7ea0d403",
       "preflight.json": "1a7ffb34263fec794919f353e64244e3da3986add8add19152e1e47b7ea0d403"
     },
+    "remote_readback": {
+      "checked_at": "2026-10-14T00:11:54.090389+00:00",
+      "commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
+      "file_count": 12,
+      "method": "GitHub immutable Git blob API; decoded bytes match committed object, main exact SHA checked before/after"
+    },
     "source_authority": "one startup freeze",
+    "successful_inputs_advanced": [
+      "base",
+      "bash"
+    ],
     "trigger": "manual requested run"
   },
   "schema_version": 1,

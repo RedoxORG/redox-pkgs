@@ -8,6 +8,6 @@ Manual run: 2026-10-14, one startup freeze; 13 private repositories, pages [13, 
 - Keyboard host tests: 14 PASS, directly including production files. Extra PS/2 fixture failed before login marker and entered no cases; Caps/Num specialized guest cases remain NotRun. This is not relabeled as a successful runtime test.
 - Other 37 archives/metadata and public key unchanged; existing missing historical complete baselines remain unknown. bootloader/relibc/uefi only add rust-analyzer, compiler channel unchanged.
 - users/object remain unadopted at the recorded consumer pins. No source lock changes or source pushes. Shared shell/shutdown files are committed image configuration, not fabricated binary packages.
-- Publication NotRun; successful input baselines remain the preceding verified release until exact remote SHA/file-byte readback.
+- Publication PASS at `ba954e00c854313b0eb95badad8b15922759e0b8`: ordinary main fast-forward; exact SHA and twelve file bytes verified, online two packages extracted/verified. Successful base/bash inputs advanced only after readback; other 37 package ledger entries unchanged.
 
 Weekly cadence remains Monday 05:55 Asia/Singapore. Later source pushes wait for the next run.
