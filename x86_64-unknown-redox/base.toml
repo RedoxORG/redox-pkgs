@@ -1,10 +1,10 @@
 name = "base"
 version = "TODO"
 target = "x86_64-unknown-redox"
-blake3 = "df7565f46f58eff17c4496fa595e3fbf19aaf128755426b7974636b373b079d4"
+blake3 = "42da51bc6a5f012db52c19d01bc8c57bf5b1e99c4ba811d6c0ba809615c71f99"
 source_identifier = "local_source"
-commit_identifier = "9965194f7051d85b202aabb649b60eb0deefb4f7"
-time_identifier = "2026-10-13T23:34:52Z"
-storage_size = 43936549
-network_size = 43936549
+commit_identifier = "9fe9e3ec3810527f027fca9053ae41594bfda09d"
+time_identifier = "2026-10-14T04:56:01Z"
+storage_size = 43838029
+network_size = 43838029
 depends = []

@@ -1,10 +1,10 @@
 name = "kernel"
-version = "TODO"
+version = "0.5.12"
 target = "x86_64-unknown-redox"
-blake3 = "7ce0aa163da91f1851dcf269fd8ce8b35e4ffa56f89c4f4254845bb375690fa9"
-source_identifier = "d4ffe6dbfe907053a125ee946f7212fb23dcb905"
-commit_identifier = "ec2ec281d8bb1b698e3b38a909338365e63a119a"
-time_identifier = "2026-10-08T05:00:26Z"
-storage_size = 2957636
-network_size = 2957636
+blake3 = "dd4b688dd24f7128401e70998875dfe41212cea078f8a9764621a75dba3ec969"
+source_identifier = "5472e9f3ed79e8625966ed679d73b605ca3687d8"
+commit_identifier = "cf5df97e85f13228b97ad2272c31453010dc7c46"
+time_identifier = "2026-10-12T05:00:52Z"
+storage_size = 2418916
+network_size = 2418916
 depends = []
