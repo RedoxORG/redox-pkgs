@@ -1,13 +1,12 @@
 # Current package update
 
-Manual run: 2026-10-14, one startup freeze; 13 private repositories, pages [13, 0].
+Manual synchronization: 2026-10-14. Inputs were frozen once for this run.
 
-- Built and verified: base (inputd keyboard implementation) and bash (skeleton rc packaging). Normal Cookbook/Make, jobs=2, verified warm SDK/cache, fresh affected outputs.
-- Source/cache identity before/after PASS; existing-key signature/extracted payload/metadata/index PASS.
-- Normal Make server image boot, root login, physical keyboard typed Bash alias command and guest completion marker PASS. 120 installed package files/links and 12 committed shared configuration entries PASS. Initfs inputd matches this run fresh initfs build variant.
-- Keyboard host tests: 14 PASS, directly including production files. Extra PS/2 fixture failed before login marker and entered no cases; Caps/Num specialized guest cases remain NotRun. This is not relabeled as a successful runtime test.
-- Other 37 archives/metadata and public key unchanged; existing missing historical complete baselines remain unknown. bootloader/relibc/uefi only add rust-analyzer, compiler channel unchanged.
-- users/object remain unadopted at the recorded consumer pins. No source lock changes or source pushes. Shared shell/shutdown files are committed image configuration, not fabricated binary packages.
-- Publication PASS at `ba954e00c854313b0eb95badad8b15922759e0b8`: ordinary main fast-forward; exact SHA and twelve file bytes verified, online two packages extracted/verified. Successful base/bash inputs advanced only after readback; other 37 package ledger entries unchanged.
+- Published `base`, `relibc`, `userutils` and `kernel` at `fb01a6592b113900c9412a3b961c5db8a1f92fea` with a normal main fast-forward. All eleven remote files, including the public key, match the reviewed bytes. Four remotely retrieved packages pass native signature verification and extraction.
+- Three source packages were compiled from the frozen private integration commits. Kernel 0.5.12 is the verified official distribution, re-signed with the existing private identity without changing its payload; it is not claimed as a local source build.
+- The normal producer image boots and logs in to Bash. Four original libc tests and three CLI checks pass. A separate clean remote clone with independent HOME, output and an initially empty private-package cache also completes normal Make, boots, logs in and passes three CLI checks. Its 278 installed package files/links match the remote verified payloads.
+- Only original checksum-verified SDK/crate download archives and the same base operating-system container were reused for the consumer; producer packages, installed SDK trees, build targets and local source overrides were not reused.
+- Successful source inputs advance only for base, relibc and userutils after remote readback and independent consumer verification. Kernel retains its missing complete source baseline. The other 35 packages and their historical state are unchanged.
+- Network, graphics, audio and persistence were not tested. Earlier failed attempts remain failed in the task-local evidence. No signing private key, source checkout, script, raw log or disk image was published.
 
-Weekly cadence remains Monday 05:55 Asia/Singapore. Later source pushes wait for the next run.
+The exact input identities and receipt hashes are in `binary-inputs.json`, under `manual_sync_20261014_03`. Existing history remains available in Git.
