@@ -509,9 +509,9 @@
   },
   "packages": {
     "base": {
-      "action": "PreparedVerifiedCandidate",
+      "action": "PublishedVerifiedCandidate",
       "baseline_status": "Known",
-      "binary_publication": "NotRun",
+      "binary_publication": "PASS",
       "build": "PASS",
       "candidate_artifact": {
         "archive_blake3": "91f13def471ebce9dde18c6a7dd447e29ddacd8a7951ac36951fd1e6b536732f",
@@ -2353,39 +2353,91 @@
         "submodules": {},
         "target": "x86_64-unknown-redox"
       },
-      "freshness": "Complete input matches this run frozen effective source/recipe/ABI identity",
+      "freshness": {
+        "candidate_effective_input_id": "2a9577a91db6178c7783271863e8e90edc58892028c1a20ebc542d744535ca07",
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "earliest_unpublished_change_at": null,
+        "freshness_status": "FreshnessUnknown",
+        "publication_observed_at": "2026-10-15T02:11:49.896040+00:00",
+        "publication_time_evidence": {
+          "exact_publication_time": false,
+          "kind": "FirstVerifiedRemoteObservation",
+          "observed_at": "2026-10-15T02:11:49.896040+00:00"
+        },
+        "published_at": null,
+        "published_effective_input_id": "2a9577a91db6178c7783271863e8e90edc58892028c1a20ebc542d744535ca07",
+        "reason": "Verified publication; earliest effective change timing evidence incomplete"
+      },
       "last_artifact_verification": {
-        "checked_at": "2026-10-14T07:29:12.338682+00:00",
+        "checked_at": "2026-10-15T02:21:29.624588+00:00",
         "independent_consumer": "PASS",
         "receipt_hashes": {
-          "consumer-installed-binding.json": "a13d1b16f28c55bd76e20b28c6a70157b7b67a233c0d5c9855ba49c56a56965f",
-          "consumer-make-all.json": "35d37b28d4cc16eaeb546eee830015b77c9f06698594ca9f58a0221216b72c1d",
-          "consumer-runtime-01.json": "2382b6cf3db8de37be3e7de78a2a10968a69e7713e7458c4a10afe860f93e61c",
-          "published-four-native.json": "8209f6652451b9643e0b6798d6c68ee45bd387e38a5f0736c0995df128e5526e",
-          "remote-readback-fb01a6592b11.json": "849c2782a12e62b9166be5004d83c1852007c217160ba12658a25c6d5a130901"
+          "consumer_binding": {
+            "path": "consumer-installed-binding.json",
+            "sha256": "bf2c65f67ebad944b13d7daeaf15f0e6df8e18884eab418734dbcd5736297ac1"
+          },
+          "consumer_make": {
+            "path": "consumer-make-all.json",
+            "sha256": "cbadd0e0959b803bae1b06f5cd1d5edb00ff9f38ab03976659af0d0c3abb1154"
+          },
+          "consumer_runtime": {
+            "path": "consumer-runtime-01.json",
+            "sha256": "ed53c9604fd820d41d19fdd46548d3c42b89c10105a0e70afcf753f8476bc2a4"
+          },
+          "remote": {
+            "path": "remote-readback-40789301555d.json",
+            "sha256": "957ac31b70724ee643d20655dfe9383dc9438c0a6b369a51ee4b8b8b6c72b1b0"
+          },
+          "remote_native": {
+            "path": "published-four-native.json",
+            "sha256": "81a7fe9de72601b7124830df6e536e92d916f1c6f6674f4ab4b39ecdafbf1eb0"
+          },
+          "review": {
+            "path": "consumer-review.json",
+            "sha256": "ce236a6a23727d2069ea9152329bd6e27a92faafd5a78a3abec1a933bb56215d"
+          }
         },
         "remote_bytes": "PASS",
-        "repository_commit": "fb01a6592b113900c9412a3b961c5db8a1f92fea",
+        "repository_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
         "signature_payload": "PASS"
       },
       "last_successful_input": {
         "branch": "local/main",
+        "build_receipt": {
+          "path": "make-receipt-011.json",
+          "sha256": "2bdad8ef1ebbcc01381938f32eb3977194f2f01120d8ff0ee5ed0a5477367c9a"
+        },
         "common_input": {
-          "cache_and_configuration_receipt_sha256": "b00ff44a4d82f7e4d254efe08b5bf0728007538a6667a7ac9df6373f753fc87d",
-          "controlled_configuration": {
-            ".config": "ab7d1d239527eced28a8d79305d3656fbed977ff65acc7782c58721725c974ae",
+          "adaptation_receipt": {
+            "path": "binary-dependency-guard-tests.json",
+            "sha256": "684246a930ca227355d36ce78775e4d4669ff40895e967449db524358bd91e03"
+          },
+          "authorized_adaptation_evidence": {
+            "base-prepare-final.json": "46a3159c8107b43887052bbf46730e839b7918a4320be602af6c87c54a487c0f",
+            "binary-dependency-guard-applied.diff": "7a00eba3d1085024492aba51f42f8e36a7f9963e0629bae14ddd1893d66b9c91",
+            "continuation-authorization.json": "6d5ecaffb69e4b81b7a7a79d3d75b8599fed7a8c424a502fb59bb027a83fafdf"
+          },
+          "build_sha": "b4b0b533f3232164203778bb815f32174d28d747",
+          "controlled_config_hashes": {
+            ".config": "ad46e2d08d1becac9acebea7a87b4a74bc1ae24a200907b09885867e1d6bae43",
             "build/id_ed25519.pub.toml": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
             "build/id_ed25519.toml": "f753b8b1a9f326d7b3e32f55cddcc93f39dcb7f26c8c5faf5692652f5e6114b6",
             "build/podman/.cargo/config.toml": "0abb097fa5640f2221ab33cecdd8f65128a0acb411cd0ddc290d3ac8ee68c10b",
             "build/podman/.curlrc": "46584d9c7637eb06fed3de5858928cabce34487ed8903a17623b9d4111ad32fa",
             "build/podman/.gitconfig": "c5563c95ac6bc37eea8bc5dd871e5f443c1cb1f5e7e81a6d7c9188a7c2751690",
             "build/podman/.wgetrc": "3c9179a109592b885d50a6811bb752577beaaaa1008a4af117bb7df060f42c17",
-            "cookbook.lock": "1b9c34791c82096f74734e6cf734901a93aae8b6907e05723728a0f4b7dd28e4"
+            "cookbook.lock": "2cb3eda75f7ac1fb89036d9457547fb7798c57b4b6dd4b581bf78a55ffa0f11d"
           },
-          "input_receipt_sha256": "7607ae3e7c2dac3851264458155c836b312f3669990668d400185293de845925",
-          "recipe_commit": "9fe9e3ec3810527f027fca9053ae41594bfda09d",
-          "recipe_repository": "RedoxORG/redox",
-          "source_freeze_sha256": "f4d6482036aaa0d41076933f4032016fef256a023db4eef035ea5190f1725cea",
+          "image_mapping_receipt": {
+            "path": "producer-image-mapping.json",
+            "sha256": "524a4cb3d63a538e53d63fbbaf81fd58811b01a3e147f5f73c653a8763d5e36e"
+          },
+          "inputs_sha256": "425bd58c9204a54c91f397f62e06bc2077a3581a4645f5c8bf322388593646e8",
+          "source_freeze": {
+            "receipt": "source-gate-cold.json",
+            "sha256": "686575fac890ce6b2515de57b82adf8c369a361d1219fbb3fbdfc7f590c3109a"
+          },
           "target": "x86_64-unknown-redox",
           "toolchain_archives": {
             "prefix/x86_64-unknown-redox/clang-install.tar.gz": {
@@ -2413,9 +2465,10 @@
             "prefix/x86_64-unknown-redox/rust-install/lib/rustlib/src/rust/library/Cargo.lock": "02120dd57c4c5fd70c81fd92472681c8de5cc2dd78258276da37bb2253666061"
           }
         },
-        "common_input_identity": "5cc67ed1c700547f4d82c6d63ea8e80c8ce9ffe571909d5f750334fae135314c",
+        "common_input_identity": "6e42e60835d978cc9f49ff0b25e706778c28a61f0b550def929aa18405a9cfba",
         "complete": true,
-        "effective_input_sha256": "a3d7d3e0ef9185c8f9f3abb609a51b26eb700d1f7aa1c7bf02a107582029776b",
+        "effective_input_sha256": "2a9577a91db6178c7783271863e8e90edc58892028c1a20ebc542d744535ca07",
+        "kind": "PrivateSourceBuild",
         "lockfiles": {
           "Cargo.lock": {
             "packages": [
@@ -4173,46 +4226,70 @@
             "sha256": "23c8eb8ca2da0a5dc06f76f91eded287c0e2f3c38b017d587e62debfb7479fd4"
           }
         },
-        "published_artifact_commit": "fb01a6592b113900c9412a3b961c5db8a1f92fea",
-        "published_at": "2026-10-14T07:29:12.338682+00:00",
+        "publication_observed_at": "2026-10-15T02:11:49.896040+00:00",
+        "published_artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
+        "published_at": null,
+        "recipe_commit": "b4b0b533f3232164203778bb815f32174d28d747",
         "recipe_files": {
           "recipes/core/base/recipe.toml": "b8356c9949efe0b2ed1772d027f1e79a753f7f9ca86653339074be395e0ece2b"
         },
-        "recipe_git_blob": "5a8520bd762c84cbd8f65b501a76fea58741b314",
         "recipe_path": "recipes/core/base/recipe.toml",
         "repository": "RedoxORG/base",
-        "source_sha": "e0b9d634d475d55e68e192f6b823def9a175fd01",
-        "source_tree": "792b159a978ec132fe8ed4c93fe7b968f2132e1c",
+        "source_sha": "e3b2648483a8cbfa33bc81044e27004a8f80c437",
+        "source_tree": "5513300a30b1aa275fc63a28a69d8880750e065d",
         "submodules": {},
+        "target": "x86_64-unknown-redox",
         "validation": {
-          "build": "PASS",
           "independent_consumer": "PASS",
-          "index": "PASS",
           "remote_bytes": "PASS",
-          "runtime": "PASS",
           "signature_payload": "PASS"
         }
       },
       "published_artifact": {
-        "archive_blake3": "42da51bc6a5f012db52c19d01bc8c57bf5b1e99c4ba811d6c0ba809615c71f99",
-        "archive_sha256": "6880aa07579c2938957183009db1538c2b89bfbb3d201d1556329e39ec9d1356",
-        "metadata_commit_identifier": "9fe9e3ec3810527f027fca9053ae41594bfda09d",
-        "metadata_sha256": "a9a3ccbf3b38c2c9d1649d22ec370c8b7cf1306a4b78ea51a6508f5c968540e9",
+        "archive_blake3": "91f13def471ebce9dde18c6a7dd447e29ddacd8a7951ac36951fd1e6b536732f",
+        "archive_sha256": "8ba67bbeb1bce11ba06b43a5263df5d82fc9c497b1d70a866faef5deacf987b5",
+        "metadata_commit_identifier": "b4b0b533f3232164203778bb815f32174d28d747",
+        "metadata_sha256": "67318cb225d6b00341dc4ce7cf50257c4a53eb4bf9eaf3b4adf9d315c96de1ec",
         "metadata_source_identifier": "local_source",
-        "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
         "readback": "PASS",
-        "repository_commit": "fb01a6592b113900c9412a3b961c5db8a1f92fea"
+        "repository_commit": "40789301555d0755b35583a32b6f5fe838bdad6b"
       },
       "published_source_receipt": {
-        "artifact_commit": "fb01a6592b113900c9412a3b961c5db8a1f92fea",
-        "recipe_commit": "9fe9e3ec3810527f027fca9053ae41594bfda09d",
-        "source_sha": "e0b9d634d475d55e68e192f6b823def9a175fd01",
-        "verification": "Actual source build, signed payload, normal producer and independent consumer, immutable remote bytes PASS"
+        "artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
+        "kind": "PrivateSourceBuild",
+        "receipt_hashes": {
+          "consumer_binding": {
+            "path": "consumer-installed-binding.json",
+            "sha256": "bf2c65f67ebad944b13d7daeaf15f0e6df8e18884eab418734dbcd5736297ac1"
+          },
+          "consumer_make": {
+            "path": "consumer-make-all.json",
+            "sha256": "cbadd0e0959b803bae1b06f5cd1d5edb00ff9f38ab03976659af0d0c3abb1154"
+          },
+          "consumer_runtime": {
+            "path": "consumer-runtime-01.json",
+            "sha256": "ed53c9604fd820d41d19fdd46548d3c42b89c10105a0e70afcf753f8476bc2a4"
+          },
+          "remote": {
+            "path": "remote-readback-40789301555d.json",
+            "sha256": "957ac31b70724ee643d20655dfe9383dc9438c0a6b369a51ee4b8b8b6c72b1b0"
+          },
+          "remote_native": {
+            "path": "published-four-native.json",
+            "sha256": "81a7fe9de72601b7124830df6e536e92d916f1c6f6674f4ab4b39ecdafbf1eb0"
+          },
+          "review": {
+            "path": "consumer-review.json",
+            "sha256": "ce236a6a23727d2069ea9152329bd6e27a92faafd5a78a3abec1a933bb56215d"
+          }
+        },
+        "source_build": "PASS",
+        "source_sha": "e3b2648483a8cbfa33bc81044e27004a8f80c437"
       },
-      "reason": "Previous successful baseline retained until immutable remote readback and independent consumer acceptance",
-      "runtime": "PASS: current producer receipt",
+      "reason": "Complete successful source or distribution input matches this frozen run",
+      "runtime": "PASS: current independent consumer",
       "signature_payload_verification": "PASS",
-      "status": "PendingPublication"
+      "status": "UpToDate"
     },
     "bash": {
       "action": "PublishedVerifiedCandidate",
@@ -4508,9 +4585,9 @@
       "status": "UpToDate"
     },
     "bootloader": {
-      "action": "PreparedVerifiedCandidate",
+      "action": "PublishedVerifiedCandidate",
       "baseline_status": "Known",
-      "binary_publication": "NotRun",
+      "binary_publication": "PASS",
       "build": "PASS",
       "candidate_artifact": {
         "archive_blake3": "770f11f9841be82a6ce5995a2d54f05624e1469ffebe56758c0004ccadecd302",
@@ -5022,335 +5099,611 @@
         "target": "x86_64-unknown-redox"
       },
       "freshness": {
-        "candidate_effective_input_id": "7790c25c0940c31374375ab46b497940dbceb10dd1872891797c1fe6af91cc29",
+        "candidate_effective_input_id": "6b130ba8a94f8ab7679ccb33da438b72da19b3034cd4a79a656944d53f116efc",
         "change_time_evidence": null,
         "deadline_at": null,
         "earliest_unpublished_change_at": null,
-        "freshness_status": "PublishedFrozenInput",
-        "published_at": "2026-10-12T16:25:23.828562+00:00",
-        "published_effective_input_id": "7790c25c0940c31374375ab46b497940dbceb10dd1872891797c1fe6af91cc29",
-        "reason": "Exact run-start inputs published. Later source pushes belong to next scheduled run; not queried again."
+        "freshness_status": "FreshnessUnknown",
+        "publication_observed_at": "2026-10-15T02:11:49.896040+00:00",
+        "publication_time_evidence": {
+          "exact_publication_time": false,
+          "kind": "FirstVerifiedRemoteObservation",
+          "observed_at": "2026-10-15T02:11:49.896040+00:00"
+        },
+        "published_at": null,
+        "published_effective_input_id": "6b130ba8a94f8ab7679ccb33da438b72da19b3034cd4a79a656944d53f116efc",
+        "reason": "Verified publication; earliest effective change timing evidence incomplete"
       },
       "last_artifact_verification": {
-        "archive_sha256": "a0f84ced9b9f2e6fd0363b645ae176dc9a46c8a017fb48490d7981506fa41a97",
-        "consumer_archive_bound": true,
-        "date": "2026-10-13",
-        "metadata_sha256": "93f260e529583d83be422bb74e59dd3fc08eb8f8d03a61d4ef1c3505d2fb65b6",
-        "metadata_signed_header_index": "PASS",
-        "package_commit": "5f29a6ed3b11ae242e6a152356182317175bca97",
-        "receipt": "binary-inputs.json:verification",
-        "signature_extraction": "PASS"
+        "checked_at": "2026-10-15T02:21:29.624588+00:00",
+        "independent_consumer": "PASS",
+        "receipt_hashes": {
+          "consumer_binding": {
+            "path": "consumer-installed-binding.json",
+            "sha256": "bf2c65f67ebad944b13d7daeaf15f0e6df8e18884eab418734dbcd5736297ac1"
+          },
+          "consumer_make": {
+            "path": "consumer-make-all.json",
+            "sha256": "cbadd0e0959b803bae1b06f5cd1d5edb00ff9f38ab03976659af0d0c3abb1154"
+          },
+          "consumer_runtime": {
+            "path": "consumer-runtime-01.json",
+            "sha256": "ed53c9604fd820d41d19fdd46548d3c42b89c10105a0e70afcf753f8476bc2a4"
+          },
+          "remote": {
+            "path": "remote-readback-40789301555d.json",
+            "sha256": "957ac31b70724ee643d20655dfe9383dc9438c0a6b369a51ee4b8b8b6c72b1b0"
+          },
+          "remote_native": {
+            "path": "published-four-native.json",
+            "sha256": "81a7fe9de72601b7124830df6e536e92d916f1c6f6674f4ab4b39ecdafbf1eb0"
+          },
+          "review": {
+            "path": "consumer-review.json",
+            "sha256": "ce236a6a23727d2069ea9152329bd6e27a92faafd5a78a3abec1a933bb56215d"
+          }
+        },
+        "remote_bytes": "PASS",
+        "repository_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
+        "signature_payload": "PASS"
       },
       "last_successful_input": {
         "branch": "local/main",
-        "common_input": "build_input_sets:d09dc57e1d0f5665384e64c1bb6726f9ffdb100b49fa7ef72fd99b4d3abcae4c",
-        "common_input_identity": "d09dc57e1d0f5665384e64c1bb6726f9ffdb100b49fa7ef72fd99b4d3abcae4c",
+        "build_receipt": {
+          "path": "make-receipt-009.json",
+          "sha256": "9dc93cb07e19c620e42be7d1e054ff6dfd1875eb1dd8f0fc5cdcfa197c7839c9"
+        },
+        "common_input": {
+          "adaptation_receipt": {
+            "path": "binary-dependency-guard-tests.json",
+            "sha256": "684246a930ca227355d36ce78775e4d4669ff40895e967449db524358bd91e03"
+          },
+          "authorized_adaptation_evidence": {
+            "base-prepare-final.json": "46a3159c8107b43887052bbf46730e839b7918a4320be602af6c87c54a487c0f",
+            "binary-dependency-guard-applied.diff": "7a00eba3d1085024492aba51f42f8e36a7f9963e0629bae14ddd1893d66b9c91",
+            "continuation-authorization.json": "6d5ecaffb69e4b81b7a7a79d3d75b8599fed7a8c424a502fb59bb027a83fafdf"
+          },
+          "build_sha": "b4b0b533f3232164203778bb815f32174d28d747",
+          "controlled_config_hashes": {
+            ".config": "ad46e2d08d1becac9acebea7a87b4a74bc1ae24a200907b09885867e1d6bae43",
+            "build/id_ed25519.pub.toml": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
+            "build/id_ed25519.toml": "f753b8b1a9f326d7b3e32f55cddcc93f39dcb7f26c8c5faf5692652f5e6114b6",
+            "build/podman/.cargo/config.toml": "0abb097fa5640f2221ab33cecdd8f65128a0acb411cd0ddc290d3ac8ee68c10b",
+            "build/podman/.curlrc": "46584d9c7637eb06fed3de5858928cabce34487ed8903a17623b9d4111ad32fa",
+            "build/podman/.gitconfig": "c5563c95ac6bc37eea8bc5dd871e5f443c1cb1f5e7e81a6d7c9188a7c2751690",
+            "build/podman/.wgetrc": "3c9179a109592b885d50a6811bb752577beaaaa1008a4af117bb7df060f42c17",
+            "cookbook.lock": "2cb3eda75f7ac1fb89036d9457547fb7798c57b4b6dd4b581bf78a55ffa0f11d"
+          },
+          "image_mapping_receipt": {
+            "path": "producer-image-mapping.json",
+            "sha256": "524a4cb3d63a538e53d63fbbaf81fd58811b01a3e147f5f73c653a8763d5e36e"
+          },
+          "inputs_sha256": "425bd58c9204a54c91f397f62e06bc2077a3581a4645f5c8bf322388593646e8",
+          "source_freeze": {
+            "receipt": "source-gate-cold.json",
+            "sha256": "686575fac890ce6b2515de57b82adf8c369a361d1219fbb3fbdfc7f590c3109a"
+          },
+          "target": "x86_64-unknown-redox",
+          "toolchain_archives": {
+            "prefix/x86_64-unknown-redox/clang-install.tar.gz": {
+              "sha256": "fcf965f0a08fabb060a8fe8b96372ed95f3d8bff7c087b613a439a1cda003115",
+              "size": 184151121,
+              "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/clang-install.tar.gz"
+            },
+            "prefix/x86_64-unknown-redox/gcc-install.tar.gz": {
+              "sha256": "4bb5d1691d727546dc5064da794d798e9157cb85be8d463ebf7545bc01d9c362",
+              "size": 98465573,
+              "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/gcc-install.tar.gz"
+            },
+            "prefix/x86_64-unknown-redox/rust-install.tar.gz": {
+              "sha256": "ecfe0e260cc7544b0e29ec4f217eacd0e6802248cf70e2fb689ce87808bfa2bb",
+              "size": 175167112,
+              "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/rust-install.tar.gz"
+            }
+          },
+          "toolchain_install_trees": {
+            "prefix/x86_64-unknown-redox/clang-install": "87b697d8dbd204dec1c2b609c03166407f8d75a5f1757aebaa89663e591ab35d",
+            "prefix/x86_64-unknown-redox/gcc-install": "5a93b469c9283fb736b9350111a46fe1d5e8947c7599c386646ea3b73f1a80b2",
+            "prefix/x86_64-unknown-redox/rust-install": "08865cf4cf5605982610a102f1ef80f2136b3d383c473521eca82858ea34e10f"
+          },
+          "toolchain_locks": {
+            "prefix/x86_64-unknown-redox/rust-install/lib/rustlib/src/rust/library/Cargo.lock": "02120dd57c4c5fd70c81fd92472681c8de5cc2dd78258276da37bb2253666061"
+          }
+        },
+        "common_input_identity": "6e42e60835d978cc9f49ff0b25e706778c28a61f0b550def929aa18405a9cfba",
         "complete": true,
-        "effective_input_sha256": "7790c25c0940c31374375ab46b497940dbceb10dd1872891797c1fe6af91cc29",
+        "effective_input_sha256": "6b130ba8a94f8ab7679ccb33da438b72da19b3034cd4a79a656944d53f116efc",
+        "kind": "PrivateSourceBuild",
         "lockfiles": {
           "Cargo.lock": {
-            "dependencies": [
+            "packages": [
               {
                 "checksum": "b169f7a6d4742236a0a00c541b845991d0ac43e546831af1249753ab4c3aa3a0",
                 "name": "aes",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.8.4"
               },
               {
                 "checksum": "db4ce4441f99dbd377ca8a8f57b698c44d0d6e712d8329b5040da5a64aa1ce73",
                 "name": "argon2",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.4.1"
               },
               {
                 "checksum": "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8",
                 "name": "autocfg",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "1.5.0"
               },
               {
                 "checksum": "55248b47b0caf0546f7988906588779981c43bb1bc9d0c44087278f80cdb44ba",
                 "name": "base64ct",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "1.8.0"
               },
               {
                 "checksum": "1e4b40c7323adcfc0a41c4b88143ed58346ff65a288fc144329c5c45e05d70c6",
                 "name": "bit_field",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.10.3"
               },
               {
                 "checksum": "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a",
                 "name": "bitflags",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "1.3.2"
               },
               {
                 "checksum": "2261d10cca569e4643e526d8dc2e62e433cc8aba21ab764233731f8d369bf394",
                 "name": "bitflags",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "2.9.4"
               },
               {
                 "checksum": "46502ad458c9a52b69d4d4d32775c788b7a1b85e8bc9d482d92250fc0e3f8efe",
                 "name": "blake2",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.10.6"
               },
               {
                 "checksum": "3078c7629b62d3f0439517fa394996acacc5cbc91c5a20d8c658e77abd503a71",
                 "name": "block-buffer",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.10.4"
               },
               {
                 "checksum": "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b",
                 "name": "byteorder",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "1.5.0"
               },
               {
                 "checksum": "2fd1289c04a9ea8cb22300a459a72a385d7c73d3259e2ed7dcb2af674838cfa9",
                 "name": "cfg-if",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "1.0.3"
               },
               {
                 "checksum": "773f3b9af64447d2ce9850330c473515014aa235e6a783b02db81ff39e4a3dad",
                 "name": "cipher",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.4.4"
               },
               {
                 "checksum": "59ed5838eebb26a2bb2e58f6d5b5316989ae9d08bab10e0e6d103e656d1b0280",
                 "name": "cpufeatures",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.2.17"
               },
               {
                 "checksum": "1bfb12502f3fc46cca1bb51ac28df9d618d813cdc3d2f25b9fe775a34af26bb3",
                 "name": "crypto-common",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.1.6"
               },
               {
                 "checksum": "9ed9a281f7bc9b7576e61468ba615a66a5c8cfdff42420a70aa82701a3b1e292",
                 "name": "digest",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.10.7"
               },
               {
                 "checksum": "f5a070ca68f8ba202b05487d52b9ac56eaebb5b66cdd68d1a17e63174bb11e3b",
                 "name": "dmidecode",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.8.5"
               },
               {
                 "checksum": "f8f59926911ef34d1efb9ea1ee8ca78385df62ce700ccf2bcb149011bd226888",
                 "name": "endian-num",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.1.2"
               },
               {
+                "git_revision": "2fb1409edd1877c714a0aa36b6a7c5351004be54",
                 "name": "fdt",
-                "source": "git+https://github.com/repnop/fdt.git?rev=2fb1409edd1877c714a0aa36b6a7c5351004be54#2fb1409edd1877c714a0aa36b6a7c5351004be54",
+                "source_sha256": "2021c7606d53b91ef33eda5b17f93e274893dc2ae3b2ec0b8af2fb1215d730d3",
                 "version": "0.2.0-alpha1"
               },
               {
                 "checksum": "85649ca51fd72272d7821adaf274ad91c288277713d9c18820d8499a7ff69e9a",
                 "name": "generic-array",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.14.7"
               },
               {
                 "checksum": "879f10e63c20629ecabbb64a8010319738c66a5cd0c29b02d63d272b03751d01",
                 "name": "inout",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.1.4"
               },
               {
                 "checksum": "58f929b4d672ea937a23a1ab494143d968337a5f47e56d0815df1e0890ddf174",
                 "name": "libc",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.2.176"
               },
               {
                 "checksum": "9afa463f5405ee81cdb9cc2baf37e08ec7e4c8209442b5d72c04cfb2cd6e6286",
                 "name": "linked_list_allocator",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.10.5"
               },
               {
                 "checksum": "96936507f153605bddfcda068dd804796c84324ed2510809e5b2a624c81da765",
                 "name": "lock_api",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.4.13"
               },
               {
                 "checksum": "34080505efa8e45a4b816c349525ebe327ceaa8559756f0356cba97ef3bf7432",
                 "name": "log",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.4.28"
               },
               {
                 "checksum": "08ab2867e3eeeca90e844d1940eab391c9dc5228783db2ed999acbc0a9ed375a",
                 "name": "lz4_flex",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.11.5"
               },
               {
                 "checksum": "6c297679cb867470fa8c9f67dbba74a78d78e3e98d7cf2b08d6d71540f797332",
                 "name": "raw-cpuid",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "10.7.0"
               },
               {
                 "checksum": "436d45c2b6a5b159d43da708e62b25be3a4a3d5550d654b72216ade4c4bfd717",
                 "name": "redox-path",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.3.1"
-              },
-              {
-                "name": "redox_bootloader",
-                "version": "1.0.0"
               },
               {
                 "checksum": "5407465600fb0548f1442edf71dd20683c6ed326200ace4b1ef0763521bb3b77",
                 "name": "redox_syscall",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.5.17"
               },
               {
+                "git_revision": "49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
                 "name": "redox_uefi",
-                "source": "git+https://github.com/RedoxORG/uefi.git?rev=49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f#49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
+                "source_sha256": "c1919c437e1d28ae9255ce6b57525774867171e77a55cdd571f868f611bb38db",
                 "version": "0.1.14"
               },
               {
+                "git_revision": "49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
                 "name": "redox_uefi_alloc",
-                "source": "git+https://github.com/RedoxORG/uefi.git?rev=49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f#49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
+                "source_sha256": "c1919c437e1d28ae9255ce6b57525774867171e77a55cdd571f868f611bb38db",
                 "version": "0.1.14"
               },
               {
+                "git_revision": "49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
                 "name": "redox_uefi_std",
-                "source": "git+https://github.com/RedoxORG/uefi.git?rev=49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f#49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
+                "source_sha256": "c1919c437e1d28ae9255ce6b57525774867171e77a55cdd571f868f611bb38db",
                 "version": "0.1.14"
               },
               {
                 "checksum": "063eedabd74ddf71810e72aae1c73f3485ffc7b1e757d9466b9099046c05d7be",
                 "name": "redoxfs",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.8.0"
               },
               {
                 "checksum": "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49",
                 "name": "scopeguard",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "1.2.0"
               },
               {
                 "checksum": "1c107b6f4780854c8b126e228ea8869f4d7b71260f962fefb57b996b8959ba6b",
                 "name": "seahash",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "4.1.0"
               },
               {
                 "checksum": "6980e8d7511241f8acf4aebddbb1ff938df5eebe98691418c4468d0b72a96a67",
                 "name": "spin",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.9.8"
               },
               {
                 "checksum": "5b9eb1a2f4c41445a3a0ff9abc5221c5fcd28e1f13cd7c0397706f9ac938ddb0",
                 "name": "spinning_top",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.2.5"
               },
               {
                 "checksum": "13c2bddecc57b384dee18652358fb23172facb8a2c51ccc10d74c157bdea3292",
                 "name": "subtle",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "2.6.1"
               },
               {
                 "checksum": "1dccffe3ce07af9386bfd29e80c0ab1a8205a2fc34e4bcd40364df902cfa8f3f",
                 "name": "typenum",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "1.18.0"
               },
               {
                 "checksum": "2f87b8aa10b915a06587d0dec516c282ff295b475d94abf425d62b57710070a2",
                 "name": "uuid",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "1.18.1"
               },
               {
                 "checksum": "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a",
                 "name": "version_check",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.9.5"
               },
               {
                 "checksum": "2781db97787217ad2a2845c396a5efe286f87467a5810836db6d74926e94a385",
                 "name": "x86",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.52.0"
               },
               {
                 "checksum": "09cbddb7545ca0b9ffa7bdc653e8743303e1712687a6918ced25f2cdbed42520",
                 "name": "xts-mode",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
                 "version": "0.5.1"
               }
             ],
-            "git_blob": "856b88e367c9732eaf32e23f44807ef0345a3703",
             "sha256": "bc1482030d9d26787ddbaf7e3b3dd0ace871e94c3f2c1303f8318b174d3181fc"
+          },
+          "tests/host/Cargo.lock": {
+            "packages": [
+              {
+                "checksum": "b169f7a6d4742236a0a00c541b845991d0ac43e546831af1249753ab4c3aa3a0",
+                "name": "aes",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.8.4"
+              },
+              {
+                "checksum": "db4ce4441f99dbd377ca8a8f57b698c44d0d6e712d8329b5040da5a64aa1ce73",
+                "name": "argon2",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.4.1"
+              },
+              {
+                "checksum": "2af50177e190e07a26ab74f8b1efbfe2ef87da2116221318cb1c2e82baf7de06",
+                "name": "base64ct",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "1.8.3"
+              },
+              {
+                "checksum": "3ded4057c258ba199e2d26386d3af3780957ecaee6c4ef4041c6b4b8b97c0b06",
+                "name": "bitflags",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "2.13.2"
+              },
+              {
+                "checksum": "46502ad458c9a52b69d4d4d32775c788b7a1b85e8bc9d482d92250fc0e3f8efe",
+                "name": "blake2",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.10.6"
+              },
+              {
+                "checksum": "3078c7629b62d3f0439517fa394996acacc5cbc91c5a20d8c658e77abd503a71",
+                "name": "block-buffer",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.10.4"
+              },
+              {
+                "checksum": "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b",
+                "name": "byteorder",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "1.5.0"
+              },
+              {
+                "checksum": "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600",
+                "name": "cfg-if",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "1.0.5"
+              },
+              {
+                "checksum": "773f3b9af64447d2ce9850330c473515014aa235e6a783b02db81ff39e4a3dad",
+                "name": "cipher",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.4.4"
+              },
+              {
+                "checksum": "59ed5838eebb26a2bb2e58f6d5b5316989ae9d08bab10e0e6d103e656d1b0280",
+                "name": "cpufeatures",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.2.17"
+              },
+              {
+                "checksum": "78c8292055d1c1df0cce5d180393dc8cce0abec0a7102adb6c7b1eef6016d60a",
+                "name": "crypto-common",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.1.7"
+              },
+              {
+                "checksum": "9ed9a281f7bc9b7576e61468ba615a66a5c8cfdff42420a70aa82701a3b1e292",
+                "name": "digest",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.10.7"
+              },
+              {
+                "checksum": "f8f59926911ef34d1efb9ea1ee8ca78385df62ce700ccf2bcb149011bd226888",
+                "name": "endian-num",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.1.2"
+              },
+              {
+                "checksum": "85649ca51fd72272d7821adaf274ad91c288277713d9c18820d8499a7ff69e9a",
+                "name": "generic-array",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.14.7"
+              },
+              {
+                "checksum": "879f10e63c20629ecabbb64a8010319738c66a5cd0c29b02d63d272b03751d01",
+                "name": "inout",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.1.4"
+              },
+              {
+                "checksum": "ce5d3ddc6d3fa000eb1536d85e147bfe31aacaba692ed6a876f95cb7c855be78",
+                "name": "libc",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.2.190"
+              },
+              {
+                "checksum": "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6",
+                "name": "log",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.4.34"
+              },
+              {
+                "checksum": "373f5eceeeab7925e0c1098212f2fbc4d416adec9d35051a6ab251e824c1854a",
+                "name": "lz4_flex",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.11.6"
+              },
+              {
+                "checksum": "436d45c2b6a5b159d43da708e62b25be3a4a3d5550d654b72216ade4c4bfd717",
+                "name": "redox-path",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.3.1"
+              },
+              {
+                "checksum": "ed2bf2547551a7053d6fdfafda3f938979645c44812fbfcda098faae3f1a362d",
+                "name": "redox_syscall",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.5.18"
+              },
+              {
+                "checksum": "063eedabd74ddf71810e72aae1c73f3485ffc7b1e757d9466b9099046c05d7be",
+                "name": "redoxfs",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.8.0"
+              },
+              {
+                "checksum": "1c107b6f4780854c8b126e228ea8869f4d7b71260f962fefb57b996b8959ba6b",
+                "name": "seahash",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "4.1.0"
+              },
+              {
+                "checksum": "13c2bddecc57b384dee18652358fb23172facb8a2c51ccc10d74c157bdea3292",
+                "name": "subtle",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "2.6.1"
+              },
+              {
+                "checksum": "b6f5e870be6c3b371b77fe0ee0bafb859fa4964b4404c27de1d380043c4dda20",
+                "name": "typenum",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "1.20.1"
+              },
+              {
+                "checksum": "97277d36b9c3ace13e58fa6e753f8b0bbbf302a18dd193240d70f9e29681059a",
+                "name": "uuid",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "1.27.0"
+              },
+              {
+                "checksum": "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a",
+                "name": "version_check",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.9.5"
+              },
+              {
+                "checksum": "09cbddb7545ca0b9ffa7bdc653e8743303e1712687a6918ced25f2cdbed42520",
+                "name": "xts-mode",
+                "source_sha256": "c19b7c6f923b580ac259164a89f2577984ad5ab09ee9d583b888f934adbbe8d0",
+                "version": "0.5.1"
+              }
+            ],
+            "sha256": "4a548657a84da5f01e5f3a5767dcd0c2c45b25e58a8712a23540b6d5b78c1a7a"
           }
         },
-        "published_artifact_commit": "5f29a6ed3b11ae242e6a152356182317175bca97",
-        "published_at": "2026-10-12T16:25:23.828562+00:00",
+        "publication_observed_at": "2026-10-15T02:11:49.896040+00:00",
+        "published_artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
+        "published_at": null,
+        "recipe_commit": "b4b0b533f3232164203778bb815f32174d28d747",
         "recipe_files": {
-          "recipes/core/bootloader/recipe.toml": {
-            "git_blob": "1343a30d740b3ff2d7c0039144b7922c456521c5",
-            "mode": "100644"
-          }
+          "recipes/core/bootloader/recipe.toml": "e387aa4fdfc6c443f1076bb2e7e2bd6055cc95dd5bda710b289156ef0d0164e9"
         },
-        "recipe_git_blob": "1343a30d740b3ff2d7c0039144b7922c456521c5",
         "recipe_path": "recipes/core/bootloader/recipe.toml",
         "repository": "RedoxORG/bootloader",
-        "source_sha": "70c5dff98aa750b31e0797686d92ba9ad331f29f",
-        "source_tree": "87561709f984ce1f287816331f92d7577c83b6f2",
+        "source_sha": "13358e87cc3c6e1225c42db07c3dce4280a734f5",
+        "source_tree": "2d64d877b1450c525997431717a182db913537f9",
         "submodules": {},
+        "target": "x86_64-unknown-redox",
         "validation": {
-          "build": "PASS",
-          "index": "PASS",
+          "independent_consumer": "PASS",
           "remote_bytes": "PASS",
-          "runtime": "PASS: normal server smoke and installed file identity",
           "signature_payload": "PASS"
         }
       },
       "published_artifact": {
-        "archive_blake3": "31e94c7b74ee134759905a780122933e5e28c710dbefb1601cd997f6f13782b3",
-        "archive_sha256": "a0f84ced9b9f2e6fd0363b645ae176dc9a46c8a017fb48490d7981506fa41a97",
-        "metadata_commit_identifier": "5300847f01479312b6d932735ee4ca49aefc9e14",
-        "metadata_sha256": "93f260e529583d83be422bb74e59dd3fc08eb8f8d03a61d4ef1c3505d2fb65b6",
+        "archive_blake3": "770f11f9841be82a6ce5995a2d54f05624e1469ffebe56758c0004ccadecd302",
+        "archive_sha256": "5eb839e37669ea53384bccb82ba85b88e70fa441b3f9e965a5bffbea2dc37709",
+        "metadata_commit_identifier": "b4b0b533f3232164203778bb815f32174d28d747",
+        "metadata_sha256": "f1d362929f43a548f8005a7c1e1dbe3ed125a0c53ea859779480d41848a19cd0",
         "metadata_source_identifier": "local_source",
-        "payload_sha256": "eaabb67b77011e45c8c24c3b0cff82a4fa1770ee6c62615aa6b383470a95010f",
-        "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
         "readback": "PASS",
-        "repository_commit": "5f29a6ed3b11ae242e6a152356182317175bca97"
+        "repository_commit": "40789301555d0755b35583a32b6f5fe838bdad6b"
       },
       "published_source_receipt": {
-        "artifact_commit": "5f29a6ed3b11ae242e6a152356182317175bca97",
-        "recipe_commit": "5300847f01479312b6d932735ee4ca49aefc9e14",
-        "source": null,
-        "source_sha": "70c5dff98aa750b31e0797686d92ba9ad331f29f",
-        "verification": "PASS: normal actual compilation, complete input identity, signed payload equality, immutable remote bytes"
+        "artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
+        "kind": "PrivateSourceBuild",
+        "receipt_hashes": {
+          "consumer_binding": {
+            "path": "consumer-installed-binding.json",
+            "sha256": "bf2c65f67ebad944b13d7daeaf15f0e6df8e18884eab418734dbcd5736297ac1"
+          },
+          "consumer_make": {
+            "path": "consumer-make-all.json",
+            "sha256": "cbadd0e0959b803bae1b06f5cd1d5edb00ff9f38ab03976659af0d0c3abb1154"
+          },
+          "consumer_runtime": {
+            "path": "consumer-runtime-01.json",
+            "sha256": "ed53c9604fd820d41d19fdd46548d3c42b89c10105a0e70afcf753f8476bc2a4"
+          },
+          "remote": {
+            "path": "remote-readback-40789301555d.json",
+            "sha256": "957ac31b70724ee643d20655dfe9383dc9438c0a6b369a51ee4b8b8b6c72b1b0"
+          },
+          "remote_native": {
+            "path": "published-four-native.json",
+            "sha256": "81a7fe9de72601b7124830df6e536e92d916f1c6f6674f4ab4b39ecdafbf1eb0"
+          },
+          "review": {
+            "path": "consumer-review.json",
+            "sha256": "ce236a6a23727d2069ea9152329bd6e27a92faafd5a78a3abec1a933bb56215d"
+          }
+        },
+        "source_build": "PASS",
+        "source_sha": "13358e87cc3c6e1225c42db07c3dce4280a734f5"
       },
-      "reason": "Previous successful baseline retained until immutable remote readback and independent consumer acceptance",
-      "runtime": "PASS: current producer receipt",
+      "reason": "Complete successful source or distribution input matches this frozen run",
+      "runtime": "PASS: current independent consumer",
       "signature_payload_verification": "PASS",
-      "status": "PendingPublication"
+      "status": "UpToDate"
     },
     "bottom": {
       "action": "KeepExistingPackage",
@@ -8704,9 +9057,9 @@
       "status": "UpToDate"
     },
     "orbterm": {
-      "action": "PreparedVerifiedCandidate",
-      "baseline_status": "BaselineMissing",
-      "binary_publication": "NotRun",
+      "action": "PublishedVerifiedOfficialDistribution",
+      "baseline_status": "Known",
+      "binary_publication": "PASS",
       "build": "NotRun: official same-content re-sign",
       "candidate_artifact": {
         "archive_blake3": "0b2326b7eaaeba6846d491725f7f7d619c782bd67ce3edb37ffb5deeeabf2608",
@@ -8743,39 +9096,136 @@
         "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/orbterm.pkgar"
       },
       "freshness": {
-        "candidate_effective_input_id": null,
+        "candidate_effective_input_id": "d7105c0cc6220dacaf8c785398d855f917a95d867c96de6424520c13f8caed82",
         "change_time_evidence": null,
         "deadline_at": null,
         "earliest_unpublished_change_at": null,
         "freshness_status": "FreshnessUnknown",
+        "publication_observed_at": "2026-10-15T02:11:49.896040+00:00",
+        "publication_time_evidence": {
+          "exact_publication_time": false,
+          "kind": "FirstVerifiedRemoteObservation",
+          "observed_at": "2026-10-15T02:11:49.896040+00:00"
+        },
         "published_at": null,
-        "published_effective_input_id": null,
-        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+        "published_effective_input_id": "d7105c0cc6220dacaf8c785398d855f917a95d867c96de6424520c13f8caed82",
+        "reason": "Verified publication; earliest effective change timing evidence incomplete"
       },
       "last_artifact_verification": {
-        "archive_sha256": "13efe65826f30a2e62a03088a03ead29b8cd055e9e1b7f555c31a89a20ea06b1",
-        "consumer_archive_bound": false,
-        "date": "2026-10-12",
-        "metadata_sha256": "ee824e9bba4714d4bea47805741b8d05bb524f12bcef655763050ce8d0b59a8a",
-        "metadata_signed_header_index": "PASS",
-        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
-        "receipt": "consumer-verification.json",
-        "signature_extraction": "PASS"
+        "checked_at": "2026-10-15T02:21:29.624588+00:00",
+        "independent_consumer": "NotApplicableToServerConfiguration",
+        "receipt_hashes": {
+          "consumer_binding": {
+            "path": "consumer-installed-binding.json",
+            "sha256": "bf2c65f67ebad944b13d7daeaf15f0e6df8e18884eab418734dbcd5736297ac1"
+          },
+          "consumer_make": {
+            "path": "consumer-make-all.json",
+            "sha256": "cbadd0e0959b803bae1b06f5cd1d5edb00ff9f38ab03976659af0d0c3abb1154"
+          },
+          "consumer_runtime": {
+            "path": "consumer-runtime-01.json",
+            "sha256": "ed53c9604fd820d41d19fdd46548d3c42b89c10105a0e70afcf753f8476bc2a4"
+          },
+          "remote": {
+            "path": "remote-readback-40789301555d.json",
+            "sha256": "957ac31b70724ee643d20655dfe9383dc9438c0a6b369a51ee4b8b8b6c72b1b0"
+          },
+          "remote_native": {
+            "path": "published-four-native.json",
+            "sha256": "81a7fe9de72601b7124830df6e536e92d916f1c6f6674f4ab4b39ecdafbf1eb0"
+          },
+          "review": {
+            "path": "consumer-review.json",
+            "sha256": "ce236a6a23727d2069ea9152329bd6e27a92faafd5a78a3abec1a933bb56215d"
+          }
+        },
+        "remote_bytes": "PASS",
+        "repository_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
+        "signature_payload": "PASS"
       },
-      "last_successful_input": null,
+      "last_successful_input": {
+        "compatibility": {
+          "frozen_recipe_sha256": "afb9aefd847d03df9d9edec9d0b452e14da4e1c6cb42ca28e7473f8dfd232299",
+          "official_recipe_sha256": "afb9aefd847d03df9d9edec9d0b452e14da4e1c6cb42ca28e7473f8dfd232299",
+          "recipe_equal": true
+        },
+        "complete": true,
+        "effective_input_sha256": "d7105c0cc6220dacaf8c785398d855f917a95d867c96de6424520c13f8caed82",
+        "kind": "VerifiedOfficialDistribution",
+        "official_archive_sha256": "cae11e38a33b016a6cf3595dc544a478e9ce11527f0e5ada91744e0f53c1f785",
+        "official_metadata": {
+          "blake3": "13d80c7885ce5b27830b1b589012ef401030014188b36c15f9c6bfe75e72fbf4",
+          "commit_identifier": "02dda2e7f44c19c178f641953c991facd3de1311",
+          "depends": [
+            "orbital"
+          ],
+          "name": "orbterm",
+          "network_size": 234615,
+          "source_identifier": "ba1243cd6bc0230ca00aac5d550fe17e727e2b46",
+          "storage_size": 597004,
+          "target": "x86_64-unknown-redox",
+          "time_identifier": "2026-10-05T05:00:11Z",
+          "version": "0.3.6"
+        },
+        "official_public_key_sha256": "7ab7eaa5b769ae360dfe98eecf4a57930b7a94ffa11b2df911db701e3badf348",
+        "payload_sha256": "3b74e8cd2f39e04a21c499b3dca136ae5a9e667bd7c738739fd54ce82a2fe2b6",
+        "publication_observed_at": "2026-10-15T02:11:49.896040+00:00",
+        "published_artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
+        "published_at": null,
+        "source_build": "NotRunNotRequired",
+        "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/orbterm.pkgar",
+        "validation": {
+          "independent_consumer": "NotApplicableToServerConfiguration",
+          "remote_bytes": "PASS",
+          "signature_payload": "PASS"
+        }
+      },
       "published_artifact": {
-        "archive_blake3_from_metadata": "96ae4e0ca8849cded4e41e5f115bead12c337dc1b64528dc058df0225c2f36cd",
-        "archive_sha256": "13efe65826f30a2e62a03088a03ead29b8cd055e9e1b7f555c31a89a20ea06b1",
-        "metadata_commit_identifier": "c4009d08ba2eab474e95f1acfec3633b6b8868a0",
-        "metadata_sha256": "ee824e9bba4714d4bea47805741b8d05bb524f12bcef655763050ce8d0b59a8a",
-        "metadata_source_identifier": "local_source",
-        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58"
+        "archive_blake3": "0b2326b7eaaeba6846d491725f7f7d619c782bd67ce3edb37ffb5deeeabf2608",
+        "archive_sha256": "251cf000768f1faceb630bb308ec580fa2d4efedea54c9657e513883e70c49bc",
+        "metadata_commit_identifier": "02dda2e7f44c19c178f641953c991facd3de1311",
+        "metadata_sha256": "f8b9bcb19426e3be9840e61fd30e936bc96f405b7faa17ecefea1fbb601a2072",
+        "metadata_source_identifier": "ba1243cd6bc0230ca00aac5d550fe17e727e2b46",
+        "readback": "PASS",
+        "repository_commit": "40789301555d0755b35583a32b6f5fe838bdad6b"
       },
-      "published_source_receipt": null,
-      "reason": "Previous successful baseline retained until immutable remote readback and independent consumer acceptance",
+      "published_source_receipt": {
+        "artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
+        "kind": "VerifiedOfficialDistribution",
+        "receipt_hashes": {
+          "consumer_binding": {
+            "path": "consumer-installed-binding.json",
+            "sha256": "bf2c65f67ebad944b13d7daeaf15f0e6df8e18884eab418734dbcd5736297ac1"
+          },
+          "consumer_make": {
+            "path": "consumer-make-all.json",
+            "sha256": "cbadd0e0959b803bae1b06f5cd1d5edb00ff9f38ab03976659af0d0c3abb1154"
+          },
+          "consumer_runtime": {
+            "path": "consumer-runtime-01.json",
+            "sha256": "ed53c9604fd820d41d19fdd46548d3c42b89c10105a0e70afcf753f8476bc2a4"
+          },
+          "remote": {
+            "path": "remote-readback-40789301555d.json",
+            "sha256": "957ac31b70724ee643d20655dfe9383dc9438c0a6b369a51ee4b8b8b6c72b1b0"
+          },
+          "remote_native": {
+            "path": "published-four-native.json",
+            "sha256": "81a7fe9de72601b7124830df6e536e92d916f1c6f6674f4ab4b39ecdafbf1eb0"
+          },
+          "review": {
+            "path": "consumer-review.json",
+            "sha256": "ce236a6a23727d2069ea9152329bd6e27a92faafd5a78a3abec1a933bb56215d"
+          }
+        },
+        "source_build": "NotRunNotRequired",
+        "source_sha": null
+      },
+      "reason": "Complete successful source or distribution input matches this frozen run",
       "runtime": "NotApplicableToServerConfiguration",
       "signature_payload_verification": "PASS",
-      "status": "PendingPublication"
+      "status": "UpToDate"
     },
     "pkgutils": {
       "action": "KeepExistingPackage",
@@ -8860,9 +9310,9 @@
       "status": "UpToDate"
     },
     "redoxfs": {
-      "action": "PreparedVerifiedCandidate",
-      "baseline_status": "BaselineMissing",
-      "binary_publication": "NotRun",
+      "action": "PublishedVerifiedOfficialDistribution",
+      "baseline_status": "Known",
+      "binary_publication": "PASS",
       "build": "NotRun: official same-content re-sign",
       "candidate_artifact": {
         "archive_blake3": "e2b955996e829cd348379bc6227c4f6875cd422ad2d3d94dadf390fb4d1d5b26",
@@ -8897,39 +9347,134 @@
         "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/redoxfs.pkgar"
       },
       "freshness": {
-        "candidate_effective_input_id": null,
+        "candidate_effective_input_id": "6f0f4af3ca3621b94a49b246404565e3d4bc267727ec99b8d087900860ed2750",
         "change_time_evidence": null,
         "deadline_at": null,
         "earliest_unpublished_change_at": null,
         "freshness_status": "FreshnessUnknown",
+        "publication_observed_at": "2026-10-15T02:11:49.896040+00:00",
+        "publication_time_evidence": {
+          "exact_publication_time": false,
+          "kind": "FirstVerifiedRemoteObservation",
+          "observed_at": "2026-10-15T02:11:49.896040+00:00"
+        },
         "published_at": null,
-        "published_effective_input_id": null,
-        "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
+        "published_effective_input_id": "6f0f4af3ca3621b94a49b246404565e3d4bc267727ec99b8d087900860ed2750",
+        "reason": "Verified publication; earliest effective change timing evidence incomplete"
       },
       "last_artifact_verification": {
-        "archive_sha256": "5b78c65129630b741000c358a23963947668ab4816e15158ca5087edb76db328",
-        "consumer_archive_bound": true,
-        "date": "2026-10-12",
-        "metadata_sha256": "db8c349668ac36982261214db5903ccb5cd54360ec04d7bac068e2e3367a8624",
-        "metadata_signed_header_index": "PASS",
-        "package_commit": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
-        "receipt": "consumer-verification.json",
-        "signature_extraction": "PASS"
+        "checked_at": "2026-10-15T02:21:29.624588+00:00",
+        "independent_consumer": "PASS",
+        "receipt_hashes": {
+          "consumer_binding": {
+            "path": "consumer-installed-binding.json",
+            "sha256": "bf2c65f67ebad944b13d7daeaf15f0e6df8e18884eab418734dbcd5736297ac1"
+          },
+          "consumer_make": {
+            "path": "consumer-make-all.json",
+            "sha256": "cbadd0e0959b803bae1b06f5cd1d5edb00ff9f38ab03976659af0d0c3abb1154"
+          },
+          "consumer_runtime": {
+            "path": "consumer-runtime-01.json",
+            "sha256": "ed53c9604fd820d41d19fdd46548d3c42b89c10105a0e70afcf753f8476bc2a4"
+          },
+          "remote": {
+            "path": "remote-readback-40789301555d.json",
+            "sha256": "957ac31b70724ee643d20655dfe9383dc9438c0a6b369a51ee4b8b8b6c72b1b0"
+          },
+          "remote_native": {
+            "path": "published-four-native.json",
+            "sha256": "81a7fe9de72601b7124830df6e536e92d916f1c6f6674f4ab4b39ecdafbf1eb0"
+          },
+          "review": {
+            "path": "consumer-review.json",
+            "sha256": "ce236a6a23727d2069ea9152329bd6e27a92faafd5a78a3abec1a933bb56215d"
+          }
+        },
+        "remote_bytes": "PASS",
+        "repository_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
+        "signature_payload": "PASS"
       },
-      "last_successful_input": null,
+      "last_successful_input": {
+        "compatibility": {
+          "frozen_recipe_sha256": "f37566b8a643826c82d6cc75470f24cb3f38ab10066e107759b5b7ed5023d1ed",
+          "official_recipe_sha256": "f37566b8a643826c82d6cc75470f24cb3f38ab10066e107759b5b7ed5023d1ed",
+          "recipe_equal": true
+        },
+        "complete": true,
+        "effective_input_sha256": "6f0f4af3ca3621b94a49b246404565e3d4bc267727ec99b8d087900860ed2750",
+        "kind": "VerifiedOfficialDistribution",
+        "official_archive_sha256": "fbfeff7041f359dfa305334be1de39318a1974eba269e03b4bfd4cefa8ba10bb",
+        "official_metadata": {
+          "blake3": "38848de6f39d83c140d981b1809c5f482a88667a4e632c79c71ac26614934dc4",
+          "commit_identifier": "05c0f8015683959ba263d3c742da212416c7e96d",
+          "depends": [],
+          "name": "redoxfs",
+          "network_size": 1180780,
+          "source_identifier": "b87b0976ee122036b2ec040159b890e1e06ca139",
+          "storage_size": 3206660,
+          "target": "x86_64-unknown-redox",
+          "time_identifier": "2026-09-07T16:07:34Z",
+          "version": "0.9.1"
+        },
+        "official_public_key_sha256": "7ab7eaa5b769ae360dfe98eecf4a57930b7a94ffa11b2df911db701e3badf348",
+        "payload_sha256": "97f6073452a64c9bfd5df3f5711ae69c384951fb83c9752225f8712c6df4f9d8",
+        "publication_observed_at": "2026-10-15T02:11:49.896040+00:00",
+        "published_artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
+        "published_at": null,
+        "source_build": "NotRunNotRequired",
+        "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/redoxfs.pkgar",
+        "validation": {
+          "independent_consumer": "PASS",
+          "remote_bytes": "PASS",
+          "signature_payload": "PASS"
+        }
+      },
       "published_artifact": {
-        "archive_blake3_from_metadata": "559c29ac68fd12b6b3fc1b03f4a1c9dc374f9c998bfed4665888451bafa8ec06",
-        "archive_sha256": "5b78c65129630b741000c358a23963947668ab4816e15158ca5087edb76db328",
-        "metadata_commit_identifier": "54ad8740ad420dd2dff27a9fc757201cc06fed57",
-        "metadata_sha256": "db8c349668ac36982261214db5903ccb5cd54360ec04d7bac068e2e3367a8624",
+        "archive_blake3": "e2b955996e829cd348379bc6227c4f6875cd422ad2d3d94dadf390fb4d1d5b26",
+        "archive_sha256": "fee7622380fba5e486661b3b68b069dc254d996605e02049e919b15ddced4cae",
+        "metadata_commit_identifier": "05c0f8015683959ba263d3c742da212416c7e96d",
+        "metadata_sha256": "b7ef6c25cae24c17f08967c11ee3571a79f7af3805e8067afc3243e6495655a1",
         "metadata_source_identifier": "b87b0976ee122036b2ec040159b890e1e06ca139",
-        "repository_commit": "5ebaa810f64385fdbc4f3419393ac68e95770e58"
+        "readback": "PASS",
+        "repository_commit": "40789301555d0755b35583a32b6f5fe838bdad6b"
       },
-      "published_source_receipt": null,
-      "reason": "Previous successful baseline retained until immutable remote readback and independent consumer acceptance",
-      "runtime": "PASS: current producer receipt",
+      "published_source_receipt": {
+        "artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
+        "kind": "VerifiedOfficialDistribution",
+        "receipt_hashes": {
+          "consumer_binding": {
+            "path": "consumer-installed-binding.json",
+            "sha256": "bf2c65f67ebad944b13d7daeaf15f0e6df8e18884eab418734dbcd5736297ac1"
+          },
+          "consumer_make": {
+            "path": "consumer-make-all.json",
+            "sha256": "cbadd0e0959b803bae1b06f5cd1d5edb00ff9f38ab03976659af0d0c3abb1154"
+          },
+          "consumer_runtime": {
+            "path": "consumer-runtime-01.json",
+            "sha256": "ed53c9604fd820d41d19fdd46548d3c42b89c10105a0e70afcf753f8476bc2a4"
+          },
+          "remote": {
+            "path": "remote-readback-40789301555d.json",
+            "sha256": "957ac31b70724ee643d20655dfe9383dc9438c0a6b369a51ee4b8b8b6c72b1b0"
+          },
+          "remote_native": {
+            "path": "published-four-native.json",
+            "sha256": "81a7fe9de72601b7124830df6e536e92d916f1c6f6674f4ab4b39ecdafbf1eb0"
+          },
+          "review": {
+            "path": "consumer-review.json",
+            "sha256": "ce236a6a23727d2069ea9152329bd6e27a92faafd5a78a3abec1a933bb56215d"
+          }
+        },
+        "source_build": "NotRunNotRequired",
+        "source_sha": null
+      },
+      "reason": "Complete successful source or distribution input matches this frozen run",
+      "runtime": "PASS: current independent consumer",
       "signature_payload_verification": "PASS",
-      "status": "PendingPublication"
+      "status": "UpToDate"
     },
     "relibc": {
       "action": "PublishedVerifiedCandidate",
@@ -11683,20 +12228,51 @@
     "trigger": "manual requested run"
   },
   "scheduled_update_20261015_01": {
+    "artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
     "candidate_packages": [
       "base",
       "bootloader",
       "orbterm",
       "redoxfs"
     ],
-    "independent_consumer": "NotRun",
+    "independent_consumer": "PASS",
+    "official_distributions": [
+      "orbterm",
+      "redoxfs"
+    ],
     "official_receipts": {
       "candidate-receipt.json": "bca6b751eaf433a86ac9f00a0e67d5e6d2e75fc4be1c9fde7395c7e5cc79bc34",
       "compatibility.json": "2f2d5c34b37fbe777f4b6107c310d6859c68688d9e17b8c10d18560526be34d8",
       "verification.json": "effd9c34afc31bd8b8e055ab18b441c6fbc49cc25b2be2d87bf480b245a52b54"
     },
     "package_base_sha": "6940adaa9cb088795c3011fbc2222bcf0083694e",
-    "phase": "PreparedNotPublished",
+    "phase": "PublishedAndConsumerVerified",
+    "publication_receipt_hashes": {
+      "consumer_binding": {
+        "path": "consumer-installed-binding.json",
+        "sha256": "bf2c65f67ebad944b13d7daeaf15f0e6df8e18884eab418734dbcd5736297ac1"
+      },
+      "consumer_make": {
+        "path": "consumer-make-all.json",
+        "sha256": "cbadd0e0959b803bae1b06f5cd1d5edb00ff9f38ab03976659af0d0c3abb1154"
+      },
+      "consumer_runtime": {
+        "path": "consumer-runtime-01.json",
+        "sha256": "ed53c9604fd820d41d19fdd46548d3c42b89c10105a0e70afcf753f8476bc2a4"
+      },
+      "remote": {
+        "path": "remote-readback-40789301555d.json",
+        "sha256": "957ac31b70724ee643d20655dfe9383dc9438c0a6b369a51ee4b8b8b6c72b1b0"
+      },
+      "remote_native": {
+        "path": "published-four-native.json",
+        "sha256": "81a7fe9de72601b7124830df6e536e92d916f1c6f6674f4ab4b39ecdafbf1eb0"
+      },
+      "review": {
+        "path": "consumer-review.json",
+        "sha256": "ce236a6a23727d2069ea9152329bd6e27a92faafd5a78a3abec1a933bb56215d"
+      }
+    },
     "receipt_hashes": {
       "adaptation": {
         "path": "binary-dependency-guard-tests.json",
@@ -11731,8 +12307,18 @@
         "sha256": "4a6f896c98988d4a38d1683629a0406635d20f39e72b9f5301570c330301465e"
       }
     },
-    "remote_readback": "NotRun",
-    "successful_inputs_advanced": []
+    "remote_readback": "PASS",
+    "source_builds": [
+      "base",
+      "bootloader"
+    ],
+    "successful_inputs_advanced": [
+      "base",
+      "bootloader",
+      "orbterm",
+      "redoxfs"
+    ],
+    "verified_at": "2026-10-15T02:21:29.624588+00:00"
   },
   "schema_version": 1,
   "target": "x86_64-unknown-redox",
