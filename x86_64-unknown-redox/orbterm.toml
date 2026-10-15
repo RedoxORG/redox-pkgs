@@ -1,10 +1,10 @@
 name = "orbterm"
 version = "0.3.6"
 target = "x86_64-unknown-redox"
-blake3 = "96ae4e0ca8849cded4e41e5f115bead12c337dc1b64528dc058df0225c2f36cd"
-source_identifier = "local_source"
-commit_identifier = "c4009d08ba2eab474e95f1acfec3633b6b8868a0"
-time_identifier = "2026-10-10T01:23:51Z"
-storage_size = 601100
-network_size = 601100
+blake3 = "0b2326b7eaaeba6846d491725f7f7d619c782bd67ce3edb37ffb5deeeabf2608"
+source_identifier = "ba1243cd6bc0230ca00aac5d550fe17e727e2b46"
+commit_identifier = "02dda2e7f44c19c178f641953c991facd3de1311"
+time_identifier = "2026-10-05T05:00:11Z"
+storage_size = 597004
+network_size = 597004
 depends = ["orbital"]

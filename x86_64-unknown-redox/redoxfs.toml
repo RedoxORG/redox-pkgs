@@ -1,10 +1,10 @@
 name = "redoxfs"
 version = "0.9.1"
 target = "x86_64-unknown-redox"
-blake3 = "559c29ac68fd12b6b3fc1b03f4a1c9dc374f9c998bfed4665888451bafa8ec06"
+blake3 = "e2b955996e829cd348379bc6227c4f6875cd422ad2d3d94dadf390fb4d1d5b26"
 source_identifier = "b87b0976ee122036b2ec040159b890e1e06ca139"
-commit_identifier = "54ad8740ad420dd2dff27a9fc757201cc06fed57"
-time_identifier = "2026-10-07T06:24:40Z"
-storage_size = 3091972
-network_size = 3091972
+commit_identifier = "05c0f8015683959ba263d3c742da212416c7e96d"
+time_identifier = "2026-09-07T16:07:34Z"
+storage_size = 3206660
+network_size = 3206660
 depends = []

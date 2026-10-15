@@ -22,9 +22,9 @@ upstream licenses, not a blanket MIT or GPL license.
 
 | Package | Upstream source | Source identifier / archive BLAKE3 |
 | --- | --- | --- |
-| base | [base private source](https://github.com/RedoxORG/base/tree/f364a8731282739487be0e3f525b36b6260ab8b5) | `f364a8731282739487be0e3f525b36b6260ab8b5` |
+| base | [base source](https://github.com/RedoxORG/base/tree/e3b2648483a8cbfa33bc81044e27004a8f80c437) | `e3b2648483a8cbfa33bc81044e27004a8f80c437` |
 | bash | [bash source](https://ftp.gnu.org/gnu/bash/bash-5.3.tar.gz) | `5bf3ac6c18f3dc3fe3e049a1e10ea5ae5c5b39dac2356cd796730f49b273fd0f` |
-| bootloader | [bootloader private source](https://github.com/RedoxORG/bootloader/tree/70c5dff98aa750b31e0797686d92ba9ad331f29f) | `70c5dff98aa750b31e0797686d92ba9ad331f29f` |
+| bootloader | [bootloader source](https://github.com/RedoxORG/bootloader/tree/13358e87cc3c6e1225c42db07c3dce4280a734f5) | `13358e87cc3c6e1225c42db07c3dce4280a734f5` |
 | bottom | [bottom source](https://github.com/jackpot51/bottom/tree/87b9106ffd27a512315096d831a03a1079e79323) | `87b9106ffd27a512315096d831a03a1079e79323` |
 | ca-certificates | [ca-certificates source](https://gitlab.redox-os.org/redox-os/ca-certificates/-/tree/4955c9001ad38451fe2b7b2bf5bf85b1b5aef390) | `4955c9001ad38451fe2b7b2bf5bf85b1b5aef390` |
 | coreutils | [coreutils source](https://gitlab.redox-os.org/redox-os/coreutils/-/tree/575a46d3b624ad9cd222c9e3250073e9269c3462) | `575a46d3b624ad9cd222c9e3250073e9269c3462` |
@@ -48,7 +48,7 @@ upstream licenses, not a blanket MIT or GPL license.
 | openssl3 | [openssl3 source](https://github.com/openssl/openssl/releases/download/openssl-3.5.3/openssl-3.5.3.tar.gz) | `e1622a4587c71c278355bf38ff5a619918bd51e3cd37214d53dd5345b187fc10` |
 | orbdata | [orbdata source](https://gitlab.redox-os.org/redox-os/orbdata/-/tree/58d1140176430f222ac0749c8b83349f2c4da916) | `58d1140176430f222ac0749c8b83349f2c4da916` |
 | orbital | [orbital source](https://gitlab.redox-os.org/redox-os/orbital/-/tree/a6132b1c2add31def08b4b537271492c17e3e343) | `a6132b1c2add31def08b4b537271492c17e3e343` |
-| orbterm | [orbterm source](https://gitlab.redox-os.org/redox-os/orbterm) | `local_source` |
+| orbterm | [orbterm source](https://gitlab.redox-os.org/redox-os/orbterm/-/tree/ba1243cd6bc0230ca00aac5d550fe17e727e2b46) | `ba1243cd6bc0230ca00aac5d550fe17e727e2b46` |
 | pkgutils | [pkgutils source](https://gitlab.redox-os.org/redox-os/pkgutils/-/tree/fe21bfd95d869cafd356bcdec4d1a81739ede5ee) | `fe21bfd95d869cafd356bcdec4d1a81739ede5ee` |
 | readline | [readline source](https://ftp.gnu.org/gnu/readline/readline-8.3.tar.gz) | `7109f094062bda387a0c16b4875375b96e36437bebbbd8d8f91bb27ba01d687f` |
 | redoxfs | [redoxfs source](https://gitlab.redox-os.org/redox-os/redoxfs/-/tree/b87b0976ee122036b2ec040159b890e1e06ca139) | `b87b0976ee122036b2ec040159b890e1e06ca139` |
@@ -66,9 +66,11 @@ GNU package license mapping: bash/readline/diffutils/gettext use GPLv3;
 Git uses GPLv2; libiconv contains LGPLv2.1 libraries and GPLv3 utilities.
 See each complete upstream source archive for copyright and license details.
 
-The six earlier packages use frozen Redox recipe commit `5300847f01479312b6d932735ee4ca49aefc9e14`. Full locks, source identities, package hashes and current validation are in `binary-inputs.json`. Later source pushes are deferred. This continuation additionally updates zsh; other 38 archives stay unchanged from the six-package release.
+This update uses frozen Redox recipe/config commit `b4b0b533f3232164203778bb815f32174d28d747` and updates base, bootloader, orbterm and redoxfs. The other 35 package archives and metadata are unchanged. Full locks, source identities, package hashes and validation provenance are in `binary-inputs.json`. Later source pushes are deferred.
 
 Zsh uses the frozen private source and original [recipe, patch and binding](build-inputs/wip/shells/zsh/). Its permissive [license](licenses/zsh.txt) is preserved. The source recipe was not pushed or modified; controlled prepare and actual compilation identities are in binary-inputs.json.
 
-Current base/bash update uses frozen Redox recipe/config commit `9965194f7051d85b202aabb649b60eb0deefb4f7`. Bash archive and compiler options remain unchanged; its included skeleton rc now uses the committed shared shell configuration. Image configuration comes from that exact Redox commit and is not a separate binary package.
+Base and bootloader are built from the frozen private sources listed above. Orbterm and redoxfs use verified official binaries re-signed with the existing repository key without changing their installation contents. Bash remains unchanged in this update. Image configuration comes from the frozen Redox commit and is not a separate binary package.
 Recipe/file distribution copies follow the existing LF text normalization; the original committed Git blob and byte hashes are recorded separately in the input ledger.
+
+The base console includes Dina bitmap fonts. See [Dina license](licenses/Dina.txt); the notice is copied byte-for-byte from the frozen base source.
