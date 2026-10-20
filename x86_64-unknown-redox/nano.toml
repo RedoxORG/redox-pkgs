@@ -1,0 +1,10 @@
+name = "nano"
+version = "9.2"
+target = "x86_64-unknown-redox"
+blake3 = "12c3ced3e576ba19cc8bff9fd0dc16739130e6266506fa8e58a58f37904baad9"
+source_identifier = "6a4dd380f6ee2bb2d74851c182090774f61eddfc37d9ff4d060b69f2c0fe4646"
+commit_identifier = "332fb5e78561e6805ddd87bc8758093f02f564ba"
+time_identifier = "2026-10-16T05:03:55Z"
+storage_size = 813870
+network_size = 813870
+depends = ["terminfo", "ncursesw"]

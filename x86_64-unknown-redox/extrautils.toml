@@ -1,10 +1,10 @@
 name = "extrautils"
-version = "TODO"
+version = "0.1.0"
 target = "x86_64-unknown-redox"
-blake3 = "026847ca428ec8b63a7218a7a997bcae5b5653a847e1e964eba49fa825eb831c"
+blake3 = "67fadc477d87a7d62cab911120b81e25fbb0db7309d42f620a77961c3f195331"
 source_identifier = "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84"
-commit_identifier = "3908bb6de5e0df85b748189f3b43cb75f72cb9d9"
-time_identifier = "2026-07-12T03:45:28Z"
-storage_size = 9347980
-network_size = 9347980
-depends = []
+commit_identifier = "851e1e578b9254a0f69aa2f6715155d5bf07b220"
+time_identifier = "2026-10-20T03:51:17Z"
+storage_size = 7391408
+network_size = 7391408
+depends = ["uutils-grep"]

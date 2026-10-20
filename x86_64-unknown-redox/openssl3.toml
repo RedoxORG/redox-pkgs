@@ -1,10 +1,10 @@
 name = "openssl3"
-version = "TODO"
+version = "3.5.3"
 target = "x86_64-unknown-redox"
-blake3 = "dc93bbc79fa24ded19eec942db9263f58ef9933a126a845355989e4f8531e828"
+blake3 = "15749c70c4351f4979c9ec5832424422a4ab1efacb824fe980d9cee19fe5fd02"
 source_identifier = "e1622a4587c71c278355bf38ff5a619918bd51e3cd37214d53dd5345b187fc10"
-commit_identifier = "009833b56eeb6eb1928e8ea783ea717ffced5d2d"
-time_identifier = "2026-09-26T05:02:42Z"
+commit_identifier = "332fb5e78561e6805ddd87bc8758093f02f564ba"
+time_identifier = "2026-10-16T05:03:55Z"
 storage_size = 25677784
 network_size = 25677784
 depends = ["zstd"]

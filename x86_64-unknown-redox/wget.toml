@@ -1,0 +1,10 @@
+name = "wget"
+version = "1.21.4"
+target = "x86_64-unknown-redox"
+blake3 = "ebc4c88240343f5e1174eb0afa311b7106840e1f9a3f40b5b8506d6110754242"
+source_identifier = "1c3c31259d23ed3890535fd3b8713082c74e41d459c8f290c1650ab1afab8f35"
+commit_identifier = "851e1e578b9254a0f69aa2f6715155d5bf07b220"
+time_identifier = "2026-10-20T03:51:17Z"
+storage_size = 1023235
+network_size = 1023235
+depends = ["openssl3"]

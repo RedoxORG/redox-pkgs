@@ -1,10 +1,10 @@
 name = "uutils"
-version = "TODO"
+version = "0.11.0"
 target = "x86_64-unknown-redox"
-blake3 = "0aa00652580edf03d6b62138b487efd43c89783d1fba2a50a2b9cd0e1c3a4c4d"
+blake3 = "b5f4d5078555e611239bc12949923853c9e4f5df49de3b6d22b1a1b81fb032a9"
 source_identifier = "bf65901e1ed82963436844c2cf8e796ba9158c65"
-commit_identifier = "54ad8740ad420dd2dff27a9fc757201cc06fed57"
-time_identifier = "2026-10-07T05:00:16Z"
-storage_size = 12297384
-network_size = 12297384
+commit_identifier = "851e1e578b9254a0f69aa2f6715155d5bf07b220"
+time_identifier = "2026-10-20T03:51:17Z"
+storage_size = 12330469
+network_size = 12330469
 depends = ["libonig"]

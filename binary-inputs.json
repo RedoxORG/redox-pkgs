@@ -196,6 +196,425 @@
       "toolchain_locks": {
         "prefix/x86_64-unknown-redox/rust-install/lib/rustlib/src/rust/library/Cargo.lock": "02120dd57c4c5fd70c81fd92472681c8de5cc2dd78258276da37bb2253666061"
       }
+    },
+    "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de": {
+      "build_sha": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+      "components": {
+        "base": {
+          "expected_sha": "cf6b4e73e8ee20e1932fa8627622ac16c35ef459",
+          "expected_tree": "a1dbcd6e8691ff55c97e411b4176d10391f96c3b",
+          "recipe": "core/base"
+        },
+        "relibc": {
+          "expected_sha": "dfbadb7377bd2cc29737d1a35727def06b0994b8",
+          "expected_tree": "2ce1f15f0629a9d3bbf8223c8c3044dfa9a872e5",
+          "recipe": "core/relibc"
+        },
+        "userutils": {
+          "expected_sha": "3ac3b00426e66b58bbf732102cc6d45ad16130b3",
+          "expected_tree": "24804fe1a9d0481fd2b7c613af64f95a99f99390",
+          "recipe": "core/userutils"
+        }
+      },
+      "controlled_config_hashes": {
+        ".config": "8ede948ee228f044169791e0e3ef38a75b776dd7a2515b09276fe78ac953a38e",
+        "build/id_ed25519.pub.toml": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
+        "cookbook.lock": "671853252cd8a35898f2cf6c7256813a2f575dde67d0b793461c1722a6d65ddd"
+      },
+      "dependency_snapshots": {},
+      "execution_policy_sha256": "e350d944ffc1f0b980ea5de6f04fd195313ae9a0f69db395ecd5fdabec223b34",
+      "prepared_sources": {
+        "recipes/archives/xz/source": {
+          "archive_sha256": "2942a1a8397cd37688f79df9584947d484dd658db088d51b790317eb3184827b",
+          "tree_sha256": "f236013917efbd4a5ea7c4b530c8a9cf1df2496f120a14d4ea3668d23d7c751f"
+        },
+        "recipes/archives/zstd/source": {
+          "archive_sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+          "tree_sha256": "90675c67a7be89718f338ca649dcdbe0d1c4cb134c1b91d0fb3e0a9a5ca2787c"
+        },
+        "recipes/core/coreutils/source": {
+          "git_revision": "575a46d3b624ad9cd222c9e3250073e9269c3462",
+          "tree_sha256": "2d8e264d0fececb3dceb5d39e518965ef027c693d17b86806ba594684885e01d"
+        },
+        "recipes/core/extrautils/source": {
+          "git_revision": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
+          "tree_sha256": "3ad702b2db2aaf677eb6d76e591a476371b075794ce99d70dd2dabc1cbdf9c4c"
+        },
+        "recipes/core/findutils/source": {
+          "archive_sha256": "88869bb47057a893b37c4ed355952108a4079153cd78ee88c16c6983c9f78449",
+          "tree_sha256": "4874b30ef49fc8da85c0e076dfd7b7e3641140418f20d5b49fb840ea9cffeb88"
+        },
+        "recipes/core/installer/source": {
+          "git_revision": "8ce7e5f94b39f2db8b86834f54d9f405d7cc679c",
+          "private_source": {
+            "repository": "installer",
+            "sha": "8ce7e5f94b39f2db8b86834f54d9f405d7cc679c",
+            "tree": "cd6c8d921a42af92d53ca4d98b9240e128b7d60c"
+          },
+          "tree_sha256": "4cb96f9cf9e3cdc3e3cf4dd69e088143e51a4fa26b1b3ca69c4e54eb7fbaed0f"
+        },
+        "recipes/core/ion/source": {
+          "git_revision": "e9b3ca48b7ab6444498d5c3aa902d471ce29f759",
+          "tree_sha256": "181ed4b0404b46c3a4c1ef4357dd0077e657699c29db6c4bc6332d83519096cd"
+        },
+        "recipes/core/kernel/source": {
+          "git_revision": "92ab1e25c4c9492f90a9bf4b42771438e3aff386",
+          "private_source": {
+            "repository": "kernel",
+            "sha": "92ab1e25c4c9492f90a9bf4b42771438e3aff386",
+            "tree": "60cdd601d94251decc635e8f593740d425ab9ba5"
+          },
+          "tree_sha256": "cfd8af3416eb2150577a8c583c37eb10d2ab0e6af630d10a7e36786cfa689767"
+        },
+        "recipes/core/redoxfs/source": {
+          "git_revision": "b87b0976ee122036b2ec040159b890e1e06ca139",
+          "tree_sha256": "ab8ecd5a81d0d3f6190b6e5f04ae04c320bd81c85270b7382443fdc46af4d613"
+        },
+        "recipes/core/uutils/source": {
+          "git_revision": "bf65901e1ed82963436844c2cf8e796ba9158c65",
+          "tree_sha256": "a369e9862efb71cb2b49876cdd839035fce535843661200f9ddd92c79e367d33"
+        },
+        "recipes/data/ca-certificates/source": {
+          "git_revision": "4955c9001ad38451fe2b7b2bf5bf85b1b5aef390",
+          "tree_sha256": "530b8d167c9339fa96c2fb98d80e400e9ddfaea9980ac5fc1598ccc6e128e505"
+        },
+        "recipes/data/terminfo/source": {
+          "git_revision": "dc5712b13b4a4058ffca1f077167994b1764828a",
+          "tree_sha256": "e4da7fcea9052e804895e1ef6d94a249900b09d7f94531c3d7067e2f0725e67a"
+        },
+        "recipes/dev/git/source": {
+          "archive_sha256": "826817fd3671b8565586d6d49f688298de8354ab11db829c02720e5c74b9b39f",
+          "tree_sha256": "b7ae13fb84e7be76709b95b71c1543bb570499c29bfa9964c315e62b62c9409f"
+        },
+        "recipes/libs/expat/source": {
+          "archive_sha256": "ef2420f0232c087801abf705e89ae65f6257df6b7931d37846a193ef2e8cdcbe",
+          "tree_sha256": "29c70d8b24782d2b7c42fdaeb3f7bd9b62340a9f3991e57195d30728631814a1"
+        },
+        "recipes/libs/libonig/source": {
+          "git_revision": "f95747b462de672b6f8dbdeb478245ddf061ca53",
+          "tree_sha256": "f78dbdcfa660eeb217b20aba59481e5b9029a1f151d05e8a1a09f947eaadcbc8"
+        },
+        "recipes/libs/ncurses/source": {
+          "archive_sha256": "355b4cbbed880b0381a04c46617b7656e362585d52e9cf84a67e2009b749ff11",
+          "tree_sha256": "7a62ccf523d05fa8c167475dc43a9b72a8c2a710004afa35099f1c6bd3b58687"
+        },
+        "recipes/libs/ncursesw/source": {
+          "link_target": "../ncurses/source",
+          "tree_sha256": "7a62ccf523d05fa8c167475dc43a9b72a8c2a710004afa35099f1c6bd3b58687"
+        },
+        "recipes/libs/nghttp2/source": {
+          "archive_sha256": "88bb94c9e4fd1c499967f83dece36a78122af7d5fb40da2019c56b9ccc6eb9dd",
+          "tree_sha256": "a10961c208a7953cabbb6fb5b0124c2c44d71ad25cd54d43bcba0fae15955c0a"
+        },
+        "recipes/libs/openssl3/source": {
+          "archive_sha256": "c9489d2abcf943cdc8329a57092331c598a402938054dc3a22218aea8a8ec3bf",
+          "tree_sha256": "ad6d2a7dfd24696fac044d81276973ec42cb2a83b1c02ca05b9542a17ee5272d"
+        },
+        "recipes/libs/termcap/source": {
+          "archive_sha256": "91a0e22e5387ca4467b5bcb18edf1c51b930262fd466d5fda396dd9d26719100",
+          "tree_sha256": "8798148aeeef11599f07982be6da29f7e89b9a597ca5c8bf72549883a91b628a"
+        },
+        "recipes/libs/zlib/source": {
+          "archive_sha256": "ff0ba4c292013dbc27530b3a81e1f9a813cd39de01ca5e0f8bf355702efa593e",
+          "tree_sha256": "09e10763d718aeeb59f154433e2189062f9c36e96bd3cd84c2551f0b60099082"
+        },
+        "recipes/net/curl/source": {
+          "git_revision": "a05f34973e6c4bb629d018f7cb51487be1c904d8",
+          "tree_sha256": "2541ea96a08c3425b65aad2a3edb9f692661e5d98aefa21ed4e4bfb946b8a04c"
+        },
+        "recipes/net/openssh/source": {
+          "archive_sha256": "a9dc9565dffe8640f64d863cd29a32bc4a3dbdec0566a7fc44c5d6ee767d5f39",
+          "tree_sha256": "43f94a2fb56489eef5bc8602ae4a651920085db94ceec1a511b71014b517b4f5"
+        },
+        "recipes/net/wget/source": {
+          "archive_sha256": "81542f5cefb8faacc39bbbc6c82ded80e3e4a88505ae72ea51df27525bcde04c",
+          "tree_sha256": "612a5b87f822eb5dd2794052a8fe81a9e5b7f2854be3dffc95da3c057eaa2b59"
+        },
+        "recipes/tools/uutils-grep/source": {
+          "git_revision": "2ff48db61cb0588a89115461db1c0baf686bce83",
+          "tree_sha256": "900cf6620c92c7a4ad61ff0338ba554fb581076222ac814eb3d0c49fa640c385"
+        },
+        "recipes/tools/uutils-hostname/source": {
+          "git_revision": "a6e1a935775fcde6e781f3b73017287835b478a5",
+          "tree_sha256": "df0cb2eb62487fd56767eaf7c65f5f4b4014338b5c17a68b79c7bce670e64123"
+        },
+        "recipes/wip/libs/net/libldns/source": {
+          "git_revision": "06466f0a20dc298a9dd6f444c15fa568398fff3c",
+          "tree_sha256": "0f28e29c330f1a6c1c9b966523db68ea6fd92fc1f24074620e24a0903f727410"
+        },
+        "recipes/wip/libs/other/libedit/source": {
+          "archive_sha256": "23792701694550a53720630cd1cd6167101b5773adddcb4104f7345b73a568ac",
+          "tree_sha256": "517257a902c3324541489ad08dc2ce808ad5c8bbee489624b46f9f4fe2166166"
+        },
+        "recipes/wip/rs/uutils-procps/source": {
+          "git_revision": "ee98c0a78fe2abe72589f80eb05b455fa228e757",
+          "tree_sha256": "2d1d2903f033dbef52fb56626df6aae283945507f659587aa11e814ef0969f4f"
+        }
+      },
+      "recipes": {
+        "base": {
+          "blob": "5a8520bd762c84cbd8f65b501a76fea58741b314",
+          "path": "core/base"
+        },
+        "coreutils": {
+          "blob": "9ae3e505f73ee88460e25b24db384512df121013",
+          "path": "core/coreutils"
+        },
+        "curl": {
+          "blob": "ec01448076a6f1e902405a8714526d21e71104c7",
+          "path": "net/curl"
+        },
+        "extrautils": {
+          "blob": "902443c2d0f1679fb96cc43f6056434223ce5840",
+          "path": "core/extrautils"
+        },
+        "findutils": {
+          "blob": "d49f592b1effe7bdb0da2ebc4c993b7f7e8fe2ae",
+          "path": "core/findutils"
+        },
+        "gettext": {
+          "blob": "9a18ebf852f482b1e4b6b78192fba7fe8bd9c5f9",
+          "path": "tools/gettext"
+        },
+        "git": {
+          "blob": "d7cfdc363967cdcf878b266ee69815bae554ad58",
+          "path": "dev/git"
+        },
+        "gnu-make": {
+          "blob": "d456b5c52c3b2c00fc0e87010a0f926f389e2a98",
+          "path": "dev/gnu-make"
+        },
+        "ion": {
+          "blob": "982dfb519bae6b404331ee0763feaf691911a211",
+          "path": "core/ion"
+        },
+        "kernel": {
+          "blob": "6c07b3626d3e064149602497deb1a1ebe83bb976",
+          "path": "core/kernel"
+        },
+        "libedit": {
+          "blob": "b297fb9cb76d1583a86e0920a17f0ba6749f82c9",
+          "path": "wip/libs/other/libedit"
+        },
+        "libgcc": {
+          "blob": "d626d374515db439e74d4fe4cddcce038536df71",
+          "path": "libs/libgcc"
+        },
+        "libiconv": {
+          "blob": "5ff9b4be3bf23cc2c9a942bd001c70b97871518f",
+          "path": "libs/libiconv"
+        },
+        "libldns": {
+          "blob": "7e333c17cf6ba0f0411316ec4b7d62a14e86041d",
+          "path": "wip/libs/net/libldns"
+        },
+        "libstdcxx": {
+          "blob": "80e05b0f7e8c4d209ddb66da54a2e0948d8e1485",
+          "path": "libs/libstdcxx"
+        },
+        "lz4": {
+          "blob": "6ab50fbda8f630aa2e15279cc632f9d6617ed45e",
+          "path": "archives/lz4"
+        },
+        "nano": {
+          "blob": "b6b01cd7d22b6e584770f2c02b3c5917b586f2f5",
+          "path": "text/nano"
+        },
+        "ncurses": {
+          "blob": "b4770c644d8a8cf028aa252223f50fc20594519b",
+          "path": "libs/ncurses"
+        },
+        "ncursesw": {
+          "blob": "a3e5e196510a9932919cf67896ce818f16bd169b",
+          "path": "libs/ncursesw"
+        },
+        "openssh": {
+          "blob": "b4ae4b7273d403b658d93502acc2febcb988699e",
+          "path": "net/openssh"
+        },
+        "openssl3": {
+          "blob": "f551d7e385681a3495bf6085a6c833cc724740c6",
+          "path": "libs/openssl3"
+        },
+        "redoxfs": {
+          "blob": "8eeb79509b2163ccf29783ee625d5bfc8ab7b66a",
+          "path": "core/redoxfs"
+        },
+        "relibc": {
+          "blob": "8b164bb83749b5acd38dac12cf552b116dcec977",
+          "path": "core/relibc"
+        },
+        "rsync": {
+          "blob": "32c1d89c0ce31ac1231c5d5210788d62cb6961cd",
+          "path": "net/rsync"
+        },
+        "termcap": {
+          "blob": "acfe054cd5c75ed273dbcc2bb7a34156e9e9a9d0",
+          "path": "libs/termcap"
+        },
+        "userutils": {
+          "blob": "666bfeb10761305d5fb1f7d9f198484c54386cd2",
+          "path": "core/userutils"
+        },
+        "uutils": {
+          "blob": "d158f6db21c66d2955300629497e4489dc0b9401",
+          "path": "core/uutils"
+        },
+        "uutils-grep": {
+          "blob": "4cd67392fadae8e74398d12c1f0f0e7adc928604",
+          "path": "tools/uutils-grep"
+        },
+        "uutils-hostname": {
+          "blob": "71893f4c9c14c90b0baa390ce87a2e269bb703d5",
+          "path": "tools/uutils-hostname"
+        },
+        "uutils-procps": {
+          "blob": "877f003e0d9150194cfc2759a314dba14a4bcf00",
+          "path": "wip/rs/uutils-procps"
+        },
+        "vim": {
+          "blob": "5b8c1c3fc4f8e5c62a8c8bb93c5ac8014d334a51",
+          "path": "text/vim"
+        },
+        "wget": {
+          "blob": "7309b89c3ef2f9d91ad4ae7e95266aaf4cfc9b1a",
+          "path": "net/wget"
+        },
+        "xxhash": {
+          "blob": "c50d194e90f6d56c53452a35ec9db6097dd11c45",
+          "path": "wip/libs/other/xxhash"
+        }
+      },
+      "repositories": {
+        "base": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/base",
+          "sha": "cf6b4e73e8ee20e1932fa8627622ac16c35ef459",
+          "tree": "a1dbcd6e8691ff55c97e411b4176d10391f96c3b"
+        },
+        "bootloader": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/bootloader",
+          "sha": "13358e87cc3c6e1225c42db07c3dce4280a734f5",
+          "tree": "2d64d877b1450c525997431717a182db913537f9"
+        },
+        "installer": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/installer",
+          "sha": "8ce7e5f94b39f2db8b86834f54d9f405d7cc679c",
+          "tree": "cd6c8d921a42af92d53ca4d98b9240e128b7d60c"
+        },
+        "kernel": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/kernel",
+          "sha": "92ab1e25c4c9492f90a9bf4b42771438e3aff386",
+          "tree": "60cdd601d94251decc635e8f593740d425ab9ba5"
+        },
+        "redox": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/redox",
+          "sha": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+          "tree": "0da4060212843d6b2e8908a7e22c946b3689c277"
+        },
+        "redox-pkgs": {
+          "branch": "main",
+          "private": true,
+          "repository": "RedoxORG/redox-pkgs",
+          "sha": "7194837b259c1af3c16c66b1a2409ae0221f6aba",
+          "tree": "a510f5d794c49ccfbfedc275592af6959f6ae7a4"
+        },
+        "redox-scheme": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/redox-scheme",
+          "sha": "f94e9564e601d320b9fd7b5429ba413d9df8ad6c",
+          "tree": "2cd499d6c776493762d622816b005f51e14c19b8"
+        },
+        "relibc": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/relibc",
+          "sha": "dfbadb7377bd2cc29737d1a35727def06b0994b8",
+          "tree": "2ce1f15f0629a9d3bbf8223c8c3044dfa9a872e5"
+        },
+        "termion": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/termion",
+          "sha": "63fc2d18a14f1a54370bb0f301fcefaa994f4419",
+          "tree": "1cf13090253894a29060e7d8270f7637a4454732"
+        },
+        "uefi": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/uefi",
+          "sha": "bd05e4160ef56fd599e73c878b44f5c0294923d5",
+          "tree": "209cc0eb065ed5f9fddf3961443081f2a4b4f6fa"
+        },
+        "users": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/users",
+          "sha": "4e8681d4749a87244f6ad054e4b07d9063167dda",
+          "tree": "0fb3034a690f8a27b92086d883046a8b4978c014"
+        },
+        "userutils": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/userutils",
+          "sha": "3ac3b00426e66b58bbf732102cc6d45ad16130b3",
+          "tree": "24804fe1a9d0481fd2b7c613af64f95a99f99390"
+        },
+        "workspace": {
+          "branch": "main",
+          "private": true,
+          "repository": "RedoxORG/workspace",
+          "sha": "1f4e081160b71a81d92963e12dab1d1828c77490",
+          "tree": "32c7929ac93ce1d040031be4ab4861993dc6749c"
+        },
+        "zsh": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/zsh",
+          "sha": "fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250",
+          "tree": "a0981a3c5d10d7a313e80e34c7e47a4b83656bcf"
+        }
+      },
+      "source_freeze": {
+        "receipt": "source-gate-cold.json",
+        "sha256": "eddca1c73394df851840b4a16790748c8f2b9a65535258221c164d6eeca598a2"
+      },
+      "target": "x86_64-unknown-redox",
+      "toolchain_archives": {
+        "prefix/x86_64-unknown-redox/clang-install.tar.gz": {
+          "sha256": "fcf965f0a08fabb060a8fe8b96372ed95f3d8bff7c087b613a439a1cda003115",
+          "size": 184151121,
+          "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/clang-install.tar.gz"
+        },
+        "prefix/x86_64-unknown-redox/gcc-install.tar.gz": {
+          "sha256": "4bb5d1691d727546dc5064da794d798e9157cb85be8d463ebf7545bc01d9c362",
+          "size": 98465573,
+          "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/gcc-install.tar.gz"
+        },
+        "prefix/x86_64-unknown-redox/rust-install.tar.gz": {
+          "sha256": "ecfe0e260cc7544b0e29ec4f217eacd0e6802248cf70e2fb689ce87808bfa2bb",
+          "size": 175167112,
+          "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/rust-install.tar.gz"
+        }
+      },
+      "toolchain_install_trees": {
+        "prefix/x86_64-unknown-redox/clang-install": "87b697d8dbd204dec1c2b609c03166407f8d75a5f1757aebaa89663e591ab35d",
+        "prefix/x86_64-unknown-redox/gcc-install": "5a93b469c9283fb736b9350111a46fe1d5e8947c7599c386646ea3b73f1a80b2",
+        "prefix/x86_64-unknown-redox/rust-install": "08865cf4cf5605982610a102f1ef80f2136b3d383c473521eca82858ea34e10f"
+      },
+      "toolchain_locks": {
+        "prefix/x86_64-unknown-redox/rust-install/lib/rustlib/src/rust/library/Cargo.lock": "02120dd57c4c5fd70c81fd92472681c8de5cc2dd78258276da37bb2253666061"
+      }
     }
   },
   "current_build_inputs": {
@@ -4245,6 +4664,47 @@
           "signature_payload": "PASS"
         }
       },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "c718c93d76a977828f1626be0b3a3accad9a8af4c147ea34048fc285c18d46ec",
+          "metadata_sha256": "9a20f9085ab943d80d09f85c579468b95f181a22643d054831df618b90959c42"
+        },
+        "candidate_effective_input_id": "80372ea98b094e60f54e3278fb962d6955b81c1d2fcfaad7d01658bcd42d72a9",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "80372ea98b094e60f54e3278fb962d6955b81c1d2fcfaad7d01658bcd42d72a9",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/base-MIT.txt",
+              "sha256": "cb46b697c3fd9d27d7bfe1b1ad48f8a58a284984504c6eb215ae2164538df7cb"
+            }
+          ],
+          "prepared_source": {},
+          "recipe": "recipes/core/base/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "5a8520bd762c84cbd8f65b501a76fea58741b314",
+          "recipe_pin": null,
+          "source_sha": "cf6b4e73e8ee20e1932fa8627622ac16c35ef459",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/base/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "b8356c9949efe0b2ed1772d027f1e79a753f7f9ca86653339074be395e0ece2b"
+            }
+          ],
+          "source_url": "https://github.com/RedoxORG/base"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3": "91f13def471ebce9dde18c6a7dd447e29ddacd8a7951ac36951fd1e6b536732f",
         "archive_sha256": "8ba67bbeb1bce11ba06b43a5263df5d82fc9c497b1d70a866faef5deacf987b5",
@@ -5814,6 +6274,68 @@
         "signature_extraction": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "203f65c8e75a4552ccfc9d666591318927a73f4aced174768706da90cc83b569",
+          "metadata_sha256": "4fa28a9a8ad54096d694e0ff75c3586ade0cb481922f29a76c43cb283f48dae0"
+        },
+        "candidate_effective_input_id": "0cb6f193ddeb64b2b30aabdae6c04b022e9dda1edfd5babc7e6345c16f26189d",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "0cb6f193ddeb64b2b30aabdae6c04b022e9dda1edfd5babc7e6345c16f26189d",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/coreutils/LICENSE",
+              "sha256": "f540830b0b1aa93ebdc47c73dc41b8bbbabda4c7ec937998b2bc8ffafceafd66"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "575a46d3b624ad9cd222c9e3250073e9269c3462",
+            "tree_sha256": "2d8e264d0fececb3dceb5d39e518965ef027c693d17b86806ba594684885e01d"
+          },
+          "recipe": "recipes/core/coreutils/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "9ae3e505f73ee88460e25b24db384512df121013",
+          "recipe_pin": null,
+          "source_sha": "575a46d3b624ad9cd222c9e3250073e9269c3462",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/coreutils/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "7b874c979a1e3b28f6b8c18f8abcfe6a4673545194eb9a3fe2adc71dd1675a49"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/coreutils/tests/which.sh",
+              "repository": "RedoxORG/redox",
+              "sha256": "3d8aed8ba549ad60c5818d919111a8c7528911ef4a98c8753f521bcbc81ed89b"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/coreutils/unused-users.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "00efe102636b617d53bf9792e12dd003ff64aad1fec4f940b4bfb2264b8b9289"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/coreutils/which.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "626f3cc9a3ad02cc53886753f1395b1c45cb87d309ee4e4ed55340a0fb10ab69"
+            }
+          ],
+          "source_url": "https://gitlab.redox-os.org/redox-os/coreutils.git"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3_from_metadata": "478c22cb7c9c79fad28122e90817104ce6d26bdc7569a084b5e24caad85a3369",
         "archive_sha256": "0b6981b4fb2a0479e75b8e0766035d57b1bbabc532d01f6d2cf0c1ca9990112a",
@@ -5855,6 +6377,69 @@
         "signature_extraction": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "a784d96793c83abe203275b5b1c64e01bbff8d61ad4405013ae1ac9249448c1e",
+          "metadata_sha256": "a9bfea0af335a8bdc88ac15640f4abb8038b3b974a10ba96a97c1e4537ff1b1a"
+        },
+        "candidate_effective_input_id": "042e73daab7d1618ad9317eaaa3faf1d7e0adbe25f7f9406562caeac20b7a9bb",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "042e73daab7d1618ad9317eaaa3faf1d7e0adbe25f7f9406562caeac20b7a9bb",
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/curl/COPYING",
+              "sha256": "82f2f4427d6545ee5aaac4f0b80428da6cc8ba41c2cf5da3a03680ec327b9681"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "a05f34973e6c4bb629d018f7cb51487be1c904d8",
+            "time_identifier": "2026-10-16T05:03:55Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/curl.pkgar"
+          },
+          "prepared_source": {
+            "git_revision": "a05f34973e6c4bb629d018f7cb51487be1c904d8",
+            "tree_sha256": "2541ea96a08c3425b65aad2a3edb9f692661e5d98aefa21ed4e4bfb946b8a04c"
+          },
+          "recipe": "recipes/net/curl/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "ec01448076a6f1e902405a8714526d21e71104c7",
+          "recipe_pin": "curl-8_20_0",
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_sha": "a05f34973e6c4bb629d018f7cb51487be1c904d8",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/net/curl/ipv6.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "ed54b6fb839d8f03ed74e3b363f5dbbd851285107faca9401f6c674708899074"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/net/curl/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "d8bb29b9ecfab910e90d9b7b9f78ce5f77a3f4818c25666fc323476b7bd5de37"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/net/curl/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "4710a28899566fc5c79ab4f6658424623856470a36d9b2676ca2fa3f4626a872"
+            }
+          ],
+          "source_url": "https://github.com/curl/curl.git"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3_from_metadata": "e0aeaeaa63ef0f0f162ed7bfcb2bf05a455dfef1f6c950fc6e49881ac0c52b60",
         "archive_sha256": "1507b3a42284b0af0dc6d2465c2c96204e396296040d837dc0f3260b4c6fb5a8",
@@ -5978,6 +6563,50 @@
         "signature_extraction": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "23882cd0c4ca64a615844d2dd12b162f32f4e10b06548affd54692fce45be944",
+          "metadata_sha256": "8e875c3e9de59c6f78d48c4b06c7eff83ee8c08f4cfa215fcd661054d3656ebc"
+        },
+        "candidate_effective_input_id": "be09ac7d5610ba8d3c3815617eaf8e8ff973f62a2d423870b0817c5b62ef29cf",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "be09ac7d5610ba8d3c3815617eaf8e8ff973f62a2d423870b0817c5b62ef29cf",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/extrautils/LICENSE.md",
+              "sha256": "6f43872bc11f3249878aa63b58b867cb99f128fd5c48f63bec5629bc05229b35"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
+            "tree_sha256": "3ad702b2db2aaf677eb6d76e591a476371b075794ce99d70dd2dabc1cbdf9c4c"
+          },
+          "recipe": "recipes/core/extrautils/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "902443c2d0f1679fb96cc43f6056434223ce5840",
+          "recipe_pin": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
+          "source_sha": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/extrautils/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "f9d08398d6bf2341ab383d45667ee9fef3cc42f33e3d51718480a11b2329c1e4"
+            }
+          ],
+          "source_url": "https://gitlab.redox-os.org/redox-os/extrautils.git"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3_from_metadata": "026847ca428ec8b63a7218a7a997bcae5b5653a847e1e964eba49fa825eb831c",
         "archive_sha256": "0870559cb4a00f1f0c472dead2ea60d1023947a844495577be0cc8af81b1c4cb",
@@ -6019,6 +6648,55 @@
         "signature_extraction": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "729d34130f7b21bab0e6402a6b35129236e326f9099f2794c481315ee1d10541",
+          "metadata_sha256": "0963d94016ba20422ce88ec092a88ab2d7356fed00c848e352a752cf8de7256d"
+        },
+        "candidate_effective_input_id": "0f0bbe0dd9c98cf24aa72373da06213e4cf9e1133ca8a3b6d7dc6716ce9f9b16",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "0f0bbe0dd9c98cf24aa72373da06213e4cf9e1133ca8a3b6d7dc6716ce9f9b16",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/findutils/LICENSE",
+              "sha256": "b2888851106d2281b01ff2b807b4950463725c39895dd064770c43d28d419a71"
+            }
+          ],
+          "prepared_source": {
+            "archive_sha256": "88869bb47057a893b37c4ed355952108a4079153cd78ee88c16c6983c9f78449",
+            "tree_sha256": "4874b30ef49fc8da85c0e076dfd7b7e3641140418f20d5b49fb840ea9cffeb88"
+          },
+          "recipe": "recipes/core/findutils/recipe.toml",
+          "recipe_blake3": "ca228c20709dbccaae25a2447b1389877b0d87d4e5024dece2a70f8603d69f2b",
+          "recipe_blob": "d49f592b1effe7bdb0da2ebc4c993b7f7e8fe2ae",
+          "recipe_pin": null,
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/findutils/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "071696edefce55a1d0d841e26a7f738253322d6c28e7a5c7fc62ff7006151a4d"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/findutils/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "597db563a337d1df655f532a4343f1d479a5166c794b42534844afd68b624735"
+            }
+          ],
+          "source_url": "https://codeload.github.com/uutils/findutils/tar.gz/41e7a599f59198617e2e152da5bc3eaa2f87ac0b"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3_from_metadata": "8e72ad63861ad1b60771f8d1fd2be1efec7cd1fb2e1420b2860cc36cf8578b79",
         "archive_sha256": "54d9d3594e0d8e2a326fcfb00e6841eb66c1a1555905b61ca8d75631755c1d57",
@@ -6060,6 +6738,71 @@
         "signature_extraction": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "61aeeb304fa9163b4798854aba834b62d76940f2dfc463289b754fa405f78d6f",
+          "metadata_sha256": "8b598931e8247588dee562ee1803576823abe6c6b3a160b88b316e7e3b4a0600"
+        },
+        "candidate_effective_input_id": "9a33f1163b4314a9e33c497a27de42388ae21559d9cc7c8f9efc81b40c912d96",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "9a33f1163b4314a9e33c497a27de42388ae21559d9cc7c8f9efc81b40c912d96",
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/gettext/COPYING",
+              "sha256": "e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b"
+            },
+            {
+              "path": "licenses/run-20261020/gettext/gettext-runtime/COPYING",
+              "sha256": "7ef2cdfe58e0c0460657b6598b49af29d4e03c1e41cbaf0e1da1eb8ad74b95d0"
+            },
+            {
+              "path": "licenses/run-20261020/gettext/gettext-tools/COPYING",
+              "sha256": "5d4cff30d5038f82a0edc79798456049b61e1752fdb7e9ab1f4bfb9fae3a7303"
+            },
+            {
+              "path": "licenses/run-20261020/gettext/COPYING",
+              "sha256": "e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "cb3f3a34da7ce1a92746df81f5b78c5d53841973a24eb80ab76537263d380ec0",
+            "time_identifier": "2026-10-16T05:03:55Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/gettext.pkgar"
+          },
+          "prepared_source": {},
+          "recipe": "recipes/tools/gettext/recipe.toml",
+          "recipe_blake3": "cb3f3a34da7ce1a92746df81f5b78c5d53841973a24eb80ab76537263d380ec0",
+          "recipe_blob": "9a18ebf852f482b1e4b6b78192fba7fe8bd9c5f9",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/tools/gettext/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "1f7ec579dea1cd8d3f40a7c47a5d5ed643d3244166c7af122168b0370902f96b"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/tools/gettext/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "75e108fa9c42789b485412e1e2092abcb418861422a72cb3848a7cdf7fb5a2a4"
+            }
+          ],
+          "source_url": "https://ftp.gnu.org/gnu/gettext/gettext-0.22.5.tar.gz"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3_from_metadata": "6f153da359804a4e66e448095377b9cc9a427b2304f9a11ac7cdb7a537b197a5",
         "archive_sha256": "fb13b158f0b3c3e613ca85f135ec797542ee00747ded6006788705a090047ac8",
@@ -6101,6 +6844,55 @@
         "signature_extraction": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "63fe8b32262622950992e55da43eb3a17260f6055605bd953aa9899a94bfca6d",
+          "metadata_sha256": "e8a9e90efa5b905176836fc3ff32e47fafc498b681c1d86d725b0ef081f57abf"
+        },
+        "candidate_effective_input_id": "d08dab80fea6a624231b72d99520e5d08af2d28138b7782b918fd5b1a70a5b61",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "d08dab80fea6a624231b72d99520e5d08af2d28138b7782b918fd5b1a70a5b61",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/git/COPYING",
+              "sha256": "5b2198d1645f767585e8a88ac0499b04472164c0d2da22e75ecf97ef443ab32e"
+            }
+          ],
+          "prepared_source": {
+            "archive_sha256": "826817fd3671b8565586d6d49f688298de8354ab11db829c02720e5c74b9b39f",
+            "tree_sha256": "b7ae13fb84e7be76709b95b71c1543bb570499c29bfa9964c315e62b62c9409f"
+          },
+          "recipe": "recipes/dev/git/recipe.toml",
+          "recipe_blake3": "6336e4670a1a99bb8dd666791317b5ba60ab27b3ae24d5a284013b4f233b30f0",
+          "recipe_blob": "d7cfdc363967cdcf878b266ee69815bae554ad58",
+          "recipe_pin": null,
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/dev/git/git.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "4d22ab2a8d96c05f75bda69e47280e7a334a1e81588b15f788345b8541c7dcb3"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/dev/git/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "6cd5d62c8f5ee41a6cdf2b7e48499a91d4cef776ebade261827e4a88a07a30c4"
+            }
+          ],
+          "source_url": "https://www.kernel.org/pub/software/scm/git/git-2.56.0.tar.gz"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3_from_metadata": "134086591c4b6737250be1e83e9ffe9b62d36595a765427215d29bb2c48a9e15",
         "archive_sha256": "39b091a425ee485c249bef90ee21b6838e4c5755f439be8f0f441fe77a14442a",
@@ -6114,6 +6906,61 @@
       "runtime": "NotRun",
       "signature_payload_verification": "NotRun",
       "status": "UpToDate"
+    },
+    "gnu-make": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "a778b3890247cf1378feb5da6ef2f260a676bed49cae79e2d9f01301458845d8",
+          "metadata_sha256": "5959667dfe1fe4513593980d54d816457c8917c22767cf9117d54a666dc4bae9"
+        },
+        "candidate_effective_input_id": "0423f441e9c94a505023de3bfd1e7ec3ca0773613d09937797a84c3cbd66b4b7",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "0423f441e9c94a505023de3bfd1e7ec3ca0773613d09937797a84c3cbd66b4b7",
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/gettext/COPYING",
+              "sha256": "e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "009833b56eeb6eb1928e8ea783ea717ffced5d2d",
+            "source_identifier": "1a0e5353205e106bd9b3c0f4a5f37ee1156a1e1c8feb771d1b4842c216612cba",
+            "time_identifier": "2026-09-26T05:02:42Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/gnu-make.pkgar"
+          },
+          "prepared_source": {},
+          "recipe": "recipes/dev/gnu-make/recipe.toml",
+          "recipe_blake3": "1a0e5353205e106bd9b3c0f4a5f37ee1156a1e1c8feb771d1b4842c216612cba",
+          "recipe_blob": "d456b5c52c3b2c00fc0e87010a0f926f389e2a98",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/dev/gnu-make/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "d71bc7a68b90e4ad3f61d687661bf77998dbbf5306dcd9155c3e021a5f5ef1e4"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/dev/gnu-make/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "56c3d873d8c8646d2e887cb4308c000450518e9b6b318146087fcd4cdfd80771"
+            }
+          ],
+          "source_url": "http://ftp.gnu.org/gnu/make/make-4.4.tar.gz"
+        },
+        "status": "PendingPublication"
+      }
     },
     "installer": {
       "action": "PublishedVerifiedCandidate",
@@ -8580,6 +9427,56 @@
         "signature_extraction": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "417023cc6fa47d9357304645f36ae779339af0f3cbb37f9980c5f5daf43e8bde",
+          "metadata_sha256": "4929bd199ecb5828b396b47ff604430cb188adec07cbfd50695855352474d875"
+        },
+        "candidate_effective_input_id": "3142713896a7ca70d0b75817710defae744222cc0936a5b68f544aaec9089d06",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "3142713896a7ca70d0b75817710defae744222cc0936a5b68f544aaec9089d06",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/ion/LICENSE",
+              "sha256": "9a7471586fdf7fd9b74658a1d78bb8aa8e09f3a4fdb4662a2fb06ce1108d2887"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "e9b3ca48b7ab6444498d5c3aa902d471ce29f759",
+            "tree_sha256": "181ed4b0404b46c3a4c1ef4357dd0077e657699c29db6c4bc6332d83519096cd"
+          },
+          "recipe": "recipes/core/ion/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "982dfb519bae6b404331ee0763feaf691911a211",
+          "recipe_pin": null,
+          "source_sha": "e9b3ca48b7ab6444498d5c3aa902d471ce29f759",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/ion/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "0b2586fdc493c376627b15e1d613c439950e6f60c4e5226862a5b4005ca9dedd"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/ion/users-0.5.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "c99c320b30f68dda016d5d5d349d9535477bf0de026517e5d1b3a8a4fe7380ef"
+            }
+          ],
+          "source_url": "https://gitlab.redox-os.org/redox-os/ion.git"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3_from_metadata": "cf6437e3535055a71e472de1b7722e1b2be7e0f4d0db54d23dfd0c650b145328",
         "archive_sha256": "0d0d5c5f085becf6faa3b8c82782f5c94737fc5c8793ecfa44ed820e0fca5c3e",
@@ -8630,6 +9527,55 @@
         "signature_payload": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "6fc4741405c92e3f6aca6e69d3e5b59b1730ab462e966829fa0e9377aa390b57",
+          "metadata_sha256": "d49d168617234c306a082f7e2b7fab6ddbdd960d53aed06df2038b7986298d65"
+        },
+        "candidate_effective_input_id": "da38836a07bf171784ce9303212efed781f4a9c50e6d193a40306256efa59d3e",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "da38836a07bf171784ce9303212efed781f4a9c50e6d193a40306256efa59d3e",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/kernel/LICENSE",
+              "sha256": "9f6f8fa58b09a2f787ca904671df2f07a53e440f8a5198f9ac469074e7ab7dcf"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "92ab1e25c4c9492f90a9bf4b42771438e3aff386",
+            "private_source": {
+              "repository": "kernel",
+              "sha": "92ab1e25c4c9492f90a9bf4b42771438e3aff386",
+              "tree": "60cdd601d94251decc635e8f593740d425ab9ba5"
+            },
+            "tree_sha256": "cfd8af3416eb2150577a8c583c37eb10d2ab0e6af630d10a7e36786cfa689767"
+          },
+          "recipe": "recipes/core/kernel/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "6c07b3626d3e064149602497deb1a1ebe83bb976",
+          "recipe_pin": null,
+          "source_sha": "92ab1e25c4c9492f90a9bf4b42771438e3aff386",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/kernel/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "078de6bd7b837a4d05d36bc8fc4f98cc8563442971fa7fa85e2c74d85db8df54"
+            }
+          ],
+          "source_url": "https://github.com/RedoxORG/kernel"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3": "dd4b688dd24f7128401e70998875dfe41212cea078f8a9764621a75dba3ec969",
         "archive_sha256": "c800326d787ff35155292f781e22424ff18beb88568ec69fe54ed36a8b9f827f",
@@ -8687,6 +9633,116 @@
       "signature_payload_verification": "NotRun",
       "status": "UpToDate"
     },
+    "libedit": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "2bda80550d0cdd29c94aeec34ac858511f57eb99e7d38826cacc709ce5c6f640",
+          "metadata_sha256": "555397d402efc67dfa41688be57477549c27c3aea5f7aa6919ada36533e1d5b9"
+        },
+        "candidate_effective_input_id": "d031eb48e86dc4f1768b6bfe461678ae2493ce3a721d0be82526db085320a00d",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "d031eb48e86dc4f1768b6bfe461678ae2493ce3a721d0be82526db085320a00d",
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/libedit/COPYING",
+              "sha256": "9da6c9c74987a36c84302982799d17d2f748ba1c1c0c471425716173c1d07649"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "no_tar_blake3_hash_info",
+            "time_identifier": "2026-10-16T05:03:55Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/libedit.pkgar"
+          },
+          "prepared_source": {
+            "archive_sha256": "23792701694550a53720630cd1cd6167101b5773adddcb4104f7345b73a568ac",
+            "tree_sha256": "517257a902c3324541489ad08dc2ce808ad5c8bbee489624b46f9f4fe2166166"
+          },
+          "recipe": "recipes/wip/libs/other/libedit/recipe.toml",
+          "recipe_blake3": "67203cdc2a86697de5ea3a85dade36a3bbcafce85d74fed08b61494160b563db",
+          "recipe_blob": "b297fb9cb76d1583a86e0920a17f0ba6749f82c9",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/libs/other/libedit/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "912408a6c8137f760d10b15c3f368bb87402468f41346795c498744cf4db394b"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/libs/other/libedit/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "25b5166155695265c9bc906a04a5b1b6de1e9901c49c0a7f46d5cfdd3f27ab9b"
+            }
+          ],
+          "source_url": "https://www.thrysoee.dk/editline/libedit-20250104-3.1.tar.gz"
+        },
+        "status": "PendingPublication"
+      }
+    },
+    "libgcc": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "994532308cd0b0899a730b8fd4e0271542a3cd09c7571c0120c7c2d1759b99ab",
+          "metadata_sha256": "b6c7d22739471fc7f867601eb1d76eaa0bb6837b666f28e3990e7191617a8bf5"
+        },
+        "candidate_effective_input_id": "d623829df8b15a022e54964a4ee7056a3756107917b9954b8d985c1ad14d215b",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "d623829df8b15a022e54964a4ee7056a3756107917b9954b8d985c1ad14d215b",
+          "existing_license_references": [
+            "licenses/GPL-3.txt"
+          ],
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/GCC-runtime-exception-3.1.txt",
+              "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "local_source",
+            "time_identifier": "2026-10-15T01:38:14Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/libgcc.pkgar"
+          },
+          "prepared_source": {},
+          "recipe": "recipes/libs/libgcc/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "d626d374515db439e74d4fe4cddcce038536df71",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/libs/libgcc/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "08e8043a199f85b622639e8804f7ce205a2749a5b881f960ff45257fcfeec264"
+            }
+          ],
+          "source_url": null
+        },
+        "status": "PendingPublication"
+      }
+    },
     "libiconv": {
       "action": "KeepExistingPackage",
       "baseline_status": "BaselineMissing",
@@ -8714,6 +9770,67 @@
         "signature_extraction": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "d0655ab27db5f86bbf79ee8fb2a6bbddbd14af9b093e8672646885dca0c6a34e",
+          "metadata_sha256": "81bdce11809e8326a43cf76ec74d5dc814e69a4931204025144fd5cb8ae2511b"
+        },
+        "candidate_effective_input_id": "5b91b731d1172daf2f9e48b263dcb1be64c97cd30f3fc46fb6fc18e302a7cad9",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "5b91b731d1172daf2f9e48b263dcb1be64c97cd30f3fc46fb6fc18e302a7cad9",
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/LGPL-2.1.txt",
+              "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+            },
+            {
+              "path": "licenses/LGPL-2.1.txt",
+              "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+            },
+            {
+              "path": "licenses/bash-COPYING.txt",
+              "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "820b3b9fd3e2181bfb95475f01e9a3451e6d751e4f8c98ebcdcca1d8aa720f7f",
+            "time_identifier": "2026-10-16T05:03:55Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/libiconv.pkgar"
+          },
+          "prepared_source": {},
+          "recipe": "recipes/libs/libiconv/recipe.toml",
+          "recipe_blake3": "820b3b9fd3e2181bfb95475f01e9a3451e6d751e4f8c98ebcdcca1d8aa720f7f",
+          "recipe_blob": "5ff9b4be3bf23cc2c9a942bd001c70b97871518f",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/libs/libiconv/01_redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "ad7975f2827c5af2f7f632007d22ba73a023d98617842542c2923c6a4980cb52"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/libs/libiconv/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "db6b0b37eb28443107b4643bffd231ab74c96f086c77a2b4ebc8663b0e1a7886"
+            }
+          ],
+          "source_url": "https://ftp.gnu.org/gnu/libiconv/libiconv-1.17.tar.gz"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3_from_metadata": "176cc6b00cf25cf121bb1af7d460dfbcd95e0b92b32d6b397f2dc3529448b61b",
         "archive_sha256": "bbe31550d25c99f6c391d10403d0bf2297ea3633604d7bdcfddbce5a7cc2e4b4",
@@ -8727,6 +9844,59 @@
       "runtime": "NotRun",
       "signature_payload_verification": "NotRun",
       "status": "UpToDate"
+    },
+    "libldns": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "4bde1a9be6663a3715f7593e6c9bc856422a40ca0ab4533ee698f1eae4e40c18",
+          "metadata_sha256": "851e24e02cbc4899e736536c0b79cc99b09aa1a895b08f5a170b7e6dd7662294"
+        },
+        "candidate_effective_input_id": "5a1b3dad5de93e60bd319d7102324ea8b244df293ab6505f2848b32e7c6df317",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "5a1b3dad5de93e60bd319d7102324ea8b244df293ab6505f2848b32e7c6df317",
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/libldns/LICENSE",
+              "sha256": "9e0b1505c358d1a7c79555ee8bd1acbe2985dbc74dd81f3697cebf2161e922e6"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "06466f0a20dc298a9dd6f444c15fa568398fff3c",
+            "time_identifier": "2026-10-16T05:03:55Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/libldns.pkgar"
+          },
+          "prepared_source": {
+            "git_revision": "06466f0a20dc298a9dd6f444c15fa568398fff3c",
+            "tree_sha256": "0f28e29c330f1a6c1c9b966523db68ea6fd92fc1f24074620e24a0903f727410"
+          },
+          "recipe": "recipes/wip/libs/net/libldns/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "7e333c17cf6ba0f0411316ec4b7d62a14e86041d",
+          "recipe_pin": "1.9.2",
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_sha": "06466f0a20dc298a9dd6f444c15fa568398fff3c",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/libs/net/libldns/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "c62ae24a76c37c2558b5131db657b22e36f1a0f1c61fdb0c6f73e65ba4148377"
+            }
+          ],
+          "source_url": "https://github.com/NLnetLabs/ldns"
+        },
+        "status": "PendingPublication"
+      }
     },
     "libonig": {
       "action": "KeepExistingPackage",
@@ -8769,6 +9939,227 @@
       "signature_payload_verification": "NotRun",
       "status": "UpToDate"
     },
+    "libstdcxx": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "66bbf7284c9526acc01649bc9232f10e2733a9e1b8b4cb7411fd116445f49edc",
+          "metadata_sha256": "fd0bcb20144361945ee3a311b47a362c349c75905b8f88c4b1a59390bc29a55f"
+        },
+        "candidate_effective_input_id": "1825a592f1ecfe73592745eff091086aa988ca7a2c9a8f655c870f052cf89b86",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "1825a592f1ecfe73592745eff091086aa988ca7a2c9a8f655c870f052cf89b86",
+          "existing_license_references": [
+            "licenses/GPL-3.txt"
+          ],
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/GCC-runtime-exception-3.1.txt",
+              "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "local_source",
+            "time_identifier": "2026-10-15T01:38:14Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/libstdcxx.pkgar"
+          },
+          "prepared_source": {},
+          "recipe": "recipes/libs/libstdcxx/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "80e05b0f7e8c4d209ddb66da54a2e0948d8e1485",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/libs/libstdcxx/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "c2885fd70a18b6b36ce6ea9cf1d5555f19ede99ee0088049f7735be275158d53"
+            }
+          ],
+          "source_url": null
+        },
+        "status": "PendingPublication"
+      }
+    },
+    "lz4": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "76621743429a065b8fbcef086d7621ca0d3e57264bedf4456039f9440d796aa7",
+          "metadata_sha256": "cac7a5f7bcfbfed223bd10be05988a6957b4765e8fc80efd4d12a467d493c52a"
+        },
+        "candidate_effective_input_id": "56d8baeb5295e69e2487d7e169aa7f837e00593d86e32dac3e4fffe1ab53b0b0",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "56d8baeb5295e69e2487d7e169aa7f837e00593d86e32dac3e4fffe1ab53b0b0",
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/lz4/LICENSE",
+              "sha256": "4bc9c403f6b679cc076dee210e0e21c27b4e8f6d3fb43d85364c76657bfaaac5"
+            },
+            {
+              "path": "licenses/run-20261020/lz4/lib/LICENSE",
+              "sha256": "8b58c446121a109ccf32edc094bba3010a3d85e4ee3702950db55e4d3e87736c"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "ebb762fc15b16f8a7f87acaf51a22b3355ba3c93",
+            "source_identifier": "3e69fd475e7852e17594985528b5232afeba7d3d56cfebe2e89071768b2ab36a",
+            "time_identifier": "2026-09-13T04:59:26Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/lz4.pkgar"
+          },
+          "prepared_source": {},
+          "recipe": "recipes/archives/lz4/recipe.toml",
+          "recipe_blake3": "3e69fd475e7852e17594985528b5232afeba7d3d56cfebe2e89071768b2ab36a",
+          "recipe_blob": "6ab50fbda8f630aa2e15279cc632f9d6617ed45e",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/archives/lz4/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "4c9fabe42c0f39270172b6cba263a53a7213dd0ab22bd08a8dd3c40f64d17133"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/archives/lz4/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "a7a111b1bec53c6427d0b63822ac509ab27b0808697a75a5e82eceb0ad8bf7b3"
+            }
+          ],
+          "source_url": "https://github.com/lz4/lz4/releases/download/v1.10.0/lz4-1.10.0.tar.gz"
+        },
+        "status": "PendingPublication"
+      }
+    },
+    "nano": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "9e13bfba7a0bce6ac09f02d8663dc90d5cdb12897d71ae017b594d63d531c987",
+          "metadata_sha256": "95c9d1628f18fe67d268786d112c3e6d278c6f20a552b590d07a143a3cf3d410"
+        },
+        "candidate_effective_input_id": "88c9398afc0fa883378f93413097bba59c83f32104cb84c6e85719dda6dadfa3",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "88c9398afc0fa883378f93413097bba59c83f32104cb84c6e85719dda6dadfa3",
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/nano/COPYING",
+              "sha256": "fc82ca8b6fdb18d4e3e85cfd8ab58d1bcd3f1b29abe782895abd91d64763f8e7"
+            },
+            {
+              "path": "licenses/run-20261020/nano/COPYING.DOC",
+              "sha256": "f45cc81b400a048b56c9edbd4c3317f7a8958463dfd55aa96f268ecfd6baa12c"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "6a4dd380f6ee2bb2d74851c182090774f61eddfc37d9ff4d060b69f2c0fe4646",
+            "time_identifier": "2026-10-16T05:03:55Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/nano.pkgar"
+          },
+          "prepared_source": {},
+          "recipe": "recipes/text/nano/recipe.toml",
+          "recipe_blake3": "6a4dd380f6ee2bb2d74851c182090774f61eddfc37d9ff4d060b69f2c0fe4646",
+          "recipe_blob": "b6b01cd7d22b6e584770f2c02b3c5917b586f2f5",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/text/nano/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "2c3e6ccd53d684ce46d707eda1480c92f5aa5f942cba299b23f3e010640e70eb"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/text/nano/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "e9b99dcbcb8a3789b4b6d8c77ecc55c4ce673fc8bd6138ace84daf2bc57b50eb"
+            }
+          ],
+          "source_url": "https://www.nano-editor.org/dist/v9/nano-9.2.tar.xz"
+        },
+        "status": "PendingPublication"
+      }
+    },
+    "ncurses": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "5931bf11eba1418b33d86d5c2bf8aa6269bf2a9326d1e5bbc534ec8eb24e0745",
+          "metadata_sha256": "90c0ca689512bdb225818ef3b47f93fcf29d840859dd2068672c1cfd34fda00d"
+        },
+        "candidate_effective_input_id": "82d07d0c19976ad2e56a908695ca76577d416e1f08bafd6e65f35f0ea88f9313",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "82d07d0c19976ad2e56a908695ca76577d416e1f08bafd6e65f35f0ea88f9313",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/ncurses/COPYING",
+              "sha256": "708999f95527e1ffa670c6fce288c6c600cb477dd04afcc1171422b3dd4ee226"
+            }
+          ],
+          "prepared_source": {
+            "archive_sha256": "355b4cbbed880b0381a04c46617b7656e362585d52e9cf84a67e2009b749ff11",
+            "tree_sha256": "7a62ccf523d05fa8c167475dc43a9b72a8c2a710004afa35099f1c6bd3b58687"
+          },
+          "recipe": "recipes/libs/ncurses/recipe.toml",
+          "recipe_blake3": "fbec55697a01f99b9cc3f25be55e73ae7091f4c53e5d81a1ea15734c4e5b7238",
+          "recipe_blob": "b4770c644d8a8cf028aa252223f50fc20594519b",
+          "recipe_pin": null,
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/libs/ncurses/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "e0f842cad7766f576db91ac4009275e1f127efdb72890b81fd34e0a32a272ead"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/libs/ncurses/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "b86de5b6d2b0ab3442bf5af47fb3d894c9e44208d46b45c88956227ebba38d02"
+            }
+          ],
+          "source_url": "https://ftp.gnu.org/gnu/ncurses/ncurses-6.6.tar.gz"
+        },
+        "status": "PendingPublication"
+      }
+    },
     "ncursesw": {
       "action": "KeepExistingPackage",
       "baseline_status": "BaselineMissing",
@@ -8796,6 +10187,55 @@
         "signature_extraction": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "3ab333ef864d8fd0f7e045a339880d62c585260e57350ad2c603aec16b253df6",
+          "metadata_sha256": "efb7c80c5ff63ab468ae555c20ba953efa9dd14319c5f14078d4f89e6b6db73f"
+        },
+        "candidate_effective_input_id": "be92839f5077e8059fe4cd85e1783d242f67a51b4d2c65800d2d4d587876fcd3",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "be92839f5077e8059fe4cd85e1783d242f67a51b4d2c65800d2d4d587876fcd3",
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/ncurses/COPYING",
+              "sha256": "708999f95527e1ffa670c6fce288c6c600cb477dd04afcc1171422b3dd4ee226"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "fbec55697a01f99b9cc3f25be55e73ae7091f4c53e5d81a1ea15734c4e5b7238",
+            "time_identifier": "2026-10-15T18:43:36Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/ncursesw.pkgar"
+          },
+          "prepared_source": {
+            "tree_sha256": "7a62ccf523d05fa8c167475dc43a9b72a8c2a710004afa35099f1c6bd3b58687"
+          },
+          "recipe": "recipes/libs/ncursesw/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "a3e5e196510a9932919cf67896ce818f16bd169b",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/libs/ncursesw/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "8e969290b7e95e44d9120fcadab3370099863ec534f6534cdfca6aa0857eb438"
+            }
+          ],
+          "source_url": null
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3_from_metadata": "22ad2f2f743b0e9cacc7a6d44d9f3b2e5de42e840d4d9d319f950157a09abeb2",
         "archive_sha256": "34de3576dd691f6c28a6bd3da126c347b00e9f20b7049f157c81dd59d26eba01",
@@ -8933,6 +10373,57 @@
       "signature_payload_verification": "NotRun",
       "status": "UpToDate"
     },
+    "openssh": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "f006a36dae690e2c1c59aa83ccc74fa0e0bb4b1977b9728192ddd05705e32707",
+          "metadata_sha256": "47b18887518ed972d9acfe1621ee31f9a509dad30b7bea3310032e87677aae3f"
+        },
+        "candidate_effective_input_id": "0623593a5e61f2b127368d3d334c9ade4be94f0e6e9f70ebbcb95851b60cc81b",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "0623593a5e61f2b127368d3d334c9ade4be94f0e6e9f70ebbcb95851b60cc81b",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/openssh/LICENCE",
+              "sha256": "5bb5b160726ef5756e4f32fe95b35249c294962419650f48d05134b486d27ccb"
+            }
+          ],
+          "prepared_source": {
+            "archive_sha256": "a9dc9565dffe8640f64d863cd29a32bc4a3dbdec0566a7fc44c5d6ee767d5f39",
+            "tree_sha256": "43f94a2fb56489eef5bc8602ae4a651920085db94ceec1a511b71014b517b4f5"
+          },
+          "recipe": "recipes/net/openssh/recipe.toml",
+          "recipe_blake3": "5b27910392630fe98eaef74e2ed72ad3416e108ee4234f1be7228c681e515137",
+          "recipe_blob": "b4ae4b7273d403b658d93502acc2febcb988699e",
+          "recipe_pin": null,
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/net/openssh/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "cbdbb0707b20b5ddfe948fb10d1fbb2830b53fd14034577736855cdaf24c9816"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/net/openssh/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "e547fc07b85654b89e67cacbc460cb787b9dbfa42c5f20f2d4f468f0650ce7f0"
+            }
+          ],
+          "source_url": "https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p1.tar.gz"
+        },
+        "status": "PendingPublication"
+      }
+    },
     "openssl3": {
       "action": "KeepExistingPackage",
       "baseline_status": "BaselineMissing",
@@ -8960,6 +10451,62 @@
         "signature_extraction": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "3296cc994b164a6bd9097efbd2f7c6573751ac2298d6df15129774b0244e6661",
+          "metadata_sha256": "74d510bc4c0da97615391073118a7339aa8e8372b78106ec26b254ea4ecb3691"
+        },
+        "candidate_effective_input_id": "ff7a0a681796ee39c9f6efb9081d023bd0656c079b45f11b37ebce24071f8cef",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "ff7a0a681796ee39c9f6efb9081d023bd0656c079b45f11b37ebce24071f8cef",
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/openssl3/LICENSE.txt",
+              "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "e1622a4587c71c278355bf38ff5a619918bd51e3cd37214d53dd5345b187fc10",
+            "time_identifier": "2026-10-16T05:03:55Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/openssl3.pkgar"
+          },
+          "prepared_source": {
+            "archive_sha256": "c9489d2abcf943cdc8329a57092331c598a402938054dc3a22218aea8a8ec3bf",
+            "tree_sha256": "ad6d2a7dfd24696fac044d81276973ec42cb2a83b1c02ca05b9542a17ee5272d"
+          },
+          "recipe": "recipes/libs/openssl3/recipe.toml",
+          "recipe_blake3": "e1622a4587c71c278355bf38ff5a619918bd51e3cd37214d53dd5345b187fc10",
+          "recipe_blob": "f551d7e385681a3495bf6085a6c833cc724740c6",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/libs/openssl3/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "4e5a768c359778d511daea1eee971a2365fa0199a6d7003f9a55de12ff3de333"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/libs/openssl3/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "66eb74f76089780552b8f683e9ea8e2ac8786e3a788452480bd73c4ade7a8fcc"
+            }
+          ],
+          "source_url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.3/openssl-3.5.3.tar.gz"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3_from_metadata": "dc93bbc79fa24ded19eec942db9263f58ef9933a126a845355989e4f8531e828",
         "archive_sha256": "5703996246582b525102c783711c92ac1f684ade75ca7b5328aa09f92de27c08",
@@ -9429,6 +10976,62 @@
           "remote_bytes": "PASS",
           "signature_payload": "PASS"
         }
+      },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "7eb2ae83b5f505910188cf5d8a83f12f8e51d753035a878176380c5996b0893c",
+          "metadata_sha256": "9d39eb65f127bbc372e8db5bb1cb6d4bc6315bc17626140c778afc64552cbdfa"
+        },
+        "candidate_effective_input_id": "907cadedf8d5b165de07bd1313ef956c47a8ee92ab06451e262c54bf1614eb87",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "907cadedf8d5b165de07bd1313ef956c47a8ee92ab06451e262c54bf1614eb87",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/redoxfs/LICENSE",
+              "sha256": "93feb465f692bf21fe310c2d7d2e906982950222897304ddddbcdab873cd11b8"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "b87b0976ee122036b2ec040159b890e1e06ca139",
+            "tree_sha256": "ab8ecd5a81d0d3f6190b6e5f04ae04c320bd81c85270b7382443fdc46af4d613"
+          },
+          "recipe": "recipes/core/redoxfs/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "8eeb79509b2163ccf29783ee625d5bfc8ab7b66a",
+          "recipe_pin": "b87b0976ee122036b2ec040159b890e1e06ca139",
+          "source_sha": "b87b0976ee122036b2ec040159b890e1e06ca139",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/redoxfs/fstype.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "d0c699dba3b6d619641dfeba7776bfb23c12fdc51326565a18106d32f035563d"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/redoxfs/inode-stats.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "bfc4cf8f0b5588bcb01d84445f84e68dcdf0870bc1ac130f57dda0a2eac822d2"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/redoxfs/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "52190991acaf587dddc01d053a0f7606e7775da3d953f1ceb10cd1b2e6625165"
+            }
+          ],
+          "source_url": "https://gitlab.redox-os.org/redox-os/redoxfs.git"
+        },
+        "status": "PendingPublication"
       },
       "published_artifact": {
         "archive_blake3": "e2b955996e829cd348379bc6227c4f6875cd422ad2d3d94dadf390fb4d1d5b26",
@@ -10732,6 +12335,47 @@
           "signature_payload": "PASS"
         }
       },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "8c8fc14f332b68010fc0b43fe1b39e0a536c78b4ac634134b2053fee0bcdbc81",
+          "metadata_sha256": "bd2f42519375b76efe8a6f54df82dc65568e41e43ca3ad1af543e2fd72325d8d"
+        },
+        "candidate_effective_input_id": "cf644241ea346ca8802b6b94eb18e74400ec09777a855067edba0447a7f465cc",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "cf644241ea346ca8802b6b94eb18e74400ec09777a855067edba0447a7f465cc",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/relibc/LICENSE",
+              "sha256": "1bc13112bee203de03bb45dfebc20e5338a20349a5935c16b7222c87fd0c7609"
+            }
+          ],
+          "prepared_source": {},
+          "recipe": "recipes/core/relibc/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "8b164bb83749b5acd38dac12cf552b116dcec977",
+          "recipe_pin": null,
+          "source_sha": "dfbadb7377bd2cc29737d1a35727def06b0994b8",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/relibc/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "cf0fc0ef0c1ba8680e783292e09e51d43f0b63dded680fa4017b289f215cf2dc"
+            }
+          ],
+          "source_url": "https://github.com/RedoxORG/relibc"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3": "22d4dfe903cdd6f9c3b8bd1e36d0ed762030ca052df2444ba4f93280409c7a1a",
         "archive_sha256": "6545599387b1f81ea2eb2f5c7babd804253662bbee4f533055c8bb074a272da1",
@@ -10752,6 +12396,117 @@
       "runtime": "PASS: independent normal server login and CLI smoke",
       "signature_payload_verification": "PASS",
       "status": "UpToDate"
+    },
+    "rsync": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "ac67d39b80d05be1f3f3701b61878354769a4f71db960c0efea3ecf82c83bbff",
+          "metadata_sha256": "01a4fc023af0631882d1b1c8c729a5b01959f9fa9788313488d333c049892902"
+        },
+        "candidate_effective_input_id": "72fad345ae59f50ba58a4cf707263c65fee990a6d07a44b225d450fb918c6dd9",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "72fad345ae59f50ba58a4cf707263c65fee990a6d07a44b225d450fb918c6dd9",
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/rsync/popt/COPYING",
+              "sha256": "518d4f2a05064cb9a8ec0ea02e86408af4feed6916f78ef42171465db8b383c5"
+            },
+            {
+              "path": "licenses/run-20261020/rsync/COPYING",
+              "sha256": "85c19ea50a224c2d0067a69c083584e5717b40b76610ec1218f91385775067dd"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "e1cfdd51a1a89a49e73f8fa730a4321392fe4a29533c0979c2c09c7ce3808b6f",
+            "time_identifier": "2026-10-16T05:03:55Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/rsync.pkgar"
+          },
+          "prepared_source": {},
+          "recipe": "recipes/net/rsync/recipe.toml",
+          "recipe_blake3": "e1cfdd51a1a89a49e73f8fa730a4321392fe4a29533c0979c2c09c7ce3808b6f",
+          "recipe_blob": "32c1d89c0ce31ac1231c5d5210788d62cb6961cd",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/net/rsync/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "79f236a132dd2e70accde40370d920d2f1901dc91577819eaae05c620edb2e7e"
+            }
+          ],
+          "source_url": "https://download.samba.org/pub/rsync/src/rsync-3.4.1.tar.gz"
+        },
+        "status": "PendingPublication"
+      }
+    },
+    "termcap": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "f7b06ddbdbdd4079a328affd9a4cde1d63920ac941773fbc8d345c1690f44350",
+          "metadata_sha256": "bc0559bcf32cf892abe26446dcdc8a4f0af35c87000feb3134b809c41bbd96cf"
+        },
+        "candidate_effective_input_id": "2bc6d42e98f3e813e014cb8c58048e566173dba54c8a4be7632754a628d03f78",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "2bc6d42e98f3e813e014cb8c58048e566173dba54c8a4be7632754a628d03f78",
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/termcap/COPYING",
+              "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "57c095e0bb6e60e7b4a0597f51f7ac15b501ca0f95d37424d8d13978d28b8da3",
+            "time_identifier": "2026-10-15T01:38:14Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/termcap.pkgar"
+          },
+          "prepared_source": {
+            "archive_sha256": "91a0e22e5387ca4467b5bcb18edf1c51b930262fd466d5fda396dd9d26719100",
+            "tree_sha256": "8798148aeeef11599f07982be6da29f7e89b9a597ca5c8bf72549883a91b628a"
+          },
+          "recipe": "recipes/libs/termcap/recipe.toml",
+          "recipe_blake3": "57c095e0bb6e60e7b4a0597f51f7ac15b501ca0f95d37424d8d13978d28b8da3",
+          "recipe_blob": "acfe054cd5c75ed273dbcc2bb7a34156e9e9a9d0",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/libs/termcap/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "fab44422e67c4c621b39b5d3c67ab50c8219d7979e9b28430780cebdfdc0833b"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/libs/termcap/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "47cc7c2896d821386e053db97c0a66cd32eac084be4286f6d181a1f35e70e13f"
+            }
+          ],
+          "source_url": "https://ftp.gnu.org/gnu/termcap/termcap-1.3.1.tar.gz"
+        },
+        "status": "PendingPublication"
+      }
     },
     "terminfo": {
       "action": "KeepExistingPackage",
@@ -11688,6 +13443,47 @@
           "signature_payload": "PASS"
         }
       },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "fb540e7662bf28f95dd0a1ec19103678400ea3a849b94f0685f96bdc98a08252",
+          "metadata_sha256": "331af2d5aa5cb6cef4733dc3400fb867a66c1e70ee27682a77e036e38f90d8c6"
+        },
+        "candidate_effective_input_id": "590201cd3d78252ee569ceaca81e2bef909134f4e857219f2541e1c9e3c135ce",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "590201cd3d78252ee569ceaca81e2bef909134f4e857219f2541e1c9e3c135ce",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/userutils/LICENSE",
+              "sha256": "8aa7554843e5bc19ce79886eda72466214ed56d9c5d37b1fa2be591975ee2799"
+            }
+          ],
+          "prepared_source": {},
+          "recipe": "recipes/core/userutils/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "666bfeb10761305d5fb1f7d9f198484c54386cd2",
+          "recipe_pin": null,
+          "source_sha": "3ac3b00426e66b58bbf732102cc6d45ad16130b3",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/userutils/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "2423efdd61e66579bfa33532a5b1f93fc56036038d1a6612eafa932ae17400ee"
+            }
+          ],
+          "source_url": "https://github.com/RedoxORG/userutils"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3": "dd2fd1cd4869e01d208bf1111aa3f30c5e4bb85f812ee7ef6b126cd4bd5f1304",
         "archive_sha256": "69869132f793d6c3423ecf06bc5a0b6d1f5b0cdfcc97f310cb1e3ee4e43206d5",
@@ -11736,6 +13532,62 @@
         "signature_extraction": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "e2b0d1df89205c54c9a23d341baf1fc697deaa149801e5cfc4c9bda1c2c27389",
+          "metadata_sha256": "9acfcb3db18af5dcb732709441309632301bc2ccd28609e9f0516a211f20ca43"
+        },
+        "candidate_effective_input_id": "4d99a2396a8d8310bd26cda7df69b9d50c2faa5277b8d030dc7c87bfdc281838",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "4d99a2396a8d8310bd26cda7df69b9d50c2faa5277b8d030dc7c87bfdc281838",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/uutils/LICENSE",
+              "sha256": "29953405eaa3dcc41c37d1621d55b6a47eee93e05613e439e73295029740b10c"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "bf65901e1ed82963436844c2cf8e796ba9158c65",
+            "tree_sha256": "a369e9862efb71cb2b49876cdd839035fce535843661200f9ddd92c79e367d33"
+          },
+          "recipe": "recipes/core/uutils/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "d158f6db21c66d2955300629497e4489dc0b9401",
+          "recipe_pin": "0.11.0",
+          "source_sha": "bf65901e1ed82963436844c2cf8e796ba9158c65",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/uutils/df.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "6d4c2345ed2d17d81855668bf349a8e67f7568cb175940d33cb4a40328228a7f"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/uutils/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "87c9138de459a87db6320dcb19e51509aab977dc56f0e5836067e4fee87bc337"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/core/uutils/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "416b7cc02e704af6dc575bce4ffc1ff239fbd0a97c8a14ff95dadbdbd9a228d3"
+            }
+          ],
+          "source_url": "https://github.com/uutils/coreutils"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3_from_metadata": "0aa00652580edf03d6b62138b487efd43c89783d1fba2a50a2b9cd0e1c3a4c4d",
         "archive_sha256": "0394cdefae41b435a4065d306d4c4eccb269fcd30daf7ad46cba31562a6cfd9b",
@@ -11749,6 +13601,110 @@
       "runtime": "NotRun",
       "signature_payload_verification": "NotRun",
       "status": "UpToDate"
+    },
+    "uutils-grep": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "8ee46541b76dffa7e6b6f776ce838c96711bf97a55765a242290215f7135966b",
+          "metadata_sha256": "a7f255c04a6ba752e93f1b5422e02ae2c52d599da17953d901acd08678261b6f"
+        },
+        "candidate_effective_input_id": "5ce273b9e2997f3f1e79d265f6dc5d32c47c14033b9fe7807caa5221bf724467",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "5ce273b9e2997f3f1e79d265f6dc5d32c47c14033b9fe7807caa5221bf724467",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/uutils/LICENSE",
+              "sha256": "29953405eaa3dcc41c37d1621d55b6a47eee93e05613e439e73295029740b10c"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "2ff48db61cb0588a89115461db1c0baf686bce83",
+            "tree_sha256": "900cf6620c92c7a4ad61ff0338ba554fb581076222ac814eb3d0c49fa640c385"
+          },
+          "recipe": "recipes/tools/uutils-grep/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "4cd67392fadae8e74398d12c1f0f0e7adc928604",
+          "recipe_pin": "2ff48db61cb0588a89115461db1c0baf686bce83",
+          "source_sha": "2ff48db61cb0588a89115461db1c0baf686bce83",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/tools/uutils-grep/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "1d12007facae40d09ba51314c54ce120a99075877d0f20933d411692e323b444"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/tools/uutils-grep/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "c5e4127c0a83c77a0dc5fb3a7bb71e7780c15f65212a279b9e451eb66a7b6533"
+            }
+          ],
+          "source_url": "https://github.com/uutils/grep"
+        },
+        "status": "PendingPublication"
+      }
+    },
+    "uutils-hostname": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "c5137277ca58380fdac1b6efa08972e8154e6a5f03a392f291699918575010d0",
+          "metadata_sha256": "a3956f356b1a500cc26a772c36662d8e13a15aade64541664b92d86fb5304c58"
+        },
+        "candidate_effective_input_id": "fed3cb6752d15956a77dbc5a3c9908785d21e3e8af9b06e9312601a1a0d6f423",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "fed3cb6752d15956a77dbc5a3c9908785d21e3e8af9b06e9312601a1a0d6f423",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/uutils-hostname/LICENSE",
+              "sha256": "316765d98cb170a4b720ae8912b1a61af7ffcad75875c77390b4ef7d1ae0bd19"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "a6e1a935775fcde6e781f3b73017287835b478a5",
+            "tree_sha256": "df0cb2eb62487fd56767eaf7c65f5f4b4014338b5c17a68b79c7bce670e64123"
+          },
+          "recipe": "recipes/tools/uutils-hostname/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "71893f4c9c14c90b0baa390ce87a2e269bb703d5",
+          "recipe_pin": "a6e1a935775fcde6e781f3b73017287835b478a5",
+          "source_sha": "a6e1a935775fcde6e781f3b73017287835b478a5",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/tools/uutils-hostname/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "941f110434653408afc739517ffbb4593724a2deb824eb81a26a8e6f55ec7f47"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/tools/uutils-hostname/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "7ce05d3ec3a6973e764ffbf4a249133210d786d13ecb2b9231e0a35a6a3df86e"
+            }
+          ],
+          "source_url": "https://github.com/uutils/hostname"
+        },
+        "status": "PendingPublication"
+      }
     },
     "uutils-procps": {
       "action": "KeepExistingPackage",
@@ -11777,6 +13733,116 @@
         "signature_extraction": "PASS"
       },
       "last_successful_input": null,
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "6a21c0f58151a52f4faea276f03a814ff2f1147e9ef24b064c0890f3bf9150d9",
+          "metadata_sha256": "faaebfb0159114d5efe1588e630c4f4fdd9432b4030bd543986850992ba718c8"
+        },
+        "candidate_effective_input_id": "31a0fbd80e62dba202d3bad8ad3b77bc432d2de8ad6fd86f5743293ffeb3077e",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "31a0fbd80e62dba202d3bad8ad3b77bc432d2de8ad6fd86f5743293ffeb3077e",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/uutils-hostname/LICENSE",
+              "sha256": "316765d98cb170a4b720ae8912b1a61af7ffcad75875c77390b4ef7d1ae0bd19"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "ee98c0a78fe2abe72589f80eb05b455fa228e757",
+            "tree_sha256": "2d1d2903f033dbef52fb56626df6aae283945507f659587aa11e814ef0969f4f"
+          },
+          "recipe": "recipes/wip/rs/uutils-procps/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "877f003e0d9150194cfc2759a314dba14a4bcf00",
+          "recipe_pin": "ee98c0a78fe2abe72589f80eb05b455fa228e757",
+          "source_sha": "ee98c0a78fe2abe72589f80eb05b455fa228e757",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/rs/uutils-procps/compat/dirs-sys-next/.cargo_vcs_info.json",
+              "repository": "RedoxORG/redox",
+              "sha256": "1159629db0a573b1d83c1116c2883bdba5d544f40868a6e43dce23c171b07737"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/rs/uutils-procps/compat/dirs-sys-next/CHANGELOG.md",
+              "repository": "RedoxORG/redox",
+              "sha256": "6604e30611fe9cc5f307f622fd4d763c3e0284ee98355830a9d8adfe48b45734"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/rs/uutils-procps/compat/dirs-sys-next/Cargo.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "c0965782c9d1bc54569c3c818f7cdf4301fd8b3b69d7ac6c9d6f815e9905fd1d"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/rs/uutils-procps/compat/dirs-sys-next/Cargo.toml.orig",
+              "repository": "RedoxORG/redox",
+              "sha256": "915eba1b0c5b62e68a6957d467c665ba486377133a5edd83a65946781dcf33f3"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/rs/uutils-procps/compat/dirs-sys-next/LICENSE-APACHE",
+              "repository": "RedoxORG/redox",
+              "sha256": "d3174ad63e721d4c9dccb8ad4320848992d314369bc46319720b5802c9153fe9"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/rs/uutils-procps/compat/dirs-sys-next/LICENSE-MIT",
+              "repository": "RedoxORG/redox",
+              "sha256": "6a2e0ade09a7d5f816f11566fee2b151b32235a7fad52b41d49cce96f833c1a9"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/rs/uutils-procps/compat/dirs-sys-next/README.md",
+              "repository": "RedoxORG/redox",
+              "sha256": "ee16237514c143cd4e1496fb268a5bb1807d102511a54b27ec4c94f477ed9f28"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/rs/uutils-procps/compat/dirs-sys-next/src/lib.rs",
+              "repository": "RedoxORG/redox",
+              "sha256": "344d57bd4f20ac70ab7ef2cbeb4dc33ce443b8f4fdbddb92e846e4bf25027b62"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/rs/uutils-procps/compat/dirs-sys-next/src/xdg_user_dirs.rs",
+              "repository": "RedoxORG/redox",
+              "sha256": "a160d7f56fd346febcaa47cea27dc460dc89a0d4c12025673a8a322854bce207"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/rs/uutils-procps/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "494060f5152d0264c95d77295ae08d78530dcbbb6b3d03516ff52f4b2e3c5508"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/rs/uutils-procps/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "f66cd05a7b42d57eab922755a4f010bee06cca66070c6be17974ceff7868b014"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/rs/uutils-procps/users-0.5.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "3a91fb69b3016dfb39b7f43ffb03bf3e8ce098c4353d199aa9b29112006391e8"
+            }
+          ],
+          "source_url": "https://github.com/uutils/procps"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3_from_metadata": "2cb75021cee5de22f764aefe83c5dbe676bd5ed5f1b47ef25cd3338bac13403a",
         "archive_sha256": "1c8427bd88a373e15ea213612c63183ade6135c2e81ed41ba9078460a7e5bd36",
@@ -11790,6 +13856,162 @@
       "runtime": "NotRun",
       "signature_payload_verification": "NotRun",
       "status": "UpToDate"
+    },
+    "vim": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "1b41c49ebe238a7a744c13705779f09885d8f44c7287327d3703a5c59e30e556",
+          "metadata_sha256": "bc673da3767951a910a0973f09b25604989f1e8c18acbd86e49732df582ff1e7"
+        },
+        "candidate_effective_input_id": "b3bc2b0b2b0d07a48b4365520f5a22448fb92ffdd8c6d0227b5a039524c434f2",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "b3bc2b0b2b0d07a48b4365520f5a22448fb92ffdd8c6d0227b5a039524c434f2",
+          "installed_license_notices": [
+            {
+              "path": "usr/share/vim/vim91/doc/uganda.txt",
+              "sha256": "1ea2f048d167f0da035bf6161a85c1d875392dc59676cf43735f425637c469ff"
+            }
+          ],
+          "kind": "official-binary",
+          "license_references": [],
+          "official_distribution": {
+            "recipe_commit": "332fb5e78561e6805ddd87bc8758093f02f564ba",
+            "source_identifier": "d1f5802ceb047b09143f1764bf4016f084cf7e6c026c7047919264c9f262a5dd",
+            "time_identifier": "2026-10-16T05:03:55Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/vim.pkgar"
+          },
+          "prepared_source": {},
+          "recipe": "recipes/text/vim/recipe.toml",
+          "recipe_blake3": "d1f5802ceb047b09143f1764bf4016f084cf7e6c026c7047919264c9f262a5dd",
+          "recipe_blob": "5b8c1c3fc4f8e5c62a8c8bb93c5ac8014d334a51",
+          "recipe_pin": null,
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/text/vim/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "86af1ad56a1fda76345e59c97128fe4af99f9d25f688c0515c326d3813063e93"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/text/vim/vim.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "212b82961db05b564313d1bd116b9455d34a37a8900ccd794c50f2f7fa3e645a"
+            }
+          ],
+          "source_url": "https://github.com/vim/vim/archive/refs/tags/v9.1.0821.tar.gz"
+        },
+        "status": "PendingPublication"
+      }
+    },
+    "wget": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "7c239c4c795d71d637a1ea62055f53a610336b460cff2ba4ec836dc3a5040577",
+          "metadata_sha256": "dfd9855b35b38f7cb6d292efd551d8cbfbabb8c91117dff27b767f00c79e8ff5"
+        },
+        "candidate_effective_input_id": "dd1ade98aafb179b60880b5b713cf34000cda6f497b3f1c4fd2c65235e20663c",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "dd1ade98aafb179b60880b5b713cf34000cda6f497b3f1c4fd2c65235e20663c",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/wget/COPYING",
+              "sha256": "f7dc7522e7e1be9227f3dc8de8b39a4d1d2471968c893af15f00c1a2076a0eec"
+            }
+          ],
+          "prepared_source": {
+            "archive_sha256": "81542f5cefb8faacc39bbbc6c82ded80e3e4a88505ae72ea51df27525bcde04c",
+            "tree_sha256": "612a5b87f822eb5dd2794052a8fe81a9e5b7f2854be3dffc95da3c057eaa2b59"
+          },
+          "recipe": "recipes/net/wget/recipe.toml",
+          "recipe_blake3": "1c3c31259d23ed3890535fd3b8713082c74e41d459c8f290c1650ab1afab8f35",
+          "recipe_blob": "7309b89c3ef2f9d91ad4ae7e95266aaf4cfc9b1a",
+          "recipe_pin": null,
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/net/wget/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "e0fe76e30c19066a2bbb38c349500965f54dca3f1f74bbe5fb6839b817d06c12"
+            },
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/net/wget/redox-alarm.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "a2cd76dc67ab17ee9677ee4c60bdb38ff197f6288a667e50c74f0aa9e2024db2"
+            }
+          ],
+          "source_url": "https://ftp.gnu.org/gnu/wget/wget-1.21.4.tar.gz"
+        },
+        "status": "PendingPublication"
+      }
+    },
+    "xxhash": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "99a1b8328a840213353653d6d4adaef9ba4fd3c98805d02db1d00d7c23860abd",
+          "metadata_sha256": "7efa87e18b5d2362f842f18bba701d9fc507b48548af19385a78204f4b46f77f"
+        },
+        "candidate_effective_input_id": "bdd461dc074f9ec620c97683e2452be3cf92a5dce3e90359a8556dbc7cfc2c68",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-01.json",
+          "sha256": "fd1b6142f2d118501ceac2b75df3a14af38304b8217b080fa75782e219bcb9d8"
+        },
+        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
+        "source": {
+          "effective_input_id": "bdd461dc074f9ec620c97683e2452be3cf92a5dce3e90359a8556dbc7cfc2c68",
+          "existing_license_references": [],
+          "installed_license_notices": [],
+          "kind": "official-binary",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/xxhash/LICENSE",
+              "sha256": "6ffedbc0f7878612d2b23589f1ff2ab15633e1df7963a5d9fc750ec5500c7e7a"
+            }
+          ],
+          "official_distribution": {
+            "recipe_commit": "3908bb6de5e0df85b748189f3b43cb75f72cb9d9",
+            "source_identifier": "bab7e27f4c6ae4efbb83dd99ae8a554423571635",
+            "time_identifier": "2026-07-12T03:45:28Z",
+            "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/xxhash.pkgar"
+          },
+          "prepared_source": {},
+          "recipe": "recipes/wip/libs/other/xxhash/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "c50d194e90f6d56c53452a35ec9db6097dd11c45",
+          "recipe_pin": "bab7e27f4c6ae4efbb83dd99ae8a554423571635",
+          "source_identity_caveat": "Official metadata identity; not independently reproduced source build.",
+          "source_support_identities": [
+            {
+              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
+              "path": "recipes/wip/libs/other/xxhash/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "b3bb9e51e0ed6c6686b27fe3a7834ade8905b783399825d67309b029b95cbab2"
+            }
+          ],
+          "source_url": "https://github.com/Cyan4973/xxHash"
+        },
+        "status": "PendingPublication"
+      }
     },
     "xz": {
       "action": "KeepExistingPackage",

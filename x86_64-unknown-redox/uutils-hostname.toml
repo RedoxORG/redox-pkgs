@@ -1,0 +1,10 @@
+name = "uutils-hostname"
+version = "0.0.1"
+target = "x86_64-unknown-redox"
+blake3 = "e4a9ed8e29c31e958dd5123af7785dd25c3ccb33241c291891d74911f9581ebe"
+source_identifier = "a6e1a935775fcde6e781f3b73017287835b478a5"
+commit_identifier = "851e1e578b9254a0f69aa2f6715155d5bf07b220"
+time_identifier = "2026-10-20T03:32:49Z"
+storage_size = 883364
+network_size = 883364
+depends = ["relibc"]

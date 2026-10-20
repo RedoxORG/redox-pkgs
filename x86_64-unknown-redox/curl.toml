@@ -1,10 +1,10 @@
 name = "curl"
 version = "TODO"
 target = "x86_64-unknown-redox"
-blake3 = "e0aeaeaa63ef0f0f162ed7bfcb2bf05a455dfef1f6c950fc6e49881ac0c52b60"
+blake3 = "82b940c2705ff8ce065177560f93f3a73ab3726f46551b492827263f00f86a0f"
 source_identifier = "a05f34973e6c4bb629d018f7cb51487be1c904d8"
-commit_identifier = "009833b56eeb6eb1928e8ea783ea717ffced5d2d"
-time_identifier = "2026-09-26T05:02:42Z"
+commit_identifier = "332fb5e78561e6805ddd87bc8758093f02f564ba"
+time_identifier = "2026-10-16T05:03:55Z"
 storage_size = 3588719
 network_size = 3588719
 depends = ["ca-certificates", "nghttp2", "openssl3", "zstd"]

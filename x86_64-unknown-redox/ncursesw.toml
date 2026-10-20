@@ -1,10 +1,10 @@
 name = "ncursesw"
 version = "TODO"
 target = "x86_64-unknown-redox"
-blake3 = "22ad2f2f743b0e9cacc7a6d44d9f3b2e5de42e840d4d9d319f950157a09abeb2"
+blake3 = "afc332dfad7459f10044031f79cc4511b73c202f73fa8514fdae56d1fb625a73"
 source_identifier = "fbec55697a01f99b9cc3f25be55e73ae7091f4c53e5d81a1ea15734c4e5b7238"
-commit_identifier = "c4009d08ba2eab474e95f1acfec3633b6b8868a0"
-time_identifier = "2026-10-10T01:37:21Z"
-storage_size = 3976993
-network_size = 3976993
+commit_identifier = "332fb5e78561e6805ddd87bc8758093f02f564ba"
+time_identifier = "2026-10-15T18:43:36Z"
+storage_size = 3976618
+network_size = 3976618
 depends = ["terminfo"]
