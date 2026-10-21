@@ -871,7 +871,16 @@
   },
   "dependency_checks": {
     "redoxfs": {
-      "active_source_revalidation": "PendingParentRestorationAfterMake014; no active source touched by this report",
+      "active_source_revalidation": {
+        "normal_image_receipt_sha256": "376f34767f15d6b1beb05558803b665819beec27b8c618ffbf40f3e059d5eef6",
+        "normal_image_result": "PASS after exact source restoration",
+        "restoration_receipt_sha256": "ad362af055774443a0e71405fe0877ee7a7cab14f84c823f450c5b6d62e9b874",
+        "restored_prepared_input": {
+          "git_revision": "b87b0976ee122036b2ec040159b890e1e06ca139",
+          "tree_sha256": "cc798cf8633dd21cd1907e89d04acd3542435d13a18f0563bc8ddd2a2ea48718"
+        },
+        "status": "PASS"
+      },
       "actual_module_comparison": {
         "critical_feature_modules_equal": {
           "src/inode_stats.rs": {
@@ -957,7 +966,7 @@
       },
       "repository": "redoxfs",
       "runtime": "Existing parent actual build/runtime evidence remains separate; this report is source comparison only.",
-      "scope_note": "The report compares the frozen prepared input used before normal Make014. Make014 host fetch temporarily reset active source; current live tree/resource bytes are not asserted equal by this report. Revalidation belongs to the parent restoration gate.",
+      "scope_note": "The source comparison used immutable frozen Git objects. The producer subsequently restored the exact prepared source and completed normal Make015; see active_source_revalidation.",
       "status": "CoveredByCommittedRecipe_NoUncoveredPrivateFeatureIdentified"
     },
     "relibc": {
