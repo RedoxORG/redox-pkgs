@@ -1,10 +1,10 @@
 name = "userutils"
 version = "0.1.0"
 target = "x86_64-unknown-redox"
-blake3 = "097b2d35b932d5f74ce51e6357ca83e507a3efb54ab138ff3f2ae769da7acc41"
+blake3 = "eec6a921f65039de1a3322395401c296b5c4a42e870a49370e38abbcf99fc99a"
 source_identifier = "local_source"
-commit_identifier = "851e1e578b9254a0f69aa2f6715155d5bf07b220"
-time_identifier = "2026-10-20T03:20:01Z"
-storage_size = 6193190
-network_size = 6193190
+commit_identifier = "02481fd0a52710e04b9553b9c86c8fc099da955e"
+time_identifier = "2026-10-21T08:40:40Z"
+storage_size = 6209264
+network_size = 6209264
 depends = []

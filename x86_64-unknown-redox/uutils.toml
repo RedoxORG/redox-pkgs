@@ -1,10 +1,10 @@
 name = "uutils"
 version = "0.11.0"
 target = "x86_64-unknown-redox"
-blake3 = "b5f4d5078555e611239bc12949923853c9e4f5df49de3b6d22b1a1b81fb032a9"
+blake3 = "a49305ad69b2185892f199182a1c126b1c8204e3c456d466ec69170e658dd253"
 source_identifier = "bf65901e1ed82963436844c2cf8e796ba9158c65"
-commit_identifier = "851e1e578b9254a0f69aa2f6715155d5bf07b220"
-time_identifier = "2026-10-20T03:51:17Z"
-storage_size = 12330469
-network_size = 12330469
+commit_identifier = "02481fd0a52710e04b9553b9c86c8fc099da955e"
+time_identifier = "2026-10-21T08:40:40Z"
+storage_size = 12338986
+network_size = 12338986
 depends = ["libonig"]

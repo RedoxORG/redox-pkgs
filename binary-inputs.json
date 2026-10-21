@@ -1,5 +1,251 @@
 {
   "build_input_sets": {
+    "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a": {
+      "build_sha": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+      "components": {
+        "base": {
+          "expected_sha": "611c61cc477af746f73e602ba6eb05181b97d43c",
+          "expected_tree": "4e778758e99320e430e573a9f7006adb0c281cc9",
+          "recipe": "core/base"
+        },
+        "relibc": {
+          "expected_sha": "891876cea632d8b37756900dce0fc552e3c8038d",
+          "expected_tree": "0056c071c448574d3f93296cc6313d4ae1081db4",
+          "recipe": "core/relibc"
+        },
+        "userutils": {
+          "expected_sha": "7ad269c65a40e572388926a5bdc7f9d12bbb55d9",
+          "expected_tree": "918ccc6c517794f350f60200da41a0b7b99bfd95",
+          "recipe": "core/userutils"
+        }
+      },
+      "controlled_config_hashes": {
+        ".config": "d60785d5ddd9c38c1f363946bb04bf84c702b90dfba78e21bdfa0c0a40a9aec9",
+        "build/id_ed25519.pub.toml": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
+        "cookbook.lock": "caa603e9251b619ab447f75b3d82020228738801b94aa4906bb4ff6135dad41c"
+      },
+      "dependency_snapshots": {},
+      "execution_policy_sha256": "23fa2022ea82328ae4e32333392a03556d0c5f4a105deae841dc6be1af050508",
+      "prepared_sources": {
+        "recipes/core/coreutils/source": {
+          "git_revision": "575a46d3b624ad9cd222c9e3250073e9269c3462",
+          "tree_sha256": "7331b52c1551ed39633a1a8d533f4c234c77bd25cbd3a80b85323cc07d407acf"
+        },
+        "recipes/core/extrautils/source": {
+          "git_revision": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
+          "tree_sha256": "3ad702b2db2aaf677eb6d76e591a476371b075794ce99d70dd2dabc1cbdf9c4c"
+        },
+        "recipes/core/installer/source": {
+          "git_revision": "5d822e6a9fae1f4b60e8cd33fd757972dcbb6a41",
+          "private_source": {
+            "repository": "installer",
+            "sha": "5d822e6a9fae1f4b60e8cd33fd757972dcbb6a41",
+            "tree": "9e2d40acd7337d4cfeecc649de7b2019acc83c36"
+          },
+          "tree_sha256": "91a9cd182f976be62754216fb99e7c33452c450af0e88953dbfd1b38359278fc"
+        },
+        "recipes/core/kernel/source": {
+          "git_revision": "93a99a27fb3c5dd5a8804c3c102250f480525b37",
+          "private_source": {
+            "repository": "kernel",
+            "sha": "93a99a27fb3c5dd5a8804c3c102250f480525b37",
+            "tree": "34efc19d31cc26b2d055d6092da8032967a5258a"
+          },
+          "tree_sha256": "e72218266e8a8a7271a52b04e0d2f76f1f2decf4f0b00fcb85c570b094d448ed"
+        },
+        "recipes/core/redoxfs/source": {
+          "git_revision": "b87b0976ee122036b2ec040159b890e1e06ca139",
+          "tree_sha256": "cc798cf8633dd21cd1907e89d04acd3542435d13a18f0563bc8ddd2a2ea48718"
+        },
+        "recipes/core/uutils/source": {
+          "git_revision": "bf65901e1ed82963436844c2cf8e796ba9158c65",
+          "tree_sha256": "3fd692f266bb033282ce2ccc7ba072dba934ad602998a4f484125111633e2a7a"
+        },
+        "recipes/tools/mandoc/source": {
+          "archive_sha256": "8bf0d570f01e70a6e124884088870cbed7537f36328d512909eb10cd53179d9c",
+          "tree_sha256": "49829c9b7c6f2811fa0452f314c52427c364a0d19d6342c1ed8f660f2a9a5cb7"
+        }
+      },
+      "recipes": {
+        "base": {
+          "blob": "5a8520bd762c84cbd8f65b501a76fea58741b314",
+          "path": "core/base"
+        },
+        "coreutils": {
+          "blob": "289f10b1d4453f8a4b8f2d976483564ec01ba403",
+          "path": "core/coreutils"
+        },
+        "extrautils": {
+          "blob": "e6146f48f9862f6b33b4e4c8ede1ecacdba5c434",
+          "path": "core/extrautils"
+        },
+        "installer": {
+          "blob": "0235382117eea7ccb7ffc8793b73ee35be56d358",
+          "path": "core/installer"
+        },
+        "kernel": {
+          "blob": "6c07b3626d3e064149602497deb1a1ebe83bb976",
+          "path": "core/kernel"
+        },
+        "mandoc": {
+          "blob": "17d3f2f0dd5f2932a03feaace4ebed2a93478907",
+          "path": "tools/mandoc"
+        },
+        "redoxfs": {
+          "blob": "2934bb4e1570becfc4a2f9471121f68afa7478a1",
+          "path": "core/redoxfs"
+        },
+        "relibc": {
+          "blob": "8b164bb83749b5acd38dac12cf552b116dcec977",
+          "path": "core/relibc"
+        },
+        "userutils": {
+          "blob": "e02d28a1e5b8acdb287c331c0f39b36ee9a89043",
+          "path": "core/userutils"
+        },
+        "uutils": {
+          "blob": "fec47eedd68c97d4c6ef9273288366008bad7549",
+          "path": "core/uutils"
+        }
+      },
+      "repositories": {
+        "base": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/base",
+          "sha": "611c61cc477af746f73e602ba6eb05181b97d43c",
+          "tree": "4e778758e99320e430e573a9f7006adb0c281cc9"
+        },
+        "bootloader": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/bootloader",
+          "sha": "13358e87cc3c6e1225c42db07c3dce4280a734f5",
+          "tree": "2d64d877b1450c525997431717a182db913537f9"
+        },
+        "installer": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/installer",
+          "sha": "5d822e6a9fae1f4b60e8cd33fd757972dcbb6a41",
+          "tree": "9e2d40acd7337d4cfeecc649de7b2019acc83c36"
+        },
+        "kernel": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/kernel",
+          "sha": "93a99a27fb3c5dd5a8804c3c102250f480525b37",
+          "tree": "34efc19d31cc26b2d055d6092da8032967a5258a"
+        },
+        "redox": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/redox",
+          "sha": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+          "tree": "a184e488b18815620473ee1011214c77f2895b4f"
+        },
+        "redox-pkgs": {
+          "branch": "main",
+          "private": true,
+          "repository": "RedoxORG/redox-pkgs",
+          "sha": "79c2585efc8ff6c3d123749e6f0040fd5f6cefcb",
+          "tree": "b0a189c5af204fe878aafea7ed93d222ee21d690"
+        },
+        "redox-scheme": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/redox-scheme",
+          "sha": "36bdcbc568f055a9c34a959cadb71b932a38deff",
+          "tree": "fa9ff0acdcf3572b39a4cab5a42b315d221af264"
+        },
+        "redoxfs": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/redoxfs",
+          "sha": "3b5848eba36d0765a10305adb0ce4643297d3c7e",
+          "tree": "f71465ea2fccf72452cb66ca71298b46062e6ca9"
+        },
+        "relibc": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/relibc",
+          "sha": "891876cea632d8b37756900dce0fc552e3c8038d",
+          "tree": "0056c071c448574d3f93296cc6313d4ae1081db4"
+        },
+        "termion": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/termion",
+          "sha": "63fc2d18a14f1a54370bb0f301fcefaa994f4419",
+          "tree": "1cf13090253894a29060e7d8270f7637a4454732"
+        },
+        "uefi": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/uefi",
+          "sha": "bd05e4160ef56fd599e73c878b44f5c0294923d5",
+          "tree": "209cc0eb065ed5f9fddf3961443081f2a4b4f6fa"
+        },
+        "users": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/users",
+          "sha": "4e8681d4749a87244f6ad054e4b07d9063167dda",
+          "tree": "0fb3034a690f8a27b92086d883046a8b4978c014"
+        },
+        "userutils": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/userutils",
+          "sha": "7ad269c65a40e572388926a5bdc7f9d12bbb55d9",
+          "tree": "918ccc6c517794f350f60200da41a0b7b99bfd95"
+        },
+        "workspace": {
+          "branch": "main",
+          "private": true,
+          "repository": "RedoxORG/workspace",
+          "sha": "b237172f2030e5d115f9e281edb60b9ee0d38485",
+          "tree": "a2ecf4db1835de5e4a7e12a03422d954b18d4a20"
+        },
+        "zsh": {
+          "branch": "local/main",
+          "private": true,
+          "repository": "RedoxORG/zsh",
+          "sha": "fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250",
+          "tree": "a0981a3c5d10d7a313e80e34c7e47a4b83656bcf"
+        }
+      },
+      "source_freeze": {
+        "receipt": "source-gate-cold.json",
+        "sha256": "bcf499fe96df31ea543c401f475e9f75344a3c11cb63ac6f879dd5511859d1a3"
+      },
+      "target": "x86_64-unknown-redox",
+      "toolchain_archives": {
+        "prefix/x86_64-unknown-redox/clang-install.tar.gz": {
+          "sha256": "fcf965f0a08fabb060a8fe8b96372ed95f3d8bff7c087b613a439a1cda003115",
+          "size": 184151121,
+          "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/clang-install.tar.gz"
+        },
+        "prefix/x86_64-unknown-redox/gcc-install.tar.gz": {
+          "sha256": "4bb5d1691d727546dc5064da794d798e9157cb85be8d463ebf7545bc01d9c362",
+          "size": 98465573,
+          "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/gcc-install.tar.gz"
+        },
+        "prefix/x86_64-unknown-redox/rust-install.tar.gz": {
+          "sha256": "ecfe0e260cc7544b0e29ec4f217eacd0e6802248cf70e2fb689ce87808bfa2bb",
+          "size": 175167112,
+          "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/rust-install.tar.gz"
+        }
+      },
+      "toolchain_install_trees": {
+        "prefix/x86_64-unknown-redox/clang-install": "87b697d8dbd204dec1c2b609c03166407f8d75a5f1757aebaa89663e591ab35d",
+        "prefix/x86_64-unknown-redox/gcc-install": "5a93b469c9283fb736b9350111a46fe1d5e8947c7599c386646ea3b73f1a80b2",
+        "prefix/x86_64-unknown-redox/rust-install": "08865cf4cf5605982610a102f1ef80f2136b3d383c473521eca82858ea34e10f"
+      },
+      "toolchain_locks": {
+        "prefix/x86_64-unknown-redox/rust-install/lib/rustlib/src/rust/library/Cargo.lock": "02120dd57c4c5fd70c81fd92472681c8de5cc2dd78258276da37bb2253666061"
+      }
+    },
     "5cc67ed1c700547f4d82c6d63ea8e80c8ce9ffe571909d5f750334fae135314c": {
       "cache_and_configuration_receipt_sha256": "b00ff44a4d82f7e4d254efe08b5bf0728007538a6667a7ac9df6373f753fc87d",
       "controlled_configuration": {
@@ -618,98 +864,638 @@
     }
   },
   "current_build_inputs": {
-    "cargo_cache": {
-      "locked_git_pins": 24,
-      "receipt_sha256": "e0317bf1b704934b0a79f535c00c9bf4d63a5bdbf08d94aef30dad1f32833546",
-      "registry_sources": 855,
-      "status": "PASS"
-    },
-    "configuration": {
-      "ARCH": "x86_64",
-      "CARGO_NET_OFFLINE": true,
-      "CI": 1,
-      "CONFIG_NAME": "server",
-      "PREFIX_BINARY": 1,
-      "REPO_OFFLINE": 1,
-      "consumer_REPO_BINARY": 1,
-      "jobs": 2,
-      "producer_REPO_BINARY": 0
-    },
-    "recipe_commit": "5300847f01479312b6d932735ee4ca49aefc9e14",
-    "recipe_repository": "RedoxORG/redox",
-    "root_cargo_lock_git_blob": "a8756af688243e850d853991bb565d2bf7663edb",
-    "root_cargo_lock_sha256": "6a14fd65958178a03c5e2ee1a8f4debb262c0c593ec82a4dab4c479443b59ae8",
-    "source_freeze_sha256": "867b5664dd4ce8a81363d0ae798da479250a92e60a38bb211eb999def2a77074",
-    "target": "x86_64-unknown-redox",
-    "toolchain_archives": {
-      "prefix/x86_64-unknown-redox/clang-install.tar.gz": {
-        "sha256": "fcf965f0a08fabb060a8fe8b96372ed95f3d8bff7c087b613a439a1cda003115",
-        "size": 184151121,
-        "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/clang-install.tar.gz"
-      },
-      "prefix/x86_64-unknown-redox/gcc-install.tar.gz": {
-        "sha256": "4bb5d1691d727546dc5064da794d798e9157cb85be8d463ebf7545bc01d9c362",
-        "size": 98465573,
-        "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/gcc-install.tar.gz"
-      },
-      "prefix/x86_64-unknown-redox/rust-install.tar.gz": {
-        "sha256": "ecfe0e260cc7544b0e29ec4f217eacd0e6802248cf70e2fb689ce87808bfa2bb",
-        "size": 175167112,
-        "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/rust-install.tar.gz"
-      }
-    },
-    "toolchain_install_trees": {
-      "prefix/x86_64-unknown-redox/clang-install": "87b697d8dbd204dec1c2b609c03166407f8d75a5f1757aebaa89663e591ab35d",
-      "prefix/x86_64-unknown-redox/gcc-install": "5a93b469c9283fb736b9350111a46fe1d5e8947c7599c386646ea3b73f1a80b2",
-      "prefix/x86_64-unknown-redox/rust-install": "08865cf4cf5605982610a102f1ef80f2136b3d383c473521eca82858ea34e10f"
-    },
-    "toolchain_locks": {
-      "prefix/x86_64-unknown-redox/rust-install/lib/rustlib/src/rust/library/Cargo.lock": "02120dd57c4c5fd70c81fd92472681c8de5cc2dd78258276da37bb2253666061"
-    }
+    "dependency_report_sha256": "e897ddc05b139e2679ed299d9af8d3d605956d7ce620acc202d1630a68c058d3",
+    "recipe_commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+    "run_id": "update-20261021-01",
+    "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a"
   },
   "dependency_checks": {
-    "object": {
-      "consumer": "relibc and build tool",
-      "observed_private_sha": "7270e3f0d06e5ef4c2b80abc6166d31f4ddf4fea",
-      "pin_locations": [
-        "RedoxORG/relibc@6348725d01525823f1edd59a0459f66b12e3e2b0:Cargo.toml:120-122",
-        "RedoxORG/relibc@6348725d01525823f1edd59a0459f66b12e3e2b0:Cargo.lock:339-341",
-        "RedoxORG/redox@5300847f01479312b6d932735ee4ca49aefc9e14:Cargo.lock:684-687"
+    "redoxfs": {
+      "active_source_revalidation": "PendingParentRestorationAfterMake014; no active source touched by this report",
+      "actual_module_comparison": {
+        "critical_feature_modules_equal": {
+          "src/inode_stats.rs": {
+            "frozen_recipe_tree_blob_sha256": "35a5ecf4c8d644267c3964db5e754777576ae8c9132d948b37ae1cbc1ba0f9cb",
+            "private_commit_blob_sha256": "35a5ecf4c8d644267c3964db5e754777576ae8c9132d948b37ae1cbc1ba0f9cb"
+          },
+          "src/inode_stats/tests.rs": {
+            "frozen_recipe_tree_blob_sha256": "83c64ce94dead9080686bacdd4ab44ce7cb0fff8a2bae6fc035c7f2c44513dd0",
+            "private_commit_blob_sha256": "83c64ce94dead9080686bacdd4ab44ce7cb0fff8a2bae6fc035c7f2c44513dd0"
+          },
+          "src/mount/redox/fstype.rs": {
+            "frozen_recipe_tree_blob_sha256": "93734ead72e4a35fa4a5f566adbf16cea0ca32626c6872aa52a7abc132cf626f",
+            "private_commit_blob_sha256": "93734ead72e4a35fa4a5f566adbf16cea0ca32626c6872aa52a7abc132cf626f"
+          },
+          "src/mount/redox/resource.rs": {
+            "frozen_recipe_tree_blob_sha256": "866ce5708669f6931593b0937bde96249e4b55cd4f931f738427ad3a639535d4",
+            "private_commit_blob_sha256": "866ce5708669f6931593b0937bde96249e4b55cd4f931f738427ad3a639535d4"
+          },
+          "src/tree.rs": {
+            "frozen_recipe_tree_blob_sha256": "d028be2d4260006f815b5f6f499fa9d5ed7668ff70388cd3592eae4130d8b52e",
+            "private_commit_blob_sha256": "d028be2d4260006f815b5f6f499fa9d5ed7668ff70388cd3592eae4130d8b52e"
+          }
+        },
+        "differing_private_rust_files": [
+          "src/lib.rs",
+          "src/mount/redox/scheme.rs"
+        ],
+        "equal_private_rust_files": 35,
+        "frozen_recipe_additions": [
+          "src/directory_path.rs",
+          "src/directory_path/tests.rs"
+        ],
+        "object_alternates": "redoxfs/.git/objects",
+        "prepared_git_tree": "accc84807e0f1885a7a8fb405c2d849554435074",
+        "prepared_tree_object_directory": "redoxfs-patch-comparison/objects",
+        "private_commit": "3b5848eba36d0765a10305adb0ce4643297d3c7e",
+        "source": "Frozen immutable Git objects, not the active recipe source directory"
+      },
+      "conclusion": "Record actual build as b87+5patch, never as a3b584 build. Do not classify the entire private head as an unapplied functional dependency merely because the tree/SHA differs.",
+      "consumed_revision": "b87b0976ee122036b2ec040159b890e1e06ca139",
+      "difference_interpretation": "Committed recipe reproduces the private fstype/inode-statistics/touch modules. Remaining source changes add directory-fd recovery (new module plus lib declaration/scheme branch); Cargo uses the same redox-scheme36bd... revision with URL spelling/exact version0.12.0 and associated lock differences. No missing private3b584 runtime feature was identified in this source comparison.",
+      "direct_head_pin_adopted": false,
+      "effective_recipe_tree": "accc84807e0f1885a7a8fb405c2d849554435074",
+      "private_sha": "3b5848eba36d0765a10305adb0ce4643297d3c7e",
+      "recipe_patches": [
+        "fstype.patch",
+        "inode-stats.patch",
+        "touch.patch",
+        "scheme-0.12.patch",
+        "directory-fd.patch"
       ],
-      "reason": "Observed private object default-branch SHA is not either locked dependency. No independent object package was invented.",
-      "selected_identity": "relibc: official GitLab andypython/object branch new, SHA da781336d847df0deb897ed1162785f6c2057c56; build tool: crates.io object 0.38.1",
-      "status": "PendingDependency"
+      "recipe_pin": [
+        {
+          "line": 4,
+          "path": "redox/recipes/core/redoxfs/recipe.toml",
+          "text": "rev = \"b87b0976ee122036b2ec040159b890e1e06ca139\""
+        }
+      ],
+      "redox_scheme_consumed": {
+        "identity": {
+          "dependencies": [
+            "libredox",
+            "redox_syscall 0.9.5"
+          ],
+          "name": "redox-scheme",
+          "source": "git+https://github.com/RedoxORG/redox-scheme?rev=36bdcbc568f055a9c34a959cadb71b932a38deff#36bdcbc568f055a9c34a959cadb71b932a38deff",
+          "version": "0.12.0"
+        },
+        "locations": {
+          "name": {
+            "line": 450,
+            "path": "redox/recipes/core/redoxfs/source/Cargo.lock"
+          },
+          "source": {
+            "line": 452,
+            "path": "redox/recipes/core/redoxfs/source/Cargo.lock"
+          },
+          "version": {
+            "line": 451,
+            "path": "redox/recipes/core/redoxfs/source/Cargo.lock"
+          }
+        }
+      },
+      "repository": "redoxfs",
+      "runtime": "Existing parent actual build/runtime evidence remains separate; this report is source comparison only.",
+      "scope_note": "The report compares the frozen prepared input used before normal Make014. Make014 host fetch temporarily reset active source; current live tree/resource bytes are not asserted equal by this report. Revalidation belongs to the parent restoration gate.",
+      "status": "CoveredByCommittedRecipe_NoUncoveredPrivateFeatureIdentified"
     },
-    "uefi": {
-      "consumer": "bootloader",
-      "pin_locations": [
-        "RedoxORG/bootloader@70c5dff98aa750b31e0797686d92ba9ad331f29f:Cargo.toml:30-36",
-        "RedoxORG/bootloader@70c5dff98aa750b31e0797686d92ba9ad331f29f:Cargo.lock:245-260"
+    "relibc": {
+      "actual_unadopted_change": "Bootstrap separately pins redox-rt9f5a66; its x86_64 signal entry lacks the private tmp_rcx save/restore field and assembly references. Private libc build adoption does not update this separate bootstrap pin.",
+      "consumed": {
+        "identity": {
+          "dependencies": [
+            "bitflags",
+            "generic-rt",
+            "goblin",
+            "ioslice",
+            "libredox",
+            "plain",
+            "redox-path",
+            "redox_syscall"
+          ],
+          "name": "redox-rt",
+          "source": "git+https://gitlab.redox-os.org/redox-os/relibc.git#9f5a66f0874a48b37609bcf6371214e2fbcf0f15",
+          "version": "0.1.0"
+        },
+        "locations": {
+          "name": {
+            "line": 152,
+            "path": "base/bootstrap/Cargo.lock"
+          },
+          "source": {
+            "line": 154,
+            "path": "base/bootstrap/Cargo.lock"
+          },
+          "version": {
+            "line": 153,
+            "path": "base/bootstrap/Cargo.lock"
+          }
+        }
+      },
+      "feature_evidence": "default-features=false disables proc, but signal module is unconditional and target_arch=x86_64 selects the changed arch; generic-rt and redox-rt Cargo.toml/lib.rs are byte-equal.",
+      "next_action": "Do not change the independent bootstrap lock under binary-only update; report this specific RCX delta.",
+      "pin_location": [
+        {
+          "line": 26,
+          "path": "base/bootstrap/Cargo.toml",
+          "text": "redox-rt = { git = \"https://gitlab.redox-os.org/redox-os/relibc.git\", default-features = false }"
+        },
+        {
+          "line": 27,
+          "path": "base/bootstrap/Cargo.toml",
+          "text": "#redox-rt = { path = \"../../../relibc/source/redox-rt\", default-features = false }"
+        }
       ],
-      "selected_sha": "49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
-      "status": "SelectedRevisionMatchesRemote"
+      "private_module_sha256": "4af0858fa6a721f26a2800b597f449a52bcf268930a2e04cd9f282c5a82b8fd4",
+      "private_rcx_locations": [
+        {
+          "line": 213,
+          "path": "relibc/redox-rt/src/arch/x86_64.rs",
+          "text": "mov fs:[{tcb_sa_off} + {sa_saved_rcx}], rcx"
+        },
+        {
+          "line": 377,
+          "path": "relibc/redox-rt/src/arch/x86_64.rs",
+          "text": "push fs:[{tcb_sa_off} + {sa_saved_rcx}]"
+        },
+        {
+          "line": 512,
+          "path": "relibc/redox-rt/src/arch/x86_64.rs",
+          "text": "sa_saved_rcx = const offset_of!(SigArea, tmp_rcx),"
+        }
+      ],
+      "private_sha": "891876cea632d8b37756900dce0fc552e3c8038d",
+      "repository": "relibc",
+      "scope_comparison": {
+        "generic-rt": [],
+        "redox-rt": [
+          {
+            "path": "src/arch/x86_64.rs",
+            "private_sha256": "4af0858fa6a721f26a2800b597f449a52bcf268930a2e04cd9f282c5a82b8fd4",
+            "selected_sha256": "b9e5142221f43e0aead4d1cad0126021889d6850125c21980f5bf5d5d844f44d"
+          }
+        ]
+      },
+      "selected_module_sha256": "b9e5142221f43e0aead4d1cad0126021889d6850125c21980f5bf5d5d844f44d",
+      "status": "PendingDependency_BootstrapRCXPreservation"
+    },
+    "termion": {
+      "actual_unadopted_change": "Private src/event.rs adds SS3 ESC O H / ESC O F -> Home / End. The frozen Git68f SS3 branch recognizes only F1-F4; it rejects those Home/End sequences.",
+      "additional_actual_direct_termion": {
+        "identity": {
+          "checksum": "3669a69de26799d6321a5aa713f55f7e2cd37bd47be044b50f2acafc42c122bb",
+          "dependencies": [
+            "libc",
+            "libredox",
+            "numtoa",
+            "redox_termios"
+          ],
+          "name": "termion",
+          "source": "registry+https://github.com/rust-lang/crates.io-index",
+          "version": "4.0.5"
+        },
+        "locations": {
+          "checksum": {
+            "line": 537,
+            "path": "redox/recipes/core/extrautils/source/Cargo.lock"
+          },
+          "name": {
+            "line": 534,
+            "path": "redox/recipes/core/extrautils/source/Cargo.lock"
+          },
+          "source": {
+            "line": 536,
+            "path": "redox/recipes/core/extrautils/source/Cargo.lock"
+          },
+          "version": {
+            "line": 535,
+            "path": "redox/recipes/core/extrautils/source/Cargo.lock"
+          }
+        }
+      },
+      "consumed": {
+        "identity": {
+          "dependencies": [
+            "libc",
+            "libredox",
+            "numtoa",
+            "redox_termios"
+          ],
+          "name": "termion",
+          "source": "git+https://gitlab.redox-os.org/redox-os/termion.git#68f09b25b86281eb2238e86b6af2e32e26e96464",
+          "version": "4.0.5"
+        },
+        "locations": {
+          "name": {
+            "line": 546,
+            "path": "redox/recipes/core/extrautils/source/Cargo.lock"
+          },
+          "source": {
+            "line": 548,
+            "path": "redox/recipes/core/extrautils/source/Cargo.lock"
+          },
+          "version": {
+            "line": 547,
+            "path": "redox/recipes/core/extrautils/source/Cargo.lock"
+          }
+        }
+      },
+      "consumer_chain": "extrautils -> pager0.2.0 Git946a0bc8d1f03e0241f7141b2da40bf6335e7e22 -> termion Git68f09b25b86281eb2238e86b6af2e32e26e96464",
+      "direct_consumption_note": "extrautils direct termion4.0.5 is registry; the separate Git68f is used by pager. Both remain different from the frozen private fork. Other upstream4.0.6 backend changes are not mislabeled as a unique private feature.",
+      "next_action": "Keep both current lock identities; a separate authorized consumer update is required for private SS3 fix.",
+      "private_sha": "63fc2d18a14f1a54370bb0f301fcefaa994f4419",
+      "repository": "termion",
+      "selected_branch_location": [
+        {
+          "line": 154,
+          "path": "redox/build/podman/.cargo/git/checkouts/termion-942d164134258d00/68f09b2/src/event.rs",
+          "text": "Some(Ok(b'O')) => {"
+        }
+      ],
+      "selected_event_git_blob": "64c9b8adf9515f28096c06263b095e55142e0776",
+      "selected_event_sha256": "b0ee5a97ead20b015d41c2fc12b2efb18b647aa276531b7750021a49d6473437",
+      "selected_source_path": "redox/build/podman/.cargo/git/checkouts/termion-942d164134258d00/68f09b2",
+      "status": "PendingDependency_SS3HomeEnd"
     },
     "users": {
-      "consumer": "userutils",
-      "observed_private_sha": "4e8681d4749a87244f6ad054e4b07d9063167dda",
-      "pin_locations": [
-        "RedoxORG/userutils@4c96c6112d111a933a06768a0f41c954ab959623:Cargo.toml:58",
-        "RedoxORG/userutils@4c96c6112d111a933a06768a0f41c954ab959623:Cargo.lock:264-268"
+      "actual_unadopted_change": "AllUsers<auth::Full>::add_user with omitted builder.shell still defaults to file:/bin/ion in registry0.5.3; private fork changes fallback to file:/bin/bash.",
+      "caller_evidence": [
+        {
+          "line": 71,
+          "path": "userutils/src/bin/useradd.rs",
+          "text": "const DEFAULT_SHELL: &'static str = \"/bin/bash\";"
+        },
+        {
+          "line": 114,
+          "path": "userutils/src/bin/useradd.rs",
+          "text": "args.value_of(\"SHELL\").unwrap_or(DEFAULT_SHELL)"
+        },
+        {
+          "line": 189,
+          "path": "userutils/src/bin/useradd.rs",
+          "text": "let shell = selected_shell(&args);"
+        },
+        {
+          "line": 196,
+          "path": "userutils/src/bin/useradd.rs",
+          "text": ".shell(shell);"
+        }
       ],
-      "reason": "Consumer selects registry package, not the observed private users source revision. No source pin was changed.",
-      "selected_identity": "crates.io redox_users 0.5.3; checksum 60dc65c0ff1a7ae1294b0c67b9f14baf70b644404010370171787bfac1038fc0",
-      "status": "PendingDependency"
-    },
-    "zsh": {
-      "consumer": "zsh",
-      "pin_locations": [
-        "build-inputs/wip/shells/zsh/source-binding.toml",
-        "RedoxORG/redox@5300847f01479312b6d932735ee4ca49aefc9e14:recipes/wip/shells/zsh/recipe.toml"
+      "consumed": {
+        "identity": {
+          "checksum": "60dc65c0ff1a7ae1294b0c67b9f14baf70b644404010370171787bfac1038fc0",
+          "dependencies": [
+            "getrandom",
+            "libredox",
+            "rust-argon2",
+            "thiserror",
+            "zeroize"
+          ],
+          "name": "redox_users",
+          "source": "registry+https://github.com/rust-lang/crates.io-index",
+          "version": "0.5.3"
+        },
+        "locations": {
+          "checksum": {
+            "line": 266,
+            "path": "userutils/Cargo.lock"
+          },
+          "name": {
+            "line": 263,
+            "path": "userutils/Cargo.lock"
+          },
+          "source": {
+            "line": 265,
+            "path": "userutils/Cargo.lock"
+          },
+          "version": {
+            "line": 264,
+            "path": "userutils/Cargo.lock"
+          }
+        }
+      },
+      "current_consumer_effect": "userutils useradd explicitly chooses /bin/bash and passes .shell(shell); this CLI path does not rely on the missing library fallback. Do not report useradd default Bash as missing.",
+      "next_action": "Only a separately authorized dependency adoption changes library fallback; do not alter Cargo.lock here.",
+      "pin_location": [
+        {
+          "line": 58,
+          "path": "userutils/Cargo.toml",
+          "text": "redox_users = \"0.5\""
+        }
       ],
-      "reason": "Original recipe remains committed and unchanged; build config now adopts the frozen private source. No source repository pushed.",
-      "selected_identity": "private committed zsh archive + original Redox patch/source.script via local binding",
-      "selected_sha": "fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250",
-      "status": "SelectedFrozenPrivateSource"
+      "private_sha": "4e8681d4749a87244f6ad054e4b07d9063167dda",
+      "repository": "users",
+      "runtime": "NotVerifiedByThisReadOnlyReport",
+      "selected_crate_sha256": "60dc65c0ff1a7ae1294b0c67b9f14baf70b644404010370171787bfac1038fc0",
+      "selected_fallback_location": [
+        {
+          "line": 1161,
+          "path": "redox/build/podman/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/redox_users-0.5.3/src/lib.rs",
+          "text": "shell: builder.shell.unwrap_or(\"file:/bin/ion\".to_string()),"
+        }
+      ],
+      "selected_module_sha256": "9fcb1d3b3bf170dfe2096316780e81afca46c7f86a34d169e2107d637047a6ac",
+      "selected_vcs_sha": "de8f9f9c87411871903b778519c8b264afe1df5b",
+      "status": "PendingLibraryFallbackAdoption_CurrentUseraddDefaultCovered"
+    }
+  },
+  "historical_summaries": {
+    "update-20261021-01-previous": {
+      "original_checked_at": "2026-10-14T00:00:56.196645+00:00",
+      "values": {
+        "current_build_inputs": {
+          "cargo_cache": {
+            "locked_git_pins": 24,
+            "receipt_sha256": "e0317bf1b704934b0a79f535c00c9bf4d63a5bdbf08d94aef30dad1f32833546",
+            "registry_sources": 855,
+            "status": "PASS"
+          },
+          "configuration": {
+            "ARCH": "x86_64",
+            "CARGO_NET_OFFLINE": true,
+            "CI": 1,
+            "CONFIG_NAME": "server",
+            "PREFIX_BINARY": 1,
+            "REPO_OFFLINE": 1,
+            "consumer_REPO_BINARY": 1,
+            "jobs": 2,
+            "producer_REPO_BINARY": 0
+          },
+          "recipe_commit": "5300847f01479312b6d932735ee4ca49aefc9e14",
+          "recipe_repository": "RedoxORG/redox",
+          "root_cargo_lock_git_blob": "a8756af688243e850d853991bb565d2bf7663edb",
+          "root_cargo_lock_sha256": "6a14fd65958178a03c5e2ee1a8f4debb262c0c593ec82a4dab4c479443b59ae8",
+          "source_freeze_sha256": "867b5664dd4ce8a81363d0ae798da479250a92e60a38bb211eb999def2a77074",
+          "target": "x86_64-unknown-redox",
+          "toolchain_archives": {
+            "prefix/x86_64-unknown-redox/clang-install.tar.gz": {
+              "sha256": "fcf965f0a08fabb060a8fe8b96372ed95f3d8bff7c087b613a439a1cda003115",
+              "size": 184151121,
+              "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/clang-install.tar.gz"
+            },
+            "prefix/x86_64-unknown-redox/gcc-install.tar.gz": {
+              "sha256": "4bb5d1691d727546dc5064da794d798e9157cb85be8d463ebf7545bc01d9c362",
+              "size": 98465573,
+              "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/gcc-install.tar.gz"
+            },
+            "prefix/x86_64-unknown-redox/rust-install.tar.gz": {
+              "sha256": "ecfe0e260cc7544b0e29ec4f217eacd0e6802248cf70e2fb689ce87808bfa2bb",
+              "size": 175167112,
+              "url": "https://static.redox-os.org/toolchain/x86_64-unknown-linux-gnu/x86_64-unknown-redox/rust-install.tar.gz"
+            }
+          },
+          "toolchain_install_trees": {
+            "prefix/x86_64-unknown-redox/clang-install": "87b697d8dbd204dec1c2b609c03166407f8d75a5f1757aebaa89663e591ab35d",
+            "prefix/x86_64-unknown-redox/gcc-install": "5a93b469c9283fb736b9350111a46fe1d5e8947c7599c386646ea3b73f1a80b2",
+            "prefix/x86_64-unknown-redox/rust-install": "08865cf4cf5605982610a102f1ef80f2136b3d383c473521eca82858ea34e10f"
+          },
+          "toolchain_locks": {
+            "prefix/x86_64-unknown-redox/rust-install/lib/rustlib/src/rust/library/Cargo.lock": "02120dd57c4c5fd70c81fd92472681c8de5cc2dd78258276da37bb2253666061"
+          }
+        },
+        "dependency_checks": {
+          "object": {
+            "consumer": "relibc and build tool",
+            "observed_private_sha": "7270e3f0d06e5ef4c2b80abc6166d31f4ddf4fea",
+            "pin_locations": [
+              "RedoxORG/relibc@6348725d01525823f1edd59a0459f66b12e3e2b0:Cargo.toml:120-122",
+              "RedoxORG/relibc@6348725d01525823f1edd59a0459f66b12e3e2b0:Cargo.lock:339-341",
+              "RedoxORG/redox@5300847f01479312b6d932735ee4ca49aefc9e14:Cargo.lock:684-687"
+            ],
+            "reason": "Observed private object default-branch SHA is not either locked dependency. No independent object package was invented.",
+            "selected_identity": "relibc: official GitLab andypython/object branch new, SHA da781336d847df0deb897ed1162785f6c2057c56; build tool: crates.io object 0.38.1",
+            "status": "PendingDependency"
+          },
+          "uefi": {
+            "consumer": "bootloader",
+            "pin_locations": [
+              "RedoxORG/bootloader@70c5dff98aa750b31e0797686d92ba9ad331f29f:Cargo.toml:30-36",
+              "RedoxORG/bootloader@70c5dff98aa750b31e0797686d92ba9ad331f29f:Cargo.lock:245-260"
+            ],
+            "selected_sha": "49c5b50b8e5c2bdee0f8b9e2b11014dddb16156f",
+            "status": "SelectedRevisionMatchesRemote"
+          },
+          "users": {
+            "consumer": "userutils",
+            "observed_private_sha": "4e8681d4749a87244f6ad054e4b07d9063167dda",
+            "pin_locations": [
+              "RedoxORG/userutils@4c96c6112d111a933a06768a0f41c954ab959623:Cargo.toml:58",
+              "RedoxORG/userutils@4c96c6112d111a933a06768a0f41c954ab959623:Cargo.lock:264-268"
+            ],
+            "reason": "Consumer selects registry package, not the observed private users source revision. No source pin was changed.",
+            "selected_identity": "crates.io redox_users 0.5.3; checksum 60dc65c0ff1a7ae1294b0c67b9f14baf70b644404010370171787bfac1038fc0",
+            "status": "PendingDependency"
+          },
+          "zsh": {
+            "consumer": "zsh",
+            "pin_locations": [
+              "build-inputs/wip/shells/zsh/source-binding.toml",
+              "RedoxORG/redox@5300847f01479312b6d932735ee4ca49aefc9e14:recipes/wip/shells/zsh/recipe.toml"
+            ],
+            "reason": "Original recipe remains committed and unchanged; build config now adopts the frozen private source. No source repository pushed.",
+            "selected_identity": "private committed zsh archive + original Redox patch/source.script via local binding",
+            "selected_sha": "fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250",
+            "status": "SelectedFrozenPrivateSource"
+          }
+        },
+        "last_check": {
+          "applicable_issue_references": [
+            "RedoxORG/workspace#10"
+          ],
+          "binary_publication": "PASS",
+          "build": "PASS",
+          "cadence": "Monday 05:55 Asia/Singapore",
+          "checked_at": "2026-10-14T00:00:56.196645+00:00",
+          "effective_changed_packages": [
+            "base",
+            "bash"
+          ],
+          "independent_review": "PASS",
+          "inventory_pages": [
+            13,
+            0
+          ],
+          "package_anchor_commit": "a9a369b5576734915cc58b217b430192c42b3da5",
+          "payload_commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
+          "pending_dependencies": [
+            "users",
+            "object"
+          ],
+          "retained_unchanged_packages": 37,
+          "runtime": "PASS within stated minimum coverage",
+          "source_heads_requeried": false,
+          "successful_inputs_advanced": [
+            "base",
+            "bash"
+          ],
+          "tooling_only_changes": [
+            "bootloader",
+            "relibc",
+            "uefi"
+          ],
+          "trigger": "manual",
+          "up_to_date_private_packages": [
+            "installer",
+            "userutils",
+            "orbterm",
+            "zsh",
+            "bootloader",
+            "relibc"
+          ]
+        },
+        "last_consumer_verification": {
+          "bash_execution": "PASS",
+          "boot_smoke": "PASS",
+          "date": "2026-10-12",
+          "freshness": "FreshnessUnknown",
+          "make_all": "PASS",
+          "package_sha": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
+          "receipt": "consumer-verification.json",
+          "source_sha": "01efa53d3023765b189bb8d7cfbbf98dc6d5e8f0",
+          "success_baselines_advanced": 0
+        },
+        "policy": "BinaryUpdate-v1",
+        "run": {
+          "actual_build": "PASS",
+          "artifact_commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
+          "binary_publication": "PASS",
+          "candidate_index_sha256": "e4cebd1ea276b002410783e81fa9b2310ab75d0fb8f1be100b33f89dcee4c2b0",
+          "candidate_packages": [
+            "base",
+            "bash"
+          ],
+          "candidate_signature_payload": "PASS",
+          "checked_at": "2026-10-14T00:00:56.196645+00:00",
+          "independent_review": "PASS: latest one commit / eleven files; exact historical ledger preserved",
+          "independent_review_sha256": "cee643080ab617869cea0743f2e6cf6b79ec56f146339477a491ef57391c0292",
+          "inventory_end_confirmed": true,
+          "inventory_pages": [
+            13,
+            0
+          ],
+          "keyboard_host_tests": 14,
+          "normal_image": "PASS",
+          "normal_runtime": "PASS",
+          "optional_keyboard_fixture": "FAIL: KEYBOARD_LOGIN timeout; no cases entered; Caps/Num guest cases NotRun",
+          "package_branch": "main",
+          "package_remote_sha": "a9a369b5576734915cc58b217b430192c42b3da5",
+          "package_repository": "RedoxORG/redox-pkgs",
+          "receipts_sha256": {
+            "build-receipt.json": "a09a2b61b5c727f967f8a355dac88af852c814a989d6c0b2127f640ab5287ea0",
+            "candidate-validation.json": "543a744109c06f503e0f662a4f45a642f71526549fd628b929deadcfb235c386",
+            "image-installed-binding.json": "bca7a5a527d67c95128d698017e54b1a6b55f8cafdc07b61985fd1b671e102c0",
+            "image-receipt.json": "5cc2f7ca2a565eae059d5355a5479de0a4ffd79ab88d6c40c93e199df8aec835",
+            "initfs-inputd-binding.json": "edf6ebd1868381b9ac6a3de7488e782abd76c5efc8dad117d490a38c2423964b",
+            "keyboard-host-tests.json": "2eb21a00e9802459a504dadc07d877169bdd94aceed572c2a2784cadb8b893ab",
+            "keyboard-test-adaptation.json": "479dbf48663bacfacbe5cb709ddb47c9adf36753b104654ba355ebfafb1c5807",
+            "normal-qemu.json": "430b4842d04c23f12dadd43209c1827306c35bb7e7c3c30162d1b6ff5e5c41bc",
+            "postflight.json": "1a7ffb34263fec794919f353e64244e3da3986add8add19152e1e47b7ea0d403",
+            "preflight.json": "1a7ffb34263fec794919f353e64244e3da3986add8add19152e1e47b7ea0d403"
+          },
+          "remote_readback": {
+            "checked_at": "2026-10-14T00:11:54.090389+00:00",
+            "commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
+            "file_count": 12,
+            "method": "GitHub immutable Git blob API; decoded bytes match committed object, main exact SHA checked before/after"
+          },
+          "source_authority": "one startup freeze",
+          "successful_inputs_advanced": [
+            "base",
+            "bash"
+          ],
+          "trigger": "manual requested run"
+        },
+        "verification": {
+          "initfs_inputd": {
+            "initfs_sha256": "2f9d94fdcee803f30e74085301e01bd970519a29b32f8099edaf273c30de7c02",
+            "inode": 42,
+            "inputd_sha256": "1474905bb7e6d33bdaa86a5ec32431a068af86610d393845b164a351ada97ce3",
+            "matches": "base normal build/initfs/bin/inputd",
+            "path": "bin/inputd",
+            "size": 699344,
+            "source_sha": "b4fe9e50d4a4500387bf7d76f7f50df669224b1c",
+            "status": "PASS"
+          },
+          "installed_core_files": {
+            "etc/bash.bashrc": {
+              "matching_packages": [
+                "bash"
+              ],
+              "sha256": "1ea027192a75b2cb9223406aefa319b589cc0ecc8f86f65dc475c2ec02bcd21e"
+            },
+            "usr/bin/bash": {
+              "matching_packages": [
+                "bash"
+              ],
+              "sha256": "4ef961410a82d130863f1fd91f5b9310689fd3f78f32436ff4e3ba1da38fb7ea"
+            },
+            "usr/bin/inputd": {
+              "matching_packages": [
+                "base"
+              ],
+              "sha256": "e36161bd7f0ec5ce1134449abe0d21471c524b6d4f5ecab55a38aeebdb47b29f"
+            },
+            "usr/bin/login": {
+              "matching_packages": [
+                "userutils"
+              ],
+              "sha256": "24a939b20c4a267b678167e722ac64477a0c653a8241b4395ae0f2df6d952809"
+            },
+            "usr/lib/boot/bootloader.efi": {
+              "matching_packages": [
+                "bootloader"
+              ],
+              "sha256": "8be5311c915d25367673c26810abe81573ff7dfc3da7c7423c5bc3345b408f51"
+            },
+            "usr/lib/boot/initfs": {
+              "matching_packages": [
+                "base"
+              ],
+              "sha256": "2f9d94fdcee803f30e74085301e01bd970519a29b32f8099edaf273c30de7c02"
+            },
+            "usr/lib/libc.so": {
+              "matching_packages": [
+                "relibc"
+              ],
+              "sha256": "fcea824908d073b91e530840b8f0c42ec939da419dceffe723bf34f874ebf5ee"
+            }
+          },
+          "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
+          "qemu": {
+            "checks": {
+              "background_wait": "Passed",
+              "bash_version": "5.3.0(1)-release",
+              "identity": "uid=0(root) gid=0(root)",
+              "normal_boot": "Passed",
+              "root_login": "Passed"
+            },
+            "command_sha256": "885d43d685a26b18633df52632d655037cbdc2bbfe5eb5de0275da9e0bbfbb8f",
+            "image_sha256": "8ae8346bfb68df9664bcb3b6a6ab0ef96a599ebac16ad76d934a2cda2059c890",
+            "publication": "PASS: matching archive bytes published at 5f29a6ed3b11ae242e6a152356182317175bca97",
+            "status": "Passed"
+          },
+          "relibc_abi": {
+            "added_symbols": [],
+            "changed_headers": [
+              "math.h"
+            ],
+            "exports_equal": true,
+            "new_archive_sha256": "95cf656d9f4bb2582e067eed8300cafa2f63e6bc9c3668096990ae34dc498f46",
+            "new_exports": 3252,
+            "old_archive_sha256": "5c67560f455f76507c77f4b122dc51d4624fcaa6c02119f4037148d2ddad03ac",
+            "old_exports": 3252,
+            "old_signature": "PASS",
+            "removed_symbols": []
+          },
+          "signature_tamper_negative": {
+            "candidate_unchanged": true,
+            "case": "signed header byte tampered",
+            "extract_exit": 1,
+            "status": "PASS"
+          }
+        }
+      }
     }
   },
   "index_sha256": "fbbf9b945d337d7ec9e2f4ff1e6d068b30905a4299df95a706d07bd60d48b671",
@@ -828,60 +1614,60 @@
     }
   },
   "last_check": {
-    "applicable_issue_references": [
-      "RedoxORG/workspace#10"
+    "acceptance_limitations": [
+      "Existing getty bulk-input EAGAIN defect; paced case transport only",
+      "No full interactive, networking, persistence or fault-injection acceptance"
     ],
-    "binary_publication": "PASS",
-    "build": "PASS",
-    "cadence": "Monday 05:55 Asia/Singapore",
-    "checked_at": "2026-10-14T00:00:56.196645+00:00",
-    "effective_changed_packages": [
+    "binary_publication": "Pending",
+    "build_sha": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+    "candidate_packages": [
       "base",
-      "bash"
-    ],
-    "independent_review": "PASS",
-    "inventory_pages": [
-      13,
-      0
-    ],
-    "package_anchor_commit": "a9a369b5576734915cc58b217b430192c42b3da5",
-    "payload_commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
-    "pending_dependencies": [
-      "users",
-      "object"
-    ],
-    "retained_unchanged_packages": 37,
-    "runtime": "PASS within stated minimum coverage",
-    "source_heads_requeried": false,
-    "successful_inputs_advanced": [
-      "base",
-      "bash"
-    ],
-    "tooling_only_changes": [
-      "bootloader",
-      "relibc",
-      "uefi"
-    ],
-    "trigger": "manual",
-    "up_to_date_private_packages": [
+      "coreutils",
+      "extrautils",
       "installer",
+      "kernel",
+      "mandoc",
+      "redoxfs",
+      "relibc",
       "userutils",
-      "orbterm",
-      "zsh",
-      "bootloader",
-      "relibc"
-    ]
+      "uutils"
+    ],
+    "consumer": "Pending",
+    "freshness_status": "FreshnessUnknown",
+    "new_packages": 1,
+    "producer_runtime": "PASS",
+    "producer_tests": {
+      "BASH_CHILD": 0,
+      "CHILD_WAIT": 0,
+      "CURL": 0,
+      "FIND_XARGS": 0,
+      "GIT": 0,
+      "GREP": 0,
+      "HOSTNAME": 0,
+      "LOOPBACK_REFUSED": 0,
+      "MANDOC": 0,
+      "MAN_PAGER_FAILURE": 0,
+      "PS": 0,
+      "SSH": 0,
+      "SYMLINK_PATH": 0,
+      "TOUCH": 0,
+      "TR": 0,
+      "TR_CLOSED": 0,
+      "TZ": 0,
+      "UPTIME": 0,
+      "WGET": 0,
+      "WHOAMI": 0,
+      "WHOAMI_CLOSED": 0
+    },
+    "replaced_packages": 9,
+    "retained_unchanged_packages": 46,
+    "run_id": "update-20261021-01",
+    "status": "PendingPublication"
   },
   "last_consumer_verification": {
-    "bash_execution": "PASS",
-    "boot_smoke": "PASS",
-    "date": "2026-10-12",
-    "freshness": "FreshnessUnknown",
-    "make_all": "PASS",
-    "package_sha": "074ad496dfe0d920c194e330a2fef7c9f04deb9d",
-    "receipt": "consumer-verification.json",
-    "source_sha": "01efa53d3023765b189bb8d7cfbbf98dc6d5e8f0",
-    "success_baselines_advanced": 0
+    "prior_result": "historical_summaries/update-20261021-01-previous",
+    "run_id": "update-20261021-01",
+    "status": "Pending"
   },
   "manual_sync_20261014_03": {
     "artifact_commit": "fb01a6592b113900c9412a3b961c5db8a1f92fea",
@@ -2862,6 +3648,62 @@
           "signature_payload": "PASS"
         }
       },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "7e75ff683fd4231eda00a2dfaa26ac364f95f697ea2c13ad4cf4031110b96ad7",
+          "metadata_sha256": "c1769ae42c345c67b0896d1fa99ef6bff7c9b7b53eb4fc88f27370ea63186976"
+        },
+        "candidate_effective_input_id": "8b1684db2ca136ae5b5e7e32303d1656c115cdbd4cf7d51ca7d35e7dec0d511b",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-02.json",
+          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
+        },
+        "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
+        "source": {
+          "effective_input_id": "8b1684db2ca136ae5b5e7e32303d1656c115cdbd4cf7d51ca7d35e7dec0d511b",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/base-MIT.txt",
+              "sha256": "cb46b697c3fd9d27d7bfe1b1ad48f8a58a284984504c6eb215ae2164538df7cb"
+            },
+            {
+              "path": "licenses/Dina.txt",
+              "sha256": "69332ab619c96f9a2ecf5f32dc75dc4c2310de5511186f80b231658d2ed14226"
+            },
+            {
+              "path": "licenses/run-20261021/base/ixgbed-LICENSE",
+              "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "611c61cc477af746f73e602ba6eb05181b97d43c",
+            "private_source": {
+              "repository": "base",
+              "sha": "611c61cc477af746f73e602ba6eb05181b97d43c",
+              "tree": "4e778758e99320e430e573a9f7006adb0c281cc9"
+            }
+          },
+          "recipe": "recipes/core/base/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "5a8520bd762c84cbd8f65b501a76fea58741b314",
+          "recipe_pin": null,
+          "source_sha": "611c61cc477af746f73e602ba6eb05181b97d43c",
+          "source_support_identities": [
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/base/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "b8356c9949efe0b2ed1772d027f1e79a753f7f9ca86653339074be395e0ece2b"
+            }
+          ],
+          "source_url": "https://github.com/RedoxORG/base"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_sha256": "c718c93d76a977828f1626be0b3a3accad9a8af4c147ea34048fc285c18d46ec",
         "metadata_sha256": "9a20f9085ab943d80d09f85c579468b95f181a22643d054831df618b90959c42",
@@ -4519,6 +5361,80 @@
           "signature_payload": "PASS"
         }
       },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "84502fb5d0ad4acd471df9a882676c075d350fb904581eba93f9466f39194a14",
+          "metadata_sha256": "2d8ec39d6c9b841accd924e3e53229ab31ac407ead72cd9e1e6484ddac40d60e"
+        },
+        "candidate_effective_input_id": "a17911c3b68a044596a5d41ce7eecadcfce7bd4a128854a68e9c506e240d9280",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-02.json",
+          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
+        },
+        "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
+        "source": {
+          "effective_input_id": "a17911c3b68a044596a5d41ce7eecadcfce7bd4a128854a68e9c506e240d9280",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/coreutils/LICENSE",
+              "sha256": "f540830b0b1aa93ebdc47c73dc41b8bbbabda4c7ec937998b2bc8ffafceafd66"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "575a46d3b624ad9cd222c9e3250073e9269c3462",
+            "tree_sha256": "7331b52c1551ed39633a1a8d533f4c234c77bd25cbd3a80b85323cc07d407acf"
+          },
+          "recipe": "recipes/core/coreutils/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "289f10b1d4453f8a4b8f2d976483564ec01ba403",
+          "recipe_pin": null,
+          "source_sha": "575a46d3b624ad9cd222c9e3250073e9269c3462",
+          "source_support_identities": [
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/coreutils/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "735024a1fb9bbe8bdf888e3f7f6398b5ba59a6b79a3f0fc0735fef45b802807b"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/coreutils/tests/uptime-clock.c",
+              "repository": "RedoxORG/redox",
+              "sha256": "1c3843b5894ea423ea6ce773d244edf9beaf055deebc4c51295d4be983a965f7"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/coreutils/tests/which.sh",
+              "repository": "RedoxORG/redox",
+              "sha256": "3d8aed8ba549ad60c5818d919111a8c7528911ef4a98c8753f521bcbc81ed89b"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/coreutils/unused-users.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "00efe102636b617d53bf9792e12dd003ff64aad1fec4f940b4bfb2264b8b9289"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/coreutils/uptime.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "09937e60cc444359a2c42bfc56add84a5f912f9024bf3f24cc9a5b6738b4728f"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/coreutils/which.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "626f3cc9a3ad02cc53886753f1395b1c45cb87d309ee4e4ed55340a0fb10ab69"
+            }
+          ],
+          "source_url": "https://gitlab.redox-os.org/redox-os/coreutils.git"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_sha256": "203f65c8e75a4552ccfc9d666591318927a73f4aced174768706da90cc83b569",
         "metadata_sha256": "4fa28a9a8ad54096d694e0ff75c3586ade0cb481922f29a76c43cb283f48dae0",
@@ -4843,6 +5759,50 @@
           "remote_bytes": "PASS",
           "signature_payload": "PASS"
         }
+      },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "404fb07148726bf7385be8656cdee4a8d7e961328f108524c169105be092e1d4",
+          "metadata_sha256": "6b8261abbd5bbf81aa45936f5fc46fcb4ce418522756e4eb3fe9ce8d5b8b1900"
+        },
+        "candidate_effective_input_id": "a87516992f427cb6888715c299b0b1fc84a49f34805414e359e6454598666800",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-02.json",
+          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
+        },
+        "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
+        "source": {
+          "effective_input_id": "a87516992f427cb6888715c299b0b1fc84a49f34805414e359e6454598666800",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/extrautils/LICENSE.md",
+              "sha256": "6f43872bc11f3249878aa63b58b867cb99f128fd5c48f63bec5629bc05229b35"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
+            "tree_sha256": "3ad702b2db2aaf677eb6d76e591a476371b075794ce99d70dd2dabc1cbdf9c4c"
+          },
+          "recipe": "recipes/core/extrautils/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "e6146f48f9862f6b33b4e4c8ede1ecacdba5c434",
+          "recipe_pin": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
+          "source_sha": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
+          "source_support_identities": [
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/extrautils/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "bdbe8520ecff2c5b678baa859f531e88f11a28b209f5f6248790d7057b1a1dcd"
+            }
+          ],
+          "source_url": "https://gitlab.redox-os.org/redox-os/extrautils.git"
+        },
+        "status": "PendingPublication"
       },
       "published_artifact": {
         "archive_sha256": "23882cd0c4ca64a615844d2dd12b162f32f4e10b06548affd54692fce45be944",
@@ -7752,6 +8712,55 @@
           "signature_payload": "PASS"
         }
       },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "69139a75c7bdecf096e934762829767ffbd7c9081d3c8870c0237a8ee86023d3",
+          "metadata_sha256": "9be9bed5ade8b5490e7fb37482ca15a1cdb425f0eb56edb98631d220c16e7d5b"
+        },
+        "candidate_effective_input_id": "9adffdf3fffc20296e0893d2870f02f614922851c23445f4f4335d0ab89f4646",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-02.json",
+          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
+        },
+        "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
+        "source": {
+          "effective_input_id": "9adffdf3fffc20296e0893d2870f02f614922851c23445f4f4335d0ab89f4646",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/base-MIT.txt",
+              "sha256": "cb46b697c3fd9d27d7bfe1b1ad48f8a58a284984504c6eb215ae2164538df7cb"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "5d822e6a9fae1f4b60e8cd33fd757972dcbb6a41",
+            "private_source": {
+              "repository": "installer",
+              "sha": "5d822e6a9fae1f4b60e8cd33fd757972dcbb6a41",
+              "tree": "9e2d40acd7337d4cfeecc649de7b2019acc83c36"
+            },
+            "tree_sha256": "91a9cd182f976be62754216fb99e7c33452c450af0e88953dbfd1b38359278fc"
+          },
+          "recipe": "recipes/core/installer/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "0235382117eea7ccb7ffc8793b73ee35be56d358",
+          "recipe_pin": null,
+          "source_sha": "5d822e6a9fae1f4b60e8cd33fd757972dcbb6a41",
+          "source_support_identities": [
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/installer/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "161b3e65bb3fc2bdebc5dbbbc75cc398d9fb39e84e08b5478646f4c2f58590cb"
+            }
+          ],
+          "source_url": "https://github.com/RedoxORG/installer"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_blake3": "3adb5d94dbdb4f69df41b4c13891b174c3c26324a89d1f4e3ed97c1dce4bebeb",
         "archive_sha256": "b0fe6797741e89073f091c769b9036c2553c3de4f1da61fc34af3240d3055ce7",
@@ -8001,6 +9010,55 @@
           "remote_bytes": "PASS",
           "signature_payload": "PASS"
         }
+      },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "b20cae46ddcf41ce8c0d7828633fb2831485d9cfa3559ac595cb2da99fab781f",
+          "metadata_sha256": "d95fe9bc47758df871fb116505ae790609f4288b0edaf0f7e5ad8b0df8e1a137"
+        },
+        "candidate_effective_input_id": "bcd9875b0307684cf3f3c9e8952d428860985ccc7607a97e7215d9fab90c90b7",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-02.json",
+          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
+        },
+        "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
+        "source": {
+          "effective_input_id": "bcd9875b0307684cf3f3c9e8952d428860985ccc7607a97e7215d9fab90c90b7",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/kernel/LICENSE",
+              "sha256": "9f6f8fa58b09a2f787ca904671df2f07a53e440f8a5198f9ac469074e7ab7dcf"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "93a99a27fb3c5dd5a8804c3c102250f480525b37",
+            "private_source": {
+              "repository": "kernel",
+              "sha": "93a99a27fb3c5dd5a8804c3c102250f480525b37",
+              "tree": "34efc19d31cc26b2d055d6092da8032967a5258a"
+            },
+            "tree_sha256": "e72218266e8a8a7271a52b04e0d2f76f1f2decf4f0b00fcb85c570b094d448ed"
+          },
+          "recipe": "recipes/core/kernel/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "6c07b3626d3e064149602497deb1a1ebe83bb976",
+          "recipe_pin": null,
+          "source_sha": "93a99a27fb3c5dd5a8804c3c102250f480525b37",
+          "source_support_identities": [
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/kernel/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "078de6bd7b837a4d05d36bc8fc4f98cc8563442971fa7fa85e2c74d85db8df54"
+            }
+          ],
+          "source_url": "https://github.com/RedoxORG/kernel"
+        },
+        "status": "PendingPublication"
       },
       "published_artifact": {
         "archive_sha256": "6fc4741405c92e3f6aca6e69d3e5b59b1730ab462e966829fa0e9377aa390b57",
@@ -8789,6 +9847,64 @@
       },
       "published_effective_input_id": "56d8baeb5295e69e2487d7e169aa7f837e00593d86e32dac3e4fffe1ab53b0b0",
       "status": "UpToDate"
+    },
+    "mandoc": {
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "8973d812eee5bdc4af2f37ac4d2c6668c26760e72a32f9d10ab8fdb036733a03",
+          "metadata_sha256": "8c2bc20a411716626f8111afaded184bbee62dddfd8b6a8ba6e2c5afd86ca419"
+        },
+        "candidate_effective_input_id": "3a5bf7189864159331f7fb3a15e3d072072b68d42437a7a4c48bfa4e557ac3dd",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-02.json",
+          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
+        },
+        "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
+        "source": {
+          "effective_input_id": "3a5bf7189864159331f7fb3a15e3d072072b68d42437a7a4c48bfa4e557ac3dd",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261021/mandoc/LICENSE",
+              "sha256": "d9bb86f1eb104753647b2d96d2fdfd6644fb9d1f8caad8afba71ecbe56b038a6"
+            }
+          ],
+          "prepared_source": {
+            "archive_sha256": "8bf0d570f01e70a6e124884088870cbed7537f36328d512909eb10cd53179d9c",
+            "tree_sha256": "49829c9b7c6f2811fa0452f314c52427c364a0d19d6342c1ed8f660f2a9a5cb7"
+          },
+          "recipe": "recipes/tools/mandoc/recipe.toml",
+          "recipe_blake3": "0e1e812610cea4d9a254d161599466abccd3688568f19baeff1c2ed0dae586e4",
+          "recipe_blob": "17d3f2f0dd5f2932a03feaace4ebed2a93478907",
+          "recipe_pin": null,
+          "source_sha": null,
+          "source_support_identities": [
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/tools/mandoc/configure.local",
+              "repository": "RedoxORG/redox",
+              "sha256": "414e4e054c4684ea439d51780bdbf178fc1c9976d63328b4d4538a495a8478f1"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/tools/mandoc/pager-status.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "f4b5ee5056b447f3c1835e289e6a528fbfa7c9742995e9bad12f61daf994f5b2"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/tools/mandoc/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "d7496debbc8ecd23539e55970d24ba8f7ebc3fad45cc30ebe26fffc3aaadc1be"
+            }
+          ],
+          "source_url": "https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz"
+        },
+        "status": "PendingPublication"
+      }
     },
     "nano": {
       "baseline_status": "Known",
@@ -9980,6 +11096,80 @@
           "signature_payload": "PASS"
         }
       },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "d0bd5ca87afcd20460dac64320110f63e2d6866556a0bbe9de2d81cb6043dddd",
+          "metadata_sha256": "c2ff616c83231a77ded2fe4b9e8f9ad64ab736c13f79dd88c5431d13179f785f"
+        },
+        "candidate_effective_input_id": "136fc9a23269003d3e61c490c8a9d01d39ec130701693c6dfb7f176b87433279",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-02.json",
+          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
+        },
+        "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
+        "source": {
+          "effective_input_id": "136fc9a23269003d3e61c490c8a9d01d39ec130701693c6dfb7f176b87433279",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/redoxfs/LICENSE",
+              "sha256": "93feb465f692bf21fe310c2d7d2e906982950222897304ddddbcdab873cd11b8"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "b87b0976ee122036b2ec040159b890e1e06ca139",
+            "tree_sha256": "cc798cf8633dd21cd1907e89d04acd3542435d13a18f0563bc8ddd2a2ea48718"
+          },
+          "recipe": "recipes/core/redoxfs/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "2934bb4e1570becfc4a2f9471121f68afa7478a1",
+          "recipe_pin": "b87b0976ee122036b2ec040159b890e1e06ca139",
+          "source_sha": "b87b0976ee122036b2ec040159b890e1e06ca139",
+          "source_support_identities": [
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/redoxfs/directory-fd.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "040b538435050f8dcd5f6e552a88366d3a63c92e1bf6c43e0b2f305471bb8311"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/redoxfs/fstype.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "d0c699dba3b6d619641dfeba7776bfb23c12fdc51326565a18106d32f035563d"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/redoxfs/inode-stats.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "bfc4cf8f0b5588bcb01d84445f84e68dcdf0870bc1ac130f57dda0a2eac822d2"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/redoxfs/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "1c3287061bd2426cf1b07e97c50010d4943d843b821424b9af6de216bedb6722"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/redoxfs/scheme-0.12.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "34105db7ece98b962360d90cfdeba21fd6a2d7b78ebb6be212f4692d86badb68"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/redoxfs/touch.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "26c62a5acf510411638aa9beacbc79330f16b6f192abc1111d5ca963b5c58b47"
+            }
+          ],
+          "source_url": "https://gitlab.redox-os.org/redox-os/redoxfs.git"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_sha256": "7eb2ae83b5f505910188cf5d8a83f12f8e51d753035a878176380c5996b0893c",
         "metadata_sha256": "9d39eb65f127bbc372e8db5bb1cb6d4bc6315bc17626140c778afc64552cbdfa",
@@ -10729,6 +11919,54 @@
           "remote_bytes": "PASS",
           "signature_payload": "PASS"
         }
+      },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "ad820774d771d062756891fe45d3b50338fe945c1b4e04a7485214600bd95d0c",
+          "metadata_sha256": "6f208196f6832128fde83d6dcfd190ed1f39441341bfc3512e76ef9745404846"
+        },
+        "candidate_effective_input_id": "e83368c21228d0b9d5f32f757787834aa49d08f0f81e37640997616263c37eca",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-02.json",
+          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
+        },
+        "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
+        "source": {
+          "effective_input_id": "e83368c21228d0b9d5f32f757787834aa49d08f0f81e37640997616263c37eca",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/relibc/LICENSE",
+              "sha256": "1bc13112bee203de03bb45dfebc20e5338a20349a5935c16b7222c87fd0c7609"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "891876cea632d8b37756900dce0fc552e3c8038d",
+            "private_source": {
+              "repository": "relibc",
+              "sha": "891876cea632d8b37756900dce0fc552e3c8038d",
+              "tree": "0056c071c448574d3f93296cc6313d4ae1081db4"
+            }
+          },
+          "recipe": "recipes/core/relibc/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "8b164bb83749b5acd38dac12cf552b116dcec977",
+          "recipe_pin": null,
+          "source_sha": "891876cea632d8b37756900dce0fc552e3c8038d",
+          "source_support_identities": [
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/relibc/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "cf0fc0ef0c1ba8680e783292e09e51d43f0b63dded680fa4017b289f215cf2dc"
+            }
+          ],
+          "source_url": "https://github.com/RedoxORG/relibc"
+        },
+        "status": "PendingPublication"
       },
       "published_artifact": {
         "archive_sha256": "8c8fc14f332b68010fc0b43fe1b39e0a536c78b4ac634134b2053fee0bcdbc81",
@@ -11541,6 +12779,54 @@
           "signature_payload": "PASS"
         }
       },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "e37668913485078e5adaad9d0ee865295173165cbee7d134dd5dde80558a43fb",
+          "metadata_sha256": "21fed6f7a692bca3d2fab77140995c06a158979a3daa4ed0205c88a9ae81a0e7"
+        },
+        "candidate_effective_input_id": "bdce8d07a2238bcd19a376b6ecc0b5a64d0e4d3c8157b8427a1de55386798461",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-02.json",
+          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
+        },
+        "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
+        "source": {
+          "effective_input_id": "bdce8d07a2238bcd19a376b6ecc0b5a64d0e4d3c8157b8427a1de55386798461",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/userutils/LICENSE",
+              "sha256": "8aa7554843e5bc19ce79886eda72466214ed56d9c5d37b1fa2be591975ee2799"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "7ad269c65a40e572388926a5bdc7f9d12bbb55d9",
+            "private_source": {
+              "repository": "userutils",
+              "sha": "7ad269c65a40e572388926a5bdc7f9d12bbb55d9",
+              "tree": "918ccc6c517794f350f60200da41a0b7b99bfd95"
+            }
+          },
+          "recipe": "recipes/core/userutils/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "e02d28a1e5b8acdb287c331c0f39b36ee9a89043",
+          "recipe_pin": null,
+          "source_sha": "7ad269c65a40e572388926a5bdc7f9d12bbb55d9",
+          "source_support_identities": [
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/userutils/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "ae08f740430d0a650755317ee734fc8efd23de104be30bbace0c5ee744472799"
+            }
+          ],
+          "source_url": "https://github.com/RedoxORG/userutils"
+        },
+        "status": "PendingPublication"
+      },
       "published_artifact": {
         "archive_sha256": "fb540e7662bf28f95dd0a1ec19103678400ea3a849b94f0685f96bdc98a08252",
         "metadata_sha256": "331af2d5aa5cb6cef4733dc3400fb867a66c1e70ee27682a77e036e38f90d8c6",
@@ -11669,6 +12955,80 @@
           "remote_bytes": "PASS",
           "signature_payload": "PASS"
         }
+      },
+      "pending_publication": {
+        "candidate_artifact": {
+          "archive_sha256": "04299d14c1f364bc0d81a037d84255d7fc3bbe9145e39cc1de46e69b380f99d6",
+          "metadata_sha256": "91db5ac749b61f08ef8329c63d64cbd0c73164641359ddc26b937dce96c39d05"
+        },
+        "candidate_effective_input_id": "d9ca8b098abeb72ad9a4b025529e5f6a71c96f3b77fb193776d28fafe0b29224",
+        "freshness_status": "FreshnessUnknown",
+        "publication": "PendingPublication",
+        "runtime_evidence": {
+          "receipt": "normal-runtime-02.json",
+          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
+        },
+        "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
+        "source": {
+          "effective_input_id": "d9ca8b098abeb72ad9a4b025529e5f6a71c96f3b77fb193776d28fafe0b29224",
+          "installed_license_notices": [],
+          "kind": "source-build",
+          "license_references": [
+            {
+              "path": "licenses/run-20261020/uutils/LICENSE",
+              "sha256": "29953405eaa3dcc41c37d1621d55b6a47eee93e05613e439e73295029740b10c"
+            }
+          ],
+          "prepared_source": {
+            "git_revision": "bf65901e1ed82963436844c2cf8e796ba9158c65",
+            "tree_sha256": "3fd692f266bb033282ce2ccc7ba072dba934ad602998a4f484125111633e2a7a"
+          },
+          "recipe": "recipes/core/uutils/recipe.toml",
+          "recipe_blake3": null,
+          "recipe_blob": "fec47eedd68c97d4c6ef9273288366008bad7549",
+          "recipe_pin": "0.11.0",
+          "source_sha": "bf65901e1ed82963436844c2cf8e796ba9158c65",
+          "source_support_identities": [
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/uutils/df.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "6d4c2345ed2d17d81855668bf349a8e67f7568cb175940d33cb4a40328228a7f"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/uutils/recipe.toml",
+              "repository": "RedoxORG/redox",
+              "sha256": "55d27f0ee7e6f505d56e9d2c63ec3b1fe68e47bf730dfbb1918df3931f2cf64f"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/uutils/redox.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "416b7cc02e704af6dc575bce4ffc1ff239fbd0a97c8a14ff95dadbdbd9a228d3"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/uutils/touch.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "0369ae4e635fdf4ef998307936e9a43e5b4feb044b4a34111bdf8c648ea0480d"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/uutils/tr.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "5585510fe85da0a75d13d68e12a0df9782c06a1e724667074dd80e0902c4f03e"
+            },
+            {
+              "commit": "02481fd0a52710e04b9553b9c86c8fc099da955e",
+              "path": "recipes/core/uutils/whoami.patch",
+              "repository": "RedoxORG/redox",
+              "sha256": "23298329aa8769fce08a00a52d8cc4e0907abbdd1c6de6e6b266724a7ba69c9d"
+            }
+          ],
+          "source_url": "https://github.com/uutils/coreutils"
+        },
+        "status": "PendingPublication"
       },
       "published_artifact": {
         "archive_sha256": "e2b0d1df89205c54c9a23d341baf1fc697deaa149801e5cfc4c9bda1c2c27389",
@@ -12715,7 +14075,13 @@
       "status": "UpToDate"
     }
   },
-  "policy": "BinaryUpdate-v1",
+  "policy": {
+    "cadence": "Thursday 05:55 Asia/Singapore",
+    "missing_private_repository": "Verified compatible official binary; unchanged identity retained",
+    "name": "GitHubHeadOnly-v2",
+    "official_binary_missing": "User-authorized build from frozen committed recipe without changing pins",
+    "source_heads": "Frozen once at run start"
+  },
   "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
   "publication_runs": {
     "update-20261020-01": {
@@ -12865,54 +14231,55 @@
     }
   },
   "run": {
-    "actual_build": "PASS",
-    "artifact_commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
-    "binary_publication": "PASS",
-    "candidate_index_sha256": "e4cebd1ea276b002410783e81fa9b2310ab75d0fb8f1be100b33f89dcee4c2b0",
+    "acceptance_limitations": [
+      "Existing getty bulk-input EAGAIN defect; paced case transport only",
+      "No full interactive, networking, persistence or fault-injection acceptance"
+    ],
+    "binary_publication": "Pending",
+    "build_sha": "02481fd0a52710e04b9553b9c86c8fc099da955e",
     "candidate_packages": [
       "base",
-      "bash"
+      "coreutils",
+      "extrautils",
+      "installer",
+      "kernel",
+      "mandoc",
+      "redoxfs",
+      "relibc",
+      "userutils",
+      "uutils"
     ],
-    "candidate_signature_payload": "PASS",
-    "checked_at": "2026-10-14T00:00:56.196645+00:00",
-    "independent_review": "PASS: latest one commit / eleven files; exact historical ledger preserved",
-    "independent_review_sha256": "cee643080ab617869cea0743f2e6cf6b79ec56f146339477a491ef57391c0292",
-    "inventory_end_confirmed": true,
-    "inventory_pages": [
-      13,
-      0
-    ],
-    "keyboard_host_tests": 14,
-    "normal_image": "PASS",
-    "normal_runtime": "PASS",
-    "optional_keyboard_fixture": "FAIL: KEYBOARD_LOGIN timeout; no cases entered; Caps/Num guest cases NotRun",
-    "package_branch": "main",
-    "package_remote_sha": "a9a369b5576734915cc58b217b430192c42b3da5",
-    "package_repository": "RedoxORG/redox-pkgs",
-    "receipts_sha256": {
-      "build-receipt.json": "a09a2b61b5c727f967f8a355dac88af852c814a989d6c0b2127f640ab5287ea0",
-      "candidate-validation.json": "543a744109c06f503e0f662a4f45a642f71526549fd628b929deadcfb235c386",
-      "image-installed-binding.json": "bca7a5a527d67c95128d698017e54b1a6b55f8cafdc07b61985fd1b671e102c0",
-      "image-receipt.json": "5cc2f7ca2a565eae059d5355a5479de0a4ffd79ab88d6c40c93e199df8aec835",
-      "initfs-inputd-binding.json": "edf6ebd1868381b9ac6a3de7488e782abd76c5efc8dad117d490a38c2423964b",
-      "keyboard-host-tests.json": "2eb21a00e9802459a504dadc07d877169bdd94aceed572c2a2784cadb8b893ab",
-      "keyboard-test-adaptation.json": "479dbf48663bacfacbe5cb709ddb47c9adf36753b104654ba355ebfafb1c5807",
-      "normal-qemu.json": "430b4842d04c23f12dadd43209c1827306c35bb7e7c3c30162d1b6ff5e5c41bc",
-      "postflight.json": "1a7ffb34263fec794919f353e64244e3da3986add8add19152e1e47b7ea0d403",
-      "preflight.json": "1a7ffb34263fec794919f353e64244e3da3986add8add19152e1e47b7ea0d403"
+    "consumer": "Pending",
+    "freshness_status": "FreshnessUnknown",
+    "new_packages": 1,
+    "producer_runtime": "PASS",
+    "producer_tests": {
+      "BASH_CHILD": 0,
+      "CHILD_WAIT": 0,
+      "CURL": 0,
+      "FIND_XARGS": 0,
+      "GIT": 0,
+      "GREP": 0,
+      "HOSTNAME": 0,
+      "LOOPBACK_REFUSED": 0,
+      "MANDOC": 0,
+      "MAN_PAGER_FAILURE": 0,
+      "PS": 0,
+      "SSH": 0,
+      "SYMLINK_PATH": 0,
+      "TOUCH": 0,
+      "TR": 0,
+      "TR_CLOSED": 0,
+      "TZ": 0,
+      "UPTIME": 0,
+      "WGET": 0,
+      "WHOAMI": 0,
+      "WHOAMI_CLOSED": 0
     },
-    "remote_readback": {
-      "checked_at": "2026-10-14T00:11:54.090389+00:00",
-      "commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
-      "file_count": 12,
-      "method": "GitHub immutable Git blob API; decoded bytes match committed object, main exact SHA checked before/after"
-    },
-    "source_authority": "one startup freeze",
-    "successful_inputs_advanced": [
-      "base",
-      "bash"
-    ],
-    "trigger": "manual requested run"
+    "replaced_packages": 9,
+    "retained_unchanged_packages": 46,
+    "run_id": "update-20261021-01",
+    "status": "PendingPublication"
   },
   "scheduled_update_20261015_01": {
     "artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
@@ -13010,93 +14377,14 @@
   "schema_version": 1,
   "target": "x86_64-unknown-redox",
   "verification": {
-    "initfs_inputd": {
-      "initfs_sha256": "2f9d94fdcee803f30e74085301e01bd970519a29b32f8099edaf273c30de7c02",
-      "inode": 42,
-      "inputd_sha256": "1474905bb7e6d33bdaa86a5ec32431a068af86610d393845b164a351ada97ce3",
-      "matches": "base normal build/initfs/bin/inputd",
-      "path": "bin/inputd",
-      "size": 699344,
-      "source_sha": "b4fe9e50d4a4500387bf7d76f7f50df669224b1c",
-      "status": "PASS"
-    },
-    "installed_core_files": {
-      "etc/bash.bashrc": {
-        "matching_packages": [
-          "bash"
-        ],
-        "sha256": "1ea027192a75b2cb9223406aefa319b589cc0ecc8f86f65dc475c2ec02bcd21e"
-      },
-      "usr/bin/bash": {
-        "matching_packages": [
-          "bash"
-        ],
-        "sha256": "4ef961410a82d130863f1fd91f5b9310689fd3f78f32436ff4e3ba1da38fb7ea"
-      },
-      "usr/bin/inputd": {
-        "matching_packages": [
-          "base"
-        ],
-        "sha256": "e36161bd7f0ec5ce1134449abe0d21471c524b6d4f5ecab55a38aeebdb47b29f"
-      },
-      "usr/bin/login": {
-        "matching_packages": [
-          "userutils"
-        ],
-        "sha256": "24a939b20c4a267b678167e722ac64477a0c653a8241b4395ae0f2df6d952809"
-      },
-      "usr/lib/boot/bootloader.efi": {
-        "matching_packages": [
-          "bootloader"
-        ],
-        "sha256": "8be5311c915d25367673c26810abe81573ff7dfc3da7c7423c5bc3345b408f51"
-      },
-      "usr/lib/boot/initfs": {
-        "matching_packages": [
-          "base"
-        ],
-        "sha256": "2f9d94fdcee803f30e74085301e01bd970519a29b32f8099edaf273c30de7c02"
-      },
-      "usr/lib/libc.so": {
-        "matching_packages": [
-          "relibc"
-        ],
-        "sha256": "fcea824908d073b91e530840b8f0c42ec939da419dceffe723bf34f874ebf5ee"
-      }
-    },
-    "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
-    "qemu": {
-      "checks": {
-        "background_wait": "Passed",
-        "bash_version": "5.3.0(1)-release",
-        "identity": "uid=0(root) gid=0(root)",
-        "normal_boot": "Passed",
-        "root_login": "Passed"
-      },
-      "command_sha256": "885d43d685a26b18633df52632d655037cbdc2bbfe5eb5de0275da9e0bbfbb8f",
-      "image_sha256": "8ae8346bfb68df9664bcb3b6a6ab0ef96a599ebac16ad76d934a2cda2059c890",
-      "publication": "PASS: matching archive bytes published at 5f29a6ed3b11ae242e6a152356182317175bca97",
-      "status": "Passed"
-    },
-    "relibc_abi": {
-      "added_symbols": [],
-      "changed_headers": [
-        "math.h"
-      ],
-      "exports_equal": true,
-      "new_archive_sha256": "95cf656d9f4bb2582e067eed8300cafa2f63e6bc9c3668096990ae34dc498f46",
-      "new_exports": 3252,
-      "old_archive_sha256": "5c67560f455f76507c77f4b122dc51d4624fcaa6c02119f4037148d2ddad03ac",
-      "old_exports": 3252,
-      "old_signature": "PASS",
-      "removed_symbols": []
-    },
-    "signature_tamper_negative": {
-      "candidate_unchanged": true,
-      "case": "signed header byte tampered",
-      "extract_exit": 1,
-      "status": "PASS"
-    }
+    "consumer": "Pending",
+    "limitations": [
+      "Existing getty bulk-input EAGAIN defect; paced case transport only",
+      "No full interactive, networking, persistence or fault-injection acceptance"
+    ],
+    "producer": "PASS",
+    "publication": "Pending",
+    "run_id": "update-20261021-01"
   },
   "verification_20261014": {
     "initfs_inputd": {

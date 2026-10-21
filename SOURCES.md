@@ -24,7 +24,7 @@ upstream licenses, not a blanket MIT or GPL license.
 
 | Package | Upstream source | Source identifier / archive BLAKE3 |
 | --- | --- | --- |
-| base | [base source](https://github.com/RedoxORG/base) | `cf6b4e73e8ee20e1932fa8627622ac16c35ef459` |
+| base | [base source](https://github.com/RedoxORG/base) | `611c61cc477af746f73e602ba6eb05181b97d43c` |
 | bash | [bash source](https://ftp.gnu.org/gnu/bash/bash-5.3.tar.gz) | `5bf3ac6c18f3dc3fe3e049a1e10ea5ae5c5b39dac2356cd796730f49b273fd0f` |
 | bootloader | [bootloader source](https://github.com/RedoxORG/bootloader/tree/13358e87cc3c6e1225c42db07c3dce4280a734f5) | `13358e87cc3c6e1225c42db07c3dce4280a734f5` |
 | bottom | [bottom source](https://github.com/jackpot51/bottom/tree/87b9106ffd27a512315096d831a03a1079e79323) | `87b9106ffd27a512315096d831a03a1079e79323` |
@@ -38,9 +38,9 @@ upstream licenses, not a blanket MIT or GPL license.
 | gettext | [gettext source](https://ftp.gnu.org/gnu/gettext/gettext-0.22.5.tar.gz) | `cb3f3a34da7ce1a92746df81f5b78c5d53841973a24eb80ab76537263d380ec0` |
 | git | [git source](https://www.kernel.org/pub/software/scm/git/git-2.56.0.tar.gz) | `6336e4670a1a99bb8dd666791317b5ba60ab27b3ae24d5a284013b4f233b30f0` |
 | gnu-make | [gnu-make source](http://ftp.gnu.org/gnu/make/make-4.4.tar.gz) | `1a0e5353205e106bd9b3c0f4a5f37ee1156a1e1c8feb771d1b4842c216612cba` |
-| installer | [installer private source](https://github.com/RedoxORG/installer/tree/8ce7e5f94b39f2db8b86834f54d9f405d7cc679c) | `8ce7e5f94b39f2db8b86834f54d9f405d7cc679c` |
+| installer | [installer source](https://github.com/RedoxORG/installer) | `5d822e6a9fae1f4b60e8cd33fd757972dcbb6a41` |
 | ion | [ion source](https://gitlab.redox-os.org/redox-os/ion.git) | `e9b3ca48b7ab6444498d5c3aa902d471ce29f759` |
-| kernel | [kernel source](https://github.com/RedoxORG/kernel) | `92ab1e25c4c9492f90a9bf4b42771438e3aff386` |
+| kernel | [kernel source](https://github.com/RedoxORG/kernel) | `93a99a27fb3c5dd5a8804c3c102250f480525b37` |
 | kibi | [kibi source](https://github.com/ilai-deutel/kibi/tree/805819d57228cf4f2b64a7313f6d473348a4a844) | `805819d57228cf4f2b64a7313f6d473348a4a844` |
 | libedit | [libedit source](https://www.thrysoee.dk/editline/libedit-20250104-3.1.tar.gz) | `no_tar_blake3_hash_info` |
 | libgcc | [libgcc source](https://gitlab.redox-os.org/redox-os/redox/-/blob/332fb5e78561e6805ddd87bc8758093f02f564ba/recipes/libs/libgcc/recipe.toml) | `local_source` |
@@ -63,11 +63,11 @@ upstream licenses, not a blanket MIT or GPL license.
 | pkgutils | [pkgutils source](https://gitlab.redox-os.org/redox-os/pkgutils/-/tree/fe21bfd95d869cafd356bcdec4d1a81739ede5ee) | `fe21bfd95d869cafd356bcdec4d1a81739ede5ee` |
 | readline | [readline source](https://ftp.gnu.org/gnu/readline/readline-8.3.tar.gz) | `7109f094062bda387a0c16b4875375b96e36437bebbbd8d8f91bb27ba01d687f` |
 | redoxfs | [redoxfs source](https://gitlab.redox-os.org/redox-os/redoxfs.git) | `b87b0976ee122036b2ec040159b890e1e06ca139` |
-| relibc | [relibc source](https://github.com/RedoxORG/relibc) | `dfbadb7377bd2cc29737d1a35727def06b0994b8` |
+| relibc | [relibc source](https://github.com/RedoxORG/relibc) | `891876cea632d8b37756900dce0fc552e3c8038d` |
 | rsync | [rsync source](https://download.samba.org/pub/rsync/src/rsync-3.4.1.tar.gz) | `e1cfdd51a1a89a49e73f8fa730a4321392fe4a29533c0979c2c09c7ce3808b6f` |
 | termcap | [termcap source](https://ftp.gnu.org/gnu/termcap/termcap-1.3.1.tar.gz) | `57c095e0bb6e60e7b4a0597f51f7ac15b501ca0f95d37424d8d13978d28b8da3` |
 | terminfo | [terminfo source](https://github.com/sajattack/terminfo/tree/dc5712b13b4a4058ffca1f077167994b1764828a) | `dc5712b13b4a4058ffca1f077167994b1764828a` |
-| userutils | [userutils source](https://github.com/RedoxORG/userutils) | `3ac3b00426e66b58bbf732102cc6d45ad16130b3` |
+| userutils | [userutils source](https://github.com/RedoxORG/userutils) | `7ad269c65a40e572388926a5bdc7f9d12bbb55d9` |
 | uutils | [uutils source](https://github.com/uutils/coreutils) | `bf65901e1ed82963436844c2cf8e796ba9158c65` |
 | uutils-grep | [uutils-grep source](https://github.com/uutils/grep) | `2ff48db61cb0588a89115461db1c0baf686bce83` |
 | uutils-hostname | [uutils-hostname source](https://github.com/uutils/hostname) | `a6e1a935775fcde6e781f3b73017287835b478a5` |
@@ -79,20 +79,23 @@ upstream licenses, not a blanket MIT or GPL license.
 | zlib | [zlib source](https://www.zlib.net/fossils/zlib-1.3.tar.gz) | `ec1abc6f672a7a6ee6f49ba544cc9529f73121b478310473be44fee22a140ebf` |
 | zsh | [private zsh source](https://github.com/RedoxORG/zsh/tree/fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250) | `fc3cff4f8e28a0dcac7b6dfb7f21d45fd3a06250`; original Redox prepare/local binding |
 | zstd | [zstd source](https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz) | `730dca31244abd219e995f03a55d95b2cfb4b3e16cda055a79fa6f30a4f0e1db` |
+| mandoc | [mandoc source](https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz) | `0e1e812610cea4d9a254d161599466abccd3688568f19baeff1c2ed0dae586e4` |
 
 GNU package license mapping: bash/readline/diffutils/gettext use GPLv3;
 Git uses GPLv2; libiconv contains LGPLv2.1 libraries and GPLv3 utilities.
 See each complete upstream source archive for copyright and license details.
 
-Current batch (2026-10-20): frozen Redox recipe/config commit `851e1e578b9254a0f69aa2f6715155d5bf07b220`; 17 source-built candidates and 16 verified official-distribution candidates. The other 22 package archives and metadata remain unchanged. Status: `PublishedAndConsumerVerified`; artifacts are published at `34f2d60b64e5a2184045a28e9f32cc5c2376f72c`. An independent clean consumer completed normal Make, remote byte/signature verification, 5,619 installed-file checks, normal boot/login and nine CLI checks. Exact change/publication timing is unproven (`FreshnessUnknown`). Full input identities and validation provenance are in `binary-inputs.json`; later source pushes are deferred.
+Historical batch (2026-10-20): frozen Redox recipe/config commit `851e1e578b9254a0f69aa2f6715155d5bf07b220`; 17 source-built candidates and 16 verified official-distribution candidates. The other 22 package archives and metadata remain unchanged. Status: `PublishedAndConsumerVerified`; artifacts are published at `34f2d60b64e5a2184045a28e9f32cc5c2376f72c`. An independent clean consumer completed normal Make, remote byte/signature verification, 5,619 installed-file checks, normal boot/login and nine CLI checks. Exact change/publication timing is unproven (`FreshnessUnknown`). Full input identities and validation provenance are in `binary-inputs.json`; later source pushes are deferred.
 
 Historical batch (2026-10-15): frozen Redox commit `b4b0b533f3232164203778bb815f32174d28d747` updated base, bootloader, orbterm and redoxfs, retaining the other 35 packages at that time. This historical count and source selection do not describe the current batch.
 
 Zsh uses the frozen private source and original [recipe, patch and binding](build-inputs/wip/shells/zsh/). Its permissive [license](licenses/zsh.txt) is preserved. The source recipe was not pushed or modified; controlled prepare and actual compilation identities are in binary-inputs.json.
 
-In the historical 2026-10-15 batch, base and bootloader were private-source builds; orbterm and redoxfs were verified official binaries re-signed without installation-content changes. In the current batch, redoxfs is source-built; the 16 official-distribution candidates retain their verified installation contents under the existing repository signing key. Bash and bootloader are unchanged. Image configuration comes from the current frozen Redox commit and is not a separate binary package.
+In the historical 2026-10-15 batch, base and bootloader were private-source builds; orbterm and redoxfs were verified official binaries re-signed without installation-content changes. In the historical 2026-10-20 batch, redoxfs was source-built; the 16 official-distribution candidates retain their verified installation contents under the existing repository signing key. Bash and bootloader are unchanged. Image configuration comes from the current frozen Redox commit and is not a separate binary package.
 Recipe/file distribution copies follow the existing LF text normalization; the original committed Git blob and byte hashes are recorded separately in the input ledger.
 
 The base console includes Dina bitmap fonts. See [Dina license](licenses/Dina.txt); the notice is copied byte-for-byte from the frozen base source.
 
 Acceptance limitation: the frozen pkgar installer changes `usr/libexec/ssh-keysign` from signed mode `04711` to installed mode `00711` while preserving its bytes. `HostbasedAuthentication` remains `NotVerified`; normal SSH CLI smoke does not establish that feature. This batch does not claim full interactive, networking, persistence or fault-injection acceptance.
+
+Current batch (2026-10-21): frozen Redox `02481fd0a52710e04b9553b9c86c8fc099da955e`; 10 source-built packages (9 replacements, 1 new); 46 packages unchanged. Status: PendingPublication; producer 21 checks PASS; independent consumer Pending. FreshnessUnknown. Existing getty bulk-input EAGAIN is not fixed; checks use paced input. This is not full interactive, networking, persistence or fault-injection acceptance.
