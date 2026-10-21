@@ -1618,7 +1618,8 @@
       "Existing getty bulk-input EAGAIN defect; paced case transport only",
       "No full interactive, networking, persistence or fault-injection acceptance"
     ],
-    "binary_publication": "Pending",
+    "artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
+    "binary_publication": "PASS",
     "build_sha": "02481fd0a52710e04b9553b9c86c8fc099da955e",
     "candidate_packages": [
       "base",
@@ -1632,7 +1633,30 @@
       "userutils",
       "uutils"
     ],
-    "consumer": "Pending",
+    "consumer": "PASS",
+    "consumer_tests": {
+      "BASH_CHILD": 0,
+      "CHILD_WAIT": 0,
+      "CURL": 0,
+      "FIND_XARGS": 0,
+      "GIT": 0,
+      "GREP": 0,
+      "HOSTNAME": 0,
+      "LOOPBACK_REFUSED": 0,
+      "MANDOC": 0,
+      "MAN_PAGER_FAILURE": 0,
+      "PS": 0,
+      "SSH": 0,
+      "SYMLINK_PATH": 0,
+      "TOUCH": 0,
+      "TR": 0,
+      "TR_CLOSED": 0,
+      "TZ": 0,
+      "UPTIME": 0,
+      "WGET": 0,
+      "WHOAMI": 0,
+      "WHOAMI_CLOSED": 0
+    },
     "freshness_status": "FreshnessUnknown",
     "new_packages": 1,
     "producer_runtime": "PASS",
@@ -1659,15 +1683,66 @@
       "WHOAMI": 0,
       "WHOAMI_CLOSED": 0
     },
+    "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
     "replaced_packages": 9,
     "retained_unchanged_packages": 46,
     "run_id": "update-20261021-01",
-    "status": "PendingPublication"
+    "status": "PublishedAndConsumerVerified"
   },
   "last_consumer_verification": {
-    "prior_result": "historical_summaries/update-20261021-01-previous",
+    "artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
+    "evidence": {
+      "consumer_binding": {
+        "receipt": "consumer-installed-binding-01.json",
+        "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
+      },
+      "consumer_make": {
+        "receipt": "consumer-all-01.json",
+        "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
+      },
+      "consumer_runtime": {
+        "receipt": "consumer-runtime-01.json",
+        "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
+      },
+      "native": {
+        "receipt": "publication-native-validation/receipt.json",
+        "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
+      },
+      "remote": {
+        "receipt": "remote-readback-84b6b684a8d6.json",
+        "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
+      },
+      "review": {
+        "receipt": "final-consumer-review.json",
+        "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
+      }
+    },
+    "freshness_status": "FreshnessUnknown",
     "run_id": "update-20261021-01",
-    "status": "Pending"
+    "status": "PASS",
+    "tests": {
+      "BASH_CHILD": 0,
+      "CHILD_WAIT": 0,
+      "CURL": 0,
+      "FIND_XARGS": 0,
+      "GIT": 0,
+      "GREP": 0,
+      "HOSTNAME": 0,
+      "LOOPBACK_REFUSED": 0,
+      "MANDOC": 0,
+      "MAN_PAGER_FAILURE": 0,
+      "PS": 0,
+      "SSH": 0,
+      "SYMLINK_PATH": 0,
+      "TOUCH": 0,
+      "TR": 0,
+      "TR_CLOSED": 0,
+      "TZ": 0,
+      "UPTIME": 0,
+      "WGET": 0,
+      "WHOAMI": 0,
+      "WHOAMI_CLOSED": 0
+    }
   },
   "manual_sync_20261014_03": {
     "artifact_commit": "fb01a6592b113900c9412a3b961c5db8a1f92fea",
@@ -1723,7 +1798,7 @@
         "archive_sha256": "8ba67bbeb1bce11ba06b43a5263df5d82fc9c497b1d70a866faef5deacf987b5",
         "metadata_sha256": "67318cb225d6b00341dc4ce7cf50257c4a53eb4bf9eaf3b4adf9d315c96de1ec"
       },
-      "candidate_effective_input_id": "80372ea98b094e60f54e3278fb962d6955b81c1d2fcfaad7d01658bcd42d72a9",
+      "candidate_effective_input_id": "8b1684db2ca136ae5b5e7e32303d1656c115cdbd4cf7d51ca7d35e7dec0d511b",
       "candidate_input": {
         "branch": "local/main",
         "build_receipt": {
@@ -3560,19 +3635,19 @@
         "target": "x86_64-unknown-redox"
       },
       "freshness": {
-        "candidate_effective_input_id": "80372ea98b094e60f54e3278fb962d6955b81c1d2fcfaad7d01658bcd42d72a9",
+        "candidate_effective_input_id": "8b1684db2ca136ae5b5e7e32303d1656c115cdbd4cf7d51ca7d35e7dec0d511b",
         "change_time_evidence": null,
         "deadline_at": null,
         "earliest_unpublished_change_at": null,
         "freshness_status": "FreshnessUnknown",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
         "publication_time_evidence": {
           "exact_publication_time": false,
           "kind": "FirstVerifiedRemoteObservation",
-          "observed_at": "2026-10-20T08:56:07.366289+00:00"
+          "observed_at": "2026-10-21T10:01:02.135384+00:00"
         },
         "published_at": null,
-        "published_effective_input_id": "80372ea98b094e60f54e3278fb962d6955b81c1d2fcfaad7d01658bcd42d72a9",
+        "published_effective_input_id": "8b1684db2ca136ae5b5e7e32303d1656c115cdbd4cf7d51ca7d35e7dec0d511b",
         "reason": "Verified publication; earliest effective change timing evidence incomplete"
       },
       "freshness_status": "FreshnessUnknown",
@@ -3580,86 +3655,41 @@
         "independent_consumer": "PASS",
         "receipt_hashes": {
           "consumer_binding": {
-            "receipt": "consumer-installed-binding-03.json",
-            "sha256": "532939492e58fa66d46b20dd3ba792e7794d08106d8f392d17b0189552428082"
+            "receipt": "consumer-installed-binding-01.json",
+            "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
           },
           "consumer_make": {
-            "receipt": "consumer-all-03.json",
-            "sha256": "76d32be641eeb14e9121f11d1890db666dd4bd90ed2c078027c9377b7b9b88dd"
+            "receipt": "consumer-all-01.json",
+            "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
           },
           "consumer_runtime": {
             "receipt": "consumer-runtime-01.json",
-            "sha256": "af98ceaadd72508b880a2ab49e3bb7a4286f3dfd2d8994e5c4437fd8486fe43e"
+            "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
           },
           "native": {
             "receipt": "publication-native-validation/receipt.json",
-            "sha256": "04efb98ec3672303526d7f561d8e58df7aba9182c17d631d2ac24a23eeb08fb1"
+            "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
           },
           "remote": {
-            "receipt": "remote-readback-34f2d60b64e5.json",
-            "sha256": "4ca78470c945dbc7684063e79e841a256eeacc621c298778168b1785bd3f2ae9"
+            "receipt": "remote-readback-84b6b684a8d6.json",
+            "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
           },
           "review": {
-            "receipt": "independent-consumer-review-01.json",
-            "sha256": "38dd84842ffbe50f291a74df8422c0ddc751edb84d32cc9b78b54af56f3a568e"
+            "receipt": "final-consumer-review.json",
+            "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
           }
         },
         "remote_bytes": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "signature_payload": "PASS"
       },
       "last_successful_input": {
         "complete": true,
-        "effective_input_sha256": "80372ea98b094e60f54e3278fb962d6955b81c1d2fcfaad7d01658bcd42d72a9",
+        "effective_input_sha256": "8b1684db2ca136ae5b5e7e32303d1656c115cdbd4cf7d51ca7d35e7dec0d511b",
         "kind": "source-build",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
-        "published_artifact_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
+        "published_artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "published_at": null,
-        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
-        "source": {
-          "effective_input_id": "80372ea98b094e60f54e3278fb962d6955b81c1d2fcfaad7d01658bcd42d72a9",
-          "installed_license_notices": [],
-          "kind": "source-build",
-          "license_references": [
-            {
-              "path": "licenses/base-MIT.txt",
-              "sha256": "cb46b697c3fd9d27d7bfe1b1ad48f8a58a284984504c6eb215ae2164538df7cb"
-            }
-          ],
-          "prepared_source": {},
-          "recipe": "recipes/core/base/recipe.toml",
-          "recipe_blake3": null,
-          "recipe_blob": "5a8520bd762c84cbd8f65b501a76fea58741b314",
-          "recipe_pin": null,
-          "source_sha": "cf6b4e73e8ee20e1932fa8627622ac16c35ef459",
-          "source_support_identities": [
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/base/recipe.toml",
-              "repository": "RedoxORG/redox",
-              "sha256": "b8356c9949efe0b2ed1772d027f1e79a753f7f9ca86653339074be395e0ece2b"
-            }
-          ],
-          "source_url": "https://github.com/RedoxORG/base"
-        },
-        "validation": {
-          "independent_consumer": "PASS",
-          "remote_bytes": "PASS",
-          "signature_payload": "PASS"
-        }
-      },
-      "pending_publication": {
-        "candidate_artifact": {
-          "archive_sha256": "7e75ff683fd4231eda00a2dfaa26ac364f95f697ea2c13ad4cf4031110b96ad7",
-          "metadata_sha256": "c1769ae42c345c67b0896d1fa99ef6bff7c9b7b53eb4fc88f27370ea63186976"
-        },
-        "candidate_effective_input_id": "8b1684db2ca136ae5b5e7e32303d1656c115cdbd4cf7d51ca7d35e7dec0d511b",
-        "freshness_status": "FreshnessUnknown",
-        "publication": "PendingPublication",
-        "runtime_evidence": {
-          "receipt": "normal-runtime-02.json",
-          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
-        },
         "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
         "source": {
           "effective_input_id": "8b1684db2ca136ae5b5e7e32303d1656c115cdbd4cf7d51ca7d35e7dec0d511b",
@@ -3702,15 +3732,19 @@
           ],
           "source_url": "https://github.com/RedoxORG/base"
         },
-        "status": "PendingPublication"
+        "validation": {
+          "independent_consumer": "PASS",
+          "remote_bytes": "PASS",
+          "signature_payload": "PASS"
+        }
       },
       "published_artifact": {
-        "archive_sha256": "c718c93d76a977828f1626be0b3a3accad9a8af4c147ea34048fc285c18d46ec",
-        "metadata_sha256": "9a20f9085ab943d80d09f85c579468b95f181a22643d054831df618b90959c42",
+        "archive_sha256": "7e75ff683fd4231eda00a2dfaa26ac364f95f697ea2c13ad4cf4031110b96ad7",
+        "metadata_sha256": "c1769ae42c345c67b0896d1fa99ef6bff7c9b7b53eb4fc88f27370ea63186976",
         "readback": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c"
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745"
       },
-      "published_effective_input_id": "80372ea98b094e60f54e3278fb962d6955b81c1d2fcfaad7d01658bcd42d72a9",
+      "published_effective_input_id": "8b1684db2ca136ae5b5e7e32303d1656c115cdbd4cf7d51ca7d35e7dec0d511b",
       "published_source_receipt": {
         "artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
         "kind": "PrivateSourceBuild",
@@ -5249,22 +5283,22 @@
       "baseline_status": "Known",
       "binary_publication": "PASS",
       "build": "NotRequired",
-      "candidate_effective_input_id": "0cb6f193ddeb64b2b30aabdae6c04b022e9dda1edfd5babc7e6345c16f26189d",
+      "candidate_effective_input_id": "a17911c3b68a044596a5d41ce7eecadcfce7bd4a128854a68e9c506e240d9280",
       "candidate_input": null,
       "freshness": {
-        "candidate_effective_input_id": "0cb6f193ddeb64b2b30aabdae6c04b022e9dda1edfd5babc7e6345c16f26189d",
+        "candidate_effective_input_id": "a17911c3b68a044596a5d41ce7eecadcfce7bd4a128854a68e9c506e240d9280",
         "change_time_evidence": null,
         "deadline_at": null,
         "earliest_unpublished_change_at": null,
         "freshness_status": "FreshnessUnknown",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
         "publication_time_evidence": {
           "exact_publication_time": false,
           "kind": "FirstVerifiedRemoteObservation",
-          "observed_at": "2026-10-20T08:56:07.366289+00:00"
+          "observed_at": "2026-10-21T10:01:02.135384+00:00"
         },
         "published_at": null,
-        "published_effective_input_id": "0cb6f193ddeb64b2b30aabdae6c04b022e9dda1edfd5babc7e6345c16f26189d",
+        "published_effective_input_id": "a17911c3b68a044596a5d41ce7eecadcfce7bd4a128854a68e9c506e240d9280",
         "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
       },
       "freshness_status": "FreshnessUnknown",
@@ -5272,107 +5306,41 @@
         "independent_consumer": "PASS",
         "receipt_hashes": {
           "consumer_binding": {
-            "receipt": "consumer-installed-binding-03.json",
-            "sha256": "532939492e58fa66d46b20dd3ba792e7794d08106d8f392d17b0189552428082"
+            "receipt": "consumer-installed-binding-01.json",
+            "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
           },
           "consumer_make": {
-            "receipt": "consumer-all-03.json",
-            "sha256": "76d32be641eeb14e9121f11d1890db666dd4bd90ed2c078027c9377b7b9b88dd"
+            "receipt": "consumer-all-01.json",
+            "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
           },
           "consumer_runtime": {
             "receipt": "consumer-runtime-01.json",
-            "sha256": "af98ceaadd72508b880a2ab49e3bb7a4286f3dfd2d8994e5c4437fd8486fe43e"
+            "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
           },
           "native": {
             "receipt": "publication-native-validation/receipt.json",
-            "sha256": "04efb98ec3672303526d7f561d8e58df7aba9182c17d631d2ac24a23eeb08fb1"
+            "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
           },
           "remote": {
-            "receipt": "remote-readback-34f2d60b64e5.json",
-            "sha256": "4ca78470c945dbc7684063e79e841a256eeacc621c298778168b1785bd3f2ae9"
+            "receipt": "remote-readback-84b6b684a8d6.json",
+            "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
           },
           "review": {
-            "receipt": "independent-consumer-review-01.json",
-            "sha256": "38dd84842ffbe50f291a74df8422c0ddc751edb84d32cc9b78b54af56f3a568e"
+            "receipt": "final-consumer-review.json",
+            "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
           }
         },
         "remote_bytes": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "signature_payload": "PASS"
       },
       "last_successful_input": {
         "complete": true,
-        "effective_input_sha256": "0cb6f193ddeb64b2b30aabdae6c04b022e9dda1edfd5babc7e6345c16f26189d",
+        "effective_input_sha256": "a17911c3b68a044596a5d41ce7eecadcfce7bd4a128854a68e9c506e240d9280",
         "kind": "source-build",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
-        "published_artifact_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
+        "published_artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "published_at": null,
-        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
-        "source": {
-          "effective_input_id": "0cb6f193ddeb64b2b30aabdae6c04b022e9dda1edfd5babc7e6345c16f26189d",
-          "installed_license_notices": [],
-          "kind": "source-build",
-          "license_references": [
-            {
-              "path": "licenses/run-20261020/coreutils/LICENSE",
-              "sha256": "f540830b0b1aa93ebdc47c73dc41b8bbbabda4c7ec937998b2bc8ffafceafd66"
-            }
-          ],
-          "prepared_source": {
-            "git_revision": "575a46d3b624ad9cd222c9e3250073e9269c3462",
-            "tree_sha256": "2d8e264d0fececb3dceb5d39e518965ef027c693d17b86806ba594684885e01d"
-          },
-          "recipe": "recipes/core/coreutils/recipe.toml",
-          "recipe_blake3": null,
-          "recipe_blob": "9ae3e505f73ee88460e25b24db384512df121013",
-          "recipe_pin": null,
-          "source_sha": "575a46d3b624ad9cd222c9e3250073e9269c3462",
-          "source_support_identities": [
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/coreutils/recipe.toml",
-              "repository": "RedoxORG/redox",
-              "sha256": "7b874c979a1e3b28f6b8c18f8abcfe6a4673545194eb9a3fe2adc71dd1675a49"
-            },
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/coreutils/tests/which.sh",
-              "repository": "RedoxORG/redox",
-              "sha256": "3d8aed8ba549ad60c5818d919111a8c7528911ef4a98c8753f521bcbc81ed89b"
-            },
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/coreutils/unused-users.patch",
-              "repository": "RedoxORG/redox",
-              "sha256": "00efe102636b617d53bf9792e12dd003ff64aad1fec4f940b4bfb2264b8b9289"
-            },
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/coreutils/which.patch",
-              "repository": "RedoxORG/redox",
-              "sha256": "626f3cc9a3ad02cc53886753f1395b1c45cb87d309ee4e4ed55340a0fb10ab69"
-            }
-          ],
-          "source_url": "https://gitlab.redox-os.org/redox-os/coreutils.git"
-        },
-        "validation": {
-          "independent_consumer": "PASS",
-          "remote_bytes": "PASS",
-          "signature_payload": "PASS"
-        }
-      },
-      "pending_publication": {
-        "candidate_artifact": {
-          "archive_sha256": "84502fb5d0ad4acd471df9a882676c075d350fb904581eba93f9466f39194a14",
-          "metadata_sha256": "2d8ec39d6c9b841accd924e3e53229ab31ac407ead72cd9e1e6484ddac40d60e"
-        },
-        "candidate_effective_input_id": "a17911c3b68a044596a5d41ce7eecadcfce7bd4a128854a68e9c506e240d9280",
-        "freshness_status": "FreshnessUnknown",
-        "publication": "PendingPublication",
-        "runtime_evidence": {
-          "receipt": "normal-runtime-02.json",
-          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
-        },
         "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
         "source": {
           "effective_input_id": "a17911c3b68a044596a5d41ce7eecadcfce7bd4a128854a68e9c506e240d9280",
@@ -5433,15 +5401,19 @@
           ],
           "source_url": "https://gitlab.redox-os.org/redox-os/coreutils.git"
         },
-        "status": "PendingPublication"
+        "validation": {
+          "independent_consumer": "PASS",
+          "remote_bytes": "PASS",
+          "signature_payload": "PASS"
+        }
       },
       "published_artifact": {
-        "archive_sha256": "203f65c8e75a4552ccfc9d666591318927a73f4aced174768706da90cc83b569",
-        "metadata_sha256": "4fa28a9a8ad54096d694e0ff75c3586ade0cb481922f29a76c43cb283f48dae0",
+        "archive_sha256": "84502fb5d0ad4acd471df9a882676c075d350fb904581eba93f9466f39194a14",
+        "metadata_sha256": "2d8ec39d6c9b841accd924e3e53229ab31ac407ead72cd9e1e6484ddac40d60e",
         "readback": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c"
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745"
       },
-      "published_effective_input_id": "0cb6f193ddeb64b2b30aabdae6c04b022e9dda1edfd5babc7e6345c16f26189d",
+      "published_effective_input_id": "a17911c3b68a044596a5d41ce7eecadcfce7bd4a128854a68e9c506e240d9280",
       "published_source_receipt": null,
       "reason": "No adopted effective input change selected; archive/metadata byte-identical to frozen main. Historical missing full baseline is not reconstructed by this observation.",
       "runtime": "NotRun",
@@ -5666,22 +5638,22 @@
       "baseline_status": "Known",
       "binary_publication": "PASS",
       "build": "NotRequired",
-      "candidate_effective_input_id": "be09ac7d5610ba8d3c3815617eaf8e8ff973f62a2d423870b0817c5b62ef29cf",
+      "candidate_effective_input_id": "a87516992f427cb6888715c299b0b1fc84a49f34805414e359e6454598666800",
       "candidate_input": null,
       "freshness": {
-        "candidate_effective_input_id": "be09ac7d5610ba8d3c3815617eaf8e8ff973f62a2d423870b0817c5b62ef29cf",
+        "candidate_effective_input_id": "a87516992f427cb6888715c299b0b1fc84a49f34805414e359e6454598666800",
         "change_time_evidence": null,
         "deadline_at": null,
         "earliest_unpublished_change_at": null,
         "freshness_status": "FreshnessUnknown",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
         "publication_time_evidence": {
           "exact_publication_time": false,
           "kind": "FirstVerifiedRemoteObservation",
-          "observed_at": "2026-10-20T08:56:07.366289+00:00"
+          "observed_at": "2026-10-21T10:01:02.135384+00:00"
         },
         "published_at": null,
-        "published_effective_input_id": "be09ac7d5610ba8d3c3815617eaf8e8ff973f62a2d423870b0817c5b62ef29cf",
+        "published_effective_input_id": "a87516992f427cb6888715c299b0b1fc84a49f34805414e359e6454598666800",
         "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
       },
       "freshness_status": "FreshnessUnknown",
@@ -5689,89 +5661,41 @@
         "independent_consumer": "PASS",
         "receipt_hashes": {
           "consumer_binding": {
-            "receipt": "consumer-installed-binding-03.json",
-            "sha256": "532939492e58fa66d46b20dd3ba792e7794d08106d8f392d17b0189552428082"
+            "receipt": "consumer-installed-binding-01.json",
+            "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
           },
           "consumer_make": {
-            "receipt": "consumer-all-03.json",
-            "sha256": "76d32be641eeb14e9121f11d1890db666dd4bd90ed2c078027c9377b7b9b88dd"
+            "receipt": "consumer-all-01.json",
+            "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
           },
           "consumer_runtime": {
             "receipt": "consumer-runtime-01.json",
-            "sha256": "af98ceaadd72508b880a2ab49e3bb7a4286f3dfd2d8994e5c4437fd8486fe43e"
+            "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
           },
           "native": {
             "receipt": "publication-native-validation/receipt.json",
-            "sha256": "04efb98ec3672303526d7f561d8e58df7aba9182c17d631d2ac24a23eeb08fb1"
+            "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
           },
           "remote": {
-            "receipt": "remote-readback-34f2d60b64e5.json",
-            "sha256": "4ca78470c945dbc7684063e79e841a256eeacc621c298778168b1785bd3f2ae9"
+            "receipt": "remote-readback-84b6b684a8d6.json",
+            "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
           },
           "review": {
-            "receipt": "independent-consumer-review-01.json",
-            "sha256": "38dd84842ffbe50f291a74df8422c0ddc751edb84d32cc9b78b54af56f3a568e"
+            "receipt": "final-consumer-review.json",
+            "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
           }
         },
         "remote_bytes": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "signature_payload": "PASS"
       },
       "last_successful_input": {
         "complete": true,
-        "effective_input_sha256": "be09ac7d5610ba8d3c3815617eaf8e8ff973f62a2d423870b0817c5b62ef29cf",
+        "effective_input_sha256": "a87516992f427cb6888715c299b0b1fc84a49f34805414e359e6454598666800",
         "kind": "source-build",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
-        "published_artifact_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
+        "published_artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "published_at": null,
-        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
-        "source": {
-          "effective_input_id": "be09ac7d5610ba8d3c3815617eaf8e8ff973f62a2d423870b0817c5b62ef29cf",
-          "installed_license_notices": [],
-          "kind": "source-build",
-          "license_references": [
-            {
-              "path": "licenses/run-20261020/extrautils/LICENSE.md",
-              "sha256": "6f43872bc11f3249878aa63b58b867cb99f128fd5c48f63bec5629bc05229b35"
-            }
-          ],
-          "prepared_source": {
-            "git_revision": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
-            "tree_sha256": "3ad702b2db2aaf677eb6d76e591a476371b075794ce99d70dd2dabc1cbdf9c4c"
-          },
-          "recipe": "recipes/core/extrautils/recipe.toml",
-          "recipe_blake3": null,
-          "recipe_blob": "902443c2d0f1679fb96cc43f6056434223ce5840",
-          "recipe_pin": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
-          "source_sha": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
-          "source_support_identities": [
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/extrautils/recipe.toml",
-              "repository": "RedoxORG/redox",
-              "sha256": "f9d08398d6bf2341ab383d45667ee9fef3cc42f33e3d51718480a11b2329c1e4"
-            }
-          ],
-          "source_url": "https://gitlab.redox-os.org/redox-os/extrautils.git"
-        },
-        "validation": {
-          "independent_consumer": "PASS",
-          "remote_bytes": "PASS",
-          "signature_payload": "PASS"
-        }
-      },
-      "pending_publication": {
-        "candidate_artifact": {
-          "archive_sha256": "404fb07148726bf7385be8656cdee4a8d7e961328f108524c169105be092e1d4",
-          "metadata_sha256": "6b8261abbd5bbf81aa45936f5fc46fcb4ce418522756e4eb3fe9ce8d5b8b1900"
-        },
-        "candidate_effective_input_id": "a87516992f427cb6888715c299b0b1fc84a49f34805414e359e6454598666800",
-        "freshness_status": "FreshnessUnknown",
-        "publication": "PendingPublication",
-        "runtime_evidence": {
-          "receipt": "normal-runtime-02.json",
-          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
-        },
         "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
         "source": {
           "effective_input_id": "a87516992f427cb6888715c299b0b1fc84a49f34805414e359e6454598666800",
@@ -5802,15 +5726,19 @@
           ],
           "source_url": "https://gitlab.redox-os.org/redox-os/extrautils.git"
         },
-        "status": "PendingPublication"
+        "validation": {
+          "independent_consumer": "PASS",
+          "remote_bytes": "PASS",
+          "signature_payload": "PASS"
+        }
       },
       "published_artifact": {
-        "archive_sha256": "23882cd0c4ca64a615844d2dd12b162f32f4e10b06548affd54692fce45be944",
-        "metadata_sha256": "8e875c3e9de59c6f78d48c4b06c7eff83ee8c08f4cfa215fcd661054d3656ebc",
+        "archive_sha256": "404fb07148726bf7385be8656cdee4a8d7e961328f108524c169105be092e1d4",
+        "metadata_sha256": "6b8261abbd5bbf81aa45936f5fc46fcb4ce418522756e4eb3fe9ce8d5b8b1900",
         "readback": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c"
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745"
       },
-      "published_effective_input_id": "be09ac7d5610ba8d3c3815617eaf8e8ff973f62a2d423870b0817c5b62ef29cf",
+      "published_effective_input_id": "a87516992f427cb6888715c299b0b1fc84a49f34805414e359e6454598666800",
       "published_source_receipt": null,
       "reason": "No adopted effective input change selected; archive/metadata byte-identical to frozen main. Historical missing full baseline is not reconstructed by this observation.",
       "runtime": "NotRun",
@@ -6308,6 +6236,7 @@
         "metadata_sha256": "4deb245e46754c76a47ee65b6fe3be8e5d38920ce069402c01f7d54a47f09541",
         "payload_sha256": "aced2f13388e0a7d897320c3c04b8971fb014392c97c42b811d7da3f4f9483dc"
       },
+      "candidate_effective_input_id": "9adffdf3fffc20296e0893d2870f02f614922851c23445f4f4335d0ab89f4646",
       "candidate_input": {
         "branch": "local/main",
         "common_input": "current_build_inputs",
@@ -7496,1234 +7425,61 @@
         "submodules": {}
       },
       "freshness": {
-        "candidate_effective_input_id": "eb6c51068bc8b904c0aa94fc3daf83b1799649989a50b2bcf6b9e1b36c48a44b",
+        "candidate_effective_input_id": "9adffdf3fffc20296e0893d2870f02f614922851c23445f4f4335d0ab89f4646",
         "change_time_evidence": null,
         "deadline_at": null,
         "earliest_unpublished_change_at": null,
-        "freshness_status": "PublishedFrozenInput",
-        "published_at": "2026-10-12T16:25:23.828562+00:00",
-        "published_effective_input_id": "eb6c51068bc8b904c0aa94fc3daf83b1799649989a50b2bcf6b9e1b36c48a44b",
+        "freshness_status": "FreshnessUnknown",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
+        "publication_time_evidence": {
+          "exact_publication_time": false,
+          "kind": "FirstVerifiedRemoteObservation",
+          "observed_at": "2026-10-21T10:01:02.135384+00:00"
+        },
+        "published_at": null,
+        "published_effective_input_id": "9adffdf3fffc20296e0893d2870f02f614922851c23445f4f4335d0ab89f4646",
         "reason": "Exact run-start inputs published. Later source pushes belong to next scheduled run; not queried again."
       },
+      "freshness_status": "FreshnessUnknown",
       "last_artifact_verification": {
-        "archive_sha256": "b0fe6797741e89073f091c769b9036c2553c3de4f1da61fc34af3240d3055ce7",
-        "consumer_archive_bound": true,
-        "date": "2026-10-13",
-        "metadata_sha256": "4deb245e46754c76a47ee65b6fe3be8e5d38920ce069402c01f7d54a47f09541",
-        "metadata_signed_header_index": "PASS",
-        "package_commit": "5f29a6ed3b11ae242e6a152356182317175bca97",
-        "receipt": "binary-inputs.json:verification",
-        "signature_extraction": "PASS"
+        "independent_consumer": "PASS",
+        "receipt_hashes": {
+          "consumer_binding": {
+            "receipt": "consumer-installed-binding-01.json",
+            "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
+          },
+          "consumer_make": {
+            "receipt": "consumer-all-01.json",
+            "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
+          },
+          "consumer_runtime": {
+            "receipt": "consumer-runtime-01.json",
+            "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
+          },
+          "native": {
+            "receipt": "publication-native-validation/receipt.json",
+            "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
+          },
+          "remote": {
+            "receipt": "remote-readback-84b6b684a8d6.json",
+            "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
+          },
+          "review": {
+            "receipt": "final-consumer-review.json",
+            "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
+          }
+        },
+        "remote_bytes": "PASS",
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
+        "signature_payload": "PASS"
       },
       "last_successful_input": {
-        "branch": "local/main",
-        "common_input": "build_input_sets:d09dc57e1d0f5665384e64c1bb6726f9ffdb100b49fa7ef72fd99b4d3abcae4c",
-        "common_input_identity": "d09dc57e1d0f5665384e64c1bb6726f9ffdb100b49fa7ef72fd99b4d3abcae4c",
         "complete": true,
-        "effective_input_sha256": "eb6c51068bc8b904c0aa94fc3daf83b1799649989a50b2bcf6b9e1b36c48a44b",
-        "lockfiles": {
-          "Cargo.lock": {
-            "dependencies": [
-              {
-                "checksum": "b169f7a6d4742236a0a00c541b845991d0ac43e546831af1249753ab4c3aa3a0",
-                "name": "aes",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.8.4"
-              },
-              {
-                "checksum": "c982642fa9e8606056828ee9a8505737230110bb1099153c79efe865c59d12ba",
-                "name": "aho-corasick",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.1.5"
-              },
-              {
-                "checksum": "ae221649c9976a6f6c56ae1facf410f3ddb33cc661c4b7b61020a912d4237fbc",
-                "name": "android_system_properties",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.6"
-              },
-              {
-                "checksum": "824a212faf96e9acacdbd09febd34438f8f711fb84e09a8916013cd7815ca28d",
-                "name": "anstream",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.0"
-              },
-              {
-                "checksum": "940b3a0ca603d1eade50a4846a2afffd5ef57a9feac2c0e2ec2e14f9ead76000",
-                "name": "anstyle",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.14"
-              },
-              {
-                "checksum": "52ce7f38b242319f7cabaa6813055467063ecdc9d355bbb4ce0c68908cd8130e",
-                "name": "anstyle-parse",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.0"
-              },
-              {
-                "checksum": "40c48f72fd53cd289104fc64099abca73db4166ad86ea0b4341abe65af83dadc",
-                "name": "anstyle-query",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.1.5"
-              },
-              {
-                "checksum": "291e6a250ff86cd4a820112fb8898808a366d8f9f58ce16d1f538353ad55747d",
-                "name": "anstyle-wincon",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "3.0.11"
-              },
-              {
-                "checksum": "330a5ed07fa54e4702c9d6c4174f74427fc0ef6e214bbd677ae50a5099946470",
-                "name": "anyhow",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.104"
-              },
-              {
-                "checksum": "e9bcdf9185a4ea0d8afa7c8ad387cc3a93c3ecfa918125e000a57a42e71268d7",
-                "name": "arg_parser",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.0"
-              },
-              {
-                "checksum": "db4ce4441f99dbd377ca8a8f57b698c44d0d6e712d8329b5040da5a64aa1ce73",
-                "name": "argon2",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.1"
-              },
-              {
-                "checksum": "d3fb67a6e08acf24fdeccbac2cb6ac4305825bd1f117462e0e6f2f193345ad56",
-                "name": "arrayvec",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.7.8"
-              },
-              {
-                "checksum": "f2032f911046de80f0a198e0901378627c33f59ea0ac00e363d481118bd70a53",
-                "name": "autocfg",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.5.1"
-              },
-              {
-                "checksum": "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6",
-                "name": "base64",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.22.1"
-              },
-              {
-                "checksum": "ac07cdecf99051d9a5238b80f35af32cdeba5b336e55d957b318b50137e18da5",
-                "name": "base64",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.23.1"
-              },
-              {
-                "checksum": "2af50177e190e07a26ab74f8b1efbfe2ef87da2116221318cb1c2e82baf7de06",
-                "name": "base64ct",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.8.3"
-              },
-              {
-                "checksum": "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a",
-                "name": "bitflags",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.3.2"
-              },
-              {
-                "checksum": "3ded4057c258ba199e2d26386d3af3780957ecaee6c4ef4041c6b4b8b97c0b06",
-                "name": "bitflags",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "2.13.2"
-              },
-              {
-                "checksum": "46502ad458c9a52b69d4d4d32775c788b7a1b85e8bc9d482d92250fc0e3f8efe",
-                "name": "blake2",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.10.6"
-              },
-              {
-                "checksum": "3560a7b1951efe814fcd721938313adc56753ca39f4b23847d7e9a2402f5dbff",
-                "name": "blake2b_simd",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.5"
-              },
-              {
-                "checksum": "6d9e454fc11f76977dc803893aff6304ed33d6a26efae8696573bea74baa27ae",
-                "name": "blake3",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.8.7"
-              },
-              {
-                "checksum": "3078c7629b62d3f0439517fa394996acacc5cbc91c5a20d8c658e77abd503a71",
-                "name": "block-buffer",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.10.4"
-              },
-              {
-                "checksum": "d2f6c7dbe95a6ed67ad9f18e57daf93a2f034c524b99fd2b76d18fdfeb6660aa",
-                "name": "block-buffer",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.12.1"
-              },
-              {
-                "checksum": "72f5acc6cb2ba439de613abc23857ec3d78374d8ed5ac84e9d11336e87da8649",
-                "name": "bumpalo",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "3.20.3"
-              },
-              {
-                "checksum": "95832e849adfb21180ccb6826a99da14e5d266ae5c2e668e1602cf234f153797",
-                "name": "bytemuck",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.25.2"
-              },
-              {
-                "checksum": "6a1f896587b6f2c069c73d2f0913e2d590c3990285cd2f0b6aa02b786b4c679c",
-                "name": "bytemuck_derive",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.12.1"
-              },
-              {
-                "checksum": "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b",
-                "name": "byteorder",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.5.0"
-              },
-              {
-                "checksum": "fc652a48c352aef3ea3aed32080501cf3ef6ed5da78602a020c991775b0aff04",
-                "name": "bytes",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.12.1"
-              },
-              {
-                "checksum": "54413ede23c2daf518f35156dfde027feb2374004d63bd497f983c8db9c0e313",
-                "name": "cc",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.4.7"
-              },
-              {
-                "checksum": "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600",
-                "name": "cfg-if",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.5"
-              },
-              {
-                "checksum": "f079e83a288787bcd14a6aea84cee5c87a67c5a3e660c30f557a3d24761b3527",
-                "name": "cfg_aliases",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.2"
-              },
-              {
-                "checksum": "65c35e4b699c7e15ccbe7ee35c005e4fc0a278d22238a2857e6ce2dadeda1b06",
-                "name": "chacha20",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.10.2"
-              },
-              {
-                "checksum": "1aa79e62e7697b8e29b513a68abacf485adcd1fe8284a4316c5ae868e6633327",
-                "name": "chrono",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.45"
-              },
-              {
-                "checksum": "773f3b9af64447d2ce9850330c473515014aa235e6a783b02db81ff39e4a3dad",
-                "name": "cipher",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.4"
-              },
-              {
-                "checksum": "e8cf2a2c93cd704877c0858356ed03480ff301ee950b43f1cbe4573b088bfa6c",
-                "name": "cipher",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.5.2"
-              },
-              {
-                "checksum": "1d07550c9036bf2ae0c684c4297d503f838287c83c53686d05370d0e139ae570",
-                "name": "colorchoice",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.5"
-              },
-              {
-                "checksum": "e96a4956774c13c126a8b5af4daa79384f4d826534c95a02d76afb39e2ab64e3",
-                "name": "console",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.16.6"
-              },
-              {
-                "checksum": "a6ef517f0926dd24a1582492c791b6a4818a4d94e789a334894aa15b0d12f55c",
-                "name": "const-oid",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.10.2"
-              },
-              {
-                "checksum": "3d52eff69cd5e647efe296129160853a42795992097e8af39800e1060caeea9b",
-                "name": "constant_time_eq",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.2"
-              },
-              {
-                "checksum": "773648b94d0e5d620f64f280777445740e61fe701025087ec8b57f45c791888b",
-                "name": "core-foundation-sys",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.8.7"
-              },
-              {
-                "checksum": "59ed5838eebb26a2bb2e58f6d5b5316989ae9d08bab10e0e6d103e656d1b0280",
-                "name": "cpufeatures",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.17"
-              },
-              {
-                "checksum": "5ca28b0ae3115b884660db4118d803791fd6756b6e88f39c0f3f7859060d7566",
-                "name": "cpufeatures",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.3.1"
-              },
-              {
-                "checksum": "5eb8a2a1cd12ab0d987a5d5e825195d372001a4094a0376319d5a0ad71c1ba0d",
-                "name": "crc",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "3.4.0"
-              },
-              {
-                "checksum": "217698eaf96b4a3f0bc4f3662aaa55bdf913cd54d7204591faa790070c6d0853",
-                "name": "crc-catalog",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "2.5.0"
-              },
-              {
-                "checksum": "622f3fc73690be383c7214310406f28a90e6edeadc3cea882f9d71e495b9711a",
-                "name": "crossbeam-deque",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.8.8"
-              },
-              {
-                "checksum": "dc74980687109a3b14c72fd458107bf0baa1da1a1a805e178d15501ba9b86d9d",
-                "name": "crossbeam-epoch",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.9.21"
-              },
-              {
-                "checksum": "a31eee39dddec8330830986fcd7625edb5a24ec90ea038215273bbc3adb08ac6",
-                "name": "crossbeam-utils",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.8.23"
-              },
-              {
-                "checksum": "78c8292055d1c1df0cce5d180393dc8cce0abec0a7102adb6c7b1eef6016d60a",
-                "name": "crypto-common",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.7"
-              },
-              {
-                "checksum": "ce6e4c961d6cd6c9a86db418387425e8bdeaf05b3c8bc1411e6dca4c252f1453",
-                "name": "crypto-common",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.2"
-              },
-              {
-                "checksum": "97fb8b7c4503de7d6ae7b42ab72a5a59857b4c937ec27a3d4539dba95b5ab2be",
-                "name": "curve25519-dalek",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "4.1.3"
-              },
-              {
-                "checksum": "f46882e17999c6cc590af592290432be3bce0428cb0d5f8b6715e4dc7b383eb3",
-                "name": "curve25519-dalek-derive",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.1"
-              },
-              {
-                "checksum": "e2953bfe4f93bbd20cc71198842756f77d161884c99ebbabc41d80231ded88d1",
-                "name": "defmt",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.1.1"
-              },
-              {
-                "checksum": "bad9c72e7ca2137e0dc3813245a0d282fd6daad32fd800af018306a9169b5fe8",
-                "name": "defmt-macros",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.1.1"
-              },
-              {
-                "checksum": "10d60334b3b2e7c9d91ef8150abfb6fa4c1c39ebbcf4a81c2e346aad939fee3e",
-                "name": "defmt-parser",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.0"
-              },
-              {
-                "checksum": "9ed9a281f7bc9b7576e61468ba615a66a5c8cfdff42420a70aa82701a3b1e292",
-                "name": "digest",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.10.7"
-              },
-              {
-                "checksum": "f1dd6dbb5841937940781866fa1281a1ff7bd3bf827091440879f9994983d5c2",
-                "name": "digest",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.11.3"
-              },
-              {
-                "checksum": "2a9268c01fc6ec1f2a104ae9e40343c255fbcafea97a48f334237206c96838b2",
-                "name": "dryoc",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.0"
-              },
-              {
-                "checksum": "34aa73646ffb006b8f5147f3dc182bd4bcb190227ce861fc4a4844bf8e3cb2c0",
-                "name": "encode_unicode",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.0"
-              },
-              {
-                "checksum": "f8f59926911ef34d1efb9ea1ee8ca78385df62ce700ccf2bcb149011bd226888",
-                "name": "endian-num",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.2"
-              },
-              {
-                "checksum": "900d271a03799a1ee8d1ca9b19893b48ca674a9284fefcfb85f05e74ed314217",
-                "name": "env_filter",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "2.0.0"
-              },
-              {
-                "checksum": "de671bd27a75a797dc9ae289ba1e77276e75e2026408aab65185384e2d5cd3f6",
-                "name": "env_logger",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.11.11"
-              },
-              {
-                "checksum": "877a4ace8713b0bcf2a4e7eec82529c029f1d0619886d18145fea96c3ffe5c0f",
-                "name": "equivalent",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.2"
-              },
-              {
-                "checksum": "05669f8e7e2d7badc545c513710f0eba09c2fbef683eb859fd79c46c355048e0",
-                "name": "fatfs",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.3.6"
-              },
-              {
-                "checksum": "28dea519a9695b9977216879a3ebfddf92f1c08c05d984f8996aecd6ecdc811d",
-                "name": "fiat-crypto",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.9"
-              },
-              {
-                "checksum": "ef25905e51abafe4dcea6c15fec58c57b601cdbd0ee53d22ea1d3016c587d39b",
-                "name": "find-msvc-tools",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.13"
-              },
-              {
-                "checksum": "315ce685aca5ddcc5a3e7e436ef47d4a5d0064462849b6f0f628c28140103531",
-                "name": "fscommon",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.1"
-              },
-              {
-                "checksum": "0bb29a3ae32279fe3e79a958fe01899f5fb23eadccee919cf88e145b54ed9367",
-                "name": "fuser",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.16.0"
-              },
-              {
-                "checksum": "92d699e522242e69e3003b94ecc1f960f3a5e015aa7c5d7486e65ad01dd94f5e",
-                "name": "futures-core",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.3.34"
-              },
-              {
-                "checksum": "cd417de3d1d015fc3bfd2b1ea46dfc7bab72ef86f1cc7cc9c78e728b34a6d1fd",
-                "name": "futures-task",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.3.34"
-              },
-              {
-                "checksum": "0d50a92467f8ba5dd6e3ee5d4bd04d73ab2e4e1c44474a0674821dfce14b79bc",
-                "name": "futures-util",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.3.34"
-              },
-              {
-                "checksum": "85649ca51fd72272d7821adaf274ad91c288277713d9c18820d8499a7ff69e9a",
-                "name": "generic-array",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.14.7"
-              },
-              {
-                "checksum": "ff2abc00be7fca6ebc474524697ae276ad847ad0a6b3faa4bcb027e9a4614ad0",
-                "name": "getrandom",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.17"
-              },
-              {
-                "checksum": "300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099",
-                "name": "getrandom",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.3"
-              },
-              {
-                "checksum": "8283e7331b8c93b9756e0cfdbcfb90312852f953c6faf9bf741e684cc3b6ad69",
-                "name": "gpt",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "3.1.0"
-              },
-              {
-                "checksum": "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a",
-                "name": "hashbrown",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.17.1"
-              },
-              {
-                "checksum": "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70",
-                "name": "hex",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.3"
-              },
-              {
-                "checksum": "918d3568bebf352712bc2ef3d46a8bcf1a75b373be6539de198e9105cbbf9ce0",
-                "name": "http",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.5.0"
-              },
-              {
-                "checksum": "6dbf3de79e51f3d586ab4cb9d5c3e2c14aa28ed23d180cf89b4df0454a69cc87",
-                "name": "httparse",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.10.1"
-              },
-              {
-                "checksum": "6cb51c9a029ddc91b07a787f1d86b53ccfa49b0e86688c946ebe8d3555685dd7",
-                "name": "humansize",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "2.1.3"
-              },
-              {
-                "checksum": "27f864f10dfb56725ce5ce5472bc52252c8f93a4ab86327122cebf62c5f59a17",
-                "name": "hybrid-array",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.15"
-              },
-              {
-                "checksum": "e31bc9ad994ba00e440a8aa5c9ef0ec67d5cb5e5cb0cc7f8b744a35b389cc470",
-                "name": "iana-time-zone",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.65"
-              },
-              {
-                "checksum": "f31827a206f56af32e590ba56d5d2d085f558508192593743f16b2306495269f",
-                "name": "iana-time-zone-haiku",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.2"
-              },
-              {
-                "checksum": "cc4e190f5d26ca7051642629da2c52fc03bde85a03197c99408dcd291734c855",
-                "name": "indexmap",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "2.14.2"
-              },
-              {
-                "checksum": "9433806cd6b4ec1aba79c021c7e4c58fb4c3b9977c085062e611ac929998fb0c",
-                "name": "indicatif",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.18.6"
-              },
-              {
-                "checksum": "879f10e63c20629ecabbb64a8010319738c66a5cd0c29b02d63d272b03751d01",
-                "name": "inout",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.4"
-              },
-              {
-                "checksum": "4250ce6452e92010fdf7268ccc5d14faa80bb12fc741938534c58f16804e03c7",
-                "name": "inout",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.2"
-              },
-              {
-                "checksum": "a6cb138bb79a146c1bd460005623e142ef0181e3d0219cb493e02f7d08a35695",
-                "name": "is_terminal_polyfill",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.70.2"
-              },
-              {
-                "checksum": "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682",
-                "name": "itoa",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.18"
-              },
-              {
-                "checksum": "0ab1baf72f08796de0260609515130699b890ac25f30e610ad894bc5856cafdb",
-                "name": "jiff",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.37"
-              },
-              {
-                "checksum": "5e52fe76043ccecc9005d2305ebaadf7d7fc0cc89ca6baa10a94d6bc68c7128c",
-                "name": "jiff-core",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.1"
-              },
-              {
-                "checksum": "378268a1116ad67ae6228701118ac9f491d78fda38a40a1f1a9e1348de6f7212",
-                "name": "jiff-static",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.37"
-              },
-              {
-                "checksum": "ce57d20d1ea864ce2ac172ab472d409214f4fd359f0b2a2775abdf522e2af99e",
-                "name": "js-sys",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.3.105"
-              },
-              {
-                "checksum": "d8f198d1db720e4940b5a493201d199d9f24f568f8f746bd13706243a2f71598",
-                "name": "keccak",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.2"
-              },
-              {
-                "checksum": "3eaf3ede3fee6db1a4c2ee091bf8a8b4dccdc6d17f656fb07896ee72867612f2",
-                "name": "libc",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.189"
-              },
-              {
-                "checksum": "b6d2cec3eae94f9f509c767b45932f1ada8350c4bdb85af2fcab4a3c14807981",
-                "name": "libm",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.16"
-              },
-              {
-                "checksum": "6480ccc157a1389bb2e4891b24751b0f798ba640d22386f23143fbcc89da195a",
-                "name": "libredox",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.24"
-              },
-              {
-                "checksum": "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6",
-                "name": "log",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.34"
-              },
-              {
-                "checksum": "373f5eceeeab7925e0c1098212f2fbc4d416adec9d35051a6ab251e824c1854a",
-                "name": "lz4_flex",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.11.6"
-              },
-              {
-                "checksum": "5e2a88783b84d2d67ef2791778a9e76bfb68b8017aaf6c9d7d5f2626a478b16c",
-                "name": "lzma-rust2",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.20.1"
-              },
-              {
-                "checksum": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98",
-                "name": "memchr",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "2.8.3"
-              },
-              {
-                "checksum": "bcf2b4d7a25d60474415c3ed174d37baac2881182484cce3cd765536e17301cf",
-                "name": "memsafe",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.2"
-              },
-              {
-                "checksum": "71e2746dc3a24dd78b3cfcb7be93368c6de9963d30f43a6a73998a9cf4b17b46",
-                "name": "nix",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.29.0"
-              },
-              {
-                "checksum": "071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841",
-                "name": "num-traits",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.19"
-              },
-              {
-                "checksum": "6aa2c4e539b869820a2b82e1aef6ff40aa85e65decdd5185e83fb4b1249cd00f",
-                "name": "numtoa",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.4"
-              },
-              {
-                "checksum": "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50",
-                "name": "once_cell",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.21.4"
-              },
-              {
-                "checksum": "384b8ab6d37215f3c5301a95a4accb5d64aa607f1fcb26a11b5303878451b4fe",
-                "name": "once_cell_polyfill",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.70.2"
-              },
-              {
-                "checksum": "30d5b2194ed13191c1999ae0704b7839fb18384fa22e49b57eeaa97d79ce40da",
-                "name": "page_size",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.6.0"
-              },
-              {
-                "checksum": "487f2ccd1e17ce8c1bfab3a65c89525af41cfad4c8659021a1e9a2aacd73b89b",
-                "name": "parse-size",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.1.0"
-              },
-              {
-                "checksum": "9b4f627cb1b25917193a259e49bdad08f671f8d9708acfd5fe0a8c1455d87220",
-                "name": "percent-encoding",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "2.3.2"
-              },
-              {
-                "checksum": "a89322df9ebe1c1578d689c92318e070967d1042b512afbe49518723f4e6d5cd",
-                "name": "pin-project-lite",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.17"
-              },
-              {
-                "checksum": "79cb441306b44161fa3cf0cbb5b5e04732855c8e9cf051c67047b765ba2b80c7",
-                "name": "pkgar",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.4"
-              },
-              {
-                "checksum": "7a6bf85f56749c7ae2d75152d8eaf01bc9eb4e9fd878fe358547dd9d9fbeeb31",
-                "name": "pkgar-core",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.4"
-              },
-              {
-                "checksum": "e7e38df0680479e75c8bac1e1bfd244a0463a29455075f68a65ffab384d9de8e",
-                "name": "pkgar-keys",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.4"
-              },
-              {
-                "checksum": "b4596b6d070b27117e987119b4dac604f3c58cfb0b191112e24771b2faeac1a6",
-                "name": "plain",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.3"
-              },
-              {
-                "checksum": "05c8b63e8d9609db387f0324918f81d68fe27748f084ef092fb35954d0539a85",
-                "name": "portable-atomic",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.15.0"
-              },
-              {
-                "checksum": "10ab3eb7f3becc3a1cbc4f2c6f20267996cfc1a6467a873763411b136a122715",
-                "name": "portable-atomic-util",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.8"
-              },
-              {
-                "checksum": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9",
-                "name": "proc-macro2",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.107"
-              },
-              {
-                "checksum": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001",
-                "name": "quote",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.47"
-              },
-              {
-                "checksum": "f8dcc9c7d52a811697d2151c701e0d08956f92b0e24136cf4cf27b57a6a0d9bf",
-                "name": "r-efi",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "6.0.0"
-              },
-              {
-                "checksum": "c7f5fa3a058cd35567ef9bfa5e75732bee0f9e4c55fa90477bef2dfcdbc4be80",
-                "name": "rand",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.10.2"
-              },
-              {
-                "checksum": "63b8176103e19a2643978565ca18b50549f6101881c443590420e4dc998a3c69",
-                "name": "rand_core",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.10.1"
-              },
-              {
-                "checksum": "384c2842d4e069d5ccacf5fe1dca4ef8d07a5444329715f0fc3c61813502d4d1",
-                "name": "range-tree",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.0"
-              },
-              {
-                "checksum": "22e18b0f0062d30d4230b2e85ff77fdfe4326feb054b9783a3460d8435c8ab91",
-                "name": "rayon-core",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.13.0"
-              },
-              {
-                "checksum": "436d45c2b6a5b159d43da708e62b25be3a4a3d5550d654b72216ade4c4bfd717",
-                "name": "redox-path",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.3.1"
-              },
-              {
-                "checksum": "960488345d8f83ba3a074c96ce43e01512086476c44447eabf215a9900285f5e",
-                "name": "redox-pkg",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.3.3"
-              },
-              {
-                "checksum": "aee42bf75b05941289e47373f24b4bce194a49d5eb5c99d7e0f82ab15c62e800",
-                "name": "redox-scheme",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.11.4"
-              },
-              {
-                "name": "redox_installer",
-                "version": "0.2.42"
-              },
-              {
-                "checksum": "737970939a87c6fa31e7acad13307bccbb017a073b695b6089a2c484f929e20e",
-                "name": "redox_syscall",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.9.4"
-              },
-              {
-                "checksum": "a66d0c043a5768739851a7e5775192a70fdffdbf3418c22fd7927415d41a87c3",
-                "name": "redoxfs",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.9.1"
-              },
-              {
-                "checksum": "f020237b6c8eed93db2e2cb53c00c60a8e1bc73da7d073199a1180401450218d",
-                "name": "regex",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.13.1"
-              },
-              {
-                "checksum": "ad8553b9b26413251cbf30e620595c7a41b3887f03da04579c0e6b0d6a06b4b2",
-                "name": "regex-automata",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.18"
-              },
-              {
-                "checksum": "d6f6ff9a378485b298a5286656da665ba74413d36db0979633275d2e708145d4",
-                "name": "regex-syntax",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.8.11"
-              },
-              {
-                "name": "ring",
-                "source": "git+https://gitlab.redox-os.org/redox-os/ring.git?branch=redox-0.17.16#46fafb2ceef262fcda315f4efe33c2c0caa2dd65",
-                "version": "0.17.16000"
-              },
-              {
-                "checksum": "8ae76b7506744d254fd0eb2c0ff5c5d108201ccbb083111ac04a44eeda105680",
-                "name": "rust-argon2",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "3.0.0"
-              },
-              {
-                "checksum": "cfcb3a22ef46e85b45de6ee7e79d063319ebb6594faafcf1c225ea92ab6e9b92",
-                "name": "rustc_version",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.1"
-              },
-              {
-                "checksum": "0d41d731c7d2f962d1ccc364cec258de3c0e93b38c2fb3ba97ac74513048d634",
-                "name": "rustls",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.23.45"
-              },
-              {
-                "checksum": "2f4925028c7eb5d1fcdaf196971378ed9d2c1c4efc7dc5d011256f76c99c0a96",
-                "name": "rustls-pki-types",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.15.1"
-              },
-              {
-                "checksum": "f3c3cf1d8b1e7d4927e2d154c3fcb02979afb9939629c62cd9048d4f07b60ac2",
-                "name": "rustls-webpki",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.103.15"
-              },
-              {
-                "checksum": "cf54715a573b99ac80df0bc206da022bcd442c974952c7b9720069370852e21f",
-                "name": "rustversion",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.23"
-              },
-              {
-                "checksum": "2f874456e72520ff1375a06c588eaf074b0f01f9e9e1aada45bd9b7954a6e42c",
-                "name": "salsa20",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.11.0"
-              },
-              {
-                "checksum": "1c107b6f4780854c8b126e228ea8869f4d7b71260f962fefb57b996b8959ba6b",
-                "name": "seahash",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "4.1.0"
-              },
-              {
-                "checksum": "8a7852d02fc848982e0c167ef163aaff9cd91dc640ba85e263cb1ce46fae51cd",
-                "name": "semver",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.28"
-              },
-              {
-                "checksum": "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba",
-                "name": "serde",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.229"
-              },
-              {
-                "checksum": "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48",
-                "name": "serde_core",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.229"
-              },
-              {
-                "checksum": "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348",
-                "name": "serde_derive",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.229"
-              },
-              {
-                "checksum": "6662b5879511e06e8999a8a235d848113e942c9124f211511b16466ee2995f26",
-                "name": "serde_spanned",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.1.1"
-              },
-              {
-                "checksum": "446ba717509524cb3f22f17ecc096f10f4822d76ab5c0b9822c5f9c284e825f4",
-                "name": "sha2",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.11.0"
-              },
-              {
-                "checksum": "bc9bad02c26382724b2d2692c6f179285e4b54eeecd7968f52a50059c3c11759",
-                "name": "sha3",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.12.0"
-              },
-              {
-                "checksum": "f8fadd59c855ef2080decdef8ff161eb6661b86933c9d82e5ba29dc602a55aba",
-                "name": "shlex",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "2.0.1"
-              },
-              {
-                "checksum": "0c790de23124f9ab44544d7ac05d60440adc586479ce501c1d6d7da3cd8c9cf5",
-                "name": "slab",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.12"
-              },
-              {
-                "checksum": "ba467056f1b547ed52077911161fc86985becbc60e8e1857c8a144dab0def891",
-                "name": "smallvec",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.16.1"
-              },
-              {
-                "checksum": "3a0219bd7d979d58245a4f41f695e1ac9f8befdffadd7f61f1bae9e39abc6620",
-                "name": "sponge-cursor",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.1.0"
-              },
-              {
-                "checksum": "13c2bddecc57b384dee18652358fb23172facb8a2c51ccc10d74c157bdea3292",
-                "name": "subtle",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "2.6.1"
-              },
-              {
-                "checksum": "872831b642d1a07999a962a351ed35b955ea2cfc8f3862091e2a240a84f17297",
-                "name": "syn",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "2.0.119"
-              },
-              {
-                "checksum": "8593e8e72159ed2257d083c7a454a85cbf854f37a0966d8d483aff8c8a3ebcee",
-                "name": "syn",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "3.0.6"
-              },
-              {
-                "checksum": "f44138a9ae08f0f502f24104d82517ef4da7330c35acd638f1f29d3cd5475ecb",
-                "name": "termion",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "4.0.6"
-              },
-              {
-                "checksum": "ec86235f5fcc2a73650310756d2ac5b138a5780bbbdfae3eeccec992c435ba4f",
-                "name": "thiserror",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "2.0.20"
-              },
-              {
-                "checksum": "bc04cd3e1236dd4a98afca4569f2deb3f120e5422a4023be2cb683f8486292af",
-                "name": "thiserror-impl",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "2.0.20"
-              },
-              {
-                "checksum": "920602543f0911ab71da12c50d59701da54c196d1a2bf5cb4b75667f137a406a",
-                "name": "toml",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.1.6+spec-1.1.0"
-              },
-              {
-                "checksum": "3165f65f62e28e0115a00b2ebdd37eb6f3b641855f9d636d3cd4103767159ad7",
-                "name": "toml_datetime",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.1.1+spec-1.1.0"
-              },
-              {
-                "checksum": "1d38ac1cf9b95face32296c0a3ede1fdc270627c9d9c02a7274dd6d960dc4d56",
-                "name": "toml_parser",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.1.3+spec-1.1.0"
-              },
-              {
-                "checksum": "7d56353a2a665ad0f41a421187180aab746c8c325620617ad883a99a1cbe66d2",
-                "name": "toml_writer",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.1.2+spec-1.1.0"
-              },
-              {
-                "checksum": "b6f5e870be6c3b371b77fe0ee0bafb859fa4964b4404c27de1d380043c4dda20",
-                "name": "typenum",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.20.1"
-              },
-              {
-                "checksum": "d245f478577f809a851594d02313b640fb437e0bb33866753cff937863096954",
-                "name": "unicode-ident",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.26"
-              },
-              {
-                "checksum": "81e544489bf3d8ef66c953931f56617f423cd4b5494be343d9b9d3dda037b9a3",
-                "name": "unit-prefix",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.5.2"
-              },
-              {
-                "checksum": "8ecb6da28b8a351d773b68d5825ac39017e680750f980f3a1a85cd8dd28a47c1",
-                "name": "untrusted",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.9.0"
-              },
-              {
-                "checksum": "9a7ac20be9b7726e0bbdbf974c059676d9acb1cd414961f570a4e8231cacd7fc",
-                "name": "ureq",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "3.4.2"
-              },
-              {
-                "checksum": "f86fd172ccca569e458f61b6bdd6220965a9ef36e672a6852953b51a0e1583be",
-                "name": "ureq-proto",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.6.4"
-              },
-              {
-                "checksum": "b8c0a043c9540bae7c578c88f91dda8bd82e59ae27c21baca69c8b191aaf5a6e",
-                "name": "utf8-zero",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.8.1"
-              },
-              {
-                "checksum": "06abde3611657adf66d383f00b093d7faecc7fa57071cce2578660c9f1010821",
-                "name": "utf8parse",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.2"
-              },
-              {
-                "checksum": "2ef6dac1e96601b4fb3acccccff2139741fcb757cb9a36089bf5be91cfb285ce",
-                "name": "uuid",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.26.1"
-              },
-              {
-                "checksum": "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a",
-                "name": "version_check",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.9.5"
-              },
-              {
-                "checksum": "ccf3ec651a847eb01de73ccad15eb7d99f80485de043efb2f370cd654f4ea44b",
-                "name": "wasi",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.11.1+wasi-snapshot-preview1"
-              },
-              {
-                "checksum": "aecb87a33d3b0c5e3b7aa46336eaf486cffafbd281b195e4c8b80d50df2351bf",
-                "name": "wasm-bindgen",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.128"
-              },
-              {
-                "checksum": "a690d511e3c1a8b3a55e33511e3c2c00c78415cd23650f32b808627f5696b9ed",
-                "name": "wasm-bindgen-macro",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.128"
-              },
-              {
-                "checksum": "411e4887f0071ef2d2164a9d5fdf2d20efbef78fccd3a78b0c10a1dc5295e48a",
-                "name": "wasm-bindgen-macro-support",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.128"
-              },
-              {
-                "checksum": "81941cd78d0c92026c33e5e01312845a4cb1e9af3407f9134b100dd03144103e",
-                "name": "wasm-bindgen-shared",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.128"
-              },
-              {
-                "checksum": "7dcd9d09a39985f5344844e66b0c530a33843579125f23e21e9f0f220850f22a",
-                "name": "webpki-roots",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.9"
-              },
-              {
-                "checksum": "5c839a674fcd7a98952e593242ea400abe93992746761e38641405d28b00f419",
-                "name": "winapi",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.3.9"
-              },
-              {
-                "checksum": "ac3b87c63620426dd9b991e5ce0329eff545bccbbb34f3be09ff6fb6ab51b7b6",
-                "name": "winapi-i686-pc-windows-gnu",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.0"
-              },
-              {
-                "checksum": "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f",
-                "name": "winapi-x86_64-pc-windows-gnu",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.0"
-              },
-              {
-                "checksum": "b8e83a14d34d0623b51dce9581199302a221863196a1dde71a7663a4c2be9deb",
-                "name": "windows-core",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.62.2"
-              },
-              {
-                "checksum": "053e2e040ab57b9dc951b72c264860db7eb3b0200ba345b4e4c3b14f67855ddf",
-                "name": "windows-implement",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.60.2"
-              },
-              {
-                "checksum": "3f316c4a2570ba26bbec722032c4099d8c8bc095efccdc15688708623367e358",
-                "name": "windows-interface",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.59.3"
-              },
-              {
-                "checksum": "f0805222e57f7521d6a62e36fa9163bc891acd422f971defe97d64e70d0a4fe5",
-                "name": "windows-link",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.2.1"
-              },
-              {
-                "checksum": "7781fa89eaf60850ac3d2da7af8e5242a5ea78d1a11c49bf2910bb5a73853eb5",
-                "name": "windows-result",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.4.1"
-              },
-              {
-                "checksum": "7837d08f69c77cf6b07689544538e017c1bfcf57e34b4c0ff58e6c2cd3b37091",
-                "name": "windows-strings",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.5.1"
-              },
-              {
-                "checksum": "ae137229bcbd6cdf0f7b80a31df61766145077ddf49416a728b02cb3921ff3fc",
-                "name": "windows-sys",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.61.2"
-              },
-              {
-                "checksum": "23b97319f7b8343df12cc98938e5c3eb436064524c8d2b4e30a1d3a36eecdf81",
-                "name": "winnow",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.0.4"
-              },
-              {
-                "checksum": "09cbddb7545ca0b9ffa7bdc653e8743303e1712687a6918ced25f2cdbed42520",
-                "name": "xts-mode",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.5.1"
-              },
-              {
-                "checksum": "d35102a9f36d089ccae9e4c6802bc118be4487b80aaffc0ab4e0cf5ce92d2873",
-                "name": "zerocopy",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.8.57"
-              },
-              {
-                "checksum": "146c01f5ab44258da43cf276c74a2763db2ff3969c9c652c3f2de07041d0b2bc",
-                "name": "zerocopy-derive",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "0.8.57"
-              },
-              {
-                "checksum": "e13c156562582aa81c60cb29407084cdb54c4164760106ab78e6c5b0858cf64e",
-                "name": "zeroize",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.9.0"
-              },
-              {
-                "checksum": "3c50655cbb0fe3fc43170059e702f1ce5e19b84cec58dc87b037a09935c2f328",
-                "name": "zeroize_derive",
-                "source": "registry+https://github.com/rust-lang/crates.io-index",
-                "version": "1.5.0"
-              }
-            ],
-            "git_blob": "0374727a13e9f742e2e61ad3ac4d081e34f64dfa",
-            "sha256": "8864f1943715495c504106b367ce0f9d4c7ce3f164d2e51b7ea044b3555e6c4e"
-          }
-        },
-        "published_artifact_commit": "5f29a6ed3b11ae242e6a152356182317175bca97",
-        "published_at": "2026-10-12T16:25:23.828562+00:00",
-        "recipe_files": {
-          "recipes/core/installer/recipe.toml": {
-            "git_blob": "0235382117eea7ccb7ffc8793b73ee35be56d358",
-            "mode": "100644"
-          }
-        },
-        "recipe_git_blob": "0235382117eea7ccb7ffc8793b73ee35be56d358",
-        "recipe_path": "recipes/core/installer/recipe.toml",
-        "repository": "RedoxORG/installer",
-        "source_sha": "8ce7e5f94b39f2db8b86834f54d9f405d7cc679c",
-        "source_tree": "cd6c8d921a42af92d53ca4d98b9240e128b7d60c",
-        "submodules": {},
-        "validation": {
-          "build": "PASS",
-          "index": "PASS",
-          "remote_bytes": "PASS",
-          "runtime": "NotRun: installer CLI not exercised",
-          "signature_payload": "PASS"
-        }
-      },
-      "pending_publication": {
-        "candidate_artifact": {
-          "archive_sha256": "69139a75c7bdecf096e934762829767ffbd7c9081d3c8870c0237a8ee86023d3",
-          "metadata_sha256": "9be9bed5ade8b5490e7fb37482ca15a1cdb425f0eb56edb98631d220c16e7d5b"
-        },
-        "candidate_effective_input_id": "9adffdf3fffc20296e0893d2870f02f614922851c23445f4f4335d0ab89f4646",
-        "freshness_status": "FreshnessUnknown",
-        "publication": "PendingPublication",
-        "runtime_evidence": {
-          "receipt": "normal-runtime-02.json",
-          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
-        },
+        "effective_input_sha256": "9adffdf3fffc20296e0893d2870f02f614922851c23445f4f4335d0ab89f4646",
+        "kind": "source-build",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
+        "published_artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
+        "published_at": null,
         "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
         "source": {
           "effective_input_id": "9adffdf3fffc20296e0893d2870f02f614922851c23445f4f4335d0ab89f4646",
@@ -8759,19 +7515,19 @@
           ],
           "source_url": "https://github.com/RedoxORG/installer"
         },
-        "status": "PendingPublication"
+        "validation": {
+          "independent_consumer": "PASS",
+          "remote_bytes": "PASS",
+          "signature_payload": "PASS"
+        }
       },
       "published_artifact": {
-        "archive_blake3": "3adb5d94dbdb4f69df41b4c13891b174c3c26324a89d1f4e3ed97c1dce4bebeb",
-        "archive_sha256": "b0fe6797741e89073f091c769b9036c2553c3de4f1da61fc34af3240d3055ce7",
-        "metadata_commit_identifier": "5300847f01479312b6d932735ee4ca49aefc9e14",
-        "metadata_sha256": "4deb245e46754c76a47ee65b6fe3be8e5d38920ce069402c01f7d54a47f09541",
-        "metadata_source_identifier": "local_source",
-        "payload_sha256": "aced2f13388e0a7d897320c3c04b8971fb014392c97c42b811d7da3f4f9483dc",
-        "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
+        "archive_sha256": "69139a75c7bdecf096e934762829767ffbd7c9081d3c8870c0237a8ee86023d3",
+        "metadata_sha256": "9be9bed5ade8b5490e7fb37482ca15a1cdb425f0eb56edb98631d220c16e7d5b",
         "readback": "PASS",
-        "repository_commit": "5f29a6ed3b11ae242e6a152356182317175bca97"
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745"
       },
+      "published_effective_input_id": "9adffdf3fffc20296e0893d2870f02f614922851c23445f4f4335d0ab89f4646",
       "published_source_receipt": {
         "artifact_commit": "5f29a6ed3b11ae242e6a152356182317175bca97",
         "recipe_commit": "5300847f01479312b6d932735ee4ca49aefc9e14",
@@ -8912,22 +7668,22 @@
         "archive_sha256": "c800326d787ff35155292f781e22424ff18beb88568ec69fe54ed36a8b9f827f",
         "metadata_sha256": "247dad9833cabe77390f5063d0da839c1a4ce6389980c0245f625dc40073f98b"
       },
-      "candidate_effective_input_id": "da38836a07bf171784ce9303212efed781f4a9c50e6d193a40306256efa59d3e",
+      "candidate_effective_input_id": "bcd9875b0307684cf3f3c9e8952d428860985ccc7607a97e7215d9fab90c90b7",
       "candidate_input": null,
       "freshness": {
-        "candidate_effective_input_id": "da38836a07bf171784ce9303212efed781f4a9c50e6d193a40306256efa59d3e",
+        "candidate_effective_input_id": "bcd9875b0307684cf3f3c9e8952d428860985ccc7607a97e7215d9fab90c90b7",
         "change_time_evidence": null,
         "deadline_at": null,
         "earliest_unpublished_change_at": null,
         "freshness_status": "FreshnessUnknown",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
         "publication_time_evidence": {
           "exact_publication_time": false,
           "kind": "FirstVerifiedRemoteObservation",
-          "observed_at": "2026-10-20T08:56:07.366289+00:00"
+          "observed_at": "2026-10-21T10:01:02.135384+00:00"
         },
         "published_at": null,
-        "published_effective_input_id": "da38836a07bf171784ce9303212efed781f4a9c50e6d193a40306256efa59d3e",
+        "published_effective_input_id": "bcd9875b0307684cf3f3c9e8952d428860985ccc7607a97e7215d9fab90c90b7",
         "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
       },
       "freshness_status": "FreshnessUnknown",
@@ -8935,94 +7691,41 @@
         "independent_consumer": "PASS",
         "receipt_hashes": {
           "consumer_binding": {
-            "receipt": "consumer-installed-binding-03.json",
-            "sha256": "532939492e58fa66d46b20dd3ba792e7794d08106d8f392d17b0189552428082"
+            "receipt": "consumer-installed-binding-01.json",
+            "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
           },
           "consumer_make": {
-            "receipt": "consumer-all-03.json",
-            "sha256": "76d32be641eeb14e9121f11d1890db666dd4bd90ed2c078027c9377b7b9b88dd"
+            "receipt": "consumer-all-01.json",
+            "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
           },
           "consumer_runtime": {
             "receipt": "consumer-runtime-01.json",
-            "sha256": "af98ceaadd72508b880a2ab49e3bb7a4286f3dfd2d8994e5c4437fd8486fe43e"
+            "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
           },
           "native": {
             "receipt": "publication-native-validation/receipt.json",
-            "sha256": "04efb98ec3672303526d7f561d8e58df7aba9182c17d631d2ac24a23eeb08fb1"
+            "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
           },
           "remote": {
-            "receipt": "remote-readback-34f2d60b64e5.json",
-            "sha256": "4ca78470c945dbc7684063e79e841a256eeacc621c298778168b1785bd3f2ae9"
+            "receipt": "remote-readback-84b6b684a8d6.json",
+            "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
           },
           "review": {
-            "receipt": "independent-consumer-review-01.json",
-            "sha256": "38dd84842ffbe50f291a74df8422c0ddc751edb84d32cc9b78b54af56f3a568e"
+            "receipt": "final-consumer-review.json",
+            "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
           }
         },
         "remote_bytes": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "signature_payload": "PASS"
       },
       "last_successful_input": {
         "complete": true,
-        "effective_input_sha256": "da38836a07bf171784ce9303212efed781f4a9c50e6d193a40306256efa59d3e",
+        "effective_input_sha256": "bcd9875b0307684cf3f3c9e8952d428860985ccc7607a97e7215d9fab90c90b7",
         "kind": "source-build",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
-        "published_artifact_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
+        "published_artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "published_at": null,
-        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
-        "source": {
-          "effective_input_id": "da38836a07bf171784ce9303212efed781f4a9c50e6d193a40306256efa59d3e",
-          "installed_license_notices": [],
-          "kind": "source-build",
-          "license_references": [
-            {
-              "path": "licenses/run-20261020/kernel/LICENSE",
-              "sha256": "9f6f8fa58b09a2f787ca904671df2f07a53e440f8a5198f9ac469074e7ab7dcf"
-            }
-          ],
-          "prepared_source": {
-            "git_revision": "92ab1e25c4c9492f90a9bf4b42771438e3aff386",
-            "private_source": {
-              "repository": "kernel",
-              "sha": "92ab1e25c4c9492f90a9bf4b42771438e3aff386",
-              "tree": "60cdd601d94251decc635e8f593740d425ab9ba5"
-            },
-            "tree_sha256": "cfd8af3416eb2150577a8c583c37eb10d2ab0e6af630d10a7e36786cfa689767"
-          },
-          "recipe": "recipes/core/kernel/recipe.toml",
-          "recipe_blake3": null,
-          "recipe_blob": "6c07b3626d3e064149602497deb1a1ebe83bb976",
-          "recipe_pin": null,
-          "source_sha": "92ab1e25c4c9492f90a9bf4b42771438e3aff386",
-          "source_support_identities": [
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/kernel/recipe.toml",
-              "repository": "RedoxORG/redox",
-              "sha256": "078de6bd7b837a4d05d36bc8fc4f98cc8563442971fa7fa85e2c74d85db8df54"
-            }
-          ],
-          "source_url": "https://github.com/RedoxORG/kernel"
-        },
-        "validation": {
-          "independent_consumer": "PASS",
-          "remote_bytes": "PASS",
-          "signature_payload": "PASS"
-        }
-      },
-      "pending_publication": {
-        "candidate_artifact": {
-          "archive_sha256": "b20cae46ddcf41ce8c0d7828633fb2831485d9cfa3559ac595cb2da99fab781f",
-          "metadata_sha256": "d95fe9bc47758df871fb116505ae790609f4288b0edaf0f7e5ad8b0df8e1a137"
-        },
-        "candidate_effective_input_id": "bcd9875b0307684cf3f3c9e8952d428860985ccc7607a97e7215d9fab90c90b7",
-        "freshness_status": "FreshnessUnknown",
-        "publication": "PendingPublication",
-        "runtime_evidence": {
-          "receipt": "normal-runtime-02.json",
-          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
-        },
         "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
         "source": {
           "effective_input_id": "bcd9875b0307684cf3f3c9e8952d428860985ccc7607a97e7215d9fab90c90b7",
@@ -9058,15 +7761,19 @@
           ],
           "source_url": "https://github.com/RedoxORG/kernel"
         },
-        "status": "PendingPublication"
+        "validation": {
+          "independent_consumer": "PASS",
+          "remote_bytes": "PASS",
+          "signature_payload": "PASS"
+        }
       },
       "published_artifact": {
-        "archive_sha256": "6fc4741405c92e3f6aca6e69d3e5b59b1730ab462e966829fa0e9377aa390b57",
-        "metadata_sha256": "d49d168617234c306a082f7e2b7fab6ddbdd960d53aed06df2038b7986298d65",
+        "archive_sha256": "b20cae46ddcf41ce8c0d7828633fb2831485d9cfa3559ac595cb2da99fab781f",
+        "metadata_sha256": "d95fe9bc47758df871fb116505ae790609f4288b0edaf0f7e5ad8b0df8e1a137",
         "readback": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c"
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745"
       },
-      "published_effective_input_id": "da38836a07bf171784ce9303212efed781f4a9c50e6d193a40306256efa59d3e",
+      "published_effective_input_id": "bcd9875b0307684cf3f3c9e8952d428860985ccc7607a97e7215d9fab90c90b7",
       "published_source_receipt": null,
       "reason": "Official kernel 0.5.12 verified and same-content privately re-signed; normal boot and remote consumer PASS; complete source build baseline remains unavailable",
       "runtime": "PASS: independent normal server login and CLI smoke",
@@ -9849,18 +8556,64 @@
       "status": "UpToDate"
     },
     "mandoc": {
-      "pending_publication": {
-        "candidate_artifact": {
-          "archive_sha256": "8973d812eee5bdc4af2f37ac4d2c6668c26760e72a32f9d10ab8fdb036733a03",
-          "metadata_sha256": "8c2bc20a411716626f8111afaded184bbee62dddfd8b6a8ba6e2c5afd86ca419"
-        },
+      "baseline_status": "Known",
+      "binary_publication": "PASS",
+      "candidate_effective_input_id": "3a5bf7189864159331f7fb3a15e3d072072b68d42437a7a4c48bfa4e557ac3dd",
+      "freshness": {
         "candidate_effective_input_id": "3a5bf7189864159331f7fb3a15e3d072072b68d42437a7a4c48bfa4e557ac3dd",
+        "change_time_evidence": null,
+        "deadline_at": null,
+        "earliest_unpublished_change_at": null,
         "freshness_status": "FreshnessUnknown",
-        "publication": "PendingPublication",
-        "runtime_evidence": {
-          "receipt": "normal-runtime-02.json",
-          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
+        "publication_time_evidence": {
+          "exact_publication_time": false,
+          "kind": "FirstVerifiedRemoteObservation",
+          "observed_at": "2026-10-21T10:01:02.135384+00:00"
         },
+        "published_at": null,
+        "published_effective_input_id": "3a5bf7189864159331f7fb3a15e3d072072b68d42437a7a4c48bfa4e557ac3dd"
+      },
+      "freshness_status": "FreshnessUnknown",
+      "last_artifact_verification": {
+        "independent_consumer": "PASS",
+        "receipt_hashes": {
+          "consumer_binding": {
+            "receipt": "consumer-installed-binding-01.json",
+            "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
+          },
+          "consumer_make": {
+            "receipt": "consumer-all-01.json",
+            "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
+          },
+          "consumer_runtime": {
+            "receipt": "consumer-runtime-01.json",
+            "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
+          },
+          "native": {
+            "receipt": "publication-native-validation/receipt.json",
+            "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
+          },
+          "remote": {
+            "receipt": "remote-readback-84b6b684a8d6.json",
+            "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
+          },
+          "review": {
+            "receipt": "final-consumer-review.json",
+            "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
+          }
+        },
+        "remote_bytes": "PASS",
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
+        "signature_payload": "PASS"
+      },
+      "last_successful_input": {
+        "complete": true,
+        "effective_input_sha256": "3a5bf7189864159331f7fb3a15e3d072072b68d42437a7a4c48bfa4e557ac3dd",
+        "kind": "source-build",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
+        "published_artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
+        "published_at": null,
         "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
         "source": {
           "effective_input_id": "3a5bf7189864159331f7fb3a15e3d072072b68d42437a7a4c48bfa4e557ac3dd",
@@ -9903,8 +8656,20 @@
           ],
           "source_url": "https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz"
         },
-        "status": "PendingPublication"
-      }
+        "validation": {
+          "independent_consumer": "PASS",
+          "remote_bytes": "PASS",
+          "signature_payload": "PASS"
+        }
+      },
+      "published_artifact": {
+        "archive_sha256": "8973d812eee5bdc4af2f37ac4d2c6668c26760e72a32f9d10ab8fdb036733a03",
+        "metadata_sha256": "8c2bc20a411716626f8111afaded184bbee62dddfd8b6a8ba6e2c5afd86ca419",
+        "readback": "PASS",
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745"
+      },
+      "published_effective_input_id": "3a5bf7189864159331f7fb3a15e3d072072b68d42437a7a4c48bfa4e557ac3dd",
+      "status": "UpToDate"
     },
     "nano": {
       "baseline_status": "Known",
@@ -10964,7 +9729,7 @@
         "archive_sha256": "fee7622380fba5e486661b3b68b069dc254d996605e02049e919b15ddced4cae",
         "metadata_sha256": "b7ef6c25cae24c17f08967c11ee3571a79f7af3805e8067afc3243e6495655a1"
       },
-      "candidate_effective_input_id": "907cadedf8d5b165de07bd1313ef956c47a8ee92ab06451e262c54bf1614eb87",
+      "candidate_effective_input_id": "136fc9a23269003d3e61c490c8a9d01d39ec130701693c6dfb7f176b87433279",
       "candidate_input": {
         "compatibility": {
           "frozen_recipe_sha256": "f37566b8a643826c82d6cc75470f24cb3f38ab10066e107759b5b7ed5023d1ed",
@@ -10993,19 +9758,19 @@
         "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/redoxfs.pkgar"
       },
       "freshness": {
-        "candidate_effective_input_id": "907cadedf8d5b165de07bd1313ef956c47a8ee92ab06451e262c54bf1614eb87",
+        "candidate_effective_input_id": "136fc9a23269003d3e61c490c8a9d01d39ec130701693c6dfb7f176b87433279",
         "change_time_evidence": null,
         "deadline_at": null,
         "earliest_unpublished_change_at": null,
         "freshness_status": "FreshnessUnknown",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
         "publication_time_evidence": {
           "exact_publication_time": false,
           "kind": "FirstVerifiedRemoteObservation",
-          "observed_at": "2026-10-20T08:56:07.366289+00:00"
+          "observed_at": "2026-10-21T10:01:02.135384+00:00"
         },
         "published_at": null,
-        "published_effective_input_id": "907cadedf8d5b165de07bd1313ef956c47a8ee92ab06451e262c54bf1614eb87",
+        "published_effective_input_id": "136fc9a23269003d3e61c490c8a9d01d39ec130701693c6dfb7f176b87433279",
         "reason": "Verified publication; earliest effective change timing evidence incomplete"
       },
       "freshness_status": "FreshnessUnknown",
@@ -11013,101 +9778,41 @@
         "independent_consumer": "PASS",
         "receipt_hashes": {
           "consumer_binding": {
-            "receipt": "consumer-installed-binding-03.json",
-            "sha256": "532939492e58fa66d46b20dd3ba792e7794d08106d8f392d17b0189552428082"
+            "receipt": "consumer-installed-binding-01.json",
+            "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
           },
           "consumer_make": {
-            "receipt": "consumer-all-03.json",
-            "sha256": "76d32be641eeb14e9121f11d1890db666dd4bd90ed2c078027c9377b7b9b88dd"
+            "receipt": "consumer-all-01.json",
+            "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
           },
           "consumer_runtime": {
             "receipt": "consumer-runtime-01.json",
-            "sha256": "af98ceaadd72508b880a2ab49e3bb7a4286f3dfd2d8994e5c4437fd8486fe43e"
+            "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
           },
           "native": {
             "receipt": "publication-native-validation/receipt.json",
-            "sha256": "04efb98ec3672303526d7f561d8e58df7aba9182c17d631d2ac24a23eeb08fb1"
+            "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
           },
           "remote": {
-            "receipt": "remote-readback-34f2d60b64e5.json",
-            "sha256": "4ca78470c945dbc7684063e79e841a256eeacc621c298778168b1785bd3f2ae9"
+            "receipt": "remote-readback-84b6b684a8d6.json",
+            "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
           },
           "review": {
-            "receipt": "independent-consumer-review-01.json",
-            "sha256": "38dd84842ffbe50f291a74df8422c0ddc751edb84d32cc9b78b54af56f3a568e"
+            "receipt": "final-consumer-review.json",
+            "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
           }
         },
         "remote_bytes": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "signature_payload": "PASS"
       },
       "last_successful_input": {
         "complete": true,
-        "effective_input_sha256": "907cadedf8d5b165de07bd1313ef956c47a8ee92ab06451e262c54bf1614eb87",
+        "effective_input_sha256": "136fc9a23269003d3e61c490c8a9d01d39ec130701693c6dfb7f176b87433279",
         "kind": "source-build",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
-        "published_artifact_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
+        "published_artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "published_at": null,
-        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
-        "source": {
-          "effective_input_id": "907cadedf8d5b165de07bd1313ef956c47a8ee92ab06451e262c54bf1614eb87",
-          "installed_license_notices": [],
-          "kind": "source-build",
-          "license_references": [
-            {
-              "path": "licenses/run-20261020/redoxfs/LICENSE",
-              "sha256": "93feb465f692bf21fe310c2d7d2e906982950222897304ddddbcdab873cd11b8"
-            }
-          ],
-          "prepared_source": {
-            "git_revision": "b87b0976ee122036b2ec040159b890e1e06ca139",
-            "tree_sha256": "ab8ecd5a81d0d3f6190b6e5f04ae04c320bd81c85270b7382443fdc46af4d613"
-          },
-          "recipe": "recipes/core/redoxfs/recipe.toml",
-          "recipe_blake3": null,
-          "recipe_blob": "8eeb79509b2163ccf29783ee625d5bfc8ab7b66a",
-          "recipe_pin": "b87b0976ee122036b2ec040159b890e1e06ca139",
-          "source_sha": "b87b0976ee122036b2ec040159b890e1e06ca139",
-          "source_support_identities": [
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/redoxfs/fstype.patch",
-              "repository": "RedoxORG/redox",
-              "sha256": "d0c699dba3b6d619641dfeba7776bfb23c12fdc51326565a18106d32f035563d"
-            },
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/redoxfs/inode-stats.patch",
-              "repository": "RedoxORG/redox",
-              "sha256": "bfc4cf8f0b5588bcb01d84445f84e68dcdf0870bc1ac130f57dda0a2eac822d2"
-            },
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/redoxfs/recipe.toml",
-              "repository": "RedoxORG/redox",
-              "sha256": "52190991acaf587dddc01d053a0f7606e7775da3d953f1ceb10cd1b2e6625165"
-            }
-          ],
-          "source_url": "https://gitlab.redox-os.org/redox-os/redoxfs.git"
-        },
-        "validation": {
-          "independent_consumer": "PASS",
-          "remote_bytes": "PASS",
-          "signature_payload": "PASS"
-        }
-      },
-      "pending_publication": {
-        "candidate_artifact": {
-          "archive_sha256": "d0bd5ca87afcd20460dac64320110f63e2d6866556a0bbe9de2d81cb6043dddd",
-          "metadata_sha256": "c2ff616c83231a77ded2fe4b9e8f9ad64ab736c13f79dd88c5431d13179f785f"
-        },
-        "candidate_effective_input_id": "136fc9a23269003d3e61c490c8a9d01d39ec130701693c6dfb7f176b87433279",
-        "freshness_status": "FreshnessUnknown",
-        "publication": "PendingPublication",
-        "runtime_evidence": {
-          "receipt": "normal-runtime-02.json",
-          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
-        },
         "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
         "source": {
           "effective_input_id": "136fc9a23269003d3e61c490c8a9d01d39ec130701693c6dfb7f176b87433279",
@@ -11168,15 +9873,19 @@
           ],
           "source_url": "https://gitlab.redox-os.org/redox-os/redoxfs.git"
         },
-        "status": "PendingPublication"
+        "validation": {
+          "independent_consumer": "PASS",
+          "remote_bytes": "PASS",
+          "signature_payload": "PASS"
+        }
       },
       "published_artifact": {
-        "archive_sha256": "7eb2ae83b5f505910188cf5d8a83f12f8e51d753035a878176380c5996b0893c",
-        "metadata_sha256": "9d39eb65f127bbc372e8db5bb1cb6d4bc6315bc17626140c778afc64552cbdfa",
+        "archive_sha256": "d0bd5ca87afcd20460dac64320110f63e2d6866556a0bbe9de2d81cb6043dddd",
+        "metadata_sha256": "c2ff616c83231a77ded2fe4b9e8f9ad64ab736c13f79dd88c5431d13179f785f",
         "readback": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c"
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745"
       },
-      "published_effective_input_id": "907cadedf8d5b165de07bd1313ef956c47a8ee92ab06451e262c54bf1614eb87",
+      "published_effective_input_id": "136fc9a23269003d3e61c490c8a9d01d39ec130701693c6dfb7f176b87433279",
       "published_source_receipt": {
         "artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
         "kind": "VerifiedOfficialDistribution",
@@ -11224,7 +9933,7 @@
         "archive_sha256": "6545599387b1f81ea2eb2f5c7babd804253662bbee4f533055c8bb074a272da1",
         "metadata_sha256": "167972c1d639d270e330d184dfc680451b2c5232ce340726f7f4f52c4f9d61cf"
       },
-      "candidate_effective_input_id": "cf644241ea346ca8802b6b94eb18e74400ec09777a855067edba0447a7f465cc",
+      "candidate_effective_input_id": "e83368c21228d0b9d5f32f757787834aa49d08f0f81e37640997616263c37eca",
       "candidate_input": {
         "branch": "local/main",
         "common_input": {
@@ -11832,19 +10541,19 @@
         }
       },
       "freshness": {
-        "candidate_effective_input_id": "cf644241ea346ca8802b6b94eb18e74400ec09777a855067edba0447a7f465cc",
+        "candidate_effective_input_id": "e83368c21228d0b9d5f32f757787834aa49d08f0f81e37640997616263c37eca",
         "change_time_evidence": null,
         "deadline_at": null,
         "earliest_unpublished_change_at": null,
         "freshness_status": "FreshnessUnknown",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
         "publication_time_evidence": {
           "exact_publication_time": false,
           "kind": "FirstVerifiedRemoteObservation",
-          "observed_at": "2026-10-20T08:56:07.366289+00:00"
+          "observed_at": "2026-10-21T10:01:02.135384+00:00"
         },
         "published_at": null,
-        "published_effective_input_id": "cf644241ea346ca8802b6b94eb18e74400ec09777a855067edba0447a7f465cc",
+        "published_effective_input_id": "e83368c21228d0b9d5f32f757787834aa49d08f0f81e37640997616263c37eca",
         "reason": "Exact run-start inputs published. Later source pushes belong to next scheduled run; not queried again."
       },
       "freshness_status": "FreshnessUnknown",
@@ -11852,86 +10561,41 @@
         "independent_consumer": "PASS",
         "receipt_hashes": {
           "consumer_binding": {
-            "receipt": "consumer-installed-binding-03.json",
-            "sha256": "532939492e58fa66d46b20dd3ba792e7794d08106d8f392d17b0189552428082"
+            "receipt": "consumer-installed-binding-01.json",
+            "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
           },
           "consumer_make": {
-            "receipt": "consumer-all-03.json",
-            "sha256": "76d32be641eeb14e9121f11d1890db666dd4bd90ed2c078027c9377b7b9b88dd"
+            "receipt": "consumer-all-01.json",
+            "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
           },
           "consumer_runtime": {
             "receipt": "consumer-runtime-01.json",
-            "sha256": "af98ceaadd72508b880a2ab49e3bb7a4286f3dfd2d8994e5c4437fd8486fe43e"
+            "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
           },
           "native": {
             "receipt": "publication-native-validation/receipt.json",
-            "sha256": "04efb98ec3672303526d7f561d8e58df7aba9182c17d631d2ac24a23eeb08fb1"
+            "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
           },
           "remote": {
-            "receipt": "remote-readback-34f2d60b64e5.json",
-            "sha256": "4ca78470c945dbc7684063e79e841a256eeacc621c298778168b1785bd3f2ae9"
+            "receipt": "remote-readback-84b6b684a8d6.json",
+            "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
           },
           "review": {
-            "receipt": "independent-consumer-review-01.json",
-            "sha256": "38dd84842ffbe50f291a74df8422c0ddc751edb84d32cc9b78b54af56f3a568e"
+            "receipt": "final-consumer-review.json",
+            "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
           }
         },
         "remote_bytes": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "signature_payload": "PASS"
       },
       "last_successful_input": {
         "complete": true,
-        "effective_input_sha256": "cf644241ea346ca8802b6b94eb18e74400ec09777a855067edba0447a7f465cc",
+        "effective_input_sha256": "e83368c21228d0b9d5f32f757787834aa49d08f0f81e37640997616263c37eca",
         "kind": "source-build",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
-        "published_artifact_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
+        "published_artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "published_at": null,
-        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
-        "source": {
-          "effective_input_id": "cf644241ea346ca8802b6b94eb18e74400ec09777a855067edba0447a7f465cc",
-          "installed_license_notices": [],
-          "kind": "source-build",
-          "license_references": [
-            {
-              "path": "licenses/run-20261020/relibc/LICENSE",
-              "sha256": "1bc13112bee203de03bb45dfebc20e5338a20349a5935c16b7222c87fd0c7609"
-            }
-          ],
-          "prepared_source": {},
-          "recipe": "recipes/core/relibc/recipe.toml",
-          "recipe_blake3": null,
-          "recipe_blob": "8b164bb83749b5acd38dac12cf552b116dcec977",
-          "recipe_pin": null,
-          "source_sha": "dfbadb7377bd2cc29737d1a35727def06b0994b8",
-          "source_support_identities": [
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/relibc/recipe.toml",
-              "repository": "RedoxORG/redox",
-              "sha256": "cf0fc0ef0c1ba8680e783292e09e51d43f0b63dded680fa4017b289f215cf2dc"
-            }
-          ],
-          "source_url": "https://github.com/RedoxORG/relibc"
-        },
-        "validation": {
-          "independent_consumer": "PASS",
-          "remote_bytes": "PASS",
-          "signature_payload": "PASS"
-        }
-      },
-      "pending_publication": {
-        "candidate_artifact": {
-          "archive_sha256": "ad820774d771d062756891fe45d3b50338fe945c1b4e04a7485214600bd95d0c",
-          "metadata_sha256": "6f208196f6832128fde83d6dcfd190ed1f39441341bfc3512e76ef9745404846"
-        },
-        "candidate_effective_input_id": "e83368c21228d0b9d5f32f757787834aa49d08f0f81e37640997616263c37eca",
-        "freshness_status": "FreshnessUnknown",
-        "publication": "PendingPublication",
-        "runtime_evidence": {
-          "receipt": "normal-runtime-02.json",
-          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
-        },
         "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
         "source": {
           "effective_input_id": "e83368c21228d0b9d5f32f757787834aa49d08f0f81e37640997616263c37eca",
@@ -11966,15 +10630,19 @@
           ],
           "source_url": "https://github.com/RedoxORG/relibc"
         },
-        "status": "PendingPublication"
+        "validation": {
+          "independent_consumer": "PASS",
+          "remote_bytes": "PASS",
+          "signature_payload": "PASS"
+        }
       },
       "published_artifact": {
-        "archive_sha256": "8c8fc14f332b68010fc0b43fe1b39e0a536c78b4ac634134b2053fee0bcdbc81",
-        "metadata_sha256": "bd2f42519375b76efe8a6f54df82dc65568e41e43ca3ad1af543e2fd72325d8d",
+        "archive_sha256": "ad820774d771d062756891fe45d3b50338fe945c1b4e04a7485214600bd95d0c",
+        "metadata_sha256": "6f208196f6832128fde83d6dcfd190ed1f39441341bfc3512e76ef9745404846",
         "readback": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c"
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745"
       },
-      "published_effective_input_id": "cf644241ea346ca8802b6b94eb18e74400ec09777a855067edba0447a7f465cc",
+      "published_effective_input_id": "e83368c21228d0b9d5f32f757787834aa49d08f0f81e37640997616263c37eca",
       "published_source_receipt": {
         "artifact_commit": "fb01a6592b113900c9412a3b961c5db8a1f92fea",
         "recipe_commit": "9fe9e3ec3810527f027fca9053ae41594bfda09d",
@@ -12264,7 +10932,7 @@
         "archive_sha256": "69869132f793d6c3423ecf06bc5a0b6d1f5b0cdfcc97f310cb1e3ee4e43206d5",
         "metadata_sha256": "30c14c2f52a8d88752071c5bf22acccc18ee729ce01790920ff6d9fe535491df"
       },
-      "candidate_effective_input_id": "590201cd3d78252ee569ceaca81e2bef909134f4e857219f2541e1c9e3c135ce",
+      "candidate_effective_input_id": "bdce8d07a2238bcd19a376b6ecc0b5a64d0e4d3c8157b8427a1de55386798461",
       "candidate_input": {
         "branch": "local/main",
         "common_input": {
@@ -12691,19 +11359,19 @@
         "submodules": {}
       },
       "freshness": {
-        "candidate_effective_input_id": "590201cd3d78252ee569ceaca81e2bef909134f4e857219f2541e1c9e3c135ce",
+        "candidate_effective_input_id": "bdce8d07a2238bcd19a376b6ecc0b5a64d0e4d3c8157b8427a1de55386798461",
         "change_time_evidence": null,
         "deadline_at": null,
         "earliest_unpublished_change_at": null,
         "freshness_status": "FreshnessUnknown",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
         "publication_time_evidence": {
           "exact_publication_time": false,
           "kind": "FirstVerifiedRemoteObservation",
-          "observed_at": "2026-10-20T08:56:07.366289+00:00"
+          "observed_at": "2026-10-21T10:01:02.135384+00:00"
         },
         "published_at": null,
-        "published_effective_input_id": "590201cd3d78252ee569ceaca81e2bef909134f4e857219f2541e1c9e3c135ce",
+        "published_effective_input_id": "bdce8d07a2238bcd19a376b6ecc0b5a64d0e4d3c8157b8427a1de55386798461",
         "reason": "Exact run-start inputs published. Later source pushes belong to next scheduled run; not queried again."
       },
       "freshness_status": "FreshnessUnknown",
@@ -12711,86 +11379,41 @@
         "independent_consumer": "PASS",
         "receipt_hashes": {
           "consumer_binding": {
-            "receipt": "consumer-installed-binding-03.json",
-            "sha256": "532939492e58fa66d46b20dd3ba792e7794d08106d8f392d17b0189552428082"
+            "receipt": "consumer-installed-binding-01.json",
+            "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
           },
           "consumer_make": {
-            "receipt": "consumer-all-03.json",
-            "sha256": "76d32be641eeb14e9121f11d1890db666dd4bd90ed2c078027c9377b7b9b88dd"
+            "receipt": "consumer-all-01.json",
+            "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
           },
           "consumer_runtime": {
             "receipt": "consumer-runtime-01.json",
-            "sha256": "af98ceaadd72508b880a2ab49e3bb7a4286f3dfd2d8994e5c4437fd8486fe43e"
+            "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
           },
           "native": {
             "receipt": "publication-native-validation/receipt.json",
-            "sha256": "04efb98ec3672303526d7f561d8e58df7aba9182c17d631d2ac24a23eeb08fb1"
+            "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
           },
           "remote": {
-            "receipt": "remote-readback-34f2d60b64e5.json",
-            "sha256": "4ca78470c945dbc7684063e79e841a256eeacc621c298778168b1785bd3f2ae9"
+            "receipt": "remote-readback-84b6b684a8d6.json",
+            "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
           },
           "review": {
-            "receipt": "independent-consumer-review-01.json",
-            "sha256": "38dd84842ffbe50f291a74df8422c0ddc751edb84d32cc9b78b54af56f3a568e"
+            "receipt": "final-consumer-review.json",
+            "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
           }
         },
         "remote_bytes": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "signature_payload": "PASS"
       },
       "last_successful_input": {
         "complete": true,
-        "effective_input_sha256": "590201cd3d78252ee569ceaca81e2bef909134f4e857219f2541e1c9e3c135ce",
+        "effective_input_sha256": "bdce8d07a2238bcd19a376b6ecc0b5a64d0e4d3c8157b8427a1de55386798461",
         "kind": "source-build",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
-        "published_artifact_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
+        "published_artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "published_at": null,
-        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
-        "source": {
-          "effective_input_id": "590201cd3d78252ee569ceaca81e2bef909134f4e857219f2541e1c9e3c135ce",
-          "installed_license_notices": [],
-          "kind": "source-build",
-          "license_references": [
-            {
-              "path": "licenses/run-20261020/userutils/LICENSE",
-              "sha256": "8aa7554843e5bc19ce79886eda72466214ed56d9c5d37b1fa2be591975ee2799"
-            }
-          ],
-          "prepared_source": {},
-          "recipe": "recipes/core/userutils/recipe.toml",
-          "recipe_blake3": null,
-          "recipe_blob": "666bfeb10761305d5fb1f7d9f198484c54386cd2",
-          "recipe_pin": null,
-          "source_sha": "3ac3b00426e66b58bbf732102cc6d45ad16130b3",
-          "source_support_identities": [
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/userutils/recipe.toml",
-              "repository": "RedoxORG/redox",
-              "sha256": "2423efdd61e66579bfa33532a5b1f93fc56036038d1a6612eafa932ae17400ee"
-            }
-          ],
-          "source_url": "https://github.com/RedoxORG/userutils"
-        },
-        "validation": {
-          "independent_consumer": "PASS",
-          "remote_bytes": "PASS",
-          "signature_payload": "PASS"
-        }
-      },
-      "pending_publication": {
-        "candidate_artifact": {
-          "archive_sha256": "e37668913485078e5adaad9d0ee865295173165cbee7d134dd5dde80558a43fb",
-          "metadata_sha256": "21fed6f7a692bca3d2fab77140995c06a158979a3daa4ed0205c88a9ae81a0e7"
-        },
-        "candidate_effective_input_id": "bdce8d07a2238bcd19a376b6ecc0b5a64d0e4d3c8157b8427a1de55386798461",
-        "freshness_status": "FreshnessUnknown",
-        "publication": "PendingPublication",
-        "runtime_evidence": {
-          "receipt": "normal-runtime-02.json",
-          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
-        },
         "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
         "source": {
           "effective_input_id": "bdce8d07a2238bcd19a376b6ecc0b5a64d0e4d3c8157b8427a1de55386798461",
@@ -12825,15 +11448,19 @@
           ],
           "source_url": "https://github.com/RedoxORG/userutils"
         },
-        "status": "PendingPublication"
+        "validation": {
+          "independent_consumer": "PASS",
+          "remote_bytes": "PASS",
+          "signature_payload": "PASS"
+        }
       },
       "published_artifact": {
-        "archive_sha256": "fb540e7662bf28f95dd0a1ec19103678400ea3a849b94f0685f96bdc98a08252",
-        "metadata_sha256": "331af2d5aa5cb6cef4733dc3400fb867a66c1e70ee27682a77e036e38f90d8c6",
+        "archive_sha256": "e37668913485078e5adaad9d0ee865295173165cbee7d134dd5dde80558a43fb",
+        "metadata_sha256": "21fed6f7a692bca3d2fab77140995c06a158979a3daa4ed0205c88a9ae81a0e7",
         "readback": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c"
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745"
       },
-      "published_effective_input_id": "590201cd3d78252ee569ceaca81e2bef909134f4e857219f2541e1c9e3c135ce",
+      "published_effective_input_id": "bdce8d07a2238bcd19a376b6ecc0b5a64d0e4d3c8157b8427a1de55386798461",
       "published_source_receipt": {
         "artifact_commit": "fb01a6592b113900c9412a3b961c5db8a1f92fea",
         "recipe_commit": "9fe9e3ec3810527f027fca9053ae41594bfda09d",
@@ -12850,22 +11477,22 @@
       "baseline_status": "Known",
       "binary_publication": "PASS",
       "build": "NotRequired",
-      "candidate_effective_input_id": "4d99a2396a8d8310bd26cda7df69b9d50c2faa5277b8d030dc7c87bfdc281838",
+      "candidate_effective_input_id": "d9ca8b098abeb72ad9a4b025529e5f6a71c96f3b77fb193776d28fafe0b29224",
       "candidate_input": null,
       "freshness": {
-        "candidate_effective_input_id": "4d99a2396a8d8310bd26cda7df69b9d50c2faa5277b8d030dc7c87bfdc281838",
+        "candidate_effective_input_id": "d9ca8b098abeb72ad9a4b025529e5f6a71c96f3b77fb193776d28fafe0b29224",
         "change_time_evidence": null,
         "deadline_at": null,
         "earliest_unpublished_change_at": null,
         "freshness_status": "FreshnessUnknown",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
         "publication_time_evidence": {
           "exact_publication_time": false,
           "kind": "FirstVerifiedRemoteObservation",
-          "observed_at": "2026-10-20T08:56:07.366289+00:00"
+          "observed_at": "2026-10-21T10:01:02.135384+00:00"
         },
         "published_at": null,
-        "published_effective_input_id": "4d99a2396a8d8310bd26cda7df69b9d50c2faa5277b8d030dc7c87bfdc281838",
+        "published_effective_input_id": "d9ca8b098abeb72ad9a4b025529e5f6a71c96f3b77fb193776d28fafe0b29224",
         "reason": "Complete successful input identity and change/publication event timing are not recoverable from current partial receipts; observing no change does not establish freshness."
       },
       "freshness_status": "FreshnessUnknown",
@@ -12873,101 +11500,41 @@
         "independent_consumer": "PASS",
         "receipt_hashes": {
           "consumer_binding": {
-            "receipt": "consumer-installed-binding-03.json",
-            "sha256": "532939492e58fa66d46b20dd3ba792e7794d08106d8f392d17b0189552428082"
+            "receipt": "consumer-installed-binding-01.json",
+            "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
           },
           "consumer_make": {
-            "receipt": "consumer-all-03.json",
-            "sha256": "76d32be641eeb14e9121f11d1890db666dd4bd90ed2c078027c9377b7b9b88dd"
+            "receipt": "consumer-all-01.json",
+            "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
           },
           "consumer_runtime": {
             "receipt": "consumer-runtime-01.json",
-            "sha256": "af98ceaadd72508b880a2ab49e3bb7a4286f3dfd2d8994e5c4437fd8486fe43e"
+            "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
           },
           "native": {
             "receipt": "publication-native-validation/receipt.json",
-            "sha256": "04efb98ec3672303526d7f561d8e58df7aba9182c17d631d2ac24a23eeb08fb1"
+            "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
           },
           "remote": {
-            "receipt": "remote-readback-34f2d60b64e5.json",
-            "sha256": "4ca78470c945dbc7684063e79e841a256eeacc621c298778168b1785bd3f2ae9"
+            "receipt": "remote-readback-84b6b684a8d6.json",
+            "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
           },
           "review": {
-            "receipt": "independent-consumer-review-01.json",
-            "sha256": "38dd84842ffbe50f291a74df8422c0ddc751edb84d32cc9b78b54af56f3a568e"
+            "receipt": "final-consumer-review.json",
+            "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
           }
         },
         "remote_bytes": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "signature_payload": "PASS"
       },
       "last_successful_input": {
         "complete": true,
-        "effective_input_sha256": "4d99a2396a8d8310bd26cda7df69b9d50c2faa5277b8d030dc7c87bfdc281838",
+        "effective_input_sha256": "d9ca8b098abeb72ad9a4b025529e5f6a71c96f3b77fb193776d28fafe0b29224",
         "kind": "source-build",
-        "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
-        "published_artifact_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+        "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
+        "published_artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
         "published_at": null,
-        "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
-        "source": {
-          "effective_input_id": "4d99a2396a8d8310bd26cda7df69b9d50c2faa5277b8d030dc7c87bfdc281838",
-          "installed_license_notices": [],
-          "kind": "source-build",
-          "license_references": [
-            {
-              "path": "licenses/run-20261020/uutils/LICENSE",
-              "sha256": "29953405eaa3dcc41c37d1621d55b6a47eee93e05613e439e73295029740b10c"
-            }
-          ],
-          "prepared_source": {
-            "git_revision": "bf65901e1ed82963436844c2cf8e796ba9158c65",
-            "tree_sha256": "a369e9862efb71cb2b49876cdd839035fce535843661200f9ddd92c79e367d33"
-          },
-          "recipe": "recipes/core/uutils/recipe.toml",
-          "recipe_blake3": null,
-          "recipe_blob": "d158f6db21c66d2955300629497e4489dc0b9401",
-          "recipe_pin": "0.11.0",
-          "source_sha": "bf65901e1ed82963436844c2cf8e796ba9158c65",
-          "source_support_identities": [
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/uutils/df.patch",
-              "repository": "RedoxORG/redox",
-              "sha256": "6d4c2345ed2d17d81855668bf349a8e67f7568cb175940d33cb4a40328228a7f"
-            },
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/uutils/recipe.toml",
-              "repository": "RedoxORG/redox",
-              "sha256": "87c9138de459a87db6320dcb19e51509aab977dc56f0e5836067e4fee87bc337"
-            },
-            {
-              "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-              "path": "recipes/core/uutils/redox.patch",
-              "repository": "RedoxORG/redox",
-              "sha256": "416b7cc02e704af6dc575bce4ffc1ff239fbd0a97c8a14ff95dadbdbd9a228d3"
-            }
-          ],
-          "source_url": "https://github.com/uutils/coreutils"
-        },
-        "validation": {
-          "independent_consumer": "PASS",
-          "remote_bytes": "PASS",
-          "signature_payload": "PASS"
-        }
-      },
-      "pending_publication": {
-        "candidate_artifact": {
-          "archive_sha256": "04299d14c1f364bc0d81a037d84255d7fc3bbe9145e39cc1de46e69b380f99d6",
-          "metadata_sha256": "91db5ac749b61f08ef8329c63d64cbd0c73164641359ddc26b937dce96c39d05"
-        },
-        "candidate_effective_input_id": "d9ca8b098abeb72ad9a4b025529e5f6a71c96f3b77fb193776d28fafe0b29224",
-        "freshness_status": "FreshnessUnknown",
-        "publication": "PendingPublication",
-        "runtime_evidence": {
-          "receipt": "normal-runtime-02.json",
-          "sha256": "0a3af8c6165dd90f32a92f9fdb866fcbbbe0d3c4fc867369769d8fc67f5a7524"
-        },
         "shared_input_ref": "5709d81988bf181c779e926700c30f78cdca93b29fade8b1d9cbbfe119fe492a",
         "source": {
           "effective_input_id": "d9ca8b098abeb72ad9a4b025529e5f6a71c96f3b77fb193776d28fafe0b29224",
@@ -13028,15 +11595,19 @@
           ],
           "source_url": "https://github.com/uutils/coreutils"
         },
-        "status": "PendingPublication"
+        "validation": {
+          "independent_consumer": "PASS",
+          "remote_bytes": "PASS",
+          "signature_payload": "PASS"
+        }
       },
       "published_artifact": {
-        "archive_sha256": "e2b0d1df89205c54c9a23d341baf1fc697deaa149801e5cfc4c9bda1c2c27389",
-        "metadata_sha256": "9acfcb3db18af5dcb732709441309632301bc2ccd28609e9f0516a211f20ca43",
+        "archive_sha256": "04299d14c1f364bc0d81a037d84255d7fc3bbe9145e39cc1de46e69b380f99d6",
+        "metadata_sha256": "91db5ac749b61f08ef8329c63d64cbd0c73164641359ddc26b937dce96c39d05",
         "readback": "PASS",
-        "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c"
+        "repository_commit": "84b6b684a8d67bbf7513333acb79957f04293745"
       },
-      "published_effective_input_id": "4d99a2396a8d8310bd26cda7df69b9d50c2faa5277b8d030dc7c87bfdc281838",
+      "published_effective_input_id": "d9ca8b098abeb72ad9a4b025529e5f6a71c96f3b77fb193776d28fafe0b29224",
       "published_source_receipt": null,
       "reason": "No adopted effective input change selected; archive/metadata byte-identical to frozen main. Historical missing full baseline is not reconstructed by this observation.",
       "runtime": "NotRun",
@@ -14148,6 +12719,48 @@
         "xxhash"
       ],
       "status": "PublishedAndConsumerVerified"
+    },
+    "update-20261021-01": {
+      "artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
+      "evidence": {
+        "consumer_binding": {
+          "receipt": "consumer-installed-binding-01.json",
+          "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
+        },
+        "consumer_make": {
+          "receipt": "consumer-all-01.json",
+          "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
+        },
+        "consumer_runtime": {
+          "receipt": "consumer-runtime-01.json",
+          "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
+        },
+        "native": {
+          "receipt": "publication-native-validation/receipt.json",
+          "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
+        },
+        "remote": {
+          "receipt": "remote-readback-84b6b684a8d6.json",
+          "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
+        },
+        "review": {
+          "receipt": "final-consumer-review.json",
+          "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
+        }
+      },
+      "packages": [
+        "base",
+        "coreutils",
+        "extrautils",
+        "installer",
+        "kernel",
+        "mandoc",
+        "redoxfs",
+        "relibc",
+        "userutils",
+        "uutils"
+      ],
+      "status": "PublishedAndConsumerVerified"
     }
   },
   "repositories": {
@@ -14235,7 +12848,8 @@
       "Existing getty bulk-input EAGAIN defect; paced case transport only",
       "No full interactive, networking, persistence or fault-injection acceptance"
     ],
-    "binary_publication": "Pending",
+    "artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
+    "binary_publication": "PASS",
     "build_sha": "02481fd0a52710e04b9553b9c86c8fc099da955e",
     "candidate_packages": [
       "base",
@@ -14249,7 +12863,30 @@
       "userutils",
       "uutils"
     ],
-    "consumer": "Pending",
+    "consumer": "PASS",
+    "consumer_tests": {
+      "BASH_CHILD": 0,
+      "CHILD_WAIT": 0,
+      "CURL": 0,
+      "FIND_XARGS": 0,
+      "GIT": 0,
+      "GREP": 0,
+      "HOSTNAME": 0,
+      "LOOPBACK_REFUSED": 0,
+      "MANDOC": 0,
+      "MAN_PAGER_FAILURE": 0,
+      "PS": 0,
+      "SSH": 0,
+      "SYMLINK_PATH": 0,
+      "TOUCH": 0,
+      "TR": 0,
+      "TR_CLOSED": 0,
+      "TZ": 0,
+      "UPTIME": 0,
+      "WGET": 0,
+      "WHOAMI": 0,
+      "WHOAMI_CLOSED": 0
+    },
     "freshness_status": "FreshnessUnknown",
     "new_packages": 1,
     "producer_runtime": "PASS",
@@ -14276,10 +12913,11 @@
       "WHOAMI": 0,
       "WHOAMI_CLOSED": 0
     },
+    "publication_observed_at": "2026-10-21T10:01:02.135384+00:00",
     "replaced_packages": 9,
     "retained_unchanged_packages": 46,
     "run_id": "update-20261021-01",
-    "status": "PendingPublication"
+    "status": "PublishedAndConsumerVerified"
   },
   "scheduled_update_20261015_01": {
     "artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
@@ -14377,13 +13015,39 @@
   "schema_version": 1,
   "target": "x86_64-unknown-redox",
   "verification": {
-    "consumer": "Pending",
+    "consumer": "PASS",
+    "evidence": {
+      "consumer_binding": {
+        "receipt": "consumer-installed-binding-01.json",
+        "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
+      },
+      "consumer_make": {
+        "receipt": "consumer-all-01.json",
+        "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
+      },
+      "consumer_runtime": {
+        "receipt": "consumer-runtime-01.json",
+        "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
+      },
+      "native": {
+        "receipt": "publication-native-validation/receipt.json",
+        "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
+      },
+      "remote": {
+        "receipt": "remote-readback-84b6b684a8d6.json",
+        "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
+      },
+      "review": {
+        "receipt": "final-consumer-review.json",
+        "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
+      }
+    },
     "limitations": [
       "Existing getty bulk-input EAGAIN defect; paced case transport only",
       "No full interactive, networking, persistence or fault-injection acceptance"
     ],
     "producer": "PASS",
-    "publication": "Pending",
+    "publication": "PASS",
     "run_id": "update-20261021-01"
   },
   "verification_20261014": {
