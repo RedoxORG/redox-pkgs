@@ -1,10 +1,10 @@
 name = "kernel"
 version = "0.5.12"
 target = "x86_64-unknown-redox"
-blake3 = "2b81696b15ac3ae4c10310bdde9a98c9850fb98bf1e00940e6919a4cf7cde118"
+blake3 = "b2f00840913961fb590fbec3d263d5de7c22b1d3a6c193d6259a923ea2e58607"
 source_identifier = "local_source"
-commit_identifier = "02481fd0a52710e04b9553b9c86c8fc099da955e"
-time_identifier = "2026-10-21T08:40:40Z"
-storage_size = 2481708
-network_size = 2481708
+commit_identifier = "0d005e2c023b6647d99832679a2f0b5afe7cf67b"
+time_identifier = "2026-10-29T00:35:42Z"
+storage_size = 2648564
+network_size = 2648564
 depends = []

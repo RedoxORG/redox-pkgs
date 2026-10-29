@@ -1,0 +1,10 @@
+name = "sqlite3"
+version = "3.49.2"
+target = "x86_64-unknown-redox"
+blake3 = "e1d57b9a1c97595041205022020118ce056c14ba6675be8f255710a19ce52238"
+source_identifier = "96e071dc4f964311882334e927f017d8383915b1b140adcf308957dff213aa8c"
+commit_identifier = "ebb762fc15b16f8a7f87acaf51a22b3355ba3c93"
+time_identifier = "2026-09-13T04:59:26Z"
+storage_size = 3123052
+network_size = 3123052
+depends = []

@@ -1,10 +1,10 @@
 name = "coreutils"
 version = "0.1.0"
 target = "x86_64-unknown-redox"
-blake3 = "bb75f5cc7d1a98feae23cd3a4221aec7bcb94ae72e9fbd4288099ec964f28d19"
+blake3 = "f51eb8feea4fea690e018f4f224fe81e95df6a3cf0eca01d7ef0754133220a8c"
 source_identifier = "575a46d3b624ad9cd222c9e3250073e9269c3462"
-commit_identifier = "02481fd0a52710e04b9553b9c86c8fc099da955e"
-time_identifier = "2026-10-21T08:40:40Z"
-storage_size = 1551720
-network_size = 1551720
+commit_identifier = "0d005e2c023b6647d99832679a2f0b5afe7cf67b"
+time_identifier = "2026-10-29T00:35:42Z"
+storage_size = 1680332
+network_size = 1680332
 depends = ["ncurses"]

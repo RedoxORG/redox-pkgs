@@ -1,10 +1,10 @@
 name = "diffutils"
-version = "TODO"
+version = "3.6"
 target = "x86_64-unknown-redox"
-blake3 = "79632cda59bdbda0aa1f310e3cc630cc503275b3710526fc4a68c3b7cff22b39"
+blake3 = "3dec063430cefc04204d17bd8b2731a244d1d23d9911ab7661eed95557194ff5"
 source_identifier = "086a95093c15edcdb826e75ff4de6c2213de6fbd2eb13538d07bdc3286dfb4a4"
-commit_identifier = "009833b56eeb6eb1928e8ea783ea717ffced5d2d"
-time_identifier = "2026-09-26T05:02:42Z"
-storage_size = 580245
-network_size = 580245
+commit_identifier = "0d005e2c023b6647d99832679a2f0b5afe7cf67b"
+time_identifier = "2026-10-28T23:49:21Z"
+storage_size = 580549
+network_size = 580549
 depends = []

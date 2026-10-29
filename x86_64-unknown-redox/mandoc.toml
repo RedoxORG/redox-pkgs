@@ -1,10 +1,10 @@
 name = "mandoc"
 version = "1.14.6"
 target = "x86_64-unknown-redox"
-blake3 = "ccb0d5c6ecd660df319f16255b6b30c262b8906455e53458b21801d55a77f338"
+blake3 = "a6b1b9e1169e4d5a8b59b981de8a7fc913b93f433bbc48e0fb6ef2b6a9688dd0"
 source_identifier = "0e1e812610cea4d9a254d161599466abccd3688568f19baeff1c2ed0dae586e4"
-commit_identifier = "02481fd0a52710e04b9553b9c86c8fc099da955e"
-time_identifier = "2026-10-21T08:40:40Z"
+commit_identifier = "0d005e2c023b6647d99832679a2f0b5afe7cf67b"
+time_identifier = "2026-10-28T23:49:21Z"
 storage_size = 3483110
 network_size = 3483110
 depends = []

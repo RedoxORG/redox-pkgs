@@ -1,0 +1,10 @@
+name = "lua54"
+version = "5.4.7"
+target = "x86_64-unknown-redox"
+blake3 = "fd8b40512f05447dea05d967ce335d7e65b48c692a235ac15b205efe083c32e7"
+source_identifier = "e51c2f347e3185479d5ff95cae8ac77511db486853269443c56bedaa0a6ae629"
+commit_identifier = "0d005e2c023b6647d99832679a2f0b5afe7cf67b"
+time_identifier = "2026-10-28T23:49:21Z"
+storage_size = 1012054
+network_size = 1012054
+depends = []

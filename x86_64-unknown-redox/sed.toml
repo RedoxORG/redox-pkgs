@@ -1,0 +1,10 @@
+name = "sed"
+version = "4.4"
+target = "x86_64-unknown-redox"
+blake3 = "eb4fb74ee7e9a6848f2dd2db19748e062a9d8ef66d5ff18156ff98409676af43"
+source_identifier = "a88c12b2b4304e53e3c7ae2eb0499d02e28873c1b9e1a6871e5347c6886a1ecd"
+commit_identifier = "0d005e2c023b6647d99832679a2f0b5afe7cf67b"
+time_identifier = "2026-10-28T23:49:21Z"
+storage_size = 399875
+network_size = 399875
+depends = []

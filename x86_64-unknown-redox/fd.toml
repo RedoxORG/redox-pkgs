@@ -1,0 +1,10 @@
+name = "fd"
+version = "8.7.0"
+target = "x86_64-unknown-redox"
+blake3 = "66931c3ec896a5ea7b3f53b2e8cf27446db5cc5bd0d42b167dfd62f72ce22249"
+source_identifier = "840a565d3aadbeb303b10a01c0aa3561924dfc46"
+commit_identifier = "0d005e2c023b6647d99832679a2f0b5afe7cf67b"
+time_identifier = "2026-10-29T00:35:42Z"
+storage_size = 2550898
+network_size = 2550898
+depends = []

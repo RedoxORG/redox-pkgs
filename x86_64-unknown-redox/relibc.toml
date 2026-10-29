@@ -1,10 +1,10 @@
 name = "relibc"
 version = "0.2.5"
 target = "x86_64-unknown-redox"
-blake3 = "8daec731c9a4d0b19908d1e0325ede08b87fb61e077406911a68fc86e09e2333"
+blake3 = "22ce29cff4f8c048c2587a58cd21bfda013dbc057d23b6ee1471ff59f8a3764f"
 source_identifier = "local_source"
-commit_identifier = "02481fd0a52710e04b9553b9c86c8fc099da955e"
-time_identifier = "2026-10-21T08:11:46Z"
-storage_size = 15391866
-network_size = 15391866
+commit_identifier = "0d005e2c023b6647d99832679a2f0b5afe7cf67b"
+time_identifier = "2026-10-28T22:59:07Z"
+storage_size = 16073162
+network_size = 16073162
 depends = []

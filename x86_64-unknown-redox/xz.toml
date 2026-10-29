@@ -1,10 +1,10 @@
 name = "xz"
-version = "TODO"
+version = "5.2.13"
 target = "x86_64-unknown-redox"
-blake3 = "a6ee99355c480baecf4f4122c0ff2d97726295729bed41541e5a799f9ad56e55"
+blake3 = "75e8d16aeff4c3c81cd3dd238f835249eb04fa5918281870b394ded1e5efe2a4"
 source_identifier = "edc6350542e8cb7188a878135e5b9bd592d687e5b47451ca1c89d51cc4bc6b53"
-commit_identifier = "009833b56eeb6eb1928e8ea783ea717ffced5d2d"
-time_identifier = "2026-09-26T05:02:42Z"
-storage_size = 830101
-network_size = 830101
+commit_identifier = "0d005e2c023b6647d99832679a2f0b5afe7cf67b"
+time_identifier = "2026-10-28T23:49:21Z"
+storage_size = 1124371
+network_size = 1124371
 depends = []

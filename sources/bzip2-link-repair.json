@@ -1,0 +1,29 @@
+{
+  "kind": "DerivedOfficialBinaryRepair",
+  "authorization": "User explicitly approved only these four link replacements",
+  "proposal_sha256": "e7417223dfd8ae48c8c69dc3d4979f0022907efa0cd85e39516db35fc3cf705d",
+  "changes": [
+    {
+      "path": "usr/bin/bzcmp",
+      "before": "/mnt/redox/recipes/archives/bzip2/target/x86_64-unknown-redox/stage.tmp/usr/bin/bzdiff",
+      "after": "bzdiff"
+    },
+    {
+      "path": "usr/bin/bzegrep",
+      "before": "/mnt/redox/recipes/archives/bzip2/target/x86_64-unknown-redox/stage.tmp/usr/bin/bzgrep",
+      "after": "bzgrep"
+    },
+    {
+      "path": "usr/bin/bzfgrep",
+      "before": "/mnt/redox/recipes/archives/bzip2/target/x86_64-unknown-redox/stage.tmp/usr/bin/bzgrep",
+      "after": "bzgrep"
+    },
+    {
+      "path": "usr/bin/bzless",
+      "before": "/mnt/redox/recipes/archives/bzip2/target/x86_64-unknown-redox/stage.tmp/usr/bin/bzmore",
+      "after": "bzmore"
+    }
+  ],
+  "content_unchanged": false,
+  "unchanged_except_approved_links": true
+}

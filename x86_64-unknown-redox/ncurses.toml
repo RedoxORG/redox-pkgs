@@ -1,10 +1,10 @@
 name = "ncurses"
 version = "6.6"
 target = "x86_64-unknown-redox"
-blake3 = "a73fe95dc76f596bc3e3c731983d66d0f89e5868fe557606eff5187ed8af721c"
+blake3 = "43191e0e781e4c0ed0cb21c8df788939225590155479f155973cf36f2047bfb5"
 source_identifier = "fbec55697a01f99b9cc3f25be55e73ae7091f4c53e5d81a1ea15734c4e5b7238"
-commit_identifier = "851e1e578b9254a0f69aa2f6715155d5bf07b220"
-time_identifier = "2026-10-20T03:32:49Z"
-storage_size = 3645564
-network_size = 3645564
+commit_identifier = "0d005e2c023b6647d99832679a2f0b5afe7cf67b"
+time_identifier = "2026-10-28T23:49:21Z"
+storage_size = 3645876
+network_size = 3645876
 depends = ["terminfo"]

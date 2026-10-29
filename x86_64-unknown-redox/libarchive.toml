@@ -1,0 +1,10 @@
+name = "libarchive"
+version = "3.8.7"
+target = "x86_64-unknown-redox"
+blake3 = "ce2c0eb3b02a900ad55c2ca751f9e79ab87500a085983acb40926a7f82a3fc8e"
+source_identifier = "6b7f744132368a53ecf98a4586af09c255f81cebf37687edd857528a1bfd3bd3"
+commit_identifier = "0d005e2c023b6647d99832679a2f0b5afe7cf67b"
+time_identifier = "2026-10-28T23:49:21Z"
+storage_size = 5879934
+network_size = 5879934
+depends = ["bzip2", "openssl3", "xz", "zstd"]
