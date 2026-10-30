@@ -2526,7 +2526,7 @@
       }
     }
   },
-  "index_sha256": "fbbf9b945d337d7ec9e2f4ff1e6d068b30905a4299df95a706d07bd60d48b671",
+  "index_sha256": "9df09b4648c1ce9f7efeee2265e0237ef40a9b2af1a653c7d6103eba2030cb3a",
   "input_semantics": "Observed candidates and archive identity are not successful published input baselines. Null last_successful_input must be reconciled or rebuilt safely; never skipped as completed.",
   "isolated_setup": {
     "authorization": "User explicitly authorized necessary repository clones only under ~/redox/_repos.bin and necessary private redox-pkgs commits/pushes; no source push authority",
@@ -2642,226 +2642,159 @@
     }
   },
   "last_check": {
-    "acceptance_limitations": [
-      "Existing getty bulk-input EAGAIN defect; paced case transport only",
-      "No full interactive, networking, persistence or fault-injection acceptance"
-    ],
-    "artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
-    "binary_publication": "PASS",
-    "build_sha": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-    "candidate_packages": [
-      "base",
-      "bzip2",
-      "cmake",
-      "coreutils",
-      "dash",
-      "diffutils",
-      "extrautils",
-      "exuberant-ctags",
-      "fd",
-      "file",
-      "gawk",
-      "gcc13",
-      "gcc13.cxx",
-      "gnu-binutils",
-      "kernel",
-      "killall",
-      "less",
-      "libarchive",
-      "libgmp",
-      "libmpfr",
-      "libuv",
-      "libxml2",
-      "lua54",
-      "luarocks",
-      "mandoc",
-      "mpc",
-      "ncurses",
-      "ncursesw",
-      "netutils",
-      "openssh",
-      "pigz",
-      "redoxfs",
-      "relibc",
-      "ripgrep",
-      "rsync",
-      "sed",
-      "sqlite3",
-      "userutils",
-      "uutils",
-      "uutils-procps",
-      "whereis",
-      "xz"
-    ],
-    "consumer": "PASS",
-    "consumer_tests": {
-      "ARCHIVE_AND_COMPRESSION": 0,
-      "BASH_CHILD": 0,
-      "BZIP2_LINKS_AND_COMPRESSION": 0,
-      "CHILD_WAIT": 0,
-      "CURL": 0,
-      "FIND_XARGS": 0,
-      "GIT": 0,
-      "GREP": 0,
-      "HOSTNAME": 0,
-      "LOCAL_ICMP": 0,
-      "LOG_READ": 0,
-      "LOOPBACK_REFUSED": 0,
-      "LUA_AND_ROCKS": 0,
-      "MANDOC": 0,
-      "MAN_PAGER_FAILURE": 0,
-      "OFFICIAL_TOOLS_SQLITE": 0,
-      "PAGER_AND_TTY": 0,
-      "PROCESS_AND_IDENTITY": 0,
-      "PS": 0,
-      "RAW_PATH_AND_CHOWN": 0,
-      "RSYNC_LOCAL_COPY": 0,
-      "SHELL_AND_CTAGS": 0,
-      "SSH": 0,
-      "SYMLINK_PATH": 0,
-      "TEXT_SEARCH_AND_LOCATION": 0,
-      "TOUCH": 0,
-      "TR": 0,
-      "TR_CLOSED": 0,
-      "TZ": 0,
-      "UPTIME": 0,
-      "WGET": 0,
-      "WHOAMI": 0,
-      "WHOAMI_CLOSED": 0
+  "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+  "binary_publication": "PASS",
+  "consumer": "PASS",
+  "evidence": {
+    "candidate_inputs": {
+      "receipt": "candidate-inputs-current/receipt.json",
+      "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
     },
-    "freshness_status": "MissedDeadline",
-    "missed_deadline_packages": [
-      "relibc"
-    ],
-    "new_packages": 25,
-    "producer_runtime": "PASS",
-    "producer_tests": {
-      "ARCHIVE_AND_COMPRESSION": 0,
-      "BASH_CHILD": 0,
-      "BZIP2_LINKS_AND_COMPRESSION": 0,
-      "CHILD_WAIT": 0,
-      "CURL": 0,
-      "FIND_XARGS": 0,
-      "GIT": 0,
-      "GREP": 0,
-      "HOSTNAME": 0,
-      "LOCAL_ICMP": 0,
-      "LOG_READ": 0,
-      "LOOPBACK_REFUSED": 0,
-      "LUA_AND_ROCKS": 0,
-      "MANDOC": 0,
-      "MAN_PAGER_FAILURE": 0,
-      "OFFICIAL_TOOLS_SQLITE": 0,
-      "PAGER_AND_TTY": 0,
-      "PROCESS_AND_IDENTITY": 0,
-      "PS": 0,
-      "RAW_PATH_AND_CHOWN": 0,
-      "RSYNC_LOCAL_COPY": 0,
-      "SHELL_AND_CTAGS": 0,
-      "SSH": 0,
-      "SYMLINK_PATH": 0,
-      "TEXT_SEARCH_AND_LOCATION": 0,
-      "TOUCH": 0,
-      "TR": 0,
-      "TR_CLOSED": 0,
-      "TZ": 0,
-      "UPTIME": 0,
-      "WGET": 0,
-      "WHOAMI": 0,
-      "WHOAMI_CLOSED": 0
+    "consumer_binding": {
+      "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+      "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
     },
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "replaced_packages": 17,
-    "retained_unchanged_packages": 39,
-    "run_id": "update-20261029-01",
-    "status": "PublishedAndConsumerVerified"
+    "consumer_download": {
+      "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+      "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+    },
+    "consumer_headers": {
+      "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+      "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+    },
+    "consumer_initial": {
+      "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+      "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
+    },
+    "consumer_make": {
+      "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+      "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
+    },
+    "consumer_runtime": {
+      "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+      "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
+    },
+    "consumer_state": {
+      "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+      "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
+    },
+    "preparation": {
+      "receipt": "publication-preparation.json",
+      "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
+    },
+    "push": {
+      "receipt": "artifact-push.json",
+      "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
+    },
+    "remote": {
+      "receipt": "artifact-remote-readback.json",
+      "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
+    },
+    "review": {
+      "receipt": "remote-consumer-independent-review-02.json",
+      "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+    },
+    "runtime_plan": {
+      "receipt": "runtime-plan-current.json",
+      "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
+    }
   },
+  "freshness_status": "FreshnessUnknown",
+  "packages": [
+    "base",
+    "bash",
+    "cmake",
+    "extrautils",
+    "libarchive",
+    "luarocks",
+    "redoxfs",
+    "relibc",
+    "unrar",
+    "uutils",
+    "uutils-hostname"
+  ],
+  "producer_build_sha": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+  "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+  "run_id": "update-20261030-01",
+  "status": "PublishedAndConsumerVerified"
+},
   "last_consumer_verification": {
-    "artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
-    "consumer_build_sha": "5e04908b735fc1a0dd1d517dffcfa815aade9617",
-    "consumer_source_authorization": {
-      "receipt": "consumer-source-authorization.json",
-      "sha256": "f87a032c410791258ffbad59349ad7a031f8c647daad576a6ae9d89887a4e9a0"
+  "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+  "binary_publication": "PASS",
+  "consumer": "PASS",
+  "evidence": {
+    "candidate_inputs": {
+      "receipt": "candidate-inputs-current/receipt.json",
+      "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
     },
-    "evidence": {
-      "consumer_binding": {
-        "receipt": "consumer-installed-binding-01.json",
-        "sha256": "ebefcfb2960d5210c813b16e87f199fb7180fd673443b379aa88ba44751e1c45"
-      },
-      "consumer_make": {
-        "receipt": "consumer-all-02.json",
-        "sha256": "375a56f8c2b58b8138eb48b2a67056ca8103a30afc8cdd83aac53ed9fe8cfe8e"
-      },
-      "consumer_runtime": {
-        "receipt": "consumer-runtime-01.json",
-        "sha256": "26e0ce009c83d9b6021b755092301639e147abbe392944a259d34c66419ee299"
-      },
-      "freshness_assessment": {
-        "receipt": "freshness-assessment.json",
-        "sha256": "0604eb448eb224fe3aace93408fb9034ffd37714879a73869e7bf6033c7d8de0"
-      },
-      "native": {
-        "receipt": "consumer-native-validation.json",
-        "sha256": "4ed13a46fb7108c7260933e61152a7dffdb05e946d7449d8889c8a8b0aa79bd9"
-      },
-      "publication_push": {
-        "receipt": "publication-push-receipt.json",
-        "sha256": "db83bd4d0a322e92a783a5391794b6d027a99f63baf623ada7213eb1cc155e0a"
-      },
-      "remote": {
-        "receipt": "remote-readback-80a8163b1369.json",
-        "sha256": "766f986e7bc4ad1ecab70d1bbceacdcab5c62746e40736d3c0085ac2dd5203b3"
-      },
-      "review": {
-        "receipt": "consumer-independent-review.json",
-        "sha256": "05e2655b0f0f83adc56ab6c0aab41a8f515a0f3e09559a69d1c186516dcef2e3"
-      }
+    "consumer_binding": {
+      "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+      "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
     },
-    "freshness_status": "MissedDeadline",
-    "producer_build_sha": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-    "run_id": "update-20261029-01",
-    "status": "PASS",
-    "tests": {
-      "ARCHIVE_AND_COMPRESSION": 0,
-      "BASH_CHILD": 0,
-      "BZIP2_LINKS_AND_COMPRESSION": 0,
-      "CHILD_WAIT": 0,
-      "CURL": 0,
-      "FIND_XARGS": 0,
-      "GIT": 0,
-      "GREP": 0,
-      "HOSTNAME": 0,
-      "LOCAL_ICMP": 0,
-      "LOG_READ": 0,
-      "LOOPBACK_REFUSED": 0,
-      "LUA_AND_ROCKS": 0,
-      "MANDOC": 0,
-      "MAN_PAGER_FAILURE": 0,
-      "OFFICIAL_TOOLS_SQLITE": 0,
-      "PAGER_AND_TTY": 0,
-      "PROCESS_AND_IDENTITY": 0,
-      "PS": 0,
-      "RAW_PATH_AND_CHOWN": 0,
-      "RSYNC_LOCAL_COPY": 0,
-      "SHELL_AND_CTAGS": 0,
-      "SSH": 0,
-      "SYMLINK_PATH": 0,
-      "TEXT_SEARCH_AND_LOCATION": 0,
-      "TOUCH": 0,
-      "TR": 0,
-      "TR_CLOSED": 0,
-      "TZ": 0,
-      "UPTIME": 0,
-      "WGET": 0,
-      "WHOAMI": 0,
-      "WHOAMI_CLOSED": 0
+    "consumer_download": {
+      "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+      "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
     },
-    "uncompiled_consumer_source_changes": [
-      "recipes/core/uutils/recipe.toml",
-      "recipes/core/uutils/dd-stream.patch"
-    ]
+    "consumer_headers": {
+      "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+      "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+    },
+    "consumer_initial": {
+      "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+      "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
+    },
+    "consumer_make": {
+      "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+      "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
+    },
+    "consumer_runtime": {
+      "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+      "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
+    },
+    "consumer_state": {
+      "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+      "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
+    },
+    "preparation": {
+      "receipt": "publication-preparation.json",
+      "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
+    },
+    "push": {
+      "receipt": "artifact-push.json",
+      "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
+    },
+    "remote": {
+      "receipt": "artifact-remote-readback.json",
+      "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
+    },
+    "review": {
+      "receipt": "remote-consumer-independent-review-02.json",
+      "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+    },
+    "runtime_plan": {
+      "receipt": "runtime-plan-current.json",
+      "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
+    }
   },
+  "freshness_status": "FreshnessUnknown",
+  "packages": [
+    "base",
+    "bash",
+    "cmake",
+    "extrautils",
+    "libarchive",
+    "luarocks",
+    "redoxfs",
+    "relibc",
+    "unrar",
+    "uutils",
+    "uutils-hostname"
+  ],
+  "producer_build_sha": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+  "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+  "run_id": "update-20261030-01",
+  "status": "PublishedAndConsumerVerified"
+},
   "manual_sync_20261014_03": {
     "artifact_commit": "fb01a6592b113900c9412a3b961c5db8a1f92fea",
     "candidate_packages": [
@@ -2912,11 +2845,10 @@
   "binary_publication": "PASS",
   "build": "PASS",
   "candidate_artifact": {
-    "archive_blake3": "91f13def471ebce9dde18c6a7dd447e29ddacd8a7951ac36951fd1e6b536732f",
-    "archive_sha256": "8ba67bbeb1bce11ba06b43a5263df5d82fc9c497b1d70a866faef5deacf987b5",
-    "metadata_sha256": "67318cb225d6b00341dc4ce7cf50257c4a53eb4bf9eaf3b4adf9d315c96de1ec"
+    "archive_sha256": "b60c73cfd7202713cd15614e74c11f47bad05582fe50b6f05c204f45a3a42092",
+    "metadata_sha256": "b5c0e5b4e740a777077cd29f6d2b3c15590ba6935d56ea5af31dddca429742db"
   },
-  "candidate_effective_input_id": "9fea13736f449bd419843e8826422e30cba78c3e4d9b3f5f0ebb214c7652cc0c",
+  "candidate_effective_input_id": "82f2fe19c8fd2d74cef7d9cc7498d6d21aa6a4118dc07e7d67058acc99101ae1",
   "candidate_input": {
     "branch": "local/main",
     "build_receipt": {
@@ -4753,199 +4685,83 @@
     "target": "x86_64-unknown-redox"
   },
   "freshness": {
-    "candidate_effective_input_id": "9fea13736f449bd419843e8826422e30cba78c3e4d9b3f5f0ebb214c7652cc0c",
-    "change_time_evidence": null,
-    "deadline_at": null,
-    "deadline_no_later_than": "2026-10-31T04:34:07Z",
-    "direct_source_chain_complete": true,
-    "direct_source_earliest_change_at": "2026-10-24T04:34:07Z",
-    "direct_source_event": {
-      "ancestor_of_frozen_head": true,
-      "before": "611c61cc477af746f73e602ba6eb05181b97d43c",
-      "changed_paths": [
-        "bootstrap/src/exec.rs",
-        "bootstrap/src/procmgr.rs",
-        "bootstrap/src/procmgr/ps.rs",
-        "bootstrap/src/procmgr/ps_wire.rs",
-        "getty/src/main.rs"
-      ],
-      "created_at": "2026-10-24T04:34:07Z",
-      "head": "ce6dcd0c2ffbf6e3795362356850e20031da18ab",
-      "id": "25102208742",
-      "ref": "refs/heads/local/main"
-    },
-    "earliest_unpublished_change_at": null,
+    "candidate_effective_input_id": "82f2fe19c8fd2d74cef7d9cc7498d6d21aa6a4118dc07e7d67058acc99101ae1",
     "freshness_status": "FreshnessUnknown",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "published_effective_input_id": "9fea13736f449bd419843e8826422e30cba78c3e4d9b3f5f0ebb214c7652cc0c",
-    "reason": "Complete effective recipe/config/dependency event coverage not proven; no author or observation timestamp substituted."
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
+    "published_effective_input_id": "82f2fe19c8fd2d74cef7d9cc7498d6d21aa6a4118dc07e7d67058acc99101ae1",
+    "reason": "Successful frozen-input delivery; complete change-event/deadline coverage was not assessed."
   },
   "freshness_status": "FreshnessUnknown",
   "last_artifact_verification": {
+    "consumer_fetch": "NormallyConsumed",
+    "consumer_installation": "Installed",
     "independent_consumer": "PASS",
     "receipt_hashes": {
+      "candidate_inputs": {
+        "receipt": "candidate-inputs-current/receipt.json",
+        "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
+      },
       "consumer_binding": {
-        "receipt": "consumer-installed-binding-01.json",
-        "sha256": "ebefcfb2960d5210c813b16e87f199fb7180fd673443b379aa88ba44751e1c45"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+        "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
+      },
+      "consumer_download": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+        "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+      },
+      "consumer_headers": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+        "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+      },
+      "consumer_initial": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+        "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
       },
       "consumer_make": {
-        "receipt": "consumer-all-02.json",
-        "sha256": "375a56f8c2b58b8138eb48b2a67056ca8103a30afc8cdd83aac53ed9fe8cfe8e"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+        "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
       },
       "consumer_runtime": {
-        "receipt": "consumer-runtime-01.json",
-        "sha256": "26e0ce009c83d9b6021b755092301639e147abbe392944a259d34c66419ee299"
+        "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+        "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
       },
-      "freshness_assessment": {
-        "receipt": "freshness-assessment.json",
-        "sha256": "0604eb448eb224fe3aace93408fb9034ffd37714879a73869e7bf6033c7d8de0"
+      "consumer_state": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+        "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
       },
-      "native": {
-        "receipt": "consumer-native-validation.json",
-        "sha256": "4ed13a46fb7108c7260933e61152a7dffdb05e946d7449d8889c8a8b0aa79bd9"
+      "preparation": {
+        "receipt": "publication-preparation.json",
+        "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
       },
-      "publication_push": {
-        "receipt": "publication-push-receipt.json",
-        "sha256": "db83bd4d0a322e92a783a5391794b6d027a99f63baf623ada7213eb1cc155e0a"
+      "push": {
+        "receipt": "artifact-push.json",
+        "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
       },
       "remote": {
-        "receipt": "remote-readback-80a8163b1369.json",
-        "sha256": "766f986e7bc4ad1ecab70d1bbceacdcab5c62746e40736d3c0085ac2dd5203b3"
+        "receipt": "artifact-remote-readback.json",
+        "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
       },
       "review": {
-        "receipt": "consumer-independent-review.json",
-        "sha256": "05e2655b0f0f83adc56ab6c0aab41a8f515a0f3e09559a69d1c186516dcef2e3"
+        "receipt": "remote-consumer-independent-review-02.json",
+        "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+      },
+      "runtime_plan": {
+        "receipt": "runtime-plan-current.json",
+        "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
       }
     },
     "remote_bytes": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
     "signature_payload": "PASS"
   },
   "last_successful_input": {
     "complete": true,
-    "effective_input_sha256": "9fea13736f449bd419843e8826422e30cba78c3e4d9b3f5f0ebb214c7652cc0c",
+    "effective_input_sha256": "82f2fe19c8fd2d74cef7d9cc7498d6d21aa6a4118dc07e7d67058acc99101ae1",
     "kind": "source-build",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "shared_input_ref": "1fd5809fe43e3613650ead2985dc0f869388ec397f538d2ed3a73d0655e00a44",
-    "source": {
-      "effective_input": {
-        "common": "46dab1381dd23894513e3e55da1a67793d31fa9e5b767cf9c268e1a03371967c",
-        "consumed_dependencies": {
-          "redoxfs": {
-            "effective_input_id": "06267227701749dfc16b42f845d27d9d6b99e30005f3b665addd633913d6c841"
-          },
-          "relibc": {
-            "effective_input_id": "6754e296e5fea5b39663d8c26eb0ba3ddc5ee0739e47ee38cd12ab52bb8196fd"
-          }
-        },
-        "recipe_blob": "5a8520bd762c84cbd8f65b501a76fea58741b314",
-        "recipe_support": {
-          "recipes/core/base/recipe.toml": "b8356c9949efe0b2ed1772d027f1e79a753f7f9ca86653339074be395e0ece2b"
-        },
-        "source": {
-          "git_revision": "33c7875d601d9bb0f30a19cc2489fa7692b69892"
-        },
-        "source_locks": {
-          "Cargo.lock": "a3dc544473441c60747335cb9b102a9d61d6ccf9849d4e76a32031294c4279b2"
-        }
-      },
-      "effective_input_id": "9fea13736f449bd419843e8826422e30cba78c3e4d9b3f5f0ebb214c7652cc0c",
-      "inherited_source": null,
-      "installed_license_notices": [],
-      "kind": "source-build",
-      "license_references": [
-        {
-          "origin": {
-            "path_in_source": "LICENSE",
-            "prepared_source": {
-              "git_revision": "33c7875d601d9bb0f30a19cc2489fa7692b69892",
-              "private_source": {
-                "repository": "base",
-                "sha": "33c7875d601d9bb0f30a19cc2489fa7692b69892",
-                "tree": "a364d2f3194d26f79df44139af572e8eb430763e"
-              }
-            }
-          },
-          "path": "licenses/base-MIT.txt",
-          "sha256": "cb46b697c3fd9d27d7bfe1b1ad48f8a58a284984504c6eb215ae2164538df7cb"
-        },
-        {
-          "origin": {
-            "path_in_source": "drivers/graphics/console-draw/fonts/LICENSE-Dina.txt"
-          },
-          "path": "licenses/Dina.txt",
-          "sha256": "69332ab619c96f9a2ecf5f32dc75dc4c2310de5511186f80b231658d2ed14226"
-        },
-        {
-          "origin": {
-            "installed_binary": "usr/lib/drivers/ixgbed",
-            "path_in_source": "drivers/net/ixgbed/LICENSE",
-            "source_sha": "33c7875d601d9bb0f30a19cc2489fa7692b69892"
-          },
-          "path": "licenses/run-20261021/base/ixgbed-LICENSE",
-          "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
-        }
-      ],
-      "prepared_source": {
-        "git_revision": "33c7875d601d9bb0f30a19cc2489fa7692b69892",
-        "private_source": {
-          "repository": "base",
-          "sha": "33c7875d601d9bb0f30a19cc2489fa7692b69892",
-          "tree": "a364d2f3194d26f79df44139af572e8eb430763e"
-        }
-      },
-      "recipe": "recipes/core/base/recipe.toml",
-      "recipe_blake3": null,
-      "recipe_blob": "5a8520bd762c84cbd8f65b501a76fea58741b314",
-      "recipe_pin": null,
-      "source_sha": "33c7875d601d9bb0f30a19cc2489fa7692b69892",
-      "source_support_identities": [
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/base/recipe.toml",
-          "repository": "RedoxORG/redox",
-          "sha256": "b8356c9949efe0b2ed1772d027f1e79a753f7f9ca86653339074be395e0ece2b"
-        }
-      ],
-      "source_url": "https://github.com/RedoxORG/base"
-    },
-    "validation": {
-      "consumer_fetch": "NormallyFetched",
-      "consumer_installation": "Installed",
-      "independent_consumer": "PASS",
-      "remote_bytes": "PASS",
-      "signature_payload": "PASS"
-    }
-  },
-  "pending_publication": {
-    "candidate_artifact": {
-      "archive_sha256": "b60c73cfd7202713cd15614e74c11f47bad05582fe50b6f05c204f45a3a42092",
-      "metadata_sha256": "b5c0e5b4e740a777077cd29f6d2b3c15590ba6935d56ea5af31dddca429742db"
-    },
-    "candidate_effective_input_id": "82f2fe19c8fd2d74cef7d9cc7498d6d21aa6a4118dc07e7d67058acc99101ae1",
-    "consumer_runtime": {
-      "receipt": "consumer-prepublication/normal-runtime-01.json",
-      "sha256": "442016cabddaaccd58eb6af7b74159a443657bf31996eb1778a3ac0ba26cd46f"
-    },
-    "freshness_status": "FreshnessUnknown",
-    "run_id": "update-20261030-01",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
     "shared_input_ref": "1b97636f1ea982133c69cbc20f1cd3aae2115421a25b8c2ca8ed3e395e937c36",
     "source": {
       "effective_input": {
@@ -5013,49 +4829,29 @@
       ],
       "source_url": "https://github.com/RedoxORG/base"
     },
-    "status": "PendingPublication"
+    "validation": {
+      "consumer_fetch": "NormallyConsumed",
+      "consumer_installation": "Installed",
+      "independent_consumer": "PASS",
+      "remote_bytes": "PASS",
+      "signature_payload": "PASS"
+    }
   },
   "published_artifact": {
-    "archive_sha256": "a940187310a064bba5c50654f5fe219f6c8ff3d0d8b2947cded367dde2c579a8",
-    "metadata_sha256": "dc1e2979f9593a6bfa3cfc028176492ca7bf9a6801b95e98fb3cdedc1c60bcb7",
+    "archive_sha256": "b60c73cfd7202713cd15614e74c11f47bad05582fe50b6f05c204f45a3a42092",
+    "metadata_sha256": "b5c0e5b4e740a777077cd29f6d2b3c15590ba6935d56ea5af31dddca429742db",
     "readback": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc"
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5"
   },
-  "published_effective_input_id": "9fea13736f449bd419843e8826422e30cba78c3e4d9b3f5f0ebb214c7652cc0c",
+  "published_effective_input_id": "82f2fe19c8fd2d74cef7d9cc7498d6d21aa6a4118dc07e7d67058acc99101ae1",
   "published_source_receipt": {
-    "artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
-    "kind": "PrivateSourceBuild",
-    "receipt_hashes": {
-      "consumer_binding": {
-        "path": "consumer-installed-binding.json",
-        "sha256": "bf2c65f67ebad944b13d7daeaf15f0e6df8e18884eab418734dbcd5736297ac1"
-      },
-      "consumer_make": {
-        "path": "consumer-make-all.json",
-        "sha256": "cbadd0e0959b803bae1b06f5cd1d5edb00ff9f38ab03976659af0d0c3abb1154"
-      },
-      "consumer_runtime": {
-        "path": "consumer-runtime-01.json",
-        "sha256": "ed53c9604fd820d41d19fdd46548d3c42b89c10105a0e70afcf753f8476bc2a4"
-      },
-      "remote": {
-        "path": "remote-readback-40789301555d.json",
-        "sha256": "957ac31b70724ee643d20655dfe9383dc9438c0a6b369a51ee4b8b8b6c72b1b0"
-      },
-      "remote_native": {
-        "path": "published-four-native.json",
-        "sha256": "81a7fe9de72601b7124830df6e536e92d916f1c6f6674f4ab4b39ecdafbf1eb0"
-      },
-      "review": {
-        "path": "consumer-review.json",
-        "sha256": "ce236a6a23727d2069ea9152329bd6e27a92faafd5a78a3abec1a933bb56215d"
-      }
-    },
-    "source_build": "PASS",
-    "source_sha": "e3b2648483a8cbfa33bc81044e27004a8f80c437"
+    "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "recipe_commit": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+    "source_sha": "33c7875d601d9bb0f30a19cc2489fa7692b69892",
+    "verification": "Current source/native, exact remote bytes and independent cold consumer PASS"
   },
   "reason": "Complete successful source or distribution input matches this frozen run",
-  "runtime": "PASS: current independent consumer",
+  "runtime": "PASS: independent exact-ref normal server and current regression cases",
   "signature_payload_verification": "PASS",
   "status": "UpToDate"
 },
@@ -5065,11 +4861,10 @@
   "binary_publication": "PASS",
   "build": "PASS",
   "candidate_artifact": {
-    "archive_blake3": "29901eb933d314322c2be6979b5a6f0fcafc95816dc5efff60d65faf8913f833",
-    "archive_sha256": "5e77f1cc95d13193c12168dee2fbf8a7d083fc6765ad6e3647f281ca1cf747c3",
-    "metadata_sha256": "d11229f1411ad1702e04ebfdcaee362167b2b5f075bbc7e3294ab33654ebf63c",
-    "payload_sha256": "2072af614271ea87d927151fc2847966c12ed4cb85e34064634a7caf63f983e5"
+    "archive_sha256": "0ae0c6a6dd2fa41874e602a008451c35a50bd94297a3e2aa6e5a55739cafab39",
+    "metadata_sha256": "376bc4000bc4839ebd23515675682bf6da64e6b0da29f9e24bd7b24e0bdb8b3d"
   },
+  "candidate_effective_input_id": "1576c743a3431ece3c7a1f408ad0435805291ca7af8aad571f8acabeb6eea770",
   "candidate_input": {
     "actual_build_receipt_sha256": "a09a2b61b5c727f967f8a355dac88af852c814a989d6c0b2127f640ab5287ea0",
     "built_dependencies": {
@@ -5173,142 +4968,84 @@
     },
     "verification_receipt_sha256": "543a744109c06f503e0f662a4f45a642f71526549fd628b929deadcfb235c386"
   },
-  "freshness": "Complete input matches this run frozen effective source/recipe/ABI identity",
+  "freshness": {
+    "candidate_effective_input_id": "1576c743a3431ece3c7a1f408ad0435805291ca7af8aad571f8acabeb6eea770",
+    "freshness_status": "FreshnessUnknown",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
+    "published_effective_input_id": "1576c743a3431ece3c7a1f408ad0435805291ca7af8aad571f8acabeb6eea770",
+    "reason": "Successful frozen-input delivery; complete change-event/deadline coverage was not assessed."
+  },
+  "freshness_status": "FreshnessUnknown",
   "last_artifact_verification": {
-    "archive_sha256": "5e77f1cc95d13193c12168dee2fbf8a7d083fc6765ad6e3647f281ca1cf747c3",
-    "checked_at": "2026-10-14T00:14:21.990492+00:00",
-    "commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
-    "metadata_sha256": "d11229f1411ad1702e04ebfdcaee362167b2b5f075bbc7e3294ab33654ebf63c",
-    "remote_exact_bytes": "PASS",
+    "consumer_fetch": "NormallyConsumed",
+    "consumer_installation": "Installed",
+    "independent_consumer": "PASS",
+    "receipt_hashes": {
+      "candidate_inputs": {
+        "receipt": "candidate-inputs-current/receipt.json",
+        "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
+      },
+      "consumer_binding": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+        "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
+      },
+      "consumer_download": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+        "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+      },
+      "consumer_headers": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+        "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+      },
+      "consumer_initial": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+        "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
+      },
+      "consumer_make": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+        "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
+      },
+      "consumer_runtime": {
+        "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+        "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
+      },
+      "consumer_state": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+        "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
+      },
+      "preparation": {
+        "receipt": "publication-preparation.json",
+        "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
+      },
+      "push": {
+        "receipt": "artifact-push.json",
+        "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
+      },
+      "remote": {
+        "receipt": "artifact-remote-readback.json",
+        "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
+      },
+      "review": {
+        "receipt": "remote-consumer-independent-review-02.json",
+        "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+      },
+      "runtime_plan": {
+        "receipt": "runtime-plan-current.json",
+        "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
+      }
+    },
+    "remote_bytes": "PASS",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
     "signature_payload": "PASS"
   },
   "last_successful_input": {
-    "actual_build_receipt_sha256": "a09a2b61b5c727f967f8a355dac88af852c814a989d6c0b2127f640ab5287ea0",
-    "built_dependencies": {
-      "ncursesw": {
-        "archive_sha256": "34de3576dd691f6c28a6bd3da126c347b00e9f20b7049f157c81dd59d26eba01",
-        "metadata": {
-          "blake3": "22ad2f2f743b0e9cacc7a6d44d9f3b2e5de42e840d4d9d319f950157a09abeb2",
-          "commit_identifier": "5300847f01479312b6d932735ee4ca49aefc9e14",
-          "depends": [
-            "terminfo"
-          ],
-          "name": "ncursesw",
-          "network_size": 3976993,
-          "source_identifier": "fbec55697a01f99b9cc3f25be55e73ae7091f4c53e5d81a1ea15734c4e5b7238",
-          "storage_size": 3976993,
-          "target": "x86_64-unknown-redox",
-          "time_identifier": "2026-10-12T15:40:40Z",
-          "version": "TODO"
-        },
-        "metadata_sha256": "4de85020f255d9a8d392f6aa8b84946b48dceef0d3ce799eb60bb9ad5252d028"
-      },
-      "readline": {
-        "archive_sha256": "5b7c1e8fc0456f93b7cf1b7abb1d6b46322cbc3e39bcb7ae69be2e09c092a8e7",
-        "metadata": {
-          "blake3": "280f0fcf8fdf3cd41c59d3993bf7f32da8427d9c4f68ffcae28748bdf63889ec",
-          "commit_identifier": "5300847f01479312b6d932735ee4ca49aefc9e14",
-          "depends": [
-            "ncursesw"
-          ],
-          "name": "readline",
-          "network_size": 1898418,
-          "source_identifier": "7109f094062bda387a0c16b4875375b96e36437bebbbd8d8f91bb27ba01d687f",
-          "storage_size": 1898418,
-          "target": "x86_64-unknown-redox",
-          "time_identifier": "2026-10-12T15:40:40Z",
-          "version": "8.3"
-        },
-        "metadata_sha256": "dba824fa084ed1353c768e0c69bc2e157756b070c76a2fe473748859a9db6ff9"
-      },
-      "terminfo": {
-        "archive_sha256": "1c43ab436c12d8443b7a44290bc478c066b97627453cc90f2f916d4fdefc6e73",
-        "metadata": {
-          "blake3": "c4281a883bb587a80d08b04b13ab9af0851202995e8bec3febeef70a79fec48b",
-          "commit_identifier": "5300847f01479312b6d932735ee4ca49aefc9e14",
-          "depends": [],
-          "name": "terminfo",
-          "network_size": 239157,
-          "source_identifier": "dc5712b13b4a4058ffca1f077167994b1764828a",
-          "storage_size": 239157,
-          "target": "x86_64-unknown-redox",
-          "time_identifier": "2026-10-12T15:40:40Z",
-          "version": "TODO"
-        },
-        "metadata_sha256": "8dc84c02495ae46302bbc5e4b69823943334323ee9f2bfeb7e3b934b730c0ca7"
-      }
-    },
-    "common_input": "build_input_sets:648b816b511245a57fdeb45719030b18c7aa8dbaa0ac51d454274485ca137598",
-    "common_input_identity": "648b816b511245a57fdeb45719030b18c7aa8dbaa0ac51d454274485ca137598",
     "complete": true,
-    "effective_input_sha256": "77e1189ad278089d9911043a641d64a984b5becb768b4b68a4c6ca7d2aa5e3ab",
-    "published_artifact_commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
-    "published_at": "2026-10-14T00:14:21.990492+00:00",
-    "recipe_files": {
-      "recipes/terminal/bash/etc/bash.bashrc": {
-        "git_blob": "0f84bea4dc7a905729b2af840fa6c2dca4cc7b61",
-        "sha256": "1ea027192a75b2cb9223406aefa319b589cc0ecc8f86f65dc475c2ec02bcd21e"
-      },
-      "recipes/terminal/bash/etc/profile": {
-        "git_blob": "7f85066c60079da983f1977c3e311cadec00b5f2",
-        "sha256": "66f4510566d71c4a49717f54a29d8c4268fd332a49595dbe78c072e06e5ca60f"
-      },
-      "recipes/terminal/bash/etc/skel/.bashrc": {
-        "git_blob": "2433020f0c871461e410b327e7d23e545a8dddfb",
-        "sha256": "382de427b6a072847b422b9ab7cd0698be6377f9eedb4f09bc2477665039038d"
-      },
-      "recipes/terminal/bash/etc/skel/.profile": {
-        "git_blob": "04df37bda90ff7e18880a5157f6de93279de1d39",
-        "sha256": "e2182cca7e48e2884ac9b3942faa3b6ac151246ec9c3783814bdf5be3e66c17d"
-      },
-      "recipes/terminal/bash/recipe.toml": {
-        "git_blob": "d20cb50b5d0ff191b6e6b7efcac0f4074e3a3d21",
-        "sha256": "4fb5c59be6da916c01473340e33857c0c1d0c8e03e638eda7c88ecdcec48b76c"
-      }
-    },
-    "recipe_git_blob": "d20cb50b5d0ff191b6e6b7efcac0f4074e3a3d21",
-    "recipe_path": "recipes/terminal/bash/recipe.toml",
-    "runtime_dependency_archives": {
-      "ncursesw": {
-        "archive_sha256": "34de3576dd691f6c28a6bd3da126c347b00e9f20b7049f157c81dd59d26eba01",
-        "metadata_sha256": "adb6af0494534b38a30576474067c050f4556c701c996a85932d33760b8541cf"
-      },
-      "readline": {
-        "archive_sha256": "5b7c1e8fc0456f93b7cf1b7abb1d6b46322cbc3e39bcb7ae69be2e09c092a8e7",
-        "metadata_sha256": "956f0180d741f9930a5ed24bffdd6a73e03cf8b7df98d775d0a782653d73a46d"
-      }
-    },
-    "source": {
-      "archive_sha256": "0d5cd86965f869a26cf64f4b71be7b96f90a3ba8b3d74e27e8e9d9d5550f31ba",
-      "blake3": "5bf3ac6c18f3dc3fe3e049a1e10ea5ae5c5b39dac2356cd796730f49b273fd0f",
-      "tree_sha256": "4ba46b575c8a52886cc5be31147d88df67dd3ee8ee8d829cb56c4a78124fa75e",
-      "type": "official_archive",
-      "url": "https://ftp.gnu.org/gnu/bash/bash-5.3.tar.gz"
-    },
-    "validation": {
-      "installed_normal_image": "PASS",
-      "keyboard_host_tests": 14,
-      "normal_keyboard_bash_smoke": "PASS",
-      "optional_specialized_guest_locks": "NotRun: fixture failed before cases",
-      "remote_download_signature_payload": "PASS",
-      "remote_exact_sha_bytes": "PASS",
-      "signature_payload": "PASS",
-      "source_build": "PASS"
-    },
-    "verification_receipt_sha256": "543a744109c06f503e0f662a4f45a642f71526549fd628b929deadcfb235c386"
-  },
-  "pending_publication": {
-    "candidate_artifact": {
-      "archive_sha256": "0ae0c6a6dd2fa41874e602a008451c35a50bd94297a3e2aa6e5a55739cafab39",
-      "metadata_sha256": "376bc4000bc4839ebd23515675682bf6da64e6b0da29f9e24bd7b24e0bdb8b3d"
-    },
-    "candidate_effective_input_id": "1576c743a3431ece3c7a1f408ad0435805291ca7af8aad571f8acabeb6eea770",
-    "consumer_runtime": {
-      "receipt": "consumer-prepublication/normal-runtime-01.json",
-      "sha256": "442016cabddaaccd58eb6af7b74159a443657bf31996eb1778a3ac0ba26cd46f"
-    },
-    "freshness_status": "FreshnessUnknown",
-    "run_id": "update-20261030-01",
+    "effective_input_sha256": "1576c743a3431ece3c7a1f408ad0435805291ca7af8aad571f8acabeb6eea770",
+    "kind": "source-build",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
     "shared_input_ref": "1b97636f1ea982133c69cbc20f1cd3aae2115421a25b8c2ca8ed3e395e937c36",
     "source": {
       "effective_input": {
@@ -5394,14 +5131,21 @@
       ],
       "source_url": "https://ftp.gnu.org/gnu/bash/bash-5.3.tar.gz"
     },
-    "status": "PendingPublication"
+    "validation": {
+      "consumer_fetch": "NormallyConsumed",
+      "consumer_installation": "Installed",
+      "independent_consumer": "PASS",
+      "remote_bytes": "PASS",
+      "signature_payload": "PASS"
+    }
   },
   "published_artifact": {
-    "archive_blake3": "29901eb933d314322c2be6979b5a6f0fcafc95816dc5efff60d65faf8913f833",
-    "archive_sha256": "5e77f1cc95d13193c12168dee2fbf8a7d083fc6765ad6e3647f281ca1cf747c3",
-    "metadata_sha256": "d11229f1411ad1702e04ebfdcaee362167b2b5f075bbc7e3294ab33654ebf63c",
-    "payload_sha256": "2072af614271ea87d927151fc2847966c12ed4cb85e34064634a7caf63f983e5"
+    "archive_sha256": "0ae0c6a6dd2fa41874e602a008451c35a50bd94297a3e2aa6e5a55739cafab39",
+    "metadata_sha256": "376bc4000bc4839ebd23515675682bf6da64e6b0da29f9e24bd7b24e0bdb8b3d",
+    "readback": "PASS",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5"
   },
+  "published_effective_input_id": "1576c743a3431ece3c7a1f408ad0435805291ca7af8aad571f8acabeb6eea770",
   "published_recipe_receipt": {
     "commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
     "recipe_files": {
@@ -5430,24 +5174,13 @@
     "root_source_sha": "9965194f7051d85b202aabb649b60eb0deefb4f7"
   },
   "published_source_receipt": {
-    "actual_build_receipt_sha256": "a09a2b61b5c727f967f8a355dac88af852c814a989d6c0b2127f640ab5287ea0",
-    "commit": "ba954e00c854313b0eb95badad8b15922759e0b8",
-    "complete_input_identity": "77e1189ad278089d9911043a641d64a984b5becb768b4b68a4c6ca7d2aa5e3ab",
-    "normal_entry_and_sources": "PASS",
-    "recipe_commit": "9965194f7051d85b202aabb649b60eb0deefb4f7",
-    "recipe_repository": "RedoxORG/redox",
-    "remote_verified": true,
-    "source_archive": {
-      "archive_sha256": "0d5cd86965f869a26cf64f4b71be7b96f90a3ba8b3d74e27e8e9d9d5550f31ba",
-      "blake3": "5bf3ac6c18f3dc3fe3e049a1e10ea5ae5c5b39dac2356cd796730f49b273fd0f",
-      "tree_sha256": "4ba46b575c8a52886cc5be31147d88df67dd3ee8ee8d829cb56c4a78124fa75e",
-      "type": "official_archive",
-      "url": "https://ftp.gnu.org/gnu/bash/bash-5.3.tar.gz"
-    },
-    "source_sha": null
+    "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "recipe_commit": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+    "source_sha": null,
+    "verification": "Current source/native, exact remote bytes and independent cold consumer PASS"
   },
   "reason": "Actual current candidate ordinarily published and exact remote bytes verified before successful input advanced",
-  "runtime": "PASS: this run normal boot/root login/physical keyboard typed Bash alias command; host keyboard14 PASS; optional fixture locks NotRun",
+  "runtime": "PASS: independent exact-ref normal server and current regression cases",
   "signature_payload_verification": "PASS",
   "status": "UpToDate"
 },
@@ -6836,178 +6569,90 @@
     "cmake": {
   "baseline_status": "Known",
   "binary_publication": "PASS",
-  "candidate_effective_input_id": "3bf51bac803bc0a7cc762e77cc356611252a85007cd12b76a622b0ee9dc0b047",
+  "build": "PASS",
+  "candidate_artifact": {
+    "archive_sha256": "059e81a5fa77bf6e69fd951e0881114bc263e73ec4b6e7a5f64481db668e734a",
+    "metadata_sha256": "85bb7b81651883fd781ebce3201fc9d91a3989e147e74b6a40edf831f31cba09"
+  },
+  "candidate_effective_input_id": "4b5ce1944fa1cbe177fad45103d0488128ab46ec851a1b9bdc83be8ec2e810df",
   "freshness": {
-    "candidate_effective_input_id": "3bf51bac803bc0a7cc762e77cc356611252a85007cd12b76a622b0ee9dc0b047",
-    "deadline_at": null,
-    "deadline_no_later_than": null,
-    "earliest_unpublished_change_at": null,
+    "candidate_effective_input_id": "4b5ce1944fa1cbe177fad45103d0488128ab46ec851a1b9bdc83be8ec2e810df",
     "freshness_status": "FreshnessUnknown",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "published_effective_input_id": "3bf51bac803bc0a7cc762e77cc356611252a85007cd12b76a622b0ee9dc0b047",
-    "reason": "Complete effective recipe/config/dependency event coverage not proven; no author or observation timestamp substituted."
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
+    "published_effective_input_id": "4b5ce1944fa1cbe177fad45103d0488128ab46ec851a1b9bdc83be8ec2e810df",
+    "reason": "Successful frozen-input delivery; complete change-event/deadline coverage was not assessed."
   },
   "freshness_status": "FreshnessUnknown",
   "last_artifact_verification": {
+    "consumer_fetch": "NormallyConsumed",
+    "consumer_installation": "Installed",
     "independent_consumer": "PASS",
     "receipt_hashes": {
+      "candidate_inputs": {
+        "receipt": "candidate-inputs-current/receipt.json",
+        "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
+      },
       "consumer_binding": {
-        "receipt": "consumer-installed-binding-01.json",
-        "sha256": "ebefcfb2960d5210c813b16e87f199fb7180fd673443b379aa88ba44751e1c45"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+        "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
+      },
+      "consumer_download": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+        "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+      },
+      "consumer_headers": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+        "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+      },
+      "consumer_initial": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+        "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
       },
       "consumer_make": {
-        "receipt": "consumer-all-02.json",
-        "sha256": "375a56f8c2b58b8138eb48b2a67056ca8103a30afc8cdd83aac53ed9fe8cfe8e"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+        "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
       },
       "consumer_runtime": {
-        "receipt": "consumer-runtime-01.json",
-        "sha256": "26e0ce009c83d9b6021b755092301639e147abbe392944a259d34c66419ee299"
+        "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+        "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
       },
-      "freshness_assessment": {
-        "receipt": "freshness-assessment.json",
-        "sha256": "0604eb448eb224fe3aace93408fb9034ffd37714879a73869e7bf6033c7d8de0"
+      "consumer_state": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+        "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
       },
-      "native": {
-        "receipt": "consumer-native-validation.json",
-        "sha256": "4ed13a46fb7108c7260933e61152a7dffdb05e946d7449d8889c8a8b0aa79bd9"
+      "preparation": {
+        "receipt": "publication-preparation.json",
+        "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
       },
-      "publication_push": {
-        "receipt": "publication-push-receipt.json",
-        "sha256": "db83bd4d0a322e92a783a5391794b6d027a99f63baf623ada7213eb1cc155e0a"
+      "push": {
+        "receipt": "artifact-push.json",
+        "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
       },
       "remote": {
-        "receipt": "remote-readback-80a8163b1369.json",
-        "sha256": "766f986e7bc4ad1ecab70d1bbceacdcab5c62746e40736d3c0085ac2dd5203b3"
+        "receipt": "artifact-remote-readback.json",
+        "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
       },
       "review": {
-        "receipt": "consumer-independent-review.json",
-        "sha256": "05e2655b0f0f83adc56ab6c0aab41a8f515a0f3e09559a69d1c186516dcef2e3"
+        "receipt": "remote-consumer-independent-review-02.json",
+        "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+      },
+      "runtime_plan": {
+        "receipt": "runtime-plan-current.json",
+        "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
       }
     },
     "remote_bytes": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
     "signature_payload": "PASS"
   },
   "last_successful_input": {
     "complete": true,
-    "effective_input_sha256": "3bf51bac803bc0a7cc762e77cc356611252a85007cd12b76a622b0ee9dc0b047",
-    "kind": "official-binary",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "shared_input_ref": "1fd5809fe43e3613650ead2985dc0f869388ec397f538d2ed3a73d0655e00a44",
-    "source": {
-      "effective_input_id": "3bf51bac803bc0a7cc762e77cc356611252a85007cd12b76a622b0ee9dc0b047",
-      "installed_license_notices": [
-        {
-          "path": "usr/doc/cmake-4.3/LICENSE.rst",
-          "sha256": "4382e7c1879ac90e3f101a395d23846fa4dbcaa1eed7265b43681e348754825d"
-        },
-        {
-          "path": "usr/doc/cmake-4.3/cmlibrhash/COPYING",
-          "sha256": "953e55838353335148c90b5a38a4894292680b1d4c37228ffddddbf18ce54bf5"
-        },
-        {
-          "path": "usr/doc/cmake-4.3/cmsys/Copyright.txt",
-          "sha256": "7aa92ae0b86f73f81947d177639556fe7f8ea42a74762ecdf563e3daf7106a40"
-        }
-      ],
-      "kind": "official-binary",
-      "license_references": [
-        {
-          "origin": "ActualVerifiedSignedPayload",
-          "path": "usr/doc/cmake-4.3/LICENSE.rst",
-          "sha256": "4382e7c1879ac90e3f101a395d23846fa4dbcaa1eed7265b43681e348754825d"
-        },
-        {
-          "origin": "ActualVerifiedSignedPayload",
-          "path": "usr/doc/cmake-4.3/cmlibrhash/COPYING",
-          "sha256": "953e55838353335148c90b5a38a4894292680b1d4c37228ffddddbf18ce54bf5"
-        },
-        {
-          "origin": "ActualVerifiedSignedPayload",
-          "path": "usr/doc/cmake-4.3/cmsys/Copyright.txt",
-          "sha256": "7aa92ae0b86f73f81947d177639556fe7f8ea42a74762ecdf563e3daf7106a40"
-        }
-      ],
-      "official_distribution": {
-        "frozen_recipe": {
-          "path": "recipes/dev/cmake/recipe.toml",
-          "sha256": "dd96565e32792b781851a3e91e5c950074614798bdc3d6bee4043dc6b8ba74b5"
-        },
-        "kind": "official-binary",
-        "official_archive_sha256": "15782e57284ccae1a5c95f5ff31f58eb5cef80a180d951d07d2cee86441e7c6d",
-        "official_metadata": {
-          "blake3": "a08521f6dc82ef2256891e9e494e12b8e371439003578c7361dab9bc05d14b4c",
-          "commit_identifier": "abd771a5e92a10ecd475089f2c0e208b5d0ae0d0",
-          "depends": [
-            "curl",
-            "expat",
-            "libarchive",
-            "libuv"
-          ],
-          "name": "cmake",
-          "network_size": 16013255,
-          "source_identifier": "cbd0121189df1502f61e8f12f044b4a901b1ea16c74c016b85714e4661b8537f",
-          "storage_size": 52214960,
-          "target": "x86_64-unknown-redox",
-          "time_identifier": "2026-10-22T04:54:46Z",
-          "version": "4.3.2"
-        },
-        "official_metadata_sha256": "182f9aad11624699007b244c2196ea17488cccd76762889c44d302356f7326a7",
-        "official_recipe_sha256": "dd96565e32792b781851a3e91e5c950074614798bdc3d6bee4043dc6b8ba74b5",
-        "official_repository": "https://static.redox-os.org/pkg",
-        "operation": "verified-resign",
-        "output_archive_sha256": "3c526fffff8e62d4cf78dd66118014a7b3abb50dcf16dc08db2e7b33dbc532ad",
-        "output_metadata_sha256": "cfe7264becc49bc404faea39e212118af5f62c2842d78087b4a6f103bedbc867",
-        "patches": {},
-        "target": "x86_64-unknown-redox"
-      },
-      "operation": "verified-resign",
-      "prepared_source": {},
-      "recipe": "recipes/dev/cmake/recipe.toml",
-      "recipe_blake3": "cbd0121189df1502f61e8f12f044b4a901b1ea16c74c016b85714e4661b8537f",
-      "recipe_blob": "a18e143e08b3f929713deef4dd3165511747e107",
-      "recipe_pin": null,
-      "source_identity_caveat": "Official signed distribution identity; not a locally reproduced source build",
-      "source_sha": null,
-      "source_url": "https://github.com/Kitware/CMake/releases/download/v4.3.2/cmake-4.3.2.tar.gz"
-    },
-    "validation": {
-      "consumer_fetch": "NormallyFetched",
-      "consumer_installation": "Installed",
-      "independent_consumer": "PASS",
-      "remote_bytes": "PASS",
-      "signature_payload": "PASS"
-    }
-  },
-  "pending_publication": {
-    "candidate_artifact": {
-      "archive_sha256": "059e81a5fa77bf6e69fd951e0881114bc263e73ec4b6e7a5f64481db668e734a",
-      "metadata_sha256": "85bb7b81651883fd781ebce3201fc9d91a3989e147e74b6a40edf831f31cba09"
-    },
-    "candidate_effective_input_id": "4b5ce1944fa1cbe177fad45103d0488128ab46ec851a1b9bdc83be8ec2e810df",
-    "consumer_runtime": {
-      "receipt": "consumer-prepublication/normal-runtime-01.json",
-      "sha256": "442016cabddaaccd58eb6af7b74159a443657bf31996eb1778a3ac0ba26cd46f"
-    },
-    "freshness_status": "FreshnessUnknown",
-    "run_id": "update-20261030-01",
+    "effective_input_sha256": "4b5ce1944fa1cbe177fad45103d0488128ab46ec851a1b9bdc83be8ec2e810df",
+    "kind": "source-build",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
     "shared_input_ref": "1b97636f1ea982133c69cbc20f1cd3aae2115421a25b8c2ca8ed3e395e937c36",
     "source": {
       "effective_input": {
@@ -7088,15 +6733,29 @@
       ],
       "source_url": "https://github.com/Kitware/CMake/releases/download/v4.3.2/cmake-4.3.2.tar.gz"
     },
-    "status": "PendingPublication"
+    "validation": {
+      "consumer_fetch": "NormallyConsumed",
+      "consumer_installation": "Installed",
+      "independent_consumer": "PASS",
+      "remote_bytes": "PASS",
+      "signature_payload": "PASS"
+    }
   },
   "published_artifact": {
-    "archive_sha256": "3c526fffff8e62d4cf78dd66118014a7b3abb50dcf16dc08db2e7b33dbc532ad",
-    "metadata_sha256": "cfe7264becc49bc404faea39e212118af5f62c2842d78087b4a6f103bedbc867",
+    "archive_sha256": "059e81a5fa77bf6e69fd951e0881114bc263e73ec4b6e7a5f64481db668e734a",
+    "metadata_sha256": "85bb7b81651883fd781ebce3201fc9d91a3989e147e74b6a40edf831f31cba09",
     "readback": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc"
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5"
   },
-  "published_effective_input_id": "3bf51bac803bc0a7cc762e77cc356611252a85007cd12b76a622b0ee9dc0b047",
+  "published_effective_input_id": "4b5ce1944fa1cbe177fad45103d0488128ab46ec851a1b9bdc83be8ec2e810df",
+  "published_source_receipt": {
+    "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "recipe_commit": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+    "source_sha": null,
+    "verification": "Current source/native, exact remote bytes and independent cold consumer PASS"
+  },
+  "runtime": "PASS: independent exact-ref normal server and current regression cases",
+  "signature_payload_verification": "PASS",
   "status": "UpToDate"
 },
     "coreutils": {
@@ -7821,224 +7480,91 @@
   "action": "KeepExistingPackage",
   "baseline_status": "Known",
   "binary_publication": "PASS",
-  "build": "NotRequired",
-  "candidate_effective_input_id": "c701633fc5b66d8c6aefcdcfd19c04bac59e5992024b5624ec174d7b7f71a087",
+  "build": "PASS",
+  "candidate_artifact": {
+    "archive_sha256": "ed6c72ca0f564039720e96746cfbe245adc58cceeec588e262a680d65132b40d",
+    "metadata_sha256": "152ec24f4b99811a5ac1c093ccb1cc50fec83030f484c6ce2c6ea9ce2e910e41"
+  },
+  "candidate_effective_input_id": "f1d4501d07d8802f2042f8bd054dd9ebbec4131b521a262ae636e025d7fecbbb",
   "candidate_input": null,
   "freshness": {
-    "candidate_effective_input_id": "c701633fc5b66d8c6aefcdcfd19c04bac59e5992024b5624ec174d7b7f71a087",
-    "change_time_evidence": null,
-    "deadline_at": null,
-    "deadline_no_later_than": null,
-    "earliest_unpublished_change_at": null,
+    "candidate_effective_input_id": "f1d4501d07d8802f2042f8bd054dd9ebbec4131b521a262ae636e025d7fecbbb",
     "freshness_status": "FreshnessUnknown",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "published_effective_input_id": "c701633fc5b66d8c6aefcdcfd19c04bac59e5992024b5624ec174d7b7f71a087",
-    "reason": "Complete effective recipe/config/dependency event coverage not proven; no author or observation timestamp substituted."
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
+    "published_effective_input_id": "f1d4501d07d8802f2042f8bd054dd9ebbec4131b521a262ae636e025d7fecbbb",
+    "reason": "Successful frozen-input delivery; complete change-event/deadline coverage was not assessed."
   },
   "freshness_status": "FreshnessUnknown",
   "last_artifact_verification": {
+    "consumer_fetch": "NormallyConsumed",
+    "consumer_installation": "Installed",
     "independent_consumer": "PASS",
     "receipt_hashes": {
+      "candidate_inputs": {
+        "receipt": "candidate-inputs-current/receipt.json",
+        "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
+      },
       "consumer_binding": {
-        "receipt": "consumer-installed-binding-01.json",
-        "sha256": "ebefcfb2960d5210c813b16e87f199fb7180fd673443b379aa88ba44751e1c45"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+        "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
+      },
+      "consumer_download": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+        "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+      },
+      "consumer_headers": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+        "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+      },
+      "consumer_initial": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+        "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
       },
       "consumer_make": {
-        "receipt": "consumer-all-02.json",
-        "sha256": "375a56f8c2b58b8138eb48b2a67056ca8103a30afc8cdd83aac53ed9fe8cfe8e"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+        "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
       },
       "consumer_runtime": {
-        "receipt": "consumer-runtime-01.json",
-        "sha256": "26e0ce009c83d9b6021b755092301639e147abbe392944a259d34c66419ee299"
+        "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+        "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
       },
-      "freshness_assessment": {
-        "receipt": "freshness-assessment.json",
-        "sha256": "0604eb448eb224fe3aace93408fb9034ffd37714879a73869e7bf6033c7d8de0"
+      "consumer_state": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+        "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
       },
-      "native": {
-        "receipt": "consumer-native-validation.json",
-        "sha256": "4ed13a46fb7108c7260933e61152a7dffdb05e946d7449d8889c8a8b0aa79bd9"
+      "preparation": {
+        "receipt": "publication-preparation.json",
+        "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
       },
-      "publication_push": {
-        "receipt": "publication-push-receipt.json",
-        "sha256": "db83bd4d0a322e92a783a5391794b6d027a99f63baf623ada7213eb1cc155e0a"
+      "push": {
+        "receipt": "artifact-push.json",
+        "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
       },
       "remote": {
-        "receipt": "remote-readback-80a8163b1369.json",
-        "sha256": "766f986e7bc4ad1ecab70d1bbceacdcab5c62746e40736d3c0085ac2dd5203b3"
+        "receipt": "artifact-remote-readback.json",
+        "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
       },
       "review": {
-        "receipt": "consumer-independent-review.json",
-        "sha256": "05e2655b0f0f83adc56ab6c0aab41a8f515a0f3e09559a69d1c186516dcef2e3"
+        "receipt": "remote-consumer-independent-review-02.json",
+        "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+      },
+      "runtime_plan": {
+        "receipt": "runtime-plan-current.json",
+        "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
       }
     },
     "remote_bytes": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
     "signature_payload": "PASS"
   },
   "last_successful_input": {
     "complete": true,
-    "effective_input_sha256": "c701633fc5b66d8c6aefcdcfd19c04bac59e5992024b5624ec174d7b7f71a087",
+    "effective_input_sha256": "f1d4501d07d8802f2042f8bd054dd9ebbec4131b521a262ae636e025d7fecbbb",
     "kind": "source-build",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "shared_input_ref": "1fd5809fe43e3613650ead2985dc0f869388ec397f538d2ed3a73d0655e00a44",
-    "source": {
-      "effective_input": {
-        "common": "46dab1381dd23894513e3e55da1a67793d31fa9e5b767cf9c268e1a03371967c",
-        "consumed_dependencies": {
-          "less": {
-            "effective_input_id": "6393e3ba0c32abc7ca92cf1744a5e2389f1d51bc2f4fae65a13b170a4965d393"
-          },
-          "libarchive": {
-            "effective_input_id": "8ab4c77e0aa2333c61c79bc1263f6f2b0628bfca5c82331a38c72158ed6aa293"
-          },
-          "mandoc": {
-            "effective_input_id": "42b4d51ac1902cdac93d1da3cf1ac409ab705288278eae91fa1997f4dc173171"
-          },
-          "pigz": {
-            "effective_input_id": "2b0a335b884dd4f83b74b3751e36a4c198ee04551721fbb542cbdc40023f19bd"
-          },
-          "uutils-grep": {
-            "authenticated_payload_identity": "6d213b143363cdf6cd65b9c95814de827fc126ea837c18357e35199c2cce793d"
-          },
-          "xz": {
-            "effective_input_id": "c9d825673776cf4f966108c0be5d5a23d55644cc6a13f6a3e3cdfa8fdae60e10"
-          }
-        },
-        "recipe_blob": "e6f606e4042ac63bcc422b9285aab72506cb6d6e",
-        "recipe_support": {
-          "recipes/core/extrautils/dmesg-completion.patch": "a9b2bf35f55e0af26a0592748cbb65a7b3414e1b9daa5a0fb55925af0db08180",
-          "recipes/core/extrautils/dmesg-control.patch": "2f4c1ba0f5401111c2709343215a2a79e801eee0669b0b3b5f8780a2d2622bf8",
-          "recipes/core/extrautils/dmesg-kernel.patch": "705d9086524e841a41113a0127937334cfc6ac3fbd06b7ab84a06c910163fe08",
-          "recipes/core/extrautils/dmesg-option-terminator.patch": "eca5e6426e633437e0f0007ea8e0a82c44646d35d22651b98fba3c0d3a0a9a5e",
-          "recipes/core/extrautils/dmesg-records.patch": "022cbdeeb6fba5390a9da4e6268466acefb33589693099eb30e15c74e59e49c4",
-          "recipes/core/extrautils/dmesg-time.patch": "d492cdca3ca4ce853ee57b89e59a00828b5d6a703b50e78af57215f2f7579c67",
-          "recipes/core/extrautils/dmesg.patch": "5442381ec40d863c4a7193982e05f607e82229a3264381c7a36f49f94eb4639f",
-          "recipes/core/extrautils/recipe.toml": "555f36031425ddc0043fdc30b6732e4e21e65102c8c1c8f34cb926784c5f047b"
-        },
-        "source": {
-          "git_revision": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
-          "tree_sha256": "29f3d235787f00b5f036f3068cbec40d5a5c08de119776aaa2e6c9919cf6f838"
-        },
-        "source_locks": {
-          "Cargo.lock": "36413b36d4535e25a29b6dc20a80981b043a51de2aed46f3482534c37f123825"
-        }
-      },
-      "effective_input_id": "c701633fc5b66d8c6aefcdcfd19c04bac59e5992024b5624ec174d7b7f71a087",
-      "inherited_source": null,
-      "installed_license_notices": [],
-      "kind": "source-build",
-      "license_references": [
-        {
-          "origin": {
-            "path_in_source": "LICENSE.md",
-            "prepared_source": {
-              "git_revision": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
-              "tree_sha256": "29f3d235787f00b5f036f3068cbec40d5a5c08de119776aaa2e6c9919cf6f838"
-            }
-          },
-          "path": "licenses/run-20261020/extrautils/LICENSE.md",
-          "sha256": "6f43872bc11f3249878aa63b58b867cb99f128fd5c48f63bec5629bc05229b35"
-        }
-      ],
-      "prepared_source": {
-        "git_revision": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
-        "tree_sha256": "29f3d235787f00b5f036f3068cbec40d5a5c08de119776aaa2e6c9919cf6f838"
-      },
-      "recipe": "recipes/core/extrautils/recipe.toml",
-      "recipe_blake3": null,
-      "recipe_blob": "e6f606e4042ac63bcc422b9285aab72506cb6d6e",
-      "recipe_pin": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
-      "source_sha": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
-      "source_support_identities": [
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/extrautils/dmesg-completion.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "a9b2bf35f55e0af26a0592748cbb65a7b3414e1b9daa5a0fb55925af0db08180"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/extrautils/dmesg-control.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "2f4c1ba0f5401111c2709343215a2a79e801eee0669b0b3b5f8780a2d2622bf8"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/extrautils/dmesg-kernel.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "705d9086524e841a41113a0127937334cfc6ac3fbd06b7ab84a06c910163fe08"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/extrautils/dmesg-option-terminator.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "eca5e6426e633437e0f0007ea8e0a82c44646d35d22651b98fba3c0d3a0a9a5e"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/extrautils/dmesg-records.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "022cbdeeb6fba5390a9da4e6268466acefb33589693099eb30e15c74e59e49c4"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/extrautils/dmesg-time.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "d492cdca3ca4ce853ee57b89e59a00828b5d6a703b50e78af57215f2f7579c67"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/extrautils/dmesg.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "5442381ec40d863c4a7193982e05f607e82229a3264381c7a36f49f94eb4639f"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/extrautils/recipe.toml",
-          "repository": "RedoxORG/redox",
-          "sha256": "555f36031425ddc0043fdc30b6732e4e21e65102c8c1c8f34cb926784c5f047b"
-        }
-      ],
-      "source_url": "https://gitlab.redox-os.org/redox-os/extrautils.git"
-    },
-    "validation": {
-      "consumer_fetch": "NormallyFetched",
-      "consumer_installation": "Installed",
-      "independent_consumer": "PASS",
-      "remote_bytes": "PASS",
-      "signature_payload": "PASS"
-    }
-  },
-  "pending_publication": {
-    "candidate_artifact": {
-      "archive_sha256": "ed6c72ca0f564039720e96746cfbe245adc58cceeec588e262a680d65132b40d",
-      "metadata_sha256": "152ec24f4b99811a5ac1c093ccb1cc50fec83030f484c6ce2c6ea9ce2e910e41"
-    },
-    "candidate_effective_input_id": "f1d4501d07d8802f2042f8bd054dd9ebbec4131b521a262ae636e025d7fecbbb",
-    "consumer_runtime": {
-      "receipt": "consumer-prepublication/normal-runtime-01.json",
-      "sha256": "442016cabddaaccd58eb6af7b74159a443657bf31996eb1778a3ac0ba26cd46f"
-    },
-    "freshness_status": "FreshnessUnknown",
-    "run_id": "update-20261030-01",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
     "shared_input_ref": "1b97636f1ea982133c69cbc20f1cd3aae2115421a25b8c2ca8ed3e395e937c36",
     "source": {
       "effective_input": {
@@ -8160,19 +7686,30 @@
       ],
       "source_url": "https://gitlab.redox-os.org/redox-os/extrautils.git"
     },
-    "status": "PendingPublication"
+    "validation": {
+      "consumer_fetch": "NormallyConsumed",
+      "consumer_installation": "Installed",
+      "independent_consumer": "PASS",
+      "remote_bytes": "PASS",
+      "signature_payload": "PASS"
+    }
   },
   "published_artifact": {
-    "archive_sha256": "66e3493cf76a584c676d57cfabe3462e04a7b5b834237cf4494112cb7c619421",
-    "metadata_sha256": "b29284aee6f273ab79b6f855bd73806dc882f6806db2d64773dfed72842ba102",
+    "archive_sha256": "ed6c72ca0f564039720e96746cfbe245adc58cceeec588e262a680d65132b40d",
+    "metadata_sha256": "152ec24f4b99811a5ac1c093ccb1cc50fec83030f484c6ce2c6ea9ce2e910e41",
     "readback": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc"
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5"
   },
-  "published_effective_input_id": "c701633fc5b66d8c6aefcdcfd19c04bac59e5992024b5624ec174d7b7f71a087",
-  "published_source_receipt": null,
+  "published_effective_input_id": "f1d4501d07d8802f2042f8bd054dd9ebbec4131b521a262ae636e025d7fecbbb",
+  "published_source_receipt": {
+    "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "recipe_commit": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+    "source_sha": "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84",
+    "verification": "Current source/native, exact remote bytes and independent cold consumer PASS"
+  },
   "reason": "No adopted effective input change selected; archive/metadata byte-identical to frozen main. Historical missing full baseline is not reconstructed by this observation.",
-  "runtime": "NotRun",
-  "signature_payload_verification": "NotRun",
+  "runtime": "PASS: independent exact-ref normal server and current regression cases",
+  "signature_payload_verification": "PASS",
   "status": "UpToDate"
 },
     "exuberant-ctags": {
@@ -11893,181 +11430,90 @@
     "libarchive": {
   "baseline_status": "Known",
   "binary_publication": "PASS",
-  "candidate_effective_input_id": "8ab4c77e0aa2333c61c79bc1263f6f2b0628bfca5c82331a38c72158ed6aa293",
+  "build": "PASS",
+  "candidate_artifact": {
+    "archive_sha256": "03a9fe56a87f0d27e7fb8a42bb1f266bcfbf3ec1760976f71a98f0f47a1646fe",
+    "metadata_sha256": "18a5eaac24c84193b2e9e2cbe1909cf75339c1155997b6092d3111e96057476b"
+  },
+  "candidate_effective_input_id": "70a2743a28c5f2c17cd655856abd96b88e6f399898d6a6ae141af25bd958d0ba",
   "freshness": {
-    "candidate_effective_input_id": "8ab4c77e0aa2333c61c79bc1263f6f2b0628bfca5c82331a38c72158ed6aa293",
-    "deadline_at": null,
-    "deadline_no_later_than": null,
-    "earliest_unpublished_change_at": null,
+    "candidate_effective_input_id": "70a2743a28c5f2c17cd655856abd96b88e6f399898d6a6ae141af25bd958d0ba",
     "freshness_status": "FreshnessUnknown",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "published_effective_input_id": "8ab4c77e0aa2333c61c79bc1263f6f2b0628bfca5c82331a38c72158ed6aa293",
-    "reason": "Complete effective recipe/config/dependency event coverage not proven; no author or observation timestamp substituted."
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
+    "published_effective_input_id": "70a2743a28c5f2c17cd655856abd96b88e6f399898d6a6ae141af25bd958d0ba",
+    "reason": "Successful frozen-input delivery; complete change-event/deadline coverage was not assessed."
   },
   "freshness_status": "FreshnessUnknown",
   "last_artifact_verification": {
+    "consumer_fetch": "NormallyConsumed",
+    "consumer_installation": "Installed",
     "independent_consumer": "PASS",
     "receipt_hashes": {
+      "candidate_inputs": {
+        "receipt": "candidate-inputs-current/receipt.json",
+        "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
+      },
       "consumer_binding": {
-        "receipt": "consumer-installed-binding-01.json",
-        "sha256": "ebefcfb2960d5210c813b16e87f199fb7180fd673443b379aa88ba44751e1c45"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+        "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
+      },
+      "consumer_download": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+        "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+      },
+      "consumer_headers": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+        "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+      },
+      "consumer_initial": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+        "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
       },
       "consumer_make": {
-        "receipt": "consumer-all-02.json",
-        "sha256": "375a56f8c2b58b8138eb48b2a67056ca8103a30afc8cdd83aac53ed9fe8cfe8e"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+        "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
       },
       "consumer_runtime": {
-        "receipt": "consumer-runtime-01.json",
-        "sha256": "26e0ce009c83d9b6021b755092301639e147abbe392944a259d34c66419ee299"
+        "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+        "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
       },
-      "freshness_assessment": {
-        "receipt": "freshness-assessment.json",
-        "sha256": "0604eb448eb224fe3aace93408fb9034ffd37714879a73869e7bf6033c7d8de0"
+      "consumer_state": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+        "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
       },
-      "native": {
-        "receipt": "consumer-native-validation.json",
-        "sha256": "4ed13a46fb7108c7260933e61152a7dffdb05e946d7449d8889c8a8b0aa79bd9"
+      "preparation": {
+        "receipt": "publication-preparation.json",
+        "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
       },
-      "publication_push": {
-        "receipt": "publication-push-receipt.json",
-        "sha256": "db83bd4d0a322e92a783a5391794b6d027a99f63baf623ada7213eb1cc155e0a"
+      "push": {
+        "receipt": "artifact-push.json",
+        "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
       },
       "remote": {
-        "receipt": "remote-readback-80a8163b1369.json",
-        "sha256": "766f986e7bc4ad1ecab70d1bbceacdcab5c62746e40736d3c0085ac2dd5203b3"
+        "receipt": "artifact-remote-readback.json",
+        "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
       },
       "review": {
-        "receipt": "consumer-independent-review.json",
-        "sha256": "05e2655b0f0f83adc56ab6c0aab41a8f515a0f3e09559a69d1c186516dcef2e3"
+        "receipt": "remote-consumer-independent-review-02.json",
+        "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+      },
+      "runtime_plan": {
+        "receipt": "runtime-plan-current.json",
+        "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
       }
     },
     "remote_bytes": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
     "signature_payload": "PASS"
   },
   "last_successful_input": {
     "complete": true,
-    "effective_input_sha256": "8ab4c77e0aa2333c61c79bc1263f6f2b0628bfca5c82331a38c72158ed6aa293",
+    "effective_input_sha256": "70a2743a28c5f2c17cd655856abd96b88e6f399898d6a6ae141af25bd958d0ba",
     "kind": "source-build",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "shared_input_ref": "1fd5809fe43e3613650ead2985dc0f869388ec397f538d2ed3a73d0655e00a44",
-    "source": {
-      "effective_input": {
-        "common": "46dab1381dd23894513e3e55da1a67793d31fa9e5b767cf9c268e1a03371967c",
-        "consumed_dependencies": {
-          "bzip2": {
-            "authenticated_payload_identity": "501916d32f0ded94ddcade22fba58cb08000d4093cd32177975b7e42ac5b1d3d"
-          },
-          "libxml2": {
-            "authenticated_payload_identity": "01a2147c5841ef4114c63cbd21cf634b46e54b519520e406de453efb900338c3"
-          },
-          "openssl3": {
-            "authenticated_payload_identity": "327a972256e8a5d09c82c17c91d2325047aa05a150a2d8f56ad3ea8a40e0b80e"
-          },
-          "zlib": {
-            "authenticated_payload_identity": "5ce12fd141a9b4289d6ed165314661524cdbd15472463d848a68a53b25ac432e"
-          },
-          "zstd": {
-            "authenticated_payload_identity": "445c979e3e8e583c475d8b821a89852611be9fb7b63493bbe26c9df3900d0fa6"
-          }
-        },
-        "recipe_blob": "693eab0a1e374991ce9ab4a1db5d231e7aea2500",
-        "recipe_support": {
-          "recipes/libs/libarchive/bsdunzip-safe-extract.patch": "b17a3a9191784804c853f0f9acf3bcbee78069d1c8228c8defdb48c252bdf58a",
-          "recipes/libs/libarchive/cpio-stdio.patch": "52d67cde6a189a15cdc629db01507859268fb7408c2ef8c9557ef7126047c7ae",
-          "recipes/libs/libarchive/recipe.toml": "5355bb911a4fe42f1e4374b34f2afd0f1d3cd6c5063cb1fb4663172594198983"
-        },
-        "source": {
-          "archive_sha256": "d3a8ba457ae25c27c84fd2830a2efdcc5b1d40bf585d4eb0d35f47e99e5d4774",
-          "tree_sha256": "895ebf91a5560b49ec426ecf21e6a5586cb4411d82950108583c8c7e74ebac32"
-        },
-        "source_locks": {}
-      },
-      "effective_input_id": "8ab4c77e0aa2333c61c79bc1263f6f2b0628bfca5c82331a38c72158ed6aa293",
-      "inherited_source": null,
-      "installed_license_notices": [],
-      "kind": "source-build",
-      "license_references": [
-        {
-          "origin": {
-            "path_in_source": "COPYING",
-            "prepared_source": {
-              "archive_sha256": "d3a8ba457ae25c27c84fd2830a2efdcc5b1d40bf585d4eb0d35f47e99e5d4774",
-              "tree_sha256": "895ebf91a5560b49ec426ecf21e6a5586cb4411d82950108583c8c7e74ebac32"
-            }
-          },
-          "path": "licenses/run-20261029/libarchive/COPYING",
-          "sha256": "30e556b3959e3985d66efefec5eaac51d4995053caa1d3cffe6eb916f146f229"
-        }
-      ],
-      "prepared_source": {
-        "archive_sha256": "d3a8ba457ae25c27c84fd2830a2efdcc5b1d40bf585d4eb0d35f47e99e5d4774",
-        "tree_sha256": "895ebf91a5560b49ec426ecf21e6a5586cb4411d82950108583c8c7e74ebac32"
-      },
-      "recipe": "recipes/libs/libarchive/recipe.toml",
-      "recipe_blake3": "6b7f744132368a53ecf98a4586af09c255f81cebf37687edd857528a1bfd3bd3",
-      "recipe_blob": "693eab0a1e374991ce9ab4a1db5d231e7aea2500",
-      "recipe_pin": null,
-      "source_sha": null,
-      "source_support_identities": [
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/libs/libarchive/bsdunzip-safe-extract.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "b17a3a9191784804c853f0f9acf3bcbee78069d1c8228c8defdb48c252bdf58a"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/libs/libarchive/cpio-stdio.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "52d67cde6a189a15cdc629db01507859268fb7408c2ef8c9557ef7126047c7ae"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/libs/libarchive/recipe.toml",
-          "repository": "RedoxORG/redox",
-          "sha256": "5355bb911a4fe42f1e4374b34f2afd0f1d3cd6c5063cb1fb4663172594198983"
-        }
-      ],
-      "source_url": "https://libarchive.org/downloads/libarchive-3.8.7.tar.xz"
-    },
-    "validation": {
-      "consumer_fetch": "NormallyFetched",
-      "consumer_installation": "Installed",
-      "independent_consumer": "PASS",
-      "remote_bytes": "PASS",
-      "signature_payload": "PASS"
-    }
-  },
-  "pending_publication": {
-    "candidate_artifact": {
-      "archive_sha256": "03a9fe56a87f0d27e7fb8a42bb1f266bcfbf3ec1760976f71a98f0f47a1646fe",
-      "metadata_sha256": "18a5eaac24c84193b2e9e2cbe1909cf75339c1155997b6092d3111e96057476b"
-    },
-    "candidate_effective_input_id": "70a2743a28c5f2c17cd655856abd96b88e6f399898d6a6ae141af25bd958d0ba",
-    "consumer_runtime": {
-      "receipt": "consumer-prepublication/normal-runtime-01.json",
-      "sha256": "442016cabddaaccd58eb6af7b74159a443657bf31996eb1778a3ac0ba26cd46f"
-    },
-    "freshness_status": "FreshnessUnknown",
-    "run_id": "update-20261030-01",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
     "shared_input_ref": "1b97636f1ea982133c69cbc20f1cd3aae2115421a25b8c2ca8ed3e395e937c36",
     "source": {
       "effective_input": {
@@ -12151,15 +11597,29 @@
       ],
       "source_url": "https://libarchive.org/downloads/libarchive-3.8.7.tar.xz"
     },
-    "status": "PendingPublication"
+    "validation": {
+      "consumer_fetch": "NormallyConsumed",
+      "consumer_installation": "Installed",
+      "independent_consumer": "PASS",
+      "remote_bytes": "PASS",
+      "signature_payload": "PASS"
+    }
   },
   "published_artifact": {
-    "archive_sha256": "e55c1b9ef6ac5a44125f4abd1149ce3f63a260960369c1d2ec7b774a035c7870",
-    "metadata_sha256": "77b09a25c0eb3a5920371fd3175ece7159f4889261ab28ea0ef8e92fbc9eddb5",
+    "archive_sha256": "03a9fe56a87f0d27e7fb8a42bb1f266bcfbf3ec1760976f71a98f0f47a1646fe",
+    "metadata_sha256": "18a5eaac24c84193b2e9e2cbe1909cf75339c1155997b6092d3111e96057476b",
     "readback": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc"
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5"
   },
-  "published_effective_input_id": "8ab4c77e0aa2333c61c79bc1263f6f2b0628bfca5c82331a38c72158ed6aa293",
+  "published_effective_input_id": "70a2743a28c5f2c17cd655856abd96b88e6f399898d6a6ae141af25bd958d0ba",
+  "published_source_receipt": {
+    "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "recipe_commit": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+    "source_sha": null,
+    "verification": "Current source/native, exact remote bytes and independent cold consumer PASS"
+  },
+  "runtime": "PASS: independent exact-ref normal server and current regression cases",
+  "signature_payload_verification": "PASS",
   "status": "UpToDate"
 },
     "libedit": {
@@ -13589,177 +13049,90 @@
     "luarocks": {
   "baseline_status": "Known",
   "binary_publication": "PASS",
-  "candidate_effective_input_id": "8e9545c12dad361e22ac1f87dff96469b18473ff1cec066d2351a18d3f9a9048",
+  "build": "PASS",
+  "candidate_artifact": {
+    "archive_sha256": "00b3342874cd7b0e614a7ff2691ed24cf18a53083e1474287a2980ed9fadee27",
+    "metadata_sha256": "250eabf17137bb93219f9ecf96b2dcc904fa7e4643bed31c1ac63f3e0c494188"
+  },
+  "candidate_effective_input_id": "aa2281abe4883f60e590ef08acc7ba2b87343bb1ece8b5de9104110e464b52b9",
   "freshness": {
-    "candidate_effective_input_id": "8e9545c12dad361e22ac1f87dff96469b18473ff1cec066d2351a18d3f9a9048",
-    "deadline_at": null,
-    "deadline_no_later_than": null,
-    "earliest_unpublished_change_at": null,
+    "candidate_effective_input_id": "aa2281abe4883f60e590ef08acc7ba2b87343bb1ece8b5de9104110e464b52b9",
     "freshness_status": "FreshnessUnknown",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "published_effective_input_id": "8e9545c12dad361e22ac1f87dff96469b18473ff1cec066d2351a18d3f9a9048",
-    "reason": "Complete effective recipe/config/dependency event coverage not proven; no author or observation timestamp substituted."
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
+    "published_effective_input_id": "aa2281abe4883f60e590ef08acc7ba2b87343bb1ece8b5de9104110e464b52b9",
+    "reason": "Successful frozen-input delivery; complete change-event/deadline coverage was not assessed."
   },
   "freshness_status": "FreshnessUnknown",
   "last_artifact_verification": {
+    "consumer_fetch": "NormallyConsumed",
+    "consumer_installation": "Installed",
     "independent_consumer": "PASS",
     "receipt_hashes": {
+      "candidate_inputs": {
+        "receipt": "candidate-inputs-current/receipt.json",
+        "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
+      },
       "consumer_binding": {
-        "receipt": "consumer-installed-binding-01.json",
-        "sha256": "ebefcfb2960d5210c813b16e87f199fb7180fd673443b379aa88ba44751e1c45"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+        "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
+      },
+      "consumer_download": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+        "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+      },
+      "consumer_headers": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+        "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+      },
+      "consumer_initial": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+        "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
       },
       "consumer_make": {
-        "receipt": "consumer-all-02.json",
-        "sha256": "375a56f8c2b58b8138eb48b2a67056ca8103a30afc8cdd83aac53ed9fe8cfe8e"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+        "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
       },
       "consumer_runtime": {
-        "receipt": "consumer-runtime-01.json",
-        "sha256": "26e0ce009c83d9b6021b755092301639e147abbe392944a259d34c66419ee299"
+        "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+        "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
       },
-      "freshness_assessment": {
-        "receipt": "freshness-assessment.json",
-        "sha256": "0604eb448eb224fe3aace93408fb9034ffd37714879a73869e7bf6033c7d8de0"
+      "consumer_state": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+        "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
       },
-      "native": {
-        "receipt": "consumer-native-validation.json",
-        "sha256": "4ed13a46fb7108c7260933e61152a7dffdb05e946d7449d8889c8a8b0aa79bd9"
+      "preparation": {
+        "receipt": "publication-preparation.json",
+        "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
       },
-      "publication_push": {
-        "receipt": "publication-push-receipt.json",
-        "sha256": "db83bd4d0a322e92a783a5391794b6d027a99f63baf623ada7213eb1cc155e0a"
+      "push": {
+        "receipt": "artifact-push.json",
+        "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
       },
       "remote": {
-        "receipt": "remote-readback-80a8163b1369.json",
-        "sha256": "766f986e7bc4ad1ecab70d1bbceacdcab5c62746e40736d3c0085ac2dd5203b3"
+        "receipt": "artifact-remote-readback.json",
+        "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
       },
       "review": {
-        "receipt": "consumer-independent-review.json",
-        "sha256": "05e2655b0f0f83adc56ab6c0aab41a8f515a0f3e09559a69d1c186516dcef2e3"
+        "receipt": "remote-consumer-independent-review-02.json",
+        "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+      },
+      "runtime_plan": {
+        "receipt": "runtime-plan-current.json",
+        "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
       }
     },
     "remote_bytes": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
     "signature_payload": "PASS"
   },
   "last_successful_input": {
     "complete": true,
-    "effective_input_sha256": "8e9545c12dad361e22ac1f87dff96469b18473ff1cec066d2351a18d3f9a9048",
+    "effective_input_sha256": "aa2281abe4883f60e590ef08acc7ba2b87343bb1ece8b5de9104110e464b52b9",
     "kind": "source-build",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "shared_input_ref": "1fd5809fe43e3613650ead2985dc0f869388ec397f538d2ed3a73d0655e00a44",
-    "source": {
-      "effective_input": {
-        "common": "46dab1381dd23894513e3e55da1a67793d31fa9e5b767cf9c268e1a03371967c",
-        "consumed_dependencies": {
-          "ca-certificates": {
-            "authenticated_payload_identity": "90e431689c66c6d9b92be2b33b23f194cf88782fbea045b8cdda21a6787d7d27"
-          },
-          "curl": {
-            "authenticated_payload_identity": "a11a74889fcf1e44881d73e5d0a0f60db581cbbf3e3ea18adabca7afecf14e44"
-          },
-          "findutils": {
-            "authenticated_payload_identity": "932e55d580761ee5c7e83b775d7d8b614913a311af42c9d1efbcb511f61db30f"
-          },
-          "libarchive": {
-            "effective_input_id": "8ab4c77e0aa2333c61c79bc1263f6f2b0628bfca5c82331a38c72158ed6aa293"
-          },
-          "lua54": {
-            "effective_input_id": "a3693468e1717d0f2e751f02bb16d95fcbba798e06d0cc5d787abcdd1bc167d6"
-          },
-          "uutils": {
-            "effective_input_id": "c85f3b23dc452fbf585e3ce2db9af139ff61a1a27e735c64dd25b2458f780de0"
-          }
-        },
-        "recipe_blob": "cc5b3735cf31aed2308ebe71f7f72977a3d6c948",
-        "recipe_support": {
-          "recipes/dev/luarocks/recipe.toml": "91e87624f586bc41a0f53cf60021770c72297864fd94c272f31095a47cddafb9",
-          "recipes/dev/luarocks/redox.patch": "b1d4801ab0d9aee081a6f7998500b95fcaa306a17d96053eabde54cbec7b5c98"
-        },
-        "source": {
-          "git_revision": "2b492f82dfcc37e247a69435eee051af1a2bb478",
-          "tree_sha256": "7ebf57d531eaeaa43923a8179389782e9a123af30bb1a3dcbd7d80b13c2a78cc"
-        },
-        "source_locks": {}
-      },
-      "effective_input_id": "8e9545c12dad361e22ac1f87dff96469b18473ff1cec066d2351a18d3f9a9048",
-      "inherited_source": null,
-      "installed_license_notices": [],
-      "kind": "source-build",
-      "license_references": [
-        {
-          "origin": {
-            "path_in_source": "COPYING",
-            "prepared_source": {
-              "git_revision": "2b492f82dfcc37e247a69435eee051af1a2bb478",
-              "tree_sha256": "7ebf57d531eaeaa43923a8179389782e9a123af30bb1a3dcbd7d80b13c2a78cc"
-            }
-          },
-          "path": "licenses/run-20261029/luarocks/COPYING",
-          "sha256": "660773f53ed17cd0d8be7d67168c25e8cc664a506788c7b5971192bdd2994a9d"
-        }
-      ],
-      "prepared_source": {
-        "git_revision": "2b492f82dfcc37e247a69435eee051af1a2bb478",
-        "tree_sha256": "7ebf57d531eaeaa43923a8179389782e9a123af30bb1a3dcbd7d80b13c2a78cc"
-      },
-      "recipe": "recipes/dev/luarocks/recipe.toml",
-      "recipe_blake3": null,
-      "recipe_blob": "cc5b3735cf31aed2308ebe71f7f72977a3d6c948",
-      "recipe_pin": "2b492f82dfcc37e247a69435eee051af1a2bb478",
-      "source_sha": "2b492f82dfcc37e247a69435eee051af1a2bb478",
-      "source_support_identities": [
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/dev/luarocks/recipe.toml",
-          "repository": "RedoxORG/redox",
-          "sha256": "91e87624f586bc41a0f53cf60021770c72297864fd94c272f31095a47cddafb9"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/dev/luarocks/redox.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "b1d4801ab0d9aee081a6f7998500b95fcaa306a17d96053eabde54cbec7b5c98"
-        }
-      ],
-      "source_url": "https://github.com/luarocks/luarocks.git"
-    },
-    "validation": {
-      "consumer_fetch": "NormallyFetched",
-      "consumer_installation": "Installed",
-      "independent_consumer": "PASS",
-      "remote_bytes": "PASS",
-      "signature_payload": "PASS"
-    }
-  },
-  "pending_publication": {
-    "candidate_artifact": {
-      "archive_sha256": "00b3342874cd7b0e614a7ff2691ed24cf18a53083e1474287a2980ed9fadee27",
-      "metadata_sha256": "250eabf17137bb93219f9ecf96b2dcc904fa7e4643bed31c1ac63f3e0c494188"
-    },
-    "candidate_effective_input_id": "aa2281abe4883f60e590ef08acc7ba2b87343bb1ece8b5de9104110e464b52b9",
-    "consumer_runtime": {
-      "receipt": "consumer-prepublication/normal-runtime-01.json",
-      "sha256": "442016cabddaaccd58eb6af7b74159a443657bf31996eb1778a3ac0ba26cd46f"
-    },
-    "freshness_status": "FreshnessUnknown",
-    "run_id": "update-20261030-01",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
     "shared_input_ref": "1b97636f1ea982133c69cbc20f1cd3aae2115421a25b8c2ca8ed3e395e937c36",
     "source": {
       "effective_input": {
@@ -13837,15 +13210,29 @@
       ],
       "source_url": "https://github.com/luarocks/luarocks.git"
     },
-    "status": "PendingPublication"
+    "validation": {
+      "consumer_fetch": "NormallyConsumed",
+      "consumer_installation": "Installed",
+      "independent_consumer": "PASS",
+      "remote_bytes": "PASS",
+      "signature_payload": "PASS"
+    }
   },
   "published_artifact": {
     "archive_sha256": "00b3342874cd7b0e614a7ff2691ed24cf18a53083e1474287a2980ed9fadee27",
-    "metadata_sha256": "59fb8d8fd9481f9b49af712cdb00872cc64465d40fbccf55e3ed016b9ce84b41",
+    "metadata_sha256": "250eabf17137bb93219f9ecf96b2dcc904fa7e4643bed31c1ac63f3e0c494188",
     "readback": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc"
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5"
   },
-  "published_effective_input_id": "8e9545c12dad361e22ac1f87dff96469b18473ff1cec066d2351a18d3f9a9048",
+  "published_effective_input_id": "aa2281abe4883f60e590ef08acc7ba2b87343bb1ece8b5de9104110e464b52b9",
+  "published_source_receipt": {
+    "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "recipe_commit": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+    "source_sha": "2b492f82dfcc37e247a69435eee051af1a2bb478",
+    "verification": "Current source/native, exact remote bytes and independent cold consumer PASS"
+  },
+  "runtime": "PASS: independent exact-ref normal server and current regression cases",
+  "signature_payload_verification": "PASS",
   "status": "UpToDate"
 },
     "lz4": {
@@ -15798,13 +15185,12 @@
   "action": "PublishedVerifiedOfficialDistribution",
   "baseline_status": "Known",
   "binary_publication": "PASS",
-  "build": "NotRun: official same-content re-sign",
+  "build": "PASS",
   "candidate_artifact": {
-    "archive_blake3": "e2b955996e829cd348379bc6227c4f6875cd422ad2d3d94dadf390fb4d1d5b26",
-    "archive_sha256": "fee7622380fba5e486661b3b68b069dc254d996605e02049e919b15ddced4cae",
-    "metadata_sha256": "b7ef6c25cae24c17f08967c11ee3571a79f7af3805e8067afc3243e6495655a1"
+    "archive_sha256": "994ee9a979ac1cc37e291e93bc2990ecf7ddc5109df04bc38676042aa17066fa",
+    "metadata_sha256": "f82833afd93d2df3db41a53b0f44c8db971d05da6c2ad1a3391489a5b9466142"
   },
-  "candidate_effective_input_id": "06267227701749dfc16b42f845d27d9d6b99e30005f3b665addd633913d6c841",
+  "candidate_effective_input_id": "7d01ab29b924f6069a701708e82cb0e7b3afcb2ee0acf73266156b387ca835e3",
   "candidate_input": {
     "compatibility": {
       "frozen_recipe_sha256": "f37566b8a643826c82d6cc75470f24cb3f38ab10066e107759b5b7ed5023d1ed",
@@ -15833,205 +15219,83 @@
     "url": "https://static.redox-os.org/pkg/x86_64-unknown-redox/redoxfs.pkgar"
   },
   "freshness": {
-    "candidate_effective_input_id": "06267227701749dfc16b42f845d27d9d6b99e30005f3b665addd633913d6c841",
-    "change_time_evidence": null,
-    "deadline_at": null,
-    "deadline_no_later_than": null,
-    "earliest_unpublished_change_at": null,
+    "candidate_effective_input_id": "7d01ab29b924f6069a701708e82cb0e7b3afcb2ee0acf73266156b387ca835e3",
     "freshness_status": "FreshnessUnknown",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "published_effective_input_id": "06267227701749dfc16b42f845d27d9d6b99e30005f3b665addd633913d6c841",
-    "reason": "Complete effective recipe/config/dependency event coverage not proven; no author or observation timestamp substituted."
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
+    "published_effective_input_id": "7d01ab29b924f6069a701708e82cb0e7b3afcb2ee0acf73266156b387ca835e3",
+    "reason": "Successful frozen-input delivery; complete change-event/deadline coverage was not assessed."
   },
   "freshness_status": "FreshnessUnknown",
   "last_artifact_verification": {
+    "consumer_fetch": "NormallyConsumed",
+    "consumer_installation": "Installed",
     "independent_consumer": "PASS",
     "receipt_hashes": {
+      "candidate_inputs": {
+        "receipt": "candidate-inputs-current/receipt.json",
+        "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
+      },
       "consumer_binding": {
-        "receipt": "consumer-installed-binding-01.json",
-        "sha256": "ebefcfb2960d5210c813b16e87f199fb7180fd673443b379aa88ba44751e1c45"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+        "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
+      },
+      "consumer_download": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+        "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+      },
+      "consumer_headers": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+        "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+      },
+      "consumer_initial": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+        "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
       },
       "consumer_make": {
-        "receipt": "consumer-all-02.json",
-        "sha256": "375a56f8c2b58b8138eb48b2a67056ca8103a30afc8cdd83aac53ed9fe8cfe8e"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+        "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
       },
       "consumer_runtime": {
-        "receipt": "consumer-runtime-01.json",
-        "sha256": "26e0ce009c83d9b6021b755092301639e147abbe392944a259d34c66419ee299"
+        "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+        "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
       },
-      "freshness_assessment": {
-        "receipt": "freshness-assessment.json",
-        "sha256": "0604eb448eb224fe3aace93408fb9034ffd37714879a73869e7bf6033c7d8de0"
+      "consumer_state": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+        "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
       },
-      "native": {
-        "receipt": "consumer-native-validation.json",
-        "sha256": "4ed13a46fb7108c7260933e61152a7dffdb05e946d7449d8889c8a8b0aa79bd9"
+      "preparation": {
+        "receipt": "publication-preparation.json",
+        "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
       },
-      "publication_push": {
-        "receipt": "publication-push-receipt.json",
-        "sha256": "db83bd4d0a322e92a783a5391794b6d027a99f63baf623ada7213eb1cc155e0a"
+      "push": {
+        "receipt": "artifact-push.json",
+        "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
       },
       "remote": {
-        "receipt": "remote-readback-80a8163b1369.json",
-        "sha256": "766f986e7bc4ad1ecab70d1bbceacdcab5c62746e40736d3c0085ac2dd5203b3"
+        "receipt": "artifact-remote-readback.json",
+        "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
       },
       "review": {
-        "receipt": "consumer-independent-review.json",
-        "sha256": "05e2655b0f0f83adc56ab6c0aab41a8f515a0f3e09559a69d1c186516dcef2e3"
+        "receipt": "remote-consumer-independent-review-02.json",
+        "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+      },
+      "runtime_plan": {
+        "receipt": "runtime-plan-current.json",
+        "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
       }
     },
     "remote_bytes": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
     "signature_payload": "PASS"
   },
   "last_successful_input": {
     "complete": true,
-    "effective_input_sha256": "06267227701749dfc16b42f845d27d9d6b99e30005f3b665addd633913d6c841",
+    "effective_input_sha256": "7d01ab29b924f6069a701708e82cb0e7b3afcb2ee0acf73266156b387ca835e3",
     "kind": "source-build",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "shared_input_ref": "1fd5809fe43e3613650ead2985dc0f869388ec397f538d2ed3a73d0655e00a44",
-    "source": {
-      "effective_input": {
-        "common": "46dab1381dd23894513e3e55da1a67793d31fa9e5b767cf9c268e1a03371967c",
-        "consumed_dependencies": {
-          "relibc": {
-            "effective_input_id": "6754e296e5fea5b39663d8c26eb0ba3ddc5ee0739e47ee38cd12ab52bb8196fd"
-          }
-        },
-        "recipe_blob": "09753faee6b1d05f66524a34db950f18dbb36a83",
-        "recipe_support": {
-          "recipes/core/redoxfs/chown.patch": "c657875b2bf34111b9c66a9dc2ba56e3cd4d095d2ba2bbba411897b17b965a71",
-          "recipes/core/redoxfs/directory-fd.patch": "040b538435050f8dcd5f6e552a88366d3a63c92e1bf6c43e0b2f305471bb8311",
-          "recipes/core/redoxfs/fstype.patch": "d0c699dba3b6d619641dfeba7776bfb23c12fdc51326565a18106d32f035563d",
-          "recipes/core/redoxfs/inode-stats.patch": "bfc4cf8f0b5588bcb01d84445f84e68dcdf0870bc1ac130f57dda0a2eac822d2",
-          "recipes/core/redoxfs/raw-pathnames.patch": "32ffa2cc80a47e38c9f1cb07ed7fc8d879bdbfe855ee71bef5d0cff5d2e585b9",
-          "recipes/core/redoxfs/recipe.toml": "eb053339a19e4f8eb58c9e11d09bc221e41df46080137dcc6f5f08779ac2565a",
-          "recipes/core/redoxfs/scheme-0.12.patch": "34105db7ece98b962360d90cfdeba21fd6a2d7b78ebb6be212f4692d86badb68",
-          "recipes/core/redoxfs/touch.patch": "26c62a5acf510411638aa9beacbc79330f16b6f192abc1111d5ca963b5c58b47"
-        },
-        "source": {
-          "git_revision": "b87b0976ee122036b2ec040159b890e1e06ca139",
-          "tree_sha256": "60713a7db931e233b8936b0067af61038cdb80a8dc02929d289d52cd0492f85d"
-        },
-        "source_locks": {
-          "Cargo.lock": "67a5d00ee4dd5b3999b3fe62334ae55794bcba40ed5fd8ce556a997e9339fd17"
-        }
-      },
-      "effective_input_id": "06267227701749dfc16b42f845d27d9d6b99e30005f3b665addd633913d6c841",
-      "inherited_source": null,
-      "installed_license_notices": [],
-      "kind": "source-build",
-      "license_references": [
-        {
-          "origin": {
-            "path_in_source": "LICENSE",
-            "prepared_source": {
-              "git_revision": "b87b0976ee122036b2ec040159b890e1e06ca139",
-              "tree_sha256": "60713a7db931e233b8936b0067af61038cdb80a8dc02929d289d52cd0492f85d"
-            }
-          },
-          "path": "licenses/run-20261020/redoxfs/LICENSE",
-          "sha256": "93feb465f692bf21fe310c2d7d2e906982950222897304ddddbcdab873cd11b8"
-        }
-      ],
-      "prepared_source": {
-        "git_revision": "b87b0976ee122036b2ec040159b890e1e06ca139",
-        "tree_sha256": "60713a7db931e233b8936b0067af61038cdb80a8dc02929d289d52cd0492f85d"
-      },
-      "recipe": "recipes/core/redoxfs/recipe.toml",
-      "recipe_blake3": null,
-      "recipe_blob": "09753faee6b1d05f66524a34db950f18dbb36a83",
-      "recipe_pin": "b87b0976ee122036b2ec040159b890e1e06ca139",
-      "source_sha": "b87b0976ee122036b2ec040159b890e1e06ca139",
-      "source_support_identities": [
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/redoxfs/chown.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "c657875b2bf34111b9c66a9dc2ba56e3cd4d095d2ba2bbba411897b17b965a71"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/redoxfs/directory-fd.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "040b538435050f8dcd5f6e552a88366d3a63c92e1bf6c43e0b2f305471bb8311"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/redoxfs/fstype.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "d0c699dba3b6d619641dfeba7776bfb23c12fdc51326565a18106d32f035563d"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/redoxfs/inode-stats.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "bfc4cf8f0b5588bcb01d84445f84e68dcdf0870bc1ac130f57dda0a2eac822d2"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/redoxfs/raw-pathnames.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "32ffa2cc80a47e38c9f1cb07ed7fc8d879bdbfe855ee71bef5d0cff5d2e585b9"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/redoxfs/recipe.toml",
-          "repository": "RedoxORG/redox",
-          "sha256": "eb053339a19e4f8eb58c9e11d09bc221e41df46080137dcc6f5f08779ac2565a"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/redoxfs/scheme-0.12.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "34105db7ece98b962360d90cfdeba21fd6a2d7b78ebb6be212f4692d86badb68"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/redoxfs/touch.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "26c62a5acf510411638aa9beacbc79330f16b6f192abc1111d5ca963b5c58b47"
-        }
-      ],
-      "source_url": "https://gitlab.redox-os.org/redox-os/redoxfs.git"
-    },
-    "validation": {
-      "consumer_fetch": "NormallyFetched",
-      "consumer_installation": "Installed",
-      "independent_consumer": "PASS",
-      "remote_bytes": "PASS",
-      "signature_payload": "PASS"
-    }
-  },
-  "pending_publication": {
-    "candidate_artifact": {
-      "archive_sha256": "994ee9a979ac1cc37e291e93bc2990ecf7ddc5109df04bc38676042aa17066fa",
-      "metadata_sha256": "f82833afd93d2df3db41a53b0f44c8db971d05da6c2ad1a3391489a5b9466142"
-    },
-    "candidate_effective_input_id": "7d01ab29b924f6069a701708e82cb0e7b3afcb2ee0acf73266156b387ca835e3",
-    "consumer_runtime": {
-      "receipt": "consumer-prepublication/normal-runtime-01.json",
-      "sha256": "442016cabddaaccd58eb6af7b74159a443657bf31996eb1778a3ac0ba26cd46f"
-    },
-    "freshness_status": "FreshnessUnknown",
-    "run_id": "update-20261030-01",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
     "shared_input_ref": "1b97636f1ea982133c69cbc20f1cd3aae2115421a25b8c2ca8ed3e395e937c36",
     "source": {
       "effective_input": {
@@ -16138,49 +15402,29 @@
       ],
       "source_url": "https://gitlab.redox-os.org/redox-os/redoxfs.git"
     },
-    "status": "PendingPublication"
+    "validation": {
+      "consumer_fetch": "NormallyConsumed",
+      "consumer_installation": "Installed",
+      "independent_consumer": "PASS",
+      "remote_bytes": "PASS",
+      "signature_payload": "PASS"
+    }
   },
   "published_artifact": {
-    "archive_sha256": "f58c7372e8559dfd02096e589adc17ade56dc36da601137cbf5578ff8280e9b7",
-    "metadata_sha256": "c63240ee72ceca216a58fa41220afade57160f00b8c232dacff5db368dbd4af3",
+    "archive_sha256": "994ee9a979ac1cc37e291e93bc2990ecf7ddc5109df04bc38676042aa17066fa",
+    "metadata_sha256": "f82833afd93d2df3db41a53b0f44c8db971d05da6c2ad1a3391489a5b9466142",
     "readback": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc"
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5"
   },
-  "published_effective_input_id": "06267227701749dfc16b42f845d27d9d6b99e30005f3b665addd633913d6c841",
+  "published_effective_input_id": "7d01ab29b924f6069a701708e82cb0e7b3afcb2ee0acf73266156b387ca835e3",
   "published_source_receipt": {
-    "artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
-    "kind": "VerifiedOfficialDistribution",
-    "receipt_hashes": {
-      "consumer_binding": {
-        "path": "consumer-installed-binding.json",
-        "sha256": "bf2c65f67ebad944b13d7daeaf15f0e6df8e18884eab418734dbcd5736297ac1"
-      },
-      "consumer_make": {
-        "path": "consumer-make-all.json",
-        "sha256": "cbadd0e0959b803bae1b06f5cd1d5edb00ff9f38ab03976659af0d0c3abb1154"
-      },
-      "consumer_runtime": {
-        "path": "consumer-runtime-01.json",
-        "sha256": "ed53c9604fd820d41d19fdd46548d3c42b89c10105a0e70afcf753f8476bc2a4"
-      },
-      "remote": {
-        "path": "remote-readback-40789301555d.json",
-        "sha256": "957ac31b70724ee643d20655dfe9383dc9438c0a6b369a51ee4b8b8b6c72b1b0"
-      },
-      "remote_native": {
-        "path": "published-four-native.json",
-        "sha256": "81a7fe9de72601b7124830df6e536e92d916f1c6f6674f4ab4b39ecdafbf1eb0"
-      },
-      "review": {
-        "path": "consumer-review.json",
-        "sha256": "ce236a6a23727d2069ea9152329bd6e27a92faafd5a78a3abec1a933bb56215d"
-      }
-    },
-    "source_build": "NotRunNotRequired",
-    "source_sha": null
+    "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "recipe_commit": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+    "source_sha": "b87b0976ee122036b2ec040159b890e1e06ca139",
+    "verification": "Current source/native, exact remote bytes and independent cold consumer PASS"
   },
   "reason": "Complete successful source or distribution input matches this frozen run",
-  "runtime": "PASS: current independent consumer",
+  "runtime": "PASS: independent exact-ref normal server and current regression cases",
   "signature_payload_verification": "PASS",
   "status": "UpToDate"
 },
@@ -16190,11 +15434,10 @@
   "binary_publication": "PASS",
   "build": "PASS",
   "candidate_artifact": {
-    "archive_blake3": "22d4dfe903cdd6f9c3b8bd1e36d0ed762030ca052df2444ba4f93280409c7a1a",
-    "archive_sha256": "6545599387b1f81ea2eb2f5c7babd804253662bbee4f533055c8bb074a272da1",
-    "metadata_sha256": "167972c1d639d270e330d184dfc680451b2c5232ce340726f7f4f52c4f9d61cf"
+    "archive_sha256": "c8624609a6a622b7743187932911c4a4326900c71f4c1991984e8e0454bd0220",
+    "metadata_sha256": "580598544f2ce7cab1989b7ed998768a9c50ba05aab44d374d6f6167853e23e2"
   },
-  "candidate_effective_input_id": "6754e296e5fea5b39663d8c26eb0ba3ddc5ee0739e47ee38cd12ab52bb8196fd",
+  "candidate_effective_input_id": "afcf5707560ef4a1154db384a9d240af6c53817bb0c9772820ecfb360d8e1f3d",
   "candidate_input": {
     "branch": "local/main",
     "common_input": {
@@ -16802,179 +16045,83 @@
     }
   },
   "freshness": {
-    "candidate_effective_input_id": "6754e296e5fea5b39663d8c26eb0ba3ddc5ee0739e47ee38cd12ab52bb8196fd",
-    "change_time_evidence": null,
-    "deadline_at": null,
-    "deadline_no_later_than": "2026-10-28T08:50:01Z",
-    "direct_source_chain_complete": false,
-    "direct_source_earliest_change_at": null,
-    "direct_source_event": {
-      "ancestor_of_frozen_head": true,
-      "before": "891876cea632d8b37756900dce0fc552e3c8038d",
-      "changed_paths": [
-        "src/platform/redox/epoll.rs",
-        "src/platform/redox/mod.rs",
-        "src/platform/redox/path.rs",
-        "tests/Makefile.tests.mk",
-        "tests/sys_epoll/wait-signal.c",
-        "tests/unistd/chdir-search.c",
-        "tests/unistd/symlink-mode.c"
-      ],
-      "created_at": "2026-10-21T08:50:01Z",
-      "head": "7d9fdafa6ea2c5a215bb7e5e1a0595f3693e9f6a",
-      "id": "24936945154",
-      "ref": "refs/heads/local/main"
-    },
-    "earliest_unpublished_change_at": null,
-    "freshness_status": "MissedDeadline",
-    "known_overdue_change": "Event 24936945154 has production-source changes at 2026-10-21T08:50:01Z; frozen ancestor; still unpublished baseline on Oct29, therefore at least this change missed 2026-10-28T08:50:01Z, even though exact earliest is unknown.",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "published_effective_input_id": "6754e296e5fea5b39663d8c26eb0ba3ddc5ee0739e47ee38cd12ab52bb8196fd",
-    "reason": "Complete effective recipe/config/dependency event coverage not proven; no author or observation timestamp substituted."
+    "candidate_effective_input_id": "afcf5707560ef4a1154db384a9d240af6c53817bb0c9772820ecfb360d8e1f3d",
+    "freshness_status": "FreshnessUnknown",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
+    "published_effective_input_id": "afcf5707560ef4a1154db384a9d240af6c53817bb0c9772820ecfb360d8e1f3d",
+    "reason": "Successful frozen-input delivery; complete change-event/deadline coverage was not assessed."
   },
-  "freshness_status": "MissedDeadline",
+  "freshness_status": "FreshnessUnknown",
   "last_artifact_verification": {
+    "consumer_fetch": "NormallyConsumed",
+    "consumer_installation": "Installed",
     "independent_consumer": "PASS",
     "receipt_hashes": {
+      "candidate_inputs": {
+        "receipt": "candidate-inputs-current/receipt.json",
+        "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
+      },
       "consumer_binding": {
-        "receipt": "consumer-installed-binding-01.json",
-        "sha256": "ebefcfb2960d5210c813b16e87f199fb7180fd673443b379aa88ba44751e1c45"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+        "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
+      },
+      "consumer_download": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+        "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+      },
+      "consumer_headers": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+        "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+      },
+      "consumer_initial": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+        "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
       },
       "consumer_make": {
-        "receipt": "consumer-all-02.json",
-        "sha256": "375a56f8c2b58b8138eb48b2a67056ca8103a30afc8cdd83aac53ed9fe8cfe8e"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+        "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
       },
       "consumer_runtime": {
-        "receipt": "consumer-runtime-01.json",
-        "sha256": "26e0ce009c83d9b6021b755092301639e147abbe392944a259d34c66419ee299"
+        "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+        "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
       },
-      "freshness_assessment": {
-        "receipt": "freshness-assessment.json",
-        "sha256": "0604eb448eb224fe3aace93408fb9034ffd37714879a73869e7bf6033c7d8de0"
+      "consumer_state": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+        "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
       },
-      "native": {
-        "receipt": "consumer-native-validation.json",
-        "sha256": "4ed13a46fb7108c7260933e61152a7dffdb05e946d7449d8889c8a8b0aa79bd9"
+      "preparation": {
+        "receipt": "publication-preparation.json",
+        "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
       },
-      "publication_push": {
-        "receipt": "publication-push-receipt.json",
-        "sha256": "db83bd4d0a322e92a783a5391794b6d027a99f63baf623ada7213eb1cc155e0a"
+      "push": {
+        "receipt": "artifact-push.json",
+        "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
       },
       "remote": {
-        "receipt": "remote-readback-80a8163b1369.json",
-        "sha256": "766f986e7bc4ad1ecab70d1bbceacdcab5c62746e40736d3c0085ac2dd5203b3"
+        "receipt": "artifact-remote-readback.json",
+        "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
       },
       "review": {
-        "receipt": "consumer-independent-review.json",
-        "sha256": "05e2655b0f0f83adc56ab6c0aab41a8f515a0f3e09559a69d1c186516dcef2e3"
+        "receipt": "remote-consumer-independent-review-02.json",
+        "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+      },
+      "runtime_plan": {
+        "receipt": "runtime-plan-current.json",
+        "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
       }
     },
     "remote_bytes": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
     "signature_payload": "PASS"
   },
   "last_successful_input": {
     "complete": true,
-    "effective_input_sha256": "6754e296e5fea5b39663d8c26eb0ba3ddc5ee0739e47ee38cd12ab52bb8196fd",
+    "effective_input_sha256": "afcf5707560ef4a1154db384a9d240af6c53817bb0c9772820ecfb360d8e1f3d",
     "kind": "source-build",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "shared_input_ref": "1fd5809fe43e3613650ead2985dc0f869388ec397f538d2ed3a73d0655e00a44",
-    "source": {
-      "effective_input": {
-        "common": "46dab1381dd23894513e3e55da1a67793d31fa9e5b767cf9c268e1a03371967c",
-        "consumed_dependencies": {},
-        "recipe_blob": "8b164bb83749b5acd38dac12cf552b116dcec977",
-        "recipe_support": {
-          "recipes/core/relibc/recipe.toml": "cf0fc0ef0c1ba8680e783292e09e51d43f0b63dded680fa4017b289f215cf2dc"
-        },
-        "source": {
-          "git_revision": "40946e5950d744d03dad86a3ef1465d227a65cb6"
-        },
-        "source_locks": {
-          "Cargo.lock": "1c068e1fc8acab0333f62d14164f24445cc95983c387dd599d274de1d4e1bb97"
-        }
-      },
-      "effective_input_id": "6754e296e5fea5b39663d8c26eb0ba3ddc5ee0739e47ee38cd12ab52bb8196fd",
-      "inherited_source": null,
-      "installed_license_notices": [],
-      "kind": "source-build",
-      "license_references": [
-        {
-          "origin": {
-            "path_in_source": "LICENSE",
-            "prepared_source": {
-              "git_revision": "40946e5950d744d03dad86a3ef1465d227a65cb6",
-              "private_source": {
-                "repository": "relibc",
-                "sha": "40946e5950d744d03dad86a3ef1465d227a65cb6",
-                "tree": "0f8c510801975792ea86e420dc9b0f15fcfc5bf6"
-              }
-            }
-          },
-          "path": "licenses/run-20261020/relibc/LICENSE",
-          "sha256": "1bc13112bee203de03bb45dfebc20e5338a20349a5935c16b7222c87fd0c7609"
-        }
-      ],
-      "prepared_source": {
-        "git_revision": "40946e5950d744d03dad86a3ef1465d227a65cb6",
-        "private_source": {
-          "repository": "relibc",
-          "sha": "40946e5950d744d03dad86a3ef1465d227a65cb6",
-          "tree": "0f8c510801975792ea86e420dc9b0f15fcfc5bf6"
-        }
-      },
-      "recipe": "recipes/core/relibc/recipe.toml",
-      "recipe_blake3": null,
-      "recipe_blob": "8b164bb83749b5acd38dac12cf552b116dcec977",
-      "recipe_pin": null,
-      "source_sha": "40946e5950d744d03dad86a3ef1465d227a65cb6",
-      "source_support_identities": [
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/relibc/recipe.toml",
-          "repository": "RedoxORG/redox",
-          "sha256": "cf0fc0ef0c1ba8680e783292e09e51d43f0b63dded680fa4017b289f215cf2dc"
-        }
-      ],
-      "source_url": "https://github.com/RedoxORG/relibc"
-    },
-    "validation": {
-      "consumer_fetch": "NormallyFetched",
-      "consumer_installation": "Installed",
-      "independent_consumer": "PASS",
-      "remote_bytes": "PASS",
-      "signature_payload": "PASS"
-    }
-  },
-  "pending_publication": {
-    "candidate_artifact": {
-      "archive_sha256": "c8624609a6a622b7743187932911c4a4326900c71f4c1991984e8e0454bd0220",
-      "metadata_sha256": "580598544f2ce7cab1989b7ed998768a9c50ba05aab44d374d6f6167853e23e2"
-    },
-    "candidate_effective_input_id": "afcf5707560ef4a1154db384a9d240af6c53817bb0c9772820ecfb360d8e1f3d",
-    "consumer_runtime": {
-      "receipt": "consumer-prepublication/normal-runtime-01.json",
-      "sha256": "442016cabddaaccd58eb6af7b74159a443657bf31996eb1778a3ac0ba26cd46f"
-    },
-    "freshness_status": "FreshnessUnknown",
-    "run_id": "update-20261030-01",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
     "shared_input_ref": "1b97636f1ea982133c69cbc20f1cd3aae2115421a25b8c2ca8ed3e395e937c36",
     "source": {
       "effective_input": {
@@ -17035,23 +16182,29 @@
       ],
       "source_url": "https://github.com/RedoxORG/relibc"
     },
-    "status": "PendingPublication"
+    "validation": {
+      "consumer_fetch": "NormallyConsumed",
+      "consumer_installation": "Installed",
+      "independent_consumer": "PASS",
+      "remote_bytes": "PASS",
+      "signature_payload": "PASS"
+    }
   },
   "published_artifact": {
-    "archive_sha256": "c9a553b229f7b99cbe65de773eba7bb9582afc122ae7758f255f21a34e6f727f",
-    "metadata_sha256": "79c2b4732d7ad05bae20e425e4dc16ca920f71e567deac5f69e9247900e8feee",
+    "archive_sha256": "c8624609a6a622b7743187932911c4a4326900c71f4c1991984e8e0454bd0220",
+    "metadata_sha256": "580598544f2ce7cab1989b7ed998768a9c50ba05aab44d374d6f6167853e23e2",
     "readback": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc"
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5"
   },
-  "published_effective_input_id": "6754e296e5fea5b39663d8c26eb0ba3ddc5ee0739e47ee38cd12ab52bb8196fd",
+  "published_effective_input_id": "afcf5707560ef4a1154db384a9d240af6c53817bb0c9772820ecfb360d8e1f3d",
   "published_source_receipt": {
-    "artifact_commit": "fb01a6592b113900c9412a3b961c5db8a1f92fea",
-    "recipe_commit": "9fe9e3ec3810527f027fca9053ae41594bfda09d",
-    "source_sha": "eb6246c4a92ea19014f124cffd8fed22d345835f",
-    "verification": "Actual source build, signed payload, normal producer and independent consumer, immutable remote bytes PASS"
+    "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "recipe_commit": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+    "source_sha": "89dd058bb497a8d08981e62b23cf3c4d747e7aad",
+    "verification": "Current source/native, exact remote bytes and independent cold consumer PASS"
   },
   "reason": "Verified at this run frozen input; later source changes belong to the next run",
-  "runtime": "PASS: independent normal server login and CLI smoke",
+  "runtime": "PASS: independent exact-ref normal server and current regression cases",
   "signature_payload_verification": "PASS",
   "status": "UpToDate"
 },
@@ -18463,419 +17616,91 @@
   "action": "KeepExistingPackage",
   "baseline_status": "Known",
   "binary_publication": "PASS",
-  "build": "NotRequired",
-  "candidate_effective_input_id": "c85f3b23dc452fbf585e3ce2db9af139ff61a1a27e735c64dd25b2458f780de0",
+  "build": "PASS",
+  "candidate_artifact": {
+    "archive_sha256": "8913a3bdea6505115042349315cd17647b2ab043eab5dcf34b25344754c5a555",
+    "metadata_sha256": "29adb986b190263d8ee4c9440b76352c8dca9cc5abeb1adfc3a46beba1eb6cf0"
+  },
+  "candidate_effective_input_id": "bd1114aacebd61824eb40d4bea012dbe28baa019f93eca2fe60509fb204d7063",
   "candidate_input": null,
   "freshness": {
-    "candidate_effective_input_id": "c85f3b23dc452fbf585e3ce2db9af139ff61a1a27e735c64dd25b2458f780de0",
-    "change_time_evidence": null,
-    "deadline_at": null,
-    "deadline_no_later_than": null,
-    "earliest_unpublished_change_at": null,
+    "candidate_effective_input_id": "bd1114aacebd61824eb40d4bea012dbe28baa019f93eca2fe60509fb204d7063",
     "freshness_status": "FreshnessUnknown",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "published_effective_input_id": "c85f3b23dc452fbf585e3ce2db9af139ff61a1a27e735c64dd25b2458f780de0",
-    "reason": "Complete effective recipe/config/dependency event coverage not proven; no author or observation timestamp substituted."
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
+    "published_effective_input_id": "bd1114aacebd61824eb40d4bea012dbe28baa019f93eca2fe60509fb204d7063",
+    "reason": "Successful frozen-input delivery; complete change-event/deadline coverage was not assessed."
   },
   "freshness_status": "FreshnessUnknown",
   "last_artifact_verification": {
+    "consumer_fetch": "NormallyConsumed",
+    "consumer_installation": "Installed",
     "independent_consumer": "PASS",
     "receipt_hashes": {
+      "candidate_inputs": {
+        "receipt": "candidate-inputs-current/receipt.json",
+        "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
+      },
       "consumer_binding": {
-        "receipt": "consumer-installed-binding-01.json",
-        "sha256": "ebefcfb2960d5210c813b16e87f199fb7180fd673443b379aa88ba44751e1c45"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+        "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
+      },
+      "consumer_download": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+        "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+      },
+      "consumer_headers": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+        "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+      },
+      "consumer_initial": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+        "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
       },
       "consumer_make": {
-        "receipt": "consumer-all-02.json",
-        "sha256": "375a56f8c2b58b8138eb48b2a67056ca8103a30afc8cdd83aac53ed9fe8cfe8e"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+        "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
       },
       "consumer_runtime": {
-        "receipt": "consumer-runtime-01.json",
-        "sha256": "26e0ce009c83d9b6021b755092301639e147abbe392944a259d34c66419ee299"
+        "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+        "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
       },
-      "freshness_assessment": {
-        "receipt": "freshness-assessment.json",
-        "sha256": "0604eb448eb224fe3aace93408fb9034ffd37714879a73869e7bf6033c7d8de0"
+      "consumer_state": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+        "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
       },
-      "native": {
-        "receipt": "consumer-native-validation.json",
-        "sha256": "4ed13a46fb7108c7260933e61152a7dffdb05e946d7449d8889c8a8b0aa79bd9"
+      "preparation": {
+        "receipt": "publication-preparation.json",
+        "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
       },
-      "publication_push": {
-        "receipt": "publication-push-receipt.json",
-        "sha256": "db83bd4d0a322e92a783a5391794b6d027a99f63baf623ada7213eb1cc155e0a"
+      "push": {
+        "receipt": "artifact-push.json",
+        "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
       },
       "remote": {
-        "receipt": "remote-readback-80a8163b1369.json",
-        "sha256": "766f986e7bc4ad1ecab70d1bbceacdcab5c62746e40736d3c0085ac2dd5203b3"
+        "receipt": "artifact-remote-readback.json",
+        "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
       },
       "review": {
-        "receipt": "consumer-independent-review.json",
-        "sha256": "05e2655b0f0f83adc56ab6c0aab41a8f515a0f3e09559a69d1c186516dcef2e3"
+        "receipt": "remote-consumer-independent-review-02.json",
+        "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+      },
+      "runtime_plan": {
+        "receipt": "runtime-plan-current.json",
+        "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
       }
     },
     "remote_bytes": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
     "signature_payload": "PASS"
   },
   "last_successful_input": {
     "complete": true,
-    "effective_input_sha256": "c85f3b23dc452fbf585e3ce2db9af139ff61a1a27e735c64dd25b2458f780de0",
+    "effective_input_sha256": "bd1114aacebd61824eb40d4bea012dbe28baa019f93eca2fe60509fb204d7063",
     "kind": "source-build",
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "publication_time_evidence": {
-      "completion_time_is_upper_bound": true,
-      "finished_at": "2026-10-29T06:53:31.475093Z",
-      "kind": "OwnSuccessfulFastForwardPush",
-      "published_at": "2026-10-29T06:53:31.475093Z",
-      "started_at": "2026-10-29T06:51:49.270488Z"
-    },
-    "published_artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "shared_input_ref": "1fd5809fe43e3613650ead2985dc0f869388ec397f538d2ed3a73d0655e00a44",
-    "source": {
-      "effective_input": {
-        "common": "46dab1381dd23894513e3e55da1a67793d31fa9e5b767cf9c268e1a03371967c",
-        "consumed_dependencies": {
-          "libonig": {
-            "authenticated_payload_identity": "aaca63d890a9d88699e9f65a87f8fe6a3fd91fa69e440d48aff0fec2e139ad24"
-          }
-        },
-        "recipe_blob": "7458a7ae17d3ed48ec021c1bc3f82ef16b946d0b",
-        "recipe_support": {
-          "recipes/core/uutils/base64-stdio.patch": "bcd37305d79f78cd3675118393351e8c6987d9b9a63dd86f28ab36067a755e12",
-          "recipes/core/uutils/basename.patch": "9499dccac7fdf132023d7ec3a64bf18fec1d92da3e1c8da24a41fc46b10256d3",
-          "recipes/core/uutils/chown.patch": "40be6eca6566e8c5e992b34ef0e792e37e7e7028b85c3a5d6f271e8ad2a36aa4",
-          "recipes/core/uutils/cp-preserve.patch": "7ad053113eba6f2af3ba538024c662bab91ec07b64f47dfe973fcd0376d9eee5",
-          "recipes/core/uutils/cut.patch": "79e4e5f257fdd52db3579529f33a460825c249b5a7bd658cf3134b7465385643",
-          "recipes/core/uutils/date.patch": "cf580054e316219a446cbebe8c0e1bcbab7f2a2401282e579201530ebacd6d81",
-          "recipes/core/uutils/df.patch": "6d4c2345ed2d17d81855668bf349a8e67f7568cb175940d33cb4a40328228a7f",
-          "recipes/core/uutils/dirname.patch": "1875a7160d30ac473bec7d95b357fc5f475b95947a390f3d23656748f12551ed",
-          "recipes/core/uutils/env.patch": "f49a4758ea0db339a60fb3f1f016f609c5c88deb097dbc6fdc103952348de1dd",
-          "recipes/core/uutils/expr-output.patch": "d92af81b39f31065e089371d424c36dcf82c922019143ea2f72b4365e8a5c650",
-          "recipes/core/uutils/factor-stdio.patch": "634997a3e04085030a3f57b36f40a98deecaacb0705722a58049b4d232396b5e",
-          "recipes/core/uutils/fold-stdio.patch": "82cca86b90d612c233e9a1c528a60fc589b2229e6e24288ff06acfd9a172c970",
-          "recipes/core/uutils/ln.patch": "b6041abf495e1fb297885ce3388ec2021fb3407fd7c820a529c043fdf11a9396",
-          "recipes/core/uutils/md5sum-stdio.patch": "f63859e781275866b98792d0504bb579b65ecac4939ddd9fa77debbecb6e202e",
-          "recipes/core/uutils/mktemp-stdio.patch": "606091b620e4443ec22f6071c34af7c394ef3288d9bd9d1443a5032c1548d730",
-          "recipes/core/uutils/nohup-stdio.patch": "2f9b1b56737576a79e0a1f253fca1296f0c9241670488b4935b8c1baf532c7ac",
-          "recipes/core/uutils/numfmt-stdio.patch": "a5b5f99ffb4cfe70e23292103b5f0aa0d1416c4b3db8df911717314520920d02",
-          "recipes/core/uutils/printf.patch": "a9ca19140b20cebe19eb942f1d50f061a7a6c4ed338336b2bc753c714fcbab2f",
-          "recipes/core/uutils/readlink.patch": "80e5f109a4658dad65a123f88092119e70f79fc133d6f896f6e3eba66087e9cb",
-          "recipes/core/uutils/realpath.patch": "d66a4ed226638b8e512d1528d4908569adddc712c56922bcee0e3fccee5ea43a",
-          "recipes/core/uutils/recipe.toml": "0a03541ea29624321ec8302250788a8c6026a4c412ff613827c7c2213975c5f7",
-          "recipes/core/uutils/redox.patch": "416b7cc02e704af6dc575bce4ffc1ff239fbd0a97c8a14ff95dadbdbd9a228d3",
-          "recipes/core/uutils/seq-output.patch": "8f235cff92f786b82c5f6e15644255abd34481687c094e591294c3c8d5bb1415",
-          "recipes/core/uutils/shred-size.patch": "0a6382643433fbbe6292c5fa0d6267a9589c3c33956ade5f60889edccdda9fe4",
-          "recipes/core/uutils/shuf-stdio.patch": "43836a696d8d43b9f7068b1f713d6b4b8ad4a611c2c478374a8f445f6dc995b5",
-          "recipes/core/uutils/sort.patch": "fc232d2e0efb1a5605397be12aca138894b2d88177cd54033fd62f72d3f57438",
-          "recipes/core/uutils/split.patch": "591dbea209a2ef9b9b97c2c01412e8b511cc0b681ab12d21caf1e8de94ccc7c7",
-          "recipes/core/uutils/stat.patch": "894b3dedf043bc3dfd7ac1bcb96584d81fc9c6f1c2cabd401fb9ef7aab130aec",
-          "recipes/core/uutils/stty-redox.patch": "666aea41127b21f4aeee82d25c38bce97880b619ea3a4efe2fdfa9695b25bdb6",
-          "recipes/core/uutils/tail.patch": "4c9c88e98ae563564479b7fd7a1e0092252c564a96185825b79e686f6486b2bc",
-          "recipes/core/uutils/tee.patch": "5d5338f7e32a3da083a2eecd4759f0aeab80a8071eeb4a831036266a849b9683",
-          "recipes/core/uutils/touch.patch": "0369ae4e635fdf4ef998307936e9a43e5b4feb044b4a34111bdf8c648ea0480d",
-          "recipes/core/uutils/tr.patch": "5585510fe85da0a75d13d68e12a0df9782c06a1e724667074dd80e0902c4f03e",
-          "recipes/core/uutils/tty-stdio.patch": "be46e65755902b57b9864e0a8f332254b4d280a66c2b00d0eeacc5c7e85550e9",
-          "recipes/core/uutils/unexpand-stdio.patch": "3d41a70bb6946858e9b95c00c6f32595b46d408081a0e39e9cc3cee11b285ff1",
-          "recipes/core/uutils/wc.patch": "c24acf291af5bc571a35714d9f879d4ce0148508ebcec4541b9bf3adf11e91ad",
-          "recipes/core/uutils/whoami.patch": "23298329aa8769fce08a00a52d8cc4e0907abbdd1c6de6e6b266724a7ba69c9d",
-          "recipes/core/uutils/yes-stdio.patch": "644824c9699e53e52285afca4d57928af8f658e7bb18d9cf35443531427cbe04"
-        },
-        "source": {
-          "git_revision": "bf65901e1ed82963436844c2cf8e796ba9158c65",
-          "tree_sha256": "b6c3c1f019f4b597ed5bbc613971cfe5c198e75835f8fce10a2b0ca0f0136e25"
-        },
-        "source_locks": {
-          "Cargo.lock": "8fde6da5789cbe6391bad56493f34a3eac31d7b001a7ce4ee27e1e14032af839"
-        }
-      },
-      "effective_input_id": "c85f3b23dc452fbf585e3ce2db9af139ff61a1a27e735c64dd25b2458f780de0",
-      "inherited_source": null,
-      "installed_license_notices": [],
-      "kind": "source-build",
-      "license_references": [
-        {
-          "origin": {
-            "path_in_source": "LICENSE",
-            "prepared_source": {
-              "git_revision": "bf65901e1ed82963436844c2cf8e796ba9158c65",
-              "tree_sha256": "b6c3c1f019f4b597ed5bbc613971cfe5c198e75835f8fce10a2b0ca0f0136e25"
-            }
-          },
-          "path": "licenses/run-20261020/uutils/LICENSE",
-          "sha256": "29953405eaa3dcc41c37d1621d55b6a47eee93e05613e439e73295029740b10c"
-        }
-      ],
-      "prepared_source": {
-        "git_revision": "bf65901e1ed82963436844c2cf8e796ba9158c65",
-        "tree_sha256": "b6c3c1f019f4b597ed5bbc613971cfe5c198e75835f8fce10a2b0ca0f0136e25"
-      },
-      "recipe": "recipes/core/uutils/recipe.toml",
-      "recipe_blake3": null,
-      "recipe_blob": "7458a7ae17d3ed48ec021c1bc3f82ef16b946d0b",
-      "recipe_pin": "0.11.0",
-      "source_sha": "bf65901e1ed82963436844c2cf8e796ba9158c65",
-      "source_support_identities": [
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/base64-stdio.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "bcd37305d79f78cd3675118393351e8c6987d9b9a63dd86f28ab36067a755e12"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/basename.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "9499dccac7fdf132023d7ec3a64bf18fec1d92da3e1c8da24a41fc46b10256d3"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/chown.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "40be6eca6566e8c5e992b34ef0e792e37e7e7028b85c3a5d6f271e8ad2a36aa4"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/cp-preserve.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "7ad053113eba6f2af3ba538024c662bab91ec07b64f47dfe973fcd0376d9eee5"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/cut.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "79e4e5f257fdd52db3579529f33a460825c249b5a7bd658cf3134b7465385643"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/date.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "cf580054e316219a446cbebe8c0e1bcbab7f2a2401282e579201530ebacd6d81"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/df.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "6d4c2345ed2d17d81855668bf349a8e67f7568cb175940d33cb4a40328228a7f"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/dirname.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "1875a7160d30ac473bec7d95b357fc5f475b95947a390f3d23656748f12551ed"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/env.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "f49a4758ea0db339a60fb3f1f016f609c5c88deb097dbc6fdc103952348de1dd"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/expr-output.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "d92af81b39f31065e089371d424c36dcf82c922019143ea2f72b4365e8a5c650"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/factor-stdio.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "634997a3e04085030a3f57b36f40a98deecaacb0705722a58049b4d232396b5e"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/fold-stdio.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "82cca86b90d612c233e9a1c528a60fc589b2229e6e24288ff06acfd9a172c970"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/ln.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "b6041abf495e1fb297885ce3388ec2021fb3407fd7c820a529c043fdf11a9396"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/md5sum-stdio.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "f63859e781275866b98792d0504bb579b65ecac4939ddd9fa77debbecb6e202e"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/mktemp-stdio.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "606091b620e4443ec22f6071c34af7c394ef3288d9bd9d1443a5032c1548d730"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/nohup-stdio.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "2f9b1b56737576a79e0a1f253fca1296f0c9241670488b4935b8c1baf532c7ac"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/numfmt-stdio.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "a5b5f99ffb4cfe70e23292103b5f0aa0d1416c4b3db8df911717314520920d02"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/printf.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "a9ca19140b20cebe19eb942f1d50f061a7a6c4ed338336b2bc753c714fcbab2f"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/readlink.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "80e5f109a4658dad65a123f88092119e70f79fc133d6f896f6e3eba66087e9cb"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/realpath.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "d66a4ed226638b8e512d1528d4908569adddc712c56922bcee0e3fccee5ea43a"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/recipe.toml",
-          "repository": "RedoxORG/redox",
-          "sha256": "0a03541ea29624321ec8302250788a8c6026a4c412ff613827c7c2213975c5f7"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/redox.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "416b7cc02e704af6dc575bce4ffc1ff239fbd0a97c8a14ff95dadbdbd9a228d3"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/seq-output.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "8f235cff92f786b82c5f6e15644255abd34481687c094e591294c3c8d5bb1415"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/shred-size.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "0a6382643433fbbe6292c5fa0d6267a9589c3c33956ade5f60889edccdda9fe4"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/shuf-stdio.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "43836a696d8d43b9f7068b1f713d6b4b8ad4a611c2c478374a8f445f6dc995b5"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/sort.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "fc232d2e0efb1a5605397be12aca138894b2d88177cd54033fd62f72d3f57438"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/split.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "591dbea209a2ef9b9b97c2c01412e8b511cc0b681ab12d21caf1e8de94ccc7c7"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/stat.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "894b3dedf043bc3dfd7ac1bcb96584d81fc9c6f1c2cabd401fb9ef7aab130aec"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/stty-redox.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "666aea41127b21f4aeee82d25c38bce97880b619ea3a4efe2fdfa9695b25bdb6"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/tail.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "4c9c88e98ae563564479b7fd7a1e0092252c564a96185825b79e686f6486b2bc"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/tee.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "5d5338f7e32a3da083a2eecd4759f0aeab80a8071eeb4a831036266a849b9683"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/touch.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "0369ae4e635fdf4ef998307936e9a43e5b4feb044b4a34111bdf8c648ea0480d"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/tr.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "5585510fe85da0a75d13d68e12a0df9782c06a1e724667074dd80e0902c4f03e"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/tty-stdio.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "be46e65755902b57b9864e0a8f332254b4d280a66c2b00d0eeacc5c7e85550e9"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/unexpand-stdio.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "3d41a70bb6946858e9b95c00c6f32595b46d408081a0e39e9cc3cee11b285ff1"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/wc.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "c24acf291af5bc571a35714d9f879d4ce0148508ebcec4541b9bf3adf11e91ad"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/whoami.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "23298329aa8769fce08a00a52d8cc4e0907abbdd1c6de6e6b266724a7ba69c9d"
-        },
-        {
-          "commit": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-          "path": "recipes/core/uutils/yes-stdio.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "644824c9699e53e52285afca4d57928af8f658e7bb18d9cf35443531427cbe04"
-        }
-      ],
-      "source_url": "https://github.com/uutils/coreutils"
-    },
-    "validation": {
-      "consumer_fetch": "NormallyFetched",
-      "consumer_installation": "Installed",
-      "independent_consumer": "PASS",
-      "remote_bytes": "PASS",
-      "signature_payload": "PASS"
-    }
-  },
-  "pending_publication": {
-    "candidate_artifact": {
-      "archive_sha256": "8913a3bdea6505115042349315cd17647b2ab043eab5dcf34b25344754c5a555",
-      "metadata_sha256": "29adb986b190263d8ee4c9440b76352c8dca9cc5abeb1adfc3a46beba1eb6cf0"
-    },
-    "candidate_effective_input_id": "bd1114aacebd61824eb40d4bea012dbe28baa019f93eca2fe60509fb204d7063",
-    "consumer_runtime": {
-      "receipt": "consumer-prepublication/normal-runtime-01.json",
-      "sha256": "442016cabddaaccd58eb6af7b74159a443657bf31996eb1778a3ac0ba26cd46f"
-    },
-    "freshness_status": "FreshnessUnknown",
-    "run_id": "update-20261030-01",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
     "shared_input_ref": "1b97636f1ea982133c69cbc20f1cd3aae2115421a25b8c2ca8ed3e395e937c36",
     "source": {
       "effective_input": {
@@ -19199,19 +18024,30 @@
       ],
       "source_url": "https://github.com/uutils/coreutils"
     },
-    "status": "PendingPublication"
+    "validation": {
+      "consumer_fetch": "NormallyConsumed",
+      "consumer_installation": "Installed",
+      "independent_consumer": "PASS",
+      "remote_bytes": "PASS",
+      "signature_payload": "PASS"
+    }
   },
   "published_artifact": {
-    "archive_sha256": "1d08f52956a3d1dec0b6d9c94e1b174ac3cfb74063f869a9a4352eab27734af6",
-    "metadata_sha256": "04043baaf538b7a1e8d2629fa1e1467b241ae2701bed558372a0482e05ab908a",
+    "archive_sha256": "8913a3bdea6505115042349315cd17647b2ab043eab5dcf34b25344754c5a555",
+    "metadata_sha256": "29adb986b190263d8ee4c9440b76352c8dca9cc5abeb1adfc3a46beba1eb6cf0",
     "readback": "PASS",
-    "repository_commit": "80a8163b1369b3fb485763559460d02efea18bdc"
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5"
   },
-  "published_effective_input_id": "c85f3b23dc452fbf585e3ce2db9af139ff61a1a27e735c64dd25b2458f780de0",
-  "published_source_receipt": null,
+  "published_effective_input_id": "bd1114aacebd61824eb40d4bea012dbe28baa019f93eca2fe60509fb204d7063",
+  "published_source_receipt": {
+    "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "recipe_commit": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+    "source_sha": "bf65901e1ed82963436844c2cf8e796ba9158c65",
+    "verification": "Current source/native, exact remote bytes and independent cold consumer PASS"
+  },
   "reason": "No adopted effective input change selected; archive/metadata byte-identical to frozen main. Historical missing full baseline is not reconstructed by this observation.",
-  "runtime": "NotRun",
-  "signature_payload_verification": "NotRun",
+  "runtime": "PASS: independent exact-ref normal server and current regression cases",
+  "signature_payload_verification": "PASS",
   "status": "UpToDate"
 },
     "uutils-grep": {
@@ -19327,116 +18163,90 @@
     "uutils-hostname": {
   "baseline_status": "Known",
   "binary_publication": "PASS",
-  "candidate_effective_input_id": "fed3cb6752d15956a77dbc5a3c9908785d21e3e8af9b06e9312601a1a0d6f423",
+  "build": "PASS",
+  "candidate_artifact": {
+    "archive_sha256": "c5137277ca58380fdac1b6efa08972e8154e6a5f03a392f291699918575010d0",
+    "metadata_sha256": "e4b3d752c547e146166f2107b679f07373631deeb716a5a581ef5f06125d3657"
+  },
+  "candidate_effective_input_id": "5f601b65790d38f4b42e6085cdbd7a87beee3da596225b22b53dea0fc27a038a",
   "freshness": {
-    "candidate_effective_input_id": "fed3cb6752d15956a77dbc5a3c9908785d21e3e8af9b06e9312601a1a0d6f423",
-    "change_time_evidence": null,
-    "deadline_at": null,
-    "earliest_unpublished_change_at": null,
+    "candidate_effective_input_id": "5f601b65790d38f4b42e6085cdbd7a87beee3da596225b22b53dea0fc27a038a",
     "freshness_status": "FreshnessUnknown",
-    "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
-    "publication_time_evidence": {
-      "exact_publication_time": false,
-      "kind": "FirstVerifiedRemoteObservation",
-      "observed_at": "2026-10-20T08:56:07.366289+00:00"
-    },
-    "published_at": null,
-    "published_effective_input_id": "fed3cb6752d15956a77dbc5a3c9908785d21e3e8af9b06e9312601a1a0d6f423"
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
+    "published_effective_input_id": "5f601b65790d38f4b42e6085cdbd7a87beee3da596225b22b53dea0fc27a038a",
+    "reason": "Successful frozen-input delivery; complete change-event/deadline coverage was not assessed."
   },
   "freshness_status": "FreshnessUnknown",
   "last_artifact_verification": {
+    "consumer_fetch": "NormallyConsumed",
+    "consumer_installation": "Installed",
     "independent_consumer": "PASS",
     "receipt_hashes": {
+      "candidate_inputs": {
+        "receipt": "candidate-inputs-current/receipt.json",
+        "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
+      },
       "consumer_binding": {
-        "receipt": "consumer-installed-binding-03.json",
-        "sha256": "532939492e58fa66d46b20dd3ba792e7794d08106d8f392d17b0189552428082"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+        "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
+      },
+      "consumer_download": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+        "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+      },
+      "consumer_headers": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+        "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+      },
+      "consumer_initial": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+        "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
       },
       "consumer_make": {
-        "receipt": "consumer-all-03.json",
-        "sha256": "76d32be641eeb14e9121f11d1890db666dd4bd90ed2c078027c9377b7b9b88dd"
+        "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+        "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
       },
       "consumer_runtime": {
-        "receipt": "consumer-runtime-01.json",
-        "sha256": "af98ceaadd72508b880a2ab49e3bb7a4286f3dfd2d8994e5c4437fd8486fe43e"
+        "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+        "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
       },
-      "native": {
-        "receipt": "publication-native-validation/receipt.json",
-        "sha256": "04efb98ec3672303526d7f561d8e58df7aba9182c17d631d2ac24a23eeb08fb1"
+      "consumer_state": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+        "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
+      },
+      "preparation": {
+        "receipt": "publication-preparation.json",
+        "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
+      },
+      "push": {
+        "receipt": "artifact-push.json",
+        "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
       },
       "remote": {
-        "receipt": "remote-readback-34f2d60b64e5.json",
-        "sha256": "4ca78470c945dbc7684063e79e841a256eeacc621c298778168b1785bd3f2ae9"
+        "receipt": "artifact-remote-readback.json",
+        "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
       },
       "review": {
-        "receipt": "independent-consumer-review-01.json",
-        "sha256": "38dd84842ffbe50f291a74df8422c0ddc751edb84d32cc9b78b54af56f3a568e"
+        "receipt": "remote-consumer-independent-review-02.json",
+        "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+      },
+      "runtime_plan": {
+        "receipt": "runtime-plan-current.json",
+        "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
       }
     },
     "remote_bytes": "PASS",
-    "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
     "signature_payload": "PASS"
   },
   "last_successful_input": {
     "complete": true,
-    "effective_input_sha256": "fed3cb6752d15956a77dbc5a3c9908785d21e3e8af9b06e9312601a1a0d6f423",
+    "effective_input_sha256": "5f601b65790d38f4b42e6085cdbd7a87beee3da596225b22b53dea0fc27a038a",
     "kind": "source-build",
-    "publication_observed_at": "2026-10-20T08:56:07.366289+00:00",
-    "published_artifact_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
-    "published_at": null,
-    "shared_input_ref": "fada7bf002531fefb819e5e1518231722366420b6bf7f89b32dc45f5652856de",
-    "source": {
-      "effective_input_id": "fed3cb6752d15956a77dbc5a3c9908785d21e3e8af9b06e9312601a1a0d6f423",
-      "installed_license_notices": [],
-      "kind": "source-build",
-      "license_references": [
-        {
-          "path": "licenses/run-20261020/uutils-hostname/LICENSE",
-          "sha256": "316765d98cb170a4b720ae8912b1a61af7ffcad75875c77390b4ef7d1ae0bd19"
-        }
-      ],
-      "prepared_source": {
-        "git_revision": "a6e1a935775fcde6e781f3b73017287835b478a5",
-        "tree_sha256": "df0cb2eb62487fd56767eaf7c65f5f4b4014338b5c17a68b79c7bce670e64123"
-      },
-      "recipe": "recipes/tools/uutils-hostname/recipe.toml",
-      "recipe_blake3": null,
-      "recipe_blob": "71893f4c9c14c90b0baa390ce87a2e269bb703d5",
-      "recipe_pin": "a6e1a935775fcde6e781f3b73017287835b478a5",
-      "source_sha": "a6e1a935775fcde6e781f3b73017287835b478a5",
-      "source_support_identities": [
-        {
-          "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-          "path": "recipes/tools/uutils-hostname/recipe.toml",
-          "repository": "RedoxORG/redox",
-          "sha256": "941f110434653408afc739517ffbb4593724a2deb824eb81a26a8e6f55ec7f47"
-        },
-        {
-          "commit": "851e1e578b9254a0f69aa2f6715155d5bf07b220",
-          "path": "recipes/tools/uutils-hostname/redox.patch",
-          "repository": "RedoxORG/redox",
-          "sha256": "7ce05d3ec3a6973e764ffbf4a249133210d786d13ecb2b9231e0a35a6a3df86e"
-        }
-      ],
-      "source_url": "https://github.com/uutils/hostname"
-    },
-    "validation": {
-      "independent_consumer": "PASS",
-      "remote_bytes": "PASS",
-      "signature_payload": "PASS"
-    }
-  },
-  "pending_publication": {
-    "candidate_artifact": {
-      "archive_sha256": "c5137277ca58380fdac1b6efa08972e8154e6a5f03a392f291699918575010d0",
-      "metadata_sha256": "e4b3d752c547e146166f2107b679f07373631deeb716a5a581ef5f06125d3657"
-    },
-    "candidate_effective_input_id": "5f601b65790d38f4b42e6085cdbd7a87beee3da596225b22b53dea0fc27a038a",
-    "consumer_runtime": {
-      "receipt": "consumer-prepublication/normal-runtime-01.json",
-      "sha256": "442016cabddaaccd58eb6af7b74159a443657bf31996eb1778a3ac0ba26cd46f"
-    },
-    "freshness_status": "FreshnessUnknown",
-    "run_id": "update-20261030-01",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
     "shared_input_ref": "1b97636f1ea982133c69cbc20f1cd3aae2115421a25b8c2ca8ed3e395e937c36",
     "source": {
       "effective_input": {
@@ -19501,15 +18311,29 @@
       ],
       "source_url": "https://github.com/uutils/hostname"
     },
-    "status": "PendingPublication"
+    "validation": {
+      "consumer_fetch": "NormallyConsumed",
+      "consumer_installation": "Installed",
+      "independent_consumer": "PASS",
+      "remote_bytes": "PASS",
+      "signature_payload": "PASS"
+    }
   },
   "published_artifact": {
     "archive_sha256": "c5137277ca58380fdac1b6efa08972e8154e6a5f03a392f291699918575010d0",
-    "metadata_sha256": "a3956f356b1a500cc26a772c36662d8e13a15aade64541664b92d86fb5304c58",
+    "metadata_sha256": "e4b3d752c547e146166f2107b679f07373631deeb716a5a581ef5f06125d3657",
     "readback": "PASS",
-    "repository_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c"
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5"
   },
-  "published_effective_input_id": "fed3cb6752d15956a77dbc5a3c9908785d21e3e8af9b06e9312601a1a0d6f423",
+  "published_effective_input_id": "5f601b65790d38f4b42e6085cdbd7a87beee3da596225b22b53dea0fc27a038a",
+  "published_source_receipt": {
+    "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "recipe_commit": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+    "source_sha": "a6e1a935775fcde6e781f3b73017287835b478a5",
+    "verification": "Current source/native, exact remote bytes and independent cold consumer PASS"
+  },
+  "runtime": "PASS: independent exact-ref normal server and current regression cases",
+  "signature_payload_verification": "PASS",
   "status": "UpToDate"
 },
     "uutils-procps": {
@@ -20715,18 +19539,92 @@
     }
   ,
 "unrar": {
-  "pending_publication": {
-    "candidate_artifact": {
-      "archive_sha256": "e46a9d9ca6255522300a42ad65c82e76fdf675b230fdb3bd0d46c80520282d00",
-      "metadata_sha256": "d7d3a34f87f079900618d22dce9a6bf5e2dba38b5708891e0743061fffd958eb"
-    },
+  "baseline_status": "Known",
+  "binary_publication": "PASS",
+  "build": "PASS",
+  "candidate_artifact": {
+    "archive_sha256": "e46a9d9ca6255522300a42ad65c82e76fdf675b230fdb3bd0d46c80520282d00",
+    "metadata_sha256": "d7d3a34f87f079900618d22dce9a6bf5e2dba38b5708891e0743061fffd958eb"
+  },
+  "candidate_effective_input_id": "e011860613890c051dd0143eb6dc460162bd01aee21d9ccec28378b79166d95a",
+  "freshness": {
     "candidate_effective_input_id": "e011860613890c051dd0143eb6dc460162bd01aee21d9ccec28378b79166d95a",
-    "consumer_runtime": {
-      "receipt": "consumer-prepublication/normal-runtime-01.json",
-      "sha256": "442016cabddaaccd58eb6af7b74159a443657bf31996eb1778a3ac0ba26cd46f"
-    },
     "freshness_status": "FreshnessUnknown",
-    "run_id": "update-20261030-01",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
+    "published_effective_input_id": "e011860613890c051dd0143eb6dc460162bd01aee21d9ccec28378b79166d95a",
+    "reason": "Successful frozen-input delivery; complete change-event/deadline coverage was not assessed."
+  },
+  "freshness_status": "FreshnessUnknown",
+  "last_artifact_verification": {
+    "consumer_fetch": "NormallyConsumed",
+    "consumer_installation": "Installed",
+    "independent_consumer": "PASS",
+    "receipt_hashes": {
+      "candidate_inputs": {
+        "receipt": "candidate-inputs-current/receipt.json",
+        "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
+      },
+      "consumer_binding": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+        "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
+      },
+      "consumer_download": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+        "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+      },
+      "consumer_headers": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+        "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+      },
+      "consumer_initial": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+        "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
+      },
+      "consumer_make": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+        "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
+      },
+      "consumer_runtime": {
+        "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+        "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
+      },
+      "consumer_state": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+        "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
+      },
+      "preparation": {
+        "receipt": "publication-preparation.json",
+        "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
+      },
+      "push": {
+        "receipt": "artifact-push.json",
+        "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
+      },
+      "remote": {
+        "receipt": "artifact-remote-readback.json",
+        "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
+      },
+      "review": {
+        "receipt": "remote-consumer-independent-review-02.json",
+        "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+      },
+      "runtime_plan": {
+        "receipt": "runtime-plan-current.json",
+        "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
+      }
+    },
+    "remote_bytes": "PASS",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "signature_payload": "PASS"
+  },
+  "last_successful_input": {
+    "complete": true,
+    "effective_input_sha256": "e011860613890c051dd0143eb6dc460162bd01aee21d9ccec28378b79166d95a",
+    "kind": "source-build",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "published_artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "published_at": "2026-10-30T06:29:30.628753+00:00",
     "shared_input_ref": "1b97636f1ea982133c69cbc20f1cd3aae2115421a25b8c2ca8ed3e395e937c36",
     "source": {
       "effective_input": {
@@ -20813,8 +19711,30 @@
       ],
       "source_url": "https://www.rarlab.com/rar/unrarsrc-7.2.6.tar.gz"
     },
-    "status": "PendingPublication"
-  }
+    "validation": {
+      "consumer_fetch": "NormallyConsumed",
+      "consumer_installation": "Installed",
+      "independent_consumer": "PASS",
+      "remote_bytes": "PASS",
+      "signature_payload": "PASS"
+    }
+  },
+  "published_artifact": {
+    "archive_sha256": "e46a9d9ca6255522300a42ad65c82e76fdf675b230fdb3bd0d46c80520282d00",
+    "metadata_sha256": "d7d3a34f87f079900618d22dce9a6bf5e2dba38b5708891e0743061fffd958eb",
+    "readback": "PASS",
+    "repository_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5"
+  },
+  "published_effective_input_id": "e011860613890c051dd0143eb6dc460162bd01aee21d9ccec28378b79166d95a",
+  "published_source_receipt": {
+    "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "recipe_commit": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+    "source_sha": null,
+    "verification": "Current source/native, exact remote bytes and independent cold consumer PASS"
+  },
+  "runtime": "PASS: independent exact-ref normal server and current regression cases",
+  "signature_payload_verification": "PASS",
+  "status": "UpToDate"
 }
 },
   "policy": {
@@ -20826,196 +19746,273 @@
   },
   "public_key_sha256": "0c581ffbf05585a41ebe1a0fc94f83283b47382fd4f79a4138d9f6641e8b4ec0",
   "publication_runs": {
-    "update-20261020-01": {
-      "artifact_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
-      "evidence": {
-        "consumer_binding": {
-          "receipt": "consumer-installed-binding-03.json",
-          "sha256": "532939492e58fa66d46b20dd3ba792e7794d08106d8f392d17b0189552428082"
-        },
-        "consumer_make": {
-          "receipt": "consumer-all-03.json",
-          "sha256": "76d32be641eeb14e9121f11d1890db666dd4bd90ed2c078027c9377b7b9b88dd"
-        },
-        "consumer_runtime": {
-          "receipt": "consumer-runtime-01.json",
-          "sha256": "af98ceaadd72508b880a2ab49e3bb7a4286f3dfd2d8994e5c4437fd8486fe43e"
-        },
-        "native": {
-          "receipt": "publication-native-validation/receipt.json",
-          "sha256": "04efb98ec3672303526d7f561d8e58df7aba9182c17d631d2ac24a23eeb08fb1"
-        },
-        "remote": {
-          "receipt": "remote-readback-34f2d60b64e5.json",
-          "sha256": "4ca78470c945dbc7684063e79e841a256eeacc621c298778168b1785bd3f2ae9"
-        },
-        "review": {
-          "receipt": "independent-consumer-review-01.json",
-          "sha256": "38dd84842ffbe50f291a74df8422c0ddc751edb84d32cc9b78b54af56f3a568e"
-        }
+  "update-20261020-01": {
+    "artifact_commit": "34f2d60b64e5a2184045a28e9f32cc5c2376f72c",
+    "evidence": {
+      "consumer_binding": {
+        "receipt": "consumer-installed-binding-03.json",
+        "sha256": "532939492e58fa66d46b20dd3ba792e7794d08106d8f392d17b0189552428082"
       },
-      "packages": [
-        "base",
-        "coreutils",
-        "curl",
-        "extrautils",
-        "findutils",
-        "gettext",
-        "git",
-        "gnu-make",
-        "ion",
-        "kernel",
-        "libedit",
-        "libgcc",
-        "libiconv",
-        "libldns",
-        "libstdcxx",
-        "lz4",
-        "nano",
-        "ncurses",
-        "ncursesw",
-        "openssh",
-        "openssl3",
-        "redoxfs",
-        "relibc",
-        "rsync",
-        "termcap",
-        "userutils",
-        "uutils",
-        "uutils-grep",
-        "uutils-hostname",
-        "uutils-procps",
-        "vim",
-        "wget",
-        "xxhash"
-      ],
-      "status": "PublishedAndConsumerVerified"
+      "consumer_make": {
+        "receipt": "consumer-all-03.json",
+        "sha256": "76d32be641eeb14e9121f11d1890db666dd4bd90ed2c078027c9377b7b9b88dd"
+      },
+      "consumer_runtime": {
+        "receipt": "consumer-runtime-01.json",
+        "sha256": "af98ceaadd72508b880a2ab49e3bb7a4286f3dfd2d8994e5c4437fd8486fe43e"
+      },
+      "native": {
+        "receipt": "publication-native-validation/receipt.json",
+        "sha256": "04efb98ec3672303526d7f561d8e58df7aba9182c17d631d2ac24a23eeb08fb1"
+      },
+      "remote": {
+        "receipt": "remote-readback-34f2d60b64e5.json",
+        "sha256": "4ca78470c945dbc7684063e79e841a256eeacc621c298778168b1785bd3f2ae9"
+      },
+      "review": {
+        "receipt": "independent-consumer-review-01.json",
+        "sha256": "38dd84842ffbe50f291a74df8422c0ddc751edb84d32cc9b78b54af56f3a568e"
+      }
     },
-    "update-20261021-01": {
-      "artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
-      "evidence": {
-        "consumer_binding": {
-          "receipt": "consumer-installed-binding-01.json",
-          "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
-        },
-        "consumer_make": {
-          "receipt": "consumer-all-01.json",
-          "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
-        },
-        "consumer_runtime": {
-          "receipt": "consumer-runtime-01.json",
-          "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
-        },
-        "native": {
-          "receipt": "publication-native-validation/receipt.json",
-          "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
-        },
-        "remote": {
-          "receipt": "remote-readback-84b6b684a8d6.json",
-          "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
-        },
-        "review": {
-          "receipt": "final-consumer-review.json",
-          "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
-        }
-      },
-      "packages": [
-        "base",
-        "coreutils",
-        "extrautils",
-        "installer",
-        "kernel",
-        "mandoc",
-        "redoxfs",
-        "relibc",
-        "userutils",
-        "uutils"
-      ],
-      "status": "PublishedAndConsumerVerified"
-    },
-    "update-20261029-01": {
-      "artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
-      "evidence": {
-        "consumer_binding": {
-          "receipt": "consumer-installed-binding-01.json",
-          "sha256": "ebefcfb2960d5210c813b16e87f199fb7180fd673443b379aa88ba44751e1c45"
-        },
-        "consumer_make": {
-          "receipt": "consumer-all-02.json",
-          "sha256": "375a56f8c2b58b8138eb48b2a67056ca8103a30afc8cdd83aac53ed9fe8cfe8e"
-        },
-        "consumer_runtime": {
-          "receipt": "consumer-runtime-01.json",
-          "sha256": "26e0ce009c83d9b6021b755092301639e147abbe392944a259d34c66419ee299"
-        },
-        "freshness_assessment": {
-          "receipt": "freshness-assessment.json",
-          "sha256": "0604eb448eb224fe3aace93408fb9034ffd37714879a73869e7bf6033c7d8de0"
-        },
-        "native": {
-          "receipt": "consumer-native-validation.json",
-          "sha256": "4ed13a46fb7108c7260933e61152a7dffdb05e946d7449d8889c8a8b0aa79bd9"
-        },
-        "publication_push": {
-          "receipt": "publication-push-receipt.json",
-          "sha256": "db83bd4d0a322e92a783a5391794b6d027a99f63baf623ada7213eb1cc155e0a"
-        },
-        "remote": {
-          "receipt": "remote-readback-80a8163b1369.json",
-          "sha256": "766f986e7bc4ad1ecab70d1bbceacdcab5c62746e40736d3c0085ac2dd5203b3"
-        },
-        "review": {
-          "receipt": "consumer-independent-review.json",
-          "sha256": "05e2655b0f0f83adc56ab6c0aab41a8f515a0f3e09559a69d1c186516dcef2e3"
-        }
-      },
-      "packages": [
-        "base",
-        "bzip2",
-        "cmake",
-        "coreutils",
-        "dash",
-        "diffutils",
-        "extrautils",
-        "exuberant-ctags",
-        "fd",
-        "file",
-        "gawk",
-        "gcc13",
-        "gcc13.cxx",
-        "gnu-binutils",
-        "kernel",
-        "killall",
-        "less",
-        "libarchive",
-        "libgmp",
-        "libmpfr",
-        "libuv",
-        "libxml2",
-        "lua54",
-        "luarocks",
-        "mandoc",
-        "mpc",
-        "ncurses",
-        "ncursesw",
-        "netutils",
-        "openssh",
-        "pigz",
-        "redoxfs",
-        "relibc",
-        "ripgrep",
-        "rsync",
-        "sed",
-        "sqlite3",
-        "userutils",
-        "uutils",
-        "uutils-procps",
-        "whereis",
-        "xz"
-      ],
-      "status": "PublishedAndConsumerVerified"
-    }
+    "packages": [
+      "base",
+      "coreutils",
+      "curl",
+      "extrautils",
+      "findutils",
+      "gettext",
+      "git",
+      "gnu-make",
+      "ion",
+      "kernel",
+      "libedit",
+      "libgcc",
+      "libiconv",
+      "libldns",
+      "libstdcxx",
+      "lz4",
+      "nano",
+      "ncurses",
+      "ncursesw",
+      "openssh",
+      "openssl3",
+      "redoxfs",
+      "relibc",
+      "rsync",
+      "termcap",
+      "userutils",
+      "uutils",
+      "uutils-grep",
+      "uutils-hostname",
+      "uutils-procps",
+      "vim",
+      "wget",
+      "xxhash"
+    ],
+    "status": "PublishedAndConsumerVerified"
   },
+  "update-20261021-01": {
+    "artifact_commit": "84b6b684a8d67bbf7513333acb79957f04293745",
+    "evidence": {
+      "consumer_binding": {
+        "receipt": "consumer-installed-binding-01.json",
+        "sha256": "e25b13247e30b8c9521ccb270d7d3ff54060ac5b8c95d2c2e7de2952e07888e8"
+      },
+      "consumer_make": {
+        "receipt": "consumer-all-01.json",
+        "sha256": "497360968953be0b0e78e9dcb87bc4d1e398ba37e8a7e4a3d413c0d5fb02441b"
+      },
+      "consumer_runtime": {
+        "receipt": "consumer-runtime-01.json",
+        "sha256": "60fc36bc4d6fd64c34f7b0356d9ce89ea7e139197bc908f8da36d2aa8eb69998"
+      },
+      "native": {
+        "receipt": "publication-native-validation/receipt.json",
+        "sha256": "5ffd84ad432604af3e6ea5a7d93794646d54e12b2dbd0b6d2adfc1d84a407b0b"
+      },
+      "remote": {
+        "receipt": "remote-readback-84b6b684a8d6.json",
+        "sha256": "c62c039a7421010aeea142959038bf05c7064a636fd4192064413531e7db889c"
+      },
+      "review": {
+        "receipt": "final-consumer-review.json",
+        "sha256": "dc4742d42ed48cc46a9349cb24ff109e22772fdadab019044571b26f177bec8d"
+      }
+    },
+    "packages": [
+      "base",
+      "coreutils",
+      "extrautils",
+      "installer",
+      "kernel",
+      "mandoc",
+      "redoxfs",
+      "relibc",
+      "userutils",
+      "uutils"
+    ],
+    "status": "PublishedAndConsumerVerified"
+  },
+  "update-20261029-01": {
+    "artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
+    "evidence": {
+      "consumer_binding": {
+        "receipt": "consumer-installed-binding-01.json",
+        "sha256": "ebefcfb2960d5210c813b16e87f199fb7180fd673443b379aa88ba44751e1c45"
+      },
+      "consumer_make": {
+        "receipt": "consumer-all-02.json",
+        "sha256": "375a56f8c2b58b8138eb48b2a67056ca8103a30afc8cdd83aac53ed9fe8cfe8e"
+      },
+      "consumer_runtime": {
+        "receipt": "consumer-runtime-01.json",
+        "sha256": "26e0ce009c83d9b6021b755092301639e147abbe392944a259d34c66419ee299"
+      },
+      "freshness_assessment": {
+        "receipt": "freshness-assessment.json",
+        "sha256": "0604eb448eb224fe3aace93408fb9034ffd37714879a73869e7bf6033c7d8de0"
+      },
+      "native": {
+        "receipt": "consumer-native-validation.json",
+        "sha256": "4ed13a46fb7108c7260933e61152a7dffdb05e946d7449d8889c8a8b0aa79bd9"
+      },
+      "publication_push": {
+        "receipt": "publication-push-receipt.json",
+        "sha256": "db83bd4d0a322e92a783a5391794b6d027a99f63baf623ada7213eb1cc155e0a"
+      },
+      "remote": {
+        "receipt": "remote-readback-80a8163b1369.json",
+        "sha256": "766f986e7bc4ad1ecab70d1bbceacdcab5c62746e40736d3c0085ac2dd5203b3"
+      },
+      "review": {
+        "receipt": "consumer-independent-review.json",
+        "sha256": "05e2655b0f0f83adc56ab6c0aab41a8f515a0f3e09559a69d1c186516dcef2e3"
+      }
+    },
+    "packages": [
+      "base",
+      "bzip2",
+      "cmake",
+      "coreutils",
+      "dash",
+      "diffutils",
+      "extrautils",
+      "exuberant-ctags",
+      "fd",
+      "file",
+      "gawk",
+      "gcc13",
+      "gcc13.cxx",
+      "gnu-binutils",
+      "kernel",
+      "killall",
+      "less",
+      "libarchive",
+      "libgmp",
+      "libmpfr",
+      "libuv",
+      "libxml2",
+      "lua54",
+      "luarocks",
+      "mandoc",
+      "mpc",
+      "ncurses",
+      "ncursesw",
+      "netutils",
+      "openssh",
+      "pigz",
+      "redoxfs",
+      "relibc",
+      "ripgrep",
+      "rsync",
+      "sed",
+      "sqlite3",
+      "userutils",
+      "uutils",
+      "uutils-procps",
+      "whereis",
+      "xz"
+    ],
+    "status": "PublishedAndConsumerVerified"
+  },
+  "update-20261030-01": {
+    "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+    "binary_publication": "PASS",
+    "consumer": "PASS",
+    "evidence": {
+      "candidate_inputs": {
+        "receipt": "candidate-inputs-current/receipt.json",
+        "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
+      },
+      "consumer_binding": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+        "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
+      },
+      "consumer_download": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+        "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+      },
+      "consumer_headers": {
+        "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+        "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+      },
+      "consumer_initial": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+        "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
+      },
+      "consumer_make": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+        "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
+      },
+      "consumer_runtime": {
+        "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+        "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
+      },
+      "consumer_state": {
+        "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+        "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
+      },
+      "preparation": {
+        "receipt": "publication-preparation.json",
+        "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
+      },
+      "push": {
+        "receipt": "artifact-push.json",
+        "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
+      },
+      "remote": {
+        "receipt": "artifact-remote-readback.json",
+        "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
+      },
+      "review": {
+        "receipt": "remote-consumer-independent-review-02.json",
+        "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+      },
+      "runtime_plan": {
+        "receipt": "runtime-plan-current.json",
+        "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
+      }
+    },
+    "freshness_status": "FreshnessUnknown",
+    "packages": [
+      "base",
+      "bash",
+      "cmake",
+      "extrautils",
+      "libarchive",
+      "luarocks",
+      "redoxfs",
+      "relibc",
+      "unrar",
+      "uutils",
+      "uutils-hostname"
+    ],
+    "producer_build_sha": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+    "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+    "run_id": "update-20261030-01",
+    "status": "PublishedAndConsumerVerified"
+  }
+},
   "repositories": {
     "base": {
       "branch": "local/main",
@@ -21097,141 +20094,82 @@
     }
   },
   "run": {
-    "acceptance_limitations": [
-      "Existing getty bulk-input EAGAIN defect; paced case transport only",
-      "No full interactive, networking, persistence or fault-injection acceptance"
-    ],
-    "artifact_commit": "80a8163b1369b3fb485763559460d02efea18bdc",
-    "binary_publication": "PASS",
-    "build_sha": "0d005e2c023b6647d99832679a2f0b5afe7cf67b",
-    "candidate_packages": [
-      "base",
-      "bzip2",
-      "cmake",
-      "coreutils",
-      "dash",
-      "diffutils",
-      "extrautils",
-      "exuberant-ctags",
-      "fd",
-      "file",
-      "gawk",
-      "gcc13",
-      "gcc13.cxx",
-      "gnu-binutils",
-      "kernel",
-      "killall",
-      "less",
-      "libarchive",
-      "libgmp",
-      "libmpfr",
-      "libuv",
-      "libxml2",
-      "lua54",
-      "luarocks",
-      "mandoc",
-      "mpc",
-      "ncurses",
-      "ncursesw",
-      "netutils",
-      "openssh",
-      "pigz",
-      "redoxfs",
-      "relibc",
-      "ripgrep",
-      "rsync",
-      "sed",
-      "sqlite3",
-      "userutils",
-      "uutils",
-      "uutils-procps",
-      "whereis",
-      "xz"
-    ],
-    "consumer": "PASS",
-    "consumer_tests": {
-      "ARCHIVE_AND_COMPRESSION": 0,
-      "BASH_CHILD": 0,
-      "BZIP2_LINKS_AND_COMPRESSION": 0,
-      "CHILD_WAIT": 0,
-      "CURL": 0,
-      "FIND_XARGS": 0,
-      "GIT": 0,
-      "GREP": 0,
-      "HOSTNAME": 0,
-      "LOCAL_ICMP": 0,
-      "LOG_READ": 0,
-      "LOOPBACK_REFUSED": 0,
-      "LUA_AND_ROCKS": 0,
-      "MANDOC": 0,
-      "MAN_PAGER_FAILURE": 0,
-      "OFFICIAL_TOOLS_SQLITE": 0,
-      "PAGER_AND_TTY": 0,
-      "PROCESS_AND_IDENTITY": 0,
-      "PS": 0,
-      "RAW_PATH_AND_CHOWN": 0,
-      "RSYNC_LOCAL_COPY": 0,
-      "SHELL_AND_CTAGS": 0,
-      "SSH": 0,
-      "SYMLINK_PATH": 0,
-      "TEXT_SEARCH_AND_LOCATION": 0,
-      "TOUCH": 0,
-      "TR": 0,
-      "TR_CLOSED": 0,
-      "TZ": 0,
-      "UPTIME": 0,
-      "WGET": 0,
-      "WHOAMI": 0,
-      "WHOAMI_CLOSED": 0
+  "artifact_commit": "8dea8261a2a7e664bf6454028e7f1e980696dab5",
+  "binary_publication": "PASS",
+  "consumer": "PASS",
+  "evidence": {
+    "candidate_inputs": {
+      "receipt": "candidate-inputs-current/receipt.json",
+      "sha256": "c578e5d6197dfcfd453ea61eef88c30ef1f2db8aab45f74cc663c9f462ca5e2a"
     },
-    "freshness_status": "MissedDeadline",
-    "missed_deadline_packages": [
-      "relibc"
-    ],
-    "new_packages": 25,
-    "producer_runtime": "PASS",
-    "producer_tests": {
-      "ARCHIVE_AND_COMPRESSION": 0,
-      "BASH_CHILD": 0,
-      "BZIP2_LINKS_AND_COMPRESSION": 0,
-      "CHILD_WAIT": 0,
-      "CURL": 0,
-      "FIND_XARGS": 0,
-      "GIT": 0,
-      "GREP": 0,
-      "HOSTNAME": 0,
-      "LOCAL_ICMP": 0,
-      "LOG_READ": 0,
-      "LOOPBACK_REFUSED": 0,
-      "LUA_AND_ROCKS": 0,
-      "MANDOC": 0,
-      "MAN_PAGER_FAILURE": 0,
-      "OFFICIAL_TOOLS_SQLITE": 0,
-      "PAGER_AND_TTY": 0,
-      "PROCESS_AND_IDENTITY": 0,
-      "PS": 0,
-      "RAW_PATH_AND_CHOWN": 0,
-      "RSYNC_LOCAL_COPY": 0,
-      "SHELL_AND_CTAGS": 0,
-      "SSH": 0,
-      "SYMLINK_PATH": 0,
-      "TEXT_SEARCH_AND_LOCATION": 0,
-      "TOUCH": 0,
-      "TR": 0,
-      "TR_CLOSED": 0,
-      "TZ": 0,
-      "UPTIME": 0,
-      "WGET": 0,
-      "WHOAMI": 0,
-      "WHOAMI_CLOSED": 0
+    "consumer_binding": {
+      "receipt": "consumer-published-8dea8261a2a7/consumer-installed-binding-01.json",
+      "sha256": "a6e65d8c23c43d129f959fe03459e16af586bd7c53542a96bd1ad66e00b68e86"
     },
-    "publication_observed_at": "2026-10-29T07:26:32.559543+00:00",
-    "published_at": "2026-10-29T06:53:31.475093Z",
-    "replaced_packages": 17,
-    "retained_unchanged_packages": 39,
-    "run_id": "update-20261029-01",
-    "status": "PublishedAndConsumerVerified"
+    "consumer_download": {
+      "receipt": "consumer-published-8dea8261a2a7-inputs/cold-download.json",
+      "sha256": "e7fc7c24fb8b3dd31866d32e000e3f1aa3b310f5f91d09f894ad96e6bcefdad4"
+    },
+    "consumer_headers": {
+      "receipt": "consumer-published-8dea8261a2a7-inputs/native-input-headers.json",
+      "sha256": "d360d32764313d4f300d715a53fafa918d08176c2a3d4c6b23353d51f0c1b899"
+    },
+    "consumer_initial": {
+      "receipt": "consumer-published-8dea8261a2a7/consumer-initial.json",
+      "sha256": "2f6157330eb02ab1e62afc20067f9ece6abca63390a2e878a47fd654fde56a1a"
+    },
+    "consumer_make": {
+      "receipt": "consumer-published-8dea8261a2a7/consumer-image-01.json",
+      "sha256": "4316b35db8c7990bbc88c7856ee64f13607faf6426eafa6824aaed151cc174c6"
+    },
+    "consumer_runtime": {
+      "receipt": "consumer-published-8dea8261a2a7/normal-runtime-01.json",
+      "sha256": "818a85f89e6bca74a5a411bfeff0c5dc7ac40f2ef5a9758d7c0371e7df3c472e"
+    },
+    "consumer_state": {
+      "receipt": "consumer-published-8dea8261a2a7/consumer-state.json",
+      "sha256": "f38826b97e68e5a3bf449c2b552c47851f105e25240ddccbc5dc7121aefa5544"
+    },
+    "preparation": {
+      "receipt": "publication-preparation.json",
+      "sha256": "19f4b9c1ae0e83c93765b46262b2e99f5a654e089d9f6ced31c4ebebed98f3ff"
+    },
+    "push": {
+      "receipt": "artifact-push.json",
+      "sha256": "388890f0849901ef874ddc684eec2a4b1ccab13ee653dabf6ef2296ab7fdefbd"
+    },
+    "remote": {
+      "receipt": "artifact-remote-readback.json",
+      "sha256": "8b7844ca58f6beb74dd534d64c1c27170d19e551d3727bfac4763b283d8810a7"
+    },
+    "review": {
+      "receipt": "remote-consumer-independent-review-02.json",
+      "sha256": "4af0014030118f73adebdbe2cd85b9b2afa7c7af683a192c9944cbd45fbe6368"
+    },
+    "runtime_plan": {
+      "receipt": "runtime-plan-current.json",
+      "sha256": "91d67cbfd04c03da48c75290d79a3afe76d9808f21135bdf8cc40c3f0fea7b22"
+    }
   },
+  "freshness_status": "FreshnessUnknown",
+  "packages": [
+    "base",
+    "bash",
+    "cmake",
+    "extrautils",
+    "libarchive",
+    "luarocks",
+    "redoxfs",
+    "relibc",
+    "unrar",
+    "uutils",
+    "uutils-hostname"
+  ],
+  "producer_build_sha": "34e4069c9e34c0a0e14d2187739def274ed1e6b5",
+  "publication_observed_at": "2026-10-30T06:29:35.625315+00:00",
+  "run_id": "update-20261030-01",
+  "status": "PublishedAndConsumerVerified"
+},
   "scheduled_update_20261015_01": {
     "artifact_commit": "40789301555d0755b35583a32b6f5fe838bdad6b",
     "candidate_packages": [
