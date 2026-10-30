@@ -63,7 +63,7 @@ upstream licenses, not a blanket MIT or GPL license.
 | pkgutils | [pkgutils source](https://gitlab.redox-os.org/redox-os/pkgutils/-/tree/fe21bfd95d869cafd356bcdec4d1a81739ede5ee) | `fe21bfd95d869cafd356bcdec4d1a81739ede5ee` |
 | readline | [readline source](https://ftp.gnu.org/gnu/readline/readline-8.3.tar.gz) | `7109f094062bda387a0c16b4875375b96e36437bebbbd8d8f91bb27ba01d687f` |
 | redoxfs | [redoxfs source](https://gitlab.redox-os.org/redox-os/redoxfs.git) | `b87b0976ee122036b2ec040159b890e1e06ca139` |
-| relibc | [relibc source](https://github.com/RedoxORG/relibc) | `40946e5950d744d03dad86a3ef1465d227a65cb6` |
+| relibc | [relibc source](https://github.com/RedoxORG/relibc) | `89dd058bb497a8d08981e62b23cf3c4d747e7aad` |
 | rsync | [rsync source](https://download.samba.org/pub/rsync/src/rsync-3.4.1.tar.gz) | `e1cfdd51a1a89a49e73f8fa730a4321392fe4a29533c0979c2c09c7ce3808b6f` |
 | termcap | [termcap source](https://ftp.gnu.org/gnu/termcap/termcap-1.3.1.tar.gz) | `57c095e0bb6e60e7b4a0597f51f7ac15b501ca0f95d37424d8d13978d28b8da3` |
 | terminfo | [terminfo source](https://github.com/sajattack/terminfo/tree/dc5712b13b4a4058ffca1f077167994b1764828a) | `dc5712b13b4a4058ffca1f077167994b1764828a` |
@@ -81,7 +81,7 @@ upstream licenses, not a blanket MIT or GPL license.
 | zstd | [zstd source](https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz) | `730dca31244abd219e995f03a55d95b2cfb4b3e16cda055a79fa6f30a4f0e1db` |
 | mandoc | [mandoc source](https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz) | `0e1e812610cea4d9a254d161599466abccd3688568f19baeff1c2ed0dae586e4` |
 | bzip2 | [official source](https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz) | `97af3f520629c65fe41292f77e6ca798fe594d7987bfb2aebe7c6fcdc7ab5ed2` |
-| cmake | [official source](https://github.com/Kitware/CMake/releases/download/v4.3.2/cmake-4.3.2.tar.gz) | `cbd0121189df1502f61e8f12f044b4a901b1ea16c74c016b85714e4661b8537f` |
+| cmake | [cmake source](https://github.com/Kitware/CMake/releases/download/v4.3.2/cmake-4.3.2.tar.gz) | `cbd0121189df1502f61e8f12f044b4a901b1ea16c74c016b85714e4661b8537f` |
 | dash | [dash source](https://gitlab.redox-os.org/redox-os/dash.git) | `85b748659b74c2337b27347a21ee121364472156` |
 | exuberant-ctags | [exuberant-ctags source](https://sourceforge.net/projects/ctags/files/ctags/5.8/ctags-5.8.tar.gz/download) | `f9781861962691b33335449261074f2b153bdb91404d25172a622a41a347e237` |
 | fd | [fd source](https://github.com/sharkdp/fd.git) | `840a565d3aadbeb303b10a01c0aa3561924dfc46` |
@@ -105,6 +105,7 @@ upstream licenses, not a blanket MIT or GPL license.
 | sed | [sed source](https://ftp.gnu.org/gnu/sed/sed-4.4.tar.xz) | `a88c12b2b4304e53e3c7ae2eb0499d02e28873c1b9e1a6871e5347c6886a1ecd` |
 | sqlite3 | [official source](https://sqlite.org/2025/sqlite-autoconf-3490200.tar.gz) | `96e071dc4f964311882334e927f017d8383915b1b140adcf308957dff213aa8c` |
 | whereis | [whereis source](https://gitlab.redox-os.org/redox-os/coreutils.git) | `575a46d3b624ad9cd222c9e3250073e9269c3462` |
+| unrar | [unrar source](https://www.rarlab.com/rar/unrarsrc-7.2.6.tar.gz) | `bb19643c5307e8dbbaf2ec0409dd4d6b148ddac17bcd89f1576000c2baa20d32` |
 
 GNU package license mapping: bash/readline/diffutils/gettext use GPLv3;
 Git uses GPLv2; libiconv contains LGPLv2.1 libraries and GPLv3 utilities.

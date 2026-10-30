@@ -1,10 +1,10 @@
 name = "cmake"
 version = "4.3.2"
 target = "x86_64-unknown-redox"
-blake3 = "ec427973b252c214a2d5d7b0e915f4c13f66d5d7ba050de807d247cb7919ce68"
+blake3 = "90fe9d9de876528b14ab08e67bd0195f978a357fd30950221595156c718594f4"
 source_identifier = "cbd0121189df1502f61e8f12f044b4a901b1ea16c74c016b85714e4661b8537f"
-commit_identifier = "abd771a5e92a10ecd475089f2c0e208b5d0ae0d0"
-time_identifier = "2026-10-22T04:54:46Z"
+commit_identifier = "34e4069c9e34c0a0e14d2187739def274ed1e6b5"
+time_identifier = "2026-10-30T01:37:30Z"
 storage_size = 52214960
 network_size = 52214960
 depends = ["curl", "expat", "libarchive", "libuv"]

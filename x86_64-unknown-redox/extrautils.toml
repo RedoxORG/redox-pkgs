@@ -1,10 +1,10 @@
 name = "extrautils"
 version = "0.1.0"
 target = "x86_64-unknown-redox"
-blake3 = "0e6de8af8aaa53f6ba86ab339d73dd75644d75df02285fa729197ebce071a59b"
+blake3 = "17b892dc1c1b5d8268c087c6efdf6d0eaec2cbc7668e00b001e88ad5385d5762"
 source_identifier = "97bf8c6b6eade670e98de18a04a6f1b08ebcaf84"
-commit_identifier = "0d005e2c023b6647d99832679a2f0b5afe7cf67b"
-time_identifier = "2026-10-29T00:35:42Z"
-storage_size = 5040072
-network_size = 5040072
+commit_identifier = "34e4069c9e34c0a0e14d2187739def274ed1e6b5"
+time_identifier = "2026-10-30T01:37:30Z"
+storage_size = 5027784
+network_size = 5027784
 depends = ["uutils-grep", "mandoc", "libarchive", "pigz", "less"]
