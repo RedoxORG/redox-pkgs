@@ -26,7 +26,7 @@ upstream licenses, not a blanket MIT or GPL license.
 | --- | --- | --- |
 | base | [base source](https://github.com/RedoxORG/base) | `33c7875d601d9bb0f30a19cc2489fa7692b69892` |
 | bash | [bash source](https://ftp.gnu.org/gnu/bash/bash-5.3.tar.gz) | `5bf3ac6c18f3dc3fe3e049a1e10ea5ae5c5b39dac2356cd796730f49b273fd0f` |
-| bootloader | [bootloader source](https://github.com/RedoxORG/bootloader/tree/13358e87cc3c6e1225c42db07c3dce4280a734f5) | `13358e87cc3c6e1225c42db07c3dce4280a734f5` |
+| bootloader | [bootloader source](https://github.com/RedoxORG/bootloader) | `13358e87cc3c6e1225c42db07c3dce4280a734f5` |
 | bottom | [bottom source](https://github.com/jackpot51/bottom/tree/87b9106ffd27a512315096d831a03a1079e79323) | `87b9106ffd27a512315096d831a03a1079e79323` |
 | ca-certificates | [ca-certificates source](https://gitlab.redox-os.org/redox-os/ca-certificates/-/tree/4955c9001ad38451fe2b7b2bf5bf85b1b5aef390) | `4955c9001ad38451fe2b7b2bf5bf85b1b5aef390` |
 | coreutils | [coreutils source](https://gitlab.redox-os.org/redox-os/coreutils.git) | `575a46d3b624ad9cd222c9e3250073e9269c3462` |
@@ -62,7 +62,7 @@ upstream licenses, not a blanket MIT or GPL license.
 | orbterm | [orbterm source](https://gitlab.redox-os.org/redox-os/orbterm/-/tree/ba1243cd6bc0230ca00aac5d550fe17e727e2b46) | `ba1243cd6bc0230ca00aac5d550fe17e727e2b46` |
 | pkgutils | [pkgutils source](https://gitlab.redox-os.org/redox-os/pkgutils/-/tree/fe21bfd95d869cafd356bcdec4d1a81739ede5ee) | `fe21bfd95d869cafd356bcdec4d1a81739ede5ee` |
 | readline | [readline source](https://ftp.gnu.org/gnu/readline/readline-8.3.tar.gz) | `7109f094062bda387a0c16b4875375b96e36437bebbbd8d8f91bb27ba01d687f` |
-| redoxfs | [redoxfs source](https://gitlab.redox-os.org/redox-os/redoxfs.git) | `b87b0976ee122036b2ec040159b890e1e06ca139` |
+| redoxfs | [redoxfs source](https://github.com/RedoxORG/redoxfs) | `15c9e20814279c009e9d6033a70cadf3e693aca7` |
 | relibc | [relibc source](https://github.com/RedoxORG/relibc) | `89dd058bb497a8d08981e62b23cf3c4d747e7aad` |
 | rsync | [rsync source](https://download.samba.org/pub/rsync/src/rsync-3.4.1.tar.gz) | `e1cfdd51a1a89a49e73f8fa730a4321392fe4a29533c0979c2c09c7ce3808b6f` |
 | termcap | [termcap source](https://ftp.gnu.org/gnu/termcap/termcap-1.3.1.tar.gz) | `57c095e0bb6e60e7b4a0597f51f7ac15b501ca0f95d37424d8d13978d28b8da3` |

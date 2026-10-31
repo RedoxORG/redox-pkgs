@@ -1,0 +1,1487 @@
+{
+  "managed_asset_ids": [
+    694350063,
+    694352148,
+    694824715,
+    695059303,
+    695059321,
+    695059346,
+    695059404,
+    695059509,
+    695059538,
+    695059564,
+    695059566,
+    695059663,
+    695059782,
+    695059799,
+    695059865,
+    695059936,
+    695060021,
+    695060045,
+    695060128,
+    695060178,
+    695060260,
+    695060355,
+    695060386,
+    695060522,
+    695060525,
+    695060567,
+    695060844,
+    695060940,
+    695061005,
+    695061088,
+    695061112,
+    695061291,
+    695061341,
+    695061362,
+    695061550,
+    695061572,
+    695061624,
+    695061749,
+    695061831,
+    695062118,
+    695062389,
+    695062532,
+    695062652,
+    695062835,
+    695062871,
+    695063028,
+    695063173,
+    695063197,
+    695063293,
+    695063330,
+    695063382,
+    695063403,
+    695063429,
+    695063554,
+    695063589,
+    695063605,
+    695063653,
+    695063790,
+    695063809,
+    695063902,
+    695063911,
+    695064039,
+    695064050,
+    695064244,
+    695065003,
+    695065080,
+    695065097,
+    695065214,
+    695065296,
+    695065423,
+    695065438,
+    695065466,
+    695065615,
+    695065690,
+    695065710,
+    695065837,
+    695065961,
+    695066089,
+    695066154,
+    695066219,
+    695066318,
+    695066360,
+    695066362,
+    695066527,
+    695066559,
+    695066570,
+    695066604,
+    695066820,
+    695066852,
+    695066874,
+    695066936,
+    695067035,
+    695067077,
+    695067230,
+    695067232,
+    695067302,
+    695067312,
+    695067520,
+    695067545,
+    695067616,
+    695067703,
+    695068125,
+    695068241,
+    695068273,
+    695068429,
+    695068584,
+    695068643,
+    695068654,
+    695068668,
+    695068919,
+    695068934,
+    695068994,
+    695069027,
+    695069475,
+    695069747,
+    695069822,
+    695069850,
+    695070064,
+    695070323,
+    695070363,
+    695070374,
+    695070447,
+    695070629,
+    695070690,
+    695070820,
+    695070855,
+    695070883,
+    695071132,
+    695071332,
+    695071368,
+    695071533,
+    695071649,
+    695071729,
+    695071940,
+    695071953,
+    695071988,
+    695072079,
+    695072205,
+    695072278,
+    695072530,
+    695072868,
+    695073057,
+    695073067,
+    695073149,
+    695073223,
+    695073452,
+    695073484,
+    695073499,
+    695073789,
+    695073898,
+    695073922,
+    695074263,
+    695074338,
+    695074499,
+    695074693,
+    695074797,
+    695075328,
+    695081390,
+    695081921,
+    695082582,
+    695083722,
+    695084064,
+    695084420,
+    695113129
+  ],
+  "release_id": 429719444,
+  "repository": "RedoxORG/redox-pkgs",
+  "schema": "redox-release-index/v1",
+  "targets": {
+    "x86_64-unknown-redox": {
+      "base": {
+        "archive": {
+          "asset_id": 694824715,
+          "name": "x86_64-unknown-redox--base--cedcf0a6635c7daa3feae78cef7c9f6417c0c04094dde613bc8421e91670e8be.pkgar",
+          "sha256": "cedcf0a6635c7daa3feae78cef7c9f6417c0c04094dde613bc8421e91670e8be",
+          "size": 41937829
+        },
+        "effective_input_id": "6f9c5d4d62da65ee5f39dfe14d08599dce3728d1d5bd876de1a218ad43cf8620",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695059404,
+          "name": "x86_64-unknown-redox--base--8e22c77e97d6db00dae633afc064108a1ecaf60473ef21aad8fde507ed5e11a0.toml",
+          "sha256": "8e22c77e97d6db00dae633afc064108a1ecaf60473ef21aad8fde507ed5e11a0",
+          "size": 339
+        }
+      },
+      "bash": {
+        "archive": {
+          "asset_id": 695059321,
+          "name": "x86_64-unknown-redox--bash--0ae0c6a6dd2fa41874e602a008451c35a50bd94297a3e2aa6e5a55739cafab39.pkgar",
+          "sha256": "0ae0c6a6dd2fa41874e602a008451c35a50bd94297a3e2aa6e5a55739cafab39",
+          "size": 9691670
+        },
+        "effective_input_id": "1576c743a3431ece3c7a1f408ad0435805291ca7af8aad571f8acabeb6eea770",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695059538,
+          "name": "x86_64-unknown-redox--bash--376bc4000bc4839ebd23515675682bf6da64e6b0da29f9e24bd7b24e0bdb8b3d.toml",
+          "sha256": "376bc4000bc4839ebd23515675682bf6da64e6b0da29f9e24bd7b24e0bdb8b3d",
+          "size": 410
+        }
+      },
+      "bootloader": {
+        "archive": {
+          "asset_id": 695059346,
+          "name": "x86_64-unknown-redox--bootloader--6f4a558e22b1cbd6683f67cda235ef70995f1df3bbf1403cdcc31033e5d5bec4.pkgar",
+          "sha256": "6f4a558e22b1cbd6683f67cda235ef70995f1df3bbf1403cdcc31033e5d5bec4",
+          "size": 1092440
+        },
+        "effective_input_id": "54cc5e19610563b1265e547f40cda94469d801a7d5aa04e46721ee35b43748d4",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695059564,
+          "name": "x86_64-unknown-redox--bootloader--5868d4abe5abf498aff8a1bfe39fdf004ef561dc45dc8a8ae8b500cb72935d8f.toml",
+          "sha256": "5868d4abe5abf498aff8a1bfe39fdf004ef561dc45dc8a8ae8b500cb72935d8f",
+          "size": 344
+        }
+      },
+      "bottom": {
+        "archive": {
+          "asset_id": 695059303,
+          "name": "x86_64-unknown-redox--bottom--c92d5dd04aad4bfcb868d0a16073ec6dbeab427501a515411c3b7b487cb4ba75.pkgar",
+          "sha256": "c92d5dd04aad4bfcb868d0a16073ec6dbeab427501a515411c3b7b487cb4ba75",
+          "size": 4498164
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695059509,
+          "name": "x86_64-unknown-redox--bottom--858679772c0bac244bd5a7fab12fea89109fb8a74a64eee063f2a2b33a8b6798.toml",
+          "sha256": "858679772c0bac244bd5a7fab12fea89109fb8a74a64eee063f2a2b33a8b6798",
+          "size": 367
+        }
+      },
+      "bzip2": {
+        "archive": {
+          "asset_id": 695059566,
+          "name": "x86_64-unknown-redox--bzip2--c741d5dc074eeda15323befbf5c344f9d8e3657d874992ae1d33a458f244ee34.pkgar",
+          "sha256": "c741d5dc074eeda15323befbf5c344f9d8e3657d874992ae1d33a458f244ee34",
+          "size": 462958
+        },
+        "effective_input_id": "729153703483df5e54863c947259926bbe034c2098a147f2349c87bf09d0c4e8",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695059865,
+          "name": "x86_64-unknown-redox--bzip2--ff42597f82da04b9c9c6e9ee48501e2b22c9290795fbe060cc21617a7df50383.toml",
+          "sha256": "ff42597f82da04b9c9c6e9ee48501e2b22c9290795fbe060cc21617a7df50383",
+          "size": 389
+        }
+      },
+      "ca-certificates": {
+        "archive": {
+          "asset_id": 695059663,
+          "name": "x86_64-unknown-redox--ca-certificates--8c982c4cdb43924a61fa2497424a05988e2bf8d12e2f0c0e93f1c3712f43f24c.pkgar",
+          "sha256": "8c982c4cdb43924a61fa2497424a05988e2bf8d12e2f0c0e93f1c3712f43f24c",
+          "size": 1703763
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695059936,
+          "name": "x86_64-unknown-redox--ca-certificates--f5d2dae66ec4e1effc3e43b2d129e1c45a24d2836fe59beee008c34c0a73d46e.toml",
+          "sha256": "f5d2dae66ec4e1effc3e43b2d129e1c45a24d2836fe59beee008c34c0a73d46e",
+          "size": 376
+        }
+      },
+      "cmake": {
+        "archive": {
+          "asset_id": 695059782,
+          "name": "x86_64-unknown-redox--cmake--059e81a5fa77bf6e69fd951e0881114bc263e73ec4b6e7a5f64481db668e734a.pkgar",
+          "sha256": "059e81a5fa77bf6e69fd951e0881114bc263e73ec4b6e7a5f64481db668e734a",
+          "size": 52214960
+        },
+        "effective_input_id": "4b5ce1944fa1cbe177fad45103d0488128ab46ec851a1b9bdc83be8ec2e810df",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695061831,
+          "name": "x86_64-unknown-redox--cmake--85bb7b81651883fd781ebce3201fc9d91a3989e147e74b6a40edf831f31cba09.toml",
+          "sha256": "85bb7b81651883fd781ebce3201fc9d91a3989e147e74b6a40edf831f31cba09",
+          "size": 431
+        }
+      },
+      "coreutils": {
+        "archive": {
+          "asset_id": 695059799,
+          "name": "x86_64-unknown-redox--coreutils--b174c80173531c2f277f6d9cc5f416cd5760e0140153583aa3508a7b23275a49.pkgar",
+          "sha256": "b174c80173531c2f277f6d9cc5f416cd5760e0140153583aa3508a7b23275a49",
+          "size": 1680332
+        },
+        "effective_input_id": "162b269b1e07f1d62cc210dede20af3140f0fb131a21a8af53f66b6016965266",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695060021,
+          "name": "x86_64-unknown-redox--coreutils--7488827c966568997ab39282f43967e2f8a3dab033b9de13f54e59812fea60b8.toml",
+          "sha256": "7488827c966568997ab39282f43967e2f8a3dab033b9de13f54e59812fea60b8",
+          "size": 380
+        }
+      },
+      "curl": {
+        "archive": {
+          "asset_id": 695060045,
+          "name": "x86_64-unknown-redox--curl--a784d96793c83abe203275b5b1c64e01bbff8d61ad4405013ae1ac9249448c1e.pkgar",
+          "sha256": "a784d96793c83abe203275b5b1c64e01bbff8d61ad4405013ae1ac9249448c1e",
+          "size": 3588719
+        },
+        "effective_input_id": "042e73daab7d1618ad9317eaaa3faf1d7e0adbe25f7f9406562caeac20b7a9bb",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695060260,
+          "name": "x86_64-unknown-redox--curl--a9bfea0af335a8bdc88ac15640f4abb8038b3b974a10ba96a97c1e4537ff1b1a.toml",
+          "sha256": "a9bfea0af335a8bdc88ac15640f4abb8038b3b974a10ba96a97c1e4537ff1b1a",
+          "size": 413
+        }
+      },
+      "dash": {
+        "archive": {
+          "asset_id": 695060128,
+          "name": "x86_64-unknown-redox--dash--43fbb7ec4d3143745f3374d79076ee2c9cbd712b9016cdd248856e01aa298bf7.pkgar",
+          "sha256": "43fbb7ec4d3143745f3374d79076ee2c9cbd712b9016cdd248856e01aa298bf7",
+          "size": 186258
+        },
+        "effective_input_id": "b29ecf001b7fd8f6f6e11cfd7755ee914d17f49172ae9dc3f7c409ef3bb46f7b",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695060386,
+          "name": "x86_64-unknown-redox--dash--b4ac2a92b79293f27eb720d67e9515c82f0b4edb3c1223f0a62a906cbd861d9f.toml",
+          "sha256": "b4ac2a92b79293f27eb720d67e9515c82f0b4edb3c1223f0a62a906cbd861d9f",
+          "size": 366
+        }
+      },
+      "diffutils": {
+        "archive": {
+          "asset_id": 695060178,
+          "name": "x86_64-unknown-redox--diffutils--bb1389c62b09b77e293ff26d6f7a9a502b8eea90014cadd17a6831641a917877.pkgar",
+          "sha256": "bb1389c62b09b77e293ff26d6f7a9a502b8eea90014cadd17a6831641a917877",
+          "size": 580549
+        },
+        "effective_input_id": "717cf40addc34670024b01920fedc15a114bc2e7d0fb763b830e026918956c8f",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695060355,
+          "name": "x86_64-unknown-redox--diffutils--8b76739b4da0abcb39bedec7363e1770de355a255b60be83718795e28dd68e6b.toml",
+          "sha256": "8b76739b4da0abcb39bedec7363e1770de355a255b60be83718795e28dd68e6b",
+          "size": 391
+        }
+      },
+      "expat": {
+        "archive": {
+          "asset_id": 695060525,
+          "name": "x86_64-unknown-redox--expat--09102827f7b2ab3c4863ab08194bce3c9a5b85109345d3d9481b0e48e2e026a5.pkgar",
+          "sha256": "09102827f7b2ab3c4863ab08194bce3c9a5b85109345d3d9481b0e48e2e026a5",
+          "size": 599471
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695060940,
+          "name": "x86_64-unknown-redox--expat--3764d3056350b6c55f9dd02954a58cdc9deb2b081f704361b53763e83d4726d6.toml",
+          "sha256": "3764d3056350b6c55f9dd02954a58cdc9deb2b081f704361b53763e83d4726d6",
+          "size": 388
+        }
+      },
+      "extrautils": {
+        "archive": {
+          "asset_id": 695060522,
+          "name": "x86_64-unknown-redox--extrautils--ed6c72ca0f564039720e96746cfbe245adc58cceeec588e262a680d65132b40d.pkgar",
+          "sha256": "ed6c72ca0f564039720e96746cfbe245adc58cceeec588e262a680d65132b40d",
+          "size": 5027784
+        },
+        "effective_input_id": "f1d4501d07d8802f2042f8bd054dd9ebbec4131b521a262ae636e025d7fecbbb",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695061005,
+          "name": "x86_64-unknown-redox--extrautils--152ec24f4b99811a5ac1c093ccb1cc50fec83030f484c6ce2c6ea9ce2e910e41.toml",
+          "sha256": "152ec24f4b99811a5ac1c093ccb1cc50fec83030f484c6ce2c6ea9ce2e910e41",
+          "size": 425
+        }
+      },
+      "exuberant-ctags": {
+        "archive": {
+          "asset_id": 695060567,
+          "name": "x86_64-unknown-redox--exuberant-ctags--28e0517d7ce9afbff5de65721b6c15ba207e21c0f2b3a316072a515fd3a8701e.pkgar",
+          "sha256": "28e0517d7ce9afbff5de65721b6c15ba207e21c0f2b3a316072a515fd3a8701e",
+          "size": 798652
+        },
+        "effective_input_id": "605c77c8d8465baa47704d20996cf99d9a62dd9f109cf918d534431185271d32",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695060844,
+          "name": "x86_64-unknown-redox--exuberant-ctags--eef91e64c4f3d8c277e2a532da45edbc15461c02d84e4023fd152388251c57d4.toml",
+          "sha256": "eef91e64c4f3d8c277e2a532da45edbc15461c02d84e4023fd152388251c57d4",
+          "size": 397
+        }
+      },
+      "fd": {
+        "archive": {
+          "asset_id": 695061088,
+          "name": "x86_64-unknown-redox--fd--ba2c04da7aa96c9fd1983d0fe554c37fd985506a5c788c9ab1fc876009ed29e8.pkgar",
+          "sha256": "ba2c04da7aa96c9fd1983d0fe554c37fd985506a5c788c9ab1fc876009ed29e8",
+          "size": 2550898
+        },
+        "effective_input_id": "f5e24e8524d6a9aee2b07985fc70b231c3eaa2be90880845ac5610dddcbbcc58",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695061291,
+          "name": "x86_64-unknown-redox--fd--9ef9eae29c79b8eea695c9eba68e1309dae22aea3dd5fa64cb33fcb067fa1ea1.toml",
+          "sha256": "9ef9eae29c79b8eea695c9eba68e1309dae22aea3dd5fa64cb33fcb067fa1ea1",
+          "size": 364
+        }
+      },
+      "file": {
+        "archive": {
+          "asset_id": 695061112,
+          "name": "x86_64-unknown-redox--file--61025a25fd49ddd67c12c9cfa44f7e2d4346ee858834891d952e5a1865556627.pkgar",
+          "sha256": "61025a25fd49ddd67c12c9cfa44f7e2d4346ee858834891d952e5a1865556627",
+          "size": 10964362
+        },
+        "effective_input_id": "77324087a863c50285898f05b289c7d066ef562eed32746773483ca6f1c088c8",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695061362,
+          "name": "x86_64-unknown-redox--file--9ce67bca1873a1db005c09548c7af62f1c35b271d3bb18c806dc6f7052bf0561.toml",
+          "sha256": "9ce67bca1873a1db005c09548c7af62f1c35b271d3bb18c806dc6f7052bf0561",
+          "size": 391
+        }
+      },
+      "findutils": {
+        "archive": {
+          "asset_id": 694350063,
+          "name": "x86_64-unknown-redox--findutils--729d34130f7b21bab0e6402a6b35129236e326f9099f2794c481315ee1d10541.pkgar",
+          "sha256": "729d34130f7b21bab0e6402a6b35129236e326f9099f2794c481315ee1d10541",
+          "size": 2647176
+        },
+        "effective_input_id": "0f0bbe0dd9c98cf24aa72373da06213e4cf9e1133ca8a3b6d7dc6716ce9f9b16",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 694352148,
+          "name": "x86_64-unknown-redox--findutils--0963d94016ba20422ce88ec092a88ab2d7356fed00c848e352a752cf8de7256d.toml",
+          "sha256": "0963d94016ba20422ce88ec092a88ab2d7356fed00c848e352a752cf8de7256d",
+          "size": 405
+        }
+      },
+      "gawk": {
+        "archive": {
+          "asset_id": 695061341,
+          "name": "x86_64-unknown-redox--gawk--46cff0461c2de7536cc6a3b8a86e8c57366afbcc22f8da52e1a0a2b616b416d1.pkgar",
+          "sha256": "46cff0461c2de7536cc6a3b8a86e8c57366afbcc22f8da52e1a0a2b616b416d1",
+          "size": 3697089
+        },
+        "effective_input_id": "8b2e5e8d056e705a1f2ed1eb15d70a2df867ce680338f61299a3a7717e489567",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695061572,
+          "name": "x86_64-unknown-redox--gawk--f259b824dbc3a603bd8d910f0c99fca3e13d763280cafa4231e0d3d97830db8f.toml",
+          "sha256": "f259b824dbc3a603bd8d910f0c99fca3e13d763280cafa4231e0d3d97830db8f",
+          "size": 390
+        }
+      },
+      "gcc13": {
+        "archive": {
+          "asset_id": 695061624,
+          "name": "x86_64-unknown-redox--gcc13--41a690fb48f55caf97c305686cbe79c5431cdd7fe07c958ab9f1c391a50f7b78.pkgar",
+          "sha256": "41a690fb48f55caf97c305686cbe79c5431cdd7fe07c958ab9f1c391a50f7b78",
+          "size": 36790287
+        },
+        "effective_input_id": "ed95135cc5c62943c7e7c52690acf575c201e00b5ef87652d30e496fb345c895",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695063330,
+          "name": "x86_64-unknown-redox--gcc13--2878049194990fc407f30d8855d3e9975e9f886a6f00e835d2f5193c19538ebe.toml",
+          "sha256": "2878049194990fc407f30d8855d3e9975e9f886a6f00e835d2f5193c19538ebe",
+          "size": 413
+        }
+      },
+      "gcc13.cxx": {
+        "archive": {
+          "asset_id": 695061550,
+          "name": "x86_64-unknown-redox--gcc13.cxx--dbb076f2fe3afc8cc93f4443307300966c9e30f89e3da6729cc8e69b6a94a53e.pkgar",
+          "sha256": "dbb076f2fe3afc8cc93f4443307300966c9e30f89e3da6729cc8e69b6a94a53e",
+          "size": 65900074
+        },
+        "effective_input_id": "c3393e86c885effe4a86d124b1770e8fa1f0de38d5cff7eb4f405bbef1e43140",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695062871,
+          "name": "x86_64-unknown-redox--gcc13.cxx--a78942b8a4fc803c2c6529df02417b9583e96a5eb3bc495f5fd249d73893a300.toml",
+          "sha256": "a78942b8a4fc803c2c6529df02417b9583e96a5eb3bc495f5fd249d73893a300",
+          "size": 381
+        }
+      },
+      "gettext": {
+        "archive": {
+          "asset_id": 695061749,
+          "name": "x86_64-unknown-redox--gettext--61aeeb304fa9163b4798854aba834b62d76940f2dfc463289b754fa405f78d6f.pkgar",
+          "sha256": "61aeeb304fa9163b4798854aba834b62d76940f2dfc463289b754fa405f78d6f",
+          "size": 16552545
+        },
+        "effective_input_id": "9a33f1163b4314a9e33c497a27de42388ae21559d9cc7c8f9efc81b40c912d96",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695062389,
+          "name": "x86_64-unknown-redox--gettext--8b598931e8247588dee562ee1803576823abe6c6b3a160b88b316e7e3b4a0600.toml",
+          "sha256": "8b598931e8247588dee562ee1803576823abe6c6b3a160b88b316e7e3b4a0600",
+          "size": 406
+        }
+      },
+      "git": {
+        "archive": {
+          "asset_id": 695062118,
+          "name": "x86_64-unknown-redox--git--63fe8b32262622950992e55da43eb3a17260f6055605bd953aa9899a94bfca6d.pkgar",
+          "sha256": "63fe8b32262622950992e55da43eb3a17260f6055605bd953aa9899a94bfca6d",
+          "size": 27397159
+        },
+        "effective_input_id": "d08dab80fea6a624231b72d99520e5d08af2d28138b7782b918fd5b1a70a5b61",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695062652,
+          "name": "x86_64-unknown-redox--git--e8a9e90efa5b905176836fc3ff32e47fafc498b681c1d86d725b0ef081f57abf.toml",
+          "sha256": "e8a9e90efa5b905176836fc3ff32e47fafc498b681c1d86d725b0ef081f57abf",
+          "size": 449
+        }
+      },
+      "gnu-binutils": {
+        "archive": {
+          "asset_id": 695062532,
+          "name": "x86_64-unknown-redox--gnu-binutils--330c27546e192ea0ad8b284ab3c6b06f3325f6b5bcd6fa091d374fc77455324a.pkgar",
+          "sha256": "330c27546e192ea0ad8b284ab3c6b06f3325f6b5bcd6fa091d374fc77455324a",
+          "size": 15516112
+        },
+        "effective_input_id": "bbcd55f37d298b2804b771ec753170a5c32327d4030970455cc67d9c4906c15f",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695062835,
+          "name": "x86_64-unknown-redox--gnu-binutils--92d9bdfa3bb38a36521f8bd450c6b652e59d21ecd8afb21cee61d8730cac1d78.toml",
+          "sha256": "92d9bdfa3bb38a36521f8bd450c6b652e59d21ecd8afb21cee61d8730cac1d78",
+          "size": 401
+        }
+      },
+      "gnu-make": {
+        "archive": {
+          "asset_id": 695063028,
+          "name": "x86_64-unknown-redox--gnu-make--a778b3890247cf1378feb5da6ef2f260a676bed49cae79e2d9f01301458845d8.pkgar",
+          "sha256": "a778b3890247cf1378feb5da6ef2f260a676bed49cae79e2d9f01301458845d8",
+          "size": 905016
+        },
+        "effective_input_id": "0423f441e9c94a505023de3bfd1e7ec3ca0773613d09937797a84c3cbd66b4b7",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695063293,
+          "name": "x86_64-unknown-redox--gnu-make--5959667dfe1fe4513593980d54d816457c8917c22767cf9117d54a666dc4bae9.toml",
+          "sha256": "5959667dfe1fe4513593980d54d816457c8917c22767cf9117d54a666dc4bae9",
+          "size": 390
+        }
+      },
+      "installer": {
+        "archive": {
+          "asset_id": 695063173,
+          "name": "x86_64-unknown-redox--installer--69139a75c7bdecf096e934762829767ffbd7c9081d3c8870c0237a8ee86023d3.pkgar",
+          "sha256": "69139a75c7bdecf096e934762829767ffbd7c9081d3c8870c0237a8ee86023d3",
+          "size": 9168320
+        },
+        "effective_input_id": "9adffdf3fffc20296e0893d2870f02f614922851c23445f4f4335d0ab89f4646",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695063382,
+          "name": "x86_64-unknown-redox--installer--9be9bed5ade8b5490e7fb37482ca15a1cdb425f0eb56edb98631d220c16e7d5b.toml",
+          "sha256": "9be9bed5ade8b5490e7fb37482ca15a1cdb425f0eb56edb98631d220c16e7d5b",
+          "size": 344
+        }
+      },
+      "ion": {
+        "archive": {
+          "asset_id": 695063197,
+          "name": "x86_64-unknown-redox--ion--417023cc6fa47d9357304645f36ae779339af0f3cbb37f9980c5f5daf43e8bde.pkgar",
+          "sha256": "417023cc6fa47d9357304645f36ae779339af0f3cbb37f9980c5f5daf43e8bde",
+          "size": 2775772
+        },
+        "effective_input_id": "3142713896a7ca70d0b75817710defae744222cc0936a5b68f544aaec9089d06",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695063403,
+          "name": "x86_64-unknown-redox--ion--4929bd199ecb5828b396b47ff604430cb188adec07cbfd50695855352474d875.toml",
+          "sha256": "4929bd199ecb5828b396b47ff604430cb188adec07cbfd50695855352474d875",
+          "size": 371
+        }
+      },
+      "kernel": {
+        "archive": {
+          "asset_id": 695063429,
+          "name": "x86_64-unknown-redox--kernel--5534177d674d8ca70e44c658c3ecdc775a8ac273ab7d5c1077b1f7497154b012.pkgar",
+          "sha256": "5534177d674d8ca70e44c658c3ecdc775a8ac273ab7d5c1077b1f7497154b012",
+          "size": 2648156
+        },
+        "effective_input_id": "5e1ce474733598f70f020e10c3b9c2b8f787b4d65c7498fd28e2fb8ae8c69faa",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695063605,
+          "name": "x86_64-unknown-redox--kernel--4ee8b8e644dd1db885ab2454cbdaea080b4c186b1d38cb8a7f6b6273bdf50ac6.toml",
+          "sha256": "4ee8b8e644dd1db885ab2454cbdaea080b4c186b1d38cb8a7f6b6273bdf50ac6",
+          "size": 341
+        }
+      },
+      "kibi": {
+        "archive": {
+          "asset_id": 695063554,
+          "name": "x86_64-unknown-redox--kibi--f3c6ef1d25bad0c62eae7c0794bbc138698c97d8bc2bf644bc7e7c911c9e25f2.pkgar",
+          "sha256": "f3c6ef1d25bad0c62eae7c0794bbc138698c97d8bc2bf644bc7e7c911c9e25f2",
+          "size": 515362
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695063809,
+          "name": "x86_64-unknown-redox--kibi--0bf626faa0b6497668ac652b31e6f207d052a4fd46a411245cffa103f1501b83.toml",
+          "sha256": "0bf626faa0b6497668ac652b31e6f207d052a4fd46a411245cffa103f1501b83",
+          "size": 363
+        }
+      },
+      "killall": {
+        "archive": {
+          "asset_id": 695063589,
+          "name": "x86_64-unknown-redox--killall--9c914cb6afdb46e4255c2e1dddcdcd8b2df7f62c8df345b0ad3aa1dc5a1a27b4.pkgar",
+          "sha256": "9c914cb6afdb46e4255c2e1dddcdcd8b2df7f62c8df345b0ad3aa1dc5a1a27b4",
+          "size": 19380
+        },
+        "effective_input_id": "ca8a0aa89c0eed70fc93164e7835413a3783226de85591af3a14d85da77d9f75",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695063790,
+          "name": "x86_64-unknown-redox--killall--373f263f79147a47332132634168956bbe78d2ea8f2d7ec7e91903d9f411341f.toml",
+          "sha256": "373f263f79147a47332132634168956bbe78d2ea8f2d7ec7e91903d9f411341f",
+          "size": 335
+        }
+      },
+      "less": {
+        "archive": {
+          "asset_id": 695063653,
+          "name": "x86_64-unknown-redox--less--c77ddaf850165a2b47c88d151c01b34037533c326698d4932f1e48afe824d3cd.pkgar",
+          "sha256": "c77ddaf850165a2b47c88d151c01b34037533c326698d4932f1e48afe824d3cd",
+          "size": 356749
+        },
+        "effective_input_id": "6393e3ba0c32abc7ca92cf1744a5e2389f1d51bc2f4fae65a13b170a4965d393",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695063911,
+          "name": "x86_64-unknown-redox--less--2b7e5aed0b0d8bf0adb6e9799a82d60e19bdda3dded8dba84a58c7965c5af09f.toml",
+          "sha256": "2b7e5aed0b0d8bf0adb6e9799a82d60e19bdda3dded8dba84a58c7965c5af09f",
+          "size": 396
+        }
+      },
+      "libarchive": {
+        "archive": {
+          "asset_id": 695063902,
+          "name": "x86_64-unknown-redox--libarchive--03a9fe56a87f0d27e7fb8a42bb1f266bcfbf3ec1760976f71a98f0f47a1646fe.pkgar",
+          "sha256": "03a9fe56a87f0d27e7fb8a42bb1f266bcfbf3ec1760976f71a98f0f47a1646fe",
+          "size": 5879934
+        },
+        "effective_input_id": "70a2743a28c5f2c17cd655856abd96b88e6f399898d6a6ae141af25bd958d0ba",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695065097,
+          "name": "x86_64-unknown-redox--libarchive--18a5eaac24c84193b2e9e2cbe1909cf75339c1155997b6092d3111e96057476b.toml",
+          "sha256": "18a5eaac24c84193b2e9e2cbe1909cf75339c1155997b6092d3111e96057476b",
+          "size": 429
+        }
+      },
+      "libedit": {
+        "archive": {
+          "asset_id": 695064050,
+          "name": "x86_64-unknown-redox--libedit--2bda80550d0cdd29c94aeec34ac858511f57eb99e7d38826cacc709ce5c6f640.pkgar",
+          "sha256": "2bda80550d0cdd29c94aeec34ac858511f57eb99e7d38826cacc709ce5c6f640",
+          "size": 343126
+        },
+        "effective_input_id": "d031eb48e86dc4f1768b6bfe461678ae2493ce3a721d0be82526db085320a00d",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695081390,
+          "name": "x86_64-unknown-redox--libedit--555397d402efc67dfa41688be57477549c27c3aea5f7aa6919ada36533e1d5b9.toml",
+          "sha256": "555397d402efc67dfa41688be57477549c27c3aea5f7aa6919ada36533e1d5b9",
+          "size": 358
+        }
+      },
+      "libgcc": {
+        "archive": {
+          "asset_id": 695064039,
+          "name": "x86_64-unknown-redox--libgcc--994532308cd0b0899a730b8fd4e0271542a3cd09c7571c0120c7c2d1759b99ab.pkgar",
+          "sha256": "994532308cd0b0899a730b8fd4e0271542a3cd09c7571c0120c7c2d1759b99ab",
+          "size": 139741
+        },
+        "effective_input_id": "d623829df8b15a022e54964a4ee7056a3756107917b9954b8d985c1ad14d215b",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695081921,
+          "name": "x86_64-unknown-redox--libgcc--b6c7d22739471fc7f867601eb1d76eaa0bb6837b666f28e3990e7191617a8bf5.toml",
+          "sha256": "b6c7d22739471fc7f867601eb1d76eaa0bb6837b666f28e3990e7191617a8bf5",
+          "size": 337
+        }
+      },
+      "libgmp": {
+        "archive": {
+          "asset_id": 695064244,
+          "name": "x86_64-unknown-redox--libgmp--733eb7d8ccb0a9c083a3991ecbe9db9b555d4c2afff8879f3197b9324ce18d7d.pkgar",
+          "sha256": "733eb7d8ccb0a9c083a3991ecbe9db9b555d4c2afff8879f3197b9324ce18d7d",
+          "size": 2351627
+        },
+        "effective_input_id": "06dcc95cc48c432e1b499da8464ce6956a192c0a1668a06acadb165baa3013d7",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695065214,
+          "name": "x86_64-unknown-redox--libgmp--0d7aa2b3157fd047270cf4960b43fed9caaaef87839eb559e1f01199304b863f.toml",
+          "sha256": "0d7aa2b3157fd047270cf4960b43fed9caaaef87839eb559e1f01199304b863f",
+          "size": 392
+        }
+      },
+      "libiconv": {
+        "archive": {
+          "asset_id": 695065003,
+          "name": "x86_64-unknown-redox--libiconv--d0655ab27db5f86bbf79ee8fb2a6bbddbd14af9b093e8672646885dca0c6a34e.pkgar",
+          "sha256": "d0655ab27db5f86bbf79ee8fb2a6bbddbd14af9b093e8672646885dca0c6a34e",
+          "size": 2099362
+        },
+        "effective_input_id": "5b91b731d1172daf2f9e48b263dcb1be64c97cd30f3fc46fb6fc18e302a7cad9",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695065296,
+          "name": "x86_64-unknown-redox--libiconv--81bdce11809e8326a43cf76ec74d5dc814e69a4931204025144fd5cb8ae2511b.toml",
+          "sha256": "81bdce11809e8326a43cf76ec74d5dc814e69a4931204025144fd5cb8ae2511b",
+          "size": 393
+        }
+      },
+      "libldns": {
+        "archive": {
+          "asset_id": 695065080,
+          "name": "x86_64-unknown-redox--libldns--4bde1a9be6663a3715f7593e6c9bc856422a40ca0ab4533ee698f1eae4e40c18.pkgar",
+          "sha256": "4bde1a9be6663a3715f7593e6c9bc856422a40ca0ab4533ee698f1eae4e40c18",
+          "size": 2745608
+        },
+        "effective_input_id": "5a1b3dad5de93e60bd319d7102324ea8b244df293ab6505f2848b32e7c6df317",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695065466,
+          "name": "x86_64-unknown-redox--libldns--851e24e02cbc4899e736536c0b79cc99b09aa1a895b08f5a170b7e6dd7662294.toml",
+          "sha256": "851e24e02cbc4899e736536c0b79cc99b09aa1a895b08f5a170b7e6dd7662294",
+          "size": 379
+        }
+      },
+      "libmpfr": {
+        "archive": {
+          "asset_id": 695065423,
+          "name": "x86_64-unknown-redox--libmpfr--253bd1562f8b0452b1e3f0947e7ea5adadaa0e3994b0de9fb6032cc03ae94e0e.pkgar",
+          "sha256": "253bd1562f8b0452b1e3f0947e7ea5adadaa0e3994b0de9fb6032cc03ae94e0e",
+          "size": 2216479
+        },
+        "effective_input_id": "ca669cb34788986d8c00d8d808517be87bc0711cbe7e5e28ab19e263bd05fba3",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695065710,
+          "name": "x86_64-unknown-redox--libmpfr--9791bd6beacf0666e4f2726a0852bb4faaf728424dd479108f8065d5aac86514.toml",
+          "sha256": "9791bd6beacf0666e4f2726a0852bb4faaf728424dd479108f8065d5aac86514",
+          "size": 401
+        }
+      },
+      "libonig": {
+        "archive": {
+          "asset_id": 695065438,
+          "name": "x86_64-unknown-redox--libonig--98d1c47e5236ec327d064d887474bcb28b7df835378e97d0b5a64e5f068ca136.pkgar",
+          "sha256": "98d1c47e5236ec327d064d887474bcb28b7df835378e97d0b5a64e5f068ca136",
+          "size": 738493
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695065837,
+          "name": "x86_64-unknown-redox--libonig--0c018dbc113486a1cd4f3031236ce4f490e857668e83a50f3172756693eb8dfa.toml",
+          "sha256": "0c018dbc113486a1cd4f3031236ce4f490e857668e83a50f3172756693eb8dfa",
+          "size": 366
+        }
+      },
+      "libstdcxx": {
+        "archive": {
+          "asset_id": 695065615,
+          "name": "x86_64-unknown-redox--libstdcxx--66bbf7284c9526acc01649bc9232f10e2733a9e1b8b4cb7411fd116445f49edc.pkgar",
+          "sha256": "66bbf7284c9526acc01649bc9232f10e2733a9e1b8b4cb7411fd116445f49edc",
+          "size": 3921199
+        },
+        "effective_input_id": "1825a592f1ecfe73592745eff091086aa988ca7a2c9a8f655c870f052cf89b86",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695066089,
+          "name": "x86_64-unknown-redox--libstdcxx--fd0bcb20144361945ee3a311b47a362c349c75905b8f88c4b1a59390bc29a55f.toml",
+          "sha256": "fd0bcb20144361945ee3a311b47a362c349c75905b8f88c4b1a59390bc29a55f",
+          "size": 342
+        }
+      },
+      "libuv": {
+        "archive": {
+          "asset_id": 695065690,
+          "name": "x86_64-unknown-redox--libuv--80f66866282fa9662601383d98d13365561ee9e44acafbb6217497ef2b6298f6.pkgar",
+          "sha256": "80f66866282fa9662601383d98d13365561ee9e44acafbb6217497ef2b6298f6",
+          "size": 716721
+        },
+        "effective_input_id": "0be0900cd5291efdd387411ebf9d56c1d38315d3fc3d2dc9bba539d81e4f53b6",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695065961,
+          "name": "x86_64-unknown-redox--libuv--f335a0faf53c787f30720d6845f5ea52257fd06266963ad000d524519802c7cf.toml",
+          "sha256": "f335a0faf53c787f30720d6845f5ea52257fd06266963ad000d524519802c7cf",
+          "size": 390
+        }
+      },
+      "libxml2": {
+        "archive": {
+          "asset_id": 695066154,
+          "name": "x86_64-unknown-redox--libxml2--ce6b04f64ec5fe034d2a1d0219d11ace6a1eefb5ff75c97a8e109a5da011eaa7.pkgar",
+          "sha256": "ce6b04f64ec5fe034d2a1d0219d11ace6a1eefb5ff75c97a8e109a5da011eaa7",
+          "size": 7402444
+        },
+        "effective_input_id": "8f0bb3d270055318a0b5db2ee9c7e76e73f7e23b4aef90b34fad488118f3a72d",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695066604,
+          "name": "x86_64-unknown-redox--libxml2--233babe3d1e8bb029ec364d2fa60b0c4cd9c52dfcd3fec23cc6f9b5df8eb1497.toml",
+          "sha256": "233babe3d1e8bb029ec364d2fa60b0c4cd9c52dfcd3fec23cc6f9b5df8eb1497",
+          "size": 396
+        }
+      },
+      "lua54": {
+        "archive": {
+          "asset_id": 695066219,
+          "name": "x86_64-unknown-redox--lua54--b7ee6295e4eb4adb6c584e63816e99769d38c14424a5a569e8adcc4dcc201ce5.pkgar",
+          "sha256": "b7ee6295e4eb4adb6c584e63816e99769d38c14424a5a569e8adcc4dcc201ce5",
+          "size": 1012054
+        },
+        "effective_input_id": "a3693468e1717d0f2e751f02bb16d95fcbba798e06d0cc5d787abcdd1bc167d6",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695066362,
+          "name": "x86_64-unknown-redox--lua54--cbbb5957e05e56e1c3131f72d0bdefbcc7af3db4aa637e1d753c22e1ef124540.toml",
+          "sha256": "cbbb5957e05e56e1c3131f72d0bdefbcc7af3db4aa637e1d753c22e1ef124540",
+          "size": 391
+        }
+      },
+      "luarocks": {
+        "archive": {
+          "asset_id": 695066318,
+          "name": "x86_64-unknown-redox--luarocks--00b3342874cd7b0e614a7ff2691ed24cf18a53083e1474287a2980ed9fadee27.pkgar",
+          "sha256": "00b3342874cd7b0e614a7ff2691ed24cf18a53083e1474287a2980ed9fadee27",
+          "size": 718324
+        },
+        "effective_input_id": "aa2281abe4883f60e590ef08acc7ba2b87343bb1ece8b5de9104110e464b52b9",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695066559,
+          "name": "x86_64-unknown-redox--luarocks--250eabf17137bb93219f9ecf96b2dcc904fa7e4643bed31c1ac63f3e0c494188.toml",
+          "sha256": "250eabf17137bb93219f9ecf96b2dcc904fa7e4643bed31c1ac63f3e0c494188",
+          "size": 421
+        }
+      },
+      "lz4": {
+        "archive": {
+          "asset_id": 695066360,
+          "name": "x86_64-unknown-redox--lz4--76621743429a065b8fbcef086d7621ca0d3e57264bedf4456039f9440d796aa7.pkgar",
+          "sha256": "76621743429a065b8fbcef086d7621ca0d3e57264bedf4456039f9440d796aa7",
+          "size": 980602
+        },
+        "effective_input_id": "56d8baeb5295e69e2487d7e169aa7f837e00593d86e32dac3e4fffe1ab53b0b0",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695066527,
+          "name": "x86_64-unknown-redox--lz4--cac7a5f7bcfbfed223bd10be05988a6957b4765e8fc80efd4d12a467d493c52a.toml",
+          "sha256": "cac7a5f7bcfbfed223bd10be05988a6957b4765e8fc80efd4d12a467d493c52a",
+          "size": 388
+        }
+      },
+      "mandoc": {
+        "archive": {
+          "asset_id": 695066570,
+          "name": "x86_64-unknown-redox--mandoc--bc85f11f545373dd179f1a0b8f27fe1e0b620ceb73699ddb52cd213c53f3858c.pkgar",
+          "sha256": "bc85f11f545373dd179f1a0b8f27fe1e0b620ceb73699ddb52cd213c53f3858c",
+          "size": 3483110
+        },
+        "effective_input_id": "42b4d51ac1902cdac93d1da3cf1ac409ab705288278eae91fa1997f4dc173171",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695066852,
+          "name": "x86_64-unknown-redox--mandoc--7cc3cd23ed33b9ae8afb436bc9e001bfe0bc5b73e9290804428f05906ac6db6b.toml",
+          "sha256": "7cc3cd23ed33b9ae8afb436bc9e001bfe0bc5b73e9290804428f05906ac6db6b",
+          "size": 393
+        }
+      },
+      "mpc": {
+        "archive": {
+          "asset_id": 695066820,
+          "name": "x86_64-unknown-redox--mpc--7f4168fefd0fb9fcbe590d0b76586dd403ebbccc5562efadb88a85aff760fd1b.pkgar",
+          "sha256": "7f4168fefd0fb9fcbe590d0b76586dd403ebbccc5562efadb88a85aff760fd1b",
+          "size": 562890
+        },
+        "effective_input_id": "f666d82772b0b9b410222118926082ce0640a789630b7c5500c70722aaf9f23d",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695067077,
+          "name": "x86_64-unknown-redox--mpc--8d5126f8bd7b8282b4b1274036494ce71d708b35fe66824ce945b059b0db64b5.toml",
+          "sha256": "8d5126f8bd7b8282b4b1274036494ce71d708b35fe66824ce945b059b0db64b5",
+          "size": 365
+        }
+      },
+      "nano": {
+        "archive": {
+          "asset_id": 695066874,
+          "name": "x86_64-unknown-redox--nano--9e13bfba7a0bce6ac09f02d8663dc90d5cdb12897d71ae017b594d63d531c987.pkgar",
+          "sha256": "9e13bfba7a0bce6ac09f02d8663dc90d5cdb12897d71ae017b594d63d531c987",
+          "size": 813870
+        },
+        "effective_input_id": "88c9398afc0fa883378f93413097bba59c83f32104cb84c6e85719dda6dadfa3",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695067312,
+          "name": "x86_64-unknown-redox--nano--95c9d1628f18fe67d268786d112c3e6d278c6f20a552b590d07a143a3cf3d410.toml",
+          "sha256": "95c9d1628f18fe67d268786d112c3e6d278c6f20a552b590d07a143a3cf3d410",
+          "size": 408
+        }
+      },
+      "ncurses": {
+        "archive": {
+          "asset_id": 695066936,
+          "name": "x86_64-unknown-redox--ncurses--ef077fa9e5eb217ed661915f30d20b95b48512661737334d902d591a282b211b.pkgar",
+          "sha256": "ef077fa9e5eb217ed661915f30d20b95b48512661737334d902d591a282b211b",
+          "size": 3645876
+        },
+        "effective_input_id": "98686148b951a28a036b4950dcf5deacb5197eb1230e5a11862bff126d052b42",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695067230,
+          "name": "x86_64-unknown-redox--ncurses--50e96c57cb7bd7541a418ec65eecdf6442ec08494fd30be0a9a7565641a1bca3.toml",
+          "sha256": "50e96c57cb7bd7541a418ec65eecdf6442ec08494fd30be0a9a7565641a1bca3",
+          "size": 401
+        }
+      },
+      "ncursesw": {
+        "archive": {
+          "asset_id": 695067035,
+          "name": "x86_64-unknown-redox--ncursesw--68dec49c0f4a0b11008ec536a1f436674f3ff3b56f7ee54b756468ff2e22ce85.pkgar",
+          "sha256": "68dec49c0f4a0b11008ec536a1f436674f3ff3b56f7ee54b756468ff2e22ce85",
+          "size": 3956469
+        },
+        "effective_input_id": "ef37ad49241f6e151863091e79f66f23d4c3a362505e98a081dc517156999ba6",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695067302,
+          "name": "x86_64-unknown-redox--ncursesw--84da75d5def4176ec813af61692cab35709ae2010b92669e256abca30d15d677.toml",
+          "sha256": "84da75d5def4176ec813af61692cab35709ae2010b92669e256abca30d15d677",
+          "size": 414
+        }
+      },
+      "netdb": {
+        "archive": {
+          "asset_id": 695067232,
+          "name": "x86_64-unknown-redox--netdb--dfb92de8a5e3063d334de784fd41a91f6b61cb543a5c06d77f3589250889626d.pkgar",
+          "sha256": "dfb92de8a5e3063d334de784fd41a91f6b61cb543a5c06d77f3589250889626d",
+          "size": 300494
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695067520,
+          "name": "x86_64-unknown-redox--netdb--107f5c55ba55ec319007b29df33bdec647938ddae606a32a9f88428eb586c4b4.toml",
+          "sha256": "107f5c55ba55ec319007b29df33bdec647938ddae606a32a9f88428eb586c4b4",
+          "size": 364
+        }
+      },
+      "netutils": {
+        "archive": {
+          "asset_id": 695067703,
+          "name": "x86_64-unknown-redox--netutils--25598d9ec32acb3d5bf66c85b05df9ea1b0bfb37730a17fa0990fc87e0f6116c.pkgar",
+          "sha256": "25598d9ec32acb3d5bf66c85b05df9ea1b0bfb37730a17fa0990fc87e0f6116c",
+          "size": 1197816
+        },
+        "effective_input_id": "0b8cad1fb5484de39fbb40b77b33305914584d45f2f13ff8b9d7cebd70b1a15f",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695068273,
+          "name": "x86_64-unknown-redox--netutils--5f6293dc36762ce31e9582745f605fbba9f1acd8ad736f9877aab6579bf766cc.toml",
+          "sha256": "5f6293dc36762ce31e9582745f605fbba9f1acd8ad736f9877aab6579bf766cc",
+          "size": 370
+        }
+      },
+      "nghttp2": {
+        "archive": {
+          "asset_id": 695067545,
+          "name": "x86_64-unknown-redox--nghttp2--4b2f3ffba3994029dd196f1cfe596f2e3e11965392de1718983e3562b5176c00.pkgar",
+          "sha256": "4b2f3ffba3994029dd196f1cfe596f2e3e11965392de1718983e3562b5176c00",
+          "size": 652144
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695082582,
+          "name": "x86_64-unknown-redox--nghttp2--7ba2cb4654881b016726983874542f5b67249643783bbc69837e5a15b33d9bd2.toml",
+          "sha256": "7ba2cb4654881b016726983874542f5b67249643783bbc69837e5a15b33d9bd2",
+          "size": 390
+        }
+      },
+      "openssh": {
+        "archive": {
+          "asset_id": 695067616,
+          "name": "x86_64-unknown-redox--openssh--78a4a77e7a17a6488733b6739bb6d0bb764cfdec23347ed9e91912016d2de898.pkgar",
+          "sha256": "78a4a77e7a17a6488733b6739bb6d0bb764cfdec23347ed9e91912016d2de898",
+          "size": 10927244
+        },
+        "effective_input_id": "968f87b43adcfce9a19bf0c755dbff97b52368dfcd29653ae28d8d284d4a52f4",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695083722,
+          "name": "x86_64-unknown-redox--openssh--2ae9fe561dc457ecb6ea00686605d6126bc9adefd16f80d5f3218472af7bd2dd.toml",
+          "sha256": "2ae9fe561dc457ecb6ea00686605d6126bc9adefd16f80d5f3218472af7bd2dd",
+          "size": 435
+        }
+      },
+      "openssl3": {
+        "archive": {
+          "asset_id": 695084064,
+          "name": "x86_64-unknown-redox--openssl3--3296cc994b164a6bd9097efbd2f7c6573751ac2298d6df15129774b0244e6661.pkgar",
+          "sha256": "3296cc994b164a6bd9097efbd2f7c6573751ac2298d6df15129774b0244e6661",
+          "size": 25677784
+        },
+        "effective_input_id": "ff7a0a681796ee39c9f6efb9081d023bd0656c079b45f11b37ebce24071f8cef",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695084420,
+          "name": "x86_64-unknown-redox--openssl3--74d510bc4c0da97615391073118a7339aa8e8372b78106ec26b254ea4ecb3691.toml",
+          "sha256": "74d510bc4c0da97615391073118a7339aa8e8372b78106ec26b254ea4ecb3691",
+          "size": 402
+        }
+      },
+      "orbdata": {
+        "archive": {
+          "asset_id": 695068241,
+          "name": "x86_64-unknown-redox--orbdata--5867672d83f0728608b370e645ab2620a55ac73fd7b25355815b26a0fa4e1f57.pkgar",
+          "sha256": "5867672d83f0728608b370e645ab2620a55ac73fd7b25355815b26a0fa4e1f57",
+          "size": 4327774
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695068584,
+          "name": "x86_64-unknown-redox--orbdata--5171d679702ec09f0eeaf65b22462e3e2d82d58b5d163290cbb5fa442b5988fd.toml",
+          "sha256": "5171d679702ec09f0eeaf65b22462e3e2d82d58b5d163290cbb5fa442b5988fd",
+          "size": 368
+        }
+      },
+      "orbital": {
+        "archive": {
+          "asset_id": 695068125,
+          "name": "x86_64-unknown-redox--orbital--d6d404f3094b8a55233b17ba7117d1af2b8dd230c11af29a7a50934921da373b.pkgar",
+          "sha256": "d6d404f3094b8a55233b17ba7117d1af2b8dd230c11af29a7a50934921da373b",
+          "size": 1727052
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695113129,
+          "name": "x86_64-unknown-redox--orbital--9c515abb9cbcb62165f0f256b56c13d18f58ab8953fb068db6ba6f4e86d36822.toml",
+          "sha256": "9c515abb9cbcb62165f0f256b56c13d18f58ab8953fb068db6ba6f4e86d36822",
+          "size": 377
+        }
+      },
+      "orbterm": {
+        "archive": {
+          "asset_id": 695068429,
+          "name": "x86_64-unknown-redox--orbterm--251cf000768f1faceb630bb308ec580fa2d4efedea54c9657e513883e70c49bc.pkgar",
+          "sha256": "251cf000768f1faceb630bb308ec580fa2d4efedea54c9657e513883e70c49bc",
+          "size": 597004
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695068668,
+          "name": "x86_64-unknown-redox--orbterm--f8b9bcb19426e3be9840e61fd30e936bc96f405b7faa17ecefea1fbb601a2072.toml",
+          "sha256": "f8b9bcb19426e3be9840e61fd30e936bc96f405b7faa17ecefea1fbb601a2072",
+          "size": 376
+        }
+      },
+      "pigz": {
+        "archive": {
+          "asset_id": 695068643,
+          "name": "x86_64-unknown-redox--pigz--71489da193d4aed681cef48259f07a30162a85bbba0bee1989f72c204675ec5e.pkgar",
+          "sha256": "71489da193d4aed681cef48259f07a30162a85bbba0bee1989f72c204675ec5e",
+          "size": 164756
+        },
+        "effective_input_id": "2b0a335b884dd4f83b74b3751e36a4c198ee04551721fbb542cbdc40023f19bd",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695068934,
+          "name": "x86_64-unknown-redox--pigz--f5d51d741b74f3ad8a36d92b9c3243d0dec1793230f9d0ebcbc633d8480f13e8.toml",
+          "sha256": "f5d51d741b74f3ad8a36d92b9c3243d0dec1793230f9d0ebcbc633d8480f13e8",
+          "size": 392
+        }
+      },
+      "pkgutils": {
+        "archive": {
+          "asset_id": 695068654,
+          "name": "x86_64-unknown-redox--pkgutils--ca00f9dd9e75e2d19ac81b46ac1e8be8c62fe711f783fbd58ee7750154cb6850.pkgar",
+          "sha256": "ca00f9dd9e75e2d19ac81b46ac1e8be8c62fe711f783fbd58ee7750154cb6850",
+          "size": 4008732
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695069027,
+          "name": "x86_64-unknown-redox--pkgutils--0e27ea0f66a52fd87c8ac6e619ebdc75a3f88e804be659784ec4f675d39acfe8.toml",
+          "sha256": "0e27ea0f66a52fd87c8ac6e619ebdc75a3f88e804be659784ec4f675d39acfe8",
+          "size": 369
+        }
+      },
+      "readline": {
+        "archive": {
+          "asset_id": 695068994,
+          "name": "x86_64-unknown-redox--readline--5b7c1e8fc0456f93b7cf1b7abb1d6b46322cbc3e39bcb7ae69be2e09c092a8e7.pkgar",
+          "sha256": "5b7c1e8fc0456f93b7cf1b7abb1d6b46322cbc3e39bcb7ae69be2e09c092a8e7",
+          "size": 1898418
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695069850,
+          "name": "x86_64-unknown-redox--readline--956f0180d741f9930a5ed24bffdd6a73e03cf8b7df98d775d0a782653d73a46d.toml",
+          "sha256": "956f0180d741f9930a5ed24bffdd6a73e03cf8b7df98d775d0a782653d73a46d",
+          "size": 402
+        }
+      },
+      "redoxfs": {
+        "archive": {
+          "asset_id": 695068919,
+          "name": "x86_64-unknown-redox--redoxfs--cf58d060365f24df99435f3ef55c1000b4ca0c44eaecc5c2fac7e776d36cb1e3.pkgar",
+          "sha256": "cf58d060365f24df99435f3ef55c1000b4ca0c44eaecc5c2fac7e776d36cb1e3",
+          "size": 3083420
+        },
+        "effective_input_id": "4492652bccbab0f99a57399adf4317800669d5b5573f5497fbbdc36c02a0864e",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695069822,
+          "name": "x86_64-unknown-redox--redoxfs--34bf2d5aedf01298f62bd28da02e99ff122a54f65ab1331539f86a97896f47ed.toml",
+          "sha256": "34bf2d5aedf01298f62bd28da02e99ff122a54f65ab1331539f86a97896f47ed",
+          "size": 341
+        }
+      },
+      "relibc": {
+        "archive": {
+          "asset_id": 695069475,
+          "name": "x86_64-unknown-redox--relibc--c8624609a6a622b7743187932911c4a4326900c71f4c1991984e8e0454bd0220.pkgar",
+          "sha256": "c8624609a6a622b7743187932911c4a4326900c71f4c1991984e8e0454bd0220",
+          "size": 16164714
+        },
+        "effective_input_id": "afcf5707560ef4a1154db384a9d240af6c53817bb0c9772820ecfb360d8e1f3d",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695070064,
+          "name": "x86_64-unknown-redox--relibc--580598544f2ce7cab1989b7ed998768a9c50ba05aab44d374d6f6167853e23e2.toml",
+          "sha256": "580598544f2ce7cab1989b7ed998768a9c50ba05aab44d374d6f6167853e23e2",
+          "size": 342
+        }
+      },
+      "ripgrep": {
+        "archive": {
+          "asset_id": 695069747,
+          "name": "x86_64-unknown-redox--ripgrep--f8bef2dd13d519d12eeb59fc856bb29702fa4f853a0628ae4bd1856fbdfba08f.pkgar",
+          "sha256": "f8bef2dd13d519d12eeb59fc856bb29702fa4f853a0628ae4bd1856fbdfba08f",
+          "size": 3578916
+        },
+        "effective_input_id": "2b2499a83c3856e70e31568bea0c9e2b80d601881dd8ad900487fb8c48a3ae2d",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695070323,
+          "name": "x86_64-unknown-redox--ripgrep--e95e1c3333114474a834a0ede8706d189218f120be28047f17fd5316442bbf19.toml",
+          "sha256": "e95e1c3333114474a834a0ede8706d189218f120be28047f17fd5316442bbf19",
+          "size": 370
+        }
+      },
+      "rsync": {
+        "archive": {
+          "asset_id": 695070374,
+          "name": "x86_64-unknown-redox--rsync--2b1182fa6aaa35ae5adbd58beb5a41db76eb9529e303385e55988973e64b5c5e.pkgar",
+          "sha256": "2b1182fa6aaa35ae5adbd58beb5a41db76eb9529e303385e55988973e64b5c5e",
+          "size": 859653
+        },
+        "effective_input_id": "65d6a5a7e871d0de8383c1aa7945b6131f42c8ead4e2081a0b54c28ef6706169",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695070820,
+          "name": "x86_64-unknown-redox--rsync--a9acc48ce8a371ee203fb2270099490585d7043299bc6c2d529be44a289849cf.toml",
+          "sha256": "a9acc48ce8a371ee203fb2270099490585d7043299bc6c2d529be44a289849cf",
+          "size": 424
+        }
+      },
+      "sed": {
+        "archive": {
+          "asset_id": 695070447,
+          "name": "x86_64-unknown-redox--sed--69d5987ab8f79eb732c8c88cf04c5cebc33affe40fd6896f48e9056be509e8c7.pkgar",
+          "sha256": "69d5987ab8f79eb732c8c88cf04c5cebc33affe40fd6896f48e9056be509e8c7",
+          "size": 399875
+        },
+        "effective_input_id": "bbda58adb286a4aeb183ec79ddfa0dd2ee5c74fa18ec82ebb85ad4c20c769459",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695070855,
+          "name": "x86_64-unknown-redox--sed--cb2bca85547f3f31f3a6b4746d59a2c5023aa4f1106ad5970b07ed4e941cd870.toml",
+          "sha256": "cb2bca85547f3f31f3a6b4746d59a2c5023aa4f1106ad5970b07ed4e941cd870",
+          "size": 385
+        }
+      },
+      "sqlite3": {
+        "archive": {
+          "asset_id": 695070363,
+          "name": "x86_64-unknown-redox--sqlite3--7c47e35ce6c01376cb2eedd41889819e0737850a2042d258383c2074811ba634.pkgar",
+          "sha256": "7c47e35ce6c01376cb2eedd41889819e0737850a2042d258383c2074811ba634",
+          "size": 3123052
+        },
+        "effective_input_id": "413cf075244c1ef0b6aa58780225a36532b7183d08fe840db9ac968866ac0c48",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695070690,
+          "name": "x86_64-unknown-redox--sqlite3--4b78a4ccfac0ccf60cf5fb05fcb051e662f659d68197632c345caf63ab7d841a.toml",
+          "sha256": "4b78a4ccfac0ccf60cf5fb05fcb051e662f659d68197632c345caf63ab7d841a",
+          "size": 394
+        }
+      },
+      "termcap": {
+        "archive": {
+          "asset_id": 695070629,
+          "name": "x86_64-unknown-redox--termcap--f7b06ddbdbdd4079a328affd9a4cde1d63920ac941773fbc8d345c1690f44350.pkgar",
+          "sha256": "f7b06ddbdbdd4079a328affd9a4cde1d63920ac941773fbc8d345c1690f44350",
+          "size": 172296
+        },
+        "effective_input_id": "2bc6d42e98f3e813e014cb8c58048e566173dba54c8a4be7632754a628d03f78",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695070883,
+          "name": "x86_64-unknown-redox--termcap--bc0559bcf32cf892abe26446dcdc8a4f0af35c87000feb3134b809c41bbd96cf.toml",
+          "sha256": "bc0559bcf32cf892abe26446dcdc8a4f0af35c87000feb3134b809c41bbd96cf",
+          "size": 391
+        }
+      },
+      "terminfo": {
+        "archive": {
+          "asset_id": 695071132,
+          "name": "x86_64-unknown-redox--terminfo--1c43ab436c12d8443b7a44290bc478c066b97627453cc90f2f916d4fdefc6e73.pkgar",
+          "sha256": "1c43ab436c12d8443b7a44290bc478c066b97627453cc90f2f916d4fdefc6e73",
+          "size": 239157
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695071729,
+          "name": "x86_64-unknown-redox--terminfo--7eebefc9a6bcd17cfdd40f529c77aa930c8c1b223cb5ec1f3ed945361705dfc7.toml",
+          "sha256": "7eebefc9a6bcd17cfdd40f529c77aa930c8c1b223cb5ec1f3ed945361705dfc7",
+          "size": 367
+        }
+      },
+      "unrar": {
+        "archive": {
+          "asset_id": 695071332,
+          "name": "x86_64-unknown-redox--unrar--e46a9d9ca6255522300a42ad65c82e76fdf675b230fdb3bd0d46c80520282d00.pkgar",
+          "sha256": "e46a9d9ca6255522300a42ad65c82e76fdf675b230fdb3bd0d46c80520282d00",
+          "size": 456550
+        },
+        "effective_input_id": "e011860613890c051dd0143eb6dc460162bd01aee21d9ccec28378b79166d95a",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695071649,
+          "name": "x86_64-unknown-redox--unrar--d7d3a34f87f079900618d22dce9a6bf5e2dba38b5708891e0743061fffd958eb.toml",
+          "sha256": "d7d3a34f87f079900618d22dce9a6bf5e2dba38b5708891e0743061fffd958eb",
+          "size": 399
+        }
+      },
+      "userutils": {
+        "archive": {
+          "asset_id": 695071368,
+          "name": "x86_64-unknown-redox--userutils--0b0738a06ea388e667d0434fe09ec3af79cdc165bd5b747360a18c08f93887b3.pkgar",
+          "sha256": "0b0738a06ea388e667d0434fe09ec3af79cdc165bd5b747360a18c08f93887b3",
+          "size": 6690892
+        },
+        "effective_input_id": "1571d3fc2c043ef9e91f58892981a3374dbb17a3328d5b914c6ccd0dc671c360",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695071953,
+          "name": "x86_64-unknown-redox--userutils--b1abf7f583880fb68fae7975c4451f60a368f6ad1cf088efb6e78868cad0fb35.toml",
+          "sha256": "b1abf7f583880fb68fae7975c4451f60a368f6ad1cf088efb6e78868cad0fb35",
+          "size": 343
+        }
+      },
+      "uutils": {
+        "archive": {
+          "asset_id": 695071533,
+          "name": "x86_64-unknown-redox--uutils--8913a3bdea6505115042349315cd17647b2ab043eab5dcf34b25344754c5a555.pkgar",
+          "sha256": "8913a3bdea6505115042349315cd17647b2ab043eab5dcf34b25344754c5a555",
+          "size": 12594222
+        },
+        "effective_input_id": "bd1114aacebd61824eb40d4bea012dbe28baa019f93eca2fe60509fb204d7063",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695071988,
+          "name": "x86_64-unknown-redox--uutils--29adb986b190263d8ee4c9440b76352c8dca9cc5abeb1adfc3a46beba1eb6cf0.toml",
+          "sha256": "29adb986b190263d8ee4c9440b76352c8dca9cc5abeb1adfc3a46beba1eb6cf0",
+          "size": 380
+        }
+      },
+      "uutils-grep": {
+        "archive": {
+          "asset_id": 695071940,
+          "name": "x86_64-unknown-redox--uutils-grep--8ee46541b76dffa7e6b6f776ce838c96711bf97a55765a242290215f7135966b.pkgar",
+          "sha256": "8ee46541b76dffa7e6b6f776ce838c96711bf97a55765a242290215f7135966b",
+          "size": 1202948
+        },
+        "effective_input_id": "5ce273b9e2997f3f1e79d265f6dc5d32c47c14033b9fe7807caa5221bf724467",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695072868,
+          "name": "x86_64-unknown-redox--uutils-grep--a7f255c04a6ba752e93f1b5422e02ae2c52d599da17953d901acd08678261b6f.toml",
+          "sha256": "a7f255c04a6ba752e93f1b5422e02ae2c52d599da17953d901acd08678261b6f",
+          "size": 382
+        }
+      },
+      "uutils-hostname": {
+        "archive": {
+          "asset_id": 695072079,
+          "name": "x86_64-unknown-redox--uutils-hostname--c5137277ca58380fdac1b6efa08972e8154e6a5f03a392f291699918575010d0.pkgar",
+          "sha256": "c5137277ca58380fdac1b6efa08972e8154e6a5f03a392f291699918575010d0",
+          "size": 883364
+        },
+        "effective_input_id": "5f601b65790d38f4b42e6085cdbd7a87beee3da596225b22b53dea0fc27a038a",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695072530,
+          "name": "x86_64-unknown-redox--uutils-hostname--e4b3d752c547e146166f2107b679f07373631deeb716a5a581ef5f06125d3657.toml",
+          "sha256": "e4b3d752c547e146166f2107b679f07373631deeb716a5a581ef5f06125d3657",
+          "size": 383
+        }
+      },
+      "uutils-procps": {
+        "archive": {
+          "asset_id": 695072205,
+          "name": "x86_64-unknown-redox--uutils-procps--ee4216859b10d5ad7d16d1887da48343c4bbca9058ae5064efa5f3d113ea1c5f.pkgar",
+          "sha256": "ee4216859b10d5ad7d16d1887da48343c4bbca9058ae5064efa5f3d113ea1c5f",
+          "size": 4705510
+        },
+        "effective_input_id": "5d4de7b3e7c468fa1c58557b65b2384e2d0479801e65a95cfc17825f71ca423f",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695073149,
+          "name": "x86_64-unknown-redox--uutils-procps--555d95b4dcb525e5fffe4c32f29add40b6c39592aabea33d452c6e3eac3b9a15.toml",
+          "sha256": "555d95b4dcb525e5fffe4c32f29add40b6c39592aabea33d452c6e3eac3b9a15",
+          "size": 375
+        }
+      },
+      "vim": {
+        "archive": {
+          "asset_id": 695072278,
+          "name": "x86_64-unknown-redox--vim--1b41c49ebe238a7a744c13705779f09885d8f44c7287327d3703a5c59e30e556.pkgar",
+          "sha256": "1b41c49ebe238a7a744c13705779f09885d8f44c7287327d3703a5c59e30e556",
+          "size": 34946600
+        },
+        "effective_input_id": "b3bc2b0b2b0d07a48b4365520f5a22448fb92ffdd8c6d0227b5a039524c434f2",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695073067,
+          "name": "x86_64-unknown-redox--vim--bc673da3767951a910a0973f09b25604989f1e8c18acbd86e49732df582ff1e7.toml",
+          "sha256": "bc673da3767951a910a0973f09b25604989f1e8c18acbd86e49732df582ff1e7",
+          "size": 404
+        }
+      },
+      "wget": {
+        "archive": {
+          "asset_id": 695073057,
+          "name": "x86_64-unknown-redox--wget--7c239c4c795d71d637a1ea62055f53a610336b460cff2ba4ec836dc3a5040577.pkgar",
+          "sha256": "7c239c4c795d71d637a1ea62055f53a610336b460cff2ba4ec836dc3a5040577",
+          "size": 1023235
+        },
+        "effective_input_id": "dd1ade98aafb179b60880b5b713cf34000cda6f497b3f1c4fd2c65235e20663c",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695073452,
+          "name": "x86_64-unknown-redox--wget--dfd9855b35b38f7cb6d292efd551d8cbfbabb8c91117dff27b767f00c79e8ff5.toml",
+          "sha256": "dfd9855b35b38f7cb6d292efd551d8cbfbabb8c91117dff27b767f00c79e8ff5",
+          "size": 401
+        }
+      },
+      "whereis": {
+        "archive": {
+          "asset_id": 695073223,
+          "name": "x86_64-unknown-redox--whereis--de05c5157231db4a9dc1383dc424142df0867c5ade96394cb033f1979df914a0.pkgar",
+          "sha256": "de05c5157231db4a9dc1383dc424142df0867c5ade96394cb033f1979df914a0",
+          "size": 203284
+        },
+        "effective_input_id": "f84f35f4f94e9fe741dbd1b2ad909c650ca04c5b17b8faff69213a1c55a85fda",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695073789,
+          "name": "x86_64-unknown-redox--whereis--69609c5ebdf33cfa0fb587353354693b3b1ad3db152a230ce54d7c18d5b9ec93.toml",
+          "sha256": "69609c5ebdf33cfa0fb587353354693b3b1ad3db152a230ce54d7c18d5b9ec93",
+          "size": 367
+        }
+      },
+      "xxhash": {
+        "archive": {
+          "asset_id": 695073484,
+          "name": "x86_64-unknown-redox--xxhash--99a1b8328a840213353653d6d4adaef9ba4fd3c98805d02db1d00d7c23860abd.pkgar",
+          "sha256": "99a1b8328a840213353653d6d4adaef9ba4fd3c98805d02db1d00d7c23860abd",
+          "size": 392156
+        },
+        "effective_input_id": "bdd461dc074f9ec620c97683e2452be3cf92a5dce3e90359a8556dbc7cfc2c68",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695073922,
+          "name": "x86_64-unknown-redox--xxhash--7efa87e18b5d2362f842f18bba701d9fc507b48548af19385a78204f4b46f77f.toml",
+          "sha256": "7efa87e18b5d2362f842f18bba701d9fc507b48548af19385a78204f4b46f77f",
+          "size": 365
+        }
+      },
+      "xz": {
+        "archive": {
+          "asset_id": 695073499,
+          "name": "x86_64-unknown-redox--xz--56358d38f64dd12bf9403368214769431f70201b7fa361b552fd2f2f69e3f577.pkgar",
+          "sha256": "56358d38f64dd12bf9403368214769431f70201b7fa361b552fd2f2f69e3f577",
+          "size": 1124371
+        },
+        "effective_input_id": "c9d825673776cf4f966108c0be5d5a23d55644cc6a13f6a3e3cdfa8fdae60e10",
+        "input_status": "Known",
+        "metadata": {
+          "asset_id": 695073898,
+          "name": "x86_64-unknown-redox--xz--fc814f831d602b6cb1ea12cbccefc72379304f3f791d716de0cbd67c7932a481.toml",
+          "sha256": "fc814f831d602b6cb1ea12cbccefc72379304f3f791d716de0cbd67c7932a481",
+          "size": 389
+        }
+      },
+      "zlib": {
+        "archive": {
+          "asset_id": 695074338,
+          "name": "x86_64-unknown-redox--zlib--cc29585a59f54c02915c4150aa948cbd2bb348d81c4f02014265fd4726dc6b34.pkgar",
+          "sha256": "cc29585a59f54c02915c4150aa948cbd2bb348d81c4f02014265fd4726dc6b34",
+          "size": 289774
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695074797,
+          "name": "x86_64-unknown-redox--zlib--22f06f962ba870beb46821197c6d148b176facc76a702ea3efb476d19970e0b7.toml",
+          "sha256": "22f06f962ba870beb46821197c6d148b176facc76a702ea3efb476d19970e0b7",
+          "size": 387
+        }
+      },
+      "zsh": {
+        "archive": {
+          "asset_id": 695074263,
+          "name": "x86_64-unknown-redox--zsh--cd10959f2857c88f0a8aff321998b3c52f94e3d517477dc629185cc628941a5c.pkgar",
+          "sha256": "cd10959f2857c88f0a8aff321998b3c52f94e3d517477dc629185cc628941a5c",
+          "size": 7728461
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695074693,
+          "name": "x86_64-unknown-redox--zsh--6cdf903803a44784495797155182d04029ddbb824c30f3a1d359141ab290ceda.toml",
+          "sha256": "6cdf903803a44784495797155182d04029ddbb824c30f3a1d359141ab290ceda",
+          "size": 346
+        }
+      },
+      "zstd": {
+        "archive": {
+          "asset_id": 695074499,
+          "name": "x86_64-unknown-redox--zstd--7bddd7a6b89e72948bbccb107c20a118b431d2451ae94cacf657f1bf54064c4e.pkgar",
+          "sha256": "7bddd7a6b89e72948bbccb107c20a118b431d2451ae94cacf657f1bf54064c4e",
+          "size": 3968028
+        },
+        "effective_input_id": null,
+        "input_status": "Unknown",
+        "metadata": {
+          "asset_id": 695075328,
+          "name": "x86_64-unknown-redox--zstd--43130ac3a2903779440937e09731f1c9f2b8f7feb08b0670048acd611adf949a.toml",
+          "sha256": "43130ac3a2903779440937e09731f1c9f2b8f7feb08b0670048acd611adf949a",
+          "size": 389
+        }
+      }
+    }
+  }
+}
