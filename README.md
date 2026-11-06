@@ -1,37 +1,24 @@
-# Private Redox binary packages
+# Redox x86_64 binary packages
 
-Private, unofficial Redox OS packages for `x86_64-unknown-redox`, including
-local modifications and AI-assisted work. Not an official Redox distribution.
-Files are stored in Git and downloaded through GitHub's authenticated HTTPS
-file API. There is no Pages site or publishing workflow.
+This repository distributes unofficial, signed Redox OS packages for
+`x86_64-unknown-redox`.
 
-Cookbook package root:
+Download the [latest package snapshot](https://github.com/RedoxORG/redox-pkgs/releases/latest).
+The Release contains `repo.toml`, package metadata (`.toml`), signed archives
+(`.pkgar`), and `id_ed25519.pub.toml`. Use the files from the same Release
+when checking an index or verifying a package.
+
+Original attachment names are stable across releases. The latest download URL
+has the following form.
 
 ```text
-https://api.github.com/repos/RedoxORG/redox-pkgs/contents
+https://github.com/RedoxORG/redox-pkgs/releases/latest/download/<filename>
 ```
 
-Fresh builds of private `RedoxORG/redox` use these packages with the ordinary
-bootstrap and Make commands. Its tracked
-[curl adapter](https://github.com/RedoxORG/redox/blob/local/main/scripts/curl-github.sh)
-uses the existing private download authentication in the standard build
-container. A working network route and repository read access are prerequisites.
-See the current [consumer verification](consumer-verification.md) for measured
-results and limits. This receipt does not certify the source adapter credential
-delivery or future credential rotation.
+Packages retain their upstream licenses. See each Release's source and license
+links and its accompanying build files. The [package source record](SOURCES.md)
+and [license texts](licenses/) provide additional provenance.
 
-The root contains the public signing key. The target directory contains
-`repo.toml`, package metadata and signed `.pkgar` files. The private key,
-system images and build caches are not repository contents. Missing packages
-use Cookbook's existing source-build fallback. Updates are signed binary
-snapshots: pushing component source does not automatically rebuild them.
-
-Packages retain their upstream licenses. See [sources](SOURCES.md),
-[build instructions and acceptance](DEPLOYMENT.md),
-[contract and ledger](FRESH-BUILD.md), and [independent review](REVIEW.md).
-
-Weekly update checks use [the current report](weekly-update.md) and
-[the per-package input ledger](binary-inputs.json). The
-[first daily check](daily-update.md) remains a historical receipt.
-
-The package updater uses the [dedicated isolated build area](isolated-build.md).
+The [build and consumer verification record](DEPLOYMENT.md) describes the
+earlier authenticated package delivery. The
+[per-package input ledger](binary-inputs.json) records published build inputs.
