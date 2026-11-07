@@ -8,8 +8,13 @@ The Release contains `repo.toml`, package metadata (`.toml`), signed archives
 (`.pkgar`), and `id_ed25519.pub.toml`. Use the files from the same Release
 when checking an index or verifying a package.
 
-Original attachment names are stable across releases. The latest download URL
-has the following form.
+Consumers use `https://redox-pkgs.pages.dev/pkg`. Cloudflare redirects the
+original x86_64 package paths and root public key to this repository's public
+Latest Release. Binary downloads need no GitHub CLI or login. Official static
+files use `https://redox-statics.pages.dev`.
+
+All Releases remain mutable and use the original attachment names. The direct
+latest download URL has the following form.
 
 ```text
 https://github.com/RedoxORG/redox-pkgs/releases/latest/download/<filename>
@@ -20,5 +25,6 @@ links and its accompanying build files. The [package source record](SOURCES.md)
 and [license texts](licenses/) provide additional provenance.
 
 The [build and consumer verification record](DEPLOYMENT.md) describes the
-earlier authenticated package delivery. The
-[per-package input ledger](binary-inputs.json) records published build inputs.
+current download setup and its verified scope. The
+[per-package input ledger](binary-inputs.json) retains earlier build inputs;
+its historical entries are not a claim that every current package is fresh.
