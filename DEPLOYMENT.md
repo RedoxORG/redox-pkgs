@@ -1,23 +1,14 @@
 # Public package downloads and verification
 
-## Download setup
+## Current download setup
 
-Packages are public, signed Release attachments. Use
-`https://redox-pkgs.pages.dev/pkg` for maintained x86_64 packages and their root
-`id_ed25519.pub.toml`. The original `/pkg/x86_64-unknown-redox/<filename>` paths
-are preserved. Cloudflare redirects to this repository's Latest Release;
-no binary files or credentials are stored in Cloudflare.
+Use [the unified package source](https://redox-statics.pages.dev/pkg) for all
+architectures. Packages and the public key are published together as signed
+package archives and related files in [statics Releases](https://github.com/redox-unofficial-mirrors/statics/releases).
+Rebuild images that used the retired package domain to switch their source and
+key. Public downloads require no GitHub login.
 
-Official static files and other architectures use
-`https://redox-statics.pages.dev`. Their signing key is different, so clients
-must obtain the key from the same package domain as their index and archives.
-Binary downloads require no `gh` or login. Private Git source access retains
-its separate GitHub authentication.
-
-Publish a complete verified snapshot as a mutable Release with the original
-attachment names, then select it as Latest. Keep the previous snapshot until
-new consumers pass acceptance; remove it after checking remaining references.
-Do not use the retired Git package directory or private file-API manifest.
+The build and snapshot verification below describe the historical setup.
 
 ## Build and boot
 

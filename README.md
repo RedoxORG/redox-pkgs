@@ -1,30 +1,8 @@
-# Redox x86_64 binary packages
+# Redox x86_64 binary package archive
 
-This repository distributes unofficial, signed Redox OS packages for
-`x86_64-unknown-redox`.
+Current Redox packages are published in [redox-unofficial-mirrors/statics](https://github.com/redox-unofficial-mirrors/statics/releases).
+Use [the unified package source](https://redox-statics.pages.dev/pkg) for new builds and installations.
+Rebuild older images to switch to the unified source and its signing key.
 
-Download the [latest package snapshot](https://github.com/RedoxORG/redox-pkgs/releases/latest).
-The Release contains `repo.toml`, package metadata (`.toml`), signed archives
-(`.pkgar`), and `id_ed25519.pub.toml`. Use the files from the same Release
-when checking an index or verifying a package.
-
-Consumers use `https://redox-pkgs.pages.dev/pkg`. Cloudflare redirects the
-original x86_64 package paths and root public key to this repository's public
-Latest Release. Binary downloads need no GitHub CLI or login. Official static
-files use `https://redox-statics.pages.dev`.
-
-All Releases remain mutable and use the original attachment names. The direct
-latest download URL has the following form.
-
-```text
-https://github.com/RedoxORG/redox-pkgs/releases/latest/download/<filename>
-```
-
-Packages retain their upstream licenses. See each Release's source and license
-links and its accompanying build files. The [package source record](SOURCES.md)
-and [license texts](licenses/) provide additional provenance.
-
-The [build and consumer verification record](DEPLOYMENT.md) describes the
-current download setup and its verified scope. The
-[per-package input ledger](binary-inputs.json) retains earlier build inputs;
-its historical entries are not a claim that every current package is fresh.
+This repository retains historical [package sources](SOURCES.md), [licenses](licenses/),
+[build and verification records](DEPLOYMENT.md), and the [per-package input ledger](binary-inputs.json).
